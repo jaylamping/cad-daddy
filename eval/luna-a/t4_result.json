@@ -1,0 +1,58 @@
+{
+  "convergence_rows": [
+    [
+      4.0,
+      20715,
+      20.100933074951172,
+      [
+        6.48,
+        27.9,
+        6.0
+      ],
+      4.121415138244629,
+      9.789634993364814
+    ],
+    [
+      3.0,
+      29493,
+      19.79062843322754,
+      [
+        6.48,
+        21.21,
+        6.0
+      ],
+      3.616332769393921,
+      9.011983678597092
+    ],
+    [
+      2.5,
+      39274,
+      19.21648406982422,
+      [
+        6.48,
+        27.01,
+        6.0
+      ],
+      3.255617380142212,
+      9.306295161282044
+    ],
+    [
+      1.5,
+      63463,
+      19.7940616607666,
+      [
+        6.48,
+        27.01,
+        6.0
+      ],
+      3.354919910430908,
+      8.850856379992141
+    ]
+  ],
+  "converged": true,
+  "reported_stress_mpa": 19.7940616607666,
+  "how_judged": "Local corner von Mises values are [20.1, 19.79, 19.22, 19.79] MPa at [4.0, 3.0, 2.5, 1.5] mm; Z-layer tension values are [4.12, 3.62, 3.26, 3.35] MPa. The final step meets 5% convergence for all three measures, so the corner is reported as converged.",
+  "verdict": "pass",
+  "status": "done",
+  "notes": "Finest local peak at [6.48, 27.01, 6.0]; local Z tension=3.355 MPa at [6.96, 26.79, 6.0], Z shear=8.851 MPa at [6.0, 29.91, 6.0]. Away-peak at finest mesh=19.794 MPa at [6.48, 27.01, 6.0]; away Z tension=11.519 MPa at [0.0, 25.5, 7.79], away Z shear=10.285 MPa at [6.0, 11.16, 6.0]. Max displacement=2.650 mm; model SHA-256=6e2e4aa37952c03d672e1c2a7cd60f44618278c4c35f8483f19e9dc5c1a1f343."
+}

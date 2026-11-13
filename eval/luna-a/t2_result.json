@@ -1,0 +1,8 @@
+{
+  "volume_mm3": 31642.999901677238,
+  "hand_volume_mm3": 31642.999901677267,
+  "counterbore_floor_z_mm": 3.0,
+  "bodies": 1,
+  "stl_watertight": true,
+  "stl_volume_mm3": 31663.545447129934
+}

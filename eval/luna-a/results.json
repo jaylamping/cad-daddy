@@ -1,0 +1,204 @@
+[
+  {
+    "task": "T1",
+    "volume_mm3": 32974.02416773477,
+    "hand_volume_mm3": 32974.02416773478,
+    "mass_g": 39.23908875960438,
+    "bbox_mm": [
+      0,
+      0,
+      0,
+      80,
+      50,
+      46
+    ],
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_volume_mm3": 32990.37726482318,
+    "status": "done",
+    "notes": "Native model matches the corrected hand volume. STL is one watertight shell; its volume is 0.050% above native volume."
+  },
+  {
+    "task": "T2",
+    "volume_mm3": 31642.999901677238,
+    "hand_volume_mm3": 31642.999901677267,
+    "counterbore_floor_z_mm": 3.0,
+    "bodies": 1,
+    "status": "done",
+    "notes": "Opened the saved T1 part, checked its corrected hand volume and tree, then added counterbores and slot. Slot is 20 x 6 x 6 mm; STL volume is 0.065% above native."
+  },
+  {
+    "task": "T3",
+    "hand_root_stress_mpa": 11.0,
+    "el_mm": 2.5,
+    "nodes": 37705,
+    "peak_vm_mpa": 15.155476570129395,
+    "peak_at_mm": [
+      8.72,
+      32.58,
+      6.21
+    ],
+    "layer_stress_mpa": 9.940892219543457,
+    "sf_yield": 2.969223685693428,
+    "sf_layer": 2.263378326923791,
+    "max_disp_mm": 2.351161241531372,
+    "reaction_n": 150.0,
+    "converged": true,
+    "convergence_rows": [
+      [
+        4.0,
+        18675,
+        15.16,
+        9.75,
+        7.26
+      ],
+      [
+        3.0,
+        27174,
+        15.18,
+        9.92,
+        7.22
+      ],
+      [
+        2.5,
+        37705,
+        15.16,
+        9.94,
+        7.22
+      ]
+    ],
+    "verdict": "pass",
+    "status": "done",
+    "notes": "Layer shear along Z=7.216 MPa at [7.16, 26.48, 7.19]; support is fixed on the four Ø5.5 screw-hole walls; peaks are reported at least 8 mm from fixture and load nodes. Alternate even front-face traction: vm=11.466 MPa, Z tension=0.321 MPa, Z shear=4.847 MPa. Controlling results use the higher of the bore remote and even traction on the full x=0 face (a broad-face sensitivity, not a localized bore load); direction table: {\"X\": {\"tension_mpa\": 12.499906539916992, \"tension_at_mm\": [14.09, 40.43, 0.0], \"shear_mpa\": 7.216171000252713, \"shear_at_mm\": [7.16, 26.48, 7.19], \"sf_tension\": 1.8000134583525786, \"sf_shear\": 1.8015094153872928}, \"Y\": {\"tension_mpa\": 4.698583126068115, \"tension_at_mm\": [14.84, 36.18, 0.0], \"shear_mpa\": 0.9736212576938182, \"shear_at_mm\": [7.46, 47.78, 0.0], \"sf_tension\": 4.788677649474413, \"sf_shear\": 13.352214628912924}, \"Z\": {\"tension_mpa\": 9.940892219543457, \"tension_at_mm\": [0.0, 28.79, 8.72], \"shear_mpa\": 7.216282722515181, \"shear_at_mm\": [7.16, 26.48, 7.19], \"sf_tension\": 2.263378326923791, \"sf_shear\": 1.8014815244751037}}. Layer Z peak at [0.0, 28.79, 8.72]; shear Z peak at [7.16, 26.48, 7.19]. Model SHA-256 after the job: c2ba5d702d2e7c0943491c2b4f6683ee78a20ad0539c1605210bbfa16fc3ee2a."
+  },
+  {
+    "task": "T4",
+    "convergence_rows": [
+      [
+        4.0,
+        20715,
+        20.100933074951172,
+        [
+          6.48,
+          27.9,
+          6.0
+        ],
+        4.121415138244629,
+        9.789634993364814
+      ],
+      [
+        3.0,
+        29493,
+        19.79062843322754,
+        [
+          6.48,
+          21.21,
+          6.0
+        ],
+        3.616332769393921,
+        9.011983678597092
+      ],
+      [
+        2.5,
+        39274,
+        19.21648406982422,
+        [
+          6.48,
+          27.01,
+          6.0
+        ],
+        3.255617380142212,
+        9.306295161282044
+      ],
+      [
+        1.5,
+        63463,
+        19.7940616607666,
+        [
+          6.48,
+          27.01,
+          6.0
+        ],
+        3.354919910430908,
+        8.850856379992141
+      ]
+    ],
+    "converged": false,
+    "reported_stress_mpa": 19.7940616607666,
+    "how_judged": "The tracked local corner-box metrics settle over the last global mesh interval, but exact-edge VM changes 6.2% between the only two extracted edge meshes and the edge control stayed fixed at 1 mm. Exact sharp-edge convergence is not demonstrated; 19.794 MPa is the finest tracked corner-box result, not a converged edge peak.",
+    "verdict": "fail",
+    "status": "partial",
+    "notes": "Fail to demonstrate the strength requirement, not proof of material failure. Four solves were under 200,000 nodes. The finest tracked box VM is 19.794 MPa and layer-Z tension is 3.355 MPa, but the exact edge was not refined sufficiently and no pass is claimed. The stage exceeded twice its budget, so no further solve was launched.",
+    "edge_refinement_mpa": [
+      [
+        2.5,
+        17.2837
+      ],
+      [
+        1.5,
+        16.2196
+      ]
+    ]
+  },
+  {
+    "task": "T5",
+    "change": "No redesign required because T3 passes; optional print-orientation change to layers along Y improves layer factors without changing CAD geometry.",
+    "mass_g": 39.23908875960438,
+    "mass_growth_pct": 0.0,
+    "sf_yield": 2.969223685693428,
+    "sf_layer": 4.788677649474413,
+    "print_orientation": "Y layers (optional alternate derived from the T3 isotropic result); base-down Z remains the requested passing baseline at SF 2.263 tension and 1.801 shear.",
+    "verdict": "pass",
+    "status": "done",
+    "notes": "Conditional redesign was not triggered. No bracket_c part or additional study was needed. Y-direction layer tension and shear factors are 4.789 and 13.35, respectively, from the same T3 stress tensor."
+  },
+  {
+    "task": "T6",
+    "hand_bearing_mpa": 1.6666666666666667,
+    "nodes": 24034,
+    "solver": "Intel Direct Sparse",
+    "how_pin_was_stabilised": "Two 1 mm long radius-1 mm soft pads bond to the pin end faces; their outer faces were fixed. They carried 0.134 N (0.027%) in the accepted 4 mm run.",
+    "peak_contact_vm_mpa": 5.2901611328125,
+    "block_peak_at_mm": [
+      -1.64,
+      -15.0,
+      16.073
+    ],
+    "pin_rise_mm": 0.12414016785648975,
+    "reaction_n": 500.0,
+    "valid": false,
+    "why": "Only one 4 mm no-penetration contact study returned. It showed 499.866 N through the block contact path and 0.134 N through the pads, but the 3 mm refinement had 26,611 nodes and stopped at an unrecognized Fixture <Fixed-1> transfer failed dialog. After the hard cutoff, acknowledging that failed setup let the helper report excessive displacement; no result was read. Contact convergence, the same-direction tiny-load proof and bonded proof remain incomplete.",
+    "status": "partial",
+    "notes": "One accepted coarse result only; not a converged peak bearing stress. The 5.290 MPa VM and 0.124 mm mean pin midspan rise are single-mesh values. The 3 mm run was invalid and discarded; the task remains partial.",
+    "contact_force_n": 499.8660618190188,
+    "pad_share_n": 0.13418316425668309,
+    "convergence_rows": [
+      [
+        4.0,
+        24034,
+        5.2901611328125,
+        [
+          -1.64,
+          -15.0,
+          16.073
+        ],
+        499.8660618190188,
+        0.13418316425668309,
+        0.12414016785648975
+      ]
+    ],
+    "proof_reaction_n": null,
+    "proof_pin_rise_mm": null,
+    "bonded_proof_pin_rise_mm": null,
+    "failed_attempt": {
+      "el_mm": 3.0,
+      "nodes": 26611,
+      "failure": "Fixture <Fixed-1> transfer failed dialog; after cutoff helper reported excessive displacements and static() raised before result readback."
+    }
+  },
+  {
+    "task": "T7",
+    "status": "done",
+    "notes": "Cases a?e diagnosed in REPORT.md; no SolidWorks jobs or process actions were taken for the examples."
+  }
+]

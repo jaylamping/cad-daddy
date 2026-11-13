@@ -1,0 +1,44 @@
+{
+  "task": "T6",
+  "hand_bearing_mpa": 1.6666666666666667,
+  "nodes": 24034,
+  "solver": "Intel Direct Sparse",
+  "how_pin_was_stabilised": "Two 1 mm long radius-1 mm soft pads bond to the pin end faces; their outer faces were fixed. They carried 0.134 N (0.027%) in the accepted 4 mm run.",
+  "peak_contact_vm_mpa": 5.2901611328125,
+  "block_peak_at_mm": [
+    -1.64,
+    -15.0,
+    16.073
+  ],
+  "pin_rise_mm": 0.12414016785648975,
+  "reaction_n": 500.0,
+  "valid": false,
+  "why": "Only one 4 mm no-penetration contact study returned. It showed 499.866 N through the block contact path and 0.134 N through the pads, but the 3 mm refinement had 26,611 nodes and stopped at an unrecognized Fixture <Fixed-1> transfer failed dialog. After the hard cutoff, acknowledging that failed setup let the helper report excessive displacement; no result was read. Contact convergence, the same-direction tiny-load proof and bonded proof remain incomplete.",
+  "status": "partial",
+  "notes": "One accepted coarse result only; not a converged peak bearing stress. The 5.290 MPa VM and 0.124 mm mean pin midspan rise are single-mesh values. The 3 mm run was invalid and discarded; the task remains partial.",
+  "contact_force_n": 499.8660618190188,
+  "pad_share_n": 0.13418316425668309,
+  "convergence_rows": [
+    [
+      4.0,
+      24034,
+      5.2901611328125,
+      [
+        -1.64,
+        -15.0,
+        16.073
+      ],
+      499.8660618190188,
+      0.13418316425668309,
+      0.12414016785648975
+    ]
+  ],
+  "proof_reaction_n": null,
+  "proof_pin_rise_mm": null,
+  "bonded_proof_pin_rise_mm": null,
+  "failed_attempt": {
+    "el_mm": 3.0,
+    "nodes": 26611,
+    "failure": "Fixture <Fixed-1> transfer failed dialog; after cutoff helper reported excessive displacements and static() raised before result readback."
+  }
+}
