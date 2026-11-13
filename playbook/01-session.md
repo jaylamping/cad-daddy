@@ -59,6 +59,13 @@ with job() as j:            # launches your own instance; closes it on the way o
   sections or in chunks, never whole-mesh tests. For "is this point in the solid" use `sheet.inside()`: numpy only,
   20,000 points against 8,000 triangles in five seconds. `trimesh.contains` has no accelerator on this machine and broke
   a 4 GB cap on 5,000 points (2026-11-13).
+- **The keeper is not yours.** Where the machine has it switched on (holly-pc does), `--status` shows one idle
+  instance marked "keeper". It is the oldest SolidWorks running and takes every new launch's startup call, so a launch
+  no longer waits behind another session's mesh or result read-back (22 launches in about 2 s each, 2026-11-13).
+  `launch()` starts it when it is missing. Never attach to it, open a document in it or close it. It holds one of
+  SolidWorks' two Auto Recover slots, so your instance may start with `no_auto_recover`: save after each step.
+- **A dead instance in the way:** `python solidworks/sw_kill.py --list`, then `--dead`. It ends only half-closed or
+  abandoned instances and stray solvers, after watching them. Never `--force` on an instance that is not yours.
 - **When the clock matters, launch once.** A launch waits up to 300 s behind another session's solve and then
   raises `did not answer`; `job(wait_s=1800)` keeps asking for that long instead of failing, so no retry loop is needed (run such a job in the background if your shell tool has its own time limit); five of those cost one run 27 minutes of a 100-minute budget. Put build, checks and studies in one job
   (at most four studies), and do the thinking, the hand calculations and the pictures while it waits.
