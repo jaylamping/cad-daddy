@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "study": "B4_FULL_DIAG",
+    "el_mm": 4.0,
+    "nodes": 12920,
+    "elements": 8088,
+    "solve_s": 10,
+    "peak_vm_all": 28.64,
+    "peak_vm_away": 5.7,
+    "at": [
+      4.1,
+      -10.0,
+      18.0
+    ],
+    "sf_yield": 7.89,
+    "max_disp_mm": 16.0983829498291,
+    "reaction_N": [
+      -80.0,
+      -0.0,
+      0.0,
+      80.0
+    ],
+    "applied_N": 80.0,
+    "excessive_displacements": true
+  },
+  "tip_ux_mm": 0.8410290479660034,
+  "pad_reaction": {
+    "pad_reaction_vector_n": [
+      -0.007442651636665687,
+      0.0010756463889265433,
+      0.02033834348549135
+    ],
+    "pad_reaction_resultant_n": 0.021684056222778098
+  },
+  "sections": {
+    "v_above_slot_N": 60.94752797519886,
+    "v_below_top_contact_N": -97.06117022235259,
+    "v_above_floor_N": 3.7761774117545346,
+    "right_wall_N": 158.00869819755144,
+    "left_wall_N": 3.7761774117545346
+  },
+  "excessive": true
+}

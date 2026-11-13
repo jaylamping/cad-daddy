@@ -1,0 +1,164 @@
+{
+  "hand_wall_forces_n": [
+    101.176470588,
+    181.176470588
+  ],
+  "wall_forces_n": [
+    null,
+    null
+  ],
+  "nodes": 17187,
+  "how_tongue_was_stabilised": "Four 0.5 x 1.5 x 4 mm analysis-only flexure pads on the tongue side at X4,Z24-28,Y=-7,-3,3,7, fixed at Z28; E=0.5 MPa. At the 0.001 N +X contact proof they carry under the 0.001 N and permit the tongue to translate across the 0.1 mm clearance.",
+  "block_peak_vm_mpa": 1.4634162187576294,
+  "block_peak_at_mm": [
+    -4.826,
+    6.267,
+    8.53
+  ],
+  "tongue_tip_disp_mm": 0.5204368233680725,
+  "reaction_n": 80.0,
+  "valid": false,
+  "why": {
+    "gap_proof_mean_ux_mm": -0.09971240291307712,
+    "gap_proof_pad_reaction": {
+      "pad_reaction_vector_n": [
+        -0.0012440946911738138,
+        -1.9758772396016866e-10,
+        1.0476360330358148e-06
+      ],
+      "pad_reaction_resultant_n": 0.0012440951322741215
+    },
+    "gap_proof_pass": true,
+    "pad_reaction_n": 109.21896201062424,
+    "pad_share_pct": 136.52370251328028,
+    "section_force_balance_error_pct": 100.71679662822368,
+    "contact_forces_by_section_n": {
+      "v_above_slot_N": -28.92976083880538,
+      "v_below_top_contact_N": -29.016376376781132,
+      "v_above_floor_N": -0.6600528405546932,
+      "right_wall_N": 0.08661553797575294,
+      "left_wall_N": 0.6600528405546932
+    },
+    "hand_forces_n_left_right": [
+      101.176470588,
+      181.176470588
+    ],
+    "mesh_series": [
+      {
+        "el_mm": 4.0,
+        "nodes": 12919,
+        "elements": 8087,
+        "reaction": [
+          -80.0,
+          0.0,
+          0.0,
+          80.0
+        ],
+        "max_disp_mm": 0.5080310702323914,
+        "tip_ux_mm": 0.48245906829833984,
+        "block_peak_vm_mpa": 1.4829785823822021,
+        "block_peak_at_mm": [
+          -4.1,
+          7.0,
+          8.0
+        ],
+        "section_forces": {
+          "v_above_slot_N": -28.897937257471693,
+          "v_below_top_contact_N": -28.932870646229247,
+          "v_above_floor_N": 0.7233381544473536,
+          "right_wall_N": 0.034933388757554695,
+          "left_wall_N": 0.7233381544473536
+        },
+        "pad_reaction": {
+          "pad_reaction_vector_n": [
+            -109.22304555919254,
+            -0.01852032166789286,
+            0.1668198643019423
+          ],
+          "pad_reaction_resultant_n": 109.22317452397586
+        }
+      },
+      {
+        "el_mm": 3.5,
+        "nodes": 14356,
+        "elements": 9061,
+        "reaction": [
+          -80.0,
+          0.0,
+          0.0,
+          80.0
+        ],
+        "max_disp_mm": 0.562197208404541,
+        "tip_ux_mm": 0.53448086977005,
+        "block_peak_vm_mpa": 1.435259461402893,
+        "block_peak_at_mm": [
+          -4.1,
+          6.94,
+          9.689
+        ],
+        "section_forces": {
+          "v_above_slot_N": -28.458042073997635,
+          "v_below_top_contact_N": -29.07410487275752,
+          "v_above_floor_N": 1.1870055452353696,
+          "right_wall_N": 0.6160627987598843,
+          "left_wall_N": 1.1870055452353696
+        },
+        "pad_reaction": {
+          "pad_reaction_vector_n": [
+            -108.7711059137946,
+            -0.007452796620782465,
+            0.17241375584853813
+          ],
+          "pad_reaction_resultant_n": 108.77124281609227
+        }
+      },
+      {
+        "el_mm": 3.0,
+        "nodes": 17187,
+        "elements": 10986,
+        "reaction": [
+          -80.0,
+          0.0,
+          0.0,
+          80.0
+        ],
+        "max_disp_mm": 0.547138512134552,
+        "tip_ux_mm": 0.5204368233680725,
+        "block_peak_vm_mpa": 1.4634162187576294,
+        "block_peak_at_mm": [
+          -4.826,
+          6.267,
+          8.53
+        ],
+        "section_forces": {
+          "v_above_slot_N": -28.92976083880538,
+          "v_below_top_contact_N": -29.016376376781132,
+          "v_above_floor_N": -0.6600528405546932,
+          "right_wall_N": 0.08661553797575294,
+          "left_wall_N": 0.6600528405546932
+        },
+        "pad_reaction": {
+          "pad_reaction_vector_n": [
+            -109.21882669709157,
+            -0.014889351004967466,
+            0.1712772491737269
+          ],
+          "pad_reaction_resultant_n": 109.21896201062424
+        }
+      }
+    ],
+    "mesh_node_counts_below_200k": true,
+    "limitation": "Nodal stresses were integrated over Delaunay triangulations of near-horizontal tongue-node slices; compare convergence across sizes.",
+    "full_load_pad_share_n": 109.21896201062424,
+    "full_load_pad_share_pct": 136.52370251328028,
+    "pad_share_limit_n": 0.8,
+    "section_balance_verified": false,
+    "wall_forces_determined": false,
+    "unfinished": [
+      "redesign stabilization pads to carry under 1% at full load",
+      "recover both wall resultants with a force-balanced section or contact-traction method"
+    ]
+  },
+  "status": "not shown",
+  "notes": "Gap proof and full-load solves completed under the node cap, but pad share is 136.5% of load and the section-force estimate fails balance; wall forces are undetermined. See REPORT.md."
+}

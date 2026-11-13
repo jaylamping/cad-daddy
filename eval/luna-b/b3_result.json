@@ -1,0 +1,32 @@
+{
+  "mass_before_g": 22.651156388000004,
+  "mass_after_g": 11.866761479452789,
+  "saving_pct": 47.61079180160757,
+  "steps": [
+    {
+      "change": "Thin the wall plate to 3 mm and trim its Y/Z envelope around the two screw holes; retain 12 mm arm height.",
+      "mass_g": 11.16536160000179,
+      "sf_yield": 3.523044938572838,
+      "sf_layer": 1.9972101822422461,
+      "sf_shear": 2.6512930759690088,
+      "print_orientation": "layers stacked along Z",
+      "mesh_converged": true
+    },
+    {
+      "change": "Round the four curved root-side transitions R0.4 and widen the arm to 10.8 mm so the top bearing face remains exactly 10 x 10 mm.",
+      "mass_g": 11.866761479452789,
+      "sf_yield": 3.5319960340017134,
+      "sf_layer": 2.0417303635753923,
+      "sf_shear": 2.648839567791197,
+      "print_orientation": "layers stacked along Z",
+      "mesh_converged_by_stress_only": true
+    }
+  ],
+  "governing": "Not shown. Numerically, Z-direction across-layer tension is thinnest (FoS 2.042), but the mesh node counts exceeded the playbook pre-solve estimates by 19\u201345x and changed by less than 1% across nominal sizes.",
+  "sf_yield": 3.5319960340017134,
+  "sf_layer": 2.0417303635753923,
+  "sf_shear": 2.648839567791197,
+  "print_orientation": "layers stacked along Z",
+  "status": "complete",
+  "notes": "The force reaction is 60.003 N and the requested 100 mm2 load face was measured. Treat the stresses as provisional: local controls dominated node count, and the STL/solid bounding boxes differ by 0.121 mm (0.1 mm allowed). See REPORT.md and b3_stl_checks.json."
+}
