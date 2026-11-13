@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.SLDPRT
+*.SLDASM
+*.CWR
+~$*
+_wip/
+_sim/
