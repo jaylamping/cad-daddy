@@ -1,0 +1,92 @@
+{
+  "B1": {
+    "status": "partial",
+    "volume_mm3": 21865.5355,
+    "hand_volume_mm3": 21865.5096,
+    "mass_g": 26.02,
+    "bbox_mm": [
+      -30,
+      -30,
+      0,
+      30,
+      30,
+      25
+    ],
+    "bodies": 1,
+    "stl_watertight": true,
+    "spec_questions": [
+      "Dowel holes overlap the boss footprint by 0.75 mm radially and are partially obstructed from above.",
+      "The set-screw hole leaves a 0.4 mm top ligament, below the 0.6 mm wall guideline."
+    ],
+    "notes": "Not all finished-solid dimensions independently measured; STL and STEP checked."
+  },
+  "B2": {
+    "status": "incomplete",
+    "hand_root_stress_mpa": 13.75,
+    "print_orientation": "Y layer normal, provisional",
+    "nodes": [
+      6674,
+      11241,
+      20572
+    ],
+    "peak_vm_mpa": 15.7245,
+    "layer_stress_mpa": 3.7735,
+    "layer_shear_mpa": 3.4171,
+    "sf_yield": 2.862,
+    "sf_layer": 5.963,
+    "sf_shear": 3.804,
+    "max_disp_mm": 1.90085,
+    "reaction_n": [
+      0,
+      0,
+      60
+    ],
+    "converged": false,
+    "verdict": "not shown",
+    "notes": "Provisional mesh-dependent masked results, twin differs in volume by 0.131%; alternative support, load, fixed-region convergence, hand section check and full print gate missing. Incorrect displacement prediction was logged and stop gate not enforced."
+  },
+  "B3": {
+    "status": "incomplete",
+    "mass_before_g": 22.7047,
+    "mass_after_g": 13.4227,
+    "saving_pct": 40.8814,
+    "steps": [
+      {
+        "change": "Narrow wall plate to 14 mm",
+        "mass_g": 13.4227,
+        "sf_yield": 3.06,
+        "sf_layer": 8.85,
+        "sf_shear": 6.66,
+        "notes": "All factors provisional, mesh-dependent masks."
+      }
+    ],
+    "governing": "not established",
+    "sf_yield": 3.06,
+    "sf_layer": 8.85,
+    "sf_shear": 6.66,
+    "print_orientation": "Y layer normal, provisional",
+    "notes": "Only one candidate; not optimized or shown to satisfy required study checks. Original wall face footprint changed; requirement ambiguous."
+  },
+  "B4": {
+    "status": "not completed",
+    "hand_wall_forces_n": [
+      180,
+      -260
+    ],
+    "wall_forces_n": null,
+    "nodes": null,
+    "how_tongue_was_stabilised": "Not built; proposed soft pads only",
+    "block_peak_vm_mpa": null,
+    "block_peak_at_mm": null,
+    "tongue_tip_disp_mm": null,
+    "reaction_n": null,
+    "valid": false,
+    "why": "Job refused launch at 7.6 GB free. Under-8-GB playbook stop rule. Hand values assume contacts at the ends of the 12 mm slot depth; actual contact locations unknown.",
+    "notes": "No model or solve started."
+  },
+  "B5": {
+    "status": "complete",
+    "problems_found": 13,
+    "notes": "See prioritized review in REPORT.md."
+  }
+}
