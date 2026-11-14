@@ -84,7 +84,15 @@ is no fourth.
 | --- | --- |
 | done | every item of "A model is done when" or "A study is done when" has its number |
 | not possible | the requirement that cannot be met, shown with numbers, and the nearest thing that can be |
-| blocked | the same obstacle met **three times, in three different ways**, with what each try was and its log |
+| blocked | the same obstacle met **three times, in three different ways**, with what each try was and its log, **and** the task's time limit used up or the list below it worked through |
+
+**What counts as a different way.** A different mesh size, pad stiffness or solver setting is the same way again. A
+different way changes the model of the problem: another support or load model, another way to hold the loose body
+(a soft spring, a pad somewhere else, a tiny load that seats it first), a simpler twin that isolates the part that
+fails, the same question answered by hand or from section forces. When a coarse run works and finer ones do not, the
+coarse run is the lead: find what changed between them before trying a fifth mesh. The repeat of that benchmark set
+closed a contact task as blocked after four and a half of its forty minutes, on three mesh and stiffness variations
+of one approach.
 
 Then, for anything that is not done, these are not reasons to stop:
 
