@@ -1,0 +1,37 @@
+13:58:45 SolidWorks pid 118908 free GB 23.3
+13:58:45 ---- model
+13:58:48 ok PLATE volume change: 18000.0000 (expected 18000.0000)
+13:58:48 PLATE: added 18000.00 mm3
+13:58:48 ok HOLE volume change: 502.6548 (expected 502.6548)
+13:58:48 HOLE: cut 502.65 mm3
+13:58:49 ok corner edges found: 4.0000 (expected 4.0000)
+13:58:49 CORNERS: R3.0 on 4 edges, volume change -77.26 mm3
+13:58:49 ok plate volume: 17420.0885 (expected 17420.0885)
+13:58:49 ok box[0]: 0.0000 (expected 0.0000)
+13:58:49 ok box[1]: 0.0000 (expected 0.0000)
+13:58:49 ok box[2]: 0.0000 (expected 0.0000)
+13:58:49 ok box[3]: 60.0000 (expected 60.0000)
+13:58:49 ok box[4]: 30.0000 (expected 30.0000)
+13:58:49 ok box[5]: 10.0000 (expected 10.0000)
+13:58:49 ok hole faces: 1.0000 (expected 1.0000)
+13:58:49 ok rebuild errors: 0.0000 (expected 0.0000)
+13:58:49 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-a\_wip\sw-selftest\plate.step 31315 bytes
+13:58:49 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-a\_wip\sw-selftest\plate.stl 15284 bytes
+13:58:51 ok STL watertight: 1.0000 (expected 1.0000)
+13:58:51 ok STL volume (mm, model frame): 17421.2033 (expected 17420.0885)
+13:58:51 ok STL min x (not shifted): 0.0000 (expected 0.0000)
+13:58:51 ---- beam
+13:58:52 ok BEAM volume change: 10000.0000 (expected 10000.0000)
+13:58:52 BEAM: added 10000.00 mm3
+13:58:52 ok root faces: 1.0000 (expected 1.0000)
+13:58:52 ok tip faces: 1.0000 (expected 1.0000)
+13:58:56 BEAM_TIP_10N: mesh rc 0, 18931 nodes, 12284 elements, free 23.0 GB
+13:58:58 BEAM_TIP_10N: fixture nodes 125, box [0.0, -0.0, -0.0] to [0.0, 10.0, 10.0]
+13:58:58 BEAM_TIP_10N: load nodes 125, box [100.0, -0.0, -0.0] to [100.0, 10.0, 10.0]
+13:58:59 {'study': 'BEAM_TIP_10N', 'el_mm': 2.0, 'nodes': 18931, 'elements': 12284, 'solve_s': 6, 'peak_vm_all': 6.25, 'peak_vm_away': 5.68, 'at': [5.05, 5.15, 10.0], 'sf_yield': 7.92, 'max_disp_mm': 2.101469039916992, 'reaction_N': [0.0, -0.0, 10.0, 10.0], 'applied_N': 10.0}
+13:58:59 ok tip deflection mm: 2.1015 (expected 2.1227)
+13:58:59 ok peak stress away from the root MPa: 5.6788 (expected 5.7600)
+13:58:59 ok reaction Fz N (opposes the 10 N down): 10.0000 (expected 10.0000)
+13:58:59 ok reaction resultant N: 10.0000 (expected 10.0000)
+13:58:59 closing pid 118908 committed MB 1814
+PASS model beam

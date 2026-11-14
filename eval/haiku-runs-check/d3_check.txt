@@ -1,0 +1,100 @@
+haiku-d/d3/P1.SLDPRT         OD 70 T 6 bore 30 vol 17728.67 hand 17728.67 diff +0.00 floor Z [3.0] chamfer None min wall 1.00 (hole to outside) 
+       6 x D3.4 on D50 first 0 deg Z 0..6
+       4 x D4.5 on D60 first 45 deg Z 0..3
+       4 x D8 on D60 first 45 deg Z 3..6
+haiku-d/d3/P2.SLDPRT         OD 84 T 6 bore 40 vol 23947.18 hand 23947.18 diff -0.00 floor Z [3.0] chamfer None min wall 7.00 (hole to outside) 
+       6 x D4.5 on D62 first 30 deg Z 0..3
+       6 x D4.5 on D62 first 0 deg Z 0..6
+       6 x D8 on D62 first 30 deg Z 3..6
+haiku-d/d3/P3.SLDPRT         OD 96 T 8 bore 52 vol 38698.26 hand 38698.26 diff +0.00 floor Z [4.0] chamfer None min wall 1.00 (hole to outside) 
+       8 x D3.4 on D66 first 0 deg Z 0..8
+       4 x D5.5 on D84 first 0 deg Z 0..4
+       4 x D10 on D84 first 0 deg Z 4..8
+haiku-d/d3/P4.SLDPRT         OD 68 T 5 bore 28 vol 13596.26 hand 13596.26 diff -0.00 floor Z [1.0] chamfer None min wall 1.00 (hole to outside) OD 68 (table 60)
+       4 x D3.4 on D40 first 0 deg Z 0..5
+       6 x D4.5 on D58 first 0 deg Z 0..1
+       6 x D8 on D58 first 0 deg Z 1..5
+haiku-d/d3/P5.SLDPRT         OD 120 T 8 bore 60 vol 62864.78 hand 62864.78 diff +0.00 floor Z [3.0] chamfer None min wall 2.50 (hole to outside) 
+       12 x D4.5 on D80 first 0 deg Z 0..8
+       6 x D6.6 on D104 first 0 deg Z 0..3
+       6 x D11 on D104 first 0 deg Z 3..8
+haiku-d/d3/P6.SLDPRT         OD 76 T 6 bore 34 vol 20848.86 hand 20848.86 diff -0.00 floor Z [3.0] chamfer None min wall 2.00 (hole to outside) 
+       6 x D3.4 on D46 first 0 deg Z 0..6
+       3 x D4.5 on D64 first 0 deg Z 0..3
+       3 x D8 on D64 first 0 deg Z 3..6
+
+haiku-d/d3/P1_b.SLDPRT       OD 70 T 7.5 bore 30 vol 22030.39 hand 22030.39 diff -0.00 floor Z [3.0] chamfer 0.5 min wall 0.50 (hole to outside (below chamfer)) 
+       6 x D3.4 on D50 first 0 deg Z 0..7.5
+       4 x D4.5 on D60 first 45 deg Z 0..3
+       4 x D8 on D60 first 45 deg Z 3..7.5
+haiku-d/d3/P2_b.SLDPRT       OD 84 T 7.5 bore 40 vol 29648.45 hand 29648.45 diff -0.00 floor Z [3.0] chamfer 1.0 min wall 6.00 (hole to outside (below chamfer)) 
+       6 x D4.5 on D62 first 30 deg Z 0..3
+       6 x D4.5 on D62 first 0 deg Z 0..7.5
+       6 x D8 on D62 first 30 deg Z 3..7.5
+haiku-d/d3/P3_b.SLDPRT       OD 96 T 9.5 bore 52 vol 45752.28 hand 45752.28 diff +0.00 floor Z [4.0] chamfer 0.5 min wall 0.50 (hole to outside (below chamfer)) 
+       8 x D3.4 on D70 first 22.5 deg Z 0..9.5
+       4 x D5.5 on D84 first 0 deg Z 0..4
+       4 x D10 on D84 first 0 deg Z 4..9.5
+haiku-d/d3/P4_b.SLDPRT       OD 68 T 6.5 bore 28 vol 17586.72 hand 17586.72 diff +0.00 floor Z [1.0] chamfer 0.5 min wall 0.50 (hole to outside (below chamfer)) OD 68 (table 60)
+       4 x D3.4 on D40 first 0 deg Z 0..6.5
+       6 x D4.5 on D58 first 0 deg Z 0..1
+       6 x D8 on D58 first 0 deg Z 1..6.5
+haiku-d/d3/P5_b.SLDPRT       OD 120 T 9.5 bore 60 vol 74259.20 hand 74259.20 diff -0.00 floor Z [3.0] chamfer 1.0 min wall 1.50 (hole to outside (below chamfer)) 
+       12 x D4.5 on D80 first 0 deg Z 0..9.5
+       6 x D6.6 on D104 first 0 deg Z 0..3
+       6 x D11 on D104 first 0 deg Z 3..9.5
+haiku-d/d3/P6_b.SLDPRT       OD 76 T 7.5 bore 34 vol 25865.43 hand 25865.43 diff +0.00 floor Z [3.0] chamfer 1.0 min wall 1.00 (hole to outside (below chamfer)) 
+       6 x D3.4 on D46 first 0 deg Z 0..7.5
+       3 x D4.5 on D64 first 0 deg Z 0..3
+       3 x D8 on D64 first 0 deg Z 3..7.5
+
+haiku-plan-d/P1.SLDPRT       OD 70 T 6 bore 30 vol 17728.67 hand 17728.67 diff +0.00 floor Z [3.0] chamfer None min wall 1.00 (hole to outside) 
+       6 x D3.4 on D50 first 0 deg Z 0..6
+       4 x D4.5 on D60 first 45 deg Z 0..3
+       4 x D8 on D60 first 45 deg Z 3..6
+haiku-plan-d/P2.SLDPRT       OD 84 T 6 bore 40 vol 23947.18 hand 23947.18 diff -0.00 floor Z [3.0] chamfer None min wall 7.00 (hole to outside) 
+       6 x D4.5 on D62 first 30 deg Z 0..3
+       6 x D4.5 on D62 first 0 deg Z 0..6
+       6 x D8 on D62 first 30 deg Z 3..6
+haiku-plan-d/P3.SLDPRT       OD 96 T 8 bore 52 vol 38698.26 hand 38698.26 diff +0.00 floor Z [4.0] chamfer None min wall 1.00 (hole to outside) 
+       8 x D3.4 on D66 first 0 deg Z 0..8
+       4 x D5.5 on D84 first 0 deg Z 0..4
+       4 x D10 on D84 first 0 deg Z 4..8
+haiku-plan-d/P4.SLDPRT       OD 68 T 5 bore 28 vol 13802.43 hand 13802.43 diff -0.00 floor Z [2.0] chamfer None min wall 1.00 (hole to outside) OD 68 (table 60)
+       4 x D3.4 on D40 first 0 deg Z 0..5
+       6 x D4.5 on D58 first 0 deg Z 0..2
+       6 x D8 on D58 first 0 deg Z 2..5
+haiku-plan-d/P5.SLDPRT       OD 120 T 8 bore 60 vol 62864.78 hand 62864.78 diff +0.00 floor Z [3.0] chamfer None min wall 2.50 (hole to outside) 
+       12 x D4.5 on D80 first 0 deg Z 0..8
+       6 x D6.6 on D104 first 0 deg Z 0..3
+       6 x D11 on D104 first 0 deg Z 3..8
+haiku-plan-d/P6.SLDPRT       OD 76 T 6 bore 34 vol 20848.86 hand 20848.86 diff -0.00 floor Z [3.0] chamfer None min wall 2.00 (hole to outside) 
+       6 x D3.4 on D46 first 0 deg Z 0..6
+       3 x D4.5 on D64 first 0 deg Z 0..3
+       3 x D8 on D64 first 0 deg Z 3..6
+
+haiku-plan-d/P1_b.SLDPRT     OD 70 T 7.5 bore 30 vol 22040.22 hand 22040.22 diff -0.00 floor Z [3.0] chamfer 0.4 min wall 0.60 (hole to outside (below chamfer)) 
+       6 x D3.4 on D50 first 0 deg Z 0..7.5
+       4 x D4.5 on D60 first 45 deg Z 0..3
+       4 x D8 on D60 first 45 deg Z 3..7.5
+haiku-plan-d/P2_b.SLDPRT     OD 84 T 7.5 bore 40 vol 29648.45 hand 29648.45 diff -0.00 floor Z [3.0] chamfer 1.0 min wall 6.00 (hole to outside (below chamfer)) 
+       6 x D4.5 on D62 first 30 deg Z 0..3
+       6 x D4.5 on D62 first 0 deg Z 0..7.5
+       6 x D8 on D62 first 30 deg Z 3..7.5
+haiku-plan-d/P3_b.SLDPRT     OD 96 T 9.5 bore 52 vol 45765.78 hand 45765.78 diff +0.00 floor Z [4.0] chamfer 0.4 min wall 0.60 (hole to outside (below chamfer)) 
+       8 x D3.4 on D70 first 22.5 deg Z 0..9.5
+       4 x D5.5 on D84 first 0 deg Z 0..4
+       4 x D10 on D84 first 0 deg Z 4..9.5
+haiku-plan-d/P4_b.SLDPRT     OD 68 T 6.5 bore 28 vol 17802.44 hand 17802.44 diff +0.00 floor Z [2.0] chamfer 0.4 min wall 0.60 (hole to outside (below chamfer)) OD 68 (table 60)
+       4 x D3.4 on D40 first 0 deg Z 0..6.5
+       6 x D4.5 on D58 first 0 deg Z 0..2
+       6 x D8 on D58 first 0 deg Z 2..6.5
+haiku-plan-d/P5_b.SLDPRT     OD 120 T 9.5 bore 60 vol 74259.20 hand 74259.20 diff -0.00 floor Z [3.0] chamfer 1.0 min wall 1.50 (hole to outside (below chamfer)) 
+       12 x D4.5 on D80 first 0 deg Z 0..9.5
+       6 x D6.6 on D104 first 0 deg Z 0..3
+       6 x D11 on D104 first 0 deg Z 3..9.5
+haiku-plan-d/P6_b.SLDPRT     OD 76 T 7.5 bore 34 vol 25865.43 hand 25865.43 diff +0.00 floor Z [3.0] chamfer 1.0 min wall 1.00 (hole to outside (below chamfer)) 
+       6 x D3.4 on D46 first 0 deg Z 0..7.5
+       3 x D4.5 on D64 first 0 deg Z 0..3
+       3 x D8 on D64 first 0 deg Z 3..7.5
+

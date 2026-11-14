@@ -1,0 +1,237 @@
+
+====== T5 rounded toes: row file against the job log
+  T5_TOE_30: row == logged row: True; mesh rc 0, 45729 nodes; reaction [-150.004, -0.002, 0.004, 150.004] against 150 N; max disp 0.9038
+  T5_TOE_22: row == logged row: True; mesh rc 0, 90202 nodes; reaction [-150.002, 0.001, -0.001, 150.002] against 150 N; max disp 0.9072
+  T5_TOE_16: row == logged row: True; mesh rc 0, 194421 nodes; reaction [-150.001, -0.003, -0.0, 150.001] against 150 N; max disp 0.9103
+
+====== T5: the saved arrays against the rows
+  T5_TOE_30: nodes 45729 (45729 rows); reaction [-150.004, -0.002, 0.004, 150.004]; max disp 0.9038; vm at stated place 12.85 (row 12.85); sigma-y at stated place 7.28 (row 7.28); shear on Y layers at stated place 3.59 (row 3.59)
+      largest vm anywhere 16.58 at [22.46, 41.06, 6.0] (row vm_all 16.58)
+      rib side root on the upright (x 6..6.4, z 12..31): vm (5.8, [6.0, 3.5, 30.06]), shear on Y layers 2.26, sigma-y -0.68
+      rib side root on the base (z 6..6.4, x 12..31): vm (6.93, [27.69, 46.5, 6.0]), shear on Y layers 2.85, sigma-y 2.39
+  T5_TOE_22: nodes 90202 (90202 rows); reaction [-150.002, 0.001, -0.001, 150.002]; max disp 0.9072; vm at stated place 13.25 (row 13.25); sigma-y at stated place 7.47 (row 7.47); shear on Y layers at stated place 3.92 (row 3.92)
+      largest vm anywhere 16.94 at [22.46, 41.06, 6.0] (row vm_all 16.94)
+      rib side root on the upright (x 6..6.4, z 12..31): vm (6.05, [6.0, 46.5, 30.64]), shear on Y layers 2.27, sigma-y -0.74
+      rib side root on the base (z 6..6.4, x 12..31): vm (7.3, [30.62, 3.5, 6.0]), shear on Y layers 2.78, sigma-y 2.62
+  T5_TOE_16: nodes 194421 (194421 rows); reaction [-150.001, -0.003, -0.0, 150.001]; max disp 0.9103; vm at stated place 13.54 (row 13.54); sigma-y at stated place 7.52 (row 7.52); shear on Y layers at stated place 3.98 (row 3.98)
+      largest vm anywhere 19.08 at [22.32, 40.61, 0.0] (row vm_all 19.08)
+      rib side root on the upright (x 6..6.4, z 12..31): vm (6.46, [6.0, 46.5, 30.55]), shear on Y layers 2.54, sigma-y -0.92
+      rib side root on the base (z 6..6.4, x 12..31): vm (7.71, [28.18, 46.5, 6.0]), shear on Y layers 3.12, sigma-y 3.4
+
+====== T5: verdict, layers along Y (the direction the part is printed in)
+  verdict: pass | lowest factor 2.99 at layer
+    vm                                 [12.85, 13.25, 13.54] steps % [3.1, 2.2] factor 3.32 after two 3.18 -> pass
+    layer                              [7.28, 7.47, 7.52] steps % [2.6, 0.7] factor 2.99 after two 2.95 -> pass
+    shear                              [3.59, 3.92, 3.98] steps % [9.2, 1.5] factor 3.27 after two 3.17 -> pass
+  helper judge() on the same series == the saved t5_toe_judge.json: True | my rule agrees: True
+  for comparison, layers along X: fail, lowest 2.0 at shear
+  for comparison, layers along Z: margin, not converged, lowest 2.03 at shear
+
+====== T6 matched mesh: row file against the job log
+  T6M_12: row == logged row: True; mesh rc 0, 42660 nodes; reaction Fz -499.999; fz_block -499.80; fz_pads -0.201; pin rise 0.1292
+  T6M_08: row == logged row: True; mesh rc 0, 92444 nodes; reaction Fz -499.999; fz_block -499.80; fz_pads -0.201; pin rise 0.1295
+  T6M_06: row == logged row: True; mesh rc 0, 164532 nodes; reaction Fz -500.0; fz_block -499.80; fz_pads -0.201; pin rise 0.1294
+
+====== T6: recomputed from the saved arrays (matched series, then round one for comparison)
+  T6M_12: nodes 42660, Fz -499.999; line mean 6.068 on 27 nodes (max 6.56); half-width (pressure over 0.3 MPa) 1.88 mm; line pressure by |y|: {'|y| < 8': 6.07, '8 to 12': 6.31, '12 to 15': 5.74}
+      pressure across the strip, 0.2 mm bins of |x| from 0: [6.07, 5.95, None, 5.71, 5.1, 3.88, 3.04, 3.53, 0.84, -0.27, -0.71, -0.9, None, -1.11, -1.22, -1.5]
+      pin as a rigid body: translation [-0.0001, 0.0016, 0.1298] mm, turn about X, Y, Z [-0.0, -0.5468, -0.0001] deg (the spin about its own axis moves its surface 0.0477 mm), residual max 0.0065 mm; largest pin displacement 0.1837 at [5.0, -25.0, 9.97]; block max 0.0321; model max 0.1837
+  T6M_08: nodes 92444, Fz -499.999; line mean 5.734 on 81 nodes (max 5.983); half-width (pressure over 0.3 MPa) 1.84 mm; line pressure by |y|: {'|y| < 8': 5.73, '8 to 12': 5.88, '12 to 15': 5.33}
+      pressure across the strip, 0.2 mm bins of |x| from 0: [5.73, None, 5.56, None, 5.21, 4.38, 4.32, 2.25, None, -0.38, -0.76, None, -0.86, -1.15, -1.14, -1.5]
+      pin as a rigid body: translation [-0.0001, 0.0012, 0.1296] mm, turn about X, Y, Z [0.0001, -0.3032, 0.0001] deg (the spin about its own axis moves its surface 0.0265 mm), residual max 0.0068 mm; largest pin displacement 0.1625 at [5.0, 25.0, 10.0]; block max 0.032; model max 0.1625
+  T6M_06: nodes 164532, Fz -500.0; line mean 5.643 on 107 nodes (max 5.97); half-width (pressure over 0.3 MPa) 1.68 mm; line pressure by |y|: {'|y| < 8': 5.64, '8 to 12': 5.79, '12 to 15': 5.3}
+      pressure across the strip, 0.2 mm bins of |x| from 0: [5.64, 5.57, 5.54, 5.36, 5.05, 4.54, 3.43, 3.31, 1.18, -0.41, -0.61, -0.71, -0.9, -0.91, -1.16, -1.43]
+      pin as a rigid body: translation [0.0, 0.0009, 0.1295] mm, turn about X, Y, Z [-0.0, -0.0475, 0.0] deg (the spin about its own axis moves its surface 0.0041 mm), residual max 0.0069 mm; largest pin displacement 0.1402 at [5.0, -25.0, 9.97]; block max 0.032; model max 0.1402
+  T6_PIN_12: nodes 52146, Fz -500.005; line mean 6.08 on 27 nodes (max 6.522); half-width (pressure over 0.3 MPa) 1.88 mm; line pressure by |y|: {'|y| < 8': 6.08, '8 to 12': 6.3, '12 to 15': 5.74}
+      pressure across the strip, 0.2 mm bins of |x| from 0: [6.08, 5.93, None, 5.69, 5.09, 3.9, 3.03, 3.5, 0.83, -0.27, -0.71, -0.9, None, -1.11, -1.22, -1.5]
+      pin as a rigid body: translation [-0.0, 0.0012, 0.1297] mm, turn about X, Y, Z [0.0, -1.2898, -0.0001] deg (the spin about its own axis moves its surface 0.1126 mm), residual max 0.0067 mm; largest pin displacement 0.2485 at [5.0, -25.0, 9.97]; block max 0.0321; model max 0.2485
+  T6_PIN_08: nodes 72305, Fz -500.002; line mean 5.735 on 81 nodes (max 5.94); half-width (pressure over 0.3 MPa) 1.84 mm; line pressure by |y|: {'|y| < 8': 5.73, '8 to 12': 5.88, '12 to 15': 5.34}
+      pressure across the strip, 0.2 mm bins of |x| from 0: [5.73, None, 5.58, None, 5.2, 4.39, 4.3, 2.21, None, -0.38, -0.76, None, -0.86, -1.15, -1.14, -1.5]
+      pin as a rigid body: translation [-0.0001, 0.0011, 0.1297] mm, turn about X, Y, Z [0.0001, -0.3446, 0.0001] deg (the spin about its own axis moves its surface 0.0301 mm), residual max 0.0067 mm; largest pin displacement 0.1661 at [5.0, 25.0, 10.0]; block max 0.032; model max 0.1661
+  T6_PIN_05: nodes 122007, Fz -500.001; line mean 5.597 on 192 nodes (max 6.767); half-width (pressure over 0.3 MPa) 1.72 mm; line pressure by |y|: {'|y| < 8': 5.6, '8 to 12': 5.75, '12 to 15': 5.16}
+      pressure across the strip, 0.2 mm bins of |x| from 0: [5.61, 5.57, 5.54, 5.33, 4.98, 4.75, 4.1, 2.77, 0.76, -0.38, -0.51, -0.61, -0.78, -0.96, -1.2, -1.49]
+      pin as a rigid body: translation [0.0, 0.0009, 0.1297] mm, turn about X, Y, Z [0.0, -0.1969, -0.0] deg (the spin about its own axis moves its surface 0.0172 mm), residual max 0.0067 mm; largest pin displacement 0.1532 at [5.0, -25.0, 9.97]; block max 0.0319; model max 0.1532
+  T6M_12: recomputed line mean 6.068 on 27 nodes; the row has 6.068 on 27
+  T6M_08: recomputed line mean 5.734 on 81 nodes; the row has 5.734 on 81
+  T6M_06: recomputed line mean 5.643 on 107 nodes; the row has 5.643 on 107
+  line mean [6.068, 5.734, 5.643] steps % [-5.5, -1.6] | against 6.76: [-10.2, -15.2, -16.5] %
+  p_all [6.74, 6.21, 5.98] steps % [-7.9, -3.7]
+  contact_vm [5.54, 5.16, 5.23] steps % [-6.9, 1.4]
+  Hertz line contact, 500 N over 30 mm: peak = 2 F / (pi a L). a 1.57 -> 6.76 MPa; a 1.68 (read above) -> 6.32 MPa
+
+====== D1: the rerun study, from the job log and the saved arrays
+  logged convergence rows (el, nodes, vm, layer, shear): [(2.0, 30598.0, 2.47, 0.17, 0.7), (1.5, 58907.0, 2.49, 0.13, 0.7), (1.1, 125748.0, 2.49, 0.13, 0.71)]
+  logged mesh lines: [('D1_Z_20', '0', '30598'), ('D1_Z_15', '0', '58907'), ('D1_Z_11', '0', '125748')]
+  logged reaction: [-0.0, -0.0, 9.0, 9.0]
+  verdict: pass | lowest factor 18.07 at vm
+    vm                                 [2.47, 2.49, 2.49] steps % [0.8, 0.0] factor 18.07 after two 18.07 -> pass
+    layer                              [0.17, 0.13, 0.13] steps % [-23.5, 0.0] factor 173.08 after two 173.08 -> pass
+    shear                              [0.7, 0.7, 0.71] steps % [0.0, 1.4] factor 18.31 after two 17.8 -> pass
+  helper judge(): {'verdict': 'pass', 'lowest_factor': 18.07, 'lowest_entry': 'vm'}
+  hand: spine as a beam built in at the two M5 holes (x +-50), 4.5 N from each arm at x +-39: end moment 44.1 N mm; full section 14 x 4: 1.18 MPa; net section beside the hole (8.5 x 4): 1.94 MPa; times 3 (open hole in tension): 5.8 MPa
+  D1_Z_20: nodes 30598, reaction [0.0, 0.0, 9.0, 9.0], max disp 0.1579
+      box round the holes: vm max (1.58, [44.12, 6.65, 4.0])
+      top face, x 43.5..44.5: mean sigma-x 0.49, largest |sigma-x| 0.76 on 43 nodes
+      top face, x 44.5..46.0: mean sigma-x 0.72, largest |sigma-x| 1.11 on 85 nodes
+      top face, x 46.0..47.0: mean sigma-x 0.83, largest |sigma-x| 1.54 on 59 nodes
+      bottom face, x 43.5..44.5: mean sigma-x -0.49, largest |sigma-x| 0.76 on 45 nodes
+      bottom face, x 44.5..46.0: mean sigma-x -0.73, largest |sigma-x| 1.09 on 85 nodes
+      bottom face, x 46.0..47.0: mean sigma-x -0.85, largest |sigma-x| 1.48 on 53 nodes
+      on the hole wall (the fixed face): vm max (1.21, [-48.04, 1.93, -0.0]), largest |sigma-x| 2.10
+      0.2 to 0.6 mm off the wall: vm max (0.97, [-47.46, 2.0, 0.46]), largest |sigma-x| 1.22
+      0.6 to 1.5 mm off the wall: vm max (1.25, [-46.84, 1.84, 4.0]), largest |sigma-x| 1.54
+      ligaments beside the hole (|x-50| < 1, |y| 3.4..7): vm max (0.68, [-49.3, -3.91, -0.0]), largest |sigma-x| 0.55
+      outboard of the hole (x > 53.5): vm max (0.14, [-53.51, 2.6, -0.0]), largest |sigma-x| 0.13
+  D1_Z_15: nodes 58907, reaction [-0.0, -0.0, 9.0, 9.0], max disp 0.1581
+      box round the holes: vm max (1.56, [44.29, 6.8, 4.0])
+      top face, x 43.5..44.5: mean sigma-x 0.49, largest |sigma-x| 0.75 on 72 nodes
+      top face, x 44.5..46.0: mean sigma-x 0.73, largest |sigma-x| 1.16 on 143 nodes
+      top face, x 46.0..47.0: mean sigma-x 0.88, largest |sigma-x| 1.59 on 82 nodes
+      bottom face, x 43.5..44.5: mean sigma-x -0.50, largest |sigma-x| 0.77 on 75 nodes
+      bottom face, x 44.5..46.0: mean sigma-x -0.73, largest |sigma-x| 1.06 on 139 nodes
+      bottom face, x 46.0..47.0: mean sigma-x -0.87, largest |sigma-x| 1.55 on 82 nodes
+      on the hole wall (the fixed face): vm max (1.39, [-48.04, 1.93, 4.0]), largest |sigma-x| 2.31
+      0.2 to 0.6 mm off the wall: vm max (1.36, [-47.53, -2.24, -0.0]), largest |sigma-x| 1.59
+      0.6 to 1.5 mm off the wall: vm max (1.34, [-47.35, 2.11, 4.0]), largest |sigma-x| 1.58
+      ligaments beside the hole (|x-50| < 1, |y| 3.4..7): vm max (0.82, [-49.04, 3.52, -0.0]), largest |sigma-x| 0.62
+      outboard of the hole (x > 53.5): vm max (0.12, [53.58, -2.5, -0.0]), largest |sigma-x| 0.11
+  D1_Z_11: nodes 125748, reaction [-0.0, -0.0, 9.0, 9.0], max disp 0.1582
+      box round the holes: vm max (1.61, [-44.13, -7.09, -0.0])
+      top face, x 43.5..44.5: mean sigma-x 0.52, largest |sigma-x| 0.76 on 122 nodes
+      top face, x 44.5..46.0: mean sigma-x 0.76, largest |sigma-x| 1.12 on 237 nodes
+      top face, x 46.0..47.0: mean sigma-x 0.89, largest |sigma-x| 1.74 on 144 nodes
+      bottom face, x 43.5..44.5: mean sigma-x -0.51, largest |sigma-x| 0.77 on 133 nodes
+      bottom face, x 44.5..46.0: mean sigma-x -0.76, largest |sigma-x| 1.14 on 232 nodes
+      bottom face, x 46.0..47.0: mean sigma-x -0.89, largest |sigma-x| 1.66 on 143 nodes
+      on the hole wall (the fixed face): vm max (1.59, [47.71, -1.52, 4.0]), largest |sigma-x| 2.68
+      0.2 to 0.6 mm off the wall: vm max (1.5, [47.22, 1.55, 4.0]), largest |sigma-x| 1.74
+      0.6 to 1.5 mm off the wall: vm max (1.37, [-47.47, 2.51, 4.0]), largest |sigma-x| 1.34
+      ligaments beside the hole (|x-50| < 1, |y| 3.4..7): vm max (0.73, [-49.3, -3.61, 4.0]), largest |sigma-x| 0.55
+      outboard of the hole (x > 53.5): vm max (0.13, [-53.51, -3.96, 4.0]), largest |sigma-x| 0.11
+
+====== D2 convergence series: rows recomputed from the saved arrays
+  D2C_X_12: log mesh rc 0, 122208 nodes; arrays 122208 nodes; reaction [-300.0, -0.0, -0.0, 300.0]; the six Z-layer numbers match the row file: True ; screw tensions [41.3, 39.4, 48.1, 47.7] (row [41.3, 39.4, 48.1, 47.7]); max disp 0.735 (row 0.735); angles 9.97 / 56.09; excessive flag False
+  D2C_X_09: log mesh rc 0, 151706 nodes; arrays 151706 nodes; reaction [-300.0, -0.0, 0.0, 300.0]; the six Z-layer numbers match the row file: True ; screw tensions [41.4, 39.3, 47.8, 47.9] (row [41.4, 39.3, 47.8, 47.9]); max disp 0.703 (row 0.703); angles 10.98 / 56.48; excessive flag False
+  D2C_X_07: log mesh rc 0, 195921 nodes; arrays 195921 nodes; reaction [-300.0, 0.0, 0.0, 300.0]; the six Z-layer numbers match the row file: True ; screw tensions [41.3, 39.4, 48.0, 47.7] (row [41.3, 39.4, 48.0, 47.7]); max disp 0.831 (row 0.831); angles 11.58 / 56.24; excessive flag False
+  D2C_Y_12: log mesh rc 0, 122208 nodes; arrays 122208 nodes; reaction [0.0, -300.0, 0.0, 300.0]; the six Z-layer numbers match the row file: True ; screw tensions [76.1, 74.3, 75.1, 75.5] (row [76.1, 74.3, 75.1, 75.5]); max disp 0.094 (row 0.094); angles -0.42 / 14.31; excessive flag False
+  D2C_Y_09: log mesh rc 0, 151706 nodes; arrays 151706 nodes; reaction [0.0, -300.0, -0.0, 300.0]; the six Z-layer numbers match the row file: True ; screw tensions [76.1, 74.3, 75.2, 75.4] (row [76.1, 74.3, 75.2, 75.4]); max disp 0.094 (row 0.094); angles 0.34 / -4.84; excessive flag False
+  D2C_Y_07: log mesh rc 0, 195921 nodes; arrays 195921 nodes; reaction [0.0, -300.0, 0.0, 300.0]; the six Z-layer numbers match the row file: True ; screw tensions [76.1, 74.3, 75.1, 75.5] (row [76.1, 74.3, 75.1, 75.5]); max disp 0.094 (row 0.094); angles 0.08 / 4.87; excessive flag False
+  all 36 numbers recomputed from the arrays equal the row file: True
+
+====== D2: verdict
+  verdict: margin, not converged | lowest factor 4.17 at lower half, +X, shear
+    upper half, +X, vm                 [5.65, 5.9, 6.1] steps % [4.4, 3.4] factor 7.38 after two 6.9 -> pass
+    upper half, +X, layer              [0.89, 0.9, 0.71] steps % [1.1, -21.1] factor 31.69 after two 21.61 -> margin, not converged | steps growing x18.79: after two 0.08
+    upper half, +X, shear              [1.48, 1.37, 1.4] steps % [-7.4, 2.2] factor 9.29 after two 8.89 -> pass
+    lower half, +X, vm                 [5.17, 5.83, 6.49] steps % [12.8, 11.3] factor 6.93 after two 5.6 -> margin, not converged
+    lower half, +X, layer              [1.04, 1.0, 1.43] steps % [-3.8, 43.0] factor 15.73 after two 7.69 -> margin, not converged | steps growing x11.18: after two 0.05
+    lower half, +X, shear              [2.02, 2.43, 3.12] steps % [20.3, 28.4] factor 4.17 after two 2.53 -> margin, not converged | steps growing x1.4: after two 1.92
+    upper half, +Y, vm                 [4.6, 4.45, 4.59] steps % [-3.3, 3.1] factor 9.8 after two 9.21 -> pass
+    upper half, +Y, layer              [0.91, 0.9, 0.74] steps % [-1.1, -17.8] factor 30.41 after two 30.41 -> margin, not converged
+    upper half, +Y, shear              [1.31, 1.4, 1.81] steps % [6.9, 29.3] factor 7.18 after two 4.3 -> margin, not converged | steps growing x4.26: after two 0.51
+    lower half, +Y, vm                 [2.7, 2.66, 2.63] steps % [-1.5, -1.1] factor 17.11 after two 17.11 -> pass
+    lower half, +Y, layer              [0.77, 0.7, 0.67] steps % [-9.1, -4.3] factor 33.58 after two 33.58 -> pass
+    lower half, +Y, shear              [0.61, 0.58, 0.64] steps % [-4.9, 10.3] factor 20.31 after two 16.68 -> margin, not converged | steps growing x2.1: after two 11.44
+  helper judge() on the same series == results.json D2.judge: True
+
+====== D2: where the lower half peaks are, case X, and what is there
+  D2C_X_12: vm (5.17, [22.45, -14.34, 6.65]), layer (1.04, [28.09, -8.05, 6.42]), shear (2.02, [23.14, -12.84, 6.98])
+      shear peak node: 26.511 mm from the lower seat axis (seat radius 26.1), z 6.98 (ring faces at z 0 and 7, seat ends at -0.15 and 7.15), 60.8 deg from the lower crown; sigma-z there -0.56, vm 4.27
+      seat surface nodes (r < 26.15): vm 4.87, layer 0.55, shear 1.73 at [21.22, -15.09, -0.15]
+      seat nodes at or beyond the ring faces (r < 26.15, z under 0.05 or over 6.95): vm 3.92, layer 0.55, shear 1.73 at [21.22, -15.09, -0.15]
+      seat surface away from its rims (r < 26.15, z 1..6): vm 3.08, layer 0.3, shear 0.46 at [19.92, -16.76, 5.58]
+      0.5 mm or more inside the material and off the seat ends: vm 4.56, layer 1.04, shear 1.07 at [22.04, -14.83, 0.9]
+      1.0 mm or more inside: vm 3.55, layer 0.96, shear 0.61 at [22.03, -26.04, 1.51]
+  D2C_X_09: vm (5.83, [22.02, -14.42, 6.95]), layer (1.0, [28.09, -8.05, 6.42]), shear (2.43, [22.04, -14.51, 0.05])
+      shear peak node: 26.441 mm from the lower seat axis (seat radius 26.1), z 0.05 (ring faces at z 0 and 7, seat ends at -0.15 and 7.15), 56.5 deg from the lower crown; sigma-z there -0.84, vm 5.29
+      seat surface nodes (r < 26.15): vm 5.39, layer 0.95, shear 2.31 at [20.39, -16.2, 7.15]
+      seat nodes at or beyond the ring faces (r < 26.15, z under 0.05 or over 6.95): vm 4.89, layer 0.95, shear 2.31 at [20.39, -16.2, 7.15]
+      seat surface away from its rims (r < 26.15, z 1..6): vm 3.05, layer 0.32, shear 0.45 at [22.55, -13.04, 5.98]
+      0.5 mm or more inside the material and off the seat ends: vm 5.06, layer 1.0, shear 0.65 at [24.4, -10.94, 0.64]
+      1.0 mm or more inside: vm 3.61, layer 0.95, shear 0.65 at [26.15, -26.02, 1.71]
+  D2C_X_07: vm (6.49, [20.82, -16.01, 6.96]), layer (1.43, [19.48, -17.27, 7.15]), shear (3.12, [22.34, -13.81, 7.05])
+      shear peak node: 26.319 mm from the lower seat axis (seat radius 26.1), z 7.05 (ring faces at z 0 and 7, seat ends at -0.15 and 7.15), 58.1 deg from the lower crown; sigma-z there -1.12, vm 6.38
+      seat surface nodes (r < 26.15): vm 6.22, layer 1.43, shear 2.86 at [21.43, -14.8, -0.15]
+      seat nodes at or beyond the ring faces (r < 26.15, z under 0.05 or over 6.95): vm 5.86, layer 1.43, shear 2.86 at [21.43, -14.8, -0.15]
+      seat surface away from its rims (r < 26.15, z 1..6): vm 3.01, layer 0.35, shear 0.17 at [21.82, -14.22, 5.94]
+      0.5 mm or more inside the material and off the seat ends: vm 4.76, layer 0.98, shear 0.63 at [25.97, -26.0, 5.49]
+      1.0 mm or more inside: vm 3.48, layer 0.98, shear 0.63 at [25.97, -26.0, 5.49]
+  verdict: margin, not converged | lowest factor 9.45 at lower half 0.5 mm inside, +X, vm
+    lower half 0.5 mm inside, +X, vm   [4.56, 5.06, 4.76] steps % [11.0, -5.9] factor 9.45 after two 8.43 -> margin, not converged
+    lower half 0.5 mm inside, +X, layer [1.04, 1.0, 0.98] steps % [-3.8, -2.0] factor 22.96 after two 22.96 -> pass
+    lower half 0.5 mm inside, +X, shear [1.07, 0.65, 0.63] steps % [-39.3, -3.1] factor 20.63 after two 20.63 -> pass
+    lower half 0.5 mm inside, +Y, vm   [2.61, 2.61, 2.57] steps % [0.0, -1.5] factor 17.51 after two 17.51 -> pass
+    lower half 0.5 mm inside, +Y, layer [0.77, 0.65, 0.67] steps % [-15.6, 3.1] factor 33.58 after two 31.61 -> pass
+    lower half 0.5 mm inside, +Y, shear [0.61, 0.58, 0.64] steps % [-4.9, 10.3] factor 20.31 after two 16.68 -> margin, not converged | steps growing x2.1: after two 11.44
+  verdict: margin, not converged | lowest factor 12.93 at lower half 1.0 mm inside, +X, vm
+    lower half 1.0 mm inside, +X, vm   [3.55, 3.61, 3.48] steps % [1.7, -3.6] factor 12.93 after two 12.05 -> pass
+    lower half 1.0 mm inside, +X, layer [0.96, 0.95, 0.98] steps % [-1.0, 3.2] factor 22.96 after two 21.58 -> pass
+    lower half 1.0 mm inside, +X, shear [0.61, 0.65, 0.63] steps % [6.6, -3.1] factor 20.63 after two 19.42 -> pass
+    lower half 1.0 mm inside, +Y, vm   [2.61, 2.6, 2.57] steps % [-0.4, -1.2] factor 17.51 after two 17.51 -> pass
+    lower half 1.0 mm inside, +Y, layer [0.6, 0.6, 0.61] steps % [0.0, 1.7] factor 36.89 after two 35.69 -> pass
+    lower half 1.0 mm inside, +Y, shear [0.61, 0.58, 0.64] steps % [-4.9, 10.3] factor 20.31 after two 16.68 -> margin, not converged | steps growing x2.1: after two 11.44
+
+====== D2: the ring as a rigid body in the XY plane, and the nodes the split of the run files under the wrong body
+  D2_X_30: ring body is nodes 141946..151941 (9996); the mask calls 10254 nodes ring: 222 of them are seat nodes (|x| up to 2.49, 111 at the upper crown, 111 at the lower), 36 are pad or other nodes at the bore; ring-body nodes the mask misses: 0
+      upper seat nodes left out of the upper half: vm 0.08, layer -0.04, shear 0.04 | the upper half as the run read it: vm 6.13, layer 0.76, shear 1.41
+      lower seat nodes left out of the lower half: vm 0.43, layer 0.0, shear 0.06 | the lower half as the run read it: vm 5.13, layer 1.07, shear 2.23
+      ring body: largest |u| 0.5548 at [12.12, -23.0, 7.0] (model max 0.5548); rigid fit: translation [0.1348, 0.0698] mm, turn 0.888 deg (= 0.403 mm at r 26); rigid motion at that node 0.5547; residual mean 0.0000, max 0.0002; uz 0.0085..0.0089; ring vm max 24.57 MPa
+      with the mask of the run instead: turn 0.864 deg, residual mean 0.0203, max 0.5329
+      upper half largest |u| 0.2010;      lower half largest |u| 0.0528; pads largest |u| 0.4241
+  D2C_X_12: ring body is nodes 3059..13163 (10105); the mask calls 10361 nodes ring: 222 of them are seat nodes (|x| up to 2.49, 111 at the upper crown, 111 at the lower), 34 are pad or other nodes at the bore; ring-body nodes the mask misses: 0
+      upper seat nodes left out of the upper half: vm 0.08, layer -0.04, shear 0.03 | the upper half as the run read it: vm 5.65, layer 0.89, shear 1.48
+      lower seat nodes left out of the lower half: vm 0.42, layer 0.0, shear 0.06 | the lower half as the run read it: vm 5.17, layer 1.04, shear 2.02
+      ring body: largest |u| 0.7347 at [12.12, -23.0, 0.0] (model max 0.7347); rigid fit: translation [0.1347, 0.0698] mm, turn 1.285 deg (= 0.583 mm at r 26); rigid motion at that node 0.7347; residual mean 0.0001, max 0.0002; uz -0.0043..-0.0032; ring vm max 24.25 MPa
+      with the mask of the run instead: turn 1.253 deg, residual mean 0.0277, max 0.7083
+      upper half largest |u| 0.2009;      lower half largest |u| 0.0527; pads largest |u| 0.5592
+  D2C_X_09: ring body is nodes 39470..58122 (18653); the mask calls 19079 nodes ring: 390 of them are seat nodes (|x| up to 2.50, 195 at the upper crown, 195 at the lower), 36 are pad or other nodes at the bore; ring-body nodes the mask misses: 0
+      upper seat nodes left out of the upper half: vm 0.11, layer -0.04, shear 0.05 | the upper half as the run read it: vm 5.9, layer 0.9, shear 1.37
+      lower seat nodes left out of the lower half: vm 0.46, layer 0.0, shear 0.07 | the lower half as the run read it: vm 5.83, layer 1.0, shear 2.43
+      ring body: largest |u| 0.7032 at [12.08, -23.02, 0.0] (model max 0.7032); rigid fit: translation [0.1345, 0.0698] mm, turn 1.216 deg (= 0.552 mm at r 26); rigid motion at that node 0.7032; residual mean 0.0000, max 0.0002; uz -0.0051..-0.0048; ring vm max 26.42 MPa
+      with the mask of the run instead: turn 1.187 deg, residual mean 0.0251, max 0.6785
+      upper half largest |u| 0.2006;      lower half largest |u| 0.0525; pads largest |u| 0.5356
+  D2C_X_07: ring body is nodes 161931..192768 (30838); the mask calls 31540 nodes ring: 666 of them are seat nodes (|x| up to 2.44, 333 at the upper crown, 333 at the lower), 36 are pad or other nodes at the bore; ring-body nodes the mask misses: 0
+      upper seat nodes left out of the upper half: vm 0.1, layer -0.03, shear 0.05 | the upper half as the run read it: vm 6.1, layer 0.71, shear 1.4
+      lower seat nodes left out of the lower half: vm 0.45, layer 0.0, shear 0.08 | the lower half as the run read it: vm 6.49, layer 1.43, shear 3.12
+      ring body: largest |u| 0.8310 at [12.08, -23.02, 0.0] (model max 0.8310); rigid fit: translation [0.1344, 0.0697] mm, turn 1.497 deg (= 0.680 mm at r 26); rigid motion at that node 0.8309; residual mean 0.0000, max 0.0002; uz -0.0054..-0.0047; ring vm max 28.63 MPa
+      with the mask of the run instead: turn 1.461 deg, residual mean 0.0312, max 0.8025
+      upper half largest |u| 0.2006;      lower half largest |u| 0.0525; pads largest |u| 0.6311
+  D2C_Y_12: ring body is nodes 3059..13163 (10105); the mask calls 10361 nodes ring: 222 of them are seat nodes (|x| up to 2.49, 111 at the upper crown, 111 at the lower), 34 are pad or other nodes at the bore; ring-body nodes the mask misses: 0
+      upper seat nodes left out of the upper half: vm 0.84, layer -0.04, shear 0.07 | the upper half as the run read it: vm 4.6, layer 0.91, shear 1.31
+      lower seat nodes left out of the lower half: vm 0.01, layer 0.01, shear 0.0 | the lower half as the run read it: vm 2.7, layer 0.77, shear 0.61
+      ring body: largest |u| 0.0930 at [-26.0, 0.0, 7.0] (model max 0.0944); rigid fit: translation [-0.0001, 0.0927] mm, turn -0.000 deg (= 0.000 mm at r 26); rigid motion at that node 0.0929; residual mean 0.0000, max 0.0001; uz -0.0020..-0.0016; ring vm max 13.51 MPa
+      with the mask of the run instead: turn -0.000 deg, residual mean 0.0020, max 0.0917
+      upper half largest |u| 0.0944;      lower half largest |u| 0.0167; pads largest |u| 0.0831
+  D2C_Y_09: ring body is nodes 39470..58122 (18653); the mask calls 19079 nodes ring: 390 of them are seat nodes (|x| up to 2.50, 195 at the upper crown, 195 at the lower), 36 are pad or other nodes at the bore; ring-body nodes the mask misses: 0
+      upper seat nodes left out of the upper half: vm 0.89, layer -0.03, shear 0.06 | the upper half as the run read it: vm 4.45, layer 0.9, shear 1.4
+      lower seat nodes left out of the lower half: vm 0.02, layer 0.01, shear 0.0 | the lower half as the run read it: vm 2.66, layer 0.7, shear 0.58
+      ring body: largest |u| 0.0934 at [26.0, 0.0, 7.0] (model max 0.0943); rigid fit: translation [-0.0001, 0.0926] mm, turn 0.002 deg (= 0.001 mm at r 26); rigid motion at that node 0.0934; residual mean 0.0000, max 0.0001; uz -0.0032..-0.0026; ring vm max 15.61 MPa
+      with the mask of the run instead: turn 0.002 deg, residual mean 0.0019, max 0.0918
+      upper half largest |u| 0.0943;      lower half largest |u| 0.0167; pads largest |u| 0.0832
+  D2C_Y_07: ring body is nodes 161931..192768 (30838); the mask calls 31540 nodes ring: 666 of them are seat nodes (|x| up to 2.44, 333 at the upper crown, 333 at the lower), 36 are pad or other nodes at the bore; ring-body nodes the mask misses: 0
+      upper seat nodes left out of the upper half: vm 0.92, layer -0.01, shear 0.08 | the upper half as the run read it: vm 4.59, layer 0.74, shear 1.81
+      lower seat nodes left out of the lower half: vm 0.02, layer 0.01, shear 0.0 | the lower half as the run read it: vm 2.63, layer 0.67, shear 0.64
+      ring body: largest |u| 0.0937 at [-26.0, 0.0, 7.0] (model max 0.0942); rigid fit: translation [-0.0002, 0.0926] mm, turn -0.002 deg (= 0.001 mm at r 26); rigid motion at that node 0.0936; residual mean 0.0000, max 0.0001; uz -0.0019..-0.0015; ring vm max 16.99 MPa
+      with the mask of the run instead: turn -0.002 deg, residual mean 0.0019, max 0.0917
+      upper half largest |u| 0.0942;      lower half largest |u| 0.0167; pads largest |u| 0.0829
+
+====== D2: both halves read 1.0 mm in from the seat surface and the seat ends, upper half with the wider zone round the heads
+  verdict: margin, not converged | lowest factor 12.93 at upper half 1 mm in, +X, vm
+    upper half 1 mm in, +X, vm         [3.46, 3.45, 3.48] steps % [-0.3, 0.9] factor 12.93 after two 12.71 -> pass
+    upper half 1 mm in, +X, layer      [0.35, 0.38, 0.34] steps % [8.6, -10.5] factor 66.18 after two 54.17 -> margin, not converged | steps growing x1.23: after two 50.57
+    upper half 1 mm in, +X, shear      [0.91, 0.9, 0.91] steps % [-1.1, 1.1] factor 14.29 after two 13.97 -> pass
+    lower half 1 mm in, +X, vm         [3.55, 3.61, 3.48] steps % [1.7, -3.6] factor 12.93 after two 12.05 -> pass
+    lower half 1 mm in, +X, layer      [0.96, 0.95, 0.98] steps % [-1.0, 3.2] factor 22.96 after two 21.58 -> pass
+    lower half 1 mm in, +X, shear      [0.61, 0.65, 0.63] steps % [6.6, -3.1] factor 20.63 after two 19.42 -> pass
+    upper half 1 mm in, +Y, vm         [2.73, 2.76, 2.77] steps % [1.1, 0.4] factor 16.25 after two 16.13 -> pass
+    upper half 1 mm in, +Y, layer      [0.34, 0.33, 0.33] steps % [-2.9, 0.0] factor 68.18 after two 68.18 -> pass
+    upper half 1 mm in, +Y, shear      [0.44, 0.44, 0.44] steps % [0.0, 0.0] factor 29.55 after two 29.55 -> pass
+    lower half 1 mm in, +Y, vm         [2.61, 2.6, 2.57] steps % [-0.4, -1.2] factor 17.51 after two 17.51 -> pass
+    lower half 1 mm in, +Y, layer      [0.6, 0.6, 0.61] steps % [0.0, 1.7] factor 36.89 after two 35.69 -> pass
+    lower half 1 mm in, +Y, shear      [0.61, 0.58, 0.64] steps % [-4.9, 10.3] factor 20.31 after two 16.68 -> margin, not converged | steps growing x2.1: after two 11.44
+  D2C_X_12: upper half as the run read it: shear (1.48, [-27.84, 27.38, 1.83]), 39.12 mm from the upper seat axis; vm (5.65, [-27.49, 27.39, 0.49]); layer (0.89, [-27.87, 28.82, 3.2])
+  D2C_X_09: upper half as the run read it: shear (1.37, [-28.05, 27.37, -2.18]), 39.26 mm from the upper seat axis; vm (5.9, [-27.65, 27.48, 0.97]); layer (0.9, [-28.25, 29.13, 3.38])
+  D2C_X_07: upper half as the run read it: shear (1.4, [-27.8, 27.46, 1.82]), 39.15 mm from the upper seat axis; vm (6.1, [-27.8, 27.46, 7.99]); layer (0.71, [-31.55, 27.11, 7.7])
+  D2C_Y_12: upper half as the run read it: shear (1.31, [-18.06, 18.74, -0.15]), 26.10 mm from the upper seat axis; vm (4.6, [27.34, 27.47, -0.01]); layer (0.91, [-27.87, 28.82, 3.2])
+  D2C_Y_09: upper half as the run read it: shear (1.4, [20.39, 16.2, -0.15]), 26.10 mm from the upper seat axis; vm (4.45, [27.31, 27.4, 0.55]); layer (0.9, [-28.18, 28.76, 3.57])
+  D2C_Y_07: upper half as the run read it: shear (1.81, [-18.77, 18.04, 7.15]), 26.10 mm from the upper seat axis; vm (4.59, [-27.8, 27.46, 7.99]); layer (0.74, [-28.42, 28.79, 3.55])

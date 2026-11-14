@@ -1,0 +1,346 @@
+03:40:40 SolidWorks pid 18908 free GB 21.4
+03:40:40 P1 hand checks {'min_wall_mm': 1.0, 'min_wall_at': 'cbB0-outside', 'counterbore_floor_from_bottom_mm': 3.0, 'walls_below_0p6': [], 'floor_ok': True}
+03:40:42 ok BASE volume change: 18849.5559 (expected 18849.5559)
+03:40:42 BASE: added 18849.56 mm3
+03:40:43 ok HA volume change: 326.8513 (expected 326.8513)
+03:40:43 HA: cut 326.85 mm3
+03:40:43 ok HB volume change: 381.7035 (expected 381.7035)
+03:40:43 HB: cut 381.70 mm3
+03:40:43 ok P1 one top face: 1.0000 (expected 1.0000)
+03:40:44 ok CB volume change: 412.3340 (expected 412.3340)
+03:40:44 CB: cut 412.33 mm3
+03:40:44 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d3\P1.stl 130584 bytes
+03:40:44 P1 {'volume_sw_mm3': 17728.67, 'volume_hand_mm3': 17728.67, 'volume_diff_pct': 0.0, 'mass_g': 21.1, 'bodies': 1, 'stl_watertight': True, 'stl_bodies': 1, 'stl_volume_mm3': 17711.82, 'box': [-35.0, -35.0, 0.0, 35.0, 35.0, 6.0]}
+03:40:44 P2 hand checks {'min_wall_mm': 7.0, 'min_wall_at': 'cbB0-outside', 'counterbore_floor_from_bottom_mm': 3.0, 'walls_below_0p6': [], 'floor_ok': True}
+03:40:45 ok BASE volume change: 25710.7943 (expected 25710.7943)
+03:40:45 BASE: added 25710.79 mm3
+03:40:46 ok HA volume change: 572.5553 (expected 572.5553)
+03:40:46 HA: cut 572.56 mm3
+03:40:46 ok HB volume change: 572.5553 (expected 572.5553)
+03:40:46 HB: cut 572.56 mm3
+03:40:47 ok P2 one top face: 1.0000 (expected 1.0000)
+03:40:47 ok CB volume change: 618.5011 (expected 618.5011)
+03:40:47 CB: cut 618.50 mm3
+03:40:47 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d3\P2.stl 161484 bytes
+03:40:47 P2 {'volume_sw_mm3': 23947.18, 'volume_hand_mm3': 23947.18, 'volume_diff_pct': 0.0, 'mass_g': 28.5, 'bodies': 1, 'stl_watertight': True, 'stl_bodies': 1, 'stl_volume_mm3': 23925.57, 'box': [-42.0, -42.0, 0.0, 42.0, 42.0, 6.0]}
+03:40:47 P3 hand checks {'min_wall_mm': 1.0, 'min_wall_at': 'cbB0-outside', 'counterbore_floor_from_bottom_mm': 4.0, 'walls_below_0p6': [], 'floor_ok': True}
+03:40:48 ok BASE volume change: 40916.1027 (expected 40916.1027)
+03:40:48 BASE: added 40916.10 mm3
+03:40:49 ok HA volume change: 581.0690 (expected 581.0690)
+03:40:49 HA: cut 581.07 mm3
+03:40:49 ok HB volume change: 760.2654 (expected 760.2654)
+03:40:49 HB: cut 760.27 mm3
+03:40:49 ok P3 one top face: 1.0000 (expected 1.0000)
+03:40:49 ok CB volume change: 876.5044 (expected 876.5044)
+03:40:49 CB: cut 876.50 mm3
+03:40:50 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d3\P3.stl 149484 bytes
+03:40:50 P3 {'volume_sw_mm3': 38698.26, 'volume_hand_mm3': 38698.26, 'volume_diff_pct': 0.0, 'mass_g': 46.05, 'bodies': 1, 'stl_watertight': True, 'stl_bodies': 1, 'stl_volume_mm3': 38662.24, 'box': [-48.0, -48.0, 0.0, 48.0, 48.0, 8.0]}
+03:40:50 P4 hand checks {'min_wall_mm': 1.0, 'min_wall_at': 'cbB0-outside', 'counterbore_floor_from_bottom_mm': 1.0, 'walls_below_0p6': [], 'floor_ok': True}
+03:40:51 ok BASE volume change: 15079.6447 (expected 15079.6447)
+03:40:51 BASE: added 15079.64 mm3
+03:40:52 ok HA volume change: 181.5841 (expected 181.5841)
+03:40:52 HA: cut 181.58 mm3
+03:40:52 ok HB volume change: 477.1294 (expected 477.1294)
+03:40:52 HB: cut 477.13 mm3
+03:40:52 ok P4 one top face: 1.0000 (expected 1.0000)
+03:40:52 ok CB volume change: 824.6681 (expected 824.6681)
+03:40:52 CB: cut 824.67 mm3
+03:40:52 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d3\P4.stl 145384 bytes
+03:40:52 P4 {'volume_sw_mm3': 13596.26, 'volume_hand_mm3': 13596.26, 'volume_diff_pct': 0.0, 'mass_g': 16.18, 'bodies': 1, 'stl_watertight': True, 'stl_bodies': 1, 'stl_volume_mm3': 13585.36, 'box': [-34.0, -34.0, 0.0, 34.0, 34.0, 5.0]}
+03:40:52 P5 hand checks {'min_wall_mm': 2.5, 'min_wall_at': 'cbB0-outside', 'counterbore_floor_from_bottom_mm': 3.0, 'walls_below_0p6': [], 'floor_ok': True}
+03:40:53 ok BASE volume change: 67858.4013 (expected 67858.4013)
+03:40:53 BASE: added 67858.40 mm3
+03:40:54 ok HA volume change: 1526.8140 (expected 1526.8140)
+03:40:54 HA: cut 1526.81 mm3
+03:40:55 ok HB volume change: 1642.1733 (expected 1642.1733)
+03:40:55 HB: cut 1642.17 mm3
+03:40:55 ok P5 one top face: 1.0000 (expected 1.0000)
+03:40:55 ok CB volume change: 1824.6370 (expected 1824.6370)
+03:40:55 CB: cut 1824.64 mm3
+03:40:55 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d3\P5.stl 219084 bytes
+03:40:55 P5 {'volume_sw_mm3': 62864.78, 'volume_hand_mm3': 62864.78, 'volume_diff_pct': 0.0, 'mass_g': 74.81, 'bodies': 1, 'stl_watertight': True, 'stl_bodies': 1, 'stl_volume_mm3': 62817.75, 'box': [-60.0, -60.0, 0.0, 60.0, 60.0, 8.0]}
+03:40:55 P6 hand checks {'min_wall_mm': 2.0, 'min_wall_at': 'cbB0-outside', 'counterbore_floor_from_bottom_mm': 3.0, 'walls_below_0p6': [], 'floor_ok': True}
+03:40:56 ok BASE volume change: 21771.2371 (expected 21771.2371)
+03:40:56 BASE: added 21771.24 mm3
+03:40:57 ok HA volume change: 326.8513 (expected 326.8513)
+03:40:57 HA: cut 326.85 mm3
+03:40:57 ok HB volume change: 286.2776 (expected 286.2776)
+03:40:57 HB: cut 286.28 mm3
+03:40:57 ok P6 one top face: 1.0000 (expected 1.0000)
+03:40:57 ok CB volume change: 309.2505 (expected 309.2505)
+03:40:57 CB: cut 309.25 mm3
+03:40:58 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d3\P6.stl 115684 bytes
+03:40:58 P6 {'volume_sw_mm3': 20848.86, 'volume_hand_mm3': 20848.86, 'volume_diff_pct': -0.0, 'mass_g': 24.81, 'bodies': 1, 'stl_watertight': True, 'stl_bodies': 1, 'stl_volume_mm3': 20827.26, 'box': [-38.0, -38.0, 0.0, 38.0, 38.0, 6.0]}
+03:40:58 closing pid 18908 committed MB 1849
+{
+  "P1": {
+    "as_built": {
+      "od": 70,
+      "t": 6,
+      "bore": 30,
+      "A": [
+        6,
+        3.4,
+        50
+      ],
+      "B": [
+        4,
+        4.5,
+        60,
+        8,
+        3
+      ],
+      "turnA": 0,
+      "turnB": 45,
+      "ch": 0.5
+    },
+    "hand_checks": {
+      "min_wall_mm": 1.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 17728.67,
+    "volume_hand_mm3": 17728.67,
+    "volume_diff_pct": 0.0,
+    "mass_g": 21.1,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 17711.82,
+    "box": [
+      -35.0,
+      -35.0,
+      0.0,
+      35.0,
+      35.0,
+      6.0
+    ]
+  },
+  "P2": {
+    "as_built": {
+      "od": 84,
+      "t": 6,
+      "bore": 40,
+      "A": [
+        6,
+        4.5,
+        62
+      ],
+      "B": [
+        6,
+        4.5,
+        62,
+        8,
+        3
+      ],
+      "turnA": 0,
+      "turnB": 30,
+      "ch": 1.0
+    },
+    "hand_checks": {
+      "min_wall_mm": 7.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 23947.18,
+    "volume_hand_mm3": 23947.18,
+    "volume_diff_pct": 0.0,
+    "mass_g": 28.5,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 23925.57,
+    "box": [
+      -42.0,
+      -42.0,
+      0.0,
+      42.0,
+      42.0,
+      6.0
+    ]
+  },
+  "P3": {
+    "as_built": {
+      "od": 96,
+      "t": 8,
+      "bore": 52,
+      "A": [
+        8,
+        3.4,
+        66
+      ],
+      "B": [
+        4,
+        5.5,
+        84,
+        10,
+        4
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 0.5
+    },
+    "hand_checks": {
+      "min_wall_mm": 1.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 4.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 38698.26,
+    "volume_hand_mm3": 38698.26,
+    "volume_diff_pct": 0.0,
+    "mass_g": 46.05,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 38662.24,
+    "box": [
+      -48.0,
+      -48.0,
+      0.0,
+      48.0,
+      48.0,
+      8.0
+    ]
+  },
+  "P4": {
+    "as_built": {
+      "od": 68,
+      "t": 5,
+      "bore": 28,
+      "A": [
+        4,
+        3.4,
+        40
+      ],
+      "B": [
+        6,
+        4.5,
+        58,
+        8,
+        4.0
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 0.5
+    },
+    "hand_checks": {
+      "min_wall_mm": 1.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 1.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 13596.26,
+    "volume_hand_mm3": 13596.26,
+    "volume_diff_pct": 0.0,
+    "mass_g": 16.18,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 13585.36,
+    "box": [
+      -34.0,
+      -34.0,
+      0.0,
+      34.0,
+      34.0,
+      5.0
+    ]
+  },
+  "P5": {
+    "as_built": {
+      "od": 120,
+      "t": 8,
+      "bore": 60,
+      "A": [
+        12,
+        4.5,
+        80
+      ],
+      "B": [
+        6,
+        6.6,
+        104,
+        11,
+        5
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 1.0
+    },
+    "hand_checks": {
+      "min_wall_mm": 2.5,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 62864.78,
+    "volume_hand_mm3": 62864.78,
+    "volume_diff_pct": 0.0,
+    "mass_g": 74.81,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 62817.75,
+    "box": [
+      -60.0,
+      -60.0,
+      0.0,
+      60.0,
+      60.0,
+      8.0
+    ]
+  },
+  "P6": {
+    "as_built": {
+      "od": 76,
+      "t": 6,
+      "bore": 34,
+      "A": [
+        6,
+        3.4,
+        46
+      ],
+      "B": [
+        3,
+        4.5,
+        64,
+        8,
+        3
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 1.0
+    },
+    "hand_checks": {
+      "min_wall_mm": 2.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 20848.86,
+    "volume_hand_mm3": 20848.86,
+    "volume_diff_pct": -0.0,
+    "mass_g": 24.81,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 20827.26,
+    "box": [
+      -38.0,
+      -38.0,
+      0.0,
+      38.0,
+      38.0,
+      6.0
+    ]
+  }
+}

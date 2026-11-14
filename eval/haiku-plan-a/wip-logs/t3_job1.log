@@ -1,0 +1,88 @@
+14:00:44 SolidWorks pid 120588 free GB 23.3
+14:00:50 ok PRESSPAD volume change: 38.4845 (expected 38.4845)
+14:00:50 PRESSPAD: added 38.48 mm3
+14:00:52 ok PRESSPAD volume change: 38.4845 (expected 38.4845)
+14:00:52 PRESSPAD: added 38.48 mm3
+14:00:53 ok PRESSPAD volume change: 38.4845 (expected 38.4845)
+14:00:53 PRESSPAD: added 38.48 mm3
+14:00:55 ok PRESSPAD volume change: 38.4845 (expected 38.4845)
+14:00:55 PRESSPAD: added 38.48 mm3
+14:00:56 ok WASHER volume change: 78.5398 (expected 78.5398)
+14:00:56 WASHER: added 78.54 mm3
+14:00:57 ok WASHER volume change: 78.5398 (expected 78.5398)
+14:00:57 WASHER: added 78.54 mm3
+14:00:58 ok WASHER volume change: 78.5398 (expected 78.5398)
+14:00:58 WASHER: added 78.54 mm3
+14:01:00 ok WASHER volume change: 78.5398 (expected 78.5398)
+14:01:00 WASHER: added 78.54 mm3
+14:01:01 [('MOTOR_HOLES', 32974.02, [0.0, -0.0, 0.0, 80.0, 50.0, 46.0]), ('<pad_1>-<PRESSPAD>', 38.48, [-1.0, 10.54, 13.54, 0.0, 17.54, 20.54]), ('<pad_2>-<PRESSPAD>', 38.48, [-1.0, 32.46, 13.54, 0.0, 39.46, 20.54]), ('<pad_3>-<PRESSPAD>', 38.48, [-1.0, 10.54, 35.46, 0.0, 17.54, 42.46]), ('<pad_4>-<PRESSPAD>', 38.48, [-1.0, 32.46, 35.46, 0.0, 39.46, 42.46])]
+14:01:01 ok bodies in bracket_ld.SLDPRT: 5
+14:01:01 ok bracket body is the same part: 32974.0200 (expected 32974.0242)
+14:01:03 [('<pad_1>-<PRESSPAD>', 38.48, [-1.0, 10.54, 13.54, 0.0, 17.54, 20.54]), ('<pad_2>-<PRESSPAD>', 38.48, [-1.0, 32.46, 13.54, 0.0, 39.46, 20.54]), ('<pad_3>-<PRESSPAD>', 38.48, [-1.0, 10.54, 35.46, 0.0, 17.54, 42.46]), ('<pad_4>-<PRESSPAD>', 38.48, [-1.0, 32.46, 35.46, 0.0, 39.46, 42.46]), ('<washer_1>-<WASHER>', 78.54, [20.0, 5.0, 6.0, 30.0, 15.0, 7.0]), ('<washer_2>-<WASHER>', 78.54, [20.0, 35.0, 6.0, 30.0, 45.0, 7.0]), ('<washer_3>-<WASHER>', 78.54, [60.0, 5.0, 6.0, 70.0, 15.0, 7.0]), ('<washer_4>-<WASHER>', 78.54, [60.0, 35.0, 6.0, 70.0, 45.0, 7.0]), ('MOTOR_HOLES', 32974.02, [0.0, -0.0, 0.0, 80.0, 50.0, 46.0])]
+14:01:03 ok bodies in bracket_ld_w.SLDPRT: 9
+14:01:03 ok bracket body is the same part: 32974.0200 (expected 32974.0242)
+14:01:03 PREDICT T3_PADS_30: nodes 22000, max displacement 2.5 mm, peak expected at back face at the lower motor holes (y 14.04 / 35.96, z 17.04), layer tension about 16 MPa
+14:01:03 ok base hole walls: 4
+14:01:03 ok bore: 1
+14:01:03 ok motor holes: 4
+14:01:03 ok pad outer faces: 4
+14:01:03 ok root fillet: 1
+14:01:04 T3_PADS_30: body "SolidBody 1(MOTOR_HOLES)" is PETG printed
+14:01:04 T3_PADS_30: body "SolidBody 2(<pad_4>-<PRESSPAD>)" is Pressure pad
+14:01:04 T3_PADS_30: body "SolidBody 3(<pad_3>-<PRESSPAD>)" is Pressure pad
+14:01:04 T3_PADS_30: body "SolidBody 4(<pad_2>-<PRESSPAD>)" is Pressure pad
+14:01:04 T3_PADS_30: body "SolidBody 5(<pad_1>-<PRESSPAD>)" is Pressure pad
+14:01:05 T3_PADS_30: mesh rc 0, 42611 nodes, 26456 elements, free 22.9 GB
+14:01:10 T3_PADS_30: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+14:01:10 T3_PADS_30: load nodes 224, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+14:01:12 COMPARE T3_PADS_30: nodes 42611 (predicted 22000), max displacement 2.835003614425659 (predicted 2.5)
+14:01:12 T3_PADS_30 {"study": "T3_PADS_30", "el": 3.0, "nodes": 42611, "D": 3.0, "table": {"X": {"vm": 19.25, "vm_at": [6.0, 34.35, 17.59], "sf_yield": 2.34, "layer": 15.46, "layer_at": [18.29, 10.18, 0.0], "sf_layer": 1.46, "shear": 7.1, "shear_at": [7.53, 15.43, 6.85], "sf_shear": 1.83}, "Y": {"vm": 19.25, "vm_at": [6.0, 34.35, 17.59], "sf_yield": 2.34, "layer": 6.94, "layer_at": [5.1, 35.98, 18.74], "sf_layer": 3.24, "shear": 6.97, "shear_at": [5.57, 34.46, 17.83], "sf_shear": 1.86}, "Z": {"vm": 19.25, "vm_at": [6.0, 34.35, 17.59], "sf_yield": 2.34, "layer": 13.97, "layer_at": [0.5, 37.66, 16.95], "sf_layer": 1.61, "shear": 7.09, "shear_at": [7.53, 15.43, 6.85], "sf_shear": 1.83}}, "rim_layer_z": 13.97, "rim_vm": 19.25, "vm_all": 23.54, "plateau": {"1": [21.2, 13.97], "2": [19.48, 13.97], "3": [19.25, 13.97], "5": [19.25, 13.97]}, "flat": [3.0, 42611, 19.25, 13.97, 7.09], "checks": {"reaction": [-149.999, 0.005, 0.002, 149.999], "applied": 150.0, "max_disp": 2.835003614425659, "excessive": false, "top_ux": 2.7177489750257884, "sz_back_z12": 8.442926659303552, "sx_bottom_x15": 12.030664726307517, "nodes_in_checks": [34, 152]}, "compare_ok": true, "checks_full": {"reaction": [-149.999, 0.005, 0.002, 149.999], "applied": 150.0, "max_disp": 2.835003614425659, "excessive": false, "top_ux": 2.7177489750257884, "sz_back_z12": 8.442926659303552, "sx_bottom_x15": 12.030664726307517, "nodes_in_checks": [34, 152]}}
+14:01:12 PREDICT T3_PADS_22: nodes 56000, max displacement 2.5 mm, peak expected at back face at the lower motor holes (y 14.04 / 35.96, z 17.04), layer tension about 16 MPa
+14:01:12 ok base hole walls: 4
+14:01:12 ok bore: 1
+14:01:12 ok motor holes: 4
+14:01:12 ok pad outer faces: 4
+14:01:12 ok root fillet: 1
+14:01:12 T3_PADS_22: body "SolidBody 1(MOTOR_HOLES)" is PETG printed
+14:01:12 T3_PADS_22: body "SolidBody 2(<pad_4>-<PRESSPAD>)" is Pressure pad
+14:01:12 T3_PADS_22: body "SolidBody 3(<pad_3>-<PRESSPAD>)" is Pressure pad
+14:01:12 T3_PADS_22: body "SolidBody 4(<pad_2>-<PRESSPAD>)" is Pressure pad
+14:01:12 T3_PADS_22: body "SolidBody 5(<pad_1>-<PRESSPAD>)" is Pressure pad
+14:01:14 T3_PADS_22: mesh rc 0, 85355 nodes, 54795 elements, free 22.9 GB
+14:01:27 T3_PADS_22: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+14:01:27 T3_PADS_22: load nodes 256, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+14:01:34 COMPARE T3_PADS_22: nodes 85355 (predicted 56000), max displacement 2.8415887355804443 (predicted 2.5)
+14:01:34 T3_PADS_22 {"study": "T3_PADS_22", "el": 2.2, "nodes": 85355, "D": 3.0, "table": {"X": {"vm": 21.02, "vm_at": [0.0, 12.38, 16.68], "sf_yield": 2.14, "layer": 15.88, "layer_at": [18.99, 9.53, 0.0], "sf_layer": 1.42, "shear": 7.15, "shear_at": [7.41, 13.62, 6.95], "sf_shear": 1.82}, "Y": {"vm": 21.02, "vm_at": [0.0, 12.38, 16.68], "sf_yield": 2.14, "layer": 8.05, "layer_at": [5.68, 36.15, 18.73], "sf_layer": 2.79, "shear": 6.61, "shear_at": [5.68, 34.52, 17.94], "sf_shear": 1.97}, "Z": {"vm": 21.02, "vm_at": [0.0, 12.38, 16.68], "sf_yield": 2.14, "layer": 14.33, "layer_at": [0.38, 37.66, 17.08], "sf_layer": 1.57, "shear": 7.15, "shear_at": [7.41, 11.38, 6.95], "sf_shear": 1.82}}, "rim_layer_z": 14.33, "rim_vm": 21.02, "vm_all": 24.08, "plateau": {"1": [22.24, 14.33], "2": [21.02, 14.33], "3": [21.02, 14.33], "5": [21.02, 14.33]}, "flat": [2.2, 85355, 21.02, 14.33, 7.15], "checks": {"reaction": [-149.996, -0.001, -0.001, 149.996], "applied": 150.0, "max_disp": 2.8415887355804443, "excessive": false, "top_ux": 2.7210033907661577, "sz_back_z12": 8.106307226068834, "sx_bottom_x15": 12.063584926881289, "nodes_in_checks": [51, 304]}, "compare_ok": true, "checks_full": {"reaction": [-149.996, -0.001, -0.001, 149.996], "applied": 150.0, "max_disp": 2.8415887355804443, "excessive": false, "top_ux": 2.7210033907661577, "sz_back_z12": 8.106307226068834, "sx_bottom_x15": 12.063584926881289, "nodes_in_checks": [51, 304]}}
+14:01:34 PREDICT T3_REMOTE: nodes 56000, max displacement 2.5 mm, peak expected at back face at the lower motor holes (y 14.04 / 35.96, z 17.04), layer tension about 16 MPa
+14:01:34 ok base hole walls: 4
+14:01:34 ok bore: 1
+14:01:34 ok motor holes: 4
+14:01:34 ok pad outer faces: 4
+14:01:34 ok root fillet: 1
+14:01:34 T3_REMOTE: body "SolidBody 1(MOTOR_HOLES)" is PETG printed
+14:01:34 T3_REMOTE: body "SolidBody 2(<pad_4>-<PRESSPAD>)" is Pressure pad
+14:01:34 T3_REMOTE: body "SolidBody 3(<pad_3>-<PRESSPAD>)" is Pressure pad
+14:01:34 T3_REMOTE: body "SolidBody 4(<pad_2>-<PRESSPAD>)" is Pressure pad
+14:01:34 T3_REMOTE: body "SolidBody 5(<pad_1>-<PRESSPAD>)" is Pressure pad
+14:01:36 T3_REMOTE: mesh rc 0, 85355 nodes, 54795 elements, free 22.9 GB
+14:01:50 T3_REMOTE: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+14:01:50 T3_REMOTE: load nodes 3492, box [0.0, 14.0, 17.0] to [6.0, 36.0, 39.0]
+14:01:56 COMPARE T3_REMOTE: nodes 85355 (predicted 56000), max displacement 2.356501817703247 (predicted 2.5)
+14:01:56 T3_REMOTE {"study": "T3_REMOTE", "el": 2.2, "nodes": 85355, "D": 3.0, "table": {"X": {"vm": 15.78, "vm_at": [18.97, 40.5, 6.0], "sf_yield": 2.85, "layer": 15.87, "layer_at": [18.99, 9.53, 0.0], "sf_layer": 1.42, "shear": 7.26, "shear_at": [7.41, 24.44, 6.95], "sf_shear": 1.79}, "Y": {"vm": 15.78, "vm_at": [18.97, 40.5, 6.0], "sf_yield": 2.85, "layer": 7.84, "layer_at": [0.0, 24.63, 17.01], "sf_layer": 2.87, "shear": 4.43, "shear_at": [6.0, 15.33, 15.93], "sf_shear": 2.94}, "Z": {"vm": 15.78, "vm_at": [18.97, 40.5, 6.0], "sf_yield": 2.85, "layer": 13.35, "layer_at": [0.0, 24.63, 17.01], "sf_layer": 1.68, "shear": 7.26, "shear_at": [7.41, 24.44, 6.95], "sf_shear": 1.79}}, "rim_layer_z": 9.72, "rim_vm": 10.55, "vm_all": 23.96, "plateau": {"1": [22.23, 13.35], "2": [18.24, 13.35], "3": [15.78, 13.35], "5": [15.64, 13.35]}, "flat": [2.2, 85355, 15.78, 13.35, 7.26], "checks": {"reaction": [-150.0, -0.0, 0.0, 150.0], "applied": 150.0, "max_disp": 2.356501817703247, "excessive": false, "top_ux": 2.262020163870386, "sz_back_z12": 8.02399740967096, "sx_bottom_x15": 12.05948136041039, "nodes_in_checks": [51, 304]}, "compare_ok": true, "checks_full": {"reaction": [-150.0, -0.0, 0.0, 150.0], "applied": 150.0, "max_disp": 2.356501817703247, "excessive": false, "top_ux": 2.262020163870386, "sz_back_z12": 8.02399740967096, "sx_bottom_x15": 12.05948136041039, "nodes_in_checks": [51, 304]}}
+14:01:56 PREDICT T3_PADS_16: nodes 145000, max displacement 2.5 mm, peak expected at back face at the lower motor holes (y 14.04 / 35.96, z 17.04), layer tension about 16 MPa
+14:01:57 ok base hole walls: 4
+14:01:57 ok bore: 1
+14:01:57 ok motor holes: 4
+14:01:57 ok pad outer faces: 4
+14:01:57 ok root fillet: 1
+14:01:57 T3_PADS_16: body "SolidBody 1(MOTOR_HOLES)" is PETG printed
+14:01:57 T3_PADS_16: body "SolidBody 2(<pad_4>-<PRESSPAD>)" is Pressure pad
+14:01:57 T3_PADS_16: body "SolidBody 3(<pad_3>-<PRESSPAD>)" is Pressure pad
+14:01:57 T3_PADS_16: body "SolidBody 4(<pad_2>-<PRESSPAD>)" is Pressure pad
+14:01:57 T3_PADS_16: body "SolidBody 5(<pad_1>-<PRESSPAD>)" is Pressure pad
+14:02:00 T3_PADS_16: mesh rc 0, 183846 nodes, 121731 elements, free 22.8 GB
+14:02:48 T3_PADS_16: fixture nodes 776, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+14:02:48 T3_PADS_16: load nodes 312, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+14:03:15 COMPARE T3_PADS_16: nodes 183846 (predicted 145000), max displacement 2.844458818435669 (predicted 2.5)
+14:03:15 T3_PADS_16 {"study": "T3_PADS_16", "el": 1.6, "nodes": 183846, "D": 3.0, "table": {"X": {"vm": 19.12, "vm_at": [6.0, 34.31, 17.46], "sf_yield": 2.35, "layer": 15.96, "layer_at": [19.08, 38.93, 0.0], "sf_layer": 1.41, "shear": 7.15, "shear_at": [7.37, 12.38, 6.99], "sf_shear": 1.82}, "Y": {"vm": 19.12, "vm_at": [6.0, 34.31, 17.46], "sf_yield": 2.35, "layer": 8.41, "layer_at": [5.76, 13.91, 18.73], "sf_layer": 2.67, "shear": 7.24, "shear_at": [5.52, 15.53, 17.86], "sf_shear": 1.79}, "Z": {"vm": 19.12, "vm_at": [6.0, 34.31, 17.46], "sf_yield": 2.35, "layer": 15.12, "layer_at": [0.24, 34.32, 17.48], "sf_layer": 1.49, "shear": 7.25, "shear_at": [5.52, 15.53, 17.86], "sf_shear": 1.79}}, "rim_layer_z": 15.12, "rim_vm": 19.12, "vm_all": 26.82, "plateau": {"1": [23.22, 15.12], "2": [19.12, 15.12], "3": [19.12, 15.12], "5": [19.12, 15.12]}, "flat": [1.6, 183846, 19.12, 15.12, 7.25], "checks": {"reaction": [-150.001, -0.001, -0.003, 150.001], "applied": 150.0, "max_disp": 2.844458818435669, "excessive": false, "top_ux": 2.7246624991768287, "sz_back_z12": 8.042509997332537, "sx_bottom_x15": 12.040244296845936, "nodes_in_checks": [81, 525]}, "compare_ok": true, "checks_full": {"reaction": [-150.001, -0.001, -0.003, 150.001], "applied": 150.0, "max_disp": 2.844458818435669, "excessive": false, "top_ux": 2.7246624991768287, "sz_back_z12": 8.042509997332537, "sx_bottom_x15": 12.040244296845936, "nodes_in_checks": [81, 525]}}
+14:03:15 closing pid 120588 committed MB 1856

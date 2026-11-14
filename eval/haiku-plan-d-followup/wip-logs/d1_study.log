@@ -1,0 +1,41 @@
+16:00:01 SolidWorks pid 115444 free GB 22.7
+16:00:07 ok M5 walls: 2
+16:00:07 ok pad tops: 4
+16:00:07 ok fillet faces: 12
+16:00:07 PREDICT D1_Z_20: nodes 22000, max displacement 0.09 mm, peak expected at arm root beside an R3 corner (|x| 35 or 43, |y| 7..10, z 0 or 4), about 2.7 MPa
+16:00:08 D1_Z_20: mesh rc 0, 30598 nodes, 18276 elements, free 22.4 GB
+16:00:11 D1_Z_20: fixture nodes 192, box [-52.75, -2.75, -0.0] to [52.75, 2.74, 4.0]
+16:00:11 D1_Z_20: load nodes 308, box [-43.0, -30.0, 9.0] to [43.0, 30.0, 9.0]
+16:00:12 COMPARE D1_Z_20: nodes 30598 (predicted 22000), max displacement 0.15793178975582123 (predicted 0.09)
+16:00:12 compare ok: True
+16:00:13 converge (2.0, 30598, 2.47, 0.17, 0.7)
+16:00:13 ok M5 walls: 2
+16:00:13 ok pad tops: 4
+16:00:13 ok fillet faces: 12
+16:00:13 PREDICT D1_Z_15: nodes 53000, max displacement 0.09 mm, peak expected at arm root beside an R3 corner (|x| 35 or 43, |y| 7..10, z 0 or 4), about 2.7 MPa
+16:00:14 D1_Z_15: mesh rc 0, 58907 nodes, 36321 elements, free 22.5 GB
+16:00:22 D1_Z_15: fixture nodes 328, box [-52.75, -2.75, -0.0] to [52.75, 2.75, 4.0]
+16:00:22 D1_Z_15: load nodes 448, box [-43.0, -30.0, 9.0] to [43.0, 30.0, 9.0]
+16:00:25 COMPARE D1_Z_15: nodes 58907 (predicted 53000), max displacement 0.15812335908412933 (predicted 0.09)
+16:00:25 compare ok: True
+16:00:25 converge (1.5, 58907, 2.49, 0.13, 0.7)
+16:00:25 ok M5 walls: 2
+16:00:25 ok pad tops: 4
+16:00:25 ok fillet faces: 12
+16:00:25 PREDICT D1_Z_11: nodes 135000, max displacement 0.09 mm, peak expected at arm root beside an R3 corner (|x| 35 or 43, |y| 7..10, z 0 or 4), about 2.7 MPa
+16:00:28 D1_Z_11: mesh rc 0, 125748 nodes, 80881 elements, free 22.5 GB
+16:00:53 D1_Z_11: fixture nodes 576, box [-52.75, -2.75, -0.0] to [52.75, 2.75, 4.0]
+16:00:53 D1_Z_11: load nodes 828, box [-43.0, -30.0, 9.0] to [43.0, 30.0, 9.0]
+16:01:07 COMPARE D1_Z_11: nodes 125748 (predicted 135000), max displacement 0.158247709274292 (predicted 0.09)
+16:01:07 compare ok: True
+16:01:08 converge (1.1, 125748, 2.49, 0.13, 0.71)
+16:01:08 rows (el, nodes, vm, layer tension, layer shear): [(2.0, 30598, 2.47, 0.17, 0.7), (1.5, 58907, 2.49, 0.13, 0.7), (1.1, 125748, 2.49, 0.13, 0.71)] converged True
+16:01:08 {"X": {"vm": 2.49, "vm_at": [-43.07, -9.36, 4.0], "sf_yield": 18.07, "layer": 1.03, "layer_at": [44.95, -7.19, 4.0], "sf_layer": 21.8, "shear": 0.98, "shear_at": [43.6, -8.2, 0.0], "sf_shear": 13.33}, "Y": {"vm": 2.49, "vm_at": [-43.07, -9.36, 4.0], "sf_yield": 18.07, "layer": 2.44, "layer_at": [-43.07, 9.36, 4.0], "sf_layer": 9.23, "shear": 0.98, "shear_at": [43.6, -8.2, 0.0], "sf_shear": 13.3}, "Z": {"vm": 2.49, "vm_at": [-43.07, -9.36, 4.0], "sf_yield": 18.07, "layer": 0.13, "layer_at": [-39.33, -22.09, 4.57], "sf_layer": 179.01, "shear": 0.71, "shear_at": [44.37, 7.48, 1.96], "sf_shear": 18.37}}
+16:01:08 outside 1.0 mm of fixture and load faces: vm (2.4906039237976074, [-43.07, -9.36, 4.0]) layer Z (0.1256909966468811, [-39.33, -22.09, 4.57]) shear Z (0.7077324861857955, [44.37, 7.48, 1.96])
+16:01:08 outside 2.0 mm of fixture and load faces: vm (2.4906039237976074, [-43.07, -9.36, 4.0]) layer Z (0.1256909966468811, [-39.33, -22.09, 4.57]) shear Z (0.7077324861857955, [44.37, 7.48, 1.96])
+16:01:08 outside 3.0 mm of fixture and load faces: vm (2.4906039237976074, [-43.07, -9.36, 4.0]) layer Z (0.1256909966468811, [-39.33, -22.09, 4.57]) shear Z (0.7077324861857955, [44.37, 7.48, 1.96])
+16:01:08 outside 5.0 mm of fixture and load faces: vm (2.4906039237976074, [-43.07, -9.36, 4.0]) layer Z (0.11889418959617615, [43.06, -9.41, 3.26]) shear Z (0.7077324861857955, [44.37, 7.48, 1.96])
+16:01:08 spine round the M5 holes: vm max 1.6146832704544067 mean sigma-x on the top face 0.45190880837022573
+16:01:08 reaction [-0.0, -0.0, 9.0, 9.0] max disp 0.158247709274292 arm top sigma-y at |y| 15: 1.2173933483984158 on 184 nodes; excluded maximum 2.4906039237976074
+16:01:08 D1 study done at 1.2 min
+16:01:08 closing pid 115444 committed MB 1720

@@ -1,0 +1,280 @@
+{
+ "D1": {
+  "status": "done",
+  "mass_g": 11.84,
+  "parts": 1,
+  "fasteners": [
+   "2 x M5 x 8 socket head cap screw into 2 x M5 T-nut (top slot, X +-50)",
+   "4 x M3 x 6 socket head cap screw into 4 x M3 heat-set insert (hole D4.0 x 6, X +-39, Y +-26.5)"
+  ],
+  "board_removal_steps": [
+   "free the two wire pairs at the +X end",
+   "undo the four M3 x 6 screws at the board corners from above (2.5 mm hex key)",
+   "lift the board straight up (fit check: lifted board clear of the mount)",
+   "refit: lower onto the four pads, wires to +X, four M3 screws",
+   "mount stays on the rail: the two M5 screws are not touched"
+  ],
+  "open_area_share": 0.63,
+  "envelope_ok": false,
+  "sf_min": 18.07,
+  "governing": "von Mises at the arm root beside the R3 corner, load along Z (2.49 MPa, converged)",
+  "print_orientation": "spine face on the bed, layers stacked along Z, no supports",
+  "assumptions": [
+   "board flat, long side along X, centred on the rail",
+   "wires leave at +X, no strain relief",
+   "112 mm of rail along X free",
+   "M3 heat-set inserts",
+   "nothing under the board within 3 mm of its edges",
+   "2.0 factor on the 9 N case"
+  ],
+  "questions": [
+   "Y envelope 50 mm vs board width 60 mm: assumed envelope gives, board only 5 mm over each side",
+   "wire exit end: assumed +X, none",
+   "rail length free: assumed yes",
+   "inserts or direct screws: assumed inserts",
+   "parts under board edges: assumed none",
+   "factor on 10 g: assumed 2.0 on 9 N"
+  ],
+  "ideas_tried": [
+   "A open frame, board screwed from above (chosen)",
+   "B slide-in cradle with C rails along the long edges (rejected: 25.6 g vs 11.8 g, rails reach Y +-32.5, rattle, needs 85 mm clear rail)"
+  ],
+  "minutes": 5,
+  "notes": "envelope_ok false: the board itself reaches Y +-30. open_area_share and envelope_ok are hand values checked against the exported STL (open area 0.6298). Study: 3 mesh sizes converged (vm 2.47, 2.49, 2.49 MPa); displacement 0.158 mm vs 0.09 hand (within 3x). Second load way and second support way not run."
+ },
+ "D2": {
+  "status": "partial",
+  "spec_problems": [
+   "shoulder opening D43.5 vs inner ring D44.0: 0.25 mm radial overlap -> built D49.0",
+   "screws X +-28.2: insert hole wall 0.2 mm to the seat (min 0.6) -> built X +-30.0",
+   "screws Z 1 and 6: counterbores overlap by 1.0 mm -> built Z 0 and 7",
+   "seat D52 with +-0.15 printer tolerance: loose or grips -> seat D52.2, crown touching, split gap 0.8 mm",
+   "seat Z 0..7 for a 7 mm ring: zero axial clearance -> seat Z -0.15..7.15",
+   "M3x30 bottoms out in 6 mm insert hole (0.5 mm short) -> insert 8 deep, M3x35 (1.9 mm spare)"
+  ],
+  "seat_diameter_mm": 52.2,
+  "split_gap_mm": 0.8,
+  "fit_reasoning": "seat 0.2 larger than the ring at nominal so the crown meets first and the screws pull the half round the ring; gap 0.8 mm exceeds tolerance (0.45 mm) so the screws load the ring, not the split faces",
+  "clearances_mm": {
+   "ring_to_seat_crown": 0.0,
+   "ring_to_seat_split": 0.1,
+   "halves_at_split": 0.8,
+   "ring_side_to_shoulder": 0.15,
+   "inner_ring_to_opening": 2.5,
+   "outer_ring_bore_to_opening": 0.5,
+   "shaft_to_opening": 4.5,
+   "screw_in_clearance_hole": 0.2,
+   "head_in_counterbore": 0.25,
+   "hole_wall_to_seat_clearance": 2.2,
+   "hole_wall_to_seat_insert": 1.9,
+   "counterbore_to_counterbore": 1.0,
+   "screw_tip_to_insert_floor": 1.9
+  },
+  "hand_screw_load_n": 75.0,
+  "screw_load_n": 75.7,
+  "screw_loads_case_y_n": [
+   75.2,
+   75.1,
+   76.7,
+   75.8
+  ],
+  "screw_loads_case_x_n": [
+   41.3,
+   40.8,
+   49.5,
+   48.6
+  ],
+  "hand_x_tension_redone_n": 45.3,
+  "hand_x_shear_redone_n": 7.5,
+  "study_x_tension_mean_n": 45.1,
+  "nodes": 160773,
+  "how_bodies_were_held": "lower half: mount face Y -32 fixed; screws bonded under heads and in insert holes; upper half bonded to screws at counterbore floors; ring bonded to four soft pads (inner faces fixed); no-penetration contact ring-to-seat (both) and half-to-half",
+  "contact_proof": "bonded twin ring UY 0.0018 vs contact 0.0917 mm: ratio 50x; bonded screw sum 7.6 N (under 100); contact case lower seat opens by 0.092 mm; lower seat pressure 0.10 MPa = 2.2% of upper (case Y)",
+  "pads_share_n": 0.24,
+  "sf_yield": 9.85,
+  "sf_layer": 25.73,
+  "sf_shear": 9.25,
+  "governing": "upper half, case X, von Mises at the counterbore edge beside a screw head (-27.3, 27.5, 6.8), 6.13 MPa at 3.0 mm mesh, not converged",
+  "print_orientation": {
+   "upper": "bearing axis vertical, face Z -4 on the bed, layers along Z",
+   "lower": "bearing axis vertical, face Z -4 on the bed, layers along Z"
+  },
+  "valid": false,
+  "why": "convergence not shown: finer meshes exceed the 200,000-node cap (D2_Y_22 solves to 224,652 nodes, refused before solve); the peak sits at a bonded counterbore rim and has not converged; contact proof done for case Y only",
+  "preload_factor2_force_n": 369.0,
+  "preload_torque_nmm": 222.0,
+  "minutes": 75,
+  "notes": "3.0 mm mesh only (160,773 nodes; 2.9x the predicted 55k). Case X: hand value redone with study angles: 45.3 N tension, 7.5 N shear per screw; study mean tension 45.1 N. Preload figures from the plan formula, not run."
+ },
+ "D3": {
+  "status": "done",
+  "plates": {
+   "P1": {
+    "volume_mm3": 17728.67,
+    "hand_volume_mm3": 17728.67,
+    "min_wall_mm": 1.0,
+    "min_wall_where": "B counterbore to outside",
+    "changed": true,
+    "why": "ring B turned 45 deg: at 0 deg its counterbore overlapped a ring A hole by 0.7 mm",
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P2": {
+    "volume_mm3": 23947.18,
+    "hand_volume_mm3": 23947.18,
+    "min_wall_mm": 3,
+    "min_wall_where": "counterbore floor",
+    "changed": true,
+    "why": "ring B turned 30 deg: rings A and B were the same six holes",
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P3": {
+    "volume_mm3": 38698.26,
+    "hand_volume_mm3": 38698.26,
+    "min_wall_mm": 1.0,
+    "min_wall_where": "B counterbore to outside",
+    "changed": false,
+    "why": "as the table says",
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P4": {
+    "volume_mm3": 13802.43,
+    "hand_volume_mm3": 13802.43,
+    "min_wall_mm": 1.0,
+    "min_wall_where": "B counterbore to outside",
+    "changed": true,
+    "why": "OD 60 -> 68: ring B on 58 broke out of a 60 plate by 3.0 mm; counterbore 4.6 -> 3.0 deep: floor was 0.4 mm",
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P5": {
+    "volume_mm3": 62864.78,
+    "hand_volume_mm3": 62864.78,
+    "min_wall_mm": 2.5,
+    "min_wall_where": "B counterbore to outside",
+    "changed": false,
+    "why": "as the table says",
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P6": {
+    "volume_mm3": 20848.86,
+    "hand_volume_mm3": 20848.86,
+    "min_wall_mm": 2.0,
+    "min_wall_where": "B counterbore to outside",
+    "changed": false,
+    "why": "as the table says",
+    "bodies": 1,
+    "stl_watertight": true
+   }
+  },
+  "plates_b": {
+   "P1": {
+    "volume_mm3": 22040.22,
+    "hand_volume_mm3": 22040.22,
+    "min_wall_mm": 0.6,
+    "min_wall_where": "chamfer to B counterbore",
+    "changed": true,
+    "why": "chamfer 0.4 not 1.0: the counterbore edge is 1.0 mm from the outside, a 1 mm chamfer would meet it",
+    "counterbore_floor_z_mm": 3.0,
+    "old_features_unchanged": true,
+    "new_features": [
+     "TOP_CHAMFER"
+    ],
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P2": {
+    "volume_mm3": 29648.45,
+    "hand_volume_mm3": 29648.45,
+    "min_wall_mm": 3.0,
+    "min_wall_where": "counterbore floor",
+    "changed": false,
+    "why": "as asked",
+    "counterbore_floor_z_mm": 3.0,
+    "old_features_unchanged": true,
+    "new_features": [
+     "TOP_CHAMFER"
+    ],
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P3": {
+    "volume_mm3": 45765.78,
+    "hand_volume_mm3": 45765.78,
+    "min_wall_mm": 0.6,
+    "min_wall_where": "chamfer to B counterbore",
+    "changed": true,
+    "why": "ring A on 70 turned 22.5 deg (0.3 mm to the ring B counterbore otherwise); chamfer 0.4 not 1.0, as P1",
+    "counterbore_floor_z_mm": 4.0,
+    "old_features_unchanged": true,
+    "new_features": [
+     "TOP_CHAMFER"
+    ],
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P4": {
+    "volume_mm3": 17802.44,
+    "hand_volume_mm3": 17802.44,
+    "min_wall_mm": 0.6,
+    "min_wall_where": "chamfer to B counterbore",
+    "changed": true,
+    "why": "chamfer 0.4 not 1.0, as P1",
+    "counterbore_floor_z_mm": 2.0,
+    "old_features_unchanged": true,
+    "new_features": [
+     "TOP_CHAMFER"
+    ],
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P5": {
+    "volume_mm3": 74259.2,
+    "hand_volume_mm3": 74259.2,
+    "min_wall_mm": 1.5,
+    "min_wall_where": "chamfer to B counterbore",
+    "changed": false,
+    "why": "as asked",
+    "counterbore_floor_z_mm": 3.0,
+    "old_features_unchanged": true,
+    "new_features": [
+     "TOP_CHAMFER"
+    ],
+    "bodies": 1,
+    "stl_watertight": true
+   },
+   "P6": {
+    "volume_mm3": 25865.43,
+    "hand_volume_mm3": 25865.43,
+    "min_wall_mm": 1.0,
+    "min_wall_where": "chamfer to B counterbore",
+    "changed": false,
+    "why": "as asked",
+    "counterbore_floor_z_mm": 3.0,
+    "old_features_unchanged": true,
+    "new_features": [
+     "TOP_CHAMFER"
+    ],
+    "bodies": 1,
+    "stl_watertight": true
+   }
+  },
+  "table_problems": [
+   "P1: ring B counterbore overlaps a ring A hole by 0.7 mm at 0 deg -> ring B turned 45 deg (wall 3.02)",
+   "P2: rings A and B are the same six holes at 0 deg -> ring B turned 30 deg (wall 9.80)",
+   "P3: fine as table; counterbore edge 1.0 mm from outside (flagged, built as asked)",
+   "P4: ring B on \u00d858 breaks out of a \u00d860 plate by 3.0 mm -> OD 68, bolt circle kept (wall 1.0)",
+   "P4: counterbore 4.6 deep in a 5 mm plate leaves 0.4 mm floor -> depth 3.0, floor 2.0",
+   "P1, P3 and P4 outer walls 1.0 mm: flagged, built as asked",
+   "part two P3: ring A on \u00d870 from 0 deg is 0.3 mm from the ring B counterbore -> ring A turned 22.5 deg (wall 9.82)",
+   "part two P1, P3, P4: 1.0 mm chamfer meets the counterbore edge (knife edge) -> 0.4 mm chamfer (wall 0.6)"
+  ],
+  "one_script": true,
+  "edited_not_rebuilt": true,
+  "minutes": 6,
+  "notes": "edited_not_rebuilt: opened each saved part, set DISC to T+1.5, moved the counterbore floor check (unchanged, Z = T-c measured), added one feature TOP_CHAMFER, tree IDs and names before the edit are unchanged. P3 ring A redrawn by redraw_circles. min_wall_mm from walls() after measure() showed every hole where the numbers say. The STL volume differs from the model by at most 0.1%. The coordinate check in measure() was made absolute: expect() is relative for a non-zero wanted value, and a coordinate that should be 0 failed on float noise. Not verified: walls measured on the mesh, the 0.6 mm walls beside the chamfers (P1, P3, P4) are at the limit, not beyond it."
+ }
+}

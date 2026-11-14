@@ -1,0 +1,6 @@
+1794692300.971	2026-11-14 15:38:20 -0600	0.0 min	follow-up start (R3 a)
+1794692356.329	2026-11-14 15:39:16 -0600	0.9 min	R3c start: D2 convergence job X launched
+1794692953.282	2026-11-14 15:49:13 -0600	10.9 min	R3c job X done; check passed; job Y launched
+1794693580.720	2026-11-14 15:59:40 -0600	21.3 min	R3c both jobs done; report computed
+1794693596.041	2026-11-14 15:59:56 -0600	21.6 min	R3 done (c + results); R4 D1 study launched
+1794693730.968	2026-11-14 16:02:10 -0600	23.8 min	follow-up end: report written

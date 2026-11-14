@@ -1,0 +1,30 @@
+{
+  "hand_bearing_mpa": 2.08,
+  "attempts": [
+    {
+      "name": "A1 contact only",
+      "ok": true,
+      "nodes": 38472,
+      "reaction": [
+        -0.0,
+        0.001,
+        -499.997,
+        499.997
+      ],
+      "max_disp": 5.0773,
+      "excessive": true
+    }
+  ],
+  "bodies": [
+    "<pin>-<PIN>",
+    "HOLE"
+  ],
+  "picks": {
+    "bottom": 1,
+    "pin": 1,
+    "hole": 1,
+    "end_pos": 1,
+    "end_neg": 1
+  },
+  "elapsed_s": 35.8
+}

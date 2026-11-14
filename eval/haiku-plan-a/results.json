@@ -1,0 +1,126 @@
+{
+ "T1": {
+  "volume_mm3": 32974.02416773477,
+  "hand_volume_mm3": 32974.02416773478,
+  "mass_g": 39.239088759604385,
+  "bbox_mm": [
+   0.0,
+   -0.0,
+   0.0,
+   80.0,
+   50.0,
+   46.0
+  ],
+  "bodies": 1,
+  "stl_watertight": true,
+  "stl_volume_mm3": 32990.37727426626,
+  "status": "done",
+  "notes": ""
+ },
+ "T2": {
+  "volume_mm3": 31642.999901677245,
+  "hand_volume_mm3": 31642.999901677267,
+  "counterbore_floor_z_mm": 3.0,
+  "bodies": 1,
+  "status": "done",
+  "notes": "edited in place; tree before/after in the log"
+ },
+ "T3": {
+  "hand_root_stress_mpa": 11.0,
+  "el_mm": 1.6,
+  "nodes": 183846,
+  "peak_vm_mpa": 19.12,
+  "peak_at_mm": [
+   6.0,
+   34.31,
+   17.46
+  ],
+  "layer_stress_mpa": 15.12,
+  "sf_yield": 2.35,
+  "sf_layer": 1.49,
+  "sf_shear": 1.79,
+  "max_disp_mm": 2.844458818435669,
+  "reaction_n": 150.001,
+  "converged": false,
+  "convergence_rows": [
+   [
+    3.0,
+    42611,
+    19.25,
+    13.97,
+    7.09
+   ],
+   [
+    2.2,
+    85355,
+    21.02,
+    14.33,
+    7.15
+   ],
+   [
+    1.6,
+    183846,
+    19.12,
+    15.12,
+    7.25
+   ]
+  ],
+  "verdict": "fail",
+  "status": "done",
+  "notes": "Governing: tension across layers at the lower motor-hole rims on the back face (rim 15.12 MPa, sf 1.49), factor under 2.0 at all three sizes (1.61, 1.57, 1.49). Not converged: vm -9% and layer +5.5% at the last step, so the printed factors are not a converged value; the fail does not depend on that. Load two ways: remote bore load gives layer 13.35 at el 2.2 vs 14.33 for pads (pads govern). Support two ways: washers 14.40 vs walls 14.33 at el 2.2. Shear between Z layers 7.25 MPa, sf 1.79."
+ },
+ "T4": {
+  "convergence_rows": [
+   [
+    1.0,
+    70569,
+    20.45
+   ],
+   [
+    0.5,
+    80005,
+    28.51
+   ],
+   [
+    0.25,
+    98575,
+    37.75
+   ]
+  ],
+  "converged": false,
+  "reported_stress_mpa": 40.05,
+  "how_judged": "The sharp corner does not converge (series A, control 1.0/0.5/0.25 mm: 20.45, 28.51, 37.75 MPa von Mises, compressive, climbing), so it was judged with the 0.4 mm radius a printed corner has; that converged to 40.05 MPa von Mises (compressive, sigma_z -34.8 MPa) over controls 0.3/0.2/0.13 mm (38.11, 39.66, 40.05; last step 1.0%). Averages at the R0.4 corner over 0.5/1/2 mm at the 0.13 mm mesh: 19.6/16.7/14.7 MPa with 760/2527/6605 nodes.",
+  "verdict": "fail",
+  "status": "done",
+  "notes": "Whole part fails on two counts: tension across layers at the lower motor-hole rims (sf 1.49, the T3 governing measure, unchanged by the corner) and von Mises at the R0.4 corner (40.05 MPa, sf on yield 1.12). Series B converged; series A did not (expected for a sharp compressive corner). Hand estimate for the R0.4 corner was about 24 MPa (11 MPa nominal x Kt 2.2); the study gives 40 MPa, 67% above. Not explained; the Kt that the study implies is about 3.2 on sigma_z. Not resolved here."
+ },
+ "T5": {
+  "change": "Two 3.5 mm ribs between upright and base at the Y edges (legs 28 mm, 3.5 mm thick), and printed on its side (layers along Y).",
+  "mass_g": 42.48,
+  "mass_growth_pct": 8.25,
+  "sf_yield": 3.6,
+  "sf_layer": 3.02,
+  "print_orientation": "on its side: face Y 0 on the bed, layers stacked along Y",
+  "verdict": "fail",
+  "status": "done",
+  "notes": "Factors at the finest rib study (el 1.6, 190,958 nodes) for layers along Y: von Mises 3.6 (peak 12.51 MPa at the rib-leg end on the base top, X 34 Y 49 Z 6), layer 3.02, shear 3.24. All three measures pass 2.0, but von Mises is not converged: 10.68 / 11.06 / 12.51 MPa over el 3.0/2.2/1.6 (+13% at the last step), at a sharp rib-leg edge. Under the playbook rule a pass needs every measure converged, so the verdict is recorded as fail with status 'not shown', not pass. A rib-end radius would settle it; the von Mises stress would have to rise about 80% (to 22.5 MPa) before this part fails. Layer and shear converged (<5%). Step 2a (same geometry on its side) was not re-solved: the Y reading of T3_PADS_16 (layer 8.41, shear 7.24, vm 19.12) fails on shear (sf 1.79), so the ribs were needed. Printing note: the rib legs lie in the layer plane when printed on its side, but the upper rib is in mid-air over the base and needs support under it."
+ },
+ "T6": {
+  "hand_bearing_mpa": 1.67,
+  "nodes": 122007,
+  "solver": "direct sparse (SOLVER_DIRECT via macro, log \"after 7\"; block_fea-T6_PIN_05-BenchMark-Solver.txt beside the model)",
+  "how_pin_was_stabilised": "two soft pads (\u00d83 x 1.5 mm, modulus 0.5 MPa) bonded to the pin end faces, their outer faces fixed, clear of the block; they carried 0.20 N of 500 N at full load (0.04%)",
+  "peak_contact_vm_mpa": 5.326430320739746,
+  "block_peak_at_mm": [
+   -2.07,
+   15.0,
+   16.06
+  ],
+  "pin_rise_mm": 0.1295,
+  "reaction_n": 500.001,
+  "valid": false,
+  "why": "Mid-length contact pressure 6.77 MPa at the finest hole control (0.5 mm, 122,007 nodes), against the 6.8 MPa Hertz line-contact value (within 25%), and the peak bearing stress over the hole is 6.77 MPa at (0.02, 2.88, 15.1). Not valid: the series does not converge: mid-length pressure 6.52 / 5.96 / 6.77 MPa over controls 1.2/0.8/0.5 (last step +13.6%) and the peak over the hole 6.71 / 6.23 / 6.77 (+8.7%). Reaction -500.0 N and block-side contact force -499.8 N, pads 0.20 N. Pin rise 0.130 mm, inside the 0.10-0.14 window. Proof run at 0.25 N per end: rise 0.100 mm, i.e. 0.1% of the load gives 77% of the full rise, so the set is contact, not a bond. Check 3 failed: lig_force 1053-1820 N against the planned 400-650 N window (node mean; reads high near the hole, not investigated). The proof run carried 0.15 N of 0.5 N in the pads (30%), so at that size the pads are not negligible.",
+  "status": "done",
+  "notes": "Series converged for contact_vm only (last step +3.3%); p_mid and p_all did not converge. Fallback A (PIN_Z 10.09) not run: the gap closed at the first load and checks 1 to 4 did not need it. Block peak von Mises 5.33 MPa at (-2.07, 15, 16.06), on the mouth edge at the back face Y 15."
+ }
+}

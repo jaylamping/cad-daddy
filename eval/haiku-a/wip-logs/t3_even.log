@@ -1,0 +1,131 @@
+03:10:58 hand values {'hand_root_stress_mpa': 11.0, 'hand_stress_z12_mpa': 8.0, 'hand_root_shear_mpa': 0.5, 'hand_upright_tip_defl_mm': 0.3113, 'moment_root_nmm': 3300.0}
+03:11:01 SolidWorks pid 3196 free GB 21.9
+03:11:06 volume 31643.0 box [0.0, 0.0, 0.0, 80.0, 50.0, 46.0]
+03:11:07 picks: holes 4 bore 1 fillet 1 X6 face 1
+03:11:07 predict: 14064 nodes before control refinement at el 3.0; upright tip deflection about 0.3113 mm; peak von Mises near the root
+03:11:08 eve30: mesh rc 0, 41786 nodes, 25805 elements, free 21.6 GB
+03:11:13 eve30: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:11:13 eve30: load nodes 1512, box [6.0, 0.0, 10.0] to [6.0, 50.0, 46.0]
+03:11:15 row {'el': 3.0, 'nodes': 41786, 'peak_vm': 17.721, 'peak_at': [0.0, 34.52, 17.95], 'layer_z': 18.331, 'shear_z': 7.182, 'layer_x': 13.204, 'layer_y': 6.191, 'shear_x': 6.942, 'shear_y': 7.152, 'max_disp_mm': 3.494, 'reaction_N': [-149.999, -0.006, -0.001, 149.999], 'applied_N': 150.0, 'solve_s': 8, 'sz_face_x6_z12': -6.313, 'sz_face_x0_z12': 6.209, 'ux_bore_mean_mm': 1.3533, 'ux_top_max_mm': 3.3374, 'uz_base_end_mm': 0.9208}
+03:11:15 predict: 47464 nodes before control refinement at el 2.0; upright tip deflection about 0.3113 mm; peak von Mises near the root
+03:11:16 eve20: mesh rc 0, 80004 nodes, 51624 elements, free 20.8 GB
+03:11:32 eve20: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:11:32 eve20: load nodes 2156, box [6.0, 0.0, 10.0] to [6.0, 50.0, 46.0]
+03:11:40 row {'el': 2.0, 'nodes': 80004, 'peak_vm': 18.014, 'peak_at': [21.97, 5.18, 6.0], 'layer_z': 16.698, 'shear_z': 6.932, 'layer_x': 15.214, 'layer_y': 7.053, 'shear_x': 6.947, 'shear_y': 6.547, 'max_disp_mm': 3.5002, 'reaction_N': [-149.995, 0.006, -0.0, 149.995], 'applied_N': 150.0, 'solve_s': 25, 'sz_face_x6_z12': -6.262, 'sz_face_x0_z12': 6.286, 'ux_bore_mean_mm': 1.5429, 'ux_top_max_mm': 3.3433, 'uz_base_end_mm': 0.9228}
+03:11:40 predict: 112508 nodes before control refinement at el 1.5; upright tip deflection about 0.3113 mm; peak von Mises near the root
+03:11:42 eve15: mesh rc 0, 135457 nodes, 89607 elements, free 21.2 GB
+03:12:20 eve15: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:12:20 eve15: load nodes 3218, box [6.0, 0.0, 10.0] to [6.0, 50.0, 46.0]
+03:12:42 row {'el': 1.5, 'nodes': 135457, 'peak_vm': 20.767, 'peak_at': [23.95, 5.11, 6.0], 'layer_z': 17.51, 'shear_z': 6.912, 'layer_x': 18.156, 'layer_y': 9.443, 'shear_x': 7.847, 'shear_y': 7.8, 'max_disp_mm': 3.5024, 'reaction_N': [-149.998, 0.003, -0.002, 149.998], 'applied_N': 150.0, 'solve_s': 62, 'sz_face_x6_z12': -6.261, 'sz_face_x0_z12': 6.346, 'ux_bore_mean_mm': 1.6828, 'ux_top_max_mm': 3.3454, 'uz_base_end_mm': 0.9233}
+03:12:42 closing pid 3196 committed MB 1740
+{
+  "case": "even",
+  "hand": {
+    "hand_root_stress_mpa": 11.0,
+    "hand_stress_z12_mpa": 8.0,
+    "hand_root_shear_mpa": 0.5,
+    "hand_upright_tip_defl_mm": 0.3113,
+    "moment_root_nmm": 3300.0
+  },
+  "rows": [
+    {
+      "el": 3.0,
+      "nodes": 41786,
+      "peak_vm": 17.721,
+      "peak_at": [
+        0.0,
+        34.52,
+        17.95
+      ],
+      "layer_z": 18.331,
+      "shear_z": 7.182,
+      "layer_x": 13.204,
+      "layer_y": 6.191,
+      "shear_x": 6.942,
+      "shear_y": 7.152,
+      "max_disp_mm": 3.494,
+      "reaction_N": [
+        -149.999,
+        -0.006,
+        -0.001,
+        149.999
+      ],
+      "applied_N": 150.0,
+      "solve_s": 8,
+      "sz_face_x6_z12": -6.313,
+      "sz_face_x0_z12": 6.209,
+      "ux_bore_mean_mm": 1.3533,
+      "ux_top_max_mm": 3.3374,
+      "uz_base_end_mm": 0.9208
+    },
+    {
+      "el": 2.0,
+      "nodes": 80004,
+      "peak_vm": 18.014,
+      "peak_at": [
+        21.97,
+        5.18,
+        6.0
+      ],
+      "layer_z": 16.698,
+      "shear_z": 6.932,
+      "layer_x": 15.214,
+      "layer_y": 7.053,
+      "shear_x": 6.947,
+      "shear_y": 6.547,
+      "max_disp_mm": 3.5002,
+      "reaction_N": [
+        -149.995,
+        0.006,
+        -0.0,
+        149.995
+      ],
+      "applied_N": 150.0,
+      "solve_s": 25,
+      "sz_face_x6_z12": -6.262,
+      "sz_face_x0_z12": 6.286,
+      "ux_bore_mean_mm": 1.5429,
+      "ux_top_max_mm": 3.3433,
+      "uz_base_end_mm": 0.9228
+    },
+    {
+      "el": 1.5,
+      "nodes": 135457,
+      "peak_vm": 20.767,
+      "peak_at": [
+        23.95,
+        5.11,
+        6.0
+      ],
+      "layer_z": 17.51,
+      "shear_z": 6.912,
+      "layer_x": 18.156,
+      "layer_y": 9.443,
+      "shear_x": 7.847,
+      "shear_y": 7.8,
+      "max_disp_mm": 3.5024,
+      "reaction_N": [
+        -149.998,
+        0.003,
+        -0.002,
+        149.998
+      ],
+      "applied_N": 150.0,
+      "solve_s": 62,
+      "sz_face_x6_z12": -6.261,
+      "sz_face_x0_z12": 6.346,
+      "ux_bore_mean_mm": 1.6828,
+      "ux_top_max_mm": 3.3454,
+      "uz_base_end_mm": 0.9233
+    }
+  ],
+  "sizes": [
+    3.0,
+    2.0,
+    1.5
+  ],
+  "last_study": "eve30",
+  "elapsed_s": 103.9,
+  "file": "C:\\joe\\code\\cad-daddy-wt\\sw-eval-haiku-a\\_wip\\sw-eval\\haiku-a\\bracket_t3_even.SLDPRT"
+}
+EXIT 0

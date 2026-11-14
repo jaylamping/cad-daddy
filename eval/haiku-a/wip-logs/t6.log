@@ -1,0 +1,49 @@
+03:20:44 SolidWorks pid 9712 free GB 22.6
+03:20:47 ok BLOCK volume change: 24000.0000 (expected 24000.0000)
+03:20:47 BLOCK: added 24000.00 mm3
+03:20:47 ok HOLE volume change: 2451.3847 (expected 2451.3847)
+03:20:47 HOLE: cut 2451.38 mm3
+03:20:49 ok PIN volume change: 3926.9908 (expected 3926.9908)
+03:20:49 PIN: added 3926.99 mm3
+03:20:49 bodies [('<pin>-<PIN>', 3926.99, [-5.0, -25.0, 5.0, 5.0, 25.0, 15.0]), ('HOLE', 21548.62, [-20.0, -15.0, 0.0, 20.0, 15.0, 20.0])] volume 25475.606
+03:20:53 picks: bottom 1 pin cyl 1 hole cyl 1 end+ 1 end- 1
+03:20:53 T6_A1: body "SolidBody 1(<pin>-<PIN>)" is Steel
+03:20:53 T6_A1: body "SolidBody 2(HOLE)" is PETG printed
+03:20:54 T6_A1: mesh rc 0, 38472 nodes, 25507 elements, free 22.2 GB
+03:20:54 T6_A1: solver macro: before  0  | set err  0   | after  7  | 
+03:21:12 solver asked about excessive displacements: answered No (finish with the small-displacement result)
+03:21:15 T6_A1: fixture nodes 1415, box [-20.0, -15.0, 0.0] to [20.0, 15.0, 0.0]
+03:21:15 T6_A1: load nodes 258, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+03:21:16 attempt A1 {'name': 'A1 contact only', 'ok': True, 'nodes': 38472, 'reaction': [-0.0, 0.001, -499.997, 499.997], 'max_disp': 5.0773, 'excessive': True}
+03:21:16 closing pid 9712 committed MB 1950
+{
+  "hand_bearing_mpa": 2.08,
+  "attempts": [
+    {
+      "name": "A1 contact only",
+      "ok": true,
+      "nodes": 38472,
+      "reaction": [
+        -0.0,
+        0.001,
+        -499.997,
+        499.997
+      ],
+      "max_disp": 5.0773,
+      "excessive": true
+    }
+  ],
+  "bodies": [
+    "<pin>-<PIN>",
+    "HOLE"
+  ],
+  "picks": {
+    "bottom": 1,
+    "pin": 1,
+    "hole": 1,
+    "end_pos": 1,
+    "end_neg": 1
+  },
+  "elapsed_s": 35.8
+}
+EXIT 0

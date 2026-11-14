@@ -1,0 +1,50 @@
+14:05:43 SolidWorks pid 120372 free GB 23.3
+14:05:49 PREDICT T4_R04_030: nodes 71000, max displacement 2.5 mm, peak expected at the 0.4 mm inside-corner radius (x 6, z 6): compressive, about 24 MPa von Mises
+14:05:49 ok base hole walls: 4
+14:05:49 ok bore: 1
+14:05:49 ok motor holes: 4
+14:05:49 ok pad outer faces: 4
+14:05:49 ok root fillet: 1
+14:05:49 T4_R04_030: body "SolidBody 1(MOTOR_HOLES)" is PETG printed
+14:05:49 T4_R04_030: body "SolidBody 2(<pad_1>-<PRESSPAD>)" is Pressure pad
+14:05:49 T4_R04_030: body "SolidBody 3(<pad_2>-<PRESSPAD>)" is Pressure pad
+14:05:49 T4_R04_030: body "SolidBody 4(<pad_3>-<PRESSPAD>)" is Pressure pad
+14:05:49 T4_R04_030: body "SolidBody 5(<pad_4>-<PRESSPAD>)" is Pressure pad
+14:05:51 T4_R04_030: mesh rc 0, 94865 nodes, 61255 elements, free 23.0 GB
+14:06:07 T4_R04_030: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+14:06:07 T4_R04_030: load nodes 256, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+14:06:14 COMPARE T4_R04_030: nodes 94865 (predicted 71000), max displacement 3.1229403018951416 (predicted 2.5)
+14:06:15 T4_R04_030 {"ctrl": 0.3, "nodes": 94865, "corner_vm": 38.11, "corner_at": [6.11, 13.02, 6.13], "avg": {"0.5": [18.542845136979047, 85], "1.0": [13.823288997310904, 402], "2.0": [10.96183935795711, 1451]}, "corner_sz": -34.93, "row": {"study": "T4_R04_030", "el": 2.2, "nodes": 94865, "D": 3.0, "table": {"X": {"vm": 38.11, "vm_at": [6.11, 13.02, 6.13], "sf_yield": 1.18, "layer": 15.88, "layer_at": [18.98, 39.5, 0.0], "sf_layer": 1.42, "shear": 21.7, "shear_at": [6.11, 13.02, 6.13], "sf_shear": 0.6}, "Y": {"vm": 38.11, "vm_at": [6.11, 13.02, 6.13], "sf_yield": 1.18, "layer": 7.92, "layer_at": [5.35, 35.96, 18.74], "sf_layer": 2.84, "shear": 6.72, "shear_at": [5.68, 15.49, 17.92], "sf_shear": 1.94}, "Z": {"vm": 38.11, "vm_at": [6.11, 13.02, 6.13], "sf_yield": 1.18, "layer": 14.33, "layer_at": [0.38, 37.66, 17.08], "sf_layer": 1.57, "shear": 21.71, "shear_at": [6.11, 13.02, 6.13], "sf_shear": 0.6}}, "rim_layer_z": 14.33, "rim_vm": 19.37, "vm_all": 38.11, "plateau": {"1": [38.11, 14.33], "2": [38.11, 14.33], "3": [38.11, 14.33], "5": [38.11, 14.33]}, "flat": [2.2, 94865, 38.11, 14.33, 21.71], "checks": {"reaction": [-149.997, -0.003, -0.002, 149.997], "applied": 150.0, "max_disp": 3.1229403018951416, "excessive": false, "top_ux": 3.0033754668992385, "sz_back_z12": 8.100447290083942, "sx_bottom_x15": 12.040715468557257, "nodes_in_checks": [51, 304]}}}
+14:06:15 PREDICT T4_R04_020: nodes 86000, max displacement 2.5 mm, peak expected at the 0.4 mm inside-corner radius (x 6, z 6): compressive, about 24 MPa von Mises
+14:06:15 ok base hole walls: 4
+14:06:15 ok bore: 1
+14:06:15 ok motor holes: 4
+14:06:15 ok pad outer faces: 4
+14:06:15 ok root fillet: 1
+14:06:15 T4_R04_020: body "SolidBody 1(<pad_4>-<PRESSPAD>)" is Pressure pad
+14:06:15 T4_R04_020: body "SolidBody 2(<pad_1>-<PRESSPAD>)" is Pressure pad
+14:06:15 T4_R04_020: body "SolidBody 3(<pad_2>-<PRESSPAD>)" is Pressure pad
+14:06:15 T4_R04_020: body "SolidBody 4(MOTOR_HOLES)" is PETG printed
+14:06:15 T4_R04_020: body "SolidBody 5(<pad_3>-<PRESSPAD>)" is Pressure pad
+14:06:18 T4_R04_020: mesh rc 0, 122464 nodes, 79970 elements, free 23.0 GB
+14:06:41 T4_R04_020: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+14:06:41 T4_R04_020: load nodes 256, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+14:06:53 COMPARE T4_R04_020: nodes 122464 (predicted 86000), max displacement 3.1240830421447754 (predicted 2.5)
+14:06:54 T4_R04_020 {"ctrl": 0.2, "nodes": 122464, "corner_vm": 39.66, "corner_at": [6.11, 14.4, 6.13], "avg": {"0.5": [18.00186335778909, 319], "1.0": [14.970262157877153, 1196], "2.0": [12.843373088332696, 3444]}, "corner_sz": -34.94, "row": {"study": "T4_R04_020", "el": 2.2, "nodes": 122464, "D": 3.0, "table": {"X": {"vm": 39.66, "vm_at": [6.11, 14.4, 6.13], "sf_yield": 1.13, "layer": 15.88, "layer_at": [18.99, 9.53, 0.0], "sf_layer": 1.42, "shear": 22.59, "shear_at": [6.11, 14.4, 6.13], "sf_shear": 0.58}, "Y": {"vm": 39.66, "vm_at": [6.11, 14.4, 6.13], "sf_yield": 1.13, "layer": 8.37, "layer_at": [5.68, 36.15, 18.73], "sf_layer": 2.69, "shear": 6.66, "shear_at": [5.68, 34.52, 17.94], "sf_shear": 1.95}, "Z": {"vm": 39.66, "vm_at": [6.11, 14.4, 6.13], "sf_yield": 1.13, "layer": 14.34, "layer_at": [0.38, 37.66, 17.08], "sf_layer": 1.57, "shear": 22.59, "shear_at": [6.11, 14.4, 6.13], "sf_shear": 0.58}}, "rim_layer_z": 14.34, "rim_vm": 19.23, "vm_all": 39.66, "plateau": {"1": [39.66, 14.34], "2": [39.66, 14.34], "3": [39.66, 14.34], "5": [39.66, 14.34]}, "flat": [2.2, 122464, 39.66, 14.34, 22.59], "checks": {"reaction": [-150.004, 0.009, -0.0, 150.004], "applied": 150.0, "max_disp": 3.1240830421447754, "excessive": false, "top_ux": 3.0044774287741123, "sz_back_z12": 8.096536084717394, "sx_bottom_x15": 12.040091470668191, "nodes_in_checks": [51, 304]}}}
+14:06:54 PREDICT T4_R04_013: nodes 126000, max displacement 2.5 mm, peak expected at the 0.4 mm inside-corner radius (x 6, z 6): compressive, about 24 MPa von Mises
+14:06:54 ok base hole walls: 4
+14:06:54 ok bore: 1
+14:06:54 ok motor holes: 4
+14:06:54 ok pad outer faces: 4
+14:06:54 ok root fillet: 1
+14:06:54 T4_R04_013: body "SolidBody 1(<pad_4>-<PRESSPAD>)" is Pressure pad
+14:06:54 T4_R04_013: body "SolidBody 2(<pad_1>-<PRESSPAD>)" is Pressure pad
+14:06:54 T4_R04_013: body "SolidBody 3(<pad_2>-<PRESSPAD>)" is Pressure pad
+14:06:54 T4_R04_013: body "SolidBody 4(MOTOR_HOLES)" is PETG printed
+14:06:54 T4_R04_013: body "SolidBody 5(<pad_3>-<PRESSPAD>)" is Pressure pad
+14:06:57 T4_R04_013: mesh rc 0, 166370 nodes, 109365 elements, free 23.0 GB
+14:07:37 T4_R04_013: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+14:07:37 T4_R04_013: load nodes 256, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+14:07:59 COMPARE T4_R04_013: nodes 166370 (predicted 126000), max displacement 3.125074863433838 (predicted 2.5)
+14:08:00 T4_R04_013 {"ctrl": 0.13, "nodes": 166370, "corner_vm": 40.05, "corner_at": [6.16, 35.94, 6.08], "avg": {"0.5": [19.63364972848641, 760], "1.0": [16.659925245276355, 2527], "2.0": [14.712615517474411, 6605]}, "corner_sz": -34.78, "row": {"study": "T4_R04_013", "el": 2.2, "nodes": 166370, "D": 3.0, "table": {"X": {"vm": 40.05, "vm_at": [6.16, 35.94, 6.08], "sf_yield": 1.12, "layer": 15.87, "layer_at": [18.98, 39.5, 0.0], "sf_layer": 1.42, "shear": 22.62, "shear_at": [6.13, 11.88, 6.11], "sf_shear": 0.57}, "Y": {"vm": 40.05, "vm_at": [6.16, 35.94, 6.08], "sf_yield": 1.12, "layer": 8.22, "layer_at": [5.68, 36.15, 18.73], "sf_layer": 2.74, "shear": 6.64, "shear_at": [5.68, 15.49, 17.92], "sf_shear": 1.96}, "Z": {"vm": 40.05, "vm_at": [6.16, 35.94, 6.08], "sf_yield": 1.12, "layer": 14.3, "layer_at": [0.38, 37.66, 17.08], "sf_layer": 1.57, "shear": 22.63, "shear_at": [6.13, 11.88, 6.11], "sf_shear": 0.57}}, "rim_layer_z": 14.3, "rim_vm": 19.37, "vm_all": 40.05, "plateau": {"1": [40.05, 14.3], "2": [40.05, 14.3], "3": [40.05, 14.3], "5": [40.05, 14.3]}, "flat": [2.2, 166370, 40.05, 14.3, 22.63], "checks": {"reaction": [-150.012, -0.01, -0.006, 150.012], "applied": 150.0, "max_disp": 3.125074863433838, "excessive": false, "top_ux": 3.005382679485307, "sz_back_z12": 8.106689415726008, "sx_bottom_x15": 12.040595095408591, "nodes_in_checks": [51, 304]}}}
+14:08:00 closing pid 120372 committed MB 1724

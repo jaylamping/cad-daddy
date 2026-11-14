@@ -1,0 +1,78 @@
+03:30:12 SolidWorks pid 16720 free GB 21.2
+03:30:18 D1_PULL_9N fixed hole walls 2 boss top faces 4
+03:30:18 ok two M5 hole walls: 2.0000 (expected 2.0000)
+03:30:18 ok four boss tops: 4.0000 (expected 4.0000)
+03:30:19 D1_PULL_9N: mesh rc 0, 37590 nodes, 22860 elements, free 21.0 GB
+03:30:23 D1_PULL_9N: fixture nodes 331, box [-27.75, 10.0, -12.75] to [27.75, 14.0, -7.25]
+03:30:23 D1_PULL_9N: load nodes 428, box [-42.5, 17.5, -16.99] to [42.5, 17.5, 43.0]
+{'study': 'D1_PULL_9N', 'el_mm': 1.5, 'nodes': 37590, 'elements': 22860, 'solve_s': 7, 'peak_vm_all': 8.99, 'peak_vm_away': 8.99, 'at': [35.5, 10.0, -6.25], 'sf_yield': 5.0, 'max_disp_mm': 1.940308928489685, 'reaction_N': [-0.0, -9.0, -0.001, 9.0], 'applied_N': 9.0}
+03:30:25 ok D1_PULL_9N check 1: reaction resultant equals load: 9.0000 (expected 9.0000)
+03:30:25 D1_PUSH_9N fixed hole walls 2 boss top faces 4
+03:30:25 ok two M5 hole walls: 2.0000 (expected 2.0000)
+03:30:25 ok four boss tops: 4.0000 (expected 4.0000)
+03:30:26 D1_PUSH_9N: mesh rc 0, 37590 nodes, 22860 elements, free 21.0 GB
+03:30:30 D1_PUSH_9N: fixture nodes 331, box [-27.75, 10.0, -12.75] to [27.75, 14.0, -7.25]
+03:30:30 D1_PUSH_9N: load nodes 428, box [-42.5, 17.5, -16.99] to [42.5, 17.5, 43.0]
+{'study': 'D1_PUSH_9N', 'el_mm': 1.5, 'nodes': 37590, 'elements': 22860, 'solve_s': 7, 'peak_vm_all': 8.99, 'peak_vm_away': 8.99, 'at': [35.5, 10.0, -6.25], 'sf_yield': 5.0, 'max_disp_mm': 1.940308928489685, 'reaction_N': [0.0, 9.0, 0.001, 9.0], 'applied_N': 9.0}
+03:30:32 ok D1_PUSH_9N check 1: reaction resultant equals load: 9.0000 (expected 9.0000)
+03:30:32 closing pid 16720 committed MB 1915
+[
+  {
+    "name": "D1_PULL_9N",
+    "nodes": 37590,
+    "elements": 22860,
+    "applied_n": 9.0,
+    "reaction_resultant_n": 9.0,
+    "max_disp_mm": 1.940308928489685,
+    "sigma_z_Z0_mpa": 0.0576880881562829,
+    "sigma_z_Z0_nodes": 94,
+    "peak_vm_mpa_excl_corners": 5.287693500518799,
+    "peak_vm_where_excl_corners": [
+      36.15,
+      10.0,
+      -2.88
+    ],
+    "vm_max_all_mpa": 8.993964195251465,
+    "layer_stress_mpa": 0.02100328728556633,
+    "layer_stress_where": [
+      36.83,
+      14.0,
+      -2.5
+    ],
+    "layer_shear_mpa": 0.27642558741342976,
+    "layer_shear_where": [
+      -35.5,
+      12.05,
+      32.63
+    ]
+  },
+  {
+    "name": "D1_PUSH_9N",
+    "nodes": 37590,
+    "elements": 22860,
+    "applied_n": 9.0,
+    "reaction_resultant_n": 9.0,
+    "max_disp_mm": 1.940308928489685,
+    "sigma_z_Z0_mpa": -0.0576880881562829,
+    "sigma_z_Z0_nodes": 94,
+    "peak_vm_mpa_excl_corners": 5.287693500518799,
+    "peak_vm_where_excl_corners": [
+      36.15,
+      10.0,
+      -2.88
+    ],
+    "vm_max_all_mpa": 8.993964195251465,
+    "layer_stress_mpa": 0.014772014692425728,
+    "layer_stress_where": [
+      35.5,
+      10.0,
+      32.75
+    ],
+    "layer_shear_mpa": 0.27642558741342976,
+    "layer_shear_where": [
+      -35.5,
+      12.05,
+      32.63
+    ]
+  }
+]

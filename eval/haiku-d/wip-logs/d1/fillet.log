@@ -1,0 +1,9 @@
+03:32:18 SolidWorks pid 6956 free GB 20.7
+03:32:21 corner edges found 4
+03:32:21 ok four opening corner edges: 4.0000 (expected 4.0000)
+03:32:21 OPEN_R1: R1.0 on 4 edges, volume change +3.43 mm3
+03:32:21 ok R1 built: 1.0000 (expected 1.0000)
+03:32:21 ok added volume (hand 3.43 mm3): 3.4336 (expected 3.4300)
+03:32:21 ok rebuild errors: 0.0000 (expected 0.0000)
+03:32:21 saved C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d1\buck_mount_r1.SLDPRT [('OPEN_R1', 8824.15, [-42.5, 10.0, -17.0, 42.5, 17.5, 43.0])]
+03:32:21 closing pid 6956 committed MB 2062

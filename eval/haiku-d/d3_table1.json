@@ -1,0 +1,272 @@
+{
+  "P1": {
+    "as_built": {
+      "od": 70,
+      "t": 6,
+      "bore": 30,
+      "A": [
+        6,
+        3.4,
+        50
+      ],
+      "B": [
+        4,
+        4.5,
+        60,
+        8,
+        3
+      ],
+      "turnA": 0,
+      "turnB": 45,
+      "ch": 0.5
+    },
+    "hand_checks": {
+      "min_wall_mm": 1.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 17728.67,
+    "volume_hand_mm3": 17728.67,
+    "volume_diff_pct": 0.0,
+    "mass_g": 21.1,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 17711.82,
+    "box": [
+      -35.0,
+      -35.0,
+      0.0,
+      35.0,
+      35.0,
+      6.0
+    ]
+  },
+  "P2": {
+    "as_built": {
+      "od": 84,
+      "t": 6,
+      "bore": 40,
+      "A": [
+        6,
+        4.5,
+        62
+      ],
+      "B": [
+        6,
+        4.5,
+        62,
+        8,
+        3
+      ],
+      "turnA": 0,
+      "turnB": 30,
+      "ch": 1.0
+    },
+    "hand_checks": {
+      "min_wall_mm": 7.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 23947.18,
+    "volume_hand_mm3": 23947.18,
+    "volume_diff_pct": 0.0,
+    "mass_g": 28.5,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 23925.57,
+    "box": [
+      -42.0,
+      -42.0,
+      0.0,
+      42.0,
+      42.0,
+      6.0
+    ]
+  },
+  "P3": {
+    "as_built": {
+      "od": 96,
+      "t": 8,
+      "bore": 52,
+      "A": [
+        8,
+        3.4,
+        66
+      ],
+      "B": [
+        4,
+        5.5,
+        84,
+        10,
+        4
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 0.5
+    },
+    "hand_checks": {
+      "min_wall_mm": 1.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 4.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 38698.26,
+    "volume_hand_mm3": 38698.26,
+    "volume_diff_pct": 0.0,
+    "mass_g": 46.05,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 38662.24,
+    "box": [
+      -48.0,
+      -48.0,
+      0.0,
+      48.0,
+      48.0,
+      8.0
+    ]
+  },
+  "P4": {
+    "as_built": {
+      "od": 68,
+      "t": 5,
+      "bore": 28,
+      "A": [
+        4,
+        3.4,
+        40
+      ],
+      "B": [
+        6,
+        4.5,
+        58,
+        8,
+        4.0
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 0.5
+    },
+    "hand_checks": {
+      "min_wall_mm": 1.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 1.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 13596.26,
+    "volume_hand_mm3": 13596.26,
+    "volume_diff_pct": 0.0,
+    "mass_g": 16.18,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 13585.36,
+    "box": [
+      -34.0,
+      -34.0,
+      0.0,
+      34.0,
+      34.0,
+      5.0
+    ]
+  },
+  "P5": {
+    "as_built": {
+      "od": 120,
+      "t": 8,
+      "bore": 60,
+      "A": [
+        12,
+        4.5,
+        80
+      ],
+      "B": [
+        6,
+        6.6,
+        104,
+        11,
+        5
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 1.0
+    },
+    "hand_checks": {
+      "min_wall_mm": 2.5,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 62864.78,
+    "volume_hand_mm3": 62864.78,
+    "volume_diff_pct": 0.0,
+    "mass_g": 74.81,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 62817.75,
+    "box": [
+      -60.0,
+      -60.0,
+      0.0,
+      60.0,
+      60.0,
+      8.0
+    ]
+  },
+  "P6": {
+    "as_built": {
+      "od": 76,
+      "t": 6,
+      "bore": 34,
+      "A": [
+        6,
+        3.4,
+        46
+      ],
+      "B": [
+        3,
+        4.5,
+        64,
+        8,
+        3
+      ],
+      "turnA": 0,
+      "turnB": 0,
+      "ch": 1.0
+    },
+    "hand_checks": {
+      "min_wall_mm": 2.0,
+      "min_wall_at": "cbB0-outside",
+      "counterbore_floor_from_bottom_mm": 3.0,
+      "walls_below_0p6": [],
+      "floor_ok": true
+    },
+    "volume_sw_mm3": 20848.86,
+    "volume_hand_mm3": 20848.86,
+    "volume_diff_pct": -0.0,
+    "mass_g": 24.81,
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_bodies": 1,
+    "stl_volume_mm3": 20827.26,
+    "box": [
+      -38.0,
+      -38.0,
+      0.0,
+      38.0,
+      38.0,
+      6.0
+    ]
+  }
+}

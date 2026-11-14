@@ -1,0 +1,32 @@
+{
+  "volume_mm3": 31642.99990167725,
+  "hand_volume_mm3": 31643.0,
+  "bodies": 1,
+  "bbox_mm": [
+    0.0,
+    0.0,
+    0.0,
+    80.0,
+    50.0,
+    46.0
+  ],
+  "feature_errors": [],
+  "counterbore_floor_z_mm": [
+    [
+      3.0
+    ],
+    [
+      3.0
+    ],
+    [
+      3.0
+    ],
+    [
+      3.0
+    ]
+  ],
+  "counterbore_floor_z_all": [
+    3.0
+  ],
+  "elapsed_s": 12.8
+}

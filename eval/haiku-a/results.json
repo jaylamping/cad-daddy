@@ -1,0 +1,123 @@
+[
+  {
+    "task": "T1",
+    "status": "done",
+    "volume_mm3": 32974.02,
+    "hand_volume_mm3": 32974.02,
+    "mass_g": 39.24,
+    "bbox_mm": [
+      0,
+      0,
+      0,
+      80,
+      50,
+      46
+    ],
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_volume_mm3": 32990.38,
+    "notes": "All feature volumes match hand values; cylinders measured on the finished solid."
+  },
+  {
+    "task": "T2",
+    "status": "partial",
+    "volume_mm3": 31643.0,
+    "hand_volume_mm3": 31643.0,
+    "counterbore_floor_z_mm": 3.0,
+    "bodies": 1,
+    "notes": "Volume and floors checked; counterbore diameter and slot position not measured on the solid."
+  },
+  {
+    "task": "T3",
+    "status": "done",
+    "hand_root_stress_mpa": 11.0,
+    "el_mm": 1.5,
+    "nodes": 135457,
+    "peak_vm_mpa": 20.77,
+    "peak_at_mm": [
+      23.95,
+      5.11,
+      6.0
+    ],
+    "layer_stress_mpa": 17.51,
+    "sf_yield": 2.17,
+    "sf_layer": 1.29,
+    "max_disp_mm": 3.5,
+    "reaction_n": 149.998,
+    "converged": false,
+    "convergence_rows": [
+      [
+        3.0,
+        41786,
+        17.72,
+        18.33
+      ],
+      [
+        2.0,
+        80004,
+        18.01,
+        16.7
+      ],
+      [
+        1.5,
+        135457,
+        20.77,
+        17.51
+      ]
+    ],
+    "verdict": "fail",
+    "notes": "Even-force case governs; von Mises peak sits on a fixed hole rim (singular), not converged. Remote case: layer 10.36 MPa, SF 2.17. Base-overhang rotation explains displacement; corrected hand ~1.5 mm at bore, FEA 1.35-1.68."
+  },
+  {
+    "task": "T4",
+    "status": "partial",
+    "reported_stress_mpa": 31.34,
+    "how_judged": "Sharp corner at 1.5 mm, not converged (4% last step); 0.4 mm variant gives 41 MPa and 23 MPa shear, contradicting expectation, unexplained.",
+    "convergence_rows": [
+      [
+        3.0,
+        44184,
+        33.61
+      ],
+      [
+        2.0,
+        81212,
+        32.79
+      ],
+      [
+        1.5,
+        141077,
+        31.34
+      ]
+    ],
+    "converged": false,
+    "verdict": "fail",
+    "notes": "Interlayer shear 17 MPa at the sharp corner exceeds 13 MPa allowable."
+  },
+  {
+    "task": "T5",
+    "status": "partial",
+    "change": "Print orientation: layers normal to Y, geometry unchanged",
+    "mass_g": 39.24,
+    "mass_growth_pct": 0,
+    "sf_yield": 2.2,
+    "sf_layer": 2.37,
+    "print_orientation": "Y",
+    "verdict": null,
+    "notes": "Layer value 9.4-9.5 MPa not converged (34% step between 2.0 and 1.5 mm). Verdict not shown."
+  },
+  {
+    "task": "T6",
+    "status": "failed",
+    "hand_bearing_mpa": 2.08,
+    "nodes": 38472,
+    "solver": "direct sparse",
+    "how_pin_was_stabilised": "not stabilised (attempt 1 only)",
+    "peak_contact_vm_mpa": null,
+    "block_peak_at_mm": null,
+    "pin_rise_mm": null,
+    "reaction_n": 499.997,
+    "valid": false,
+    "why": "Excessive displacements (5.08 mm) with loose_ok: pin free in X; invalid. Pads not attempted within the 40 min cap."
+  }
+]

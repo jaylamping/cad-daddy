@@ -1,0 +1,85 @@
+03:13:11 SolidWorks pid 5620 free GB 21.6
+03:13:13 sharp: volume 31471.318, removed 171.681 (hand 171.681)
+03:13:18 bbox [0.0, 0.0, 0.0, 80.0, 50.0, 46.0]
+03:13:19 picks: holes 4 bore 1 corner edges 1
+03:13:20 shsh30: mesh rc 0, 44184 nodes, 27563 elements, free 21.7 GB
+03:13:25 shsh30: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:13:25 shsh30: load nodes 243, box [0.0, 14.0, 17.0] to [6.0, 36.0, 39.0]
+03:13:27 row {'el': 3.0, 'nodes': 44184, 'peak_vm': 33.608, 'peak_at': [6.0, 25.72, 6.0], 'layer_z': 11.678, 'shear_z': 18.438, 'reaction_N': [-150.0, 0.0, -0.0, 150.0], 'solve_s': 9}
+03:13:29 shsh20: mesh rc 0, 81212 nodes, 52568 elements, free 21.7 GB
+03:13:42 shsh20: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:13:42 shsh20: load nodes 610, box [0.0, 14.0, 17.0] to [6.0, 36.0, 39.0]
+03:13:49 row {'el': 2.0, 'nodes': 81212, 'peak_vm': 32.792, 'peak_at': [6.0, 22.84, 6.0], 'layer_z': 11.742, 'shear_z': 17.777, 'reaction_N': [-150.0, 0.0, 0.0, 150.0], 'solve_s': 22}
+03:13:51 shsh15: mesh rc 0, 141077 nodes, 93687 elements, free 21.4 GB
+03:14:33 shsh15: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:14:33 shsh15: load nodes 828, box [0.0, 14.0, 17.0] to [6.0, 36.0, 39.0]
+03:14:57 row {'el': 1.5, 'nodes': 141077, 'peak_vm': 31.343, 'peak_at': [6.0, 28.24, 6.0], 'layer_z': 11.743, 'shear_z': 17.069, 'reaction_N': [-150.0, -0.0, -0.0, 150.0], 'solve_s': 68}
+03:14:57 closing pid 5620 committed MB 1740
+{
+  "mode": "sharp",
+  "rows": [
+    {
+      "el": 3.0,
+      "nodes": 44184,
+      "peak_vm": 33.608,
+      "peak_at": [
+        6.0,
+        25.72,
+        6.0
+      ],
+      "layer_z": 11.678,
+      "shear_z": 18.438,
+      "reaction_N": [
+        -150.0,
+        0.0,
+        -0.0,
+        150.0
+      ],
+      "solve_s": 9
+    },
+    {
+      "el": 2.0,
+      "nodes": 81212,
+      "peak_vm": 32.792,
+      "peak_at": [
+        6.0,
+        22.84,
+        6.0
+      ],
+      "layer_z": 11.742,
+      "shear_z": 17.777,
+      "reaction_N": [
+        -150.0,
+        0.0,
+        0.0,
+        150.0
+      ],
+      "solve_s": 22
+    },
+    {
+      "el": 1.5,
+      "nodes": 141077,
+      "peak_vm": 31.343,
+      "peak_at": [
+        6.0,
+        28.24,
+        6.0
+      ],
+      "layer_z": 11.743,
+      "shear_z": 17.069,
+      "reaction_N": [
+        -150.0,
+        -0.0,
+        -0.0,
+        150.0
+      ],
+      "solve_s": 68
+    }
+  ],
+  "relative_change_per_step": [
+    0.0243,
+    0.0442
+  ],
+  "elapsed_s": 111.8
+}
+EXIT 0

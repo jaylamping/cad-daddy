@@ -1,0 +1,8 @@
+16:13:50 SolidWorks pid 9488 free GB 22.8
+16:13:52 measured haiku-plan-a/bracket_c2.SLDPRT 35695.1936 30 faces
+16:13:52 measured haiku-plan-a/bracket_c2_ld.SLDPRT 35849.1316 42 faces
+16:13:53 measured haiku-plan-a/bracket_c.SLDPRT 35693.9888 26 faces
+16:13:53 measured haiku-plan-a/block_fea.SLDPRT 25496.8118 22 faces
+16:13:54 measured haiku-plan-d/buck_mount.SLDPRT 9949.0664 52 faces
+16:13:55 measured haiku-plan-d/housing_fea.SLDPRT 40217.1471 104 faces
+16:13:55 closing pid 9488 committed MB 1827
