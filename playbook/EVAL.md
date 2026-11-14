@@ -306,11 +306,33 @@ tolerance in `expect()` that read 0.02 mm as 2 %.
 is the same; what changes is that the strong model's part needs no SolidWorks seat and no waiting on solves, so
 several jobs can be planned and reviewed while the executor runs them.
 
-**What this says to do next.** Keep the three steps. Move what the review found into code and pages so the
-executor gets it right the first time: `swfea.judge()` now computes the verdict and the lowest factor, there is
-a word for "holds with margin, not converged", valid is kept apart from converged, and time comes from a clock.
-The follow-up runs the review wrote are the next test: whether the executor can close a task when handed the next
-step explicitly.
+**The fourth step: the follow-ups handed back** ([haiku-followup-CHECK.md](../eval/haiku-followup-CHECK.md)). The
+review's follow-up runs went back to Haiku as written, with `judge()` and the job clock in place. Set A took 14
+minutes and set D 24, both from `times.log` and both right this time. Checked independently again:
+
+| Open task | After the follow-up | Check |
+| --- | --- | --- |
+| T5 ribbed bracket | rib toes rounded at R2: pass, lowest factor 2.99, all three measures converged | confirmed; part re-measured to the hand volume |
+| T6 pin contact | valid, line mean 6.07 / 5.73 / 5.64 MPa, converged | confirmed; it sits 17 % under Hertz because the contact is wider than the textbook strip |
+| D1 mount | converged at 2.49 MPa, factor 18.07 | confirmed; the reviewer's higher hand value was the wrong model |
+| D2 split housing | model valid, lowest factor 4.17, shear still climbing 20 % then 28 % per step: not closed | not closed. The climbing peak is the ring's sharp steel corner bearing 0.15 mm from the seat rim. One millimetre away everything converges at a factor of about 13 |
+
+Three of four open tasks closed, fifteen studies in 38 minutes, every step tried in order, no stop, no invented
+number and no verdict of its own. What explicit next steps did not buy is anything past the instruction: results
+that needed looking at were reported and left, and the instruction's own mistakes were carried out faithfully. The
+last open task needs a decision (round the ring corner, read away from the edge) that neither the plan, the
+review nor the executor made. It is now a line in [07-done.md](07-done.md).
+
+`judge()` was wrong on that task: it called a series with growing steps "margin". A rising measure whose steps
+grow is the mark of a sharp edge, and it now reads "not shown".
+
+**Cost of the whole loop for sets A and D:** plan 43 minutes, build 43, review 16, follow-up 38. Fable works for
+59 of 140 minutes and needs no SolidWorks seat; nine of ten tasks end closed and checked.
+
+**What this says to do next.** Keep the loop: plan, build, review, follow up. Each pass through it has moved
+something from the strong model's head into code or a page (the verdict, the clock, the contact-edge rule), and
+those help every model. The open questions are whether one planner can keep several executors busy at once, and
+whether the same loop holds on a design task with no right answer, where set C showed the largest gap.
 
 ## What each run changed in the playbook
 
