@@ -1,0 +1,7 @@
+﻿from pathlib import Path
+p=Path('tools/solidworks/playbook/eval/terra-high-b2/REPORT.md')
+s=p.read_text(encoding='utf-8-sig')
+s=s.replace('The computed 4.71 mm tip displacement', 'At X=35 mm, the tapered section is 6.945 mm deep: the hand surface bending stress is 18.66 MPa and the measured mean X stress at the upper surface is 18.96 MPa on 59 nodes (1.6% high). On the 1.2 mm hole-supported result, layer normals X/Y/Z respectively have peak tension 21.56/4.24/6.73 MPa and shear 6.29/4.44/6.28 MPa; the Y direction is preferable for this case. There is no separate compression strut in this solid cantilever for a direct Euler column calculation; overall lateral and local instability were not established.\n\nThe computed 4.71 mm tip displacement')
+s=s.replace('The R0.4 edge-selection attempt initially found zero edges', 'The 3 mm-tip script predicted the peak at the root even though a hand check near X49 already suggested the thin arm could govern; it printed stresses and continued when the peak moved there. The 3.2 mm rerun explicitly predicted the tip peak, and the missed stop is recorded rather than hidden. The R0.4 edge-selection attempt initially found zero edges')
+s=s.replace('the user explicitly forbade both, so neither was done.', 'the user explicitly forbade both, so neither was done. The general instruction to hand design decisions up was overridden by the user’s direction to decide and document the choice.')
+p.write_text(s,encoding='utf-8')

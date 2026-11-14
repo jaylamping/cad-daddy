@@ -1,0 +1,1 @@
+Rerun of set B: same brief as terra-high-b, playbook with the "Do not stop early" section (07-done.md and README.md, as in commit ea7cff7), and swkit.job() waiting for the memory floor when wait_s is given. Nodal result arrays (*.npz, about 230 MB) are left out; they stay on holly-pc in the run's worktree.

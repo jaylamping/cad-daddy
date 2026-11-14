@@ -1,0 +1,171 @@
+{
+  "B1": {
+    "status": "done",
+    "volume_mm3": 21865.5355,
+    "hand_volume_mm3": 21865.5096,
+    "mass_g": 26.02,
+    "bbox_mm": [
+      -30,
+      -30,
+      0,
+      30,
+      30,
+      25
+    ],
+    "bodies": 1,
+    "stl_watertight": true,
+    "spec_questions": [
+      "The radial set-screw hole leaves a 0.4 mm roof, below the 0.6 mm wall guideline; should the height or boss change?",
+      "The dowel holes overlap the boss footprint by 0.75 mm, and the boss overhangs their flange openings; how are the dowels inserted?"
+    ],
+    "notes": "STEP AP203 mm; STL volume 21811.007 mm3, one shell; measured geometry and export details in REPORT.md."
+  },
+  "B2": {
+    "status": "done",
+    "hand_root_stress_mpa": 13.75,
+    "print_orientation": "Z normal (axis-aligned best for the 0.4 mm rounded trial)",
+    "nodes": 155273,
+    "peak_vm_mpa": 18.1975,
+    "layer_stress_mpa": 6.3474,
+    "layer_shear_mpa": 6.6678,
+    "sf_yield": 2.4728671520813297,
+    "sf_layer": 3.5447584837886374,
+    "sf_shear": 1.9496685563454215,
+    "max_disp_mm": 1.88115,
+    "reaction_n": [
+      0.001,
+      0,
+      59.997
+    ],
+    "converged": true,
+    "verdict": "Fail on the 0.4 mm rounded-root trial: interlayer shear factor 1.95; the exact sharp model is not shown to be a robust pass.",
+    "notes": "All reported values are from the 0.4 mm rounded trial, hole-wall support, 1.2 mm mesh, 3 mm exclusion. Original exact sharp model and alternate full-wall support are reported separately. Convergence applies to this selected orientation and masked metrics, not to every possible support. A separate R2 mm side-root trial gives conservative VM/layer/shear factors 2.25/3.83/2.57 with Y-normal printing; this is a design variant, not the requested original."
+  },
+  "B3": {
+    "status": "done",
+    "mass_before_g": 22.7047064,
+    "mass_after_g": 9.256341277,
+    "saving_pct": 59.231619,
+    "steps": [
+      {
+        "change": "20 mm wall plate",
+        "mass_g": 15.5647,
+        "sf_yield": 2.54,
+        "sf_layer": 4.28,
+        "sf_shear": 4.09,
+        "notes": "preliminary 1.5 mm; Y shear not converged"
+      },
+      {
+        "change": "14 mm wall plate, sharp side root",
+        "mass_g": 13.4227,
+        "sf_yield": 2.44,
+        "sf_layer": 5.14,
+        "sf_shear": 5.45,
+        "notes": "preliminary and misleading at sharp corner"
+      },
+      {
+        "change": "0.4 mm side-root radius",
+        "mass_g": 13.4241,
+        "sf_yield": 2.37,
+        "sf_layer": 3.68,
+        "sf_shear": 2.0,
+        "notes": "hole support; alternate wall support shear factor 1.47"
+      },
+      {
+        "change": "1 mm side-root radius",
+        "mass_g": 13.4309,
+        "sf_yield": 2.39,
+        "sf_layer": 5.33,
+        "sf_shear": 2.99,
+        "notes": "hole support; alternate wall support shear factor 2.41"
+      },
+      {
+        "change": "taper to 6 mm tip",
+        "mass_g": 11.039,
+        "sf_yield": 2.31,
+        "sf_layer": 5.24,
+        "sf_shear": 2.88,
+        "notes": "1.0 mm hole support"
+      },
+      {
+        "change": "taper to 4 mm tip",
+        "mass_g": 10.2417,
+        "sf_yield": 2.41,
+        "sf_layer": 4.99,
+        "sf_shear": 2.92,
+        "notes": "1.5 mm preliminary hole support"
+      },
+      {
+        "change": "taper to 3 mm tip",
+        "mass_g": 9.843,
+        "sf_yield": 1.92,
+        "sf_layer": 5.08,
+        "sf_shear": 2.86,
+        "notes": "fails yield; not final"
+      },
+      {
+        "change": "taper to 3.2 mm tip",
+        "mass_g": 9.9227,
+        "sf_yield": 2.07565,
+        "sf_layer": 4.1024,
+        "sf_shear": 2.48548,
+        "notes": "conservative among 1.2 mm hole support and 2 mm whole-wall support"
+      },
+      {
+        "change": "shorten wall plate to Z4–56",
+        "mass_g": 9.256341277,
+        "sf_yield": 2.0756457564575648,
+        "sf_layer": 4.254444065109808,
+        "sf_shear": 2.3747526238459065,
+        "notes": "final candidate: 1.0 mm hole support and 1.2 mm alternate wall support"
+      },
+      {
+        "change": "add rounded 6×12 mm plate window",
+        "mass_g": 8.828758480839591,
+        "sf_yield": 2.0746887966804977,
+        "sf_layer": 3.760655189704162,
+        "sf_shear": 1.7027317029493907,
+        "notes": "rejected: Y-layer shear exceeds the factor-2 limit; 1.5 mm hole support"
+      }
+    ],
+    "governing": "von Mises yield near the tapered tip, factor 2.08",
+    "sf_yield": 2.0756457564575648,
+    "sf_layer": 4.254444065109808,
+    "sf_shear": 2.3747526238459065,
+    "print_orientation": "Y layer normal",
+    "notes": "Linear-static candidate, not approved for printing. Hole-supported 1.0 mm and wall-supported 1.2 mm results are combined conservatively; 4.72 mm displacement, nonlinear stability and real fasteners remain unchecked. Full original wall-face area was not retained."
+  },
+  "B4": {
+    "status": "blocked",
+    "hand_wall_forces_n": [
+      100.84,
+      -180.84
+    ],
+    "wall_forces_n": [
+      114,
+      -194
+    ],
+    "nodes": 10510,
+    "how_tongue_was_stabilised": "An additional bonded soft 0.01 MPa pad above the slot, fixed on its outer face; conservative force bound 0.069 N.",
+    "block_peak_vm_mpa": 17.853,
+    "block_peak_at_mm": [
+      4.1,
+      -2.857,
+      20
+    ],
+    "tongue_tip_disp_mm": 0.91535,
+    "reaction_n": [
+      -80,
+      0,
+      0
+    ],
+    "valid": false,
+    "why": "Values are preliminary 3 mm-mesh results. Three distinct refined contact attempts produced implausible excessive motion despite balanced reactions; wall forces and sharp-lip stress are not shown converged.",
+    "notes": "Wall forces are approximate section integrals, not validated values. 0.08 N gap engagement test and pad-force bound are documented in REPORT.md."
+  },
+  "B5": {
+    "status": "done",
+    "problems_found": 13,
+    "notes": "Prioritized review and required redo are in REPORT.md."
+  }
+}
