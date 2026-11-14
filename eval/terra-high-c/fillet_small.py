@@ -1,0 +1,20 @@
+﻿import sys
+from pathlib import Path
+R=Path(__file__).resolve().parents[5]; sys.path.insert(0,str(R/'tools/solidworks'))
+import swkit
+from swkit import *
+swkit.pin_export_prefs=lambda sw: None
+O=R/'cad/_wip/sw-eval/terra-high-c'
+with job(wait_s=1800) as j:
+ print('OWN PID',j.inst.pid,flush=True)
+ d=open_doc(j.sw,O/'fillet_small.SLDPRT')
+ es=edges_where(d,lambda p: -38<p[2]<-28 and abs(p[1])<10 and abs(p[0])<17)
+ print('CANDIDATES',len(es),flush=True)
+ for i,e in enumerate(es):
+  cp=e.GetCurveParams3; mid=e.GetCurve.Evaluate2((cp.UMinValue+cp.UMaxValue)/2,0)
+  print('EDGE',i,[[round(a*1000,3) for a in list(v)[:3]] for v in (cp.StartPoint,mid,cp.EndPoint)],flush=True)
+ es=[e for e in es if all(abs(v*1000+32)<0.02 for v in (e.GetCurveParams3.StartPoint[2],e.GetCurveParams3.EndPoint[2])) and abs(abs(e.GetCurveParams3.StartPoint[1]*1000)-4)<0.02 and abs(abs(e.GetCurveParams3.EndPoint[1]*1000)-4)<0.02]; print('SELECTED',len(es),flush=True); radius=fillet(d,es,(0.4,),'NECK_ROUND') if es else None
+ print('FILLET',radius,flush=True)
+ if radius:
+  print('VOLUME',volume(d),'BODIES',bodies(d),'ERRORS',feature_errors(d),flush=True)
+  save(d); save_as(d,O/'fillet_small.stl')

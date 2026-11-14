@@ -1,0 +1,104 @@
+{
+  "run": "terra-high-c",
+  "model_id": "GPT-6 (Codex; exact variant not exposed)",
+  "reasoning_effort": "not exposed",
+  "C1": {
+    "volume_mm3": 219436.03822328447,
+    "hand_volume_mm3": 219436.03822328453,
+    "mass_g": 261.12888548570857,
+    "bodies": 1,
+    "shape": {
+      "triangles": 1632,
+      "area_mm2": 38261.4,
+      "flat_share": 0.91,
+      "largest_flat": 0.144,
+      "sharp_mm": 2406.4,
+      "sharp_per_area": 12.3
+    }
+  },
+  "C2": {
+    "mass_before_g": 261.12888548570857,
+    "mass_after_g": 176.61574702093915,
+    "shape_before": {
+      "triangles": 1632,
+      "area_mm2": 38261.4,
+      "flat_share": 0.91,
+      "largest_flat": 0.144,
+      "sharp_mm": 2406.4,
+      "sharp_per_area": 12.3
+    },
+    "shape_after": {
+      "triangles": 10088,
+      "area_mm2": 33868.1,
+      "flat_share": 0.361,
+      "largest_flat": 0.089,
+      "sharp_mm": 1676.3,
+      "sharp_per_area": 9.11
+    },
+    "print_orientation": "X layer normal; nominal 46 x 248 mm bed footprint",
+    "sf_yield": null,
+    "sf_layer": null,
+    "sf_shear": null,
+    "governing": "elbow/fixture junction under axial thrust proxy; true axial path and convergence not shown",
+    "fixed_items_ok": false,
+    "ideas_tried": [
+      "single oval shaft",
+      "twin separated rails",
+      "widened neck",
+      "shaft growing from disc",
+      "broad shoulder",
+      "rounded shoulder"
+    ],
+    "checkpoints": [
+      {
+        "time": "17:38:35",
+        "picture": "pictures/checkpoint_01.png",
+        "what_was_missing": "interfaces, stress, print and export verification"
+      },
+      {
+        "time": "17:44:13",
+        "picture": "pictures/checkpoint_02.png",
+        "what_was_missing": "junction details and verification"
+      },
+      {
+        "time": "17:50:30",
+        "picture": "pictures/checkpoint_03.png",
+        "what_was_missing": "strength and continuous interface proof"
+      },
+      {
+        "time": "17:55:34",
+        "picture": "pictures/checkpoint_04.png",
+        "what_was_missing": "true pin axial load and convergence"
+      },
+      {
+        "time": "17:57:59",
+        "picture": "pictures/checkpoint_05.png",
+        "what_was_missing": "native measurements and strength"
+      },
+      {
+        "time": "18:00:45",
+        "picture": "pictures/checkpoint_06.png",
+        "what_was_missing": "strength and exact interface checks; conspicuous ledge"
+      },
+      {
+        "time": "18:07:44",
+        "picture": "pictures/checkpoint_07.png",
+        "what_was_missing": "rounded geometry studies and exact measurements"
+      }
+    ],
+    "minutes": 50.6,
+    "proxy_sf_yield": 1.854251337974327,
+    "proxy_sf_layer": 1.5039619868548924,
+    "proxy_sf_shear": 1.701962719251333,
+    "proxy_factors_note": "lowest coarse all-node values over two bearing cases and an axial thrust-face proxy; unconverged and not valid for requirement",
+    "fixed_items_note": "native cylinder/plane measurements and sampled void checks are favorable; continuous ring, clearance and sweep are not fully verified",
+    "selection": "idea_e, unrounded broad shoulder"
+  },
+  "start_utc": "2026-11-13T23:35:35Z",
+  "end_utc": "2026-11-14T00:27:36Z",
+  "elapsed_minutes": 52.02,
+  "cleanup": {
+    "claim_released": true,
+    "owned_instances_remaining": 0
+  }
+}
