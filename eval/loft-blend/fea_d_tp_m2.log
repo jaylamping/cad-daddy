@@ -1,0 +1,7 @@
+02:37:51 SolidWorks pid 17032 free GB 20.6
+02:37:59 tp_m2 faces: bottom 1 tip 1 fine 2 disc top 1
+02:38:03 tp_m2_1.2: mesh rc 0, 82323 nodes, 55716 elements, free 20.3 GB
+02:38:23 tp_m2_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:38:23 tp_m2_1.2: load nodes 360, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:38:33 RESULT tp_m2 1.2 {"nodes": 82323, "volume": 27449.4, "reaction": [0.0, -20.0, 0.0, 20.0], "tip_disp": 0.4488, "junction_vm": 4.848, "at": [-1.56, -5.97, 2.91], "junction_avg_1mm": [3.827, 20], "junction_p1": 5.488, "plain_section_vm_z25": 1.973, "profile_y": [[0.4, 8.85], [1, 7.46], [2, 6.44], [3, 6.03], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:38:33 closing pid 17032 committed MB 1757

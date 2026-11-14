@@ -1,0 +1,28 @@
+02:33:14 SolidWorks pid 1788 free GB 20.6
+02:33:23 tp_m3_R4 faces: bottom 1 tip 1 fine 1 disc top 1
+02:33:25 tp_m3_R4_1.2: mesh rc 0, 86636 nodes, 58822 elements, free 20.3 GB
+02:33:44 tp_m3_R4_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:33:44 tp_m3_R4_1.2: load nodes 364, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:33:53 RESULT tp_m3_R4 1.2 {"nodes": 86636, "volume": 27462.3, "reaction": [-0.0, -20.0, -0.0, 20.0], "tip_disp": 0.4372, "junction_vm": 4.418, "at": [0.42, 6.14, 3.09], "junction_avg_1mm": [3.856, 24], "junction_p1": 4.952, "plain_section_vm_z25": 2.08, "profile_y": [[0.4, 9.48], [1, 7.75], [2, 6.69], [3, 6.2], [4, 6.04], [6, 5.93], [8, 6.0], [12, 6.01]]}
+02:33:54 tp_m4_skirt_arc_R4 faces: bottom 1 tip 1 fine 2 disc top 1
+02:33:58 tp_m4_skirt_arc_R4_1.2: mesh rc 0, 82380 nodes, 55762 elements, free 20.1 GB
+02:34:18 tp_m4_skirt_arc_R4_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:34:18 tp_m4_skirt_arc_R4_1.2: load nodes 364, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:34:28 RESULT tp_m4_skirt_arc_R4 1.2 {"nodes": 82380, "volume": 27465.6, "reaction": [-0.0, -20.0, -0.0, 20.0], "tip_disp": 0.4453, "junction_vm": 4.765, "at": [-1.91, -5.79, 3.83], "junction_avg_1mm": [3.836, 24], "junction_p1": 5.336, "plain_section_vm_z25": 1.981, "profile_y": [[0.4, 9.49], [1, 7.69], [2, 6.66], [3, 6.21], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:34:29 tp_m4_skirt_2sec_normal_end_R4 faces: bottom 1 tip 1 fine 2 disc top 1
+02:34:33 t_2sec_normal_end_R4_1.2: mesh rc 0, 81917 nodes, 55480 elements, free 21.0 GB
+02:34:34 closing pid 1788 committed MB 1887
+python : Traceback (most recent call last):
+At line:2 char:111
++ ... \fea_a.log; python eval\loft-blend\fea.py 1.2 tp_m3_R4 tp_m4_skirt_ar ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\joe\code\cad-daddy-wt\loft-blend\eval\loft-blend\fea.py", line 43, in <module>
+    r = static(j, d, f'{name}_{CTRL}'[-24:], PETG, fixtures=[('fixed', bottom)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\joe\code\cad-daddy-wt\loft-blend\solidworks\swfea.py", line 467, in static
+    raise Failed(f'{name}: solve failed ({rc}). 24 is a singular model (a body free to move) or out of memory: '
+swkit.Failed: t_2sec_normal_end_R4_1.2: solve failed (24). 24 is a singular model (a body free to move) or out of 
+memory: playbook/05-fea.md, "When the solve fails"

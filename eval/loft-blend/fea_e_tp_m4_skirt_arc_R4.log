@@ -1,0 +1,7 @@
+02:45:22 SolidWorks pid 12120 free GB 21.1
+02:45:28 tp_m4_skirt_arc_R4 faces: bottom 1 tip 1 fine 2 disc top 1
+02:45:34 tp_m4_skirt_arc_R4_0.8: mesh rc 0, 202311 nodes, 140115 elements, free 20.7 GB
+02:47:10 tp_m4_skirt_arc_R4_0.8: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:47:10 tp_m4_skirt_arc_R4_0.8: load nodes 629, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:47:57 RESULT tp_m4_skirt_arc_R4 0.8 {"nodes": 202311, "volume": 27465.6, "reaction": [0.0, -20.0, -0.0, 20.0], "tip_disp": 0.4454, "junction_vm": 5.038, "at": [-1.14, -5.85, 3.85], "junction_avg_1mm": [3.908, 74], "junction_p1": 5.755, "plain_section_vm_z25": 1.981, "profile_y": [[0.4, 9.45], [1, 7.75], [2, 6.76], [3, 6.21], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:47:57 closing pid 12120 committed MB 1752

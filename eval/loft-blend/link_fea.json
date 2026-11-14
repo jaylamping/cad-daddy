@@ -1,0 +1,406 @@
+{
+ "sharp": {
+  "3.0": {
+   "nodes": 93271,
+   "volume": 124900.7,
+   "reaction": [
+    -0.0,
+    -60.0,
+    -0.0,
+    60.0
+   ],
+   "disp": 5.332,
+   "junction_vm": 27.51,
+   "at": [
+    5.7,
+    7.31,
+    -32.0
+   ],
+   "junction_avg_1mm": [
+    14.96,
+    12
+   ],
+   "junction_avg_2mm": [
+    11.43,
+    48
+   ],
+   "rest_of_link_vm": 4.97,
+   "overall_away": 27.51,
+   "factor_junction": 1.64
+  },
+  "2.5": {
+   "nodes": 125527,
+   "volume": 124900.7,
+   "reaction": [
+    -0.0,
+    -60.0,
+    -0.0,
+    60.0
+   ],
+   "disp": 5.38,
+   "junction_vm": 24.18,
+   "at": [
+    -5.7,
+    7.31,
+    -32.0
+   ],
+   "junction_avg_1mm": [
+    15.13,
+    14
+   ],
+   "junction_avg_2mm": [
+    11.45,
+    54
+   ],
+   "rest_of_link_vm": 4.95,
+   "overall_away": 24.18,
+   "factor_junction": 1.86
+  },
+  "2.0": {
+   "nodes": 197729,
+   "volume": 124900.7,
+   "reaction": [
+    0.0,
+    -60.0,
+    0.0,
+    60.0
+   ],
+   "disp": 5.407,
+   "junction_vm": 25.31,
+   "at": [
+    5.7,
+    7.31,
+    -32.0
+   ],
+   "junction_avg_1mm": [
+    14.9,
+    19
+   ],
+   "junction_avg_2mm": [
+    11.35,
+    87
+   ],
+   "rest_of_link_vm": 4.96,
+   "overall_away": 25.31,
+   "factor_junction": 1.78
+  }
+ },
+ "m3a": {
+  "3.0": {
+   "nodes": 93319,
+   "volume": 125393.4,
+   "reaction": [
+    0.0,
+    -60.0,
+    0.0,
+    60.0
+   ],
+   "disp": 6.099,
+   "junction_vm": 17.48,
+   "at": [
+    -8.47,
+    4.17,
+    -27.71
+   ],
+   "junction_avg_1mm": [
+    13.87,
+    6
+   ],
+   "junction_avg_2mm": [
+    11.05,
+    42
+   ],
+   "rest_of_link_vm": 4.83,
+   "overall_away": 17.48,
+   "factor_junction": 2.58
+  },
+  "2.5": {
+   "nodes": 126224,
+   "volume": 125393.4,
+   "reaction": [
+    -0.0,
+    -60.0,
+    -0.0,
+    60.0
+   ],
+   "disp": 6.122,
+   "junction_vm": 18.22,
+   "at": [
+    -12.97,
+    3.96,
+    -32.51
+   ],
+   "junction_avg_1mm": [
+    18.22,
+    1
+   ],
+   "junction_avg_2mm": [
+    11.99,
+    22
+   ],
+   "rest_of_link_vm": 4.83,
+   "overall_away": 18.22,
+   "factor_junction": 2.47
+  },
+  "2.0": {
+   "nodes": 199606,
+   "volume": 125393.4,
+   "reaction": [
+    -0.0,
+    -60.0,
+    0.0,
+    60.0
+   ],
+   "disp": 6.147,
+   "junction_vm": 19.27,
+   "at": [
+    11.7,
+    4.62,
+    -32.99
+   ],
+   "junction_avg_1mm": [
+    15.55,
+    10
+   ],
+   "junction_avg_2mm": [
+    11.94,
+    50
+   ],
+   "rest_of_link_vm": 4.83,
+   "overall_away": 19.27,
+   "factor_junction": 2.33
+  }
+ },
+ "m3b": {
+  "3.0": {
+   "nodes": 92366,
+   "volume": 125286.3,
+   "reaction": [
+    0.0,
+    -60.0,
+    0.0,
+    60.0
+   ],
+   "disp": 6.045,
+   "junction_vm": 17.57,
+   "at": [
+    5.41,
+    7.58,
+    -35.32
+   ],
+   "junction_avg_1mm": [
+    14.18,
+    4
+   ],
+   "junction_avg_2mm": [
+    10.44,
+    27
+   ],
+   "rest_of_link_vm": 4.86,
+   "overall_away": 17.57,
+   "factor_junction": 2.56
+  }
+ },
+ "m4a": {
+  "3.0": {
+   "nodes": 92535,
+   "volume": 126089.4,
+   "reaction": [
+    -0.0,
+    -60.0,
+    -0.0,
+    60.0
+   ],
+   "disp": 5.532,
+   "junction_vm": 15.14,
+   "at": [
+    -15.41,
+    3.73,
+    -31.43
+   ],
+   "junction_avg_1mm": [
+    15.14,
+    1
+   ],
+   "junction_avg_2mm": [
+    10.23,
+    20
+   ],
+   "rest_of_link_vm": 4.95,
+   "overall_away": 15.14,
+   "factor_junction": 2.97
+  },
+  "2.5": {
+   "nodes": 124961,
+   "volume": 126089.4,
+   "reaction": [
+    -0.0,
+    -60.0,
+    0.0,
+    60.0
+   ],
+   "disp": 5.552,
+   "junction_vm": 15.5,
+   "at": [
+    10.62,
+    4.17,
+    -26.97
+   ],
+   "junction_avg_1mm": [
+    12.63,
+    6
+   ],
+   "junction_avg_2mm": [
+    10.13,
+    44
+   ],
+   "rest_of_link_vm": 4.96,
+   "overall_away": 15.5,
+   "factor_junction": 2.9
+  },
+  "2.0": {
+   "nodes": 198835,
+   "volume": 126089.4,
+   "reaction": [
+    0.0,
+    -60.0,
+    0.0,
+    60.0
+   ],
+   "disp": 5.584,
+   "junction_vm": 18.12,
+   "at": [
+    -13.97,
+    4.94,
+    -32.09
+   ],
+   "junction_avg_1mm": [
+    13.05,
+    8
+   ],
+   "junction_avg_2mm": [
+    10.73,
+    51
+   ],
+   "rest_of_link_vm": 4.96,
+   "overall_away": 18.12,
+   "factor_junction": 2.48
+  }
+ },
+ "smooth_sharp": {
+  "3.0": {
+   "nodes": 90520,
+   "volume": 120933.5,
+   "reaction": [
+    0.0,
+    -60.0,
+    -0.0,
+    60.0
+   ],
+   "disp": 7.823,
+   "junction_vm": 57.51,
+   "at": [
+    -7.55,
+    3.99,
+    -31.81
+   ],
+   "junction_avg_1mm": [
+    38.71,
+    11
+   ],
+   "junction_avg_2mm": [
+    24.54,
+    50
+   ],
+   "rest_of_link_vm": 4.96,
+   "overall_away": 57.51,
+   "factor_junction": 0.78
+  },
+  "2.0": {
+   "nodes": 184556,
+   "volume": 120933.5,
+   "reaction": [
+    -0.0,
+    -60.0,
+    -0.0,
+    60.0
+   ],
+   "disp": 7.921,
+   "junction_vm": 62.64,
+   "at": [
+    7.55,
+    3.99,
+    -31.81
+   ],
+   "junction_avg_1mm": [
+    36.52,
+    13
+   ],
+   "junction_avg_2mm": [
+    25.39,
+    56
+   ],
+   "rest_of_link_vm": 4.96,
+   "overall_away": 62.64,
+   "factor_junction": 0.72
+  }
+ },
+ "smooth_r2": {
+  "3.0": {
+   "nodes": 87791,
+   "volume": 120973.0,
+   "reaction": [
+    -0.0,
+    -60.0,
+    0.0,
+    60.0
+   ],
+   "disp": 8.439,
+   "junction_vm": 53.85,
+   "at": [
+    -2.07,
+    4.17,
+    -30.81
+   ],
+   "junction_avg_1mm": [
+    41.16,
+    7
+   ],
+   "junction_avg_2mm": [
+    28.64,
+    34
+   ],
+   "rest_of_link_vm": 4.96,
+   "overall_away": 53.85,
+   "factor_junction": 0.84
+  },
+  "2.0": {
+   "nodes": 190790,
+   "volume": 120973.0,
+   "reaction": [
+    -0.0,
+    -60.0,
+    -0.0,
+    60.0
+   ],
+   "disp": 8.473,
+   "junction_vm": 54.04,
+   "at": [
+    2.07,
+    4.17,
+    -30.81
+   ],
+   "junction_avg_1mm": [
+    40.76,
+    7
+   ],
+   "junction_avg_2mm": [
+    28.48,
+    34
+   ],
+   "rest_of_link_vm": 4.96,
+   "overall_away": 54.04,
+   "factor_junction": 0.83
+  }
+ }
+}

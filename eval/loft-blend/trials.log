@@ -1,0 +1,413 @@
+02:22:18 SolidWorks pid 15024 free GB 21.9
+02:22:18 ---- m0
+02:22:21 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:21 DISC: added 16964.60 mm3
+02:22:23 STEM: added 10299.47 mm3 (merge True)
+02:22:24 m0 edges_where found 1
+02:22:24 M0: R4.0 on 1 edges, volume change +184.69 mm3
+02:22:24 ---- m1
+02:22:25 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:25 DISC: added 16964.60 mm3
+02:22:28 STEM: added 10299.47 mm3 (merge True)
+02:22:29 m1 seam edges 1 stem faces 1
+02:22:29 M1: R0.5 built, volume +3.99 mm3, errors [], bodies 1
+02:22:29 M1: R1.0 built, volume +10.71 mm3, errors [], bodies 1
+02:22:29 M1: R2.0 built, volume +44.37 mm3, errors [], bodies 1
+02:22:30 M1: R3.0 built, volume +102.38 mm3, errors [], bodies 1
+02:22:30 M1: R4.0 built, volume +184.69 mm3, errors [], bodies 1
+02:22:30 M1: R5.0 built, volume +296.32 mm3, errors [], bodies 1
+02:22:31 M1: R6.0 built, volume +437.95 mm3, errors [], bodies 1
+02:22:31 M1: R8.0 built, volume +819.82 mm3, errors [], bodies 1
+02:22:31 M1: kept R4.0, volume 27448.8, errors []
+02:22:32 ---- m2
+02:22:33 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:33 DISC: added 16964.60 mm3
+02:22:36 STEM: added 10299.47 mm3 (merge True)
+02:22:36 M2_opt1: R0.5 built, volume +3.33 mm3, errors [], bodies 1
+02:22:36 M2_opt1: R1.0 built, volume +11.12 mm3, errors [], bodies 1
+02:22:37 M2_opt1: R2.0 built, volume +44.64 mm3, errors [], bodies 1
+02:22:37 M2_opt1: R3.0 built, volume +101.82 mm3, errors [], bodies 1
+02:22:37 M2_opt1: R4.0 built, volume +185.33 mm3, errors [], bodies 1
+02:22:38 M2_opt1: R5.0 built, volume +297.03 mm3, errors [], bodies 1
+02:22:38 M2_opt1: R6.0 built, volume +438.96 mm3, errors [], bodies 1
+02:22:38 M2_opt1: R8.0 built, volume +822.15 mm3, errors [], bodies 1
+02:22:39 M2: kept R4.0, volume 27449.4, errors []
+02:22:39 ---- m3
+02:22:40 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:40 DISC: added 16964.60 mm3
+02:22:44 STEM: added 10355.30 mm3 (merge True)
+02:22:44 M3 {'r': 1.0, 'built': False, 'why': 'disc top face: 0 found'}
+02:22:45 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:45 DISC: added 16964.60 mm3
+02:22:49 STEM: added 10375.70 mm3 (merge True)
+02:22:49 M3 {'r': 2.0, 'built': False, 'why': 'disc top face: 0 found'}
+02:22:50 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:50 DISC: added 16964.60 mm3
+02:22:53 STEM: added 10497.75 mm3 (merge True)
+02:22:53 M3 {'r': 4.0, 'built': False, 'why': 'disc top face: 0 found'}
+02:22:55 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:55 DISC: added 16964.60 mm3
+02:22:58 STEM: added 10945.89 mm3 (merge True)
+02:22:58 M3 {'r': 6.0, 'built': False, 'why': 'disc top face: 0 found'}
+02:22:59 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:22:59 DISC: added 16964.60 mm3
+02:23:02 STEM: added 11177.64 mm3 (merge True)
+02:23:02 M3 {'r': 8.0, 'built': False, 'why': 'disc top face: 0 found'}
+02:23:03 ---- m4
+02:23:04 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:04 DISC: added 16964.60 mm3
+02:23:06 STEM: added 10299.47 mm3 (merge True)
+02:23:08 m4_skirt_2sec_normal_end {'r': 1.0, 'built': True, 'dv': 14.34, 'errors': [], 'bodies': 1}
+02:23:09 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:09 DISC: added 16964.60 mm3
+02:23:12 STEM: added 10299.47 mm3 (merge True)
+02:23:13 m4_skirt_2sec_normal_end {'r': 2.0, 'built': True, 'dv': 62.22, 'errors': [], 'bodies': 1}
+02:23:15 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:15 DISC: added 16964.60 mm3
+02:23:17 STEM: added 10299.47 mm3 (merge True)
+02:23:19 m4_skirt_2sec_normal_end {'r': 4.0, 'built': True, 'dv': 282.67, 'errors': [], 'bodies': 1}
+02:23:20 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:20 DISC: added 16964.60 mm3
+02:23:23 STEM: added 10299.47 mm3 (merge True)
+02:23:25 m4_skirt_2sec_normal_end {'r': 6.0, 'built': True, 'dv': 691.06, 'errors': [], 'bodies': 1}
+02:23:26 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:26 DISC: added 16964.60 mm3
+02:23:29 STEM: added 10299.47 mm3 (merge True)
+02:23:31 m4_skirt_2sec_normal_end {'r': 8.0, 'built': True, 'dv': 1316.0, 'errors': [], 'bodies': 1}
+02:23:32 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:32 DISC: added 16964.60 mm3
+02:23:35 STEM: added 10299.47 mm3 (merge True)
+02:23:37 m4_skirt_2sec_plain {'r': 1.0, 'built': True, 'dv': 24.78, 'errors': [], 'bodies': 1}
+02:23:38 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:38 DISC: added 16964.60 mm3
+02:23:41 STEM: added 10299.47 mm3 (merge True)
+02:23:43 m4_skirt_2sec_plain {'r': 2.0, 'built': True, 'dv': 104.49, 'errors': [], 'bodies': 1}
+02:23:44 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:44 DISC: added 16964.60 mm3
+02:23:47 STEM: added 10299.47 mm3 (merge True)
+02:23:48 m4_skirt_2sec_plain {'r': 4.0, 'built': True, 'dv': 460.97, 'errors': [], 'bodies': 1}
+02:23:50 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:50 DISC: added 16964.60 mm3
+02:23:52 STEM: added 10299.47 mm3 (merge True)
+02:23:54 m4_skirt_2sec_plain {'r': 6.0, 'built': True, 'dv': 1119.13, 'errors': [], 'bodies': 1}
+02:23:55 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:23:55 DISC: added 16964.60 mm3
+02:23:58 STEM: added 10299.47 mm3 (merge True)
+02:24:00 m4_skirt_2sec_plain {'r': 8.0, 'built': True, 'dv': 2127.72, 'errors': [], 'bodies': 1}
+02:24:01 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:24:01 DISC: added 16964.60 mm3
+02:24:04 STEM: added 10299.47 mm3 (merge True)
+02:24:06 m4_skirt_arc {'r': 1.0, 'built': True, 'dv': 12.77, 'errors': [], 'bodies': 1}
+02:24:07 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:24:07 DISC: added 16964.60 mm3
+02:24:09 STEM: added 10299.47 mm3 (merge True)
+02:24:11 m4_skirt_arc {'r': 2.0, 'built': True, 'dv': 48.38, 'errors': [], 'bodies': 1}
+02:24:12 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:24:12 DISC: added 16964.60 mm3
+02:24:15 STEM: added 10299.47 mm3 (merge True)
+02:24:17 m4_skirt_arc {'r': 4.0, 'built': True, 'dv': 201.57, 'errors': [], 'bodies': 1}
+02:24:18 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:24:18 DISC: added 16964.60 mm3
+02:24:22 STEM: added 10299.47 mm3 (merge True)
+02:24:24 m4_skirt_arc {'r': 6.0, 'built': True, 'dv': 474.43, 'errors': [], 'bodies': 1}
+02:24:26 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:24:26 DISC: added 16964.60 mm3
+02:24:28 STEM: added 10299.47 mm3 (merge True)
+02:24:30 m4_skirt_arc {'r': 8.0, 'built': True, 'dv': 881.51, 'errors': [], 'bodies': 1}
+02:24:30 ---- m5
+02:24:31 ok DISC volume change: 16964.6003 (expected 16964.6003)
+02:24:31 DISC: added 16964.60 mm3
+02:24:34 STEM: added 10299.47 mm3 (merge True)
+02:24:34 M5: R1.0 did not build
+02:24:34 M5: R2.0 did not build
+02:24:35 M5: R4.0 did not build
+02:24:35 closing pid 15024 committed MB 2237
+{
+ "m0_edges_where_fillet": {
+  "edges": 1,
+  "radius": 4.0,
+  "errors": []
+ },
+ "m1_edge_fillet_from_face": {
+  "edges": 1,
+  "rows": [
+   {
+    "r": 0.5,
+    "built": true,
+    "dv": 3.99,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 10.71,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 44.37,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 3.0,
+    "built": true,
+    "dv": 102.38,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 184.69,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 5.0,
+    "built": true,
+    "dv": 296.32,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 437.95,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 819.82,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "kept": 4.0
+ },
+ "m2_face_fillet": {
+  "options_1": [
+   {
+    "r": 0.5,
+    "built": true,
+    "dv": 3.33,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 11.12,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 44.64,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 3.0,
+    "built": true,
+    "dv": 101.82,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 185.33,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 5.0,
+    "built": true,
+    "dv": 297.03,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 438.96,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 822.15,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "kept": 4.0,
+  "kept_options": 1
+ },
+ "m3_flared_loft": {
+  "rows": [
+   {
+    "r": 1.0,
+    "built": false,
+    "why": "disc top face: 0 found"
+   },
+   {
+    "r": 2.0,
+    "built": false,
+    "why": "disc top face: 0 found"
+   },
+   {
+    "r": 4.0,
+    "built": false,
+    "why": "disc top face: 0 found"
+   },
+   {
+    "r": 6.0,
+    "built": false,
+    "why": "disc top face: 0 found"
+   },
+   {
+    "r": 8.0,
+    "built": false,
+    "why": "disc top face: 0 found"
+   }
+  ]
+ },
+ "m4_skirt": {
+  "m4_skirt_2sec_normal_end": [
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 14.34,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 62.22,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 282.67,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 691.06,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 1316.0,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "m4_skirt_2sec_plain": [
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 24.78,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 104.49,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 460.97,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 1119.13,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 2127.72,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "m4_skirt_arc": [
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 12.77,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 48.38,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 201.57,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 474.43,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 881.51,
+    "errors": [],
+    "bodies": 1
+   }
+  ]
+ },
+ "m5_variable_fillet": {
+  "rows": [
+   {
+    "r": 1.0,
+    "built": false
+   },
+   {
+    "r": 2.0,
+    "built": false
+   },
+   {
+    "r": 4.0,
+    "built": false
+   }
+  ]
+ }
+}

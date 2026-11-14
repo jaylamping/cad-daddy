@@ -1,0 +1,7 @@
+02:42:21 SolidWorks pid 3144 free GB 20.6
+02:42:28 tp_m1 faces: bottom 1 tip 1 fine 2 disc top 1
+02:42:37 tp_m1_0.8: mesh rc 0, 203722 nodes, 141145 elements, free 20.7 GB
+02:44:16 tp_m1_0.8: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:44:16 tp_m1_0.8: load nodes 629, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:45:16 RESULT tp_m1 0.8 {"nodes": 203722, "volume": 27448.8, "reaction": [-0.0, -20.0, -0.0, 20.0], "tip_disp": 0.4489, "junction_vm": 4.954, "at": [0.43, -5.95, 3.23], "junction_avg_1mm": [4.006, 57], "junction_p1": 5.526, "plain_section_vm_z25": 1.982, "profile_y": [[0.4, 9.19], [1, 7.58], [2, 6.63], [3, 6.03], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:45:16 closing pid 3144 committed MB 1793

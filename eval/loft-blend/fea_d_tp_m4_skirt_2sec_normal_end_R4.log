@@ -1,0 +1,7 @@
+02:38:44 SolidWorks pid 11384 free GB 21.7
+02:38:51 tp_m4_skirt_2sec_normal_end_R4 faces: bottom 1 tip 1 fine 2 disc top 1
+02:38:55 t_2sec_normal_end_R4_1.2: mesh rc 0, 81917 nodes, 55480 elements, free 21.1 GB
+02:39:11 t_2sec_normal_end_R4_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:39:11 t_2sec_normal_end_R4_1.2: load nodes 352, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:39:21 RESULT tp_m4_skirt_2sec_normal_end_R4 1.2 {"nodes": 81917, "volume": 27546.7, "reaction": [0.0, -20.0, 0.0, 20.0], "tip_disp": 0.442, "junction_vm": 5.336, "at": [-0.57, -6.02, 3.06], "junction_avg_1mm": [3.929, 19], "junction_p1": 6.188, "plain_section_vm_z25": 1.962, "profile_y": [[0.4, 9.56], [1, 8.61], [2, 7.1], [3, 6.22], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.88]]}
+02:39:21 closing pid 11384 committed MB 1757

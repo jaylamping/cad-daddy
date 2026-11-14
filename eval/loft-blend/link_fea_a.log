@@ -1,0 +1,17 @@
+02:31:19 SolidWorks pid 14472 free GB 21.1
+02:31:25 sharp ring faces 1 pin faces 2
+02:31:30 sharp_PY_3.0: mesh rc 0, 93271 nodes, 61365 elements, free 20.4 GB
+02:31:56 sharp_PY_3.0: fixture nodes 1770, box [-32.5, -4.0, -32.0] to [32.5, -4.0, 32.5]
+02:31:56 sharp_PY_3.0: load nodes 1252, box [-4.0, -23.73, -204.0] to [4.0, 23.73, -196.0]
+02:32:07 RESULT sharp 3.0 {"nodes": 93271, "volume": 124900.7, "reaction": [-0.0, -60.0, -0.0, 60.0], "disp": 5.332, "junction_vm": 27.51, "at": [5.7, 7.31, -32.0], "junction_avg_1mm": [14.96, 12], "junction_avg_2mm": [11.43, 48], "rest_of_link_vm": 4.97, "overall_away": 27.51, "factor_junction": 1.64}
+02:32:08 m3a ring faces 1 pin faces 2
+02:32:13 m3a_PY_3.0: mesh rc 0, 93319 nodes, 61387 elements, free 21.5 GB
+02:32:33 m3a_PY_3.0: fixture nodes 1709, box [-32.5, -4.0, -30.29] to [32.5, -4.0, 32.5]
+02:32:33 m3a_PY_3.0: load nodes 1252, box [-4.0, -23.73, -204.0] to [4.0, 23.73, -196.0]
+02:32:46 RESULT m3a 3.0 {"nodes": 93319, "volume": 125393.4, "reaction": [0.0, -60.0, 0.0, 60.0], "disp": 6.099, "junction_vm": 17.48, "at": [-8.47, 4.17, -27.71], "junction_avg_1mm": [13.87, 6], "junction_avg_2mm": [11.05, 42], "rest_of_link_vm": 4.83, "overall_away": 17.48, "factor_junction": 2.58}
+02:32:47 m3b ring faces 1 pin faces 2
+02:32:52 m3b_PY_3.0: mesh rc 0, 92366 nodes, 60668 elements, free 20.8 GB
+02:33:13 m3b_PY_3.0: fixture nodes 1717, box [-32.5, -4.0, -30.21] to [32.5, -4.0, 32.5]
+02:33:13 m3b_PY_3.0: load nodes 1252, box [-4.0, -23.73, -204.0] to [4.0, 23.73, -196.0]
+02:33:25 RESULT m3b 3.0 {"nodes": 92366, "volume": 125286.3, "reaction": [0.0, -60.0, 0.0, 60.0], "disp": 6.045, "junction_vm": 17.57, "at": [5.41, 7.58, -35.32], "junction_avg_1mm": [14.18, 4], "junction_avg_2mm": [10.44, 27], "rest_of_link_vm": 4.86, "overall_away": 17.57, "factor_junction": 2.56}
+02:33:25 closing pid 14472 committed MB 1612

@@ -1,0 +1,299 @@
+{
+ "m0_edges_where_fillet": {
+  "edges": 1,
+  "radius": 4.0,
+  "errors": []
+ },
+ "m1_edge_fillet_from_face": {
+  "edges": 1,
+  "rows": [
+   {
+    "r": 0.5,
+    "built": true,
+    "dv": 3.99,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 10.71,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 44.37,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 3.0,
+    "built": true,
+    "dv": 102.38,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 184.69,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 5.0,
+    "built": true,
+    "dv": 296.32,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 437.95,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 819.82,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "kept": 4.0
+ },
+ "m2_face_fillet": {
+  "options_1": [
+   {
+    "r": 0.5,
+    "built": true,
+    "dv": 3.33,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 11.12,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 44.64,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 3.0,
+    "built": true,
+    "dv": 101.82,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 185.33,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 5.0,
+    "built": true,
+    "dv": 297.03,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 438.96,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 822.15,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "kept": 4.0,
+  "kept_options": 1
+ },
+ "m3_flared_loft": {
+  "rows": [
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 10355.3,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 10375.7,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 10497.75,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 10945.89,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 11177.64,
+    "errors": [],
+    "bodies": 1
+   }
+  ]
+ },
+ "m4_skirt": {
+  "m4_skirt_2sec_normal_end": [
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 14.34,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 62.22,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 282.67,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 691.06,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 1316.0,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "m4_skirt_2sec_plain": [
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 24.78,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 104.49,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 460.97,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 1119.13,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 2127.72,
+    "errors": [],
+    "bodies": 1
+   }
+  ],
+  "m4_skirt_arc": [
+   {
+    "r": 1.0,
+    "built": true,
+    "dv": 12.77,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 2.0,
+    "built": true,
+    "dv": 48.38,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 4.0,
+    "built": true,
+    "dv": 201.57,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 6.0,
+    "built": true,
+    "dv": 474.43,
+    "errors": [],
+    "bodies": 1
+   },
+   {
+    "r": 8.0,
+    "built": true,
+    "dv": 881.51,
+    "errors": [],
+    "bodies": 1
+   }
+  ]
+ },
+ "m5_variable_fillet": {
+  "rows": [
+   {
+    "r": 1.0,
+    "built": false
+   },
+   {
+    "r": 2.0,
+    "built": false
+   },
+   {
+    "r": 4.0,
+    "built": false
+   }
+  ]
+ }
+}

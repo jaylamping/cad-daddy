@@ -1,0 +1,17 @@
+02:34:42 SolidWorks pid 15728 free GB 22.4
+02:34:53 tp_m4_skirt_2sec_plain_R4 faces: bottom 1 tip 1 fine 2 disc top 1
+02:34:57 _skirt_2sec_plain_R4_1.2: mesh rc 0, 81857 nodes, 55439 elements, free 21.8 GB
+02:35:11 _skirt_2sec_plain_R4_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:35:11 _skirt_2sec_plain_R4_1.2: load nodes 352, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:35:18 RESULT tp_m4_skirt_2sec_plain_R4 1.2 {"nodes": 81857, "volume": 27725.0, "reaction": [0.0, -20.0, 0.0, 20.0], "tip_disp": 0.424, "junction_vm": 5.303, "at": [-1.24, -5.83, 4.49], "junction_avg_1mm": [4.048, 15], "junction_p1": 6.791, "plain_section_vm_z25": 1.974, "profile_y": [[0.4, 9.66], [1, 9.3], [2, 8.24], [3, 7.21], [4, 6.2], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:35:21 tp_m3_R2 faces: bottom 1 tip 1 fine 1 disc top 1
+02:35:23 tp_m3_R2_1.2: mesh rc 0, 84639 nodes, 57445 elements, free 20.9 GB
+02:35:39 tp_m3_R2_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:35:39 tp_m3_R2_1.2: load nodes 364, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:35:48 RESULT tp_m3_R2 1.2 {"nodes": 84639, "volume": 27340.3, "reaction": [0.0, -20.0, 0.0, 20.0], "tip_disp": 0.4598, "junction_vm": 5.308, "at": [-0.35, 6.08, 1.51], "junction_avg_1mm": [4.022, 23], "junction_p1": 6.198, "plain_section_vm_z25": 2.045, "profile_y": [[0.4, 7.48], [1, 6.44], [2, 6.02], [3, 5.97], [4, 6.01], [6, 6.05], [8, 6.05], [12, 5.99]]}
+02:35:49 tp_m4_skirt_arc_R2 faces: bottom 1 tip 1 fine 2 disc top 1
+02:35:52 tp_m4_skirt_arc_R2_1.2: mesh rc 0, 81064 nodes, 54896 elements, free 19.3 GB
+02:36:10 tp_m4_skirt_arc_R2_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:36:10 tp_m4_skirt_arc_R2_1.2: load nodes 352, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:36:19 RESULT tp_m4_skirt_arc_R2 1.2 {"nodes": 81064, "volume": 27312.4, "reaction": [0.0, -20.0, 0.0, 20.0], "tip_disp": 0.4734, "junction_vm": 5.385, "at": [-0.72, 5.91, 1.79], "junction_avg_1mm": [4.114, 19], "junction_p1": 6.339, "plain_section_vm_z25": 1.985, "profile_y": [[0.4, 7.53], [1, 6.45], [2, 5.93], [3, 5.9], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:36:19 closing pid 15728 committed MB 1777

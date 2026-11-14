@@ -1,0 +1,23 @@
+02:32:26 SolidWorks pid 2436 free GB 21.0
+02:32:32 tp_m5 faces: bottom 1 tip 1 fine 1 disc top 1
+02:32:34 tp_m5_1.2: mesh rc 0, 80621 nodes, 54620 elements, free 20.8 GB
+02:32:52 tp_m5_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:32:52 tp_m5_1.2: load nodes 367, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:33:01 RESULT tp_m5 1.2 {"nodes": 80621, "volume": 27264.1, "reaction": [0.0, -20.0, -0.0, 20.0], "tip_disp": 0.4948, "junction_vm": 5.963, "at": [0.83, 5.94, 0.52], "junction_avg_1mm": [3.971, 15], "junction_p1": 7.15, "plain_section_vm_z25": 1.969, "profile_y": [[0.4, 5.96], [1, 5.94], [2, 5.93], [3, 5.9], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:33:02 tp_m1 faces: bottom 1 tip 1 fine 2 disc top 1
+02:33:05 tp_m1_1.2: mesh rc 0, 82969 nodes, 56203 elements, free 20.5 GB
+02:33:06 closing pid 2436 committed MB 1878
+python : Traceback (most recent call last):
+At line:2 char:1
++ python eval\loft-blend\fea.py 1.2 tp_m5 tp_m1 tp_m2 2>&1 | Out-File - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\joe\code\cad-daddy-wt\loft-blend\eval\loft-blend\fea.py", line 43, in <module>
+    r = static(j, d, f'{name}_{CTRL}'[-24:], PETG, fixtures=[('fixed', bottom)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\joe\code\cad-daddy-wt\loft-blend\solidworks\swfea.py", line 467, in static
+    raise Failed(f'{name}: solve failed ({rc}). 24 is a singular model (a body free to move) or out of memory: '
+swkit.Failed: tp_m1_1.2: solve failed (24). 24 is a singular model (a body free to move) or out of memory: 
+playbook/05-fea.md, "When the solve fails"

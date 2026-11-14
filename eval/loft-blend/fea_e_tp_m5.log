@@ -1,0 +1,7 @@
+02:39:31 SolidWorks pid 8032 free GB 20.9
+02:39:37 tp_m5 faces: bottom 1 tip 1 fine 1 disc top 1
+02:39:43 tp_m5_0.8: mesh rc 0, 206092 nodes, 143343 elements, free 20.7 GB
+02:41:28 tp_m5_0.8: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:41:28 tp_m5_0.8: load nodes 633, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:42:15 RESULT tp_m5 0.8 {"nodes": 206092, "volume": 27264.1, "reaction": [0.0, -20.0, 0.0, 20.0], "tip_disp": 0.4957, "junction_vm": 6.67, "at": [0.92, 5.94, 0.34], "junction_avg_1mm": [3.855, 53], "junction_p1": 8.511, "plain_section_vm_z25": 1.979, "profile_y": [[0.4, 5.96], [1, 5.95], [2, 5.93], [3, 5.9], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:42:15 closing pid 8032 committed MB 1753
