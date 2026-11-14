@@ -218,7 +218,13 @@ What was learned on the upper-arm hub joint, 2026-11-11 and 12:
    in its hole, a bolt in its thread) needs its own `BONDED` set. An insert that came loose showed 5 km of displacement.
 5. **Split the results by body with geometry, not node order.** Label each node by which solid it lies inside, with a
    margin at the interfaces, and stop if any node of one body lies inside another. A split by index range scored steel
-   bolt nodes as plastic and moved every reported number.
+   bolt nodes as plastic and moved every reported number. **A split by radius alone misfiles nodes where two bodies
+   touch:** a seat of radius 26.1 touching a ring of radius 26.0 at its crown put 222 to 666 seat nodes within
+   2.5 mm of each crown under "radius up to 26.0005", so they were counted as ring and a rigid fit of the ring
+   seemed to leave 0.53 mm over (it left 0.0002, 2026-11-14). Where the gap closes to nothing no radius separates
+   the two, so split by body where the result allows: the mesh numbers each body's nodes in one unbroken run, so
+   take the geometric mask, find its one long run of node indices, and give the nodes of the mask outside that run
+   to the other body. Print the counts.
 6. **Check the load path, not just the stress:** the force each bolt or lug carries (mean stress over a section × its
    area) against what the joint is meant to do. A tie that should be carried by a ridge showing up as bolt tension means
    the contact is not engaged.
@@ -237,6 +243,14 @@ What was learned on the upper-arm hub joint, 2026-11-11 and 12:
    (0.085 mm on the selftest blocks), bonded they move a millionth of that. `contact()` in
    [selftest.py](../solidworks/selftest.py) is the worked example, with both blocks drawn line-to-line: flat faces pressed
    together were seen as in contact every time.
+
+10. **A round body free to spin makes the largest displacement useless as a check.** A pin in a hole or a ring in a
+    seat, held by frictionless contact and soft pads, turns about its own axis by whatever the mesh happens to give:
+    a pin 1.29, 0.34 and 0.20 degrees over three meshes, a ring 0.89 to 1.50 degrees (0.55 to 0.83 mm at its rim)
+    while the part itself moved 0.2 mm and no stress or screw load changed (2026-11-14). The spin is harmless, but
+    `predict()` and `compare()` on `r.max_disp()` then check nothing. Compare the body's translation instead (the
+    mean displacement of its nodes), or fit its nodes as a rigid body (a translation and a turn, by least squares)
+    and report the turn and what the fit leaves over: 0.0002 mm over means it moved as a rigid body.
 
 A contact study with more than two bodies, a gap, or a result that decides a design is work to hand up
 ([06-judgment.md](06-judgment.md)), or at least to have reviewed before anyone acts on it.
@@ -319,3 +333,7 @@ For each case: the model file and its SHA-256, the load and support in words, el
 the five checks with their numbers, the peak with its location and what was excluded, the layer stress and its direction,
 the factor of safety against the right allowable, and anything you could not verify. Nodal results go to
 `cad/_sim/<region>/<case>.npz` so the numbers can be recomputed without solving again.
+
+Times: the minutes column of `times.log` (`swkit.stamp()`) is a running total since the first stamp, not a
+duration. A job's length is the difference between its end line and its start line; a report that quoted the
+running totals gave two jobs of 10.0 and 10.4 minutes as 10.9 and 10.7 (2026-11-14).
