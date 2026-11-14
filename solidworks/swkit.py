@@ -91,7 +91,7 @@ class job:
                 raise Failed(f'only {free_gb():.1f} GB free, under the {self.min_free_gb} GB floor: wait, do not '
                              'launch (job(wait_s=...) waits for you)')
             log(f'launch is waiting for memory: {free_gb():.1f} GB free, floor {self.min_free_gb} GB')
-            time.sleep(20)
+            time.sleep(min(20, max(0.0, end - time.time())))
         while True:
             try:
                 self.inst = launch(visible=self.visible)
