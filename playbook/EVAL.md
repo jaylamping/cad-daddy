@@ -209,11 +209,30 @@ another session's solve. Luna's two runs include about 45 minutes of such waitin
 - **Terra stops early, in two different ways.** In set B it ended the whole run at eight minutes with three tasks
   open. In sets C and D it worked for an hour and then reported "not shown" rather than a number. The second is honest
   and is what the page asks for when a measure will not converge; the first is not. The "Do not stop early" section of
-  [07-done.md](07-done.md) was written from this run, and a repeat of set B with it in place measures what it is worth.
+  [07-done.md](07-done.md) was written from this run; the table below shows what it changed.
 - **Luna is careful and slow.** It kept every rule, declared its own invalid results, and found every planted flaw in
   the review, but took about twice the working time and left more tasks without an answer.
 - **Both kept the machine rules,** with one class of exception that was the helpers' fault: `job()` and `export()`
   set machine-wide export options while the brief says to change no shared setting. Terra noticed in every run.
+
+**What the "Do not stop early" section was worth** ([terra-high-b2](../eval/terra-high-b2/)): set B again with
+Terra at High, the same brief, and only that section (and a launch that waits for memory) added.
+
+| | terra-high-b, plain playbook | terra-high-b2, with the section |
+| --- | --- | --- |
+| Wall time, all of it working | 8 min | 49 min |
+| Commands run | 47 | 256 |
+| B1 hub | partial, 2 hidden problems | done, the same 2, every dimension measured |
+| B2 study | one support, 3 meshes to 20,572 nodes | two supports, 4 meshes to 155,273 nodes, a twin with the 0.4 mm printed radius |
+| B2 verdict | "not shown" | **fail**, layer shear 1.95 against 2.0, converged under 1 % (Fable 1.88, fail; Sonnet passed it) |
+| B3 lighter | 41 %, one candidate, "what governs: not established" | 59 %, five steps, two lighter trials shown to fail, von Mises 2.08 governs |
+| B4 tongue in a slot | not started | coarse solve: wall forces 114 and 194 N against 101 and 181 by hand; four finer tries gave excessive displacement; **blocked** after 4.5 of its 40 minutes |
+| Tasks left open | B1, B2, B3, B4 | B4 |
+
+The section moved three of four open tasks to a real answer, and on B2 to the same verdict as Fable by the same
+move (round the edge, then judge). It did not make the model use a task's time: B4 was closed as "blocked after
+three different tries" where the tries were three mesh and stiffness variations of one approach, with 35 minutes
+left. The rule now says what counts as a different try and ties "blocked" to the time limit.
 
 **Not comparable, and why.** Luna ran from roark 86b0696 and Terra from c6b79c3 (the helpers differ only in launch
 code); Sonnet and Fable ran sets A and B on earlier versions of the playbook, before the load guidance and the
@@ -232,7 +251,7 @@ model id; the id is taken from the `codex exec` header in each run's `codex.log`
 | fable-b | The heavy-solve lock, one refinement at a time, the unanswered contact-convergence prompt, which contact proof fits which joint, buckling of lightened parts |
 | sonnet-c, fable-c | Lofts whose sections change shape, a point-in-solid check (`sheet.inside`), a crop for close-ups, one launch per job when the clock matters |
 | sonnet-d, fable-d | Changing a saved part (`set_dim`, `redraw_circles`), screws and clamped joints, results per body (`summary(mask=)`, `converge(mask=)`, shear in `converge()`), the proof for a body seated both sides, a launch that waits (`job(wait_s=)`), assembly pictures (`sheet.py --together`), `call()` on members that return objects, the node-count rule |
-| luna-a, luna-b, terra-high-a to d | Export options set only for the export and put back, a launch that waits for memory, an unknown solver dialog fails the run, the contact proof in 07-done.md matched to the joint, node counts with local controls, "Do not stop early" |
+| luna-a, luna-b, terra-high-a to d, terra-high-b2 | Export options set only for the export and put back, a launch that waits for memory, an unknown solver dialog fails the run, the contact proof in 07-done.md matched to the joint, node counts with local controls, "Do not stop early" and what counts as blocked |
 
 ## What still needs the strongest model, or Joey
 
