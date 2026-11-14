@@ -1,6 +1,6 @@
 """Prove swkit and swfea against hand answers on this machine's SolidWorks. Also the worked example for the playbook.
 
-    python solidworks/selftest.py [model] [beam] [rod] [extras] [loads] [contact]      # all of them when none is named
+    python solidworks/selftest.py [model] [beam] [rod] [extras] [loads] [contact] [bearing]      # all of them when none is named
 
 Writes to _wip/sw-selftest/ (gitignored) and prints PASS or the first check that failed. Run it on a machine or a
 SolidWorks version the helpers have not been used on, and after changing swkit.py or swfea.py. About two minutes, once
@@ -24,6 +24,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import numpy as np  # noqa: E402
 from swfea import NO_PENETRATION, PETG, SOLVER_DIRECT, static  # noqa: E402
+from swkit import Failed  # noqa: E402
 from swkit import (BLIND, MID, NUL, Sk, bbox, bodies, call, chamfer, close, cut_half_space, delete_body, edges_where,  # noqa: E402
                    expect, export, extrude, feature_errors, fillet, import_step, insert_body, job, list_faces, loft, log,
                    new_part, open_doc, pick, plane, redraw_circles, revolve, save, set_dim, shell, single_body, volume)
@@ -443,7 +444,91 @@ def contact(j):
     close(j.sw, d)
 
 
-TESTS = {'model': model, 'beam': beam, 'rod': rod, 'extras': extras, 'loads': loads, 'contact': contact}
+def bearing(j):
+    """A 60 x 60 x 10 plate with a 20 mm bore, held on one edge face, 100 N on the bore as a bearing load; then a bore
+    along X with a force across two model axes. Hand values: reaction = load, nothing on the half of the bore the
+    force pulls away from, peak pressure 4 F / (pi d t), and the pressure summed over the bore (measured 2026-11-14)."""
+    d = new_part(j.sw, OUT / 'lug.SLDPRT')
+    with Sk(d, plane(d, 'Z', 5.0, 'LUG_P'), 'LUG') as s:
+        s.rect((-30, -30, 5.0), (30, 30, 5.0))
+    extrude(d, s.feat, 'LUG', 10.0, mode=MID, expect_dv=36000)
+    with Sk(d, plane(d, 'Z', 5.0, 'BORE_P'), 'BORE') as s:
+        s.circle((0, 0, 5.0), 10.0)
+    extrude(d, s.feat, 'BORE', 10.0, cut=True, mode=MID, expect_dv=math.pi * 100 * 10)
+    save(d)
+    close(j.sw, d)
+    d = open_doc(j.sw, OUT / 'lug.SLDPRT')
+    d.ForceRebuild3(False)
+    bore, root = pick(d, kind='cyl', r=10.0), pick(d, kind='plane', normal=(-1, 0, 0))
+    expect('bore faces', len(bore), 1, 0)
+    expect('root faces', len(root), 1, 0)
+    n_feat = d.GetFeatureCount
+    p0 = 4 * 100 / (math.pi * 20 * 10)
+    for name, f in (('BRG_X', (100.0, 0, 0)), ('BRG_45', (-70.7107, 70.7107, 0))):
+        r = static(j, d, name, PETG, fixtures=[('fixed', root)], loads=[('bearing', bore, f)], el=2.0, ctrl=[(bore, 0.6)])
+        log(r.summary())
+        for k in range(3):
+            expect(f'{name}: reaction {"xyz"[k]} N', r.reaction[k], -f[k], 0.01 if f[k] else 0.05)
+        expect(f'{name}: reaction resultant N', r.reaction[3], r.applied, 0.01)
+        # radial and along-the-force traction on the bore wall, mid-thickness (clear of the two rims)
+        on = (np.abs(np.hypot(r.pos[:, 0], r.pos[:, 1]) - 10) < 0.02) & (np.abs(r.pos[:, 2] - 5) < 3.5)
+        n = r.pos[on, :2] / 10
+        S = r.s[on]
+        tx, ty = S[:, 1] * n[:, 0] + S[:, 4] * n[:, 1], S[:, 4] * n[:, 0] + S[:, 2] * n[:, 1]      # traction the wall feels
+        srr = tx * n[:, 0] + ty * n[:, 1]
+        u = np.array(f[:2]) / 100
+        th = np.degrees(np.arccos(np.clip(n @ u, -1, 1)))          # angle from the force direction
+        expect(f'{name}: peak pressure where the force points, 4F/(pi d t) MPa', float(-srr[th < 2].mean()), p0, 0.03)
+        expect(f'{name}: pressure on the half the force leaves MPa', float(np.abs(srr[th > 95]).max()), 0.0, 0.02 * p0)
+        # the load is a traction ALONG THE FORCE of p0 cos^2 per wall area (p0 cos per projected area), not a normal
+        # pressure of p0 cos: so the pressure alone sums to 3/4 of the force, and wall shear carries the rest
+        bins = np.arange(0, 91, 3)
+        press = sum(-srr[(th >= a) & (th < a + 3)].mean() * math.cos(math.radians(a + 1.5)) for a in bins[:-1])
+        along = sum(-(tx * u[0] + ty * u[1])[(th >= a) & (th < a + 3)].mean() for a in bins[:-1])
+        area = 2 * 10 * math.radians(3) * 10                       # both sides of the force line, 3 degrees, 10 thick
+        expect(f'{name}: pressure summed over the bore N (3/4 of the load)', float(press * area), 75.0, 0.03)
+        expect(f'{name}: traction along the force summed over the bore N', float(along * area), 100.0, 0.03)
+        expect(f'{name}: pressure at 45 degrees MPa (cos^3, not cos)', float(-srr[np.abs(th - 45) < 2].mean()),
+               p0 * math.cos(math.radians(45)) ** 3, 0.05)
+    expect('features after the studies (the coordinate systems are gone)', d.GetFeatureCount, n_feat, 0)
+    try:
+        static(j, d, 'BRG_AXIAL', PETG, fixtures=[('fixed', root)], loads=[('bearing', bore, (100.0, 0, 10.0))], el=3.0)
+    except Failed as ex:
+        log('ok a force with a part along the bore axis is refused:', str(ex)[:90])
+    else:
+        raise SystemExit('FAIL: a bearing load with an axial part was accepted')
+    close(j.sw, d)
+
+    # a bore along X and a force across Y and Z: the coordinate system needs a general rotation
+    d = new_part(j.sw, OUT / 'lug_x.SLDPRT')
+    with Sk(d, plane(d, 'X', 5.0, 'LUGX_P'), 'LUGX') as s:
+        s.rect((5.0, -30, -30), (5.0, 30, 30))
+    extrude(d, s.feat, 'LUGX', 10.0, mode=MID, expect_dv=36000)
+    with Sk(d, plane(d, 'X', 5.0, 'BOREX_P'), 'BOREX') as s:
+        s.circle((5.0, 0, 0), 10.0)
+    extrude(d, s.feat, 'BOREX', 10.0, cut=True, mode=MID, expect_dv=math.pi * 100 * 10)
+    save(d)
+    close(j.sw, d)
+    d = open_doc(j.sw, OUT / 'lug_x.SLDPRT')
+    d.ForceRebuild3(False)
+    bore, root = pick(d, kind='cyl', r=10.0), pick(d, kind='plane', normal=(0, 0, -1))
+    r = static(j, d, 'BRG_YZ', PETG, fixtures=[('fixed', root)], loads=[('bearing', bore, (0, 60.0, -80.0))], el=2.5,
+               ctrl=[(bore, 1.0)])
+    log(r.summary())
+    expect('bore along X: reaction x N', r.reaction[0], 0.0, 0.5)
+    expect('bore along X: reaction y N', r.reaction[1], -60.0, 0.01)
+    expect('bore along X: reaction z N', r.reaction[2], 80.0, 0.01)
+    on = np.abs(np.hypot(r.pos[:, 1], r.pos[:, 2]) - 10) < 0.02
+    n = r.pos[on, 1:] / 10
+    S = r.s[on]
+    srr = n[:, 0] ** 2 * S[:, 2] + n[:, 1] ** 2 * S[:, 3] + 2 * n[:, 0] * n[:, 1] * S[:, 6]
+    worst = n[np.argmin(srr)]
+    expect('bore along X: the pressure peak faces the force, y', float(worst[0]), 0.6, 0.1)
+    expect('bore along X: the pressure peak faces the force, z', float(worst[1]), -0.8, 0.1)
+    close(j.sw, d)
+
+
+TESTS = {'model': model, 'beam': beam, 'rod': rod, 'extras': extras, 'loads': loads, 'contact': contact, 'bearing': bearing}
 
 TESTS['blend'] = blend      # skirt(): a lofted stem rounded into the face it stands on
 
