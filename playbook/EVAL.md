@@ -7,6 +7,9 @@ not allowed to read any other run's folder. Every number below is in the run's `
 
 ## Short answer
 
+- **Planning can be bought once.** With a per-task plan from Fable, Haiku ran the hard studies on the right model
+  with true numbers in twenty minutes a set. Without one it left them undone. What the plan does not transfer is
+  judgment over the result ([Plan, then execute](#plan-then-execute-fable-plans-haiku-builds-2026-11-14)).
 - **For routine work, yes.** With the playbook Sonnet models, edits, exports and analyses to the same numbers as Fable,
   within about 2 %, in a similar time.
 - **The playbook is worth about a third of the time and nearly all of the failed runs.** Sonnet without it finished the
@@ -239,6 +242,54 @@ code); Sonnet and Fable ran sets A and B on earlier versions of the playbook, be
 no-pass-on-a-moving-measure gate, so their set A row is not the same test. Neither Codex model could report its own
 model id; the id is taken from the `codex exec` header in each run's `codex.log`.
 
+## Plan, then execute: Fable plans, Haiku builds (2026-11-14)
+
+The question: can the strongest model's thinking be bought once, as a written plan, and the building be done by
+the smallest and cheapest model? Fable wrote one plan per task for sets A and D ([plans-fable](../eval/plans-fable/))
+from the task sheets, the playbook and the helper code only, without SolidWorks and without sight of any earlier
+run: 43 minutes for ten plans. Haiku then ran each set twice in fresh sessions, once with the playbook alone and
+once with the plans as well. Every result below was checked independently: all 57 saved parts re-measured, every
+claimed solve read in its log ([haiku-runs-CHECK.md](../eval/haiku-runs-CHECK.md)).
+
+| | Haiku, playbook only | Haiku, playbook and plans |
+| --- | --- | --- |
+| **Set A** wall time | 19 min [haiku-a](../eval/haiku-a/) | 22 min [haiku-plan-a](../eval/haiku-plan-a/) |
+| T1, T2 model and edit | right shapes, but the edit was saved over the original part, and the report said it was not | correct, original untouched |
+| T3 bracket (fails at about 1.4) | ran on the wrong part; "fail" at 1.29 by accident, rigid load gave the known wrong 2.17 | **correct: 1.49 at the motor-hole rims**, two load models, washers as second support |
+| T4 sharp corner | gave the singular corner a value (31.3 MPa) and distrusted its own correct R0.4 run | correct: no value for the sharp corner, R0.4 converged at 40 MPa |
+| T5 make it pass | not done | ribs built, +8 % mass, factors 3.0 to 3.6, but **recorded as "fail"** because one measure still moved 13 % |
+| T6 pin contact | not done (one invalid solve, hand value wrong) | **numbers correct**: 6.5 / 6.0 / 6.8 MPa against Hertz 6.8, rise 0.1295 mm; called itself invalid for not converging |
+| **Set D** wall time | 21.5 min [haiku-d](../eval/haiku-d/) | 20.5 min [haiku-plan-d](../eval/haiku-plan-d/) |
+| D1 mount | conflict found; bosses have no screw holes | conflict found and reported, holes in, tilt checked |
+| D2 split housing | the three spec problems found, **no study at all**, stopped 6 minutes into 90 | full contact study at one mesh: screws 75.7 N against 75 by hand; the finer mesh hit the node cap and it stopped at 13 of 90 minutes; reported factors were not the lowest in its own table (true 5.82, as Fable's 5.85) |
+| D3 six plates and the change | correct, every bad row found by its own checks | correct, from the plan |
+
+**What the plans bought.** The hard studies ran first time on the right model with true numbers: T3 at the
+motor-hole rims, T6 with pads, D2 with full contact. The baselines have a wrong-part T3, an invalid T6 and no D2
+study. Traps were avoided (save under a new name before editing, no value for a singular corner), and the designs
+would work as built.
+
+**What they did not buy.** Judgment over the numbers: a part at factor 3 recorded as a fail, a correct contact
+result called invalid, the headline factor read from the wrong row. Persistence: one refused mesh ended D2 with
+five-sixths of its time left and nothing coarser tried. Time sense: all four runs took about 20 minutes, two
+reports claimed over an hour, and both baselines gave lack of time as the reason for work left undone. And where
+the plan gave the answer it was not tested, so plain modelling (D3, T7) was no better with a plan than without.
+
+**The plans were not right either,** and this mattered less than expected. Node counts were 1.3 to 2.9 times
+under, two hand predictions were off by 40 to 60 %, one screw load by half, one material key matched no body, and
+one tolerance stopped a build. No helper call in them was invented. The executor got through most of these on the
+plan's own "if you see X" branches.
+
+**Cost.** Fable did sets A and D itself in 45 and 61 minutes. Planning both took 43 minutes and Haiku ran both
+in 43. So the pair takes about the same wall time as Fable alone, with half of it on the cheapest model; what it
+gives up is the second half of each hard task, where a result has to be doubted, chased or defended.
+
+**What this says to do next.** The gap is no longer knowing what to build. It is reading the result: a verdict
+that passes but has not converged needs its own word, the lowest factor should be computed by the helper and not
+picked by eye, a refused mesh should name the next thing to try, and time should come from a helper and not from
+memory. Those are code and page changes, and they should help every model. A review pass by the planner over the
+executor's results is the other half: twenty minutes of the strong model at the end, where its judgment is worth most.
+
 ## What each run changed in the playbook
 
 | Run | Changes |
@@ -252,6 +303,8 @@ model id; the id is taken from the `codex exec` header in each run's `codex.log`
 | sonnet-c, fable-c | Lofts whose sections change shape, a point-in-solid check (`sheet.inside`), a crop for close-ups, one launch per job when the clock matters |
 | sonnet-d, fable-d | Changing a saved part (`set_dim`, `redraw_circles`), screws and clamped joints, results per body (`summary(mask=)`, `converge(mask=)`, shear in `converge()`), the proof for a body seated both sides, a launch that waits (`job(wait_s=)`), assembly pictures (`sheet.py --together`), `call()` on members that return objects, the node-count rule |
 | luna-a, luna-b, terra-high-a to d, terra-high-b2 | Export options set only for the export and put back, a launch that waits for memory, an unknown solver dialog fails the run, the contact proof in 07-done.md matched to the joint, node counts with local controls, "Do not stop early" and what counts as blocked |
+| bearing-load, loft-blend | A bearing load measured against the hand value; why a loft would not fillet into a flange, and three cures |
+| haiku-a, haiku-d, haiku-plan-a, haiku-plan-d | Nothing yet: the list is under "Plan, then execute" |
 
 ## What still needs the strongest model, or Joey
 
