@@ -1,0 +1,464 @@
+02:29:38 SolidWorks pid 4972 free GB 22.1
+02:29:41 DISC: added 28065.58 mm3
+02:29:44 RIDGE: added 2078.18 mm3 (merge True)
+02:29:50 STEM: added 125692.64 mm3 (merge True)
+02:29:51 seam {"stem_faces": 5, "seam_edges": 32, "edge_lengths_mm": [0.04, 0.04, 0.16, 0.16, 0.29, 0.3, 0.52, 0.52, 0.53, 0.53, 0.53, 0.53, 0.85, 0.85, 1.11, 1.11, 1.15, 1.15, 1.41, 1.41, 1.76, 1.76, 2.33, 2.33, 3.25, 3.26, 4.46, 4.47, 11.36, 11.94, 12.4, 12.42], "other_faces": 14, "other_kinds": {"other": 12, "cyl": 1, "plane": 1}}
+02:29:52 HOLES: cut 435.80 mm3
+02:29:53 CABLE: cut 4833.69 mm3
+02:29:54 SLOT: cut 24906.84 mm3
+02:29:55 PIN: cut 759.41 mm3
+02:29:55 sharp finished {'volume': 124900.7, 'bodies': 1, 'errors': [], 'bbox': [-35.0, -26.46, -212.01, 35.0, 26.46, 35.0]}
+02:29:56 exported C:\joe\code\cad-daddy-wt\loft-blend\_wip\loft-blend\link_sharp.stl 733084 bytes
+02:29:57 DISC: added 28065.58 mm3
+02:30:00 RIDGE: added 2078.18 mm3 (merge True)
+02:30:06 STEM: added 126186.66 mm3 (merge True)
+02:30:07 seam {"stem_faces": 2, "seam_edges": 20, "edge_lengths_mm": [0.55, 0.55, 0.65, 0.65, 0.72, 0.72, 0.77, 0.77, 0.79, 0.79, 0.81, 0.81, 0.81, 0.81, 0.82, 0.82, 15.19, 15.22, 17.53, 25.17], "other_faces": 11, "other_kinds": {"other": 9, "plane": 1, "cyl": 1}}
+02:30:08 HOLES: cut 435.80 mm3
+02:30:09 CABLE: cut 4833.69 mm3
+02:30:10 SLOT: cut 24907.96 mm3
+02:30:11 PIN: cut 759.54 mm3
+02:30:11 m3a finished {'volume': 125393.4, 'bodies': 1, 'errors': [], 'bbox': [-35.0, -26.58, -212.01, 35.0, 26.58, 35.0]}
+02:30:12 exported C:\joe\code\cad-daddy-wt\loft-blend\_wip\loft-blend\link_m3a.stl 802884 bytes
+02:30:13 DISC: added 28065.58 mm3
+02:30:16 RIDGE: added 2078.18 mm3 (merge True)
+02:30:24 STEM: added 126082.23 mm3 (merge True)
+02:30:24 seam {"stem_faces": 2, "seam_edges": 20, "edge_lengths_mm": [0.58, 0.58, 0.69, 0.7, 0.79, 0.79, 0.85, 0.85, 0.9, 0.9, 0.9, 0.9, 0.93, 0.93, 0.94, 0.94, 16.43, 16.43, 17.18, 25.35], "other_faces": 11, "other_kinds": {"other": 9, "plane": 1, "cyl": 1}}
+02:30:25 HOLES: cut 435.80 mm3
+02:30:27 CABLE: cut 4833.69 mm3
+02:30:28 SLOT: cut 24910.65 mm3
+02:30:29 PIN: cut 759.54 mm3
+02:30:30 m3b finished {'volume': 125286.3, 'bodies': 1, 'errors': [], 'bbox': [-35.0, -26.56, -212.01, 35.0, 26.56, 35.0]}
+02:30:30 exported C:\joe\code\cad-daddy-wt\loft-blend\_wip\loft-blend\link_m3b.stl 808984 bytes
+02:30:32 DISC: added 28065.58 mm3
+02:30:35 RIDGE: added 2078.18 mm3 (merge True)
+02:30:41 STEM: added 125692.64 mm3 (merge True)
+02:30:43 SKIRT: added 1190.17 mm3 (merge True)
+02:30:43 skirt added 1190.2
+02:30:45 HOLES: cut 435.80 mm3
+02:30:46 CABLE: cut 4833.69 mm3
+02:30:47 SLOT: cut 24908.30 mm3
+02:30:48 PIN: cut 759.41 mm3
+02:30:49 m4a finished {'volume': 126089.4, 'bodies': 1, 'errors': [], 'bbox': [-35.0, -26.46, -212.01, 35.0, 26.46, 35.0]}
+02:30:49 exported C:\joe\code\cad-daddy-wt\loft-blend\_wip\loft-blend\link_m4a.stl 786984 bytes
+02:30:49 closing pid 4972 committed MB 1857
+{
+ "seam": {
+  "stem_faces": 5,
+  "seam_edges": 32,
+  "edge_lengths_mm": [
+   0.04,
+   0.04,
+   0.16,
+   0.16,
+   0.29,
+   0.3,
+   0.52,
+   0.52,
+   0.53,
+   0.53,
+   0.53,
+   0.53,
+   0.85,
+   0.85,
+   1.11,
+   1.11,
+   1.15,
+   1.15,
+   1.41,
+   1.41,
+   1.76,
+   1.76,
+   2.33,
+   2.33,
+   3.25,
+   3.26,
+   4.46,
+   4.47,
+   11.36,
+   11.94,
+   12.4,
+   12.42
+  ],
+  "other_faces": 14,
+  "other_kinds": {
+   "other": 12,
+   "cyl": 1,
+   "plane": 1
+  }
+ },
+ "m1_edge_fillet": {
+  "all_edges_R5": {
+   "built": false
+  },
+  "all_edges_R4": {
+   "built": false
+  },
+  "all_edges_R3": {
+   "built": false
+  },
+  "all_edges_R2": {
+   "built": false
+  },
+  "all_edges_R1": {
+   "built": false
+  },
+  "all_edges_R0.5": {
+   "built": false
+  },
+  "one_edge_at_a_time_R2": [
+   [
+    0,
+    0.04,
+    false
+   ],
+   [
+    1,
+    0.53,
+    false
+   ],
+   [
+    2,
+    0.53,
+    false
+   ],
+   [
+    3,
+    0.52,
+    false
+   ],
+   [
+    4,
+    12.4,
+    false
+   ],
+   [
+    5,
+    4.46,
+    false
+   ],
+   [
+    6,
+    1.11,
+    true
+   ],
+   [
+    7,
+    3.25,
+    true
+   ],
+   [
+    8,
+    11.94,
+    true
+   ],
+   [
+    9,
+    3.26,
+    true
+   ],
+   [
+    10,
+    1.11,
+    true
+   ],
+   [
+    11,
+    4.47,
+    false
+   ],
+   [
+    12,
+    12.42,
+    false
+   ],
+   [
+    13,
+    0.52,
+    false
+   ],
+   [
+    14,
+    0.53,
+    false
+   ],
+   [
+    15,
+    0.53,
+    false
+   ],
+   [
+    16,
+    0.04,
+    false
+   ],
+   [
+    17,
+    0.16,
+    true
+   ],
+   [
+    18,
+    0.3,
+    true
+   ],
+   [
+    19,
+    0.16,
+    true
+   ],
+   [
+    20,
+    0.29,
+    true
+   ],
+   [
+    21,
+    0.85,
+    false
+   ],
+   [
+    22,
+    0.85,
+    false
+   ],
+   [
+    23,
+    1.15,
+    false
+   ],
+   [
+    24,
+    1.41,
+    false
+   ],
+   [
+    25,
+    1.76,
+    false
+   ],
+   [
+    26,
+    2.33,
+    false
+   ],
+   [
+    27,
+    11.36,
+    true
+   ],
+   [
+    28,
+    2.33,
+    false
+   ],
+   [
+    29,
+    1.76,
+    false
+   ],
+   [
+    30,
+    1.41,
+    false
+   ],
+   [
+    31,
+    1.15,
+    false
+   ]
+  ]
+ },
+ "m2_face_fillet": {
+  "opt1_R5": {
+   "built": false
+  },
+  "opt1_R4": {
+   "built": false
+  },
+  "opt1_R3": {
+   "built": false
+  },
+  "opt1_R2": {
+   "built": false
+  },
+  "opt1_R1": {
+   "built": false
+  },
+  "opt3_R5": {
+   "built": false
+  },
+  "opt3_R4": {
+   "built": false
+  },
+  "opt3_R3": {
+   "built": false
+  },
+  "opt3_R2": {
+   "built": false
+  },
+  "opt3_R1": {
+   "built": false
+  }
+ },
+ "link_sharp": {
+  "seam": {
+   "stem_faces": 5,
+   "seam_edges": 32,
+   "edge_lengths_mm": [
+    0.04,
+    0.04,
+    0.16,
+    0.16,
+    0.29,
+    0.3,
+    0.52,
+    0.52,
+    0.53,
+    0.53,
+    0.53,
+    0.53,
+    0.85,
+    0.85,
+    1.11,
+    1.11,
+    1.15,
+    1.15,
+    1.41,
+    1.41,
+    1.76,
+    1.76,
+    2.33,
+    2.33,
+    3.25,
+    3.26,
+    4.46,
+    4.47,
+    11.36,
+    11.94,
+    12.4,
+    12.42
+   ],
+   "other_faces": 14,
+   "other_kinds": {
+    "other": 12,
+    "cyl": 1,
+    "plane": 1
+   }
+  },
+  "volume": 124900.7,
+  "bodies": 1,
+  "errors": [],
+  "bbox": [
+   -35.0,
+   -26.46,
+   -212.01,
+   35.0,
+   26.46,
+   35.0
+  ]
+ },
+ "link_m3a": {
+  "seam": {
+   "stem_faces": 2,
+   "seam_edges": 20,
+   "edge_lengths_mm": [
+    0.55,
+    0.55,
+    0.65,
+    0.65,
+    0.72,
+    0.72,
+    0.77,
+    0.77,
+    0.79,
+    0.79,
+    0.81,
+    0.81,
+    0.81,
+    0.81,
+    0.82,
+    0.82,
+    15.19,
+    15.22,
+    17.53,
+    25.17
+   ],
+   "other_faces": 11,
+   "other_kinds": {
+    "other": 9,
+    "plane": 1,
+    "cyl": 1
+   }
+  },
+  "volume": 125393.4,
+  "bodies": 1,
+  "errors": [],
+  "bbox": [
+   -35.0,
+   -26.58,
+   -212.01,
+   35.0,
+   26.58,
+   35.0
+  ]
+ },
+ "link_m3b": {
+  "seam": {
+   "stem_faces": 2,
+   "seam_edges": 20,
+   "edge_lengths_mm": [
+    0.58,
+    0.58,
+    0.69,
+    0.7,
+    0.79,
+    0.79,
+    0.85,
+    0.85,
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.93,
+    0.93,
+    0.94,
+    0.94,
+    16.43,
+    16.43,
+    17.18,
+    25.35
+   ],
+   "other_faces": 11,
+   "other_kinds": {
+    "other": 9,
+    "plane": 1,
+    "cyl": 1
+   }
+  },
+  "volume": 125286.3,
+  "bodies": 1,
+  "errors": [],
+  "bbox": [
+   -35.0,
+   -26.56,
+   -212.01,
+   35.0,
+   26.56,
+   35.0
+  ]
+ },
+ "link_m4a": {
+  "seam": null,
+  "volume": 126089.4,
+  "bodies": 1,
+  "errors": [],
+  "bbox": [
+   -35.0,
+   -26.46,
+   -212.01,
+   35.0,
+   26.46,
+   35.0
+  ]
+ }
+}

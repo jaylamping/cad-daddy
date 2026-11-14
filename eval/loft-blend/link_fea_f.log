@@ -1,0 +1,12 @@
+02:51:55 SolidWorks pid 17060 free GB 21.5
+02:52:01 smooth_sharp ring faces 1 pin faces 2
+02:52:08 smooth_sharp_PY_2.0: mesh rc 0, 184556 nodes, 124948 elements, free 21.2 GB
+02:53:16 smooth_sharp_PY_2.0: fixture nodes 3287, box [-32.5, -4.0, -32.0] to [32.5, -4.0, 32.5]
+02:53:16 smooth_sharp_PY_2.0: load nodes 1252, box [-4.0, -23.73, -204.0] to [4.0, 23.73, -196.0]
+02:53:49 RESULT smooth_sharp 2.0 {"nodes": 184556, "volume": 120933.5, "reaction": [-0.0, -60.0, -0.0, 60.0], "disp": 7.921, "junction_vm": 62.64, "at": [7.55, 3.99, -31.81], "junction_avg_1mm": [36.52, 13], "junction_avg_2mm": [25.39, 56], "rest_of_link_vm": 4.96, "overall_away": 62.64, "factor_junction": 0.72}
+02:53:50 smooth_r2 ring faces 1 pin faces 2
+02:53:58 smooth_r2_PY_2.0: mesh rc 0, 190790 nodes, 129413 elements, free 20.7 GB
+02:55:12 smooth_r2_PY_2.0: fixture nodes 3270, box [-32.5, -4.0, -30.07] to [32.5, -4.0, 32.5]
+02:55:12 smooth_r2_PY_2.0: load nodes 1252, box [-4.0, -23.73, -204.0] to [4.0, 23.73, -196.0]
+02:55:56 RESULT smooth_r2 2.0 {"nodes": 190790, "volume": 120973.0, "reaction": [-0.0, -60.0, -0.0, 60.0], "disp": 8.473, "junction_vm": 54.04, "at": [2.07, 4.17, -30.81], "junction_avg_1mm": [40.76, 7], "junction_avg_2mm": [28.48, 34], "rest_of_link_vm": 4.96, "overall_away": 54.04, "factor_junction": 0.83}
+02:55:56 closing pid 17060 committed MB 1713
