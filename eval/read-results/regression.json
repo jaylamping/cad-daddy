@@ -1,0 +1,368 @@
+{
+ "T5 ribs, layers along Y": {
+  "verdict": "margin, not converged",
+  "need": 2.0,
+  "lowest_factor": 3.02,
+  "lowest_entry": "layers along Y, layer",
+  "rows": [
+   {
+    "entry": "layers along Y, vm",
+    "values": [
+     10.68,
+     11.06,
+     12.51
+    ],
+    "limit": 45.0,
+    "factor": 3.6,
+    "converged": false,
+    "last_step_pct": 13.1,
+    "factor_after_two_more_steps": 2.81,
+    "state": "margin, not converged"
+   },
+   {
+    "entry": "layers along Y, layer",
+    "values": [
+     7.05,
+     7.15,
+     7.44
+    ],
+    "limit": 22.5,
+    "factor": 3.02,
+    "converged": true,
+    "last_step_pct": 4.1,
+    "factor_after_two_more_steps": 2.79,
+    "state": "pass"
+   },
+   {
+    "entry": "layers along Y, shear",
+    "values": [
+     4.0,
+     3.93,
+     4.01
+    ],
+    "limit": 12.99038105676658,
+    "factor": 3.24,
+    "converged": true,
+    "last_step_pct": 2.0,
+    "factor_after_two_more_steps": 3.11,
+    "state": "pass"
+   }
+  ]
+ },
+ "T5 ribs, layers along X": {
+  "verdict": "not shown",
+  "need": 2.0,
+  "lowest_factor": 2.13,
+  "lowest_entry": "layers along X, shear",
+  "rows": [
+   {
+    "entry": "layers along X, vm",
+    "values": [
+     10.68,
+     11.06,
+     12.51
+    ],
+    "limit": 45.0,
+    "factor": 3.6,
+    "converged": false,
+    "last_step_pct": 13.1,
+    "factor_after_two_more_steps": 2.81,
+    "state": "margin, not converged"
+   },
+   {
+    "entry": "layers along X, layer",
+    "values": [
+     7.47,
+     8.24,
+     8.24
+    ],
+    "limit": 22.5,
+    "factor": 2.73,
+    "converged": true,
+    "last_step_pct": 0.0,
+    "factor_after_two_more_steps": 2.73,
+    "state": "pass"
+   },
+   {
+    "entry": "layers along X, shear",
+    "values": [
+     4.86,
+     5.59,
+     6.11
+    ],
+    "limit": 12.99038105676658,
+    "factor": 2.13,
+    "converged": false,
+    "last_step_pct": 9.3,
+    "factor_after_two_more_steps": 1.78,
+    "state": "not shown"
+   }
+  ]
+ },
+ "T5 ribs, layers along Z": {
+  "verdict": "not shown",
+  "need": 2.0,
+  "lowest_factor": 2.15,
+  "lowest_entry": "layers along Z, shear",
+  "rows": [
+   {
+    "entry": "layers along Z, vm",
+    "values": [
+     10.68,
+     11.06,
+     12.51
+    ],
+    "limit": 45.0,
+    "factor": 3.6,
+    "converged": false,
+    "last_step_pct": 13.1,
+    "factor_after_two_more_steps": 2.81,
+    "state": "margin, not converged"
+   },
+   {
+    "entry": "layers along Z, layer",
+    "values": [
+     3.9,
+     4.13,
+     4.42
+    ],
+    "limit": 22.5,
+    "factor": 5.09,
+    "converged": false,
+    "last_step_pct": 7.0,
+    "factor_after_two_more_steps": 4.44,
+    "state": "margin, not converged"
+   },
+   {
+    "entry": "layers along Z, shear",
+    "values": [
+     4.86,
+     5.55,
+     6.04
+    ],
+    "limit": 12.99038105676658,
+    "factor": 2.15,
+    "converged": false,
+    "last_step_pct": 8.8,
+    "factor_after_two_more_steps": 1.82,
+    "state": "not shown"
+   }
+  ]
+ },
+ "T6 pin in a hole": {
+  "verdict": "margin, not converged",
+  "need": 2.0,
+  "lowest_factor": 6.65,
+  "lowest_entry": "pressure mid-length",
+  "rows": [
+   {
+    "entry": "pressure mid-length",
+    "values": [
+     6.52,
+     5.96,
+     6.77
+    ],
+    "limit": 45.0,
+    "factor": 6.65,
+    "converged": false,
+    "last_step_pct": 13.6,
+    "factor_after_two_more_steps": 5.15,
+    "state": "margin, not converged"
+   },
+   {
+    "entry": "pressure at the mouth",
+    "values": [
+     6.29,
+     6.23,
+     5.99
+    ],
+    "limit": 45.0,
+    "factor": 7.51,
+    "converged": true,
+    "last_step_pct": 3.9,
+    "factor_after_two_more_steps": 7.51,
+    "state": "pass"
+   },
+   {
+    "entry": "pressure, whole hole",
+    "values": [
+     6.71,
+     6.23,
+     6.77
+    ],
+    "limit": 45.0,
+    "factor": 6.65,
+    "converged": false,
+    "last_step_pct": 8.7,
+    "factor_after_two_more_steps": 5.63,
+    "state": "margin, not converged"
+   },
+   {
+    "entry": "block von Mises",
+    "values": [
+     5.54,
+     5.16,
+     5.33
+    ],
+    "limit": 45.0,
+    "factor": 8.44,
+    "converged": true,
+    "last_step_pct": 3.3,
+    "factor_after_two_more_steps": 7.91,
+    "state": "pass"
+   }
+  ]
+ },
+ "D2 housing": {
+  "verdict": "not shown",
+  "need": 2.0,
+  "lowest_factor": 5.83,
+  "lowest_entry": "lower half, +X, shear",
+  "rows": [
+   {
+    "entry": "upper half, +Y, vm",
+    "values": [
+     4.57
+    ],
+    "limit": 45.0,
+    "factor": 9.85,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 9.85,
+    "state": "not shown"
+   },
+   {
+    "entry": "upper half, +Y, layer",
+    "values": [
+     0.87
+    ],
+    "limit": 22.5,
+    "factor": 25.86,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 25.86,
+    "state": "not shown"
+   },
+   {
+    "entry": "upper half, +Y, shear",
+    "values": [
+     1.18
+    ],
+    "limit": 12.99038105676658,
+    "factor": 11.01,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 11.01,
+    "state": "not shown"
+   },
+   {
+    "entry": "upper half, +X, vm",
+    "values": [
+     6.13
+    ],
+    "limit": 45.0,
+    "factor": 7.34,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 7.34,
+    "state": "not shown"
+   },
+   {
+    "entry": "upper half, +X, layer",
+    "values": [
+     0.76
+    ],
+    "limit": 22.5,
+    "factor": 29.61,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 29.61,
+    "state": "not shown"
+   },
+   {
+    "entry": "upper half, +X, shear",
+    "values": [
+     1.41
+    ],
+    "limit": 12.99038105676658,
+    "factor": 9.21,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 9.21,
+    "state": "not shown"
+   },
+   {
+    "entry": "lower half, +Y, vm",
+    "values": [
+     2.62
+    ],
+    "limit": 45.0,
+    "factor": 17.18,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 17.18,
+    "state": "not shown"
+   },
+   {
+    "entry": "lower half, +Y, layer",
+    "values": [
+     0.66
+    ],
+    "limit": 22.5,
+    "factor": 34.09,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 34.09,
+    "state": "not shown"
+   },
+   {
+    "entry": "lower half, +Y, shear",
+    "values": [
+     0.61
+    ],
+    "limit": 12.99038105676658,
+    "factor": 21.3,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 21.3,
+    "state": "not shown"
+   },
+   {
+    "entry": "lower half, +X, vm",
+    "values": [
+     5.13
+    ],
+    "limit": 45.0,
+    "factor": 8.77,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 8.77,
+    "state": "not shown"
+   },
+   {
+    "entry": "lower half, +X, layer",
+    "values": [
+     1.07
+    ],
+    "limit": 22.5,
+    "factor": 21.03,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 21.03,
+    "state": "not shown"
+   },
+   {
+    "entry": "lower half, +X, shear",
+    "values": [
+     2.23
+    ],
+    "limit": 12.99038105676658,
+    "factor": 5.83,
+    "converged": false,
+    "last_step_pct": null,
+    "factor_after_two_more_steps": 5.83,
+    "state": "not shown"
+   }
+  ]
+ }
+}

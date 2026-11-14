@@ -44,7 +44,8 @@ catches it is a number written down beforehand. Same for modelling: `expect_dv` 
    Whether or not a direction was given: if another one is better, say so and by how much.
 6. Convergence followed the governing measure, not only von Mises (`converge(..., layers=normal)`), over three sizes.
    **A verdict of pass needs every one of the three measures converged.** If one still moves by more than 5 % at the
-   last refinement, the verdict is "not shown", never pass on the finest value. The measure is climbing at a sharp
+   last refinement, the verdict is "not shown" or "margin, not converged" (`judge()` below says which), never pass
+   on the finest value. The measure is climbing at a sharp
    edge: give that edge the radius the printed part will have (0.4 mm if nothing says otherwise, or the fillet the
    neighbouring edges have), solve again, and judge that. On the second benchmark set this was the one place the
    two models parted: same numbers, one passed the bracket on a climbing value, the other rounded the edge and found
@@ -63,12 +64,32 @@ put its output in `results.json`. It exists because of what a careful but small 
 (2026-11-14): a part at factor 3 recorded as a fail because one measure still moved, a correct contact result
 called invalid, and a headline factor of 9.85 where the lowest row in its own table was 5.82.
 
+```python
+allow = dict(vm=45.0, layer=22.5, shear=13.0)                      # MPa
+series = {f'{body}, {case}, {m}': [row[body][case][m] for row in rows]      # rows: coarsest mesh first
+          for body in ('upper half', 'lower half') for case in ('+Y', '+X') for m in allow}
+v = judge(series, {k: allow[k.split(', ')[2]] for k in series}, need=2.0)
+results['verdict'], results['sf_lowest'], results['judge'] = v['verdict'], v['lowest_factor'], v
+```
+
+Give it the cases the part must carry and nothing else: a bonded twin run to prove a contact is not a load case, and
+a peak climbing without end at a fixture edge or a sharp corner is not a stress (round the corner first, step 6
+above).
+
 | Verdict | Means | Write in the report |
 | --- | --- | --- |
 | `pass` | every entry converged, all at or over the factor | the lowest factor and where |
 | `fail` | an entry is under the factor | which, where, and the cheapest change that would fix it |
 | `margin, not converged` | nothing is under the factor and an entry still moves, but it would still hold after two more steps of the same size | the lowest factor, which entry moves and by how much. It is not a pass and not a fail: say both halves |
 | `not shown` | an entry still moves and the margin does not cover it, or it has fewer than three sizes | what was tried and what would settle it |
+
+"Two more steps": the entry is taken as rising twice more by the share it moved at the last refinement. Measured
+on the ribbed bracket (2026-11-14): von Mises 10.68, 11.06, 12.51 MPa is up 13.1 % at the last step, so it is taken
+at 12.51 x 1.131 x 1.131 = 16.0 MPa, factor 2.81 against the 3.60 it reads now: `margin, not converged`. The same
+part printed another way has shear at 4.86, 5.59, 6.11 MPa, factor 2.13 now and 1.78 after two more steps: `not
+shown`. Only an entry that fell at every step is taken at its finest value; one that has gone up and down (contact
+pressure does: 6.52, 5.96, 6.77) is taken as rising even when its last step was down. `judge()` logs every entry
+that is not a pass with these numbers; the rows are in what it returns.
 
 A result is **valid** when the model is right: the reaction matches the load, the contact proof holds, the hand value
 is within its tolerance. Convergence is a separate question. A valid result that has not converged is reported as
@@ -126,9 +147,11 @@ Then, for anything that is not done, these are not reasons to stop:
   to give up the task.
 - **One task failed.** The others do not depend on it. Write down where it stands and do the rest, then come back to
   it with the time that is left.
-- **Time.** Take it from `swkit.stamp(folder, label)`, called at the start and end of each task, never from a feeling:
-  runs of twenty minutes have reported eighty. If the brief gives a budget, use it: a report handed in at a tenth of the budget with tasks open is not
-  early, it is unfinished. If it gives none, the tasks set the length, not your sense that it has been a while.
+- **Time.** Take it from `swkit.stamp(folder, label)`, called at the start and end of each task, never from a
+  feeling: runs of twenty minutes have reported eighty. It returns the minutes since the first call in that folder
+  and keeps them in `times.log` there, so use the job's own folder. If the brief gives a budget, use it: a report
+  handed in at a tenth of the budget with tasks open is not early, it is unfinished. If it gives none, the tasks set
+  the length, not your sense that it has been a while.
 - **It seems good enough.** Check the brief line by line against what you have. A requirement you did not test is open.
 - **You have a plan for the rest.** A plan is not a result. Do not end with "next I would": do it.
 

@@ -78,7 +78,9 @@ task says to edit it, open it and change it in place:
 
 **When the change is to become a new file, `save_as` to the new name first and edit that.** `save()` writes into the
 file that is open: a run that edited `bracket.SLDPRT` and saved before `save_as` lost the original, and every later
-study ran on the wrong part without an error. Afterwards check the original still has its old volume.
+study ran on the wrong part without an error. After `save_as(d, new)` the open document `d` is the new file
+(`d.GetPathName` says so) and `save(d)` goes there; the original on disk is not written to (same SHA-256 after an
+edit and a save, `selftest.py verdict`, 2026-11-14). Afterwards check the original still has its old volume.
 
 | To change | Call | Then |
 | --- | --- | --- |

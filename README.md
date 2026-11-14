@@ -11,7 +11,7 @@ markdown, and the benchmark grades results, not style.
 
 | Folder | What it holds |
 | --- | --- |
-| [solidworks/](solidworks/) | `swkit.py` (modelling), `swfea.py` (static studies), `sheet.py` (picture sheets and shape numbers), `sw_instance.py` (one instance per job, the idle keeper), `sw_kill.py` (end dead instances), `selftest.py` (103 checks against hand answers), [RULES.md](solidworks/RULES.md) |
+| [solidworks/](solidworks/) | `swkit.py` (modelling), `swfea.py` (static studies), `sheet.py` (picture sheets and shape numbers), `sw_instance.py` (one instance per job, the idle keeper), `sw_kill.py` (end dead instances), `selftest.py` (194 checks against hand answers), [RULES.md](solidworks/RULES.md) |
 | [playbook/](playbook/README.md) | The pages a session reads before it works: session, COM, modelling, export, FEA, judgment, what finished means; and [EVAL.md](playbook/EVAL.md), what was measured |
 | [eval/](eval/) | Four task sets (routine, depth, design sense, stress) and every graded run, with its scripts, report and pictures |
 | [pc/](pc/) | `capped.py` (a python job under a hard memory cap), `claims.py` (who is using the shared machine), `user_idle.py` (is anyone at this PC) |
