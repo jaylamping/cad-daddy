@@ -1,0 +1,7 @@
+02:37:02 SolidWorks pid 2588 free GB 21.2
+02:37:08 tp_m1 faces: bottom 1 tip 1 fine 2 disc top 1
+02:37:12 tp_m1_1.2: mesh rc 0, 82969 nodes, 56203 elements, free 21.0 GB
+02:37:32 tp_m1_1.2: fixture nodes 2373, box [-30.0, -30.0, -6.0] to [30.0, 30.0, -6.0]
+02:37:32 tp_m1_1.2: load nodes 364, box [-7.0, -9.0, 60.0] to [7.0, 9.0, 60.0]
+02:37:41 RESULT tp_m1 1.2 {"nodes": 82969, "volume": 27448.8, "reaction": [-0.0, -20.0, 0.0, 20.0], "tip_disp": 0.4488, "junction_vm": 4.814, "at": [-0.18, 5.92, 3.41], "junction_avg_1mm": [4.064, 16], "junction_p1": 5.453, "plain_section_vm_z25": 1.97, "profile_y": [[0.4, 8.85], [1, 7.45], [2, 6.45], [3, 6.03], [4, 5.88], [6, 5.85], [8, 5.83], [12, 5.89]]}
+02:37:41 closing pid 2588 committed MB 1752

@@ -1,0 +1,7 @@
+02:33:37 SolidWorks pid 13376 free GB 20.3
+02:33:46 m4a ring faces 1 pin faces 2
+02:33:53 m4a_PY_3.0: mesh rc 0, 92535 nodes, 60869 elements, free 20.1 GB
+02:34:17 m4a_PY_3.0: fixture nodes 1696, box [-32.5, -4.0, -29.28] to [32.5, -4.0, 32.5]
+02:34:17 m4a_PY_3.0: load nodes 1252, box [-4.0, -23.73, -204.0] to [4.0, 23.73, -196.0]
+02:34:30 RESULT m4a 3.0 {"nodes": 92535, "volume": 126089.4, "reaction": [-0.0, -60.0, -0.0, 60.0], "disp": 5.532, "junction_vm": 15.14, "at": [-15.41, 3.73, -31.43], "junction_avg_1mm": [15.14, 1], "junction_avg_2mm": [10.23, 20], "rest_of_link_vm": 4.95, "overall_away": 15.14, "factor_junction": 2.97}
+02:34:30 closing pid 13376 committed MB 1709

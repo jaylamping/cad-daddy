@@ -11,6 +11,8 @@ SolidWorks has started (a launch waits while another session's instance is solvi
   rod:     a 20 mm round bar, 50 long, with 100 N pressed on its end through a normal force, against F L / A E.
   extras:  chamfer, half-space cut, shell, revolve, two lofts, one-sided extrudes, an arc, a body brought in and deleted,
            a broken feature that feature_errors must name, and a STEP import, each against a hand volume or count.
+  blend:   skirt(): a lofted oval stem rounded into the disc it stands on; volume against a true round, and the STL
+           sampled either side of the round's surface.
   loads:   what the load and result calls mean: a normal load over two faces is the total, a remote moment is in N.m,
            a remote force acts where it is placed, which stress column is which shear, and the solver macro.
   contact: two stacked blocks with no-penetration contact between them and a soft pad to hold the upper one.
@@ -337,6 +339,62 @@ def extras(j):
     close(j.sw, d)
 
 
+def blend(j):
+    """skirt(): a 60 mm disc, 6 thick, with an oval stem lofted up from it (20 x 12 at the foot, 14 x 18 and squarer at
+    the top), rounded into the disc with a 4 mm skirt. Volume against the hand value of a 4 mm round along the foot's
+    outline, and the STL sampled either side of where the round's surface should be."""
+    from sheet import inside, read_stl
+    from swkit import offset_loop, skirt
+
+    def outline(z, k=24):
+        t = (z + 1.0) / 61.0                                   # foot at z -1 (inside the disc), top at z 60
+        a, b, n = 10.0 - 3.0 * t, 6.0 + 3.0 * t, 2.0 + t
+        pts = []
+        for i in range(k):
+            c, s = math.cos(2 * math.pi * i / k), math.sin(2 * math.pi * i / k)
+            pts.append((a * math.copysign(abs(c) ** (2 / n), c), b * math.copysign(abs(s) ** (2 / n), s), z))
+        return pts
+
+    sq = offset_loop([(0, 0, 0), (10, 0, 0), (10, 10, 0), (0, 10, 0)], 1.0)
+    expect('offset_loop moves a square corner out along its diagonal', sq[0][0], -math.sqrt(0.5), 0.001)
+    d = new_part(j.sw, OUT / 'stem.SLDPRT')
+    with Sk(d, plane(d, 'Z', -3.0, 'DISC_P'), 'DISC') as s:
+        s.circle((0, 0, -3.0), 30.0)
+    extrude(d, s.feat, 'DISC', 6.0, mode=MID, expect_dv=math.pi * 900 * 6)
+    secs = []
+    for k, z in enumerate((-1.0, 15.0, 35.0, 60.0)):
+        with Sk(d, plane(d, 'Z', z, f'STEM_P{k}'), f'STEM_S{k}') as s:
+            s.spline(outline(z))
+        secs.append(s.feat)
+    loft(d, secs, 'STEM')
+    save(d)
+    v0 = volume(d)
+    R = 4.0
+    skirt(d, outline, 'Z', 0.0, R, 'FOOT')
+    foot = np.array(outline(0.0))
+    per = float(np.linalg.norm(foot - np.roll(foot, 1, axis=0), axis=1).sum())
+    # a round of radius R along an outline of length P: section (1 - pi/4) R^2, its centroid 0.2234 R off the wall
+    hand = (1 - math.pi / 4) * R ** 2 * (per + 2 * math.pi * 0.2234 * R)
+    expect('skirt volume against a true round mm3', volume(d) - v0, hand, 0.10)
+    expect('rebuild errors', len(feature_errors(d)), 0, 0)
+    single_body(d)
+    save(d)
+    export(j.sw, d, OUT / 'stem.stl')
+    close(j.sw, d)
+    # half way round the quarter circle the surface stands R (1 - sin 45) = 1.17 off the stem at height 1.17. A point
+    # 0.35 inside that is solid, one 0.35 outside is air; a 45 degree chamfer of the same size would fill both.
+    h = R * (1 - math.cos(math.pi / 4))
+    edge_x, edge_y = outline(h)[0][0] + h, outline(h)[6][1] + h
+    low = R * (1 - math.cos(math.pi / 8))                      # a quarter of the way round: 0.30 up, 2.47 off the stem
+    low_x = outline(low)[0][0] + R * (1 - math.sin(math.pi / 8))
+    pts = [(edge_x - 0.35, 0, h), (edge_x + 0.35, 0, h), (0, edge_y - 0.35, h), (0, edge_y + 0.35, h),
+           (low_x - 0.3, 0, low), (low_x + 0.3, 0, low)]
+    got = inside(read_stl(OUT / 'stem.stl'), np.array(pts))
+    if list(got) != [True, False, True, False, True, False]:
+        raise SystemExit(f'FAIL: the skirt is not where a 4 mm round would be: inside = {list(got)} at {pts}')
+    log('ok skirt surface: solid just inside the quarter circle and air just outside it, on both axes and at the face')
+
+
 def contact(j):
     """Two 20 x 20 x 10 PETG blocks stacked, the lower fixed underneath, no-penetration contact between them, and a
     small soft pad bonded to the side of both so the upper block is held when the contact is open."""
@@ -471,6 +529,8 @@ def bearing(j):
 
 
 TESTS = {'model': model, 'beam': beam, 'rod': rod, 'extras': extras, 'loads': loads, 'contact': contact, 'bearing': bearing}
+
+TESTS['blend'] = blend      # skirt(): a lofted stem rounded into the face it stands on
 
 if __name__ == '__main__':
     OUT.mkdir(parents=True, exist_ok=True)

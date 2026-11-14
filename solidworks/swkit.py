@@ -523,6 +523,50 @@ def loft(d, sketches, name):
     raise Failed(name + ': loft failed (sections must be closed, and their start points roughly in line)')
 
 
+def offset_loop(pts, off):
+    """A closed flat outline moved outwards by off mm in its own plane, point for point (inwards when off is negative).
+
+    Each point moves square to the line through its two neighbours, so the count and the start point stay the same and
+    the result lofts against the original. For smooth outlines; off must stay well under the tightest radius."""
+    P = np.array(pts, float)
+    c = P.mean(axis=0)
+    nrm = sum(np.cross(P[i] - c, P[(i + 1) % len(P)] - c) for i in range(len(P)))
+    nrm = nrm / np.linalg.norm(nrm)
+    out = []
+    for i in range(len(P)):
+        o = np.cross(P[(i + 1) % len(P)] - P[i - 1], nrm)
+        out.append(tuple(float(v) for v in P[i] + off * o / np.linalg.norm(o)))
+    return out
+
+
+def skirt(d, outline, axis, at, radius, name, side=+1, steps=5, sink=0.15):
+    """Round a lofted stem into the flat face it stands on, with a small second loft laid over the junction.
+
+    Use it where fillet() on the seam is not to be trusted or returns nothing. outline(c) -> the stem's closed outline as
+    3D points in the plane axis = c (the function its own sections were drawn from; same count and start point at
+    every height). The face is the plane axis = at and the stem rises towards side (+1 or -1) along that axis. The
+    skirt's sections follow a quarter circle of the given radius: the first lies in the face, radius wider than the
+    stem all round, and the last sits `sink` mm inside the stem at height radius, so no two faces coincide. It leaves
+    a crease of a few degrees where it sinks into the stem and meets the face at a shallow angle, not at a tangent.
+    Raises unless it added volume, left the body count alone and rebuilt clean. Needs `radius` of room on the face all
+    round. Measured: playbook/03-modelling.md, eval/loft-blend.
+    """
+    v0, n0 = volume(d), len(solid_bodies(d))
+    sks = []
+    for k in range(steps):
+        phi = math.radians(90.0 * k / (steps - 1))
+        c = at + side * radius * (1 - math.cos(phi))
+        off = radius * (1 - math.sin(phi)) if k < steps - 1 else -sink
+        with Sk(d, plane(d, axis, c, f'{name}_P{k}'), f'{name}_S{k}') as s:
+            s.spline(offset_loop(outline(c), off))
+        sks.append(s.feat)
+    f = loft(d, sks, name)
+    dv, errs = volume(d) - v0, feature_errors(d)
+    if dv <= 0 or len(solid_bodies(d)) != n0 or errs:
+        raise Failed(f'{name}: skirt added {dv:.2f} mm3, bodies {n0} -> {len(solid_bodies(d))}, errors {errs}')
+    return f
+
+
 def shell(d, open_face_points, t, name):
     """Shell to wall thickness t mm, removing the faces at the given 3D points (each must lie on exactly one face).
 

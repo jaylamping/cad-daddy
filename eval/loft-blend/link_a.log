@@ -1,0 +1,317 @@
+02:26:55 SolidWorks pid 5412 free GB 20.8
+02:26:57 DISC: added 28065.58 mm3
+02:26:58 ok HOLES volume change: 435.8017 (expected 435.8017)
+02:26:58 HOLES: cut 435.80 mm3
+02:27:01 RIDGE: added 2078.18 mm3 (merge True)
+02:27:07 STEM: added 125692.64 mm3 (merge True)
+02:27:08 base volume 155400.6 bodies 1 errors []
+02:27:08 seam {"stem_faces": 5, "seam_edges": 32, "edge_lengths_mm": [0.04, 0.04, 0.16, 0.16, 0.29, 0.3, 0.52, 0.52, 0.53, 0.53, 0.53, 0.53, 0.85, 0.85, 1.11, 1.11, 1.15, 1.15, 1.41, 1.41, 1.76, 1.76, 2.33, 2.33, 3.25, 3.26, 4.46, 4.47, 11.36, 11.94, 12.4, 12.42], "other_faces": 14, "other_kinds": {"other": 12, "cyl": 1, "plane": 1}}
+02:27:11 M1 all R5: did not build
+02:27:13 M1 all R4: did not build
+02:27:15 M1 all R3: did not build
+02:27:17 M1 all R2: did not build
+02:27:18 M1 all R1: did not build
+02:27:20 M1 all R0.5: did not build
+02:27:20 M1 edge 0 (0.04 mm) R2: did not build
+02:27:21 M1 edge 1 (0.53 mm) R2: did not build
+02:27:21 M1 edge 2 (0.53 mm) R2: did not build
+02:27:21 M1 edge 3 (0.52 mm) R2: did not build
+02:27:22 M1 edge 4 (12.4 mm) R2: did not build
+02:27:22 M1 edge 5 (4.46 mm) R2: did not build
+02:27:23 M1 edge 6 (1.11 mm) R2 {'built': True, 'dv': 0.0, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:24 M1 edge 7 (3.25 mm) R2 {'built': True, 'dv': 0.06, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:25 M1 edge 8 (11.94 mm) R2 {'built': True, 'dv': 0.23, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:25 M1 edge 9 (3.26 mm) R2 {'built': True, 'dv': 0.03, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:26 M1 edge 10 (1.11 mm) R2 {'built': True, 'dv': 0.0, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:27 M1 edge 11 (4.47 mm) R2: did not build
+02:27:27 M1 edge 12 (12.42 mm) R2: did not build
+02:27:28 M1 edge 13 (0.52 mm) R2: did not build
+02:27:28 M1 edge 14 (0.53 mm) R2: did not build
+02:27:28 M1 edge 15 (0.53 mm) R2: did not build
+02:27:29 M1 edge 16 (0.04 mm) R2: did not build
+02:27:29 M1 edge 17 (0.16 mm) R2 {'built': True, 'dv': 7.22, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:30 M1 edge 18 (0.3 mm) R2 {'built': True, 'dv': 9.35, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:31 M1 edge 19 (0.16 mm) R2 {'built': True, 'dv': 7.09, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:32 M1 edge 20 (0.29 mm) R2 {'built': True, 'dv': 9.19, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:33 M1 edge 21 (0.85 mm) R2: did not build
+02:27:33 M1 edge 22 (0.85 mm) R2: did not build
+02:27:34 M1 edge 23 (1.15 mm) R2: did not build
+02:27:34 M1 edge 24 (1.41 mm) R2: did not build
+02:27:34 M1 edge 25 (1.76 mm) R2: did not build
+02:27:35 M1 edge 26 (2.33 mm) R2: did not build
+02:27:35 M1 edge 27 (11.36 mm) R2 {'built': True, 'dv': 30.82, 'errors': [], 'bodies': 1, 'seam_edges_after': None}
+02:27:36 M1 edge 28 (2.33 mm) R2: did not build
+02:27:36 M1 edge 29 (1.76 mm) R2: did not build
+02:27:37 M1 edge 30 (1.41 mm) R2: did not build
+02:27:37 M1 edge 31 (1.15 mm) R2: did not build
+02:27:41 M2 opt1 R5: did not build
+02:27:45 M2 opt1 R4: did not build
+02:27:48 M2 opt1 R3: did not build
+02:27:52 M2 opt1 R2: did not build
+02:27:55 M2 opt1 R1: did not build
+02:27:59 M2 opt3 R5: did not build
+02:28:02 M2 opt3 R4: did not build
+02:28:06 M2 opt3 R3: did not build
+02:28:09 M2 opt3 R2: did not build
+02:28:13 M2 opt3 R1: did not build
+02:28:13 closing pid 5412 committed MB 1774
+{
+ "seam": {
+  "stem_faces": 5,
+  "seam_edges": 32,
+  "edge_lengths_mm": [
+   0.04,
+   0.04,
+   0.16,
+   0.16,
+   0.29,
+   0.3,
+   0.52,
+   0.52,
+   0.53,
+   0.53,
+   0.53,
+   0.53,
+   0.85,
+   0.85,
+   1.11,
+   1.11,
+   1.15,
+   1.15,
+   1.41,
+   1.41,
+   1.76,
+   1.76,
+   2.33,
+   2.33,
+   3.25,
+   3.26,
+   4.46,
+   4.47,
+   11.36,
+   11.94,
+   12.4,
+   12.42
+  ],
+  "other_faces": 14,
+  "other_kinds": {
+   "other": 12,
+   "cyl": 1,
+   "plane": 1
+  }
+ },
+ "m1_edge_fillet": {
+  "all_edges_R5": {
+   "built": false
+  },
+  "all_edges_R4": {
+   "built": false
+  },
+  "all_edges_R3": {
+   "built": false
+  },
+  "all_edges_R2": {
+   "built": false
+  },
+  "all_edges_R1": {
+   "built": false
+  },
+  "all_edges_R0.5": {
+   "built": false
+  },
+  "one_edge_at_a_time_R2": [
+   [
+    0,
+    0.04,
+    false
+   ],
+   [
+    1,
+    0.53,
+    false
+   ],
+   [
+    2,
+    0.53,
+    false
+   ],
+   [
+    3,
+    0.52,
+    false
+   ],
+   [
+    4,
+    12.4,
+    false
+   ],
+   [
+    5,
+    4.46,
+    false
+   ],
+   [
+    6,
+    1.11,
+    true
+   ],
+   [
+    7,
+    3.25,
+    true
+   ],
+   [
+    8,
+    11.94,
+    true
+   ],
+   [
+    9,
+    3.26,
+    true
+   ],
+   [
+    10,
+    1.11,
+    true
+   ],
+   [
+    11,
+    4.47,
+    false
+   ],
+   [
+    12,
+    12.42,
+    false
+   ],
+   [
+    13,
+    0.52,
+    false
+   ],
+   [
+    14,
+    0.53,
+    false
+   ],
+   [
+    15,
+    0.53,
+    false
+   ],
+   [
+    16,
+    0.04,
+    false
+   ],
+   [
+    17,
+    0.16,
+    true
+   ],
+   [
+    18,
+    0.3,
+    true
+   ],
+   [
+    19,
+    0.16,
+    true
+   ],
+   [
+    20,
+    0.29,
+    true
+   ],
+   [
+    21,
+    0.85,
+    false
+   ],
+   [
+    22,
+    0.85,
+    false
+   ],
+   [
+    23,
+    1.15,
+    false
+   ],
+   [
+    24,
+    1.41,
+    false
+   ],
+   [
+    25,
+    1.76,
+    false
+   ],
+   [
+    26,
+    2.33,
+    false
+   ],
+   [
+    27,
+    11.36,
+    true
+   ],
+   [
+    28,
+    2.33,
+    false
+   ],
+   [
+    29,
+    1.76,
+    false
+   ],
+   [
+    30,
+    1.41,
+    false
+   ],
+   [
+    31,
+    1.15,
+    false
+   ]
+  ]
+ },
+ "m2_face_fillet": {
+  "opt1_R5": {
+   "built": false
+  },
+  "opt1_R4": {
+   "built": false
+  },
+  "opt1_R3": {
+   "built": false
+  },
+  "opt1_R2": {
+   "built": false
+  },
+  "opt1_R1": {
+   "built": false
+  },
+  "opt3_R5": {
+   "built": false
+  },
+  "opt3_R4": {
+   "built": false
+  },
+  "opt3_R3": {
+   "built": false
+  },
+  "opt3_R2": {
+   "built": false
+  },
+  "opt3_R1": {
+   "built": false
+  }
+ }
+}
