@@ -1,0 +1,52 @@
+03:32:39 SolidWorks pid 3140 free GB 20.9
+03:32:45 ok two M5 hole walls: 2.0000 (expected 2.0000)
+03:32:45 ok four boss tops: 4.0000 (expected 4.0000)
+03:32:46 D1_R1_PULL_EL15: mesh rc 0, 38346 nodes, 23296 elements, free 20.8 GB
+03:32:50 D1_R1_PULL_EL15: fixture nodes 331, box [-27.75, 10.0, -12.75] to [27.75, 14.0, -7.25]
+03:32:50 D1_R1_PULL_EL15: load nodes 428, box [-42.5, 17.5, -16.99] to [42.5, 17.5, 43.0]
+03:32:52 ok el 1.5 reaction resultant equals load: 8.9990 (expected 9.0000)
+03:32:52 {'el': 1.5, 'nodes': 38346, 'max_disp_mm': 1.9250706434249878, 'peak_excl_corners_mpa': 5.28753137588501, 'peak_excl_corners_at': [36.17, 10.0, -2.74], 'vm_max_all_mpa': 10.674424171447754, 'vm_max_at': [-35.42, 10.0, -6.38], 'vm_max_near_old_corner_mpa': 10.674424171447754}
+03:32:53 D1_R1_PULL_EL10: mesh rc 0, 112827 nodes, 72917 elements, free 21.1 GB
+03:33:18 D1_R1_PULL_EL10: fixture nodes 659, box [-27.75, 10.0, -12.75] to [27.75, 14.0, -7.25]
+03:33:18 D1_R1_PULL_EL10: load nodes 848, box [-42.5, 17.5, -17.0] to [42.5, 17.5, 43.0]
+03:33:31 ok el 1.0 reaction resultant equals load: 9.0000 (expected 9.0000)
+03:33:31 {'el': 1.0, 'nodes': 112827, 'max_disp_mm': 1.9292075634002686, 'peak_excl_corners_mpa': 5.320508003234863, 'peak_excl_corners_at': [36.39, 10.0, -2.87], 'vm_max_all_mpa': 10.753856658935547, 'vm_max_at': [-35.42, 10.0, -6.38], 'vm_max_near_old_corner_mpa': 10.753856658935547}
+03:33:31 closing pid 3140 committed MB 1939
+[
+  {
+    "el": 1.5,
+    "nodes": 38346,
+    "max_disp_mm": 1.9250706434249878,
+    "peak_excl_corners_mpa": 5.28753137588501,
+    "peak_excl_corners_at": [
+      36.17,
+      10.0,
+      -2.74
+    ],
+    "vm_max_all_mpa": 10.674424171447754,
+    "vm_max_at": [
+      -35.42,
+      10.0,
+      -6.38
+    ],
+    "vm_max_near_old_corner_mpa": 10.674424171447754
+  },
+  {
+    "el": 1.0,
+    "nodes": 112827,
+    "max_disp_mm": 1.9292075634002686,
+    "peak_excl_corners_mpa": 5.320508003234863,
+    "peak_excl_corners_at": [
+      36.39,
+      10.0,
+      -2.87
+    ],
+    "vm_max_all_mpa": 10.753856658935547,
+    "vm_max_at": [
+      -35.42,
+      10.0,
+      -6.38
+    ],
+    "vm_max_near_old_corner_mpa": 10.753856658935547
+  }
+]

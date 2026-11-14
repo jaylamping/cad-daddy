@@ -1,0 +1,42 @@
+14:00:16 SolidWorks pid 115172 free GB 23.3
+14:00:18 ok opened the T1 part: 32974.0242 (expected 32974.0242)
+14:00:18 tree before [('Comments', 'CommentsFolder', 8), ('Favorites', 'FavoriteFolder', 21), ('History', 'HistoryFolder', 22), ('Selection Sets', 'SelectionSetFolder', 23), ('Sensors', 'SensorFolder', 20), ('Design Binder', 'DocsFolder', 7), ('Annotations', 'DetailCabinet', 1), ('Surface Bodies', 'SurfaceBodyFolder', 10), ('Solid Bodies', 'SolidBodyFolder', 9), ('Lights and Cameras', 'EnvFolder', 6), ('Markups', 'InkMarkupFolder', 19), ('Equations', 'EqnFolder', 14), ('Material <not specified>', 'MaterialFolder', 11), ('Front Plane', 'RefPlane', 2), ('Top Plane', 'RefPlane', 3), ('Right Plane', 'RefPlane', 4), ('Origin', 'OriginProfileFeature', 5), ('L_P', 'RefPlane', 25), ('L_SK', 'ProfileFeature', 26), ('L', 'Extrusion', 32), ('ROOT_R', 'Fillet', 34), ('BASE_R5', 'Fillet', 36), ('TOP_R5', 'Fillet', 39), ('BASE_HOLES_P', 'RefPlane', 41), ('BASE_HOLES_SK', 'ProfileFeature', 42), ('BASE_HOLES', 'ICE', 48), ('BORE_P', 'RefPlane', 50), ('BORE_SK', 'ProfileFeature', 51), ('BORE', 'ICE', 57), ('MOTOR_HOLES_P', 'RefPlane', 59), ('MOTOR_HOLES_SK', 'ProfileFeature', 60), ('MOTOR_HOLES', 'ICE', 66)]
+14:00:19 ok CBORE volume change: 657.3783 (expected 657.3783)
+14:00:19 CBORE: cut 657.38 mm3
+14:00:19 ok SLOT_ENDS volume change: 339.2920 (expected 339.2920)
+14:00:19 SLOT_ENDS: cut 339.29 mm3
+14:00:20 ok SLOT_MID volume change: 334.3540 (expected 334.3540)
+14:00:20 SLOT_MID: cut 334.35 mm3
+14:00:20 ok rebuild errors: 0
+14:00:20 ok volume: 31642.9999 (expected 31642.9999)
+14:00:20 ok box: 0.0000 (expected 0.0000)
+14:00:20 ok box: -0.0000 (expected 0.0000)
+14:00:20 ok box: 0.0000 (expected 0.0000)
+14:00:20 ok box: 80.0000 (expected 80.0000)
+14:00:20 ok box: 50.0000 (expected 50.0000)
+14:00:20 ok box: 46.0000 (expected 46.0000)
+14:00:20 ok counterbore floors: 4
+14:00:20 ok floor z: 3.0000 (expected 3.0000)
+14:00:20 ok floor z: 3.0000 (expected 3.0000)
+14:00:20 ok floor z: 3.0000 (expected 3.0000)
+14:00:20 ok floor z: 3.0000 (expected 3.0000)
+14:00:20 ok floor area: 54.7815 (expected 54.7815)
+14:00:20 ok floor area: 54.7815 (expected 54.7815)
+14:00:20 ok floor area: 54.7815 (expected 54.7815)
+14:00:20 ok floor area: 54.7815 (expected 54.7815)
+14:00:20 ok counterbore walls: 4
+14:00:20 ok cbore x: 25.0000 (expected 25.0000)
+14:00:20 ok cbore y: 10.0000 (expected 10.0000)
+14:00:20 ok cbore x: 25.0000 (expected 25.0000)
+14:00:20 ok cbore y: 40.0000 (expected 40.0000)
+14:00:20 ok cbore x: 65.0000 (expected 65.0000)
+14:00:20 ok cbore y: 10.0000 (expected 10.0000)
+14:00:20 ok cbore x: 65.0000 (expected 65.0000)
+14:00:20 ok cbore y: 40.0000 (expected 40.0000)
+14:00:20 ok slot end faces: 2
+14:00:20 slot end boxes [[35.0, 22.0, 0.0, 38.0, 28.0, 6.0], [52.0, 22.0, 0.0, 55.0, 28.0, 6.0]]
+14:00:20 tree after [('Comments', 'CommentsFolder', 8), ('Favorites', 'FavoriteFolder', 21), ('History', 'HistoryFolder', 22), ('Selection Sets', 'SelectionSetFolder', 23), ('Sensors', 'SensorFolder', 20), ('Design Binder', 'DocsFolder', 7), ('Annotations', 'DetailCabinet', 1), ('Surface Bodies', 'SurfaceBodyFolder', 10), ('Solid Bodies', 'SolidBodyFolder', 9), ('Lights and Cameras', 'EnvFolder', 6), ('Markups', 'InkMarkupFolder', 19), ('Equations', 'EqnFolder', 14), ('Material <not specified>', 'MaterialFolder', 11), ('Front Plane', 'RefPlane', 2), ('Top Plane', 'RefPlane', 3), ('Right Plane', 'RefPlane', 4), ('Origin', 'OriginProfileFeature', 5), ('L_P', 'RefPlane', 25), ('L_SK', 'ProfileFeature', 26), ('L', 'Extrusion', 32), ('ROOT_R', 'Fillet', 34), ('BASE_R5', 'Fillet', 36), ('TOP_R5', 'Fillet', 39), ('BASE_HOLES_P', 'RefPlane', 41), ('BASE_HOLES_SK', 'ProfileFeature', 42), ('BASE_HOLES', 'ICE', 48), ('BORE_P', 'RefPlane', 50), ('BORE_SK', 'ProfileFeature', 51), ('BORE', 'ICE', 57), ('MOTOR_HOLES_P', 'RefPlane', 59), ('MOTOR_HOLES_SK', 'ProfileFeature', 60), ('MOTOR_HOLES', 'ICE', 66), ('CBORE_P', 'RefPlane', 68), ('CBORE_SK', 'ProfileFeature', 69), ('CBORE', 'ICE', 75), ('SLOT_ENDS_P', 'RefPlane', 77), ('SLOT_ENDS_SK', 'ProfileFeature', 78), ('SLOT_ENDS', 'ICE', 84), ('SLOT_MID_P', 'RefPlane', 86), ('SLOT_MID_SK', 'ProfileFeature', 87), ('SLOT_MID', 'ICE', 93)]
+14:00:20 results.json T2 ['bodies', 'counterbore_floor_z_mm', 'hand_volume_mm3', 'notes', 'status', 'volume_mm3']
+14:00:20 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-a\_wip\sw-eval\haiku-plan-a\bracket_b.stl 115084 bytes
+14:00:20 closing pid 115172 committed MB 1786
+14:00:25 bracket.SLDPRT sha unchanged 910913e062bd5eb2

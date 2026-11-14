@@ -1,0 +1,122 @@
+03:08:56 hand values {'hand_root_stress_mpa': 11.0, 'hand_stress_z12_mpa': 8.0, 'hand_root_shear_mpa': 0.5, 'hand_upright_tip_defl_mm': 0.3113, 'moment_root_nmm': 3300.0}
+03:09:00 SolidWorks pid 8160 free GB 21.4
+03:09:05 volume 31643.0 box [0.0, 0.0, 0.0, 80.0, 50.0, 46.0]
+03:09:06 picks: holes 4 bore 1 fillet 1 X6 face 1
+03:09:06 predict: 14064 nodes before control refinement at el 3.0; upright tip deflection about 0.3113 mm; peak von Mises near the root
+03:09:07 rem30: mesh rc 0, 41786 nodes, 25805 elements, free 21.2 GB
+03:09:12 rem30: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:09:12 rem30: load nodes 240, box [0.0, 14.0, 17.0] to [6.0, 36.0, 38.99]
+03:09:15 row {'el': 3.0, 'nodes': 41786, 'peak_vm': 16.844, 'peak_at': [9.32, 26.19, 6.06], 'layer_z': 10.359, 'shear_z': 7.627, 'layer_x': 13.23, 'layer_y': 5.139, 'shear_x': 7.627, 'shear_y': 3.516, 'max_disp_mm': 3.0652, 'reaction_N': [-150.0, 0.0, -0.0, 150.0], 'applied_N': 150.0, 'solve_s': 9, 'sz_face_x6_z12': -9.913, 'sz_face_x0_z12': 9.495}
+03:09:15 predict: 47464 nodes before control refinement at el 2.0; upright tip deflection about 0.3113 mm; peak von Mises near the root
+03:09:16 rem20: mesh rc 0, 80004 nodes, 51624 elements, free 21.4 GB
+03:09:32 rem20: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:09:32 rem20: load nodes 610, box [0.0, 14.0, 17.0] to [6.0, 36.0, 39.0]
+03:09:40 row {'el': 2.0, 'nodes': 80004, 'peak_vm': 18.054, 'peak_at': [22.79, 45.37, 6.0], 'layer_z': 10.397, 'shear_z': 7.599, 'layer_x': 15.282, 'layer_y': 7.124, 'shear_x': 7.599, 'shear_y': 6.628, 'max_disp_mm': 3.0712, 'reaction_N': [-150.0, -0.0, 0.0, 150.0], 'applied_N': 150.0, 'solve_s': 25, 'sz_face_x6_z12': -9.903, 'sz_face_x0_z12': 9.41}
+03:09:40 predict: 112508 nodes before control refinement at el 1.5; upright tip deflection about 0.3113 mm; peak von Mises near the root
+03:09:42 rem15: mesh rc 0, 135457 nodes, 89607 elements, free 21.4 GB
+03:10:21 rem15: fixture nodes 1584, box [22.25, 7.25, 0.0] to [67.75, 42.75, 3.0]
+03:10:21 rem15: load nodes 828, box [0.0, 14.0, 17.0] to [6.0, 36.0, 39.0]
+03:10:42 row {'el': 1.5, 'nodes': 135457, 'peak_vm': 20.871, 'peak_at': [23.95, 5.11, 6.0], 'layer_z': 10.358, 'shear_z': 7.609, 'layer_x': 18.252, 'layer_y': 9.507, 'shear_x': 7.952, 'shear_y': 7.907, 'max_disp_mm': 3.0731, 'reaction_N': [-150.0, -0.0, 0.0, 150.0], 'applied_N': 150.0, 'solve_s': 62, 'sz_face_x6_z12': -9.903, 'sz_face_x0_z12': 9.4}
+03:10:42 closing pid 8160 committed MB 1750
+{
+  "case": "remote",
+  "hand": {
+    "hand_root_stress_mpa": 11.0,
+    "hand_stress_z12_mpa": 8.0,
+    "hand_root_shear_mpa": 0.5,
+    "hand_upright_tip_defl_mm": 0.3113,
+    "moment_root_nmm": 3300.0
+  },
+  "rows": [
+    {
+      "el": 3.0,
+      "nodes": 41786,
+      "peak_vm": 16.844,
+      "peak_at": [
+        9.32,
+        26.19,
+        6.06
+      ],
+      "layer_z": 10.359,
+      "shear_z": 7.627,
+      "layer_x": 13.23,
+      "layer_y": 5.139,
+      "shear_x": 7.627,
+      "shear_y": 3.516,
+      "max_disp_mm": 3.0652,
+      "reaction_N": [
+        -150.0,
+        0.0,
+        -0.0,
+        150.0
+      ],
+      "applied_N": 150.0,
+      "solve_s": 9,
+      "sz_face_x6_z12": -9.913,
+      "sz_face_x0_z12": 9.495
+    },
+    {
+      "el": 2.0,
+      "nodes": 80004,
+      "peak_vm": 18.054,
+      "peak_at": [
+        22.79,
+        45.37,
+        6.0
+      ],
+      "layer_z": 10.397,
+      "shear_z": 7.599,
+      "layer_x": 15.282,
+      "layer_y": 7.124,
+      "shear_x": 7.599,
+      "shear_y": 6.628,
+      "max_disp_mm": 3.0712,
+      "reaction_N": [
+        -150.0,
+        -0.0,
+        0.0,
+        150.0
+      ],
+      "applied_N": 150.0,
+      "solve_s": 25,
+      "sz_face_x6_z12": -9.903,
+      "sz_face_x0_z12": 9.41
+    },
+    {
+      "el": 1.5,
+      "nodes": 135457,
+      "peak_vm": 20.871,
+      "peak_at": [
+        23.95,
+        5.11,
+        6.0
+      ],
+      "layer_z": 10.358,
+      "shear_z": 7.609,
+      "layer_x": 18.252,
+      "layer_y": 9.507,
+      "shear_x": 7.952,
+      "shear_y": 7.907,
+      "max_disp_mm": 3.0731,
+      "reaction_N": [
+        -150.0,
+        -0.0,
+        0.0,
+        150.0
+      ],
+      "applied_N": 150.0,
+      "solve_s": 62,
+      "sz_face_x6_z12": -9.903,
+      "sz_face_x0_z12": 9.4
+    }
+  ],
+  "sizes": [
+    3.0,
+    2.0,
+    1.5
+  ],
+  "last_study": "rem30",
+  "elapsed_s": 105.3,
+  "file": "C:\\joe\\code\\cad-daddy-wt\\sw-eval-haiku-a\\_wip\\sw-eval\\haiku-a\\bracket_t3_remote.SLDPRT"
+}
+EXIT 0

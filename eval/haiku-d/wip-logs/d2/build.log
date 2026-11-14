@@ -1,0 +1,27 @@
+03:38:03 SolidWorks pid 15048 free GB 21.8
+03:38:06 ok upper_BLK volume change: 34344.0000 (expected 34344.0000)
+03:38:06 upper_BLK: added 34344.00 mm3
+03:38:07 upper_SEAT: cut 7246.85 mm3
+03:38:07 upper_OPEN: cut 6122.17 mm3
+03:38:08 upper_CL: cut 1154.87 mm3
+03:38:09 ok upper_CB volume change: 268.7318 (expected 268.7318)
+03:38:09 upper_CB: cut 268.73 mm3
+03:38:09 upper [('upper_CB', 19551.37, [-36.0, 0.2, -4.0, 36.0, 32.0, 11.0])] feature errors []
+03:38:09 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d2\housing_upper.stl 76884 bytes
+03:38:10 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d2\housing_upper.step 74815 bytes
+03:38:11 ok lower_BLK volume change: 34344.0000 (expected 34344.0000)
+03:38:11 lower_BLK: added 34344.00 mm3
+03:38:11 lower_SEAT: cut 7246.85 mm3
+03:38:12 lower_OPEN: cut 6122.17 mm3
+03:38:13 ok lower_INS volume change: 301.5929 (expected 301.5929)
+03:38:13 lower_INS: cut 301.59 mm3
+03:38:13 ok lower_MNT volume change: 394.0814 (expected 394.0814)
+03:38:13 lower_MNT: cut 394.08 mm3
+03:38:14 lower [('lower_MNT', 20279.3, [-36.0, -32.0, -4.0, 36.0, -0.2, 11.0])] feature errors []
+03:38:14 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d2\housing_lower.stl 62284 bytes
+03:38:14 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d2\housing_lower.step 65116 bytes
+03:38:15 ok RING volume change: 2199.1149 (expected 2199.1149)
+03:38:15 RING: added 2199.11 mm3
+03:38:15 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d2\ring.stl 24484 bytes
+03:38:15 closing pid 15048 committed MB 1822
+VOLUMES {'upper_volume_mm3': 19551.36772536264, 'lower_volume_mm3': 20279.29987594062, 'ring_volume_mm3': 2199.1148575128595}

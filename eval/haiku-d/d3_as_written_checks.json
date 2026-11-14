@@ -1,0 +1,109 @@
+{
+  "P1_as_written": {
+    "min_wall": -0.7,
+    "at": "A0-cbB0",
+    "below_0p6": [
+      [
+        -0.7,
+        "A0-cbB0"
+      ],
+      [
+        -0.7,
+        "A3-cbB2"
+      ]
+    ],
+    "floor": 3.0
+  },
+  "P2_as_written": {
+    "min_wall": -6.25,
+    "at": "A0-cbB0",
+    "below_0p6": [
+      [
+        -6.25,
+        "A0-cbB0"
+      ],
+      [
+        -6.25,
+        "A1-cbB1"
+      ],
+      [
+        -6.25,
+        "A2-cbB2"
+      ],
+      [
+        -6.25,
+        "A3-cbB3"
+      ]
+    ],
+    "floor": 3.0
+  },
+  "P3_as_written": {
+    "min_wall": 1.0,
+    "at": "cbB0-outside",
+    "below_0p6": [],
+    "floor": 4.0
+  },
+  "P4_as_written": {
+    "min_wall": -3.0,
+    "at": "cbB0-outside",
+    "below_0p6": [
+      [
+        -3.0,
+        "cbB0-outside"
+      ],
+      [
+        -3.0,
+        "cbB1-outside"
+      ],
+      [
+        -3.0,
+        "cbB2-outside"
+      ],
+      [
+        -3.0,
+        "cbB3-outside"
+      ]
+    ],
+    "floor": 0.4
+  },
+  "P5_as_written": {
+    "min_wall": 2.5,
+    "at": "cbB0-outside",
+    "below_0p6": [],
+    "floor": 3.0
+  },
+  "P6_as_written": {
+    "min_wall": 2.0,
+    "at": "cbB0-outside",
+    "below_0p6": [],
+    "floor": 3.0
+  },
+  "P3_b_ringA70_no_turn": {
+    "min_wall": 0.3,
+    "at": "A0-cbB0",
+    "below_0p6": [
+      [
+        0.3,
+        "A0-cbB0"
+      ],
+      [
+        0.3,
+        "A2-cbB1"
+      ],
+      [
+        0.3,
+        "A4-cbB2"
+      ],
+      [
+        0.3,
+        "A6-cbB3"
+      ]
+    ]
+  },
+  "P3_b_ringA70_turn22p5": {
+    "min_wall": 1.0,
+    "at": "cbB0-outside",
+    "below_0p6": []
+  },
+  "P1_turnB45_min": 1.0
+}

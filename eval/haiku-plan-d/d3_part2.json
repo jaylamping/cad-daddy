@@ -1,0 +1,98 @@
+{
+ "P1": {
+  "volume_mm3": 22040.224441167848,
+  "hand_volume_mm3": 22040.224441167826,
+  "mass_g": 26.22786708498974,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 0.6,
+  "min_wall_where": "chamfer to B counterbore",
+  "changed": true,
+  "why": "chamfer 0.4 not 1.0: the counterbore edge is 1.0 mm from the outside, a 1 mm chamfer would meet it",
+  "counterbore_floor_z_mm": 3.0,
+  "old_features_unchanged": true,
+  "new_features": [
+   "TOP_CHAMFER"
+  ]
+ },
+ "P2": {
+  "volume_mm3": 29648.453419018922,
+  "hand_volume_mm3": 29648.453419018922,
+  "mass_g": 35.28165956863251,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 3.0,
+  "min_wall_where": "counterbore floor",
+  "changed": false,
+  "why": "as asked",
+  "counterbore_floor_z_mm": 3.0,
+  "old_features_unchanged": true,
+  "new_features": [
+   "TOP_CHAMFER"
+  ]
+ },
+ "P3": {
+  "volume_mm3": 45765.7834884902,
+  "hand_volume_mm3": 45765.78348849024,
+  "mass_g": 54.46128235130334,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 0.6,
+  "min_wall_where": "chamfer to B counterbore",
+  "changed": true,
+  "why": "ring A on 70 turned 22.5 deg (0.3 mm to the ring B counterbore otherwise); chamfer 0.4 not 1.0, as P1",
+  "counterbore_floor_z_mm": 4.0,
+  "old_features_unchanged": true,
+  "new_features": [
+   "TOP_CHAMFER"
+  ]
+ },
+ "P4": {
+  "volume_mm3": 17802.435862960945,
+  "hand_volume_mm3": 17802.435862960956,
+  "mass_g": 21.18489867692352,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 0.6,
+  "min_wall_where": "chamfer to B counterbore",
+  "changed": true,
+  "why": "chamfer 0.4 not 1.0, as P1",
+  "counterbore_floor_z_mm": 2.0,
+  "old_features_unchanged": true,
+  "new_features": [
+   "TOP_CHAMFER"
+  ]
+ },
+ "P5": {
+  "volume_mm3": 74259.20261768176,
+  "hand_volume_mm3": 74259.20261768175,
+  "mass_g": 88.36845111504132,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 1.5,
+  "min_wall_where": "chamfer to B counterbore",
+  "changed": false,
+  "why": "as asked",
+  "counterbore_floor_z_mm": 3.0,
+  "old_features_unchanged": true,
+  "new_features": [
+   "TOP_CHAMFER"
+  ]
+ },
+ "P6": {
+  "volume_mm3": 25865.426085382438,
+  "hand_volume_mm3": 25865.426085382434,
+  "mass_g": 30.77985704160511,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 1.0,
+  "min_wall_where": "chamfer to B counterbore",
+  "changed": false,
+  "why": "as asked",
+  "counterbore_floor_z_mm": 3.0,
+  "old_features_unchanged": true,
+  "new_features": [
+   "TOP_CHAMFER"
+  ]
+ }
+}

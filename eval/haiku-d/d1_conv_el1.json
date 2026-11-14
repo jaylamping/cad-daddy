@@ -1,0 +1,18 @@
+{
+  "nodes": 111921,
+  "elements": 72329,
+  "reaction_resultant_n": 9.0,
+  "max_disp_mm": 1.9465973377227783,
+  "vm_max_all_mpa": 10.247273445129395,
+  "peak_vm_mpa_excl_corners": 5.256437301635742,
+  "peak_where": [
+    35.93,
+    10.0,
+    -2.75
+  ],
+  "vm_max_where": [
+    -35.5,
+    10.0,
+    -6.5
+  ]
+}

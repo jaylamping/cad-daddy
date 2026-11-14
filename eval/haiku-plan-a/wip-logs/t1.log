@@ -1,0 +1,74 @@
+13:59:22 SolidWorks pid 120156 free GB 23.3
+13:59:24 ok L volume change: 36000.0000 (expected 36000.0000)
+13:59:24 L: added 36000.00 mm3
+13:59:25 ok root edge: 1
+13:59:25 ROOT_R: R4.0 on 1 edges, volume change +171.68 mm3
+13:59:25 ok root fillet dv: 171.6815 (expected 171.6815)
+13:59:25 ok base corner edges: 2
+13:59:25 BASE_R5: R5.0 on 2 edges, volume change -64.38 mm3
+13:59:25 ok base rounds dv: 64.3806 (expected 64.3806)
+13:59:25 ok upright corner edges: 2
+13:59:25 TOP_R5: R5.0 on 2 edges, volume change -64.38 mm3
+13:59:25 ok upright rounds dv: 64.3806 (expected 64.3806)
+13:59:26 ok BASE_HOLES volume change: 570.1991 (expected 570.1991)
+13:59:26 BASE_HOLES: cut 570.20 mm3
+13:59:27 ok BORE volume change: 2280.7963 (expected 2280.7963)
+13:59:27 BORE: cut 2280.80 mm3
+13:59:27 ok MOTOR_HOLES volume change: 217.9009 (expected 217.9009)
+13:59:27 MOTOR_HOLES: cut 217.90 mm3
+13:59:27 ok rebuild errors: 0
+13:59:27 ok volume: 32974.0242 (expected 32974.0242)
+13:59:27 ok box: 0.0000 (expected 0.0000)
+13:59:27 ok box: -0.0000 (expected 0.0000)
+13:59:27 ok box: 0.0000 (expected 0.0000)
+13:59:27 ok box: 80.0000 (expected 80.0000)
+13:59:27 ok box: 50.0000 (expected 50.0000)
+13:59:27 ok box: 46.0000 (expected 46.0000)
+13:59:28 ok base holes: 4
+13:59:28 ok base hole x: 25.0000 (expected 25.0000)
+13:59:28 ok base hole y: 10.0000 (expected 10.0000)
+13:59:28 ok base hole from z: 0.0000 (expected 0.0000)
+13:59:28 ok base hole to z: 6.0000 (expected 6.0000)
+13:59:28 ok base hole x: 25.0000 (expected 25.0000)
+13:59:28 ok base hole y: 40.0000 (expected 40.0000)
+13:59:28 ok base hole from z: 0.0000 (expected 0.0000)
+13:59:28 ok base hole to z: 6.0000 (expected 6.0000)
+13:59:28 ok base hole x: 65.0000 (expected 65.0000)
+13:59:28 ok base hole y: 10.0000 (expected 10.0000)
+13:59:28 ok base hole from z: 0.0000 (expected 0.0000)
+13:59:28 ok base hole to z: 6.0000 (expected 6.0000)
+13:59:28 ok base hole x: 65.0000 (expected 65.0000)
+13:59:28 ok base hole y: 40.0000 (expected 40.0000)
+13:59:28 ok base hole from z: 0.0000 (expected 0.0000)
+13:59:28 ok base hole to z: 6.0000 (expected 6.0000)
+13:59:28 ok bore: 1
+13:59:28 ok bore y: 25.0000 (expected 25.0000)
+13:59:28 ok bore z: 28.0000 (expected 28.0000)
+13:59:28 ok bore from x: 0.0000 (expected 0.0000)
+13:59:28 ok bore to x: 6.0000 (expected 6.0000)
+13:59:28 ok motor holes: 4
+13:59:28 ok motor hole y: 14.0400 (expected 14.0400)
+13:59:28 ok motor hole z: 17.0400 (expected 17.0400)
+13:59:28 ok motor hole y: 14.0400 (expected 14.0400)
+13:59:28 ok motor hole z: 38.9600 (expected 38.9600)
+13:59:28 ok motor hole y: 35.9600 (expected 35.9600)
+13:59:28 ok motor hole z: 17.0400 (expected 17.0400)
+13:59:28 ok motor hole y: 35.9600 (expected 35.9600)
+13:59:28 ok motor hole z: 38.9600 (expected 38.9600)
+13:59:28 ok root fillet faces: 1
+13:59:28 root fillet box [6.0, 0.0, 6.0, 10.0, 50.0, 10.0]
+13:59:28 ok R5 faces: 4
+13:59:28 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-a\_wip\sw-eval\haiku-plan-a\bracket.step 81119 bytes
+13:59:28 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-a\_wip\sw-eval\haiku-plan-a\bracket.stl 77484 bytes
+13:59:28 ok STL watertight: 1.0000 (expected 1.0000)
+13:59:28 ok STL shells: 1.0000 (expected 1.0000)
+13:59:28 ok STL volume: 32990.3773 (expected 32974.0242)
+13:59:28 ok STL box: 0.0000 (expected 0.0000)
+13:59:28 ok STL box: -0.0000 (expected -0.0000)
+13:59:28 ok STL box: 0.0000 (expected 0.0000)
+13:59:28 ok STL box: 80.0000 (expected 80.0000)
+13:59:28 ok STL box: 50.0000 (expected 50.0000)
+13:59:28 ok STL box: 46.0000 (expected 46.0000)
+13:59:28 ok STEP is in mm
+13:59:28 results.json T1 ['bbox_mm', 'bodies', 'hand_volume_mm3', 'mass_g', 'notes', 'status', 'stl_volume_mm3', 'stl_watertight', 'volume_mm3']
+13:59:28 closing pid 120156 committed MB 1845

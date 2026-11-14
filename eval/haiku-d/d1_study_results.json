@@ -1,0 +1,60 @@
+[
+  {
+    "name": "D1_PULL_9N",
+    "nodes": 37590,
+    "elements": 22860,
+    "applied_n": 9.0,
+    "reaction_resultant_n": 9.0,
+    "max_disp_mm": 1.940308928489685,
+    "sigma_z_Z0_mpa": 0.0576880881562829,
+    "sigma_z_Z0_nodes": 94,
+    "peak_vm_mpa_excl_corners": 5.287693500518799,
+    "peak_vm_where_excl_corners": [
+      36.15,
+      10.0,
+      -2.88
+    ],
+    "vm_max_all_mpa": 8.993964195251465,
+    "layer_stress_mpa": 0.02100328728556633,
+    "layer_stress_where": [
+      36.83,
+      14.0,
+      -2.5
+    ],
+    "layer_shear_mpa": 0.27642558741342976,
+    "layer_shear_where": [
+      -35.5,
+      12.05,
+      32.63
+    ]
+  },
+  {
+    "name": "D1_PUSH_9N",
+    "nodes": 37590,
+    "elements": 22860,
+    "applied_n": 9.0,
+    "reaction_resultant_n": 9.0,
+    "max_disp_mm": 1.940308928489685,
+    "sigma_z_Z0_mpa": -0.0576880881562829,
+    "sigma_z_Z0_nodes": 94,
+    "peak_vm_mpa_excl_corners": 5.287693500518799,
+    "peak_vm_where_excl_corners": [
+      36.15,
+      10.0,
+      -2.88
+    ],
+    "vm_max_all_mpa": 8.993964195251465,
+    "layer_stress_mpa": 0.014772014692425728,
+    "layer_stress_where": [
+      35.5,
+      10.0,
+      32.75
+    ],
+    "layer_shear_mpa": 0.27642558741342976,
+    "layer_shear_where": [
+      -35.5,
+      12.05,
+      32.63
+    ]
+  }
+]

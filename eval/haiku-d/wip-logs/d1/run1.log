@@ -1,0 +1,20 @@
+03:27:47 SolidWorks pid 17340 free GB 21.3
+03:27:50 ok FRAME volume change: 8472.0000 (expected 8472.0000)
+03:27:50 FRAME: added 8472.00 mm3
+03:27:51 ok MOUNT volume change: 190.0664 (expected 190.0700)
+03:27:51 MOUNT: cut 190.07 mm3
+03:27:51 ok BOSS volume change: 538.7831 (expected 538.7000)
+03:27:51 BOSS: added 538.78 mm3
+03:27:52 ok volume mm3 against hand total: 8820.7168 (expected 8820.6300)
+03:27:52 ok box x0: -42.5000 (expected -42.5000)
+03:27:52 ok box x1: 42.5000 (expected 42.5000)
+03:27:52 ok box y0 (rail face): 10.0000 (expected 10.0000)
+03:27:52 ok box y1 (boss tops): 17.5000 (expected 17.5000)
+03:27:52 ok box z0: -17.0000 (expected -17.0000)
+03:27:52 ok box z1 (within 45 above rail): 43.0000 (expected 43.0000)
+03:27:52 ok rebuild errors: 0.0000 (expected 0.0000)
+03:27:52 bodies [('BOSS', 8820.72, [-42.5, 10.0, -17.0, 42.5, 17.5, 43.0])]
+03:27:52 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d1\buck_mount.step 67539 bytes
+03:27:52 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-d\_wip\sw-eval\haiku-d\d1\buck_mount.stl 45684 bytes
+03:27:52 closing pid 17340 committed MB 1837
+VOLUME 8820.716784548471 BOX [-42.5, 10.0, -17.0, 42.5, 17.5, 43.0]

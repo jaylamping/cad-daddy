@@ -1,0 +1,926 @@
+{
+ "P1": {
+  "volume_mm3": 17728.667078664457,
+  "hand_volume_mm3": 17728.667078664457,
+  "mass_g": 21.097113823610705,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 1.0,
+  "min_wall_where": "B counterbore to outside",
+  "changed": true,
+  "why": "ring B turned 45 deg: at 0 deg its counterbore overlapped a ring A hole by 0.7 mm",
+  "counterbore_floor_z_mm": 3.0,
+  "tree": [
+   [
+    "Comments",
+    "CommentsFolder",
+    8
+   ],
+   [
+    "Favorites",
+    "FavoriteFolder",
+    21
+   ],
+   [
+    "History",
+    "HistoryFolder",
+    22
+   ],
+   [
+    "Selection Sets",
+    "SelectionSetFolder",
+    23
+   ],
+   [
+    "Sensors",
+    "SensorFolder",
+    20
+   ],
+   [
+    "Design Binder",
+    "DocsFolder",
+    7
+   ],
+   [
+    "Annotations",
+    "DetailCabinet",
+    1
+   ],
+   [
+    "Surface Bodies",
+    "SurfaceBodyFolder",
+    10
+   ],
+   [
+    "Solid Bodies",
+    "SolidBodyFolder",
+    9
+   ],
+   [
+    "Lights and Cameras",
+    "EnvFolder",
+    6
+   ],
+   [
+    "Markups",
+    "InkMarkupFolder",
+    19
+   ],
+   [
+    "Equations",
+    "EqnFolder",
+    14
+   ],
+   [
+    "Material <not specified>",
+    "MaterialFolder",
+    11
+   ],
+   [
+    "Front Plane",
+    "RefPlane",
+    2
+   ],
+   [
+    "Top Plane",
+    "RefPlane",
+    3
+   ],
+   [
+    "Right Plane",
+    "RefPlane",
+    4
+   ],
+   [
+    "Origin",
+    "OriginProfileFeature",
+    5
+   ],
+   [
+    "DISC_SK",
+    "ProfileFeature",
+    24
+   ],
+   [
+    "DISC",
+    "Extrusion",
+    30
+   ],
+   [
+    "BORE_SK",
+    "ProfileFeature",
+    31
+   ],
+   [
+    "BORE",
+    "ICE",
+    44
+   ],
+   [
+    "RING_A_SK",
+    "ProfileFeature",
+    45
+   ],
+   [
+    "RING_A",
+    "ICE",
+    57
+   ],
+   [
+    "RING_B_SK",
+    "ProfileFeature",
+    58
+   ],
+   [
+    "RING_B",
+    "ICE",
+    70
+   ],
+   [
+    "CBORE_P",
+    "RefPlane",
+    72
+   ],
+   [
+    "CBORE_SK",
+    "ProfileFeature",
+    73
+   ],
+   [
+    "CBORE",
+    "ICE",
+    85
+   ]
+  ]
+ },
+ "P2": {
+  "volume_mm3": 23947.182701069894,
+  "hand_volume_mm3": 23947.182701069898,
+  "mass_g": 28.497147414273176,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 3,
+  "min_wall_where": "counterbore floor",
+  "changed": true,
+  "why": "ring B turned 30 deg: rings A and B were the same six holes",
+  "counterbore_floor_z_mm": 3.0,
+  "tree": [
+   [
+    "Comments",
+    "CommentsFolder",
+    8
+   ],
+   [
+    "Favorites",
+    "FavoriteFolder",
+    21
+   ],
+   [
+    "History",
+    "HistoryFolder",
+    22
+   ],
+   [
+    "Selection Sets",
+    "SelectionSetFolder",
+    23
+   ],
+   [
+    "Sensors",
+    "SensorFolder",
+    20
+   ],
+   [
+    "Design Binder",
+    "DocsFolder",
+    7
+   ],
+   [
+    "Annotations",
+    "DetailCabinet",
+    1
+   ],
+   [
+    "Surface Bodies",
+    "SurfaceBodyFolder",
+    10
+   ],
+   [
+    "Solid Bodies",
+    "SolidBodyFolder",
+    9
+   ],
+   [
+    "Lights and Cameras",
+    "EnvFolder",
+    6
+   ],
+   [
+    "Markups",
+    "InkMarkupFolder",
+    19
+   ],
+   [
+    "Equations",
+    "EqnFolder",
+    14
+   ],
+   [
+    "Material <not specified>",
+    "MaterialFolder",
+    11
+   ],
+   [
+    "Front Plane",
+    "RefPlane",
+    2
+   ],
+   [
+    "Top Plane",
+    "RefPlane",
+    3
+   ],
+   [
+    "Right Plane",
+    "RefPlane",
+    4
+   ],
+   [
+    "Origin",
+    "OriginProfileFeature",
+    5
+   ],
+   [
+    "DISC_SK",
+    "ProfileFeature",
+    24
+   ],
+   [
+    "DISC",
+    "Extrusion",
+    30
+   ],
+   [
+    "BORE_SK",
+    "ProfileFeature",
+    31
+   ],
+   [
+    "BORE",
+    "ICE",
+    44
+   ],
+   [
+    "RING_A_SK",
+    "ProfileFeature",
+    45
+   ],
+   [
+    "RING_A",
+    "ICE",
+    57
+   ],
+   [
+    "RING_B_SK",
+    "ProfileFeature",
+    58
+   ],
+   [
+    "RING_B",
+    "ICE",
+    70
+   ],
+   [
+    "CBORE_P",
+    "RefPlane",
+    72
+   ],
+   [
+    "CBORE_SK",
+    "ProfileFeature",
+    73
+   ],
+   [
+    "CBORE",
+    "ICE",
+    85
+   ]
+  ]
+ },
+ "P3": {
+  "volume_mm3": 38698.263970625216,
+  "hand_volume_mm3": 38698.263970625216,
+  "mass_g": 46.050934125044,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 1.0,
+  "min_wall_where": "B counterbore to outside",
+  "changed": false,
+  "why": "as the table says",
+  "counterbore_floor_z_mm": 4.0,
+  "tree": [
+   [
+    "Comments",
+    "CommentsFolder",
+    8
+   ],
+   [
+    "Favorites",
+    "FavoriteFolder",
+    21
+   ],
+   [
+    "History",
+    "HistoryFolder",
+    22
+   ],
+   [
+    "Selection Sets",
+    "SelectionSetFolder",
+    23
+   ],
+   [
+    "Sensors",
+    "SensorFolder",
+    20
+   ],
+   [
+    "Design Binder",
+    "DocsFolder",
+    7
+   ],
+   [
+    "Annotations",
+    "DetailCabinet",
+    1
+   ],
+   [
+    "Surface Bodies",
+    "SurfaceBodyFolder",
+    10
+   ],
+   [
+    "Solid Bodies",
+    "SolidBodyFolder",
+    9
+   ],
+   [
+    "Lights and Cameras",
+    "EnvFolder",
+    6
+   ],
+   [
+    "Markups",
+    "InkMarkupFolder",
+    19
+   ],
+   [
+    "Equations",
+    "EqnFolder",
+    14
+   ],
+   [
+    "Material <not specified>",
+    "MaterialFolder",
+    11
+   ],
+   [
+    "Front Plane",
+    "RefPlane",
+    2
+   ],
+   [
+    "Top Plane",
+    "RefPlane",
+    3
+   ],
+   [
+    "Right Plane",
+    "RefPlane",
+    4
+   ],
+   [
+    "Origin",
+    "OriginProfileFeature",
+    5
+   ],
+   [
+    "DISC_SK",
+    "ProfileFeature",
+    24
+   ],
+   [
+    "DISC",
+    "Extrusion",
+    30
+   ],
+   [
+    "BORE_SK",
+    "ProfileFeature",
+    31
+   ],
+   [
+    "BORE",
+    "ICE",
+    44
+   ],
+   [
+    "RING_A_SK",
+    "ProfileFeature",
+    45
+   ],
+   [
+    "RING_A",
+    "ICE",
+    57
+   ],
+   [
+    "RING_B_SK",
+    "ProfileFeature",
+    58
+   ],
+   [
+    "RING_B",
+    "ICE",
+    70
+   ],
+   [
+    "CBORE_P",
+    "RefPlane",
+    72
+   ],
+   [
+    "CBORE_SK",
+    "ProfileFeature",
+    73
+   ],
+   [
+    "CBORE",
+    "ICE",
+    85
+   ]
+  ]
+ },
+ "P4": {
+  "volume_mm3": 13802.43024391408,
+  "hand_volume_mm3": 13802.430243914077,
+  "mass_g": 16.42489199025776,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 1.0,
+  "min_wall_where": "B counterbore to outside",
+  "changed": true,
+  "why": "OD 60 -> 68: ring B on 58 broke out of a 60 plate by 3.0 mm; counterbore 4.6 -> 3.0 deep: floor was 0.4 mm",
+  "counterbore_floor_z_mm": 2.0,
+  "tree": [
+   [
+    "Comments",
+    "CommentsFolder",
+    8
+   ],
+   [
+    "Favorites",
+    "FavoriteFolder",
+    21
+   ],
+   [
+    "History",
+    "HistoryFolder",
+    22
+   ],
+   [
+    "Selection Sets",
+    "SelectionSetFolder",
+    23
+   ],
+   [
+    "Sensors",
+    "SensorFolder",
+    20
+   ],
+   [
+    "Design Binder",
+    "DocsFolder",
+    7
+   ],
+   [
+    "Annotations",
+    "DetailCabinet",
+    1
+   ],
+   [
+    "Surface Bodies",
+    "SurfaceBodyFolder",
+    10
+   ],
+   [
+    "Solid Bodies",
+    "SolidBodyFolder",
+    9
+   ],
+   [
+    "Lights and Cameras",
+    "EnvFolder",
+    6
+   ],
+   [
+    "Markups",
+    "InkMarkupFolder",
+    19
+   ],
+   [
+    "Equations",
+    "EqnFolder",
+    14
+   ],
+   [
+    "Material <not specified>",
+    "MaterialFolder",
+    11
+   ],
+   [
+    "Front Plane",
+    "RefPlane",
+    2
+   ],
+   [
+    "Top Plane",
+    "RefPlane",
+    3
+   ],
+   [
+    "Right Plane",
+    "RefPlane",
+    4
+   ],
+   [
+    "Origin",
+    "OriginProfileFeature",
+    5
+   ],
+   [
+    "DISC_SK",
+    "ProfileFeature",
+    24
+   ],
+   [
+    "DISC",
+    "Extrusion",
+    30
+   ],
+   [
+    "BORE_SK",
+    "ProfileFeature",
+    31
+   ],
+   [
+    "BORE",
+    "ICE",
+    44
+   ],
+   [
+    "RING_A_SK",
+    "ProfileFeature",
+    45
+   ],
+   [
+    "RING_A",
+    "ICE",
+    57
+   ],
+   [
+    "RING_B_SK",
+    "ProfileFeature",
+    58
+   ],
+   [
+    "RING_B",
+    "ICE",
+    70
+   ],
+   [
+    "CBORE_P",
+    "RefPlane",
+    72
+   ],
+   [
+    "CBORE_SK",
+    "ProfileFeature",
+    73
+   ],
+   [
+    "CBORE",
+    "ICE",
+    85
+   ]
+  ]
+ },
+ "P5": {
+  "volume_mm3": 62864.77696280551,
+  "hand_volume_mm3": 62864.77696280548,
+  "mass_g": 74.80908458573857,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 2.5,
+  "min_wall_where": "B counterbore to outside",
+  "changed": false,
+  "why": "as the table says",
+  "counterbore_floor_z_mm": 3.0,
+  "tree": [
+   [
+    "Comments",
+    "CommentsFolder",
+    8
+   ],
+   [
+    "Favorites",
+    "FavoriteFolder",
+    21
+   ],
+   [
+    "History",
+    "HistoryFolder",
+    22
+   ],
+   [
+    "Selection Sets",
+    "SelectionSetFolder",
+    23
+   ],
+   [
+    "Sensors",
+    "SensorFolder",
+    20
+   ],
+   [
+    "Design Binder",
+    "DocsFolder",
+    7
+   ],
+   [
+    "Annotations",
+    "DetailCabinet",
+    1
+   ],
+   [
+    "Surface Bodies",
+    "SurfaceBodyFolder",
+    10
+   ],
+   [
+    "Solid Bodies",
+    "SolidBodyFolder",
+    9
+   ],
+   [
+    "Lights and Cameras",
+    "EnvFolder",
+    6
+   ],
+   [
+    "Markups",
+    "InkMarkupFolder",
+    19
+   ],
+   [
+    "Equations",
+    "EqnFolder",
+    14
+   ],
+   [
+    "Material <not specified>",
+    "MaterialFolder",
+    11
+   ],
+   [
+    "Front Plane",
+    "RefPlane",
+    2
+   ],
+   [
+    "Top Plane",
+    "RefPlane",
+    3
+   ],
+   [
+    "Right Plane",
+    "RefPlane",
+    4
+   ],
+   [
+    "Origin",
+    "OriginProfileFeature",
+    5
+   ],
+   [
+    "DISC_SK",
+    "ProfileFeature",
+    24
+   ],
+   [
+    "DISC",
+    "Extrusion",
+    30
+   ],
+   [
+    "BORE_SK",
+    "ProfileFeature",
+    31
+   ],
+   [
+    "BORE",
+    "ICE",
+    44
+   ],
+   [
+    "RING_A_SK",
+    "ProfileFeature",
+    45
+   ],
+   [
+    "RING_A",
+    "ICE",
+    57
+   ],
+   [
+    "RING_B_SK",
+    "ProfileFeature",
+    58
+   ],
+   [
+    "RING_B",
+    "ICE",
+    70
+   ],
+   [
+    "CBORE_P",
+    "RefPlane",
+    72
+   ],
+   [
+    "CBORE_SK",
+    "ProfileFeature",
+    73
+   ],
+   [
+    "CBORE",
+    "ICE",
+    85
+   ]
+  ]
+ },
+ "P6": {
+  "volume_mm3": 20848.857632301664,
+  "hand_volume_mm3": 20848.857632301668,
+  "mass_g": 24.81014058243898,
+  "bodies": 1,
+  "stl_watertight": true,
+  "min_wall_mm": 2.0,
+  "min_wall_where": "B counterbore to outside",
+  "changed": false,
+  "why": "as the table says",
+  "counterbore_floor_z_mm": 3.0,
+  "tree": [
+   [
+    "Comments",
+    "CommentsFolder",
+    8
+   ],
+   [
+    "Favorites",
+    "FavoriteFolder",
+    21
+   ],
+   [
+    "History",
+    "HistoryFolder",
+    22
+   ],
+   [
+    "Selection Sets",
+    "SelectionSetFolder",
+    23
+   ],
+   [
+    "Sensors",
+    "SensorFolder",
+    20
+   ],
+   [
+    "Design Binder",
+    "DocsFolder",
+    7
+   ],
+   [
+    "Annotations",
+    "DetailCabinet",
+    1
+   ],
+   [
+    "Surface Bodies",
+    "SurfaceBodyFolder",
+    10
+   ],
+   [
+    "Solid Bodies",
+    "SolidBodyFolder",
+    9
+   ],
+   [
+    "Lights and Cameras",
+    "EnvFolder",
+    6
+   ],
+   [
+    "Markups",
+    "InkMarkupFolder",
+    19
+   ],
+   [
+    "Equations",
+    "EqnFolder",
+    14
+   ],
+   [
+    "Material <not specified>",
+    "MaterialFolder",
+    11
+   ],
+   [
+    "Front Plane",
+    "RefPlane",
+    2
+   ],
+   [
+    "Top Plane",
+    "RefPlane",
+    3
+   ],
+   [
+    "Right Plane",
+    "RefPlane",
+    4
+   ],
+   [
+    "Origin",
+    "OriginProfileFeature",
+    5
+   ],
+   [
+    "DISC_SK",
+    "ProfileFeature",
+    24
+   ],
+   [
+    "DISC",
+    "Extrusion",
+    30
+   ],
+   [
+    "BORE_SK",
+    "ProfileFeature",
+    31
+   ],
+   [
+    "BORE",
+    "ICE",
+    44
+   ],
+   [
+    "RING_A_SK",
+    "ProfileFeature",
+    45
+   ],
+   [
+    "RING_A",
+    "ICE",
+    57
+   ],
+   [
+    "RING_B_SK",
+    "ProfileFeature",
+    58
+   ],
+   [
+    "RING_B",
+    "ICE",
+    70
+   ],
+   [
+    "CBORE_P",
+    "RefPlane",
+    72
+   ],
+   [
+    "CBORE_SK",
+    "ProfileFeature",
+    73
+   ],
+   [
+    "CBORE",
+    "ICE",
+    85
+   ]
+  ]
+ }
+}

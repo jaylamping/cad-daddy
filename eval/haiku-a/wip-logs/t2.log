@@ -1,0 +1,42 @@
+03:07:05 SolidWorks pid 7768 free GB 21.6
+03:07:07 opened bracket.SLDPRT, volume 32974.024 bodies 1
+03:07:07 ok CBORE volume change: 657.3783 (expected 657.3783)
+03:07:07 CBORE: cut 657.38 mm3
+03:07:08 ok SLOT volume change: 673.6460 (expected 673.6460)
+03:07:08 SLOT: cut 673.65 mm3
+03:07:09 measured 31643.0 hand 31643.0 floors [3.0]
+03:07:09 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-a\_wip\sw-eval\haiku-a\bracket_b.step 117509 bytes
+03:07:09 closing pid 7768 committed MB 1786
+{
+  "volume_mm3": 31642.99990167725,
+  "hand_volume_mm3": 31643.0,
+  "bodies": 1,
+  "bbox_mm": [
+    0.0,
+    0.0,
+    0.0,
+    80.0,
+    50.0,
+    46.0
+  ],
+  "feature_errors": [],
+  "counterbore_floor_z_mm": [
+    [
+      3.0
+    ],
+    [
+      3.0
+    ],
+    [
+      3.0
+    ],
+    [
+      3.0
+    ]
+  ],
+  "counterbore_floor_z_all": [
+    3.0
+  ],
+  "elapsed_s": 12.8
+}
+EXIT 0

@@ -1,0 +1,24 @@
+03:31:18 SolidWorks pid 11700 free GB 21.2
+03:31:25 D1_PULL_9N_EL10: mesh rc 0, 111921 nodes, 72329 elements, free 20.9 GB
+03:31:46 D1_PULL_9N_EL10: fixture nodes 659, box [-27.75, 10.0, -12.75] to [27.75, 14.0, -7.25]
+03:31:46 D1_PULL_9N_EL10: load nodes 848, box [-42.5, 17.5, -17.0] to [42.5, 17.5, 43.0]
+{'study': 'D1_PULL_9N_EL10', 'el_mm': 1.0, 'nodes': 111921, 'elements': 72329, 'solve_s': 33, 'peak_vm_all': 10.25, 'peak_vm_away': 10.25, 'at': [-35.5, 10.0, -6.5], 'sf_yield': 4.39, 'max_disp_mm': 1.9465973377227783, 'reaction_N': [0.0, -9.0, -0.0, 9.0], 'applied_N': 9.0}
+03:31:56 closing pid 11700 committed MB 1935
+{
+  "nodes": 111921,
+  "elements": 72329,
+  "reaction_resultant_n": 9.0,
+  "max_disp_mm": 1.9465973377227783,
+  "vm_max_all_mpa": 10.247273445129395,
+  "peak_vm_mpa_excl_corners": 5.256437301635742,
+  "peak_where": [
+    35.93,
+    10.0,
+    -2.75
+  ],
+  "vm_max_where": [
+    -35.5,
+    10.0,
+    -6.5
+  ]
+}

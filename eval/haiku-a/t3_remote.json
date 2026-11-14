@@ -1,0 +1,101 @@
+{
+  "case": "remote",
+  "hand": {
+    "hand_root_stress_mpa": 11.0,
+    "hand_stress_z12_mpa": 8.0,
+    "hand_root_shear_mpa": 0.5,
+    "hand_upright_tip_defl_mm": 0.3113,
+    "moment_root_nmm": 3300.0
+  },
+  "rows": [
+    {
+      "el": 3.0,
+      "nodes": 41786,
+      "peak_vm": 16.844,
+      "peak_at": [
+        9.32,
+        26.19,
+        6.06
+      ],
+      "layer_z": 10.359,
+      "shear_z": 7.627,
+      "layer_x": 13.23,
+      "layer_y": 5.139,
+      "shear_x": 7.627,
+      "shear_y": 3.516,
+      "max_disp_mm": 3.0652,
+      "reaction_N": [
+        -150.0,
+        0.0,
+        -0.0,
+        150.0
+      ],
+      "applied_N": 150.0,
+      "solve_s": 9,
+      "sz_face_x6_z12": -9.913,
+      "sz_face_x0_z12": 9.495
+    },
+    {
+      "el": 2.0,
+      "nodes": 80004,
+      "peak_vm": 18.054,
+      "peak_at": [
+        22.79,
+        45.37,
+        6.0
+      ],
+      "layer_z": 10.397,
+      "shear_z": 7.599,
+      "layer_x": 15.282,
+      "layer_y": 7.124,
+      "shear_x": 7.599,
+      "shear_y": 6.628,
+      "max_disp_mm": 3.0712,
+      "reaction_N": [
+        -150.0,
+        -0.0,
+        0.0,
+        150.0
+      ],
+      "applied_N": 150.0,
+      "solve_s": 25,
+      "sz_face_x6_z12": -9.903,
+      "sz_face_x0_z12": 9.41
+    },
+    {
+      "el": 1.5,
+      "nodes": 135457,
+      "peak_vm": 20.871,
+      "peak_at": [
+        23.95,
+        5.11,
+        6.0
+      ],
+      "layer_z": 10.358,
+      "shear_z": 7.609,
+      "layer_x": 18.252,
+      "layer_y": 9.507,
+      "shear_x": 7.952,
+      "shear_y": 7.907,
+      "max_disp_mm": 3.0731,
+      "reaction_N": [
+        -150.0,
+        -0.0,
+        0.0,
+        150.0
+      ],
+      "applied_N": 150.0,
+      "solve_s": 62,
+      "sz_face_x6_z12": -9.903,
+      "sz_face_x0_z12": 9.4
+    }
+  ],
+  "sizes": [
+    3.0,
+    2.0,
+    1.5
+  ],
+  "last_study": "rem30",
+  "elapsed_s": 105.3,
+  "file": "C:\\joe\\code\\cad-daddy-wt\\sw-eval-haiku-a\\_wip\\sw-eval\\haiku-a\\bracket_t3_remote.SLDPRT"
+}

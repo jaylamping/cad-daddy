@@ -1,0 +1,38 @@
+[
+  {
+    "el": 1.5,
+    "nodes": 38346,
+    "max_disp_mm": 1.9250706434249878,
+    "peak_excl_corners_mpa": 5.28753137588501,
+    "peak_excl_corners_at": [
+      36.17,
+      10.0,
+      -2.74
+    ],
+    "vm_max_all_mpa": 10.674424171447754,
+    "vm_max_at": [
+      -35.42,
+      10.0,
+      -6.38
+    ],
+    "vm_max_near_old_corner_mpa": 10.674424171447754
+  },
+  {
+    "el": 1.0,
+    "nodes": 112827,
+    "max_disp_mm": 1.9292075634002686,
+    "peak_excl_corners_mpa": 5.320508003234863,
+    "peak_excl_corners_at": [
+      36.39,
+      10.0,
+      -2.87
+    ],
+    "vm_max_all_mpa": 10.753856658935547,
+    "vm_max_at": [
+      -35.42,
+      10.0,
+      -6.38
+    ],
+    "vm_max_near_old_corner_mpa": 10.753856658935547
+  }
+]
