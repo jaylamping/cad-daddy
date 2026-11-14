@@ -23,6 +23,7 @@ import os
 import re
 import threading
 import time
+import warnings
 from pathlib import Path
 
 import numpy as np
@@ -31,6 +32,7 @@ import win32con
 import win32gui
 import win32process
 from scipy.spatial import cKDTree
+from scipy.spatial.transform import Rotation
 
 from swkit import NUL, Failed, L, call, dispatch_array, free_gb, log, solid_bodies
 
@@ -41,7 +43,8 @@ STEEL = dict(name='Steel', EX=2.1e11, NUXY=0.28, DENS=7850.0, SIGYLD=640e6, SIGX
 BRASS = dict(name='Brass', EX=1.0e11, NUXY=0.33, DENS=8500.0, SIGYLD=240e6, SIGXT=340e6)
 LAYER_FACTOR = 0.5            # allowable across print layers, as a share of yield
 NO_PENETRATION, BONDED = 0, 1         # CreateContactSet types
-SOLVER_DIRECT = 1             # swsSolverType_e: 0 automatic, 1 direct sparse, 2 FFEPlus (iterative), 7 Intel direct sparse
+BEARING_X, BEARING_SINE, BEARING_PARABOLIC = 0, 0, 1      # ICWBearingLoad Direction and DistributionType (measured)
+SOLVER_DIRECT = 1            # swsSolverType_e: 0 automatic, 1 direct sparse, 2 FFEPlus (iterative), 7 Intel direct sparse
 MAX_NODES = 450_000           # above this a direct-sparse solve does not fit holly-pc's memory (05-fea.md, memory)
 HEAVY_NODES = 200_000         # above this a solve needs over about 6 GB: one at a time machine-wide (heavy_solve_lock)
 HEAVY_LOCK = Path(os.environ.get('FEA_SOLVE_LOCK', r'C:\joe\.fea_solve.lock'))
@@ -271,6 +274,70 @@ class Result:
         return out
 
 
+def _delete_feature(d, feat):
+    d.ClearSelection2(True)
+    if feat.Select2(False, 0):
+        d.Extension.DeleteSelection2(0)
+    d.ClearSelection2(True)
+
+
+def _bearing_frame(fs, force, name):
+    """(origin mm, unit force direction, unit axis) of a bearing load, or Failed: the faces must be cylinders about one
+    axis and the force square to it."""
+    force = np.array(force, float)
+    axis = origin = None
+    for f in fs:
+        s = f.GetSurface
+        if not s.IsCylinder:
+            raise Failed(f'{name}: a bearing load takes cylindrical faces only')
+        p = np.array(s.CylinderParams, float)
+        o, a = p[:3] * 1e3, p[3:6] / np.linalg.norm(p[3:6])
+        if axis is None:
+            axis, origin = a, o
+        elif abs(abs(a @ axis) - 1) > 1e-6 or np.linalg.norm(np.cross(o - origin, axis)) > 0.01:
+            raise Failed(f'{name}: the faces of one bearing load must share one axis (give each bore its own load)')
+    size = float(np.linalg.norm(force))
+    if size == 0:
+        raise Failed(f'{name}: a bearing load of zero')
+    if abs(force @ axis) > 1e-3 * size:
+        raise Failed(f'{name}: the force has {force @ axis:.3f} N along the bore axis, which a bearing load cannot carry: '
+                     'give the axial part to another load')
+    return origin, force / size, axis
+
+
+def _bearing_csys(d, fs, force, name):
+    """A coordinate system for a bearing load: Z along the faces' common axis, X along the force. Returns the feature.
+
+    SolidWorks' bearing load takes its direction from a coordinate system whose Z is the bore axis. One is made here
+    from numbers and read back, and static() deletes it with the study. Adding and deleting it leaves face objects
+    valid (measured 2026-11-14). A feature of the same name left by a failed run is replaced.
+    """
+    origin, x, axis = _bearing_frame(fs, force, name)
+    R = np.c_[x, np.cross(axis, x), axis]          # columns: the coordinate system's X, Y, Z in the model frame
+    old = d.FeatureByName(name)
+    if old is not None:
+        _delete_feature(d, old)
+    fm = d.FeatureManager
+    fm._FlagAsMethod('CreateCoordinateSystemUsingNumericalValues')
+    # the three angles are Euler angles whose order the documentation does not give: each order is tried and the
+    # result read back, so a wrong guess can only fail, never point the load somewhere else
+    for seq in ('xyz', 'XYZ', 'zyx', 'ZYX'):
+        with warnings.catch_warnings():            # gimbal lock only means one of several equal answers is taken
+            warnings.simplefilter('ignore')
+            ang = dict(zip(seq.lower(), Rotation.from_matrix(R).as_euler(seq)))
+        cs = fm.CreateCoordinateSystemUsingNumericalValues(True, origin[0] / 1e3, origin[1] / 1e3, origin[2] / 1e3, True,
+                                                           float(ang['x']), float(ang['y']), float(ang['z']))
+        if cs is None:
+            continue
+        T = np.array(d.Extension.GetCoordinateSystemTransformByName(cs.Name).ArrayData, float)
+        if np.abs(T[0:3] - x).max() < 1e-6 and np.abs(T[6:9] - axis).max() < 1e-6:
+            cs.Name = name
+            return cs
+        _delete_feature(d, cs)
+    raise Failed(f'{name}: no coordinate system could be made with X along {x.round(4).tolist()} and Z along '
+                 f'{axis.round(4).tolist()}')
+
+
 @contextlib.contextmanager
 def heavy_solve_lock(owner, wait_s=3600):
     """Hold the machine-wide lock for one heavy solve (over HEAVY_NODES). One such solve at a time on holly-pc.
@@ -324,6 +391,9 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     matches a body when the body's Simulation name contains it, whatever the case; that name is "SolidBody 3(PAD)" for
     a body made in the part and "SolidBody 2(<pad>-<PAD>)" for one brought in from pad.SLDPRT. A key that matches no
     body, or a body matched by two keys, raises, and each body's material is logged.
+    [('bearing', faces, (Fx, Fy, Fz) N)] is a pin or shaft pressing on a bore: cylindrical faces about one axis, the
+    force square to that axis. Only the half of the bore the force points at is loaded, heaviest where it points
+    (peak 4 F / (pi d t)), and nothing holds the faces rigid. No contact, no clearance: playbook/05-fea.md.
     fixtures: [('fixed' | 'hinge', faces)]. loads: [('normal', faces, newtons)] presses on the faces along their own
     normals with that many newtons IN TOTAL, shared between the faces by area (one even pressure; positive pushes into
     the material). [('remote', faces, (x, y, z) mm, (Fx, Fy, Fz) N, (Mx, My, Mz) N.m)] applies a force and moment at a
@@ -342,6 +412,9 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     doc = cw.ActiveDoc
     if doc is None:
         raise Failed('Simulation sees no active document: open_doc() the model before static()')
+    for ld in loads:                                   # refused before a study exists, so nothing is left in the model
+        if ld[0] == 'bearing' and ld[1]:
+            _bearing_frame(ld[1], ld[2], name)
     sm = doc.StudyManager
     err = L()
     tag = re.sub(r'[^A-Za-z0-9_ -]', '_', name)[:24]     # a dot in a study name fails with error 2 (2026-11-13)
@@ -364,7 +437,7 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     if materials and used != set(materials):
         raise Failed(f'{name}: materials keys {sorted(set(materials) - used)} match no body')
     lbc = st.LoadsAndRestraintsManager
-    fixed, loaded, applied = [], [], 0.0
+    fixed, loaded, applied, temps = [], [], 0.0, []
     for kind, fs in fixtures:
         if not fs:
             raise Failed(f'{name}: a {kind} fixture has no faces')
@@ -402,6 +475,23 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
             rc = call(r, 'RemoteLoadEndEdit')
             if rc:
                 raise Failed(f'{name}: remote load not accepted ({rc})')
+            applied += float(np.linalg.norm(f))
+        elif ld[0] == 'bearing':
+            f = np.array(ld[2], float)
+            cs = _bearing_csys(d, fs, f, f'BEARING_{tag}_{len(temps)}'.replace(' ', '_'))
+            temps.append(cs)
+            b = lbc.AddBearingLoad(cs, fs, err)
+            if b is None or err.value:
+                raise Failed(f'{name}: bearing load failed ({err.value}): faces must be cylinders about one axis')
+            call(b, 'BearingLoadBeginEdit')
+            b.BearingLoadUnit = 0                  # N
+            b.Direction = BEARING_X                # along the coordinate system's X, which _bearing_csys laid on the force
+            b.XDirectionValue = float(np.linalg.norm(f))
+            b.XDirectionReverse = False
+            b.DistributionType = ld[3] if len(ld) > 3 else BEARING_SINE
+            rc = call(b, 'BearingLoadEndEdit')
+            if rc:
+                raise Failed(f'{name}: bearing load not accepted ({rc})')
             applied += float(np.linalg.norm(f))
         else:
             raise Failed(f'unknown load kind {ld[0]}')
@@ -502,6 +592,8 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
             sm.DeleteStudy(tag)
         except Exception:      # noqa: BLE001 - the study staying in the model only costs file size
             pass
+        for cs in temps:                           # the bearing loads' coordinate systems go with the study
+            _delete_feature(d, cs)
     # A document closed unsaved after a study and opened again in the same instance fails its next solve at once with
     # error 24, the solver stopping while it loads its input (selftest beam then loads, 2026-11-12). Saved, it does not.
     _save_as_is(d)

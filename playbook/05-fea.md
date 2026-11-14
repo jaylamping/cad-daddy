@@ -52,7 +52,7 @@ print(r.summary())
   area as one even pressure (SolidWorks' own normal force puts the value on each face: [02-com.md](02-com.md)). Positive
   pushes into the material. `'remote'` applies a force and a moment
   at a point and carries them rigidly to the faces: use it for a load that acts away from the part (a hand load at the end
-  of the forearm, a motor torque).
+  of the forearm, a motor torque). `'bearing'` is a pin pressing on a bore (below).
 - **A rigid load lends the part stiffness it does not have.** `'remote'` makes its faces move as one rigid body, so
   small holes and thin ligaments beside them stop flexing and read low. It also holds separate faces level with each
   other: four post tops joined by one rigid load deflected four times less than the hand value, with no hole anywhere
@@ -64,6 +64,50 @@ print(r.summary())
   a screwed-on part, the screw holes or the rings under the heads, not the bore its boss sits in); when a hole, slot or
   thin wall lies within a few wall thicknesses of a loaded face, run the load a second way and report the higher; and
   do a hand value for every small hole in a stressed wall (nominal stress there times 3) before the solve.
+- **A pin, shaft or bearing in a bore: `('bearing', faces, (Fx, Fy, Fz))`.** The faces are the bore (cylinders about
+  one axis: give it every face of the bore, both halves on a STEP import, since one half alone still takes the
+  whole force without a word), the force is in newtons in the model frame and must be square to the bore
+  axis (a part along the axis is refused: give it to another load). It is SolidWorks' own bearing load; `static()`
+  makes the coordinate system it needs and deletes it with the study. Measured on a 60 x 60 x 10 plate with a 20 mm
+  bore, 100 N, 82,345 nodes (`selftest.py bearing`, [eval/bearing-load](../eval/bearing-load/RESULTS.md), 2026-11-14):
+
+  | What | Measured | Hand |
+  | --- | --- | --- |
+  | Reaction | 100.001 N, and each component of a force at 45° or across two model axes within 0.01 N | 100 |
+  | Pressure where the force points | 0.640 MPa | 4 F / (π d t) = 0.637 |
+  | Pressure on the half the force pulls away from | under 0.005 MPa | 0 |
+  | Pressure 45° round from the force | 0.223 MPa | p₀ cos³ 45° = 0.225 (a cosine pressure would be 0.450) |
+  | Pressure summed over the bore | 75.2 N | 3 F / 4 |
+  | Traction along the force summed over the bore | 99.99 N | F |
+
+  So the load is **not** a cosine pressure normal to the wall. It is a traction along the force direction, p₀ cos θ per
+  projected area (p₀ cos² θ per wall area): a quarter of the force goes in as shear along the wall, as if the pin were
+  stuck to it. The peak is the textbook 4 F / (π d t) all the same. Pass `BEARING_PARABOLIC` as a fourth item for
+  SolidWorks' other distribution: peak 0.754 MPa against 3 F / (2 d t) = 0.750, narrower still.
+- **Which load for a bore.** The same 100 N on that bore three ways, same mesh:
+
+  | Load | Reaction | Worst stress on the bore wall | Hoop stress beside the bore (hand: 0.25 MPa nominal) | Bore moves |
+  | --- | --- | --- | --- | --- |
+  | `'bearing'` | 100.0 N | 1.19 MPa, 70° round from the force | 0.99 MPa | front 12.3 µm, back 0.4 µm: it stretches |
+  | `'remote'` at the bore centre | 100.0 N | 0.36 MPa | 0.00 MPa | 2.67 µm front and back: held round |
+  | `'normal'`, 100 N | **0.0 N** | 0.31 MPa | 0.17 MPa | swells evenly |
+
+  Use `'bearing'` when a pin, shaft, bush or bearing outer ring pushes on a bore and the stress round that bore, or
+  how far it stretches, is the question. Use `'remote'` when the load acts away from the part and the faces really are
+  held rigid by what is fastened to them (a motor flange screwed down, a clamped tube); on a bore it keeps the hole
+  round, pulls on the back half as hard as it pushes on the front, and here read the wall 3.3 times low and the
+  movement 4.6 times low. An even `'normal'` force on a whole bore pushes outwards all round and sums to nothing: the
+  reaction is zero while `r.applied` still says 100, which only check 1 catches. An even force is right only on a
+  face that looks one way (a flat pad, half a bore that has been split off).
+- **What a bearing load cannot do.** There is no contact and no clearance: the pressure always covers exactly half
+  the bore, however loose or tight the pin (a loose pin bears on a narrower arc and peaks higher, a press fit loads
+  all round); the pin's own bending and the load moving towards one end of the bore are not there; and the bore can
+  pull away from where the pin would be. For those, model the pin as a body with no-penetration contact
+  ("Contact between bodies"). The force must lie square to the axis, and one load takes one axis.
+- **The stress it puts on the bore is the answer, not an artefact, so the default mask hides it.** `r.peak()` drops
+  nodes within two elements of every load face: here it reported 0.54 MPa with 1.19 on the wall. With a bearing load
+  read the bore wall yourself (`r.near(r.loaded_pts, 0.1)` or `r.in_box(...)`) and report it; the pressure patch
+  itself (compression of 4 F / (π d t)) is the bearing stress to judge against the material's bearing strength.
 - **The default mask can hide exactly that.** `r.away()` drops nodes within two elements of every load face. With the
   load on or beside small holes it removed the governing rim (9.8 reported, 15.4 real). When a real feature sits inside
   the mask, read it separately with `r.in_box(...)` and report it; only a fixture singularity may be left out.

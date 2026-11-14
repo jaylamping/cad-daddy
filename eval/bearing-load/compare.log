@@ -1,0 +1,18 @@
+﻿02:13:53 SolidWorks pid 14796 free GB 21.6
+02:14:00 BEARING: mesh rc 0, 82345 nodes, 54219 elements, free 21.4 GB
+02:14:15 BEARING: fixture nodes 775, box [-30.0, -30.0, 0.0] to [-30.0, 30.0, 10.0]
+02:14:15 BEARING: load nodes 8174, box [-10.0, -10.0, 0.0] to [10.0, 10.0, 10.0]
+bearing {"nodes": 82345, "reaction": [-100.001, -0.0, 0.001, 100.001], "applied": 100.0, "peak_pressure": 0.6398, "pressure_back_half": 0.0044, "hoop_at_sides": 0.9915, "wall_vm_max": 1.189, "wall_vm_max_theta": -70.5, "default_peak_away": 0.5386, "vm_all": 1.189, "bore_ux_front": 12.316, "bore_ux_back": 0.381, "max_disp_um": 12.754}
+02:14:25 BEARING_PARABOLIC: mesh rc 0, 82345 nodes, 54219 elements, free 21.9 GB
+02:14:41 BEARING_PARABOLIC: fixture nodes 775, box [-30.0, -30.0, 0.0] to [-30.0, 30.0, 10.0]
+02:14:41 BEARING_PARABOLIC: load nodes 8174, box [-10.0, -10.0, 0.0] to [10.0, 10.0, 10.0]
+bearing_parabolic {"nodes": 82345, "reaction": [-100.002, 0.0, 0.0, 100.002], "applied": 100.0, "peak_pressure": 0.7542, "pressure_back_half": 0.0045, "hoop_at_sides": 0.9691, "wall_vm_max": 1.1721, "wall_vm_max_theta": -67.1, "default_peak_away": 0.6071, "vm_all": 1.1721, "bore_ux_front": 12.958, "bore_ux_back": 0.372, "max_disp_um": 13.469}
+02:14:51 REMOTE_RIGID: mesh rc 0, 82345 nodes, 54219 elements, free 21.8 GB
+02:15:09 REMOTE_RIGID: fixture nodes 775, box [-30.0, -30.0, 0.0] to [-30.0, 30.0, 10.0]
+02:15:09 REMOTE_RIGID: load nodes 8174, box [-10.0, -10.0, 0.0] to [10.0, 10.0, 10.0]
+remote_rigid {"nodes": 82345, "reaction": [-100.0, -0.0, 0.0, 100.0], "applied": 100.0, "peak_pressure": 0.0284, "pressure_back_half": 0.3183, "hoop_at_sides": -0.0045, "wall_vm_max": 0.3575, "wall_vm_max_theta": -129.0, "default_peak_away": 0.3167, "vm_all": 0.5619, "bore_ux_front": 2.673, "bore_ux_back": 2.672, "max_disp_um": 2.673}
+02:15:19 NORMAL_EVEN: mesh rc 0, 82345 nodes, 54219 elements, free 21.7 GB
+02:15:35 NORMAL_EVEN: fixture nodes 775, box [-30.0, -30.0, 0.0] to [-30.0, 30.0, 10.0]
+02:15:35 NORMAL_EVEN: load nodes 8174, box [-10.0, -10.0, 0.0] to [10.0, 10.0, 10.0]
+normal_even {"nodes": 82345, "reaction": [0.0, 0.0, -0.0, 0.0], "applied": 100.0, "peak_pressure": 0.159, "pressure_back_half": 0.1595, "hoop_at_sides": 0.1749, "wall_vm_max": 0.3138, "wall_vm_max_theta": -36.1, "default_peak_away": 0.162, "vm_all": 0.3138, "bore_ux_front": 1.836, "bore_ux_back": -0.691, "max_disp_um": 1.837}
+02:15:43 closing pid 14796 committed MB 1862
