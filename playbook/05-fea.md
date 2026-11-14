@@ -304,6 +304,7 @@ where the answer is known: the section between the load and the first contact mu
 | Error 24 at once on a model that solved a minute ago, benchmark log ending at `Loading-and-preparing-input-data-Start` | the document was closed unsaved after an earlier study and opened again in the same instance | save before closing; `static()` saves when it finishes (2026-11-12) |
 | Error 24 after a minute or more, memory falling | out of memory in the factorisation | node count; free memory when it failed; coarsen |
 | Solver iterates and never finishes | iterative solver on contact | direct sparse |
+| Error 24 after 2 to 15 minutes on a model with bolt connectors and no-penetration contact, benchmark log ending at `Element-stiffness-Start (contact)` | FFEPlus, whether forced or picked by Automatic (Automatic picked it at 356,000 nodes and did not fall back; holly-pc, 10 of 10 runs, 2026-11-13 and 14) | direct sparse; the same model solved in 349 s |
 | Displacement of metres | a loose body, or a bond lost to a contact set | explicit `BONDED` sets |
 | A small solve never returns, files beside the model stop changing | a hidden solver dialog | `%TEMP%\sw_hidden_<pid>.log` shows `#32770 \| Simulation`; `static()` answers the excessive-displacement one itself, and logs the text of any other |
 | `GetStress` raises or the instance dies on readback | result too large | smaller model |
