@@ -70,6 +70,41 @@ When asked to make something better with no stated end (lighter, stiffer), keep 
 under 3 %, or a requirement stops you. Say which requirement governs at the end: if none is at its limit, you stopped
 early.
 
+## Do not stop early
+
+Stopping before the work is finished is the most expensive mistake on this list, because nobody is watching: the person
+comes back hours later to half a job. One benchmark run (2026-11-13) ended a five-task set after eight minutes: a
+task left at "not shown" after one attempt, a design task given one try, and a task never started because free
+memory was 0.4 GB under the floor for a moment. Every one of those had a next step written on these pages.
+
+**Before you write the final report, go down the task list and give every task one of these three states.** There
+is no fourth.
+
+| State | It needs |
+| --- | --- |
+| done | every item of "A model is done when" or "A study is done when" has its number |
+| not possible | the requirement that cannot be met, shown with numbers, and the nearest thing that can be |
+| blocked | the same obstacle met **three times, in three different ways**, with what each try was and its log |
+
+Then, for anything that is not done, these are not reasons to stop:
+
+- **"Not shown" after one attempt.** It is a state to work out of, not a result. The page says what comes next (round
+  the edge, try the second support, refine the control): do that, then judge.
+- **A helper refused.** Memory under the floor: `job(wait_s=1800)` waits. A launch that did not answer: the same. A
+  mesh over the node limit: coarsen the global size. A refusal tells you what to change, not to give up the task.
+- **One task failed.** The others do not depend on it. Write down where it stands and do the rest, then come back to
+  it with the time that is left.
+- **Time.** If the brief gives a budget, use it: a report handed in at a tenth of the budget with tasks open is not
+  early, it is unfinished. If it gives none, the tasks set the length, not your sense that it has been a while.
+- **It seems good enough.** Check the brief line by line against what you have. A requirement you did not test is open.
+- **You have a plan for the rest.** A plan is not a result. Do not end with "next I would": do it.
+
+What does end a job early is on the short list in [README.md](README.md), "Stop and hand it up", and each item there
+ends **that task**, not the job: report it, and carry on with every task it does not block.
+
+**Why:** the models that did best here were not the ones with better numbers, they were the ones that kept asking what
+was still open. The check above costs a minute and is the difference between a set finished and a set abandoned.
+
 ## Long jobs: show the work early
 
 A job that will take more than an hour does not run to the end unseen. The cost of a wrong direction is the time until
