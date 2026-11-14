@@ -1,0 +1,16 @@
+﻿02:18:39 SolidWorks pid 11960 free GB 22.3
+02:18:45 exported C:\joe\code\cad-daddy-wt\bearing-load\_wip\sw-selftest\lug.step 21126 bytes
+bore faces 2 [[-10.0, 0.0, 0.0, 10.0, 10.0, 10.0], [-10.0, -10.0, 0.0, 10.0, 0.0, 10.0]]
+02:18:47 SPLIT_X: mesh rc 0, 83079 nodes, 54798 elements, free 22.1 GB
+02:19:00 SPLIT_X: fixture nodes 775, box [-30.0, -30.0, 0.0] to [-30.0, 30.0, 10.0]
+02:19:00 SPLIT_X: load nodes 8096, box [-10.0, -10.0, 0.0] to [10.0, 10.0, 10.0]
+SPLIT_X faces 2 reaction [-100.0, 0.0, 0.0, 100.0] peak pressure 0.6399 hand 0.6366 at 45 0.2235 back half max 0.0108
+02:19:11 SPLIT_Y: mesh rc 0, 83079 nodes, 54798 elements, free 21.9 GB
+02:19:26 SPLIT_Y: fixture nodes 775, box [-30.0, -30.0, 0.0] to [-30.0, 30.0, 10.0]
+02:19:26 SPLIT_Y: load nodes 8096, box [-10.0, -10.0, 0.0] to [10.0, 10.0, 10.0]
+SPLIT_Y faces 2 reaction [-0.001, -99.998, 0.0, 99.998] peak pressure 0.6397 hand 0.6366 at 45 0.223 back half max 0.0101
+02:19:36 SPLIT_ONE: mesh rc 0, 83079 nodes, 54798 elements, free 21.5 GB
+02:19:52 SPLIT_ONE: fixture nodes 775, box [-30.0, -30.0, 0.0] to [-30.0, 30.0, 10.0]
+02:19:52 SPLIT_ONE: load nodes 4083, box [-10.0, -0.0, 0.0] to [10.0, 10.0, 10.0]
+SPLIT_ONE faces 1 reaction [-100.001, 0.0, -0.001, 100.001] peak pressure 0.6358 hand 0.6366 at 45 0.2233 back half max 0.0208
+02:20:01 closing pid 11960 committed MB 1780
