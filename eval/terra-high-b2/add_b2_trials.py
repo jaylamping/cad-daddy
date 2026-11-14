@@ -1,0 +1,8 @@
+﻿from pathlib import Path
+p=Path('tools/solidworks/playbook/eval/terra-high-b2/REPORT.md')
+s=p.read_text(encoding='utf-8')
+s=s.replace('Initial study; rounded-root follow-up 20:23:21–20:26:17.', 'Initial study; rounded-root follow-ups 20:23:21–20:26:17 and 20:29:36–20:35:51.')
+marker='The first solve series used a 47×10×0.05 mm cut'
+insert='''A further **R1 mm** side-root trial was borderline: on the 1.2 mm hole-supported mesh Y-layer shear was 6.498 MPa and on the 2 mm wall-supported mesh it was 6.534 MPa; the last two hole-supported values differed by 9%, so it is not shown converged. A separate **R2 mm** trial, `wall_bracket_r2_trial.SLDPRT`, adds 26.04 mm³, or about **0.031 g**, to the requested sharp model. Its 3/2/1.5/1.2 mm meshes had 13,308/34,636/74,532/135,334 nodes; at 1.5→1.2 mm VM was 18.21→18.90 MPa, Y-layer tension 4.767→4.711 MPa and Y-layer shear 4.932→4.902 MPa, each within 5%. The 1.2 mm result reacted [0.002,0.005,60.002] N and displaced 1.865 mm. The 2 mm wall-fixed comparison gave VM 19.986, Y tension 5.871 and Y shear 5.054 MPa. Taking the higher value for each gives factors **2.25 / 3.83 / 2.57**, respectively. This is a promising low-mass modification with Y-normal printing, not an approval of the original sharp specification or of an unverified screw joint. `bracket_r1.png` and `bracket_r2.png` show both changes. The worst 2.25 factor would fall to 1.88 at 20% higher load. A local numerical optimization around the best sampled normal on the R0.4 fine mesh reached factor 1.972; it too is not a proof over all orientations.\n\n'''
+s=s.replace(marker,insert+marker)
+p.write_text(s,encoding='utf-8')

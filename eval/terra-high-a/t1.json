@@ -1,0 +1,18 @@
+{
+  "volume_mm3": 32974.024167734795,
+  "hand_volume_mm3": 32974.02416773479,
+  "mass_g": 39.23908875960441,
+  "bbox_mm": [
+    0.0,
+    0.0,
+    0.0,
+    80.0,
+    50.0,
+    46.0
+  ],
+  "bodies": 1,
+  "stl_watertight": null,
+  "stl_volume_mm3": null,
+  "status": "partial",
+  "notes": "Exports use existing machine settings; checks pending."
+}

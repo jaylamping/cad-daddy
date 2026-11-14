@@ -1,0 +1,42 @@
+{
+  "volume_mm3": 21865.53551187102,
+  "hand_volume_mm3": 21865.509557223533,
+  "mass_g": 26.019987259126516,
+  "bbox_mm": [
+    -30.0,
+    -30.0,
+    0.0,
+    30.0,
+    30.0,
+    25.0
+  ],
+  "bodies": [
+    [
+      "SETSCREW",
+      21865.54,
+      [
+        -30.0,
+        -30.0,
+        0.0,
+        30.0,
+        30.0,
+        25.0
+      ]
+    ]
+  ],
+  "stl_watertight": true,
+  "stl_volume_mm3": 21811.006760627974,
+  "stl_bbox_mm": [
+    -30.0,
+    -29.990055084228516,
+    0.0,
+    30.0,
+    29.990055084228516,
+    25.0
+  ],
+  "spec_questions": [
+    "The two \u00d85.5 dowel holes on the \u00d830 circle overlap the \u00d826 boss footprint by 0.75 mm radially; I kept them through the flange thickness only, as specified, so their top openings meet the boss underside."
+  ],
+  "status": "complete",
+  "notes": "All dimensions, feature errors, body count, volume, STEP units and STL checks recorded in REPORT.md."
+}

@@ -1,0 +1,1395 @@
+{
+  "exclusion_distances_mm": [
+    8.0,
+    10.0,
+    12.0
+  ],
+  "series_by_common_distance": {
+    "8.0": {
+      "series": [
+        {
+          "el_mm": 4.0,
+          "nodes": 7454,
+          "peak_vm_mpa": 12.807766914367676,
+          "peak_vm_at_mm": [
+            11.27,
+            18.33,
+            52.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 12.632528305053711,
+              "layer_tension_at_mm": [
+                11.46,
+                20.0,
+                52.0
+              ],
+              "layer_shear_mpa": 5.094175469471732,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.513493046904162,
+              "sf_layer": 1.7811161357935572,
+              "sf_shear": 2.55193408195421
+            },
+            "Y": {
+              "layer_tension_mpa": 2.814634084701538,
+              "layer_tension_at_mm": [
+                0.0,
+                18.27,
+                37.31
+              ],
+              "layer_shear_mpa": 0.8726720442398391,
+              "layer_shear_at_mm": [
+                3.0,
+                15.0,
+                38.18
+              ],
+              "sf_yield": 3.513493046904162,
+              "sf_layer": 7.993934317179948,
+              "sf_shear": 14.89677604067625
+            },
+            "Z": {
+              "layer_tension_mpa": 10.899922370910645,
+              "layer_tension_at_mm": [
+                0.0,
+                18.27,
+                37.31
+              ],
+              "layer_shear_mpa": 5.082818176986559,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.513493046904162,
+              "sf_layer": 2.0642348848325067,
+              "sf_shear": 2.5576362457465054
+            }
+          }
+        },
+        {
+          "el_mm": 3.5,
+          "nodes": 8036,
+          "peak_vm_mpa": 13.045805931091309,
+          "peak_vm_at_mm": [
+            10.86,
+            18.28,
+            52.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 12.794673919677734,
+              "layer_tension_at_mm": [
+                10.86,
+                18.28,
+                52.0
+              ],
+              "layer_shear_mpa": 5.128616108415231,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.4493844410757424,
+              "sf_layer": 1.7585442302985022,
+              "sf_shear": 2.5347968584876335
+            },
+            "Y": {
+              "layer_tension_mpa": 2.9381167888641357,
+              "layer_tension_at_mm": [
+                0.0,
+                20.26,
+                37.36
+              ],
+              "layer_shear_mpa": 0.8552354309871706,
+              "layer_shear_at_mm": [
+                3.0,
+                15.0,
+                38.21
+              ],
+              "sf_yield": 3.4493844410757424,
+              "sf_layer": 7.657966519669359,
+              "sf_shear": 15.200492787108365
+            },
+            "Z": {
+              "layer_tension_mpa": 10.804040908813477,
+              "layer_tension_at_mm": [
+                0.0,
+                20.26,
+                37.36
+              ],
+              "layer_shear_mpa": 5.143633606625051,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.4493844410757424,
+              "sf_layer": 2.0825541285803033,
+              "sf_shear": 2.527396193861062
+            }
+          }
+        },
+        {
+          "el_mm": 3.0,
+          "nodes": 9908,
+          "peak_vm_mpa": 12.773041725158691,
+          "peak_vm_at_mm": [
+            11.22,
+            20.16,
+            52.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 12.6013822555542,
+              "layer_tension_at_mm": [
+                11.22,
+                20.16,
+                52.0
+              ],
+              "layer_shear_mpa": 4.896062335562362,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.523044938572838,
+              "sf_layer": 1.785518409306477,
+              "sf_shear": 2.6551949523957235
+            },
+            "Y": {
+              "layer_tension_mpa": 3.161890983581543,
+              "layer_tension_at_mm": [
+                0.0,
+                19.9,
+                37.61
+              ],
+              "layer_shear_mpa": 0.8856640207919045,
+              "layer_shear_at_mm": [
+                3.0,
+                15.0,
+                38.32
+              ],
+              "sf_yield": 3.523044938572838,
+              "sf_layer": 7.1159948640967245,
+              "sf_shear": 14.678252356210908
+            },
+            "Z": {
+              "layer_tension_mpa": 11.265714645385742,
+              "layer_tension_at_mm": [
+                0.0,
+                19.9,
+                37.61
+              ],
+              "layer_shear_mpa": 4.903267812159427,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.523044938572838,
+              "sf_layer": 1.9972101822422461,
+              "sf_shear": 2.6512930759690088
+            }
+          }
+        },
+        {
+          "el_mm": 2.5,
+          "nodes": 13150,
+          "peak_vm_mpa": 12.838961601257324,
+          "peak_vm_at_mm": [
+            10.59,
+            17.24,
+            52.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 12.641083717346191,
+              "layer_tension_at_mm": [
+                10.63,
+                22.54,
+                52.0
+              ],
+              "layer_shear_mpa": 4.947015586096034,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.5049563506438974,
+              "sf_layer": 1.7799106867020689,
+              "sf_shear": 2.627846986481606
+            },
+            "Y": {
+              "layer_tension_mpa": 3.342379331588745,
+              "layer_tension_at_mm": [
+                0.0,
+                19.86,
+                37.44
+              ],
+              "layer_shear_mpa": 0.7705571167720147,
+              "layer_shear_at_mm": [
+                3.0,
+                25.0,
+                38.26
+              ],
+              "sf_yield": 3.5049563506438974,
+              "sf_layer": 6.731731430766416,
+              "sf_shear": 16.87091030248225
+            },
+            "Z": {
+              "layer_tension_mpa": 11.186887741088867,
+              "layer_tension_at_mm": [
+                0.0,
+                19.86,
+                37.44
+              ],
+              "layer_shear_mpa": 4.966573271978997,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.5049563506438974,
+              "sf_layer": 2.011283255963913,
+              "sf_shear": 2.617498884662579
+            }
+          }
+        },
+        {
+          "el_mm": 2.0,
+          "nodes": 20416,
+          "peak_vm_mpa": 12.909278869628906,
+          "peak_vm_at_mm": [
+            10.91,
+            21.52,
+            52.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 12.725521087646484,
+              "layer_tension_at_mm": [
+                10.88,
+                18.42,
+                52.0
+              ],
+              "layer_shear_mpa": 4.40957814616684,
+              "layer_shear_at_mm": [
+                3.23,
+                15.0,
+                38.15
+              ],
+              "sf_yield": 3.4858647376399565,
+              "sf_layer": 1.768100484454209,
+              "sf_shear": 2.948127818372069
+            },
+            "Y": {
+              "layer_tension_mpa": 3.1717801094055176,
+              "layer_tension_at_mm": [
+                0.0,
+                20.72,
+                37.43
+              ],
+              "layer_shear_mpa": 0.8614491725413898,
+              "layer_shear_at_mm": [
+                3.0,
+                25.0,
+                37.99
+              ],
+              "sf_yield": 3.4858647376399565,
+              "sf_layer": 7.093808279230664,
+              "sf_shear": 15.090849715077523
+            },
+            "Z": {
+              "layer_tension_mpa": 11.21978759765625,
+              "layer_tension_at_mm": [
+                0.0,
+                20.72,
+                37.43
+              ],
+              "layer_shear_mpa": 4.43078444709679,
+              "layer_shear_at_mm": [
+                3.23,
+                15.0,
+                38.15
+              ],
+              "sf_yield": 3.4858647376399565,
+              "sf_layer": 2.0053855569155448,
+              "sf_shear": 2.9340177016550806
+            }
+          }
+        },
+        {
+          "el_mm": 1.5,
+          "nodes": 39906,
+          "peak_vm_mpa": 13.169419288635254,
+          "peak_vm_at_mm": [
+            3.06,
+            20.34,
+            37.62
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 12.7394380569458,
+              "layer_tension_at_mm": [
+                11.04,
+                20.04,
+                52.0
+              ],
+              "layer_shear_mpa": 5.285584570299376,
+              "layer_shear_at_mm": [
+                3.4,
+                15.0,
+                38.5
+              ],
+              "sf_yield": 3.417007159824687,
+              "sf_layer": 1.7661689549746302,
+              "sf_shear": 2.4595198179306927
+            },
+            "Y": {
+              "layer_tension_mpa": 3.209240198135376,
+              "layer_tension_at_mm": [
+                0.0,
+                19.88,
+                37.5
+              ],
+              "layer_shear_mpa": 0.9287684274394801,
+              "layer_shear_at_mm": [
+                3.2,
+                25.0,
+                38.49
+              ],
+              "sf_yield": 3.417007159824687,
+              "sf_layer": 7.011005288127977,
+              "sf_shear": 13.997030493208813
+            },
+            "Z": {
+              "layer_tension_mpa": 11.362311363220215,
+              "layer_tension_at_mm": [
+                0.0,
+                19.88,
+                37.5
+              ],
+              "layer_shear_mpa": 5.28047941254392,
+              "layer_shear_at_mm": [
+                3.4,
+                15.0,
+                38.5
+              ],
+              "sf_yield": 3.417007159824687,
+              "sf_layer": 1.9802308949948746,
+              "sf_shear": 2.4618976771537358
+            }
+          }
+        },
+        {
+          "el_mm": 1.2,
+          "nodes": 69866,
+          "peak_vm_mpa": 13.104558944702148,
+          "peak_vm_at_mm": [
+            3.06,
+            18.44,
+            37.6
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 12.845232009887695,
+              "layer_tension_at_mm": [
+                10.84,
+                19.53,
+                52.0
+              ],
+              "layer_shear_mpa": 5.085691809733838,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.433919461913092,
+              "sf_layer": 1.7516227019239892,
+              "sf_shear": 2.556191072199548
+            },
+            "Y": {
+              "layer_tension_mpa": 3.262117385864258,
+              "layer_tension_at_mm": [
+                0.0,
+                20.49,
+                37.32
+              ],
+              "layer_shear_mpa": 1.1365485197377474,
+              "layer_shear_at_mm": [
+                3.0,
+                25.0,
+                38.77
+              ],
+              "sf_yield": 3.433919461913092,
+              "sf_layer": 6.897360621508996,
+              "sf_shear": 11.438139044868654
+            },
+            "Z": {
+              "layer_tension_mpa": 11.446531295776367,
+              "layer_tension_at_mm": [
+                0.0,
+                20.0,
+                37.24
+              ],
+              "layer_shear_mpa": 5.108176913484418,
+              "layer_shear_at_mm": [
+                3.23,
+                25.0,
+                38.15
+              ],
+              "sf_yield": 3.433919461913092,
+              "sf_layer": 1.96566098659969,
+              "sf_shear": 2.544939265060099
+            }
+          }
+        }
+      ],
+      "last_step_convergence": {
+        "X": [
+          true,
+          true,
+          true
+        ],
+        "Y": [
+          true,
+          true,
+          false
+        ],
+        "Z": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "10.0": {
+      "series": [
+        {
+          "el_mm": 4.0,
+          "nodes": 7454,
+          "peak_vm_mpa": 11.965020179748535,
+          "peak_vm_at_mm": [
+            11.71,
+            17.78,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.830941200256348,
+              "layer_tension_at_mm": [
+                12.68,
+                16.71,
+                52.0
+              ],
+              "layer_shear_mpa": 0.9123992255417396,
+              "layer_shear_at_mm": [
+                13.79,
+                15.0,
+                48.21
+              ],
+              "sf_yield": 3.7609631512502597,
+              "sf_layer": 1.9017929021160616,
+              "sf_shear": 14.248148876147077
+            },
+            "Y": {
+              "layer_tension_mpa": 2.20025634765625,
+              "layer_tension_at_mm": [
+                0.0,
+                18.31,
+                35.27
+              ],
+              "layer_shear_mpa": 0.5672220732420723,
+              "layer_shear_at_mm": [
+                0.0,
+                26.75,
+                26.37
+              ],
+              "sf_yield": 3.7609631512502597,
+              "sf_layer": 10.226081167300064,
+              "sf_shear": 22.91871316942212
+            },
+            "Z": {
+              "layer_tension_mpa": 10.19841194152832,
+              "layer_tension_at_mm": [
+                0.0,
+                14.91,
+                36.84
+              ],
+              "layer_shear_mpa": 1.0047536758213276,
+              "layer_shear_at_mm": [
+                0.0,
+                26.75,
+                26.37
+              ],
+              "sf_yield": 3.7609631512502597,
+              "sf_layer": 2.206225844670889,
+              "sf_shear": 12.93849459109792
+            }
+          }
+        },
+        {
+          "el_mm": 3.5,
+          "nodes": 8036,
+          "peak_vm_mpa": 11.870772361755371,
+          "peak_vm_at_mm": [
+            11.54,
+            16.65,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.660898208618164,
+              "layer_tension_at_mm": [
+                12.97,
+                23.22,
+                52.0
+              ],
+              "layer_shear_mpa": 0.8738947229446473,
+              "layer_shear_at_mm": [
+                17.45,
+                15.0,
+                46.1
+              ],
+              "sf_yield": 3.790823261423042,
+              "sf_layer": 1.9295254617153792,
+              "sf_shear": 14.875933746568032
+            },
+            "Y": {
+              "layer_tension_mpa": 2.4086225032806396,
+              "layer_tension_at_mm": [
+                0.0,
+                20.27,
+                35.47
+              ],
+              "layer_shear_mpa": 0.5585244587963715,
+              "layer_shear_at_mm": [
+                3.0,
+                13.25,
+                25.87
+              ],
+              "sf_yield": 3.790823261423042,
+              "sf_layer": 9.341438921771305,
+              "sf_shear": 23.275614514743353
+            },
+            "Z": {
+              "layer_tension_mpa": 10.05525016784668,
+              "layer_tension_at_mm": [
+                0.0,
+                25.18,
+                36.11
+              ],
+              "layer_shear_mpa": 0.9812445320727604,
+              "layer_shear_at_mm": [
+                3.0,
+                26.75,
+                26.06
+              ],
+              "sf_yield": 3.790823261423042,
+              "sf_layer": 2.2376370179180087,
+              "sf_shear": 13.248481469281742
+            }
+          }
+        },
+        {
+          "el_mm": 3.0,
+          "nodes": 9908,
+          "peak_vm_mpa": 12.000920295715332,
+          "peak_vm_at_mm": [
+            12.85,
+            20.15,
+            52.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.857927322387695,
+              "layer_tension_at_mm": [
+                12.85,
+                20.15,
+                52.0
+              ],
+              "layer_shear_mpa": 0.9045478310051851,
+              "layer_shear_at_mm": [
+                13.56,
+                15.0,
+                47.35
+              ],
+              "sf_yield": 3.749712429643106,
+              "sf_layer": 1.8974648257052593,
+              "sf_shear": 14.371821538230499
+            },
+            "Y": {
+              "layer_tension_mpa": 2.4790666103363037,
+              "layer_tension_at_mm": [
+                0.0,
+                21.37,
+                35.83
+              ],
+              "layer_shear_mpa": 0.5242472915228149,
+              "layer_shear_at_mm": [
+                3.0,
+                25.46,
+                27.47
+              ],
+              "sf_yield": 3.749712429643106,
+              "sf_layer": 9.075996548938114,
+              "sf_shear": 24.797457631565557
+            },
+            "Z": {
+              "layer_tension_mpa": 10.354405403137207,
+              "layer_tension_at_mm": [
+                0.0,
+                14.56,
+                36.77
+              ],
+              "layer_shear_mpa": 0.9463890125651669,
+              "layer_shear_at_mm": [
+                0.0,
+                26.75,
+                27.09
+              ],
+              "sf_yield": 3.749712429643106,
+              "sf_layer": 2.172988126694642,
+              "sf_shear": 13.736423212230434
+            }
+          }
+        },
+        {
+          "el_mm": 2.5,
+          "nodes": 13150,
+          "peak_vm_mpa": 12.0889253616333,
+          "peak_vm_at_mm": [
+            11.24,
+            21.47,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.901662826538086,
+              "layer_tension_at_mm": [
+                12.5,
+                16.14,
+                52.0
+              ],
+              "layer_shear_mpa": 1.4045898665726166,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.52
+              ],
+              "sf_yield": 3.7224152398869785,
+              "sf_layer": 1.8904921377733839,
+              "sf_shear": 9.255370773620704
+            },
+            "Y": {
+              "layer_tension_mpa": 2.4501843452453613,
+              "layer_tension_at_mm": [
+                0.0,
+                21.06,
+                35.57
+              ],
+              "layer_shear_mpa": 0.5669047148161442,
+              "layer_shear_at_mm": [
+                3.0,
+                15.39,
+                26.29
+              ],
+              "sf_yield": 3.7224152398869785,
+              "sf_layer": 9.182982514626609,
+              "sf_shear": 22.931543273927605
+            },
+            "Z": {
+              "layer_tension_mpa": 10.251751899719238,
+              "layer_tension_at_mm": [
+                0.0,
+                25.68,
+                36.81
+              ],
+              "layer_shear_mpa": 1.4046007770903048,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.52
+              ],
+              "sf_yield": 3.7224152398869785,
+              "sf_layer": 2.1947468315748258,
+              "sf_shear": 9.255298880675618
+            }
+          }
+        },
+        {
+          "el_mm": 2.0,
+          "nodes": 20416,
+          "peak_vm_mpa": 12.052124977111816,
+          "peak_vm_at_mm": [
+            11.6,
+            20.86,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.832205772399902,
+              "layer_tension_at_mm": [
+                12.49,
+                24.13,
+                52.0
+              ],
+              "layer_shear_mpa": 1.4256951610821127,
+              "layer_shear_at_mm": [
+                1.59,
+                26.75,
+                27.03
+              ],
+              "sf_yield": 3.7337813941906073,
+              "sf_layer": 1.9015896471716254,
+              "sf_shear": 9.118358787254989
+            },
+            "Y": {
+              "layer_tension_mpa": 2.396785259246826,
+              "layer_tension_at_mm": [
+                0.0,
+                20.72,
+                35.45
+              ],
+              "layer_shear_mpa": 0.5929971056569233,
+              "layer_shear_at_mm": [
+                3.0,
+                25.02,
+                27.03
+              ],
+              "sf_yield": 3.7337813941906073,
+              "sf_layer": 9.387574424197885,
+              "sf_shear": 21.922535331093354
+            },
+            "Z": {
+              "layer_tension_mpa": 10.43717098236084,
+              "layer_tension_at_mm": [
+                0.0,
+                15.85,
+                36.44
+              ],
+              "layer_shear_mpa": 1.4257253013482218,
+              "layer_shear_at_mm": [
+                1.59,
+                26.75,
+                27.03
+              ],
+              "sf_yield": 3.7337813941906073,
+              "sf_layer": 2.1557565779104064,
+              "sf_shear": 9.118166022379409
+            }
+          }
+        },
+        {
+          "el_mm": 1.5,
+          "nodes": 39906,
+          "peak_vm_mpa": 12.075111389160156,
+          "peak_vm_at_mm": [
+            11.27,
+            18.9,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.858979225158691,
+              "layer_tension_at_mm": [
+                12.44,
+                24.35,
+                52.0
+              ],
+              "layer_shear_mpa": 1.4319613489960537,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.75
+              ],
+              "sf_yield": 3.726673696807183,
+              "sf_layer": 1.8972965187649964,
+              "sf_shear": 9.078457326459464
+            },
+            "Y": {
+              "layer_tension_mpa": 2.494307518005371,
+              "layer_tension_at_mm": [
+                0.0,
+                19.16,
+                35.63
+              ],
+              "layer_shear_mpa": 0.6127507789492741,
+              "layer_shear_at_mm": [
+                0.0,
+                14.55,
+                26.25
+              ],
+              "sf_yield": 3.726673696807183,
+              "sf_layer": 9.020539703938603,
+              "sf_shear": 21.21580330308514
+            },
+            "Z": {
+              "layer_tension_mpa": 10.398313522338867,
+              "layer_tension_at_mm": [
+                0.0,
+                15.2,
+                36.38
+              ],
+              "layer_shear_mpa": 1.4320224914241475,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.75
+              ],
+              "sf_yield": 3.726673696807183,
+              "sf_layer": 2.163812425126717,
+              "sf_shear": 9.078069707600395
+            }
+          }
+        },
+        {
+          "el_mm": 1.2,
+          "nodes": 69866,
+          "peak_vm_mpa": 12.09155559539795,
+          "peak_vm_at_mm": [
+            11.3,
+            20.0,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.906622886657715,
+              "layer_tension_at_mm": [
+                12.53,
+                25.0,
+                52.0
+              ],
+              "layer_shear_mpa": 1.2957829092839064,
+              "layer_shear_at_mm": [
+                1.54,
+                13.25,
+                26.37
+              ],
+              "sf_yield": 3.7216055159293995,
+              "sf_layer": 1.8897045966923987,
+              "sf_shear": 10.032544731728436
+            },
+            "Y": {
+              "layer_tension_mpa": 2.5280654430389404,
+              "layer_tension_at_mm": [
+                0.0,
+                20.99,
+                35.74
+              ],
+              "layer_shear_mpa": 0.6177109957961053,
+              "layer_shear_at_mm": [
+                2.17,
+                24.98,
+                36.68
+              ],
+              "sf_yield": 3.7216055159293995,
+              "sf_layer": 8.900086056693679,
+              "sf_shear": 21.04544048668846
+            },
+            "Z": {
+              "layer_tension_mpa": 10.554664611816406,
+              "layer_tension_at_mm": [
+                0.0,
+                15.34,
+                36.64
+              ],
+              "layer_shear_mpa": 1.2960531267862943,
+              "layer_shear_at_mm": [
+                1.54,
+                13.25,
+                26.37
+              ],
+              "sf_yield": 3.7216055159293995,
+              "sf_layer": 2.1317588788951447,
+              "sf_shear": 10.030453020266943
+            }
+          }
+        }
+      ],
+      "last_step_convergence": {
+        "X": [
+          true,
+          true,
+          false
+        ],
+        "Y": [
+          true,
+          true,
+          true
+        ],
+        "Z": [
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    "12.0": {
+      "series": [
+        {
+          "el_mm": 4.0,
+          "nodes": 7454,
+          "peak_vm_mpa": 11.629171371459961,
+          "peak_vm_at_mm": [
+            13.35,
+            16.7,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.181702613830566,
+              "layer_tension_at_mm": [
+                15.03,
+                23.29,
+                52.0
+              ],
+              "layer_shear_mpa": 0.8448533113587399,
+              "layer_shear_at_mm": [
+                15.69,
+                25.0,
+                48.03
+              ],
+              "sf_yield": 3.8695792299043714,
+              "sf_layer": 2.01221591890397,
+              "sf_shear": 15.387286556399573
+            },
+            "Y": {
+              "layer_tension_mpa": 1.4225696325302124,
+              "layer_tension_at_mm": [
+                0.0,
+                21.6,
+                33.25
+              ],
+              "layer_shear_mpa": 0.5672220732420723,
+              "layer_shear_at_mm": [
+                0.0,
+                26.75,
+                26.37
+              ],
+              "sf_yield": 3.8695792299043714,
+              "sf_layer": 15.816448970572376,
+              "sf_shear": 22.91871316942212
+            },
+            "Z": {
+              "layer_tension_mpa": 8.755241394042969,
+              "layer_tension_at_mm": [
+                0.0,
+                16.64,
+                33.87
+              ],
+              "layer_shear_mpa": 1.0047536758213276,
+              "layer_shear_at_mm": [
+                0.0,
+                26.75,
+                26.37
+              ],
+              "sf_yield": 3.8695792299043714,
+              "sf_layer": 2.5698891655127762,
+              "sf_shear": 12.93849459109792
+            }
+          }
+        },
+        {
+          "el_mm": 3.5,
+          "nodes": 8036,
+          "peak_vm_mpa": 11.533863067626953,
+          "peak_vm_at_mm": [
+            14.02,
+            19.76,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.275568962097168,
+              "layer_tension_at_mm": [
+                14.72,
+                16.5,
+                52.0
+              ],
+              "layer_shear_mpa": 0.8738947229446473,
+              "layer_shear_at_mm": [
+                17.45,
+                15.0,
+                46.1
+              ],
+              "sf_yield": 3.901554902823948,
+              "sf_layer": 1.9954647145198405,
+              "sf_shear": 14.875933746568032
+            },
+            "Y": {
+              "layer_tension_mpa": 1.6018922328948975,
+              "layer_tension_at_mm": [
+                0.0,
+                20.28,
+                33.58
+              ],
+              "layer_shear_mpa": 0.5585244587963715,
+              "layer_shear_at_mm": [
+                3.0,
+                13.25,
+                25.87
+              ],
+              "sf_yield": 3.901554902823948,
+              "sf_layer": 14.0458886921117,
+              "sf_shear": 23.275614514743353
+            },
+            "Z": {
+              "layer_tension_mpa": 9.481147766113281,
+              "layer_tension_at_mm": [
+                0.0,
+                26.75,
+                35.24
+              ],
+              "layer_shear_mpa": 0.9812445320727604,
+              "layer_shear_at_mm": [
+                3.0,
+                26.75,
+                26.06
+              ],
+              "sf_yield": 3.901554902823948,
+              "sf_layer": 2.3731304009855854,
+              "sf_shear": 13.248481469281742
+            }
+          }
+        },
+        {
+          "el_mm": 3.0,
+          "nodes": 9908,
+          "peak_vm_mpa": 11.677522659301758,
+          "peak_vm_at_mm": [
+            12.64,
+            25.0,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.361035346984863,
+              "layer_tension_at_mm": [
+                14.53,
+                15.0,
+                52.0
+              ],
+              "layer_shear_mpa": 0.8971604627551215,
+              "layer_shear_at_mm": [
+                1.5,
+                26.75,
+                26.98
+              ],
+              "sf_yield": 3.853557069671378,
+              "sf_layer": 1.9804533048980733,
+              "sf_shear": 14.490161503637648
+            },
+            "Y": {
+              "layer_tension_mpa": 1.4023256301879883,
+              "layer_tension_at_mm": [
+                0.0,
+                20.0,
+                33.01
+              ],
+              "layer_shear_mpa": 0.5242472915228149,
+              "layer_shear_at_mm": [
+                3.0,
+                25.46,
+                27.47
+              ],
+              "sf_yield": 3.853557069671378,
+              "sf_layer": 16.044775561139655,
+              "sf_shear": 24.797457631565557
+            },
+            "Z": {
+              "layer_tension_mpa": 9.129158973693848,
+              "layer_tension_at_mm": [
+                0.0,
+                26.75,
+                34.54
+              ],
+              "layer_shear_mpa": 0.9463890125651669,
+              "layer_shear_at_mm": [
+                0.0,
+                26.75,
+                27.09
+              ],
+              "sf_yield": 3.853557069671378,
+              "sf_layer": 2.464630100629744,
+              "sf_shear": 13.736423212230434
+            }
+          }
+        },
+        {
+          "el_mm": 2.5,
+          "nodes": 13150,
+          "peak_vm_mpa": 11.618058204650879,
+          "peak_vm_at_mm": [
+            13.76,
+            18.91,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.424280166625977,
+              "layer_tension_at_mm": [
+                14.34,
+                15.0,
+                52.0
+              ],
+              "layer_shear_mpa": 1.4045898665726166,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.52
+              ],
+              "sf_yield": 3.8732806470177468,
+              "sf_layer": 1.9694895145980216,
+              "sf_shear": 9.255370773620704
+            },
+            "Y": {
+              "layer_tension_mpa": 1.7064892053604126,
+              "layer_tension_at_mm": [
+                0.0,
+                19.84,
+                33.71
+              ],
+              "layer_shear_mpa": 0.5669047148161442,
+              "layer_shear_at_mm": [
+                3.0,
+                15.39,
+                26.29
+              ],
+              "sf_yield": 3.8732806470177468,
+              "sf_layer": 13.184964738905554,
+              "sf_shear": 22.931543273927605
+            },
+            "Z": {
+              "layer_tension_mpa": 9.209216117858887,
+              "layer_tension_at_mm": [
+                0.0,
+                26.75,
+                34.95
+              ],
+              "layer_shear_mpa": 1.4046007770903048,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.52
+              ],
+              "sf_yield": 3.8732806470177468,
+              "sf_layer": 2.4432046888732564,
+              "sf_shear": 9.255298880675618
+            }
+          }
+        },
+        {
+          "el_mm": 2.0,
+          "nodes": 20416,
+          "peak_vm_mpa": 11.648316383361816,
+          "peak_vm_at_mm": [
+            13.63,
+            19.29,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.31071662902832,
+              "layer_tension_at_mm": [
+                14.49,
+                24.13,
+                52.0
+              ],
+              "layer_shear_mpa": 1.4256951610821127,
+              "layer_shear_at_mm": [
+                1.59,
+                26.75,
+                27.03
+              ],
+              "sf_yield": 3.8632192429351377,
+              "sf_layer": 1.9892638758409888,
+              "sf_shear": 9.118358787254989
+            },
+            "Y": {
+              "layer_tension_mpa": 1.5417001247406006,
+              "layer_tension_at_mm": [
+                0.0,
+                20.72,
+                33.47
+              ],
+              "layer_shear_mpa": 0.5929971056569233,
+              "layer_shear_at_mm": [
+                3.0,
+                25.02,
+                27.03
+              ],
+              "sf_yield": 3.8632192429351377,
+              "sf_layer": 14.59427786177662,
+              "sf_shear": 21.922535331093354
+            },
+            "Z": {
+              "layer_tension_mpa": 9.21545124053955,
+              "layer_tension_at_mm": [
+                0.0,
+                13.25,
+                34.95
+              ],
+              "layer_shear_mpa": 1.4257253013482218,
+              "layer_shear_at_mm": [
+                1.59,
+                26.75,
+                27.03
+              ],
+              "sf_yield": 3.8632192429351377,
+              "sf_layer": 2.441551630268586,
+              "sf_shear": 9.118166022379409
+            }
+          }
+        },
+        {
+          "el_mm": 1.5,
+          "nodes": 39906,
+          "peak_vm_mpa": 11.67728328704834,
+          "peak_vm_at_mm": [
+            12.81,
+            15.0,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.405794143676758,
+              "layer_tension_at_mm": [
+                14.34,
+                25.0,
+                52.0
+              ],
+              "layer_shear_mpa": 1.4319613489960537,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.75
+              ],
+              "sf_yield": 3.853636063613442,
+              "sf_layer": 1.9726815789038015,
+              "sf_shear": 9.078457326459464
+            },
+            "Y": {
+              "layer_tension_mpa": 1.7380344867706299,
+              "layer_tension_at_mm": [
+                0.0,
+                19.88,
+                33.75
+              ],
+              "layer_shear_mpa": 0.6127507789492741,
+              "layer_shear_at_mm": [
+                0.0,
+                14.55,
+                26.25
+              ],
+              "sf_yield": 3.853636063613442,
+              "sf_layer": 12.945657966664585,
+              "sf_shear": 21.21580330308514
+            },
+            "Z": {
+              "layer_tension_mpa": 9.4740571975708,
+              "layer_tension_at_mm": [
+                0.0,
+                26.75,
+                35.25
+              ],
+              "layer_shear_mpa": 1.4320224914241475,
+              "layer_shear_at_mm": [
+                1.5,
+                13.25,
+                27.75
+              ],
+              "sf_yield": 3.853636063613442,
+              "sf_layer": 2.3749064979013554,
+              "sf_shear": 9.078069707600395
+            }
+          }
+        },
+        {
+          "el_mm": 1.2,
+          "nodes": 69866,
+          "peak_vm_mpa": 11.702486991882324,
+          "peak_vm_at_mm": [
+            12.62,
+            15.0,
+            40.0
+          ],
+          "orientations": {
+            "X": {
+              "layer_tension_mpa": 11.41238021850586,
+              "layer_tension_at_mm": [
+                14.32,
+                15.0,
+                52.0
+              ],
+              "layer_shear_mpa": 1.2957829092839064,
+              "layer_shear_at_mm": [
+                1.54,
+                13.25,
+                26.37
+              ],
+              "sf_yield": 3.845336468326365,
+              "sf_layer": 1.971543146057726,
+              "sf_shear": 10.032544731728436
+            },
+            "Y": {
+              "layer_tension_mpa": 1.6545847654342651,
+              "layer_tension_at_mm": [
+                0.0,
+                20.0,
+                33.62
+              ],
+              "layer_shear_mpa": 0.6087396499238353,
+              "layer_shear_at_mm": [
+                0.0,
+                25.18,
+                26.68
+              ],
+              "sf_yield": 3.845336468326365,
+              "sf_layer": 13.598578005820459,
+              "sf_shear": 21.355599231340594
+            },
+            "Z": {
+              "layer_tension_mpa": 9.611930847167969,
+              "layer_tension_at_mm": [
+                0.0,
+                13.25,
+                35.43
+              ],
+              "layer_shear_mpa": 1.2960531267862943,
+              "layer_shear_at_mm": [
+                1.54,
+                13.25,
+                26.37
+              ],
+              "sf_yield": 3.845336468326365,
+              "sf_layer": 2.3408408110457155,
+              "sf_shear": 10.030453020266943
+            }
+          }
+        }
+      ],
+      "last_step_convergence": {
+        "X": [
+          true,
+          true,
+          false
+        ],
+        "Y": [
+          true,
+          false,
+          true
+        ],
+        "Z": [
+          true,
+          true,
+          false
+        ]
+      }
+    }
+  }
+}

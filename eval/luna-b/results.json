@@ -1,0 +1,723 @@
+{
+  "B1": {
+    "volume_mm3": 21865.53551187102,
+    "hand_volume_mm3": 21865.509557223533,
+    "mass_g": 26.019987259126516,
+    "bbox_mm": [
+      -30.0,
+      -30.0,
+      0.0,
+      30.0,
+      30.0,
+      25.0
+    ],
+    "bodies": [
+      [
+        "SETSCREW",
+        21865.54,
+        [
+          -30.0,
+          -30.0,
+          0.0,
+          30.0,
+          30.0,
+          25.0
+        ]
+      ]
+    ],
+    "stl_watertight": true,
+    "stl_volume_mm3": 21811.006760627974,
+    "stl_bbox_mm": [
+      -30.0,
+      -29.990055084228516,
+      0.0,
+      30.0,
+      29.990055084228516,
+      25.0
+    ],
+    "spec_questions": [
+      "The two \u00d85.5 dowel holes on the \u00d830 circle overlap the \u00d826 boss footprint by 0.75 mm radially; I kept them through the flange thickness only, as specified, so their top openings meet the boss underside."
+    ],
+    "status": "complete",
+    "notes": "All dimensions, feature errors, body count, volume, STEP units and STL checks recorded in REPORT.md.",
+    "dimensional_checks": {
+      "flange_outer_face": {
+        "kind": "cyl",
+        "r": 30.0,
+        "normal": null,
+        "box": [
+          -30.0,
+          -30.0,
+          0.0,
+          30.0,
+          30.0,
+          5.0
+        ],
+        "area": 942.4777960769378
+      },
+      "boss_outer_face": {
+        "kind": "cyl",
+        "r": 13.000000000000002,
+        "normal": null,
+        "box": [
+          -13.000000000000002,
+          -13.000000000000002,
+          4.999999999999999,
+          13.000000000000002,
+          13.000000000000002,
+          25.0
+        ],
+        "area": 1621.0288289138798
+      },
+      "bore_face": {
+        "kind": "cyl",
+        "r": 5.0,
+        "normal": null,
+        "box": [
+          -5.0,
+          -5.0,
+          0.0,
+          4.769696007084728,
+          5.0,
+          25.0
+        ],
+        "area": 696.3855413367073
+      },
+      "set_screw_face": {
+        "kind": "cyl",
+        "r": 2.0,
+        "normal": null,
+        "box": [
+          -2.0,
+          4.458048250077312,
+          20.6,
+          2.0,
+          13.000000000000002,
+          24.600000000000005
+        ],
+        "area": 102.15193462187523
+      },
+      "keyway_floor_box": [
+        6.4,
+        -1.5,
+        0.0,
+        6.4,
+        1.5,
+        25.0
+      ],
+      "flange_top_z_mm": 5.0,
+      "boss_top_z_mm": 25.0,
+      "bbox_mm": [
+        -30.0,
+        -30.0,
+        0.0,
+        30.0,
+        30.0,
+        25.0
+      ],
+      "volume_mm3": 21865.535511871018,
+      "bodies": [
+        [
+          "SETSCREW",
+          21865.54,
+          [
+            -30.0,
+            -30.0,
+            0.0,
+            30.0,
+            30.0,
+            25.0
+          ]
+        ]
+      ]
+    }
+  },
+  "B2": {
+    "hand_root_stress_mpa": 13.75,
+    "hand_tip_deflection_mm": 1.4304295321637426,
+    "print_orientation": "layers stacked along Z",
+    "nodes": 15362,
+    "mesh_series": [
+      [
+        4.0,
+        11217,
+        12.87,
+        3.3,
+        2.07
+      ],
+      [
+        3.5,
+        13101,
+        12.8,
+        3.43,
+        2.27
+      ],
+      [
+        3.0,
+        15362,
+        12.93,
+        3.46,
+        2.09
+      ]
+    ],
+    "orientation_table": {
+      "X": {
+        "peak_vm_mpa": 12.934638977050781,
+        "peak_vm_at_mm": [
+          9.35,
+          25.0,
+          40.0
+        ],
+        "layer_stress_mpa": 12.237302780151367,
+        "layer_stress_at_mm": [
+          12.64,
+          16.07,
+          51.9
+        ],
+        "layer_shear_mpa": 4.747411567642458,
+        "layer_shear_at_mm": [
+          5.23,
+          25.0,
+          38.15
+        ],
+        "sf_vm": 3.4790302288174435,
+        "sf_layer": 1.8386404589493772,
+        "sf_shear": 2.73833431434632
+      },
+      "Y": {
+        "peak_vm_mpa": 12.934638977050781,
+        "peak_vm_at_mm": [
+          9.35,
+          25.0,
+          40.0
+        ],
+        "layer_stress_mpa": 3.4618406295776367,
+        "layer_stress_at_mm": [
+          0.0,
+          19.7,
+          37.69
+        ],
+        "layer_shear_mpa": 2.0870669704669775,
+        "layer_shear_at_mm": [
+          5.23,
+          25.0,
+          38.15
+        ],
+        "sf_vm": 3.4790302288174435,
+        "sf_layer": 6.499432645096988,
+        "sf_shear": 6.228837015752912
+      },
+      "Z": {
+        "peak_vm_mpa": 12.934638977050781,
+        "peak_vm_at_mm": [
+          9.35,
+          25.0,
+          40.0
+        ],
+        "layer_stress_mpa": 6.011719703674316,
+        "layer_stress_at_mm": [
+          0.0,
+          19.7,
+          37.69
+        ],
+        "layer_shear_mpa": 4.9777073425039795,
+        "layer_shear_at_mm": [
+          5.23,
+          25.0,
+          38.15
+        ],
+        "sf_vm": 3.4790302288174435,
+        "sf_layer": 3.7426894647546813,
+        "sf_shear": 2.6116440974732953
+      }
+    },
+    "convergence_by_orientation": {
+      "X": {
+        "series_vm_layer_shear": [
+          [
+            12.870670318603516,
+            12.432610511779785,
+            4.685904022558625
+          ],
+          [
+            12.800140380859375,
+            12.465527534484863,
+            4.730433333062588
+          ],
+          [
+            12.934638977050781,
+            12.237302780151367,
+            4.747411567642458
+          ]
+        ],
+        "converged_all_three": true
+      },
+      "Y": {
+        "series_vm_layer_shear": [
+          [
+            12.870670318603516,
+            3.2970786094665527,
+            2.0697216279866244
+          ],
+          [
+            12.800140380859375,
+            3.4266388416290283,
+            2.269406098407704
+          ],
+          [
+            12.934638977050781,
+            3.4618406295776367,
+            2.0870669704669775
+          ]
+        ],
+        "converged_all_three": false
+      },
+      "Z": {
+        "series_vm_layer_shear": [
+          [
+            12.870670318603516,
+            5.613348484039307,
+            5.044459988634455
+          ],
+          [
+            12.800140380859375,
+            5.916947841644287,
+            5.014140323861388
+          ],
+          [
+            12.934638977050781,
+            6.011719703674316,
+            4.9777073425039795
+          ]
+        ],
+        "converged_all_three": true
+      }
+    },
+    "peak_vm_mpa": 12.934638977050781,
+    "peak_vm_at_mm": [
+      9.35,
+      25.0,
+      40.0
+    ],
+    "root_roi_vm_mpa": 15.463905334472656,
+    "root_roi_at_mm": [
+      8.0,
+      22.5,
+      52.0
+    ],
+    "raw_vm_including_exclusions_mpa": 30.981834411621094,
+    "raw_vm_at_mm": [
+      0.0,
+      19.49,
+      45.81
+    ],
+    "layer_stress_mpa": 6.011719703674316,
+    "layer_shear_mpa": 4.9777073425039795,
+    "sf_yield": 3.4790302288174435,
+    "sf_layer": 3.7426894647546813,
+    "sf_shear": 2.6116440974732953,
+    "max_disp_mm": 1.894783616065979,
+    "reaction_n": 60.0,
+    "converged": true,
+    "converged_y_from_helper": false,
+    "plain_section_mean_vm_mpa": 6.331812143325806,
+    "support_sensitivity": {
+      "wall_face_fixed_coarse_vm_mpa": 17.306245803833008,
+      "at_mm": [
+        8.0,
+        15.0,
+        52.0
+      ],
+      "nodes": 8802,
+      "wall_face_refined": {
+        "mesh_series_helper": [
+          [
+            4.0,
+            8802,
+            17.31,
+            1.25,
+            2.44
+          ],
+          [
+            3.5,
+            10438,
+            16.65,
+            1.87,
+            2.4
+          ],
+          [
+            3.0,
+            13139,
+            16.29,
+            1.91,
+            2.83
+          ]
+        ],
+        "converged_z_from_helper": false,
+        "orientation_series": {
+          "X": [
+            [
+              17.306245803833008,
+              17.170059204101562,
+              2.4417640015735795
+            ],
+            [
+              16.652240753173828,
+              17.289735794067383,
+              2.438458729158189
+            ],
+            [
+              16.286752700805664,
+              17.039098739624023,
+              2.863754453921587
+            ]
+          ],
+          "Y": [
+            [
+              17.306245803833008,
+              3.043642044067383,
+              0.958396283603793
+            ],
+            [
+              16.652240753173828,
+              3.4487197399139404,
+              0.9997499059755276
+            ],
+            [
+              16.286752700805664,
+              3.263242721557617,
+              1.0380240675741292
+            ]
+          ],
+          "Z": [
+            [
+              17.306245803833008,
+              1.2470307350158691,
+              2.442517013995892
+            ],
+            [
+              16.652240753173828,
+              1.8691747188568115,
+              2.4038286122417154
+            ],
+            [
+              16.286752700805664,
+              1.9060419797897339,
+              2.830233178089995
+            ]
+          ]
+        },
+        "orientation_table": {
+          "X": {
+            "peak_vm_mpa": 16.286752700805664,
+            "peak_vm_at_mm": [
+              8.0,
+              16.25,
+              40.0
+            ],
+            "layer_stress_mpa": 17.039098739624023,
+            "layer_stress_at_mm": [
+              8.0,
+              18.75,
+              52.0
+            ],
+            "layer_shear_mpa": 2.863754453921587,
+            "layer_shear_at_mm": [
+              8.0,
+              15.0,
+              40.0
+            ],
+            "sf_yield": 2.762981720584114,
+            "sf_layer": 1.3204923771981425,
+            "sf_shear": 4.539495340530322,
+            "converged_all_three": false
+          },
+          "Y": {
+            "peak_vm_mpa": 16.286752700805664,
+            "peak_vm_at_mm": [
+              8.0,
+              16.25,
+              40.0
+            ],
+            "layer_stress_mpa": 3.263242721557617,
+            "layer_stress_at_mm": [
+              8.0,
+              18.75,
+              52.0
+            ],
+            "layer_shear_mpa": 1.0380240675741292,
+            "layer_shear_at_mm": [
+              8.0,
+              22.5,
+              52.0
+            ],
+            "sf_yield": 2.762981720584114,
+            "sf_layer": 6.894982053084993,
+            "sf_shear": 12.523794395616575,
+            "converged_all_three": false
+          },
+          "Z": {
+            "peak_vm_mpa": 16.286752700805664,
+            "peak_vm_at_mm": [
+              8.0,
+              16.25,
+              40.0
+            ],
+            "layer_stress_mpa": 1.9060419797897339,
+            "layer_stress_at_mm": [
+              8.02,
+              19.95,
+              50.34
+            ],
+            "layer_shear_mpa": 2.830233178089995,
+            "layer_shear_at_mm": [
+              8.0,
+              15.0,
+              40.0
+            ],
+            "sf_yield": 2.762981720584114,
+            "sf_layer": 11.8045668660887,
+            "sf_shear": 4.593261113832731,
+            "converged_all_three": false
+          }
+        },
+        "nodes": 13139,
+        "reaction_n": 60.0,
+        "max_disp_mm": 1.530397891998291,
+        "best_converged_orientation": null
+      },
+      "wall_face_converged_any_direction": false,
+      "verdict_effect": "not shown: alternate support series did not converge all three measures in any print direction"
+    },
+    "status": "complete",
+    "verdict": "not shown",
+    "notes": "Primary two-hole support case passes the three numerical thresholds in Z orientation and converges; overall verdict is not shown because the whole-wall support sensitivity case did not converge and the upper screw hole meets the arm at X=5.",
+    "stl_checks": {
+      "watertight": true,
+      "shells": 1,
+      "stl_volume_mm3": 19036.107091615475,
+      "solidworks_volume_mm3": 19034.5852,
+      "volume_error_pct": 0.007995402050965512,
+      "bounds_mm": [
+        0.0,
+        0.0,
+        0.0,
+        65.0,
+        40.0,
+        60.0
+      ],
+      "solidworks_bounds_mm": [
+        0.0,
+        0.0,
+        0.0,
+        65.0,
+        40.0,
+        60.0
+      ],
+      "max_bbox_delta_mm": 0.0,
+      "triangles": 410
+    },
+    "model_sha256": "4082E480916EC8A04FE1AD52ED88AD94FA0CF0342D4B6CA524DAAEF1BF630F72"
+  },
+  "B3": {
+    "mass_before_g": 22.651156388000004,
+    "mass_after_g": 11.866761479452789,
+    "saving_pct": 47.61079180160757,
+    "steps": [
+      {
+        "change": "Thin the wall plate to 3 mm and trim its Y/Z envelope around the two screw holes; retain 12 mm arm height.",
+        "mass_g": 11.16536160000179,
+        "sf_yield": 3.523044938572838,
+        "sf_layer": 1.9972101822422461,
+        "sf_shear": 2.6512930759690088,
+        "print_orientation": "layers stacked along Z",
+        "mesh_converged": true
+      },
+      {
+        "change": "Round the four curved root-side transitions R0.4 and widen the arm to 10.8 mm so the top bearing face remains exactly 10 x 10 mm.",
+        "mass_g": 11.866761479452789,
+        "sf_yield": 3.5319960340017134,
+        "sf_layer": 2.0417303635753923,
+        "sf_shear": 2.648839567791197,
+        "print_orientation": "layers stacked along Z",
+        "mesh_converged_by_stress_only": true
+      }
+    ],
+    "governing": "Not shown. Numerically, Z-direction across-layer tension is thinnest (FoS 2.042), but the mesh node counts exceeded the playbook pre-solve estimates by 19\u201345x and changed by less than 1% across nominal sizes.",
+    "sf_yield": 3.5319960340017134,
+    "sf_layer": 2.0417303635753923,
+    "sf_shear": 2.648839567791197,
+    "print_orientation": "layers stacked along Z",
+    "status": "complete",
+    "notes": "The force reaction is 60.003 N and the requested 100 mm2 load face was measured. Treat the stresses as provisional: local controls dominated node count, and the STL/solid bounding boxes differ by 0.121 mm (0.1 mm allowed). See REPORT.md and b3_stl_checks.json."
+  },
+  "B4": {
+    "hand_wall_forces_n": [
+      101.176470588,
+      181.176470588
+    ],
+    "wall_forces_n": [
+      null,
+      null
+    ],
+    "nodes": 17187,
+    "how_tongue_was_stabilised": "Four 0.5 x 1.5 x 4 mm analysis-only flexure pads on the tongue side at X4,Z24-28,Y=-7,-3,3,7, fixed at Z28; E=0.5 MPa. At the 0.001 N +X contact proof they carry under the 0.001 N and permit the tongue to translate across the 0.1 mm clearance.",
+    "block_peak_vm_mpa": 1.4634162187576294,
+    "block_peak_at_mm": [
+      -4.826,
+      6.267,
+      8.53
+    ],
+    "tongue_tip_disp_mm": 0.5204368233680725,
+    "reaction_n": 80.0,
+    "valid": false,
+    "why": {
+      "gap_proof_mean_ux_mm": -0.09971240291307712,
+      "gap_proof_pad_reaction": {
+        "pad_reaction_vector_n": [
+          -0.0012440946911738138,
+          -1.9758772396016866e-10,
+          1.0476360330358148e-06
+        ],
+        "pad_reaction_resultant_n": 0.0012440951322741215
+      },
+      "gap_proof_pass": true,
+      "pad_reaction_n": 109.21896201062424,
+      "pad_share_pct": 136.52370251328028,
+      "section_force_balance_error_pct": 100.71679662822368,
+      "contact_forces_by_section_n": {
+        "v_above_slot_N": -28.92976083880538,
+        "v_below_top_contact_N": -29.016376376781132,
+        "v_above_floor_N": -0.6600528405546932,
+        "right_wall_N": 0.08661553797575294,
+        "left_wall_N": 0.6600528405546932
+      },
+      "hand_forces_n_left_right": [
+        101.176470588,
+        181.176470588
+      ],
+      "mesh_series": [
+        {
+          "el_mm": 4.0,
+          "nodes": 12919,
+          "elements": 8087,
+          "reaction": [
+            -80.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          "max_disp_mm": 0.5080310702323914,
+          "tip_ux_mm": 0.48245906829833984,
+          "block_peak_vm_mpa": 1.4829785823822021,
+          "block_peak_at_mm": [
+            -4.1,
+            7.0,
+            8.0
+          ],
+          "section_forces": {
+            "v_above_slot_N": -28.897937257471693,
+            "v_below_top_contact_N": -28.932870646229247,
+            "v_above_floor_N": 0.7233381544473536,
+            "right_wall_N": 0.034933388757554695,
+            "left_wall_N": 0.7233381544473536
+          },
+          "pad_reaction": {
+            "pad_reaction_vector_n": [
+              -109.22304555919254,
+              -0.01852032166789286,
+              0.1668198643019423
+            ],
+            "pad_reaction_resultant_n": 109.22317452397586
+          }
+        },
+        {
+          "el_mm": 3.5,
+          "nodes": 14356,
+          "elements": 9061,
+          "reaction": [
+            -80.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          "max_disp_mm": 0.562197208404541,
+          "tip_ux_mm": 0.53448086977005,
+          "block_peak_vm_mpa": 1.435259461402893,
+          "block_peak_at_mm": [
+            -4.1,
+            6.94,
+            9.689
+          ],
+          "section_forces": {
+            "v_above_slot_N": -28.458042073997635,
+            "v_below_top_contact_N": -29.07410487275752,
+            "v_above_floor_N": 1.1870055452353696,
+            "right_wall_N": 0.6160627987598843,
+            "left_wall_N": 1.1870055452353696
+          },
+          "pad_reaction": {
+            "pad_reaction_vector_n": [
+              -108.7711059137946,
+              -0.007452796620782465,
+              0.17241375584853813
+            ],
+            "pad_reaction_resultant_n": 108.77124281609227
+          }
+        },
+        {
+          "el_mm": 3.0,
+          "nodes": 17187,
+          "elements": 10986,
+          "reaction": [
+            -80.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          "max_disp_mm": 0.547138512134552,
+          "tip_ux_mm": 0.5204368233680725,
+          "block_peak_vm_mpa": 1.4634162187576294,
+          "block_peak_at_mm": [
+            -4.826,
+            6.267,
+            8.53
+          ],
+          "section_forces": {
+            "v_above_slot_N": -28.92976083880538,
+            "v_below_top_contact_N": -29.016376376781132,
+            "v_above_floor_N": -0.6600528405546932,
+            "right_wall_N": 0.08661553797575294,
+            "left_wall_N": 0.6600528405546932
+          },
+          "pad_reaction": {
+            "pad_reaction_vector_n": [
+              -109.21882669709157,
+              -0.014889351004967466,
+              0.1712772491737269
+            ],
+            "pad_reaction_resultant_n": 109.21896201062424
+          }
+        }
+      ],
+      "mesh_node_counts_below_200k": true,
+      "limitation": "Nodal stresses were integrated over Delaunay triangulations of near-horizontal tongue-node slices; compare convergence across sizes.",
+      "full_load_pad_share_n": 109.21896201062424,
+      "full_load_pad_share_pct": 136.52370251328028,
+      "pad_share_limit_n": 0.8,
+      "section_balance_verified": false,
+      "wall_forces_determined": false,
+      "unfinished": [
+        "redesign stabilization pads to carry under 1% at full load",
+        "recover both wall resultants with a force-balanced section or contact-traction method"
+      ]
+    },
+    "status": "not shown",
+    "notes": "Gap proof and full-load solves completed under the node cap, but pad share is 136.5% of load and the section-force estimate fails balance; wall forces are undetermined. See REPORT.md."
+  },
+  "B5": {
+    "problems_found": 14,
+    "status": "complete",
+    "notes": "Fourteen distinct issues are listed in REPORT.md, ordered by severity; approval should be withheld pending reanalysis and export validation."
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "link_boxy": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 219351.757023445,
+    "bounds": [
+      [
+        -34.99992370605469,
+        -22.0,
+        -215.0
+      ],
+      [
+        34.99992370605469,
+        22.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 1632,
+      "area_mm2": 38261.4,
+      "flat_share": 0.91,
+      "largest_flat": 0.144,
+      "sharp_mm": 2406.4,
+      "sharp_per_area": 12.3
+    }
+  },
+  "idea_a": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 131628.51865117578,
+    "bounds": [
+      [
+        -34.95588302612305,
+        -23.0,
+        -213.0
+      ],
+      [
+        34.95588302612305,
+        23.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 9882,
+      "area_mm2": 32235.8,
+      "flat_share": 0.362,
+      "largest_flat": 0.095,
+      "sharp_mm": 1569.3,
+      "sharp_per_area": 8.74
+    }
+  },
+  "idea_b": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 83274.51277327228,
+    "bounds": [
+      [
+        -34.98373031616211,
+        -23.0,
+        -213.0
+      ],
+      [
+        34.98373031616211,
+        23.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 9332,
+      "area_mm2": 29831.1,
+      "flat_share": 0.394,
+      "largest_flat": 0.103,
+      "sharp_mm": 2080.5,
+      "sharp_per_area": 12.05
+    }
+  },
+  "idea_c": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 134319.46677543782,
+    "bounds": [
+      [
+        -34.88507080078125,
+        -23.0,
+        -213.0
+      ],
+      [
+        34.88507080078125,
+        23.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 9526,
+      "area_mm2": 32414.2,
+      "flat_share": 0.357,
+      "largest_flat": 0.093,
+      "sharp_mm": 1617.0,
+      "sharp_per_area": 8.98
+    }
+  },
+  "fillet_probe": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 134384.93807599065,
+    "bounds": [
+      [
+        -34.956790924072266,
+        -23.0,
+        -213.0
+      ],
+      [
+        34.956790924072266,
+        23.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 14520,
+      "area_mm2": 32351.6,
+      "flat_share": 0.352,
+      "largest_flat": 0.091,
+      "sharp_mm": 1238.5,
+      "sharp_per_area": 6.89
+    }
+  },
+  "idea_d": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 135871.34330669127,
+    "bounds": [
+      [
+        -34.99512481689453,
+        -23.0,
+        -213.0
+      ],
+      [
+        34.99512481689453,
+        23.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 12048,
+      "area_mm2": 32606.1,
+      "flat_share": 0.358,
+      "largest_flat": 0.094,
+      "sharp_mm": 1573.2,
+      "sharp_per_area": 8.71
+    }
+  },
+  "idea_e": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 148060.46505149457,
+    "bounds": [
+      [
+        -34.99992370605469,
+        -23.0,
+        -213.0
+      ],
+      [
+        34.99992370605469,
+        23.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 10088,
+      "area_mm2": 33868.1,
+      "flat_share": 0.361,
+      "largest_flat": 0.089,
+      "sharp_mm": 1676.3,
+      "sharp_per_area": 9.11
+    }
+  },
+  "fillet_e": {
+    "watertight": true,
+    "components": 1,
+    "volume_mm3": 148091.6109645602,
+    "bounds": [
+      [
+        -34.9984016418457,
+        -23.0,
+        -213.0
+      ],
+      [
+        34.9984016418457,
+        23.0,
+        35.0
+      ]
+    ],
+    "shape": {
+      "triangles": 15648,
+      "area_mm2": 33582.3,
+      "flat_share": 0.345,
+      "largest_flat": 0.084,
+      "sharp_mm": 1106.3,
+      "sharp_per_area": 6.04
+    }
+  },
+  "driver_clear": {
+    "samples": 1728,
+    "violations": 0
+  },
+  "slot_clear": {
+    "samples": 6825,
+    "violations": 0
+  },
+  "cable_clear": {
+    "samples": 3420,
+    "violations": 0
+  },
+  "cheek_annulus_solid": {
+    "samples": 288,
+    "violations": 0
+  },
+  "mount_ring_inside": {
+    "samples": 558,
+    "violations": 0
+  },
+  "mount_ring_outside": {
+    "samples": 558,
+    "violations": 0
+  }
+}

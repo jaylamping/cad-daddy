@@ -168,6 +168,77 @@ requirement it gave up. And Fable named the load nobody asked about, the tighten
 The two answers to D1 are a real difference of opinion, not a right and a wrong: one keeps the envelope, the other
 keeps the design simple. That choice is Joey's.
 
+## Other vendors: GPT 6 Luna and GPT 6.1 Terra (Codex, 2026-11-13 and 14)
+
+The same task sets, the same brief, run through `codex exec` on holly-pc with full access to the worktree. Luna ran
+at reasoning effort Extra High, Terra at High. One pass each; Luna's sets C and D were not run (C was stopped after
+37 minutes with one idea built and no analysis, [luna-c](../eval/luna-c/)).
+
+Two things changed between the Luna and Terra runs, so their wall times are not like for like: a SolidWorks instance
+kept running on the PC from 20:07Z made launches take seconds, and before it a run could queue for minutes behind
+another session's solve. Luna's two runs include about 45 minutes of such waiting each; Terra's had almost none.
+
+| | Luna, Extra High | Terra, High | Sonnet + playbook | Fable + playbook |
+| --- | --- | --- | --- | --- |
+| **Set A** wall time | 132 min (about 85 working) [luna-a](../eval/luna-a/) | 42 min [terra-high-a](../eval/terra-high-a/) | 55 min | 45 min |
+| T1, T2 volumes | exact | exact | exact | exact |
+| T3, the bracket that fails at about 1.4 | **passed it**, with the second load put on the whole front face; its own table showed layer shear at 1.80 | **failed it at 1.38**, load on the motor holes | passed it (rigid load, before the fix) | passed it (same) |
+| T5 make it pass | skipped the redesign | real redesign, +3.3 % mass, lowest factor 2.02 converged | done | done |
+| T6 contact | not valid: a "Fixture transfer failed" dialog went unread | valid, both proofs | valid | valid |
+| Failed runs on the way | about 9 | about 4 | not counted | not counted |
+| **Set B** wall time | 120 min [luna-b](../eval/luna-b/) | **8 min, stopped itself** [terra-high-b](../eval/terra-high-b/) | 62 min | about 160 min over two sessions |
+| B1 hidden problems (2) | 1 | 2 | 2 | 2 |
+| B2 print direction | "not shown" | incomplete, "not shown"; broke the displacement gate and said so | done | done |
+| B3 lighter | 48 % | 41 %, one try | 66 % | 75 % |
+| B4 tongue in a slot | no answer, declared not valid | **never started**: 7.6 GB free against the 8 GB floor, gave up in 2 s | done | done |
+| B5 planted flaws (8) | 8, in a list of 14 | 8, in a list of 13 (the swapped section named as a wrong bending depth) | 8, plus 6 more | 8, plus 7 more |
+| **Set C** | not run | 53 min, 261 to 177 g, strength not shown; stem lofted, disc and fork unchanged [terra-high-c](../eval/terra-high-c/) | 148 g (second try) | 137 g |
+| **Set D** wall time | not run | 87 min [terra-high-d](../eval/terra-high-d/) | 90 min | 61 min |
+| D1 board that cannot fit the envelope | | caught; kept the design simple and reported the envelope as not met (Fable's choice); strength screened only | caught, kept the envelope | caught |
+| D2 planted problems (3) | | 3 | 3 | 3 |
+| D2 screw load, hand 75 N | | 74.5 | | 75.7 |
+| D2 lowest factor | | **none given** after 65 min and twelve contact solves: last changes 8.3 % and 5.7 % | 8.8 | 5.85 |
+| D3 bad rows (3) and knock-on problems (2) | | 3 and 2 | 3 and 2 | 3 and 2 |
+
+**What this shows.**
+
+- **Terra at High does routine work at Fable's speed and got T3 right,** with the corrected load guidance on the
+  page. Luna at Extra High had the same page and still passed the bracket, on a load placed where no motor puts it,
+  while its own shear number said fail. The rule "report the higher of the two load models and every measure" was
+  followed in the table and not in the verdict.
+- **Terra stops early, in two different ways.** In set B it ended the whole run at eight minutes with three tasks
+  open. In sets C and D it worked for an hour and then reported "not shown" rather than a number. The second is honest
+  and is what the page asks for when a measure will not converge; the first is not. The "Do not stop early" section of
+  [07-done.md](07-done.md) was written from this run; the table below shows what it changed.
+- **Luna is careful and slow.** It kept every rule, declared its own invalid results, and found every planted flaw in
+  the review, but took about twice the working time and left more tasks without an answer.
+- **Both kept the machine rules,** with one class of exception that was the helpers' fault: `job()` and `export()`
+  set machine-wide export options while the brief says to change no shared setting. Terra noticed in every run.
+
+**What the "Do not stop early" section was worth** ([terra-high-b2](../eval/terra-high-b2/)): set B again with
+Terra at High, the same brief, and only that section (and a launch that waits for memory) added.
+
+| | terra-high-b, plain playbook | terra-high-b2, with the section |
+| --- | --- | --- |
+| Wall time, all of it working | 8 min | 49 min |
+| Commands run | 47 | 256 |
+| B1 hub | partial, 2 hidden problems | done, the same 2, every dimension measured |
+| B2 study | one support, 3 meshes to 20,572 nodes | two supports, 4 meshes to 155,273 nodes, a twin with the 0.4 mm printed radius |
+| B2 verdict | "not shown" | **fail**, layer shear 1.95 against 2.0, converged under 1 % (Fable 1.88, fail; Sonnet passed it) |
+| B3 lighter | 41 %, one candidate, "what governs: not established" | 59 %, five steps, two lighter trials shown to fail, von Mises 2.08 governs |
+| B4 tongue in a slot | not started | coarse solve: wall forces 114 and 194 N against 101 and 181 by hand; four finer tries gave excessive displacement; **blocked** after 4.5 of its 40 minutes |
+| Tasks left open | B1, B2, B3, B4 | B4 |
+
+The section moved three of four open tasks to a real answer, and on B2 to the same verdict as Fable by the same
+move (round the edge, then judge). It did not make the model use a task's time: B4 was closed as "blocked after
+three different tries" where the tries were three mesh and stiffness variations of one approach, with 35 minutes
+left. The rule now says what counts as a different try and ties "blocked" to the time limit.
+
+**Not comparable, and why.** Luna ran from roark 86b0696 and Terra from c6b79c3 (the helpers differ only in launch
+code); Sonnet and Fable ran sets A and B on earlier versions of the playbook, before the load guidance and the
+no-pass-on-a-moving-measure gate, so their set A row is not the same test. Neither Codex model could report its own
+model id; the id is taken from the `codex exec` header in each run's `codex.log`.
+
 ## What each run changed in the playbook
 
 | Run | Changes |
@@ -180,6 +251,7 @@ keeps the design simple. That choice is Joey's.
 | fable-b | The heavy-solve lock, one refinement at a time, the unanswered contact-convergence prompt, which contact proof fits which joint, buckling of lightened parts |
 | sonnet-c, fable-c | Lofts whose sections change shape, a point-in-solid check (`sheet.inside`), a crop for close-ups, one launch per job when the clock matters |
 | sonnet-d, fable-d | Changing a saved part (`set_dim`, `redraw_circles`), screws and clamped joints, results per body (`summary(mask=)`, `converge(mask=)`, shear in `converge()`), the proof for a body seated both sides, a launch that waits (`job(wait_s=)`), assembly pictures (`sheet.py --together`), `call()` on members that return objects, the node-count rule |
+| luna-a, luna-b, terra-high-a to d, terra-high-b2 | Export options set only for the export and put back, a launch that waits for memory, an unknown solver dialog fails the run, the contact proof in 07-done.md matched to the joint, node counts with local controls, "Do not stop early" and what counts as blocked |
 
 ## What still needs the strongest model, or Joey
 
@@ -197,7 +269,8 @@ keeps the design simple. That choice is Joey's.
 One run per model per set, on small parts, graded by the author of the playbook. The model that served the first
 Sonnet run could not be confirmed afterwards; later runs reported their own model id. Set B had the corrected
 playbook, so set A and set B are not a before-and-after of the same tasks. The Fable run of set B was done by two
-sessions, the second picking up the first one's files. Opus has not been run.
+sessions, the second picking up the first one's files. Opus has not been run. The Codex runs are one pass each
+and Luna's stop at set B.
 
 ## Running it on another model
 

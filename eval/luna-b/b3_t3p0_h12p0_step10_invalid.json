@@ -1,0 +1,189 @@
+{
+  "token": "t3p0_h12p0",
+  "thickness_mm": 3.0,
+  "arm_height_mm": 12.0,
+  "volume_mm3": 9342.656806724188,
+  "mass_g": 11.117761600001785,
+  "bbox_mm": [
+    0.0,
+    13.25,
+    5.25,
+    65.0,
+    26.75,
+    54.75
+  ],
+  "hand_root_stress_mpa": 14.25,
+  "hand_tip_deflection_mm": 1.5820118713450293,
+  "print_orientation": null,
+  "helper_mesh_series_z": [
+    [
+      4.0,
+      7326,
+      13.11,
+      10.88,
+      5.16
+    ],
+    [
+      3.5,
+      7941,
+      13.19,
+      10.83,
+      5.16
+    ],
+    [
+      3.0,
+      9743,
+      13.82,
+      10.91,
+      4.79
+    ]
+  ],
+  "helper_converged_z": false,
+  "orientation_table": {
+    "X": {
+      "peak_vm_mpa": 13.824261665344238,
+      "peak_vm_at_mm": [
+        10.0,
+        15.0,
+        51.9
+      ],
+      "layer_stress_mpa": 14.23153018951416,
+      "layer_stress_at_mm": [
+        10.0,
+        15.0,
+        51.9
+      ],
+      "layer_shear_mpa": 4.803256504781464,
+      "layer_shear_at_mm": [
+        3.23,
+        25.0,
+        38.15
+      ],
+      "sf_yield": 3.2551467188160643,
+      "sf_layer": 1.5809965408061373,
+      "sf_shear": 2.706497141482863,
+      "converged_all_three": false
+    },
+    "Y": {
+      "peak_vm_mpa": 13.824261665344238,
+      "peak_vm_at_mm": [
+        10.0,
+        15.0,
+        51.9
+      ],
+      "layer_stress_mpa": 3.056550979614258,
+      "layer_stress_at_mm": [
+        0.0,
+        19.9,
+        37.61
+      ],
+      "layer_shear_mpa": 0.9353683566291533,
+      "layer_shear_at_mm": [
+        3.0,
+        25.0,
+        38.32
+      ],
+      "sf_yield": 3.2551467188160643,
+      "sf_layer": 7.361238255165481,
+      "sf_shear": 13.898267893997323,
+      "converged_all_three": false
+    },
+    "Z": {
+      "peak_vm_mpa": 13.824261665344238,
+      "peak_vm_at_mm": [
+        10.0,
+        15.0,
+        51.9
+      ],
+      "layer_stress_mpa": 10.909923553466797,
+      "layer_stress_at_mm": [
+        0.0,
+        19.9,
+        37.61
+      ],
+      "layer_shear_mpa": 4.793924418155191,
+      "layer_shear_at_mm": [
+        3.23,
+        25.0,
+        38.15
+      ],
+      "sf_yield": 3.2551467188160643,
+      "sf_layer": 2.0623425901871033,
+      "sf_shear": 2.7117657405626536,
+      "converged_all_three": false
+    }
+  },
+  "series_by_axis": {
+    "X": [
+      [
+        13.114351272583008,
+        13.103675842285156,
+        5.157931964361306
+      ],
+      [
+        13.185595512390137,
+        13.319408416748047,
+        5.155736937493221
+      ],
+      [
+        13.824261665344238,
+        14.23153018951416,
+        4.803256504781464
+      ]
+    ],
+    "Y": [
+      [
+        13.114351272583008,
+        2.791243553161621,
+        0.9210086517271338
+      ],
+      [
+        13.185595512390137,
+        2.918354034423828,
+        0.863423163244564
+      ],
+      [
+        13.824261665344238,
+        3.056550979614258,
+        0.9353683566291533
+      ]
+    ],
+    "Z": [
+      [
+        13.114351272583008,
+        10.880721092224121,
+        5.1600707013644636
+      ],
+      [
+        13.185595512390137,
+        10.833253860473633,
+        5.1641433242027475
+      ],
+      [
+        13.824261665344238,
+        10.909923553466797,
+        4.793924418155191
+      ]
+    ]
+  },
+  "nodes": 9743,
+  "peak_vm_mpa": null,
+  "peak_vm_at_mm": null,
+  "root_roi_vm_mpa": 20.882619857788086,
+  "root_roi_at_mm": [
+    5.99,
+    20.0,
+    52.0
+  ],
+  "layer_stress_mpa": null,
+  "layer_shear_mpa": null,
+  "sf_yield": null,
+  "sf_layer": null,
+  "sf_shear": null,
+  "max_disp_mm": 2.779494047164917,
+  "reaction_n": 60.0,
+  "converged": false,
+  "verdict": "not shown",
+  "status": "complete",
+  "notes": "Fixed screw-hole walls, normal load on exact 100 mm2 patch; see REPORT.md for limitations."
+}

@@ -1,0 +1,43 @@
+{
+  "hand_root_stress_mpa": 11.0,
+  "el_mm": 2.5,
+  "nodes": 37705,
+  "peak_vm_mpa": 15.155476570129395,
+  "peak_at_mm": [
+    8.72,
+    32.58,
+    6.21
+  ],
+  "layer_stress_mpa": 9.940892219543457,
+  "sf_yield": 2.969223685693428,
+  "sf_layer": 2.263378326923791,
+  "max_disp_mm": 2.351161241531372,
+  "reaction_n": 150.0,
+  "converged": true,
+  "convergence_rows": [
+    [
+      4.0,
+      18675,
+      15.16,
+      9.75,
+      7.26
+    ],
+    [
+      3.0,
+      27174,
+      15.18,
+      9.92,
+      7.22
+    ],
+    [
+      2.5,
+      37705,
+      15.16,
+      9.94,
+      7.22
+    ]
+  ],
+  "verdict": "pass",
+  "status": "done",
+  "notes": "Layer shear along Z=7.216 MPa at [7.16, 26.48, 7.19]; support is fixed on the four \u00d85.5 screw-hole walls; peaks are reported at least 8 mm from fixture and load nodes. Alternate even front-face traction: vm=11.466 MPa, Z tension=0.321 MPa, Z shear=4.847 MPa. Controlling results use the higher of the bore remote and even traction on the full x=0 face (a broad-face sensitivity, not a localized bore load); direction table: {\"X\": {\"tension_mpa\": 12.499906539916992, \"tension_at_mm\": [14.09, 40.43, 0.0], \"shear_mpa\": 7.216171000252713, \"shear_at_mm\": [7.16, 26.48, 7.19], \"sf_tension\": 1.8000134583525786, \"sf_shear\": 1.8015094153872928}, \"Y\": {\"tension_mpa\": 4.698583126068115, \"tension_at_mm\": [14.84, 36.18, 0.0], \"shear_mpa\": 0.9736212576938182, \"shear_at_mm\": [7.46, 47.78, 0.0], \"sf_tension\": 4.788677649474413, \"sf_shear\": 13.352214628912924}, \"Z\": {\"tension_mpa\": 9.940892219543457, \"tension_at_mm\": [0.0, 28.79, 8.72], \"shear_mpa\": 7.216282722515181, \"shear_at_mm\": [7.16, 26.48, 7.19], \"sf_tension\": 2.263378326923791, \"sf_shear\": 1.8014815244751037}}. Layer Z peak at [0.0, 28.79, 8.72]; shear Z peak at [7.16, 26.48, 7.19]. Model SHA-256 after the job: c2ba5d702d2e7c0943491c2b4f6683ee78a20ad0539c1605210bbfa16fc3ee2a."
+}

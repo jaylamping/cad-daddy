@@ -1,0 +1,511 @@
+{
+  "T1": {
+    "volume_mm3": 32974.024167734795,
+    "hand_volume_mm3": 32974.02416773479,
+    "mass_g": 39.23908875960441,
+    "bbox_mm": [
+      0.0,
+      0.0,
+      0.0,
+      80.0,
+      50.0,
+      46.0
+    ],
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_volume_mm3": 32990.37726482318,
+    "status": "done",
+    "notes": "Model and export checked; motor-hole ligament is 2.8 mm, below the playbook one-hole-diameter guideline."
+  },
+  "T2": {
+    "status": "done",
+    "notes": "Counterbore floors and slot ends measured; edge-distance questions in report.",
+    "volume_mm3": 31642.999901677245,
+    "hand_volume_mm3": 31642.999901677274,
+    "counterbore_floor_z_mm": 3.0,
+    "bodies": 1
+  },
+  "T3": {
+    "status": "done",
+    "notes": "Conservative maxima from locally refined even motor-hole load; global element 3 mm, local hole-wall control 0.6 mm. Original rigid-bore study, washer support, and three print directions are in REPORT.md.",
+    "hand_root_stress_mpa": 11.0,
+    "el_mm": 3.0,
+    "nodes": 38052,
+    "peak_vm_mpa": 19.269800186157227,
+    "peak_at_mm": [
+      5.75,
+      15.71,
+      17.35
+    ],
+    "layer_stress_mpa": 16.313127517700195,
+    "sf_yield": 2.3352603330223674,
+    "sf_layer": 1.3792572868437936,
+    "max_disp_mm": 2.8351075649261475,
+    "reaction_n": [
+      -149.999,
+      0.006,
+      -0.004,
+      149.999
+    ],
+    "converged": true,
+    "convergence_rows": [
+      {
+        "study": "LOCAL100B",
+        "el": 3.0,
+        "nodes": 25889,
+        "peak": [
+          18.233478546142578,
+          [
+            6.0,
+            34.27,
+            17.21
+          ]
+        ],
+        "all": 22.614988327026367,
+        "dirs": {
+          "X": {
+            "tension": [
+              13.167673110961914,
+              [
+                16.05,
+                40.8,
+                0.0
+              ]
+            ],
+            "shear": [
+              6.912930187382309,
+              [
+                7.26,
+                36.76,
+                7.09
+              ]
+            ]
+          },
+          "Y": {
+            "tension": [
+              6.722625255584717,
+              [
+                5.48,
+                36.08,
+                18.74
+              ]
+            ],
+            "shear": [
+              5.974397658663279,
+              [
+                6.0,
+                15.37,
+                18.09
+              ]
+            ]
+          },
+          "Z": {
+            "tension": [
+              16.206443786621094,
+              [
+                0.1,
+                15.74,
+                17.12
+              ]
+            ],
+            "shear": [
+              6.91392647239817,
+              [
+                7.26,
+                36.76,
+                7.09
+              ]
+            ]
+          }
+        },
+        "motor_vm": [
+          18.233478546142578,
+          [
+            6.0,
+            34.27,
+            17.21
+          ]
+        ],
+        "motor_z": [
+          16.206443786621094,
+          [
+            0.1,
+            15.74,
+            17.12
+          ]
+        ],
+        "disp": 2.83491587638855,
+        "reaction": [
+          -150.0,
+          0.0,
+          0.0,
+          150.0
+        ]
+      },
+      {
+        "study": "LOCAL080B",
+        "el": 3.0,
+        "nodes": 29633,
+        "peak": [
+          18.973651885986328,
+          [
+            6.0,
+            15.71,
+            17.36
+          ]
+        ],
+        "all": 22.543216705322266,
+        "dirs": {
+          "X": {
+            "tension": [
+              13.088983535766602,
+              [
+                16.05,
+                40.8,
+                0.0
+              ]
+            ],
+            "shear": [
+              6.749387543367476,
+              [
+                7.05,
+                13.31,
+                7.3
+              ]
+            ]
+          },
+          "Y": {
+            "tension": [
+              8.03292465209961,
+              [
+                5.65,
+                13.89,
+                18.73
+              ]
+            ],
+            "shear": [
+              6.783586649364255,
+              [
+                6.0,
+                15.4,
+                18.06
+              ]
+            ]
+          },
+          "Z": {
+            "tension": [
+              16.081384658813477,
+              [
+                0.1,
+                34.28,
+                17.32
+              ]
+            ],
+            "shear": [
+              6.807372562481497,
+              [
+                6.0,
+                15.4,
+                18.06
+              ]
+            ]
+          }
+        },
+        "motor_vm": [
+          18.973651885986328,
+          [
+            6.0,
+            15.71,
+            17.36
+          ]
+        ],
+        "motor_z": [
+          16.081384658813477,
+          [
+            0.1,
+            34.28,
+            17.32
+          ]
+        ],
+        "disp": 2.834390163421631,
+        "reaction": [
+          -150.0,
+          0.0,
+          -0.0,
+          150.0
+        ]
+      },
+      {
+        "study": "LOCAL060B",
+        "el": 3.0,
+        "nodes": 38052,
+        "peak": [
+          19.269800186157227,
+          [
+            5.75,
+            15.71,
+            17.35
+          ]
+        ],
+        "all": 22.9178466796875,
+        "dirs": {
+          "X": {
+            "tension": [
+              13.08244800567627,
+              [
+                16.32,
+                11.73,
+                0.0
+              ]
+            ],
+            "shear": [
+              6.8928616834478005,
+              [
+                7.24,
+                39.73,
+                7.1
+              ]
+            ]
+          },
+          "Y": {
+            "tension": [
+              8.342044830322266,
+              [
+                5.74,
+                36.02,
+                18.74
+              ]
+            ],
+            "shear": [
+              6.778052993934589,
+              [
+                6.0,
+                34.46,
+                17.84
+              ]
+            ]
+          },
+          "Z": {
+            "tension": [
+              16.313127517700195,
+              [
+                0.36,
+                34.31,
+                17.43
+              ]
+            ],
+            "shear": [
+              6.88820538520642,
+              [
+                7.24,
+                39.73,
+                7.1
+              ]
+            ]
+          }
+        },
+        "motor_vm": [
+          19.269800186157227,
+          [
+            5.75,
+            15.71,
+            17.35
+          ]
+        ],
+        "motor_z": [
+          16.313127517700195,
+          [
+            0.36,
+            34.31,
+            17.43
+          ]
+        ],
+        "disp": 2.8351075649261475,
+        "reaction": [
+          -149.999,
+          0.006,
+          -0.004,
+          149.999
+        ]
+      }
+    ],
+    "verdict": "fail"
+  },
+  "T4": {
+    "status": "partial",
+    "notes": "Sharp corner is not converged; no support/load sensitivity proof.",
+    "convergence_rows": [
+      {
+        "el": 3.0,
+        "nodes": 23409,
+        "corner": [
+          10.759139060974121,
+          [
+            6.0,
+            36.76,
+            6.0
+          ]
+        ],
+        "away": [
+          14.384322166442871,
+          [
+            7.3,
+            31.62,
+            6.0
+          ]
+        ],
+        "layer": [
+          11.580413818359375,
+          [
+            0.0,
+            26.62,
+            7.81
+          ]
+        ],
+        "shear": [
+          5.608353946676202,
+          [
+            6.0,
+            36.76,
+            6.0
+          ]
+        ],
+        "disp": 2.622036933898926,
+        "reaction": [
+          -150.0,
+          0.0,
+          -0.0,
+          150.0
+        ]
+      },
+      {
+        "el": 2.2,
+        "nodes": 43671,
+        "corner": [
+          9.593530654907227,
+          [
+            6.0,
+            9.78,
+            6.0
+          ]
+        ],
+        "away": [
+          15.126686096191406,
+          [
+            6.95,
+            27.72,
+            6.0
+          ]
+        ],
+        "layer": [
+          11.389427185058594,
+          [
+            0.0,
+            25.0,
+            7.62
+          ]
+        ],
+        "shear": [
+          4.9810033798947275,
+          [
+            6.0,
+            27.17,
+            6.0
+          ]
+        ],
+        "disp": 2.639366626739502,
+        "reaction": [
+          -150.0,
+          0.0,
+          0.0,
+          150.0
+        ]
+      },
+      {
+        "el": 1.7,
+        "nodes": 86565,
+        "corner": [
+          13.599288940429688,
+          [
+            6.0,
+            9.48,
+            6.0
+          ]
+        ],
+        "away": [
+          16.249937057495117,
+          [
+            6.74,
+            27.16,
+            6.0
+          ]
+        ],
+        "layer": [
+          11.538763999938965,
+          [
+            0.0,
+            25.86,
+            7.36
+          ]
+        ],
+        "shear": [
+          7.173571549520906,
+          [
+            6.0,
+            9.48,
+            6.0
+          ]
+        ],
+        "disp": 2.646009922027588,
+        "reaction": [
+          -150.0,
+          0.0,
+          -0.0,
+          150.0
+        ]
+      }
+    ],
+    "converged": false,
+    "reported_stress_mpa": null,
+    "how_judged": "Sharp corner mesh-dependent; no finite converged corner stress or verdict established.",
+    "verdict": null
+  },
+  "T5": {
+    "status": "done",
+    "notes": "Pass for stated linear-static load case; conservative interlayer shear factor 2.017 is the thinnest margin. Rear pad clearance and physical printed material are unverified.",
+    "change": "Add a 2 mm rear pad at X6-8, Y10-40, Z12-44, preserve all holes and use layers stacked along Y.",
+    "mass_g": 40.53273889686392,
+    "mass_growth_pct": 3.2968404164148035,
+    "sf_yield": 2.903278323993514,
+    "sf_layer": 3.061802761583881,
+    "print_orientation": "Layers stacked along Y",
+    "verdict": "pass"
+  },
+  "T6": {
+    "status": "done",
+    "notes": "Valid for this idealized frictionless contact model and reported hole-surface von Mises measure; pressure itself not extracted. See independent section-force check and limitations.",
+    "hand_bearing_mpa": 1.6339869281045751,
+    "nodes": 73081,
+    "solver": "Intel direct sparse",
+    "how_pin_was_stabilised": "Two bonded soft PETG-independent pads, radius 2.5 mm and length 2 mm, modulus 0.5 MPa, outer faces fixed; pad force bound 1.78 N.",
+    "peak_contact_vm_mpa": 4.880360126495361,
+    "block_peak_at_mm": [
+      4.28,
+      -13.1,
+      12.78
+    ],
+    "pin_rise_mm": 0.1370787740777963,
+    "reaction_n": [
+      0.0,
+      0.0,
+      -500.0,
+      500.0
+    ],
+    "valid": true,
+    "why": "Three local meshes converge, reaction balances, tiny load remains in clearance with near-zero hole stress, pad force is below 1%, and pin section forces match the end loads within 1%."
+  },
+  "T7": {
+    "status": "done",
+    "notes": "Diagnoses are in REPORT.md."
+  }
+}

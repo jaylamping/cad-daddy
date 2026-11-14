@@ -1,0 +1,25 @@
+{
+  "watertight": true,
+  "shells": 1,
+  "stl_volume_mm3": 19036.107091615475,
+  "solidworks_volume_mm3": 19034.5852,
+  "volume_error_pct": 0.007995402050965512,
+  "bounds_mm": [
+    0.0,
+    0.0,
+    0.0,
+    65.0,
+    40.0,
+    60.0
+  ],
+  "solidworks_bounds_mm": [
+    0.0,
+    0.0,
+    0.0,
+    65.0,
+    40.0,
+    60.0
+  ],
+  "max_bbox_delta_mm": 0.0,
+  "triangles": 410
+}

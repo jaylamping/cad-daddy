@@ -1,0 +1,83 @@
+{
+  "plates": {
+    "P1": {
+      "volume_mm3": 17728.667078664457,
+      "hand_volume_mm3": 17728.66707866446,
+      "mass_g": 21.097113823610705,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_volume_mm3": 17711.589096420434,
+      "min_wall_mm": 0.9999999999999964,
+      "min_wall_feature": "outside to B counterbore",
+      "changed": true,
+      "why": "B phase 15\u00b0: prevent overlapping A holes and counterbores",
+      "counterbore_floor_z_mm": 3
+    },
+    "P2": {
+      "volume_mm3": 23947.182701069894,
+      "hand_volume_mm3": 23947.182701069894,
+      "mass_g": 28.497147414273176,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_volume_mm3": 23925.57258903759,
+      "min_wall_mm": 3,
+      "min_wall_feature": "counterbore floor",
+      "changed": true,
+      "why": "B phase 30\u00b0: avoid coincident A/B holes",
+      "counterbore_floor_z_mm": 3
+    },
+    "P3": {
+      "volume_mm3": 38698.26397062521,
+      "hand_volume_mm3": 38698.2639706252,
+      "mass_g": 46.050934125044,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_volume_mm3": 38662.241413007636,
+      "min_wall_mm": 1.0,
+      "min_wall_feature": "outside to B counterbore",
+      "changed": false,
+      "why": "",
+      "counterbore_floor_z_mm": 4
+    },
+    "P4": {
+      "volume_mm3": 9575.024629427304,
+      "hand_volume_mm3": 9575.02462942731,
+      "mass_g": 11.394279309018492,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_volume_mm3": 9569.564199255145,
+      "min_wall_mm": 1,
+      "min_wall_feature": "counterbore floor",
+      "changed": true,
+      "why": "B PCD 48 and phase 15\u00b0; depth 4: contain holes, separate rings, leave 1 mm floor",
+      "counterbore_floor_z_mm": 1
+    },
+    "P5": {
+      "volume_mm3": 62864.77696280544,
+      "hand_volume_mm3": 62864.776962805496,
+      "mass_g": 74.80908458573847,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_volume_mm3": 62817.75093487737,
+      "min_wall_mm": 2.5,
+      "min_wall_feature": "outside to B counterbore",
+      "changed": false,
+      "why": "",
+      "counterbore_floor_z_mm": 3
+    },
+    "P6": {
+      "volume_mm3": 20848.85763230166,
+      "hand_volume_mm3": 20848.857632301664,
+      "mass_g": 24.81014058243898,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_volume_mm3": 20827.264857738795,
+      "min_wall_mm": 2.0,
+      "min_wall_feature": "outside to B counterbore",
+      "changed": false,
+      "why": "",
+      "counterbore_floor_z_mm": 3
+    }
+  },
+  "errors": {}
+}
