@@ -1,0 +1,6 @@
+﻿import json
+from pathlib import Path
+p=Path('tools/solidworks/playbook/eval/terra-high-d');r=json.loads((p/'results.json').read_text(encoding='utf-8-sig'))
+a=json.loads((p/'d3_part1.json').read_text(encoding='utf-8'));b=json.loads((p/'d3_part2.json').read_text(encoding='utf-8'))
+r['D3']={'plates':a['plates'],'plates_b':b['plates'],'table_problems':[{'plate':'P1','problem':'A holes overlap counterbores by 0.7 mm','resolution':'B phase 15°'}, {'plate':'P2','problem':'A and B holes coincide','resolution':'B phase 30°'}, {'plate':'P4','problem':'B counterbores break outside by 3 mm; floor only 0.4 mm','resolution':'B PCD 48, phase 15°, depth 4 mm'}, {'plate':'P1_b','problem':'original B counterbore touches outside chamfer','resolution':'B PCD 58'}, {'plate':'P3_b','problem':'A moved to 70 PCD leaves 0.3 mm ligament; B counterbore touches chamfer','resolution':'A phase 22.5°, B PCD 82'}], 'one_script':True,'edited_not_rebuilt':True,'how_known':'native feature and sketch persistent references retained; d3_edit.log and d3_refine_p3.log','minutes':None,'edge_distance_questions':'see D3 report and d3_audit.log'}
+(p/'results.json').write_text(json.dumps(r,indent=2,ensure_ascii=False),encoding='utf-8')

@@ -1,0 +1,459 @@
+{
+  "run": "terra-high-d",
+  "model_id": "not exposed; session identifies Codex based on GPT-6",
+  "reasoning_effort": null,
+  "D1": {
+    "mass_g": 16.667,
+    "parts": 1,
+    "fasteners": [
+      "2 M5 screws and T-nuts",
+      "4 M3 screws, washers and nuts"
+    ],
+    "board_removal_steps": [
+      "Disconnect and support wire pairs",
+      "Hold each M3 nut below and remove its screw from above",
+      "Lift board with rail screws left in place"
+    ],
+    "open_area_share": {
+      "frame_windows": 0.549,
+      "straight_through_frame_and_rail": 0.412
+    },
+    "envelope_ok": false,
+    "sf_min": null,
+    "governing": "not shown for actual fasteners and all loading; rounded frame screening yield factor 20.0 at window corner under Z",
+    "print_orientation": "flat, layers normal Z",
+    "assumptions": [
+      "horizontal board",
+      "clear 6 mm footprints at board holes",
+      "wires exit +X",
+      "components below board fit 4 mm gap",
+      "M3 wrench access below outside rail"
+    ],
+    "questions": [
+      "actual component and connector footprint",
+      "neighboring torso clearance and wire bend radius",
+      "actual screw-head and wrench access",
+      "absolute envelope requirement"
+    ],
+    "ideas_tried": [
+      "single open frame with four posts",
+      "two separate support rails (concept only)"
+    ],
+    "minutes": 9.38
+  },
+  "D2": {
+    "spec_problems": [
+      {
+        "what": "43.5 opening fouls 44 inner ring",
+        "number": "0.25 mm radial overlap",
+        "built_instead": "45 mm opening"
+      },
+      {
+        "what": "counterbores overlap",
+        "number": "1 mm overlap on 5 mm centres",
+        "built_instead": "M3 centres at z 0 and 7"
+      },
+      {
+        "what": "insufficient material between specified seat and screw holes",
+        "number": "0.5 mm clearance hole and 0.2 mm insert",
+        "built_instead": "M3 centres at x ±30.5"
+      },
+      {
+        "what": "line-to-line fit and no closure allowance",
+        "number": "±0.15 mm printer tolerance",
+        "built_instead": "52.15 mm seat, 0.6 mm initial gap, axial seat clearance 0.3 mm"
+      }
+    ],
+    "seat_diameter_mm": 52.15,
+    "split_gap_mm": 0.6,
+    "fit_reasoning": "nominal 0.075 mm radial clearance; split can close but worst-case gap may leave no preload; fit and preload not demonstrated",
+    "clearances_mm": {
+      "inner_ring_radial": 0.5,
+      "seat_nominal_radial": 0.075,
+      "ring_axial_total": 0.3,
+      "seat_to_insert": 2.425
+    },
+    "hand_screw_load_n": 75,
+    "screw_load_n": {
+      "plus_y_section_range": [
+        74.35,
+        74.58
+      ],
+      "plus_x_axial_approx": [
+        12,
+        17
+      ]
+    },
+    "nodes": [
+      34670,
+      48395,
+      77077,
+      173388,
+      59527,
+      85899,
+      192137,
+      144770,
+      147434,
+      150166,
+      147087,
+      147680
+    ],
+    "how_bodies_were_held": "lower Y=-32 face fixed, ring temporarily supported by four soft fixed pads, upper half connected to lower by four idealized bonded steel screws",
+    "contact_proof": "bonded twin 71.3 times stiffer, screws near unloaded; unloaded ring side opens; X contact share not recovered",
+    "sf_yield": null,
+    "sf_layer": null,
+    "sf_shear": null,
+    "governing": "not shown: transition X lower shear/yield near seat, mesh convergence and preload not established",
+    "print_orientation": {
+      "upper": "candidate layers normal Y",
+      "lower": "candidate layers normal Y"
+    },
+    "valid": false,
+    "why": "No preload, contact force split incomplete and required convergence not shown; dimensional tolerance may leave no preload",
+    "minutes": 65.28
+  },
+  "D3": {
+    "plates": {
+      "P1": {
+        "volume_mm3": 17728.667078664457,
+        "hand_volume_mm3": 17728.66707866446,
+        "mass_g": 21.097113823610705,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 17711.589096420434,
+        "min_wall_mm": 0.9999999999999964,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": true,
+        "why": "B phase 15°: prevent overlapping A holes and counterbores",
+        "counterbore_floor_z_mm": 3
+      },
+      "P2": {
+        "volume_mm3": 23947.182701069894,
+        "hand_volume_mm3": 23947.182701069894,
+        "mass_g": 28.497147414273176,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 23925.57258903759,
+        "min_wall_mm": 3,
+        "min_wall_feature": "counterbore floor",
+        "changed": true,
+        "why": "B phase 30°: avoid coincident A/B holes",
+        "counterbore_floor_z_mm": 3
+      },
+      "P3": {
+        "volume_mm3": 38698.26397062521,
+        "hand_volume_mm3": 38698.2639706252,
+        "mass_g": 46.050934125044,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 38662.241413007636,
+        "min_wall_mm": 1.0,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": false,
+        "why": "",
+        "counterbore_floor_z_mm": 4
+      },
+      "P4": {
+        "volume_mm3": 9575.024629427304,
+        "hand_volume_mm3": 9575.02462942731,
+        "mass_g": 11.394279309018492,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 9569.564199255145,
+        "min_wall_mm": 1,
+        "min_wall_feature": "counterbore floor",
+        "changed": true,
+        "why": "B PCD 48 and phase 15°; depth 4: contain holes, separate rings, leave 1 mm floor",
+        "counterbore_floor_z_mm": 1
+      },
+      "P5": {
+        "volume_mm3": 62864.77696280544,
+        "hand_volume_mm3": 62864.776962805496,
+        "mass_g": 74.80908458573847,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 62817.75093487737,
+        "min_wall_mm": 2.5,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": false,
+        "why": "",
+        "counterbore_floor_z_mm": 3
+      },
+      "P6": {
+        "volume_mm3": 20848.85763230166,
+        "hand_volume_mm3": 20848.857632301664,
+        "mass_g": 24.81014058243898,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 20827.264857738795,
+        "min_wall_mm": 2.0,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": false,
+        "why": "",
+        "counterbore_floor_z_mm": 3
+      }
+    },
+    "plates_b": {
+      "P1": {
+        "volume_mm3": 21948.841794060223,
+        "hand_volume_mm3": 21948.84179406021,
+        "mass_g": 26.119121734931667,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 21927.704303974406,
+        "min_wall_mm": 1.0,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": true,
+        "why": "B phase 15°: prevent overlapping A holes and counterbores; B PCD 60→58 so the 1 mm chamfer does not meet the counterbore",
+        "counterbore_floor_z_mm": 3,
+        "feature_refs_stable": true,
+        "before_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        },
+        "after_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        }
+      },
+      "P2": {
+        "volume_mm3": 29648.453419018922,
+        "hand_volume_mm3": 29648.453419018926,
+        "mass_g": 35.28165956863252,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 29622.448500230996,
+        "min_wall_mm": 3.0,
+        "min_wall_feature": "counterbore floor",
+        "changed": true,
+        "why": "B phase 30°: avoid coincident A/B holes",
+        "counterbore_floor_z_mm": 3,
+        "feature_refs_stable": true,
+        "before_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        },
+        "after_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        }
+      },
+      "P3": {
+        "volume_mm3": 45640.09464960537,
+        "hand_volume_mm3": 45640.09464960542,
+        "mass_g": 54.311712633030396,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 45599.750611645715,
+        "min_wall_mm": 1.0,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": true,
+        "why": "A PCD 66→70 and phase 22.5° to avoid interference; B PCD 84→82 so chamfer retains 1 mm outside wall",
+        "counterbore_floor_z_mm": 4,
+        "feature_refs_stable": true,
+        "before_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        },
+        "after_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        }
+      },
+      "P4": {
+        "volume_mm3": 12292.48133083146,
+        "hand_volume_mm3": 12292.481330831462,
+        "mass_g": 14.628052783689439,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 12285.58532670608,
+        "min_wall_mm": 1.0,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": true,
+        "why": "B PCD 48 and phase 15°; depth 4: contain holes, separate rings, leave 1 mm floor",
+        "counterbore_floor_z_mm": 1,
+        "feature_refs_stable": true,
+        "before_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        },
+        "after_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        }
+      },
+      "P5": {
+        "volume_mm3": 74259.20261768177,
+        "hand_volume_mm3": 74259.20261768176,
+        "mass_g": 88.36845111504132,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 74203.12965347596,
+        "min_wall_mm": 1.5,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": true,
+        "why": "thickness +1.5, counterbore floor retained, top chamfer",
+        "counterbore_floor_z_mm": 3,
+        "feature_refs_stable": true,
+        "before_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        },
+        "after_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        }
+      },
+      "P6": {
+        "volume_mm3": 25865.426085382438,
+        "hand_volume_mm3": 25865.426085382427,
+        "mass_g": 30.779857041605105,
+        "bodies": 1,
+        "stl_watertight": true,
+        "stl_volume_mm3": 25839.02934556775,
+        "min_wall_mm": 1.0,
+        "min_wall_feature": "outside to B counterbore",
+        "changed": true,
+        "why": "thickness +1.5, counterbore floor retained, top chamfer",
+        "counterbore_floor_z_mm": 3,
+        "feature_refs_stable": true,
+        "before_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        },
+        "after_refs": {
+          "BASE": "384a000001000000fffeff00000000001e000000",
+          "BORE": "384a000001000000fffeff00000000002c000000",
+          "A_HOLES": "384a000001000000fffeff000000000039000000",
+          "B_HOLES": "384a000001000000fffeff000000000046000000",
+          "COUNTERBORE": "384a000001000000fffeff000000000055000000",
+          "BORE_SK": "384a000001000000fffeff00000000001f000000",
+          "A_HOLES_SK": "384a000001000000fffeff00000000002d000000",
+          "B_HOLES_SK": "384a000001000000fffeff00000000003a000000",
+          "COUNTERBORE_SK": "384a000001000000fffeff000000000049000000",
+          "COUNTERBORE_P": "384a000001000000fffeff000000000048000000"
+        }
+      }
+    },
+    "table_problems": [
+      {
+        "plate": "P1",
+        "problem": "A holes overlap counterbores by 0.7 mm",
+        "resolution": "B phase 15°"
+      },
+      {
+        "plate": "P2",
+        "problem": "A and B holes coincide",
+        "resolution": "B phase 30°"
+      },
+      {
+        "plate": "P4",
+        "problem": "B counterbores break outside by 3 mm; floor only 0.4 mm",
+        "resolution": "B PCD 48, phase 15°, depth 4 mm"
+      },
+      {
+        "plate": "P1_b",
+        "problem": "original B counterbore touches outside chamfer",
+        "resolution": "B PCD 58"
+      },
+      {
+        "plate": "P3_b",
+        "problem": "A moved to 70 PCD leaves 0.3 mm ligament; B counterbore touches chamfer",
+        "resolution": "A phase 22.5°, B PCD 82"
+      }
+    ],
+    "one_script": true,
+    "edited_not_rebuilt": true,
+    "how_known": "native feature and sketch persistent references retained; d3_edit.log and d3_refine_p3.log",
+    "minutes": 10.1,
+    "edge_distance_questions": "see D3 report and d3_audit.log"
+  }
+}
