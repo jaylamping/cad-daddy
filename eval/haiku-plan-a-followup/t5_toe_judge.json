@@ -1,0 +1,50 @@
+{
+ "verdict": "pass",
+ "need": 2.0,
+ "lowest_factor": 2.99,
+ "lowest_entry": "layer",
+ "rows": [
+  {
+   "entry": "vm",
+   "values": [
+    12.85,
+    13.25,
+    13.54
+   ],
+   "limit": 45.0,
+   "factor": 3.32,
+   "converged": true,
+   "last_step_pct": 2.2,
+   "factor_after_two_more_steps": 3.18,
+   "state": "pass"
+  },
+  {
+   "entry": "layer",
+   "values": [
+    7.28,
+    7.47,
+    7.52
+   ],
+   "limit": 22.5,
+   "factor": 2.99,
+   "converged": true,
+   "last_step_pct": 0.7,
+   "factor_after_two_more_steps": 2.95,
+   "state": "pass"
+  },
+  {
+   "entry": "shear",
+   "values": [
+    3.59,
+    3.92,
+    3.98
+   ],
+   "limit": 13.0,
+   "factor": 3.27,
+   "converged": true,
+   "last_step_pct": 1.5,
+   "factor_after_two_more_steps": 3.17,
+   "state": "pass"
+  }
+ ]
+}

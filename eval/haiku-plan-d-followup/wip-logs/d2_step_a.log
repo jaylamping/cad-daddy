@@ -1,0 +1,11 @@
+﻿nodes 160773 disp rows 160773 same order check: ids of disp col0 first 3 [1. 2. 3.] pos first [[-29.99999933   0.39999999   1.70000002]
+ [-28.80549431   0.39999999   1.20961061]
+ [-29.99999933  28.50000001   1.70000002]]
+ring       n= 10254 max |u| 0.5548 mm at node pos (12.12, -23.00, 7.00)
+upper_all  n= 77548 max |u| 0.2010 mm at node pos (-24.50, 0.40, -4.00)
+lower_all  n= 34933 max |u| 0.0528 mm at node pos (36.00, -0.40, 3.48)
+screw      n= 37934 max |u| 0.1607 mm at node pos (32.72, 31.50, 0.39)
+pad        n=   104 max |u| 0.4241 mm at node pos (0.41, -23.52, 2.97)
+ring tangential mean (mm) 0.38395092901195044 rotation rad 0.014767343423536555
+ring UX/UY/UZ mean [0.13584368 0.06787943 0.00854209]
+ring tangential min/max -0.14339546331516345 0.5547326071184164

@@ -1,0 +1,105 @@
+﻿15:22:13 SolidWorks pid 122608 free GB 22.3
+15:22:14 clock: R1 T5 toe job start: 0.0 min since the job began
+15:22:19 ok L volume change: 36000.0000 (expected 36000.0000)
+15:22:19 L: added 36000.00 mm3
+15:22:19 ok root edge: 1
+15:22:19 ROOT_R: R4.0 on 1 edges, volume change +171.68 mm3
+15:22:19 ok root fillet dv: 171.6815 (expected 171.6815)
+15:22:19 ok base corner edges: 2
+15:22:20 BASE_R5: R5.0 on 2 edges, volume change -64.38 mm3
+15:22:20 ok base rounds dv: 64.3806 (expected 64.3806)
+15:22:20 ok upright corner edges: 2
+15:22:20 TOP_R5: R5.0 on 2 edges, volume change -64.38 mm3
+15:22:20 ok upright rounds dv: 64.3806 (expected 64.3806)
+15:22:21 ok BASE_HOLES volume change: 570.1991 (expected 570.1991)
+15:22:21 BASE_HOLES: cut 570.20 mm3
+15:22:21 ok BORE volume change: 2280.7963 (expected 2280.7963)
+15:22:21 BORE: cut 2280.80 mm3
+15:22:22 ok MOTOR_HOLES volume change: 217.9009 (expected 217.9009)
+15:22:22 MOTOR_HOLES: cut 217.90 mm3
+15:22:22 ok rebuild errors: 0
+15:22:23 ok RIB_A volume change: 1359.9823 (expected 1359.9823)
+15:22:23 RIB_A: added 1359.98 mm3
+15:22:23 ok RIB_B volume change: 1359.9823 (expected 1359.9823)
+15:22:23 RIB_B: added 1359.98 mm3
+15:22:23 ok rebuild errors: 0
+15:22:24 ok rib toe edges: 4
+15:22:24 RIB_TOE_R: R2.0 on 4 edges, volume change +1.20 mm3
+15:22:24 toe radius built 2.0 volume change 1.2048109177849256 (hand for r 2.0: +1.20 mm3)
+15:22:24 ok rebuild errors: 0
+15:22:24 ok bracket_c2 volume: 35695.1936 (expected 35695.1900)
+15:22:24 ok box: 0.0000 (expected 0.0000)
+15:22:24 ok box: -0.0000 (expected 0.0000)
+15:22:24 ok box: 0.0000 (expected 0.0000)
+15:22:24 ok box: 80.0000 (expected 80.0000)
+15:22:24 ok box: 50.0000 (expected 50.0000)
+15:22:24 ok box: 46.0000 (expected 46.0000)
+15:22:24 ok base holes: 4
+15:22:24 ok bore: 1
+15:22:24 ok motor holes: 4
+15:22:24 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-a\_wip\sw-eval\haiku-plan-a\bracket_c2.stl 82284 bytes
+15:22:24 ok STL watertight: 1.0000 (expected 1.0000)
+15:22:24 ok STL shells: 1.0000 (expected 1.0000)
+15:22:24 ok STL volume: 35711.1914 (expected 35695.1936)
+15:22:24 ok STL box: 0.0000 (expected 0.0000)
+15:22:24 ok STL box: -0.0000 (expected -0.0000)
+15:22:24 ok STL box: 0.0000 (expected 0.0000)
+15:22:24 ok STL box: 80.0000 (expected 80.0000)
+15:22:24 ok STL box: 50.0000 (expected 50.0000)
+15:22:24 ok STL box: 46.0000 (expected 46.0000)
+15:22:26 [('<pad_2>-<PRESSPAD>', 38.48, [-1.0, 32.46, 13.54, 0.0, 39.46, 20.54]), ('<pad_3>-<PRESSPAD>', 38.48, [-1.0, 10.54, 35.46, 0.0, 17.54, 42.46]), ('<pad_4>-<PRESSPAD>', 38.48, [-1.0, 32.46, 35.46, 0.0, 39.46, 42.46]), ('RIB_TOE_R', 35695.19, [0.0, -0.0, 0.0, 80.0, 50.0, 46.0]), ('<pad_1>-<PRESSPAD>', 38.48, [-1.0, 10.54, 13.54, 0.0, 17.54, 20.54])]
+15:22:26 ok bodies in bracket_c2_ld.SLDPRT: 5
+15:22:26 ok bracket body is the same part: 35695.1900 (expected 35695.1936)
+15:22:26 PREDICT T5_TOE_30: nodes 45000, max displacement 0.9 mm, peak expected at rib toe radius on the base, about 12 to 16 MPa von Mises
+15:22:26 ok base hole walls: 4
+15:22:26 ok bore: 1
+15:22:26 ok motor holes: 4
+15:22:26 ok pad outer faces: 4
+15:22:27 ok root fillet: 1
+15:22:27 ok toe faces: 4
+15:22:27 T5_TOE_30: body "SolidBody 1(RIB_TOE_R)" is PETG printed
+15:22:27 T5_TOE_30: body "SolidBody 2(<pad_4>-<PRESSPAD>)" is Pressure pad
+15:22:27 T5_TOE_30: body "SolidBody 3(<pad_3>-<PRESSPAD>)" is Pressure pad
+15:22:27 T5_TOE_30: body "SolidBody 4(<pad_2>-<PRESSPAD>)" is Pressure pad
+15:22:27 T5_TOE_30: body "SolidBody 5(<pad_1>-<PRESSPAD>)" is Pressure pad
+15:22:29 T5_TOE_30: mesh rc 0, 45729 nodes, 28445 elements, free 22.0 GB
+15:22:34 T5_TOE_30: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+15:22:34 T5_TOE_30: load nodes 224, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+15:22:36 COMPARE T5_TOE_30: nodes 45729 (predicted 45000), max displacement 0.9037755727767944 (predicted 0.9)
+15:22:36 T5_TOE_30 {"study": "T5_TOE_30", "el": 3.0, "nodes": 45729, "D": 3.0, "table": {"X": {"vm": 12.85, "vm_at": [6.34, 3.5, 33.72], "sf_yield": 3.5, "layer": 7.55, "layer_at": [19.21, 12.37, 0.0], "sf_layer": 2.98, "shear": 6.19, "shear_at": [6.59, 46.5, 33.41], "sf_shear": 2.1}, "Y": {"vm": 12.85, "vm_at": [6.34, 3.5, 33.72], "sf_yield": 3.5, "layer": 7.28, "layer_at": [6.0, 35.96, 40.66], "sf_layer": 3.09, "shear": 3.59, "shear_at": [28.32, 4.75, 6.0], "sf_shear": 3.62}, "Z": {"vm": 12.85, "vm_at": [6.34, 3.5, 33.72], "sf_yield": 3.5, "layer": 3.92, "layer_at": [14.26, 46.5, 7.07], "sf_layer": 5.74, "shear": 6.2, "shear_at": [6.59, 46.5, 33.41], "sf_shear": 2.1}}, "rim_layer_z": 2.77, "rim_vm": 9.7, "vm_all": 16.58, "plateau": {"1": [12.85, 3.92], "2": [12.85, 3.92], "3": [12.85, 3.92], "5": [12.85, 3.92]}, "flat": [3.0, 45729, 12.85, 3.92, 6.2], "checks": {"reaction": [-150.004, -0.002, 0.004, 150.004], "applied": 150.0, "max_disp": 0.9037755727767944, "excessive": false, "top_ux": 0.7974535936617669, "sz_back_z12": 1.0992671619443333, "sx_bottom_x15": 3.7431947557549727, "nodes_in_checks": [34, 152]}, "compare_ok": true, "checks_full": {"reaction": [-150.004, -0.002, 0.004, 150.004], "applied": 150.0, "max_disp": 0.9037755727767944, "excessive": false, "top_ux": 0.7974535936617669, "sz_back_z12": 1.0992671619443333, "sx_bottom_x15": 3.7431947557549727, "nodes_in_checks": [34, 152]}}
+15:22:36 PREDICT T5_TOE_22: nodes 90000, max displacement 0.9 mm, peak expected at rib toe radius on the base, about 12 to 16 MPa von Mises
+15:22:37 ok base hole walls: 4
+15:22:37 ok bore: 1
+15:22:37 ok motor holes: 4
+15:22:37 ok pad outer faces: 4
+15:22:37 ok root fillet: 1
+15:22:37 ok toe faces: 4
+15:22:37 T5_TOE_22: body "SolidBody 1(RIB_TOE_R)" is PETG printed
+15:22:37 T5_TOE_22: body "SolidBody 2(<pad_4>-<PRESSPAD>)" is Pressure pad
+15:22:37 T5_TOE_22: body "SolidBody 3(<pad_3>-<PRESSPAD>)" is Pressure pad
+15:22:37 T5_TOE_22: body "SolidBody 4(<pad_2>-<PRESSPAD>)" is Pressure pad
+15:22:37 T5_TOE_22: body "SolidBody 5(<pad_1>-<PRESSPAD>)" is Pressure pad
+15:22:39 T5_TOE_22: mesh rc 0, 90202 nodes, 57865 elements, free 22.0 GB
+15:22:54 T5_TOE_22: fixture nodes 460, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+15:22:54 T5_TOE_22: load nodes 256, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+15:23:02 COMPARE T5_TOE_22: nodes 90202 (predicted 90000), max displacement 0.907181441783905 (predicted 0.9)
+15:23:02 T5_TOE_22 {"study": "T5_TOE_22", "el": 2.2, "nodes": 90202, "D": 3.0, "table": {"X": {"vm": 13.25, "vm_at": [6.34, 46.5, 33.72], "sf_yield": 3.4, "layer": 8.15, "layer_at": [18.99, 9.53, 0.0], "sf_layer": 2.76, "shear": 6.45, "shear_at": [6.34, 46.5, 33.72], "sf_shear": 2.01}, "Y": {"vm": 13.25, "vm_at": [6.34, 46.5, 33.72], "sf_yield": 3.4, "layer": 7.47, "layer_at": [6.0, 35.96, 40.66], "sf_layer": 3.01, "shear": 3.92, "shear_at": [0.0, 12.5, 16.32], "sf_shear": 3.31}, "Z": {"vm": 13.25, "vm_at": [6.34, 46.5, 33.72], "sf_yield": 3.4, "layer": 4.0, "layer_at": [13.23, 46.5, 6.82], "sf_layer": 5.63, "shear": 6.47, "shear_at": [6.34, 46.5, 33.72], "sf_shear": 2.01}}, "rim_layer_z": 2.69, "rim_vm": 11.27, "vm_all": 16.94, "plateau": {"1": [13.82, 4.0], "2": [13.25, 4.0], "3": [13.25, 4.0], "5": [13.25, 4.0]}, "flat": [2.2, 90202, 13.25, 4.0, 6.47], "checks": {"reaction": [-150.002, 0.001, -0.001, 150.002], "applied": 150.0, "max_disp": 0.907181441783905, "excessive": false, "top_ux": 0.7950936767008032, "sz_back_z12": 1.087285362037958, "sx_bottom_x15": 3.794564739653939, "nodes_in_checks": [51, 304]}, "compare_ok": true, "checks_full": {"reaction": [-150.002, 0.001, -0.001, 150.002], "applied": 150.0, "max_disp": 0.907181441783905, "excessive": false, "top_ux": 0.7950936767008032, "sz_back_z12": 1.087285362037958, "sx_bottom_x15": 3.794564739653939, "nodes_in_checks": [51, 304]}}
+15:23:02 PREDICT T5_TOE_16: nodes 195000, max displacement 0.9 mm, peak expected at rib toe radius on the base, about 12 to 16 MPa von Mises
+15:23:02 ok base hole walls: 4
+15:23:02 ok bore: 1
+15:23:02 ok motor holes: 4
+15:23:02 ok pad outer faces: 4
+15:23:02 ok root fillet: 1
+15:23:02 ok toe faces: 4
+15:23:02 T5_TOE_16: body "SolidBody 1(RIB_TOE_R)" is PETG printed
+15:23:02 T5_TOE_16: body "SolidBody 2(<pad_4>-<PRESSPAD>)" is Pressure pad
+15:23:02 T5_TOE_16: body "SolidBody 3(<pad_3>-<PRESSPAD>)" is Pressure pad
+15:23:02 T5_TOE_16: body "SolidBody 4(<pad_2>-<PRESSPAD>)" is Pressure pad
+15:23:02 T5_TOE_16: body "SolidBody 5(<pad_1>-<PRESSPAD>)" is Pressure pad
+15:23:06 T5_TOE_16: mesh rc 0, 194421 nodes, 128751 elements, free 21.9 GB
+15:24:02 T5_TOE_16: fixture nodes 776, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+15:24:02 T5_TOE_16: load nodes 312, box [-1.0, 10.54, 13.54] to [-1.0, 39.46, 42.46]
+15:24:34 COMPARE T5_TOE_16: nodes 194421 (predicted 195000), max displacement 0.9102852940559387 (predicted 0.9)
+15:24:34 T5_TOE_16 {"study": "T5_TOE_16", "el": 1.6, "nodes": 194421, "D": 3.0, "table": {"X": {"vm": 13.54, "vm_at": [6.27, 46.5, 33.83], "sf_yield": 3.32, "layer": 8.14, "layer_at": [19.08, 38.93, 0.0], "sf_layer": 2.76, "shear": 6.51, "shear_at": [6.13, 46.5, 33.73], "sf_shear": 2.0}, "Y": {"vm": 13.54, "vm_at": [6.27, 46.5, 33.83], "sf_yield": 3.32, "layer": 7.52, "layer_at": [5.76, 35.82, 40.65], "sf_layer": 2.99, "shear": 3.98, "shear_at": [26.86, 4.15, 6.0], "sf_shear": 3.26}, "Z": {"vm": 13.54, "vm_at": [6.27, 46.5, 33.83], "sf_yield": 3.32, "layer": 5.22, "layer_at": [16.88, 46.5, 6.0], "sf_layer": 4.31, "shear": 6.39, "shear_at": [6.13, 46.5, 33.73], "sf_shear": 2.04}}, "rim_layer_z": 3.04, "rim_vm": 8.51, "vm_all": 19.08, "plateau": {"1": [14.05, 5.22], "2": [13.54, 5.22], "3": [13.54, 5.22], "5": [13.54, 5.22]}, "flat": [1.6, 194421, 13.54, 5.22, 6.39], "checks": {"reaction": [-150.001, -0.003, -0.0, 150.001], "applied": 150.0, "max_disp": 0.9102852940559387, "excessive": false, "top_ux": 0.7996133739069888, "sz_back_z12": 1.0778910385237799, "sx_bottom_x15": 3.797935093925113, "nodes_in_checks": [81, 525]}, "compare_ok": true, "checks_full": {"reaction": [-150.001, -0.003, -0.0, 150.001], "applied": 150.0, "max_disp": 0.9102852940559387, "excessive": false, "top_ux": 0.7996133739069888, "sz_back_z12": 1.0778910385237799, "sx_bottom_x15": 3.797935093925113, "nodes_in_checks": [81, 525]}}
+15:24:34 clock: R1 T5 toe job end: 2.3 min since the job began
+15:24:34 closing pid 122608 committed MB 1730

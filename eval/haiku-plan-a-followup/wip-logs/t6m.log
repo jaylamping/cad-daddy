@@ -1,0 +1,64 @@
+15:25:21 SolidWorks pid 123876 free GB 22.3
+15:25:23 clock: R2b T6 matched-mesh job start: 3.1 min since the job began
+15:25:27 PREDICT T6M_12: nodes 45000, max displacement 0.13 mm, peak expected at top of the hole (x 0, z 15.1), pressure about 6.8 MPa, higher toward y +-15
+15:25:27 ok block bottom: 1
+15:25:27 ok hole: 1
+15:25:27 ok pin mid face: 1
+15:25:27 ok pin end a: 1
+15:25:27 ok pin end b: 1
+15:25:27 ok pad a outer: 1
+15:25:27 ok pad b outer: 1
+15:25:27 T6M_12: body "SolidBody 1(<pin_mid>-<PINMID>)" is Steel
+15:25:27 T6M_12: body "SolidBody 2(<pin_end_a>-<PINEND>)" is Steel
+15:25:27 T6M_12: body "SolidBody 3(HOLE)" is PETG printed
+15:25:27 T6M_12: body "SolidBody 4(<pin_end_b>-<PINEND>)" is Steel
+15:25:27 T6M_12: body "SolidBody 5(<pad_a>-<SOFTPAD>)" is Soft pad
+15:25:27 T6M_12: body "SolidBody 6(<pad_b>-<SOFTPAD>)" is Soft pad
+15:25:29 T6M_12: mesh rc 0, 42660 nodes, 27988 elements, free 22.0 GB
+15:25:29 T6M_12: solver macro: before  0  | set err  0   | after  7  | 
+15:25:58 T6M_12: fixture nodes 744, box [-20.0, -26.5, 0.0] to [20.0, 26.5, 11.5]
+15:25:58 T6M_12: load nodes 364, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+15:26:02 COMPARE T6M_12: nodes 42660 (predicted 45000), max displacement 0.1837167739868164 (predicted 0.13)
+15:26:02 {"study": "T6M_12", "nodes": 42660, "reaction": [0.0, -0.0, -499.999, 499.999], "applied": 500.0, "excessive": false, "pin_rise": 0.12924087739107748, "p_mid": [6.56, [0.15, -1.2, 15.1]], "p_mouth": [6.29, [-0.04, 12.4, 15.1]], "p_all": [6.74, [0.64, 11.11, 15.06]], "contact_vm": [5.538093090057373, [-2.6, 15.0, 15.78]], "block_vm": [5.538093090057373, [-2.6, 15.0, 15.78]], "block_vm_all": 5.54, "pin_vm": [33.91555404663086, [-0.0, 0.0, 5.0]], "lig_force": 1052.7889056056413, "crown_nodes": 152, "fz_block": -499.7974373695615, "fz_pads": -0.2012029640154651, "line_nodes": 27, "line_mean": 6.068, "line_max": 6.56, "checks": {"reaction_fz": true, "fz_block": true, "fz_pads": true, "pin_rise": true}}
+15:26:02 PREDICT T6M_08: nodes 84000, max displacement 0.13 mm, peak expected at top of the hole (x 0, z 15.1), pressure about 6.8 MPa, higher toward y +-15
+15:26:02 ok block bottom: 1
+15:26:02 ok hole: 1
+15:26:02 ok pin mid face: 1
+15:26:02 ok pin end a: 1
+15:26:02 ok pin end b: 1
+15:26:02 ok pad a outer: 1
+15:26:02 ok pad b outer: 1
+15:26:02 T6M_08: body "SolidBody 1(<pin_mid>-<PINMID>)" is Steel
+15:26:02 T6M_08: body "SolidBody 2(<pin_end_a>-<PINEND>)" is Steel
+15:26:02 T6M_08: body "SolidBody 3(HOLE)" is PETG printed
+15:26:02 T6M_08: body "SolidBody 4(<pin_end_b>-<PINEND>)" is Steel
+15:26:02 T6M_08: body "SolidBody 5(<pad_a>-<SOFTPAD>)" is Soft pad
+15:26:02 T6M_08: body "SolidBody 6(<pad_b>-<SOFTPAD>)" is Soft pad
+15:26:04 T6M_08: mesh rc 0, 92444 nodes, 61927 elements, free 22.0 GB
+15:26:04 T6M_08: solver macro: before  0  | set err  0   | after  7  | 
+15:27:57 T6M_08: fixture nodes 782, box [-20.0, -26.5, 0.0] to [20.0, 26.5, 11.5]
+15:27:57 T6M_08: load nodes 364, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+15:28:10 COMPARE T6M_08: nodes 92444 (predicted 84000), max displacement 0.1625123769044876 (predicted 0.13)
+15:28:10 {"study": "T6M_08", "nodes": 92444, "reaction": [0.0, -0.0, -499.999, 499.999], "applied": 500.0, "excessive": false, "pin_rise": 0.12953475348678054, "p_mid": [5.98, [0.15, -0.59, 15.1]], "p_mouth": [6.21, [-0.17, 12.13, 15.1]], "p_all": [6.21, [-0.17, 12.13, 15.1]], "contact_vm": [5.156650066375732, [-2.27, -15.0, 15.49]], "block_vm": [5.156650066375732, [-2.27, -15.0, 15.49]], "block_vm_all": 5.16, "pin_vm": [33.84207534790039, [-0.0, 0.4, 5.0]], "lig_force": 1430.0070469207317, "crown_nodes": 314, "fz_block": -499.797894072095, "fz_pads": -0.20128798239784373, "line_nodes": 81, "line_mean": 5.734, "line_max": 5.983, "checks": {"reaction_fz": true, "fz_block": true, "fz_pads": true, "pin_rise": true}}
+15:28:10 PREDICT T6M_06: nodes 138000, max displacement 0.13 mm, peak expected at top of the hole (x 0, z 15.1), pressure about 6.8 MPa, higher toward y +-15
+15:28:10 ok block bottom: 1
+15:28:10 ok hole: 1
+15:28:10 ok pin mid face: 1
+15:28:10 ok pin end a: 1
+15:28:10 ok pin end b: 1
+15:28:10 ok pad a outer: 1
+15:28:10 ok pad b outer: 1
+15:28:11 T6M_06: body "SolidBody 1(<pin_mid>-<PINMID>)" is Steel
+15:28:11 T6M_06: body "SolidBody 2(<pin_end_a>-<PINEND>)" is Steel
+15:28:11 T6M_06: body "SolidBody 3(HOLE)" is PETG printed
+15:28:11 T6M_06: body "SolidBody 4(<pin_end_b>-<PINEND>)" is Steel
+15:28:11 T6M_06: body "SolidBody 5(<pad_a>-<SOFTPAD>)" is Soft pad
+15:28:11 T6M_06: body "SolidBody 6(<pad_b>-<SOFTPAD>)" is Soft pad
+15:28:13 T6M_06: mesh rc 0, 164532 nodes, 111403 elements, free 22.1 GB
+15:28:13 T6M_06: solver macro: before  0  | set err  0   | after  7  | 
+15:33:51 T6M_06: fixture nodes 782, box [-20.0, -26.5, 0.0] to [20.0, 26.5, 11.5]
+15:33:51 T6M_06: load nodes 364, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+15:34:33 COMPARE T6M_06: nodes 164532 (predicted 138000), max displacement 0.1401844471693039 (predicted 0.13)
+15:34:33 {"study": "T6M_06", "nodes": 164532, "reaction": [-0.0, 0.0, -500.0, 500.0], "applied": 500.0, "excessive": false, "pin_rise": 0.129356878114324, "p_mid": [5.97, [-0.11, 0.45, 15.1]], "p_mouth": [5.92, [0.09, 12.21, 15.1]], "p_all": [5.98, [0.41, -10.05, 15.08]], "contact_vm": [5.229541778564453, [-2.29, -15.0, 16.16]], "block_vm": [5.229541778564453, [-2.29, -15.0, 16.16]], "block_vm_all": 5.23, "pin_vm": [33.83970260620117, [-0.0, -0.3, 5.0]], "lig_force": 1671.8547350135163, "crown_nodes": 600, "fz_block": -499.7991321342415, "fz_pads": -0.20129032753175125, "line_nodes": 107, "line_mean": 5.643, "line_max": 5.97, "checks": {"reaction_fz": true, "fz_block": true, "fz_pads": true, "pin_rise": true}}
+15:34:33 clock: R2b T6 matched-mesh job end: 12.3 min since the job began
+15:34:33 closing pid 123876 committed MB 1656

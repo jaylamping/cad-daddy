@@ -1,0 +1,41 @@
+rows present: True
+upper half, +X, vm       5.65 -> 5.90 -> 6.10   steps %: [4.4, 3.4]
+upper half, +X, layer    0.89 -> 0.90 -> 0.71   steps %: [1.1, -21.1]
+upper half, +X, shear    1.48 -> 1.37 -> 1.40   steps %: [-7.4, 2.2]
+lower half, +X, vm       5.17 -> 5.83 -> 6.49   steps %: [12.8, 11.3]
+lower half, +X, layer    1.04 -> 1.00 -> 1.43   steps %: [-3.8, 43.0]
+lower half, +X, shear    2.02 -> 2.43 -> 3.12   steps %: [20.3, 28.4]
+D2C_X_12 excluded vm upper 12.04 lower 6.51 at cs 1.2 nodes 122208 screw tension [41.3, 39.4, 48.1, 47.7]
+D2C_X_09 excluded vm upper 12.76 lower 6.54 at cs 0.9 nodes 151706 screw tension [41.4, 39.3, 47.8, 47.9]
+D2C_X_07 excluded vm upper 12.15 lower 6.49 at cs 0.7 nodes 195921 screw tension [41.3, 39.4, 48.0, 47.7]
+upper half, +Y, vm       4.60 -> 4.45 -> 4.59   steps %: [-3.3, 3.1]
+upper half, +Y, layer    0.91 -> 0.90 -> 0.74   steps %: [-1.1, -17.8]
+upper half, +Y, shear    1.31 -> 1.40 -> 1.81   steps %: [6.9, 29.3]
+lower half, +Y, vm       2.70 -> 2.66 -> 2.63   steps %: [-1.5, -1.1]
+lower half, +Y, layer    0.77 -> 0.70 -> 0.67   steps %: [-9.1, -4.3]
+lower half, +Y, shear    0.61 -> 0.58 -> 0.64   steps %: [-4.9, 10.3]
+D2C_Y_12 excluded vm upper 8.59 lower 5.39 at cs 1.2 nodes 122208 screw tension [76.1, 74.3, 75.1, 75.5]
+D2C_Y_09 excluded vm upper 9.27 lower 6.07 at cs 0.9 nodes 151706 screw tension [76.1, 74.3, 75.2, 75.4]
+D2C_Y_07 excluded vm upper 8.56 lower 5.97 at cs 0.7 nodes 195921 screw tension [76.1, 74.3, 75.1, 75.5]
+15:59:41 judge: margin, not converged; lowest factor 4.17 at "lower half, +X, shear"
+15:59:41 judge:   margin, not converged: "upper half, +X, layer" factor 31.69, last step 21.1 %, factor after two more 21.61
+15:59:41 judge:   margin, not converged: "lower half, +X, vm" factor 6.93, last step 11.3 %, factor after two more 5.6
+15:59:41 judge:   margin, not converged: "lower half, +X, layer" factor 15.73, last step 43.0 %, factor after two more 7.69
+15:59:41 judge:   margin, not converged: "lower half, +X, shear" factor 4.17, last step 28.4 %, factor after two more 2.53
+15:59:41 judge:   margin, not converged: "upper half, +Y, layer" factor 30.41, last step 17.8 %, factor after two more 30.41
+15:59:41 judge:   margin, not converged: "upper half, +Y, shear" factor 7.18, last step 29.3 %, factor after two more 4.3
+15:59:41 judge:   margin, not converged: "lower half, +Y, shear" factor 20.31, last step 10.3 %, factor after two more 16.68
+judge verdict margin, not converged lowest factor 4.17
+judge detail {"verdict": "margin, not converged", "need": 2.0, "lowest_factor": 4.17, "lowest_entry": "lower half, +X, shear", "rows": [{"entry": "upper half, +X, vm", "values": [5.65, 5.9, 6.1], "limit": 45.0, "factor": 7.38, "converged": true, "last_step_pct": 3.4, "factor_after_two_more_steps": 6.9, "state": "pass"}, {"entry": "upper half, +X, layer", "values": [0.89, 0.9, 0.71], "limit": 22.5, "factor": 31.69, "converged": false, "last_step_pct": 21.1, "factor_after_two_more_steps": 21.61, "state": "margin, not converged"}, {"entry": "upper half, +X, shear", "values": [1.48, 1.37, 1.4], "limit": 13.0, "factor": 9.29, "converged": true, "last_step_pct": 2.2, "factor_after_two_more_steps": 8.89, "state": "pass"}, {"entry": "lower half, +X, vm", "values": [5.17, 5.83, 6.49], "limit": 45.0, "factor": 6.93, "converged": false, "last_step_pct": 11.3, "factor_after_two_more_steps": 5.6, "state": "margin, not converged"}, {"entry": "lower half, +X, layer", "values": [1.04, 1.0, 1.43], "limit": 22.5, "factor": 15.73, "converged": false, "last_step_pct": 43.0, "factor_after_two_more_steps": 7.69, "state": "margin, not converged"}, {"entry": "lower half, +X, shear", "values": [2.02, 2.43, 3.12], "limit": 13.0, "factor": 4.17, "converged": false, "last_step_pct": 28.4, "factor_after_two_more_steps": 2.53, "state": "margin, not converged"}, {"entry": "upper half, +Y, vm", "values": [4.6, 4.45, 4.59], "limit": 45.0, "factor": 9.8, "converged": true, "last_step_pct": 3.1, "factor_after_two_more_steps": 9.21, "state": "pass"}, {"entry": "upper half, +Y, layer", "values": [0.91, 0.9, 0.74], "limit": 22.5, "factor": 30.41, "converged": false, "last_step_pct": 17.8, "factor_after_two_more_steps": 30.41, "state": "margin, not converged"}, {"entry": "upper half, +Y, shear", "values": [1.31, 1.4, 1.81], "limit": 13.0, "factor": 7.18, "converged": false, "last_step_pct": 29.3, "factor_after_two_more_steps": 4.3, "state": "margin, not converged"}, {"entry": "lower half, +Y, vm", "values": [2.7, 2.66, 2.63], "limit": 45.0, "factor": 17.11, "converged": true, "last_step_pct": 1.1, "factor_after_two_more_steps": 17.11, "state": "pass"}, {"entry": "lower half, +Y, layer", "values": [0.77, 0.7, 0.67], "limit": 22.5, "factor": 33.58, "converged": true, "last_step_pct": 4.3, "factor_after_two_more_steps": 33.58, "state": "pass"}, {"entry": "lower half, +Y, shear", "values": [0.61, 0.58, 0.64], "limit": 13.0, "factor": 20.31, "converged": false, "last_step_pct": 10.3, "factor_after_two_more_steps": 16.68, "state": "margin, not converged"}]}
+D2C_X_12 upper Z narrow {'vm': 5.65, 'vm_at': [-27.49, 27.39, 0.49], 'sf_yield': 7.97, 'layer': 0.89, 'layer_at': [-27.87, 28.82, 3.2], 'sf_layer': 25.26, 'shear': 1.48, 'shear_at': [-27.84, 27.38, 1.83], 'sf_shear': 8.79}
+D2C_X_12 upper Z wide   {'vm': 3.73, 'vm_at': [-28.44, 26.48, -0.67], 'sf_yield': 12.07, 'layer': 0.52, 'layer_at': [-31.55, 26.41, 7.7], 'sf_layer': 43.26, 'shear': 1.01, 'shear_at': [-31.28, 26.42, -1.12], 'sf_shear': 12.88}
+D2C_X_09 upper Z narrow {'vm': 5.9, 'vm_at': [-27.65, 27.48, 0.97], 'sf_yield': 7.63, 'layer': 0.9, 'layer_at': [-28.25, 29.13, 3.38], 'sf_layer': 25.0, 'shear': 1.37, 'shear_at': [-28.05, 27.37, -2.18], 'sf_shear': 9.47}
+D2C_X_09 upper Z wide   {'vm': 3.71, 'vm_at': [-28.81, 26.49, 8.21], 'sf_yield': 12.13, 'layer': 0.49, 'layer_at': [-31.37, 26.4, 8.01], 'sf_layer': 46.15, 'shear': 1.09, 'shear_at': [-28.81, 26.49, 8.21], 'sf_shear': 11.94}
+D2C_X_07 upper Z narrow {'vm': 6.1, 'vm_at': [-27.8, 27.46, 7.99], 'sf_yield': 7.38, 'layer': 0.71, 'layer_at': [-31.55, 27.11, 7.7], 'sf_layer': 31.89, 'shear': 1.4, 'shear_at': [-27.8, 27.46, 1.82], 'sf_shear': 9.31}
+D2C_X_07 upper Z wide   {'vm': 3.71, 'vm_at': [-28.44, 26.48, -0.67], 'sf_yield': 12.13, 'layer': 0.5, 'layer_at': [-31.64, 26.42, -0.44], 'sf_layer': 45.11, 'shear': 1.17, 'shear_at': [19.33, 17.89, -0.05], 'sf_shear': 11.1}
+D2C_Y_12 upper Z narrow {'vm': 4.6, 'vm_at': [27.34, 27.47, -0.01], 'sf_yield': 9.77, 'layer': 0.91, 'layer_at': [-27.87, 28.82, 3.2], 'sf_layer': 24.84, 'shear': 1.31, 'shear_at': [-18.06, 18.74, -0.15], 'sf_shear': 9.9}
+D2C_Y_12 upper Z wide   {'vm': 3.2, 'vm_at': [28.3, 26.42, 6.94], 'sf_yield': 14.06, 'layer': 0.62, 'layer_at': [28.38, 16.46, 0.51], 'sf_layer': 36.45, 'shear': 1.31, 'shear_at': [-18.06, 18.74, -0.15], 'sf_shear': 9.9}
+D2C_Y_09 upper Z narrow {'vm': 4.45, 'vm_at': [27.31, 27.4, 0.55], 'sf_yield': 10.12, 'layer': 0.9, 'layer_at': [-28.18, 28.76, 3.57], 'sf_layer': 25.01, 'shear': 1.4, 'shear_at': [20.39, 16.2, -0.15], 'sf_shear': 9.31}
+D2C_Y_09 upper Z wide   {'vm': 3.18, 'vm_at': [28.3, 26.42, 6.94], 'sf_yield': 14.16, 'layer': 0.61, 'layer_at': [28.38, 17.26, 0.51], 'sf_layer': 37.15, 'shear': 1.4, 'shear_at': [20.39, 16.2, -0.15], 'sf_shear': 9.31}
+D2C_Y_07 upper Z narrow {'vm': 4.59, 'vm_at': [-27.8, 27.46, 7.99], 'sf_yield': 9.8, 'layer': 0.74, 'layer_at': [-28.42, 28.79, 3.55], 'sf_layer': 30.4, 'shear': 1.81, 'shear_at': [-18.77, 18.04, 7.15], 'sf_shear': 7.19}
+D2C_Y_07 upper Z wide   {'vm': 3.54, 'vm_at': [-18.97, 18.32, 7.0], 'sf_yield': 12.71, 'layer': 0.71, 'layer_at': [-19.94, 16.74, -0.15], 'sf_layer': 31.74, 'shear': 1.81, 'shear_at': [-18.77, 18.04, 7.15], 'sf_shear': 7.19}

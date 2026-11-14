@@ -1,0 +1,93 @@
+15:49:18 SolidWorks pid 121796 free GB 22.5
+15:49:24 PREDICT D2C_Y_12: nodes 130000, max displacement 0.55 mm, peak expected at ring body turns 0.555 mm (step a); peak in the upper half near the screw heads
+15:49:24 ok mount face: 1
+15:49:24 ok upper seat: 1
+15:49:24 ok lower seat: 1
+15:49:25 ok ring outside: 1
+15:49:25 ok ring sides: 2
+15:49:25 ok pad inner faces: 4
+15:49:25 ok upper split faces: 2
+15:49:26 ok lower split faces: 2
+15:49:26 ok faces r 1.5: 4
+15:49:26 ok faces r 2.0: 8
+15:49:26 ok faces r 2.75: 4
+15:49:26 ok faces r 3.0: 4
+15:49:27 ok faces r 1.7: 4
+15:49:27 D2C_Y_12: body "SolidBody 1(<screw_2>-<PLUG>)" is Steel
+15:49:27 D2C_Y_12: body "SolidBody 2(<pad_2>-<SOFTPAD>)" is Soft pad
+15:49:27 D2C_Y_12: body "SolidBody 3(<ring>-<RINGBORE>)" is Steel
+15:49:27 D2C_Y_12: body "SolidBody 4(<screw_1>-<PLUG>)" is Steel
+15:49:27 D2C_Y_12: body "SolidBody 5(MOUNT)" is PETG printed
+15:49:27 D2C_Y_12: body "SolidBody 6(<pad_3>-<SOFTPAD>)" is Soft pad
+15:49:27 D2C_Y_12: body "SolidBody 7(<housing_upper>-<CBORE>)" is PETG printed
+15:49:27 D2C_Y_12: body "SolidBody 8(<pad_1>-<SOFTPAD>)" is Soft pad
+15:49:27 D2C_Y_12: body "SolidBody 9(<pad_4>-<SOFTPAD>)" is Soft pad
+15:49:27 D2C_Y_12: body "SolidBody 10(<screw_4>-<PLUG>)" is Steel
+15:49:27 D2C_Y_12: body "SolidBody 11(<screw_3>-<PLUG>)" is Steel
+15:49:31 D2C_Y_12: mesh rc 0, 122208 nodes, 77414 elements, free 22.1 GB
+15:49:31 D2C_Y_12: solver macro: before  0  | set err  0   | after  7  | 
+15:51:10 D2C_Y_12: fixture nodes 453, box [-36.0, -32.0, -4.0] to [36.0, 22.0, 11.0]
+15:51:10 D2C_Y_12: load nodes 1496, box [-26.0, -26.0, 0.0] to [26.0, 26.0, 7.0]
+15:51:33 D2C_Y_12 nodes 122208 screw nodes [456, 456, 461, 461]
+15:51:33 PREDICT D2C_Y_09: nodes 130000, max displacement 0.55 mm, peak expected at ring body turns 0.555 mm (step a); peak in the upper half near the screw heads
+15:51:34 ok mount face: 1
+15:51:34 ok upper seat: 1
+15:51:34 ok lower seat: 1
+15:51:34 ok ring outside: 1
+15:51:35 ok ring sides: 2
+15:51:35 ok pad inner faces: 4
+15:51:35 ok upper split faces: 2
+15:51:35 ok lower split faces: 2
+15:51:36 ok faces r 1.5: 4
+15:51:36 ok faces r 2.0: 8
+15:51:36 ok faces r 2.75: 4
+15:51:36 ok faces r 3.0: 4
+15:51:36 ok faces r 1.7: 4
+15:51:36 D2C_Y_09: body "SolidBody 1(MOUNT)" is PETG printed
+15:51:36 D2C_Y_09: body "SolidBody 2(<ring>-<RINGBORE>)" is Steel
+15:51:36 D2C_Y_09: body "SolidBody 3(<screw_1>-<PLUG>)" is Steel
+15:51:37 D2C_Y_09: body "SolidBody 4(<pad_3>-<SOFTPAD>)" is Soft pad
+15:51:37 D2C_Y_09: body "SolidBody 5(<housing_upper>-<CBORE>)" is PETG printed
+15:51:37 D2C_Y_09: body "SolidBody 6(<pad_1>-<SOFTPAD>)" is Soft pad
+15:51:37 D2C_Y_09: body "SolidBody 7(<pad_4>-<SOFTPAD>)" is Soft pad
+15:51:37 D2C_Y_09: body "SolidBody 8(<screw_4>-<PLUG>)" is Steel
+15:51:37 D2C_Y_09: body "SolidBody 9(<screw_3>-<PLUG>)" is Steel
+15:51:37 D2C_Y_09: body "SolidBody 10(<screw_2>-<PLUG>)" is Steel
+15:51:37 D2C_Y_09: body "SolidBody 11(<pad_2>-<SOFTPAD>)" is Soft pad
+15:51:41 D2C_Y_09: mesh rc 0, 151706 nodes, 96358 elements, free 22.2 GB
+15:51:41 D2C_Y_09: solver macro: before  0  | set err  0   | after  7  | 
+15:53:59 D2C_Y_09: fixture nodes 453, box [-36.0, -32.0, -4.0] to [36.0, 22.0, 11.0]
+15:53:59 D2C_Y_09: load nodes 2978, box [-26.0, -26.0, 0.0] to [26.0, 26.0, 7.0]
+15:54:36 D2C_Y_09 nodes 151706 screw nodes [456, 456, 461, 461]
+15:54:36 PREDICT D2C_Y_07: nodes 130000, max displacement 0.55 mm, peak expected at ring body turns 0.555 mm (step a); peak in the upper half near the screw heads
+15:54:36 ok mount face: 1
+15:54:36 ok upper seat: 1
+15:54:36 ok lower seat: 1
+15:54:37 ok ring outside: 1
+15:54:37 ok ring sides: 2
+15:54:37 ok pad inner faces: 4
+15:54:37 ok upper split faces: 2
+15:54:38 ok lower split faces: 2
+15:54:38 ok faces r 1.5: 4
+15:54:38 ok faces r 2.0: 8
+15:54:38 ok faces r 2.75: 4
+15:54:38 ok faces r 3.0: 4
+15:54:39 ok faces r 1.7: 4
+15:54:39 D2C_Y_07: body "SolidBody 1(<housing_upper>-<CBORE>)" is PETG printed
+15:54:39 D2C_Y_07: body "SolidBody 2(<pad_1>-<SOFTPAD>)" is Soft pad
+15:54:39 D2C_Y_07: body "SolidBody 3(<pad_4>-<SOFTPAD>)" is Soft pad
+15:54:39 D2C_Y_07: body "SolidBody 4(<screw_4>-<PLUG>)" is Steel
+15:54:39 D2C_Y_07: body "SolidBody 5(<screw_3>-<PLUG>)" is Steel
+15:54:39 D2C_Y_07: body "SolidBody 6(<screw_2>-<PLUG>)" is Steel
+15:54:39 D2C_Y_07: body "SolidBody 7(<pad_2>-<SOFTPAD>)" is Soft pad
+15:54:39 D2C_Y_07: body "SolidBody 8(MOUNT)" is PETG printed
+15:54:39 D2C_Y_07: body "SolidBody 9(<ring>-<RINGBORE>)" is Steel
+15:54:39 D2C_Y_07: body "SolidBody 10(<screw_1>-<PLUG>)" is Steel
+15:54:39 D2C_Y_07: body "SolidBody 11(<pad_3>-<SOFTPAD>)" is Soft pad
+15:54:44 D2C_Y_07: mesh rc 0, 195921 nodes, 124866 elements, free 22.2 GB
+15:54:44 D2C_Y_07: solver macro: before  0  | set err  0   | after  7  | 
+15:58:27 D2C_Y_07: fixture nodes 453, box [-36.0, -32.0, -4.0] to [36.0, 22.0, 11.0]
+15:58:27 D2C_Y_07: load nodes 3814, box [-26.0, -26.0, 0.0] to [26.0, 26.0, 7.0]
+15:59:26 D2C_Y_07 nodes 195921 screw nodes [456, 456, 461, 461]
+15:59:27 D2 convergence job Y done at 10.2 min
+15:59:27 closing pid 121796 committed MB 1748
