@@ -43,8 +43,9 @@ catches it is a number written down beforehand. Same for modelling: `expect_dv` 
 5. **Every print direction the part could be made in is read from the same result,** as a table of the three measures.
    Whether or not a direction was given: if another one is better, say so and by how much.
 6. Convergence followed the governing measure, not only von Mises (`converge(..., layers=normal)`), over three sizes.
-   **A verdict of pass needs every one of the three measures converged.** If one still moves by more than 5 % at the
-   last refinement, the verdict is "not shown" or "margin, not converged" (`judge()` below says which), never pass
+   **A verdict of pass needs every one of the three measures settled.** If one still moves at the last refinement
+   (by more than 5 % of itself and by more than the floor `judge()` allows small stresses), the verdict is "not
+   shown" or "margin, not converged" (`judge()` below says which), never pass
    on the finest value. The measure is climbing at a sharp
    edge: give that edge the radius the printed part will have (0.4 mm if nothing says otherwise, or the fillet the
    neighbouring edges have), solve again, and judge that. On the second benchmark set this was the one place the
@@ -55,6 +56,11 @@ catches it is a number written down beforehand. Same for modelling: `expect_dv` 
    [05-fea.md](05-fea.md) "Contact between bodies": reverse a tiny load where faces sit line to line, a tiny load in the
    working direction where the body has clearance on both sides), the share
    the pads carry, and the contact force summed from the results against the applied load.
+9. **A peak that climbs with growing steps on a seat or bore where another body's sharp corner bears is a
+   contact-edge peak, not a stress of the part.** Give the corner its real radius or chamfer (0.4 mm if nothing says
+   otherwise) and solve again. Until then report the value 1 mm away from it beside the peak. A finer mesh does not
+   settle it. Measured on the split housing (2026-11-14): shear 2.02, 2.43, 3.12 MPa where a steel ring's corner sat
+   0.15 mm from the seat's rim, and 0.61, 0.65, 0.63 MPa 1 mm in.
 
 ## The verdict comes from `judge()`, not from reading the table
 
@@ -78,18 +84,39 @@ above).
 
 | Verdict | Means | Write in the report |
 | --- | --- | --- |
-| `pass` | every entry converged, all at or over the factor | the lowest factor and where |
+| `pass` | every entry settled, all at or over the factor | the lowest factor and where |
 | `fail` | an entry is under the factor | which, where, and the cheapest change that would fix it |
-| `margin, not converged` | nothing is under the factor and an entry still moves, but it would still hold after two more steps of the same size | the lowest factor, which entry moves and by how much. It is not a pass and not a fail: say both halves |
-| `not shown` | an entry still moves and the margin does not cover it, or it has fewer than three sizes | what was tried and what would settle it |
+| `margin, not converged` | nothing is under the factor and an entry still moves, its last step is no larger than the one before, and it would still hold after two more steps of that size | the lowest factor, which entry moves and by how much. It is not a pass and not a fail: say both halves |
+| `not shown` | an entry still moves and its step is growing; or the margin does not cover the movement; or it has fewer than three sizes | what was tried and what would settle it. For a growing step: where the peak is, and what is there |
 
-"Two more steps": the entry is taken as rising twice more by the share it moved at the last refinement. Measured
-on the ribbed bracket (2026-11-14): von Mises 10.68, 11.06, 12.51 MPa is up 13.1 % at the last step, so it is taken
-at 12.51 x 1.131 x 1.131 = 16.0 MPa, factor 2.81 against the 3.60 it reads now: `margin, not converged`. The same
-part printed another way has shear at 4.86, 5.59, 6.11 MPa, factor 2.13 now and 1.78 after two more steps: `not
-shown`. Only an entry that fell at every step is taken at its finest value; one that has gone up and down (contact
-pressure does: 6.52, 5.96, 6.77) is taken as rising even when its last step was down. `judge()` logs every entry
-that is not a pass with these numbers; the rows are in what it returns.
+**Settled** means the last step is 5 % or less of the value before it, or the last change is 5 % or less of
+limit / need in MPa (1.1 MPa of von Mises against 45, 0.56 of layer tension against 22.5, 0.33 of shear against 13,
+at a factor of 2). The second half is a floor for small stresses: layer tension going from 0.90 to 0.71 MPa moves
+21 % of itself and nothing of the verdict. The floor is for the verdict only. A number that has to be known to 5 %
+(a contact pressure to report) is still checked against itself.
+
+**Two more steps**: a moving entry is taken as rising twice more by the share it moved at the last refinement.
+Von Mises at 9.0, 10.2, 11.5 MPa is up 13.3 % and then 12.7 %, so it is taken at 11.5 x 1.127 x 1.127 = 14.6 MPa,
+factor 3.08 against the 3.91 it reads now: `margin, not converged`. Shear at 4.86, 5.59, 6.11 MPa (the ribbed
+bracket printed with layers along X, 2026-11-14) is at 2.13 now and 1.78 after two more steps: `not shown`. Only an entry
+that fell at every step is taken at its finest value; one that has gone up and down is taken as rising even when
+its last step was down.
+
+**A growing step is never a margin.** When the last step is larger than the one before, two more steps of the last
+size is not a fair reading: the series itself says the next will be larger, and three values give no rate. `judge()`
+then says `not shown` whatever the factor, sets `step_growing` in the entry's row, and its log line says to find
+where the peak is. Two cases, both 2026-11-14:
+
+- The ribbed bracket, von Mises 10.68, 11.06, 12.51 MPa (3.6 %, then 13.1 %), factor 3.60. The peak was on a sharp
+  rib toe. With the toes rounded to 2 mm it read 12.85, 13.25, 13.54 MPa and passed at 2.99 on layer tension.
+- The split housing, shear 2.02, 2.43, 3.12 MPa (20 %, then 28 %), factor 4.17. Taken on with steps of the same
+  size it reads 2.53, with steps growing as they did 1.92. The peak was the corner of the steel ring on the rim of
+  its seat (step 9 above).
+
+A growing step is the mark of a peak the mesh has only begun to see: a sharp edge, or the edge of a contact. Do not
+refine again. Find the peak, round the edge or read 1 mm away from it, and judge that.
+
+`judge()` logs every entry that is not a pass with these numbers; the rows are in what it returns.
 
 A result is **valid** when the model is right: the reaction matches the load, the contact proof holds, the hand value
 is within its tolerance. Convergence is a separate question. A valid result that has not converged is reported as

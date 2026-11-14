@@ -1,6 +1,6 @@
 {
  "T5 ribs, layers along Y": {
-  "verdict": "margin, not converged",
+  "verdict": "not shown",
   "need": 2.0,
   "lowest_factor": 3.02,
   "lowest_entry": "layers along Y, layer",
@@ -16,8 +16,12 @@
     "factor": 3.6,
     "converged": false,
     "last_step_pct": 13.1,
+    "step_before_pct": 3.6,
+    "last_change_mpa": 1.45,
+    "settled_under_mpa": 1.125,
+    "step_growing": true,
     "factor_after_two_more_steps": 2.81,
-    "state": "margin, not converged"
+    "state": "not shown"
    },
    {
     "entry": "layers along Y, layer",
@@ -30,6 +34,10 @@
     "factor": 3.02,
     "converged": true,
     "last_step_pct": 4.1,
+    "step_before_pct": 1.4,
+    "last_change_mpa": 0.29,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
     "factor_after_two_more_steps": 2.79,
     "state": "pass"
    },
@@ -44,6 +52,10 @@
     "factor": 3.24,
     "converged": true,
     "last_step_pct": 2.0,
+    "step_before_pct": 1.7,
+    "last_change_mpa": 0.08,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
     "factor_after_two_more_steps": 3.11,
     "state": "pass"
    }
@@ -66,8 +78,12 @@
     "factor": 3.6,
     "converged": false,
     "last_step_pct": 13.1,
+    "step_before_pct": 3.6,
+    "last_change_mpa": 1.45,
+    "settled_under_mpa": 1.125,
+    "step_growing": true,
     "factor_after_two_more_steps": 2.81,
-    "state": "margin, not converged"
+    "state": "not shown"
    },
    {
     "entry": "layers along X, layer",
@@ -80,6 +96,10 @@
     "factor": 2.73,
     "converged": true,
     "last_step_pct": 0.0,
+    "step_before_pct": 10.3,
+    "last_change_mpa": 0.0,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
     "factor_after_two_more_steps": 2.73,
     "state": "pass"
    },
@@ -94,6 +114,10 @@
     "factor": 2.13,
     "converged": false,
     "last_step_pct": 9.3,
+    "step_before_pct": 15.0,
+    "last_change_mpa": 0.52,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
     "factor_after_two_more_steps": 1.78,
     "state": "not shown"
    }
@@ -116,8 +140,12 @@
     "factor": 3.6,
     "converged": false,
     "last_step_pct": 13.1,
+    "step_before_pct": 3.6,
+    "last_change_mpa": 1.45,
+    "settled_under_mpa": 1.125,
+    "step_growing": true,
     "factor_after_two_more_steps": 2.81,
-    "state": "margin, not converged"
+    "state": "not shown"
    },
    {
     "entry": "layers along Z, layer",
@@ -128,10 +156,14 @@
     ],
     "limit": 22.5,
     "factor": 5.09,
-    "converged": false,
+    "converged": true,
     "last_step_pct": 7.0,
+    "step_before_pct": 5.9,
+    "last_change_mpa": 0.29,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
     "factor_after_two_more_steps": 4.44,
-    "state": "margin, not converged"
+    "state": "pass"
    },
    {
     "entry": "layers along Z, shear",
@@ -144,13 +176,17 @@
     "factor": 2.15,
     "converged": false,
     "last_step_pct": 8.8,
+    "step_before_pct": 14.2,
+    "last_change_mpa": 0.49,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
     "factor_after_two_more_steps": 1.82,
     "state": "not shown"
    }
   ]
  },
  "T6 pin in a hole": {
-  "verdict": "margin, not converged",
+  "verdict": "pass",
   "need": 2.0,
   "lowest_factor": 6.65,
   "lowest_entry": "pressure mid-length",
@@ -164,10 +200,14 @@
     ],
     "limit": 45.0,
     "factor": 6.65,
-    "converged": false,
+    "converged": true,
     "last_step_pct": 13.6,
+    "step_before_pct": 8.6,
+    "last_change_mpa": 0.81,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 5.15,
-    "state": "margin, not converged"
+    "state": "pass"
    },
    {
     "entry": "pressure at the mouth",
@@ -180,6 +220,10 @@
     "factor": 7.51,
     "converged": true,
     "last_step_pct": 3.9,
+    "step_before_pct": 1.0,
+    "last_change_mpa": 0.24,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 7.51,
     "state": "pass"
    },
@@ -192,10 +236,14 @@
     ],
     "limit": 45.0,
     "factor": 6.65,
-    "converged": false,
+    "converged": true,
     "last_step_pct": 8.7,
+    "step_before_pct": 7.2,
+    "last_change_mpa": 0.54,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 5.63,
-    "state": "margin, not converged"
+    "state": "pass"
    },
    {
     "entry": "block von Mises",
@@ -208,6 +256,10 @@
     "factor": 8.44,
     "converged": true,
     "last_step_pct": 3.3,
+    "step_before_pct": 6.9,
+    "last_change_mpa": 0.17,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 7.91,
     "state": "pass"
    }
@@ -228,6 +280,10 @@
     "factor": 9.85,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 9.85,
     "state": "not shown"
    },
@@ -240,6 +296,10 @@
     "factor": 25.86,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
     "factor_after_two_more_steps": 25.86,
     "state": "not shown"
    },
@@ -252,6 +312,10 @@
     "factor": 11.01,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
     "factor_after_two_more_steps": 11.01,
     "state": "not shown"
    },
@@ -264,6 +328,10 @@
     "factor": 7.34,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 7.34,
     "state": "not shown"
    },
@@ -276,6 +344,10 @@
     "factor": 29.61,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
     "factor_after_two_more_steps": 29.61,
     "state": "not shown"
    },
@@ -288,6 +360,10 @@
     "factor": 9.21,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
     "factor_after_two_more_steps": 9.21,
     "state": "not shown"
    },
@@ -300,6 +376,10 @@
     "factor": 17.18,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 17.18,
     "state": "not shown"
    },
@@ -312,6 +392,10 @@
     "factor": 34.09,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
     "factor_after_two_more_steps": 34.09,
     "state": "not shown"
    },
@@ -324,6 +408,10 @@
     "factor": 21.3,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
     "factor_after_two_more_steps": 21.3,
     "state": "not shown"
    },
@@ -336,6 +424,10 @@
     "factor": 8.77,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
     "factor_after_two_more_steps": 8.77,
     "state": "not shown"
    },
@@ -348,6 +440,10 @@
     "factor": 21.03,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
     "factor_after_two_more_steps": 21.03,
     "state": "not shown"
    },
@@ -360,7 +456,297 @@
     "factor": 5.83,
     "converged": false,
     "last_step_pct": null,
+    "step_before_pct": null,
+    "last_change_mpa": null,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
     "factor_after_two_more_steps": 5.83,
+    "state": "not shown"
+   }
+  ]
+ },
+ "T5 rounded toes, layers along Y": {
+  "verdict": "pass",
+  "need": 2.0,
+  "lowest_factor": 2.99,
+  "lowest_entry": "layers along Y, layer",
+  "rows": [
+   {
+    "entry": "layers along Y, vm",
+    "values": [
+     12.85,
+     13.25,
+     13.54
+    ],
+    "limit": 45.0,
+    "factor": 3.32,
+    "converged": true,
+    "last_step_pct": 2.2,
+    "step_before_pct": 3.1,
+    "last_change_mpa": 0.29,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
+    "factor_after_two_more_steps": 3.18,
+    "state": "pass"
+   },
+   {
+    "entry": "layers along Y, layer",
+    "values": [
+     7.28,
+     7.47,
+     7.52
+    ],
+    "limit": 22.5,
+    "factor": 2.99,
+    "converged": true,
+    "last_step_pct": 0.7,
+    "step_before_pct": 2.6,
+    "last_change_mpa": 0.05,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
+    "factor_after_two_more_steps": 2.95,
+    "state": "pass"
+   },
+   {
+    "entry": "layers along Y, shear",
+    "values": [
+     3.59,
+     3.92,
+     3.98
+    ],
+    "limit": 12.99038105676658,
+    "factor": 3.26,
+    "converged": true,
+    "last_step_pct": 1.5,
+    "step_before_pct": 9.2,
+    "last_change_mpa": 0.06,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
+    "factor_after_two_more_steps": 3.17,
+    "state": "pass"
+   }
+  ]
+ },
+ "D2 housing, three sizes": {
+  "verdict": "not shown",
+  "need": 2.0,
+  "lowest_factor": 4.16,
+  "lowest_entry": "lower half, +X, shear",
+  "rows": [
+   {
+    "entry": "upper half, +Y, vm",
+    "values": [
+     4.6,
+     4.45,
+     4.59
+    ],
+    "limit": 45.0,
+    "factor": 9.8,
+    "converged": true,
+    "last_step_pct": 3.1,
+    "step_before_pct": 3.3,
+    "last_change_mpa": 0.14,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
+    "factor_after_two_more_steps": 9.21,
+    "state": "pass"
+   },
+   {
+    "entry": "upper half, +Y, layer",
+    "values": [
+     0.91,
+     0.9,
+     0.74
+    ],
+    "limit": 22.5,
+    "factor": 30.41,
+    "converged": true,
+    "last_step_pct": 17.8,
+    "step_before_pct": 1.1,
+    "last_change_mpa": 0.16,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
+    "factor_after_two_more_steps": 30.41,
+    "state": "pass"
+   },
+   {
+    "entry": "upper half, +Y, shear",
+    "values": [
+     1.31,
+     1.4,
+     1.81
+    ],
+    "limit": 12.99038105676658,
+    "factor": 7.18,
+    "converged": false,
+    "last_step_pct": 29.3,
+    "step_before_pct": 6.9,
+    "last_change_mpa": 0.41,
+    "settled_under_mpa": 0.325,
+    "step_growing": true,
+    "factor_after_two_more_steps": 4.29,
+    "state": "not shown"
+   },
+   {
+    "entry": "upper half, +X, vm",
+    "values": [
+     5.65,
+     5.9,
+     6.1
+    ],
+    "limit": 45.0,
+    "factor": 7.38,
+    "converged": true,
+    "last_step_pct": 3.4,
+    "step_before_pct": 4.4,
+    "last_change_mpa": 0.2,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
+    "factor_after_two_more_steps": 6.9,
+    "state": "pass"
+   },
+   {
+    "entry": "upper half, +X, layer",
+    "values": [
+     0.89,
+     0.9,
+     0.71
+    ],
+    "limit": 22.5,
+    "factor": 31.69,
+    "converged": true,
+    "last_step_pct": 21.1,
+    "step_before_pct": 1.1,
+    "last_change_mpa": 0.19,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
+    "factor_after_two_more_steps": 21.61,
+    "state": "pass"
+   },
+   {
+    "entry": "upper half, +X, shear",
+    "values": [
+     1.48,
+     1.37,
+     1.4
+    ],
+    "limit": 12.99038105676658,
+    "factor": 9.28,
+    "converged": true,
+    "last_step_pct": 2.2,
+    "step_before_pct": 7.4,
+    "last_change_mpa": 0.03,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
+    "factor_after_two_more_steps": 8.89,
+    "state": "pass"
+   },
+   {
+    "entry": "lower half, +Y, vm",
+    "values": [
+     2.7,
+     2.66,
+     2.63
+    ],
+    "limit": 45.0,
+    "factor": 17.11,
+    "converged": true,
+    "last_step_pct": 1.1,
+    "step_before_pct": 1.5,
+    "last_change_mpa": 0.03,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
+    "factor_after_two_more_steps": 17.11,
+    "state": "pass"
+   },
+   {
+    "entry": "lower half, +Y, layer",
+    "values": [
+     0.77,
+     0.7,
+     0.67
+    ],
+    "limit": 22.5,
+    "factor": 33.58,
+    "converged": true,
+    "last_step_pct": 4.3,
+    "step_before_pct": 9.1,
+    "last_change_mpa": 0.03,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
+    "factor_after_two_more_steps": 33.58,
+    "state": "pass"
+   },
+   {
+    "entry": "lower half, +Y, shear",
+    "values": [
+     0.61,
+     0.58,
+     0.64
+    ],
+    "limit": 12.99038105676658,
+    "factor": 20.3,
+    "converged": true,
+    "last_step_pct": 10.3,
+    "step_before_pct": 4.9,
+    "last_change_mpa": 0.06,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
+    "factor_after_two_more_steps": 16.67,
+    "state": "pass"
+   },
+   {
+    "entry": "lower half, +X, vm",
+    "values": [
+     5.17,
+     5.83,
+     6.49
+    ],
+    "limit": 45.0,
+    "factor": 6.93,
+    "converged": true,
+    "last_step_pct": 11.3,
+    "step_before_pct": 12.8,
+    "last_change_mpa": 0.66,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
+    "factor_after_two_more_steps": 5.6,
+    "state": "pass"
+   },
+   {
+    "entry": "lower half, +X, layer",
+    "values": [
+     1.04,
+     1.0,
+     1.43
+    ],
+    "limit": 22.5,
+    "factor": 15.73,
+    "converged": true,
+    "last_step_pct": 43.0,
+    "step_before_pct": 3.8,
+    "last_change_mpa": 0.43,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
+    "factor_after_two_more_steps": 7.69,
+    "state": "pass"
+   },
+   {
+    "entry": "lower half, +X, shear",
+    "values": [
+     2.02,
+     2.43,
+     3.12
+    ],
+    "limit": 12.99038105676658,
+    "factor": 4.16,
+    "converged": false,
+    "last_step_pct": 28.4,
+    "step_before_pct": 20.3,
+    "last_change_mpa": 0.69,
+    "settled_under_mpa": 0.325,
+    "step_growing": true,
+    "factor_after_two_more_steps": 2.53,
     "state": "not shown"
    }
   ]

@@ -19,7 +19,8 @@ SolidWorks has started (a launch waits while another session's instance is solvi
            a remote force acts where it is placed, which stress column is which shear, and the solver macro.
   contact: two stacked blocks with no-penetration contact between them and a soft pad to hold the upper one.
   bearing: a bearing load on a bore, against the reaction, the peak pressure and the pressure summed over the bore.
-  verdict: judge() on series worked by hand, expect() and its tolerances, stamp()'s clock file, a materials key that
+  verdict: judge() on series worked by hand (settled, moving, a growing step, the floor on small changes), expect()
+           and its tolerances, stamp()'s clock file, a materials key that
            matches no body of a two-body study, and save_as before an edit leaving the original file as it was.
 """
 import math
@@ -569,17 +570,45 @@ def verdict(j):
     state('three sizes within 5 %, factor 4.37', {'vm': [10.0, 10.2, 10.3]}, {'vm': 45.0}, 'pass', 4.37)
     state('settled at factor 1.83', {'vm': [24.0, 24.5, 24.6]}, {'vm': 45.0}, 'fail', 1.83)
     state('still moving and already at 1.8', {'vm': [18.0, 21.0, 25.0]}, {'vm': 45.0}, 'fail', 1.8)
-    # the ribbed bracket of 2026-11-14: von Mises up 13.1 % at the last step; two more such steps read 16.0 MPa, 2.81
-    r = state('moving 13 % at factor 3.6', {'vm': [10.68, 11.06, 12.51]}, {'vm': 45.0}, 'margin, not converged', 3.6)
-    expect('judge: the last step is measured against the value before it, %', r['rows'][0]['last_step_pct'], 13.1, 0)
-    expect('judge: factor after two more steps', r['rows'][0]['factor_after_two_more_steps'], 2.81, 0, abs_tol=0.005)
+    # moving by about the same share each time (13.3 %, then 12.7 %): two more such steps read 14.62 MPa, 3.08
+    r = state('moving 13 % a step at factor 3.91', {'vm': [9.0, 10.2, 11.5]}, {'vm': 45.0}, 'margin, not converged', 3.91)
+    expect('judge: the last step is measured against the value before it, %', r['rows'][0]['last_step_pct'], 12.7, 0)
+    expect('judge: the step before it, %', r['rows'][0]['step_before_pct'], 13.3, 0)
+    expect('judge: factor after two more steps', r['rows'][0]['factor_after_two_more_steps'], 3.08, 0, abs_tol=0.005)
+    if r['rows'][0]['step_growing']:
+        raise SystemExit('FAIL: judge: steps of 13.3 % then 12.7 % are not growing')
+    # the ribbed bracket of 2026-11-14: von Mises up 3.6 % and then 13.1 % at a sharp rib toe. The step is growing, so
+    # it is not a margin however the factor reads (3.6 now, 2.81 after two steps of the last size). With the toe
+    # rounded it settled at 13.54 MPa and passed
+    r = state('a growing step at factor 3.6', {'vm': [10.68, 11.06, 12.51]}, {'vm': 45.0}, 'not shown', 3.6)
+    expect('judge: its last step, %', r['rows'][0]['last_step_pct'], 13.1, 0)
+    expect('judge: its factor after two more steps is still given', r['rows'][0]['factor_after_two_more_steps'], 2.81, 0,
+           abs_tol=0.005)
+    if not r['rows'][0]['step_growing']:
+        raise SystemExit('FAIL: judge: steps of 3.6 % then 13.1 % are growing and the row does not say so')
+    # the split housing of 2026-11-14: the corner of a steel ring on the rim of its seat, 20.3 % then 28.4 %
+    r = state('a contact edge at factor 4.17', {'shear': [2.02, 2.43, 3.12]}, {'shear': 13.0}, 'not shown', 4.17)
+    if not r['rows'][0]['step_growing']:
+        raise SystemExit('FAIL: judge: steps of 20.3 % then 28.4 % are growing and the row does not say so')
+    state('level, then up 20 %', {'vm': [10.0, 10.0, 12.0]}, {'vm': 45.0}, 'not shown', 3.75)
+    state('up 1 %, then down 21 %', {'vm': [10.0, 10.1, 8.0]}, {'vm': 45.0}, 'not shown', 5.62)
+    # the floor: a last change of at most 5 % of limit / need counts as settled (0.5625 MPa of layer tension at need 2)
+    r = state('a small stress moving 21 % of itself', {'layer': [0.89, 0.9, 0.71]}, {'layer': 22.5}, 'pass', 31.69)
+    expect('judge: the floor in MPa', r['rows'][0]['settled_under_mpa'], 0.5625, 0, abs_tol=0.001)
+    expect('judge: the last change in MPa', r['rows'][0]['last_change_mpa'], 0.19, 0, abs_tol=0.001)
+    state('0.5 MPa up, under the floor', {'layer': [1.0, 1.2, 1.7]}, {'layer': 22.5}, 'pass', 13.24)
+    state('0.6 MPa up, over the floor, step growing', {'layer': [1.0, 1.2, 1.8]}, {'layer': 22.5}, 'not shown', 12.5)
+    state('the floor follows need: 0.6 MPa is under it at need 1.5', {'layer': [1.0, 1.2, 1.8]}, {'layer': 22.5}, 'pass',
+          12.5, need=1.5)
     # shear between layers, same part printed the other way: 2.13 now, 1.78 after two more steps of 9.3 %
     r = state('moving 9 % at factor 2.13', {'shear': [4.86, 5.59, 6.11]}, {'shear': 12.99}, 'not shown', 2.13)
     expect('judge: its factor after two more steps', r['rows'][0]['factor_after_two_more_steps'], 1.78, 0, abs_tol=0.005)
     state('two sizes that agree', {'vm': [10.0, 10.1]}, {'vm': 45.0}, 'not shown', 4.46)
     state('one size', {'vm': [10.0]}, {'vm': 45.0}, 'not shown', 4.5)
-    # falling at every step is taken at the finest value; a series that has gone both ways is not, even ending on a fall
+    # falling at every step is taken at the finest value, growing steps or not; a series that has gone both ways is
+    # not, even ending on a fall
     state('falling 20 % a step at factor 3.75', {'vm': [20.0, 15.0, 12.0]}, {'vm': 45.0}, 'margin, not converged', 3.75)
+    state('falling 5 % and then 37 %', {'vm': [20.0, 19.0, 12.0]}, {'vm': 45.0}, 'margin, not converged', 3.75)
     r = state('up 30 % then down 15 % at factor 2.36', {'shear': [5.0, 6.5, 5.5]}, {'shear': 13.0}, 'not shown', 2.36)
     expect('judge: it is taken as coming back up', r['rows'][0]['factor_after_two_more_steps'], 1.78, 0, abs_tol=0.005)
     state('a wider tolerance settles it', {'vm': [10.68, 11.06, 12.51]}, {'vm': 45.0}, 'pass', 3.6, tol=0.15)
@@ -596,7 +625,13 @@ def verdict(j):
     expect('judge: a row for every entry', len(r['rows']), 12, 0)
     # one entry of the twelve decides the verdict, and the lowest factor is still reported from the right row
     series['upper, +Y, layer'] = [0.5, 0.7, 0.87]
-    state('one of twelve still moving', series, limits, 'margin, not converged', 5.83, 'lower, +X, shear')
+    state('one of twelve moving 24 % but only 0.17 MPa', series, limits, 'pass', 5.83, 'lower, +X, shear')
+    series['upper, +Y, vm'] = [3.0, 4.5, 6.2]
+    state('one of twelve still moving, steps 50 % then 38 %', series, limits, 'margin, not converged', 5.83, 'lower, +X, shear')
+    series['upper, +Y, vm'] = [3.0, 3.5, 5.0]
+    r = state('one of twelve with a growing step', series, limits, 'not shown', 5.83, 'lower, +X, shear')
+    expect('judge: one row of the twelve is marked as growing', sum(q['step_growing'] for q in r['rows']), 1, 0)
+    series['upper, +Y, vm'] = [4.5, 4.55, 4.57]
     series['upper, +Y, layer'] = [0.87]
     state('one of twelve with one size', series, limits, 'not shown', 5.83, 'lower, +X, shear')
     series['lower, +Y, vm'] = [23.0, 23.1, 23.2]
