@@ -284,11 +284,33 @@ plan's own "if you see X" branches.
 in 43. So the pair takes about the same wall time as Fable alone, with half of it on the cheapest model; what it
 gives up is the second half of each hard task, where a result has to be doubted, chased or defended.
 
-**What this says to do next.** The gap is no longer knowing what to build. It is reading the result: a verdict
-that passes but has not converged needs its own word, the lowest factor should be computed by the helper and not
-picked by eye, a refused mesh should name the next thing to try, and time should come from a helper and not from
-memory. Those are code and page changes, and they should help every model. A review pass by the planner over the
-executor's results is the other half: twenty minutes of the strong model at the end, where its judgment is worth most.
+**The third step: review** ([haiku-plan-REVIEW.md](../eval/haiku-plan-REVIEW.md)). Fable then reviewed both plan
+runs from the files alone, without SolidWorks and without the answer keys, in 16 minutes. It reached the same
+corrections as the independent check that had the keys, and more:
+
+| Task | Haiku's verdict | After review |
+| --- | --- | --- |
+| T5 ribbed bracket | fail | margin, not converged: lowest factor 3.02; only von Mises at a sharp rib toe still moves |
+| T6 pin contact | not valid | valid: 499.8 of 500.0 N through the hole, the proof run moves the pin exactly the gap, pressure 6.4 to 6.8 MPa against Hertz 6.76 |
+| D2 split housing | factors 9.85 / 25.7 / 9.25 | 7.34 / 20.9 / 5.82; shear in the lower half governs; a displacement 5.5 times the prediction was never flagged; screw tightening is in no study |
+| T4 corner | 40 MPa "not explained" | explained: the curved-beam value, 39.3 by hand; the lowest factor there is 0.57 in shear, which the run left out |
+| T1, T2, T3, T7, D1, D3 | as reported | unchanged |
+
+The review changed the outcome of two tasks of ten, corrected the governing number on two more, and wrote five
+follow-up runs as step-by-step instructions for the same executor. It also found causes upstream: a plan that
+defined "valid" to include convergence, a plan branch that answered a refused mesh with a finer one, and a
+tolerance in `expect()` that read 0.02 mm as 2 %.
+
+**Cost of all three steps.** Plan 43 minutes, execute 43, review 16: about 100 minutes for sets A and D, against
+106 for Fable alone, with the strong model working for 59 of them and the rest on the cheapest model. The time
+is the same; what changes is that the strong model's part needs no SolidWorks seat and no waiting on solves, so
+several jobs can be planned and reviewed while the executor runs them.
+
+**What this says to do next.** Keep the three steps. Move what the review found into code and pages so the
+executor gets it right the first time: `swfea.judge()` now computes the verdict and the lowest factor, there is
+a word for "holds with margin, not converged", valid is kept apart from converged, and time comes from a clock.
+The follow-up runs the review wrote are the next test: whether the executor can close a task when handed the next
+step explicitly.
 
 ## What each run changed in the playbook
 
@@ -304,7 +326,7 @@ executor's results is the other half: twenty minutes of the strong model at the 
 | sonnet-d, fable-d | Changing a saved part (`set_dim`, `redraw_circles`), screws and clamped joints, results per body (`summary(mask=)`, `converge(mask=)`, shear in `converge()`), the proof for a body seated both sides, a launch that waits (`job(wait_s=)`), assembly pictures (`sheet.py --together`), `call()` on members that return objects, the node-count rule |
 | luna-a, luna-b, terra-high-a to d, terra-high-b2 | Export options set only for the export and put back, a launch that waits for memory, an unknown solver dialog fails the run, the contact proof in 07-done.md matched to the joint, node counts with local controls, "Do not stop early" and what counts as blocked |
 | bearing-load, loft-blend | A bearing load measured against the hand value; why a loft would not fillet into a flange, and three cures |
-| haiku-a, haiku-d, haiku-plan-a, haiku-plan-d | Nothing yet: the list is under "Plan, then execute" |
+| haiku-a, haiku-d, haiku-plan-a, haiku-plan-d | `judge()` and its four verdicts, valid against converged, a job clock, `save_as` before editing into a new file, what to try after a refused mesh |
 
 ## What still needs the strongest model, or Joey
 
