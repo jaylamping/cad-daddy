@@ -422,10 +422,11 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     if st is None or err.value:
         raise Failed(f'study not created ({err.value}); a study of the same name already in the model?')
     comp = st.SolidManager.GetComponentAt(0, L())
-    used = set()
+    used, seen_bodies = set(), []
     for k in range(comp.SolidBodyCount):
         b = comp.GetSolidBodyAt(k, L())
         bname = str(call(b, 'SolidBodyName'))
+        seen_bodies.append(bname)
         hit = [key for key in (materials or {}) if key.lower() in bname.lower()]
         if len(hit) > 1:
             raise Failed(f'{name}: body "{bname}" matches more than one materials key: {hit}')
@@ -435,7 +436,8 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
         if materials:
             log(f'{name}: body "{bname}" is {mat["name"]}')
     if materials and used != set(materials):
-        raise Failed(f'{name}: materials keys {sorted(set(materials) - used)} match no body')
+        raise Failed(f'{name}: materials keys {sorted(set(materials) - used)} match no body. The bodies are: '
+                     f'{seen_bodies}')
     lbc = st.LoadsAndRestraintsManager
     fixed, loaded, applied, temps = [], [], 0.0, []
     for kind, fs in fixtures:
@@ -628,6 +630,55 @@ def converge(run, sizes, tol=0.05, layers=None, mask=None):
         if len(rows) > 2 and all(abs(a - b) <= tol * abs(b) for a, b in zip(rows[-1][2:], rows[-2][2:])):
             return rows, True
     return rows, False
+
+
+def judge(series, limits, need=2.0, tol=0.05):
+    """The verdict of a study series, worked out the same way every time. Returns a dict.
+
+    series: {measure: [value at the coarsest mesh, ..., value at the finest]} in MPa, for every measure and, on a
+    model of several bodies or load cases, one entry per body and case ('lower half, +Y, layer shear'). limits:
+    {measure: allowable MPa} with the same keys. need: the factor required.
+
+    For each entry: factor = limit / finest value; converged = at least three values and the last step under tol.
+    The lowest factor is taken over every entry, so it cannot be read from the wrong row. verdict is one of:
+      'fail'                       a converged entry is under need, or an unconverged one is already under it
+      'pass'                       every entry converged and at or over need
+      'margin, not converged'      nothing is under need, some entry still moves, but it would still be at or over
+                                   need after two more steps of the same size in the same direction. Not a pass: the
+                                   report says which entry moves and by how much. Not a fail either
+      'not shown'                  some entry still moves and that projection falls under need, or it has under
+                                   three values
+    """
+    if set(series) != set(limits):
+        raise Failed(f'judge: series and limits must have the same keys: {sorted(set(series) ^ set(limits))}')
+    rows, worst = [], None
+    for key, vals in series.items():
+        vals = [float(v) for v in vals]
+        last = vals[-1]
+        step = abs(last - vals[-2]) / abs(last) if len(vals) > 1 and last else None
+        conv = len(vals) >= 3 and step is not None and step <= tol
+        factor = limits[key] / last if last > 0 else float('inf')
+        rising = len(vals) > 1 and last > vals[-2]
+        projected = last * (1 + step) ** 2 if (step is not None and rising) else last
+        f_proj = limits[key] / projected if projected > 0 else float('inf')
+        if factor < need:
+            state = 'fail'
+        elif conv:
+            state = 'pass'
+        elif len(vals) >= 3 and f_proj >= need:
+            state = 'margin, not converged'
+        else:
+            state = 'not shown'
+        rows.append(dict(entry=key, values=vals, limit=limits[key], factor=round(factor, 2), converged=conv,
+                         last_step_pct=None if step is None else round(100 * step, 1),
+                         factor_after_two_more_steps=round(f_proj, 2), state=state))
+        if worst is None or factor < worst['factor']:
+            worst = rows[-1]
+    order = ['fail', 'not shown', 'margin, not converged', 'pass']
+    verdict = min((r['state'] for r in rows), key=order.index)
+    out = dict(verdict=verdict, need=need, lowest_factor=worst['factor'], lowest_entry=worst['entry'], rows=rows)
+    log(f'judge: {verdict}; lowest factor {worst["factor"]} at "{worst["entry"]}"')
+    return out
 
 
 def body_named(d, part):

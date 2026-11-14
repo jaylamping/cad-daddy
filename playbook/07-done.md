@@ -55,6 +55,25 @@ catches it is a number written down beforehand. Same for modelling: `expect_dv` 
    working direction where the body has clearance on both sides), the share
    the pads carry, and the contact force summed from the results against the applied load.
 
+## The verdict comes from `judge()`, not from reading the table
+
+`swfea.judge(series, limits, need)` takes every measure at every mesh size (and, on a model of several bodies or
+load cases, one entry per body and case) and returns the verdict and the lowest factor. Use it for every verdict and
+put its output in `results.json`. It exists because of what a careful but small model did with correct numbers
+(2026-11-14): a part at factor 3 recorded as a fail because one measure still moved, a correct contact result
+called invalid, and a headline factor of 9.85 where the lowest row in its own table was 5.82.
+
+| Verdict | Means | Write in the report |
+| --- | --- | --- |
+| `pass` | every entry converged, all at or over the factor | the lowest factor and where |
+| `fail` | an entry is under the factor | which, where, and the cheapest change that would fix it |
+| `margin, not converged` | nothing is under the factor and an entry still moves, but it would still hold after two more steps of the same size | the lowest factor, which entry moves and by how much. It is not a pass and not a fail: say both halves |
+| `not shown` | an entry still moves and the margin does not cover it, or it has fewer than three sizes | what was tried and what would settle it |
+
+A result is **valid** when the model is right: the reaction matches the load, the contact proof holds, the hand value
+is within its tolerance. Convergence is a separate question. A valid result that has not converged is reported as
+valid with the verdict `margin, not converged` or `not shown`, never as invalid.
+
 ## "It passes" is not the end
 
 When the requirement is met, the report still has these three, each with a number:
@@ -101,10 +120,14 @@ Then, for anything that is not done, these are not reasons to stop:
 - **"Not shown" after one attempt.** It is a state to work out of, not a result. The page says what comes next (round
   the edge, try the second support, refine the control): do that, then judge.
 - **A helper refused.** Memory under the floor: `job(wait_s=1800)` waits. A launch that did not answer: the same. A
-  mesh over the node limit: coarsen the global size. A refusal tells you what to change, not to give up the task.
+  mesh over the node limit is not the end of a convergence series: coarsen the global size and keep the local
+  controls, shrink the control to the one feature that governs, cut the model at a symmetry plane, or run the
+  series on the governing body alone with the loads the full model gave it. A refusal tells you what to change, not
+  to give up the task.
 - **One task failed.** The others do not depend on it. Write down where it stands and do the rest, then come back to
   it with the time that is left.
-- **Time.** If the brief gives a budget, use it: a report handed in at a tenth of the budget with tasks open is not
+- **Time.** Take it from `swkit.stamp(folder, label)`, called at the start and end of each task, never from a feeling:
+  runs of twenty minutes have reported eighty. If the brief gives a budget, use it: a report handed in at a tenth of the budget with tasks open is not
   early, it is unfinished. If it gives none, the tasks set the length, not your sense that it has been a while.
 - **It seems good enough.** Check the brief line by line against what you have. A requirement you did not test is open.
 - **You have a plan for the rest.** A plan is not a result. Do not end with "next I would": do it.

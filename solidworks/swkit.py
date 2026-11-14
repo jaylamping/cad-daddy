@@ -248,13 +248,40 @@ def bbox(d):
     return [float(v) for v in bs[:, :3].min(axis=0)] + [float(v) for v in bs[:, 3:].max(axis=0)]
 
 
-def expect(what, got, want, tol):
-    """Stop unless got is within tol (relative when 0 < tol < 1 and want != 0, else absolute) of want."""
+def expect(what, got, want, tol, abs_tol=0.0):
+    """Stop unless got is within tol of want: relative when 0 < tol < 1 and want is not zero, else absolute.
+
+    A want that is zero to within 1e-9 counts as zero, so tol is then absolute (a coordinate that should be 0 comes
+    back as 6e-17, and one per cent of that allows nothing). abs_tol is a floor under a relative tolerance, for
+    small targets.
+    """
     err = abs(got - want)
-    lim = tol * abs(want) if 0 < tol < 1 and want else tol
+    lim = max(tol * abs(want), abs_tol) if 0 < tol < 1 and abs(want) > 1e-9 else max(tol, abs_tol)
     if err > lim:
-        raise Failed(f'{what}: got {got:.4f}, expected {want:.4f} (off by {err:.4f}, allowed {lim:.4f})')
+        raise Failed(f'{what}: got {got:.4f}, expected {want:.4f} (off by {err:.4g}, allowed {lim:.4g})')
     log(f'ok {what}: {got:.4f} (expected {want:.4f})')
+
+
+def stamp(folder, label):
+    """Write the time and a label to <folder>/times.log and return the minutes since the first line in it.
+
+    A job spread over several scripts has no clock of its own, and a session's sense of how long it has been is not
+    one: four benchmark runs of twenty minutes reported up to eighty-four. Call it at the start and end of every
+    task; quote times in a report from times.log, never from memory.
+    """
+    path = Path(folder) / 'times.log'
+    path.parent.mkdir(parents=True, exist_ok=True)
+    now = time.time()
+    first = now
+    if path.exists():
+        lines = path.read_text().splitlines()
+        if lines:
+            first = float(lines[0].split('\t')[0])
+    mins = (now - first) / 60
+    with open(path, 'a') as f:
+        f.write(f'{now:.0f}\t{time.strftime("%Y-%m-%d %H:%M:%S %z")}\t{mins:.1f} min\t{label}\n')
+    log(f'clock: {label}: {mins:.1f} min since the job began')
+    return mins
 
 
 def set_dim(d, feat_name, old_mm, new_mm):

@@ -76,6 +76,10 @@ These are enum values written as numbers, because late binding has no constants.
 Rebuilding from the script is the first choice ([03-modelling.md](03-modelling.md)). When the part has no script, or the
 task says to edit it, open it and change it in place:
 
+**When the change is to become a new file, `save_as` to the new name first and edit that.** `save()` writes into the
+file that is open: a run that edited `bracket.SLDPRT` and saved before `save_as` lost the original, and every later
+study ran on the wrong part without an error. Afterwards check the original still has its old volume.
+
 | To change | Call | Then |
 | --- | --- | --- |
 | A depth, a diameter, an offset | `set_dim(d, 'BLOCK', 10.0, 12.0)`: the feature's name, what the dimension reads now, the new value. The driving dimension is `D1@<feature>`; a plane a feature sits on has its own (`D1@<plane>`) | `d.ForceRebuild3(False)`, `feature_errors(d)`, volume against the hand value |
