@@ -50,7 +50,9 @@ catches it is a number written down beforehand. Same for modelling: `expect_dv` 
    two models parted: same numbers, one passed the bracket on a climbing value, the other rounded the edge and found
    1.88 against 2.0.
 7. The load path was followed in a sentence: which faces bear, which section carries it, where it leaves.
-8. For contact: the proof that the set is contact and not a bond (reverse a tiny load: the bodies must part), the share
+8. For contact: the proof that the set is contact and not a bond (the test that fits the joint, from
+   [05-fea.md](05-fea.md) "Contact between bodies": reverse a tiny load where faces sit line to line, a tiny load in the
+   working direction where the body has clearance on both sides), the share
    the pads carry, and the contact force summed from the results against the applied load.
 
 ## "It passes" is not the end
