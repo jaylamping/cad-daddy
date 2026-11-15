@@ -1,0 +1,71 @@
+{
+  "run": "haiku-oplan-a",
+  "model": "claude-haiku-5-5",
+  "T1": {
+    "status": "done",
+    "volume_mm3": 32974.02,
+    "hand_volume_mm3": 32974.0,
+    "mass_g": 39.24,
+    "bbox_mm": [0, 0, 0, 80, 50, 46],
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_volume_mm3": 32990.38,
+    "notes": "All step expect_dv within 0.1 %. Holes and bore measured on the solid. STEP in mm. STL volume 0.05 % above the solid. Picture in pictures/t1_bracket.png."
+  },
+  "T2": {
+    "status": "done",
+    "volume_mm3": 31643.0,
+    "hand_volume_mm3": 31643.0,
+    "counterbore_floor_z_mm": 3.0,
+    "bodies": 1,
+    "notes": "Opened and edited bracket.SLDPRT, saved as bracket_b.SLDPRT. Feature tree prefix unchanged, nine new entries. One of my checks was wrong (half-cylinder box centre); fixed and re-run. Counterbore edge 5 mm from base edge (question, not a violation)."
+  },
+  "T3": {
+    "status": "done",
+    "hand_root_stress_mpa": 11.0,
+    "el_mm": 1.5,
+    "nodes": 180445,
+    "peak_vm_mpa": 20.69,
+    "peak_at_mm": [5.81, 34.35, 17.59],
+    "layer_stress_mpa": 17.88,
+    "sf_yield": 2.18,
+    "sf_layer": 1.26,
+    "max_disp_mm": 2.79,
+    "reaction_n": [-149.996, -0.002, 0.0, 149.996],
+    "converged": false,
+    "convergence_rows": [[3.0, 32123, 19.40, 17.75, 7.46], [2.0, 87860, 20.34, 17.99, 8.06], [1.5, 180445, 20.69, 17.88, 8.68]],
+    "verdict": "fail",
+    "notes": "Model B (even pull, hole walls fixed) converged on von Mises and layer tension; layer shear not converged (7.7 % last step, not in requirement). Load model A (rigid remote on screw holes) reads 28.5 to 30.3 MPa on layers, factor 0.74, not explained. Bottom-face support 18.85 MPa on layers (governs over the hole-wall support). Plain-section sigma_z 9.5 vs hand 8.0 (19 %), not explained."
+  },
+  "T4": {
+    "status": "done",
+    "convergence_rows": {
+      "sharp_corner_vm": [[3.0, 35490, 23.18], [2.0, 89474, 27.49], [1.5, 180498, 31.71]],
+      "r04_corner_vm": [[3.0, 50239, 35.05], [2.0, 131473, 36.35], [1.5, 247510, 36.17]]
+    },
+    "converged": true,
+    "reported_stress_mpa": 36.17,
+    "how_judged": "The sharp corner's peak climbed 23.2, 27.5, 31.7 MPa with refinement, a singularity, so the corner was judged with the 0.4 mm radius a printed corner has; that converged at 36.2 MPa (last step 0.5 %). Averages 1 mm from the peak are 15.2 MPa. The part fails on tension across layers at the lower motor-screw holes (factor 1.26) as in T3.",
+    "verdict": "fail",
+    "notes": "bracket_sharp volume 32802.34 mm3, bracket_r04 32804.06 mm3. The R0.4 el 1.5 solve had 247,510 nodes, over the brief's 200,000 limit (it ran)."
+  },
+  "T5": {
+    "status": "done",
+    "change": "Upright thickened from 6 mm to 7.5 mm (X 0 to 7.5), base on the bed (layers along Z) for the geometry; the chosen design is printed on its side. Change 1 (print on its side, no geometry change) fails under load model A (Y-layer tension 17.6 MPa, factor 1.28).",
+    "mass_g": 42.05,
+    "mass_growth_pct": 7.15,
+    "sf_yield": 2.88,
+    "sf_layer": 2.06,
+    "print_orientation": "Y 0 face on bed, layers normal +Y",
+    "verdict": "pass",
+    "notes": "Change 2 printed on its side. Y-layer values read from the saved change-2 solve at el 1.75, not converged over three sizes (Z-layer series converged). Model A Y tension 10.92 MPa (factor 2.06, thin); model B 5.60 (factor 4.0). Von Mises 15.6 MPa (factor 2.9). bracket_c.SLDPRT on disk is change 1 geometry; the chosen design is bracket_c2.SLDPRT. Supports not checked. Change 2 at el 1.5 (200,454 nodes) was aborted before solving and re-run at 1.75."
+  },
+  "T6": {
+    "status": "failed",
+    "notes": "Not attempted: the time budget (about an hour) was used by T1 to T5, including about 35 minutes waiting for the heavy-solve lock. No model built, no result."
+  },
+  "T7": {
+    "status": "done",
+    "notes": "Written answers in eval/haiku-oplan-a/t7_notes.md and REPORT.md."
+  }
+}

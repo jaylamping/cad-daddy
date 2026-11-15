@@ -1,0 +1,66 @@
+{
+  "T5c2_B_1p75": {
+    "Y_tension": 5.603,
+    "Y_tension_at": [
+      20.23,
+      36.36,
+      0.0
+    ],
+    "Y_shear": 5.802,
+    "Y_shear_at": [
+      7.05,
+      34.57,
+      18.02
+    ],
+    "vm_max_keep": 15.466,
+    "Z_tension_keep": 12.367
+  },
+  "T5c2_A_1p75": {
+    "Y_tension": 10.919,
+    "Y_tension_at": [
+      0.0,
+      36.24,
+      15.36
+    ],
+    "Y_shear": 5.672,
+    "Y_shear_at": [
+      7.5,
+      34.29,
+      16.74
+    ],
+    "vm_max_keep": 15.605,
+    "Z_tension_keep": 19.268
+  },
+  "T5_orientY_B_1p5": {
+    "Y_tension": 7.825,
+    "Y_tension_at": [
+      0.39,
+      15.24,
+      18.24
+    ],
+    "Y_shear": 8.686,
+    "Y_shear_at": [
+      5.81,
+      34.55,
+      17.99
+    ],
+    "vm_max_keep": 20.69,
+    "Z_tension_keep": 17.875
+  },
+  "T5_orientY_A_1p5": {
+    "Y_tension": 17.631,
+    "Y_tension_at": [
+      0.0,
+      36.18,
+      15.35
+    ],
+    "Y_shear": 8.164,
+    "Y_shear_at": [
+      6.0,
+      34.32,
+      16.61
+    ],
+    "vm_max_keep": 21.394,
+    "Z_tension_keep": 30.342
+  }
+}
