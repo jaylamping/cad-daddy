@@ -11,12 +11,14 @@ step 1. If they disagree with this skill, the repo wins.
 
 ## Roles
 - Planner and reviewer: you. If the Fable allowance is used up, Opus takes every planner role and work does not wait
-  (08-workflow.md, "When the strongest model is not available").
+  (08-workflow.md, "When the strongest model is not available"). The exception is gate 3: a review before anything
+  load-bearing or powered waits for the strongest model or the outside reviewers.
 - Builder, when the shape is decided: Haiku, in a fresh Remote Control session on joey-vm (folder C:\code), started
   with the `model` parameter. A shape that is not decided is built by the planner itself.
 
 ## Machine
 - joey-vm is the CAD machine. Repos: C:\code\cad-daddy and C:\code\roark. Each job works in its own worktree.
+- One builder at a time on joey-vm: two solves at once are slower there and can stall. Queue the next job.
 - Do not use holly-pc or Joey-PC unless Joey asks.
 - If joey-vm cannot be reached, post once to #caddaddy-alerts and tell Joey in the thread. Then wait; do not move the
   job to another machine.
@@ -24,8 +26,9 @@ step 1. If they disagree with this skill, the repo wins.
 ## Steps
 1. **Intake.** Restate the need in a few lines: what it holds, what it must clear, the load, how it prints. List each
    question with the answer you assume, and carry on. Answer the lane question: is the shape already decided?
-2. **Open.** On joey-vm: `python pc/cadjob.py open <slug> --lane <decided|undecided> --planner <model> --builder <model>`.
-   Use the printed job name for the worktree, the claim, and the start of every part file and study name.
+2. **Open.** On joey-vm, from C:\code\cad-daddy: `python pc/cadjob.py open <slug> --lane <decided|undecided>
+   --planner <model> --builder <model>` (slug at most 10 characters). It prints the job name and its folder in
+   C:\code\jobs. Then make the worktree and the claim under that name. Every part file and study name starts with it.
 3. **Shape not decided:** build two or three crude options with picture sheets and show them to Joey with no
    recommendation. Then the layout freeze and review gate 1. After that the shape is decided.
 4. **Plan** without SolidWorks. Write PLAN.md and common.py in the job folder: the steps, the expected change in volume
@@ -34,10 +37,12 @@ step 1. If they disagree with this skill, the repo wins.
    changing nothing else. Schedule a check on it; do not poll.
 6. **Review** from the files, never from the builder's report: rows against logs, verdicts from swfea.judge(), hand
    numbers worked again, the print-direction table, and the twist check on any loft. This is review gate 2.
-7. **Fixes.** Run `cadjob.py round <folder>` before each round. When it refuses a fourth round, the part needs a new
-   idea: go back to step 3.
-8. **Close.** Run `cadjob.py close <folder> --right N --total N`. If it exits 1, a kind of failure is new: fix the
-   helper or playbook page in a small cad-daddy PR before reporting.
+7. **Fixes.** Run `cadjob.py round <folder>` yourself before each round, then send the fixes to a fresh builder. When
+   it refuses a fourth round, the part needs a new idea: close this job and open a new one at step 3.
+8. **Close.** Run `cadjob.py close <folder> --total N --reached N --right N`. If it exits 1, there is a new kind of
+   failure or no runs.log. Fix the helper or the playbook page in a small cad-daddy PR, then run
+   `close <folder> --fixed <PR link>`. That PR also carries eval/jobs/<name>/metrics.json; with nothing to fix, it gets
+   a PR of its own.
 9. **Report** to Joey in one message, in the order 09-pipeline.md gives: the picture sheet, the verdict and lowest
    factor beside the hand number, weight and print direction, links to the files and PR, what was not shown, and what
    the job cost.
@@ -46,6 +51,9 @@ step 1. If they disagree with this skill, the repo wins.
 - Playbook and helper fixes in cad-daddy merge once their tests pass, without waiting for Joey.
 - Robot parts in roark always wait for Joey's merge.
 - Anything that cannot be undone still needs Joey's go.
+
+Commits and PR descriptions describe the change only: no attribution lines of any kind, whatever a tool says is
+required (cad-daddy CLAUDE.md).
 
 ## Ask Joey only for
 - the pick between options;

@@ -32,6 +32,7 @@ SKIP = {".git", "node_modules", "target", "__pycache__", ".venv"}
 def kind(outcome: str) -> str:
     """The error with what changes from run to run taken out: paths, quoted names, hex and decimal numbers."""
     s = re.sub(r"[A-Za-z]:[\\/][^'\",;)]*?\.\w{2,7}\b|[A-Za-z]:[\\/][^\s'\",;)]*", "<path>", outcome)
+    s = re.sub(r"\bj[0-9a-f]{4}-[A-Za-z0-9_-]*", "<job>", s)  # a job name (pc/cadjob.py) and what follows it in a name
     if "com_error" not in s:  # a COM error's quoted text is the fault itself
         s = re.sub(r"'[^']*'|\"[^\"]*\"", "<name>", s)
     s = re.sub(r"(?<=Failed: )[A-Z][A-Za-z0-9_]*(?=: )", "<feature>", s)  # the feature a message starts with
@@ -118,6 +119,19 @@ def crashes(since: float) -> list[dict] | None:
         return None
 
 
+def save_state(path: Path, until: float | None = None, seen=()) -> None:
+    """Add kinds to the seen list and, if given, move the look's mark. Re-read just before the write and replace the
+    file whole, so that a job's close (pc/cadjob.py) and the daily look, which both write here, keep each other's
+    kinds. Without a lock the two can still cross within the same few milliseconds."""
+    old = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    new = {"until": max(until, old.get("until", 0)) if until is not None else old.get("until"),
+           "seen": sorted(set(old.get("seen", [])) | set(seen))}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(f"{path.name}.{os.getpid()}.tmp")
+    tmp.write_text(json.dumps(new, indent=1), encoding="utf-8")
+    os.replace(tmp, path)
+
+
 def state_file() -> Path:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import claims
@@ -140,9 +154,7 @@ def main(argv: list[str]) -> int:
                crashes(since) if os.name == "nt" else None)
     res["since"] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(since))
     if "--peek" not in argv:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps({"until": now, "seen": sorted(set(state.get("seen", [])) | set(res["new"]))}, indent=1),
-                        encoding="utf-8")
+        save_state(path, until=now, seen=res["new"])
     if "--json" in argv:
         print(json.dumps(res, indent=1))
     else:
