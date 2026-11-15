@@ -57,13 +57,15 @@ def _arr(q, cols):
 
 
 _STRESS_COLS = ((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (9, 10))   # (component asked for, column in GetStress)
+_VM_COLS = ((9, 10),)
 
 
 def stress_table(components, node_ids=None):
     """The 12-column table GetStress returns (node id, sx sy sz txy txz tyz, p1 p2 p3, von Mises, intensity) built from
     one (n, 2) array of node id and value per component, as GetStressForEntities3 gives them. A node shared by two bodies
     is listed once per body with the same value and is kept once. The principals and the intensity are computed from the
-    tensor. None if the components do not list the same nodes, or not exactly `node_ids` (the mesh's own)."""
+    tensor. None if the components do not list the same nodes, or not exactly `node_ids` (the mesh's own). Columns not
+    read are NaN; without all six tensor components the principals and intensity are NaN too."""
     ids, cols = None, {}
     for col, q in components:
         q = np.asarray(q, float).reshape(-1, 2)
@@ -79,10 +81,12 @@ def stress_table(components, node_ids=None):
         cols[col] = v
     if ids is None or (node_ids is not None and (len(ids) != len(node_ids) or set(ids.tolist()) != set(node_ids))):
         return None
-    s = np.zeros((len(ids), 12))
+    s = np.full((len(ids), 12), np.nan)
     s[:, 0] = ids
     for col, v in cols.items():
         s[:, col] = v
+    if not all(c in cols for c in range(1, 7)):
+        return s
     t = np.empty((len(ids), 3, 3))
     t[:, 0, 0], t[:, 1, 1], t[:, 2, 2] = s[:, 1], s[:, 2], s[:, 3]
     t[:, 0, 1] = t[:, 1, 0] = s[:, 4]
@@ -94,7 +98,7 @@ def stress_table(components, node_ids=None):
     return s
 
 
-def _stress_by_body(d, res, node_ids, name):
+def _stress_by_body(d, res, node_ids, name, wanted=_STRESS_COLS):
     """The nodal stresses read one component at a time over the solid bodies. GetStress for every node goes through COM
     one value at a time and took 734 s on a 745,656-node model; this took 7 x 19 s and gave the same value at every node
     (shoulder hub, 2026-11-13). Pass bodies, never faces: hundreds of faces ended the instance ("remote procedure call
@@ -105,7 +109,7 @@ def _stress_by_body(d, res, node_ids, name):
     try:
         bodies = solid_bodies(d)
         parts = [(col, _arr(res.GetStressForEntities3(True, comp, 1, NUL, bodies, 3, 0, 0, False, L()), 2))
-                 for comp, col in _STRESS_COLS]
+                 for comp, col in wanted]
         s = stress_table(parts, node_ids)
     except Exception as ex:      # noqa: BLE001 - any failure here only costs time: the slow read follows
         log(f'{name}: stresses not read by body ({str(ex)[:80]}); reading every node instead')
@@ -203,6 +207,25 @@ def _disp_by_body(d, res, node_ids, name):
 
 def _reaction_by_body(d, res, node_ids, name):
     return _by_body(name, 'reactions', lambda: reaction_total(_entity_components(d, res, (4, 5, 6)), node_ids))
+
+
+def face_reaction_total(components):
+    """[Fx, Fy, Fz, resultant] N from the three reaction components read over the fixture faces, each node counted once
+    (a node on the edge between two fixture faces is listed by both). None if the components do not list the same nodes."""
+    cols = [once_per_node(q) for q in components]
+    if not cols or not len(cols[0]) or any(len(c) != len(cols[0]) or (c[:, 0] != cols[0][:, 0]).any() for c in cols[1:]):
+        return None
+    f = np.array([c[:, 1].sum() for c in cols])
+    return [round(float(v), 3) for v in f] + [round(float(np.linalg.norm(f)), 3)]
+
+
+def _reaction_by_faces(res, faces, name):
+    """Reactions read over the fixture faces only. Only restrained nodes carry a reaction, and they all lie on those
+    faces, so the sum is the same as over the bodies; but a read over the bodies costs a pass over the whole mesh
+    (~25 s at 500k nodes on joey-vm, 2026-11-15) and one over a few faces well under a second."""
+    return _by_body(name, 'reactions over the fixture faces',
+                    lambda: face_reaction_total([_arr(res.GetDisplacementForEntities(c, 1, NUL, faces, 0, L()), 2)
+                                                 for c in (4, 5, 6)]) if faces else None)
 
 
 def _material(body, mat):
@@ -365,7 +388,7 @@ class Result:
         """(MPa, where) of the largest tensile stress across print layers whose normal is the given direction."""
         n = np.array(normal, float)
         n /= np.linalg.norm(n)
-        S = self.s
+        S = self._tensor()
         sn = (n[0] ** 2 * S[:, 1] + n[1] ** 2 * S[:, 2] + n[2] ** 2 * S[:, 3]
               + 2 * (n[0] * n[1] * S[:, 4] + n[0] * n[2] * S[:, 5] + n[1] * n[2] * S[:, 6]))
         mask = self.away() if mask is None else mask
@@ -379,7 +402,7 @@ class Result:
         """
         n = np.array(normal, float)
         n /= np.linalg.norm(n)
-        S = self.s
+        S = self._tensor()
         t = np.c_[S[:, 1] * n[0] + S[:, 4] * n[1] + S[:, 5] * n[2],       # traction on the layer plane
                   S[:, 4] * n[0] + S[:, 2] * n[1] + S[:, 6] * n[2],
                   S[:, 5] * n[0] + S[:, 6] * n[1] + S[:, 3] * n[2]]
@@ -387,6 +410,11 @@ class Result:
         mask = self.away() if mask is None else mask
         i = np.flatnonzero(mask)[np.argmax(tau[mask])]
         return float(tau[i]), self.pos[i].round(2).tolist()
+
+    def _tensor(self):
+        if np.isnan(self.s[:, 1:7]).all():
+            raise Failed(f"{self.name}: only von Mises was read (stress='vm'); solve with stress='full' for layer checks")
+        return self.s
 
     def in_box(self, box):
         return np.all((self.pos >= np.array(box[:3])) & (self.pos <= np.array(box[3:])), axis=1)
@@ -533,7 +561,7 @@ def heavy_solve_lock(owner, wait_s=3600):
 
 
 def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), materials=None, solver=None, keep_study=False,
-           post=None, loose_ok=False, max_nodes=MAX_NODES):
+           post=None, loose_ok=False, max_nodes=MAX_NODES, stress='full'):
     """Build, mesh and solve one linear static study on the open part d, and read the nodal results back.
 
     material: the dict for every body, unless materials = {part of a body's name: dict} picks some bodies out. A key
@@ -554,8 +582,14 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     soft) static() raises, unless loose_ok=True, which returns the result with Result.excessive set.
     post: post(study, results) is called after the solve and before the study is deleted, for anything static() does
     not read itself; what it returns is kept as Result.extra.
+    stress: 'full' reads the whole stress tensor (seven reads); 'vm' reads von Mises only (one read), and the tensor,
+    principal and intensity columns of Result.s are NaN, so layer_stress() and layer_shear() refuse. Each read costs
+    the same whatever it asks for and grows about with the square of the mesh: ~2.5 s at 148k nodes, ~25 s at 500k
+    (joey-vm, 2026-11-15), so 'vm' saves six of them. Use it when only peak von Mises is judged.
     Every face list must be non-empty: an empty pick is the commonest way to solve the wrong problem.
     """
+    if stress not in ('full', 'vm'):
+        raise ValueError(f"stress must be 'full' or 'vm', not {stress!r}")
     t0 = time.time()
     cw = j.simulation()
     doc = cw.ActiveDoc
@@ -718,7 +752,7 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     if raw is None:
         raw = _arr(call(mesh, 'GetNodes'), 4)
     xyz = dict(zip(raw[:, 0].astype(int), raw[:, 1:] * 1000))
-    s = _stress_by_body(d, res, set(xyz), name)
+    s = _stress_by_body(d, res, set(xyz), name, _VM_COLS if stress == 'vm' else _STRESS_COLS)
     if s is None:
         s = _arr(res.GetStress(0, 1, NUL, 3, L()), 12)       # 3 = N/mm2
     pos = np.array([xyz[int(i)] for i in s[:, 0]])
@@ -743,7 +777,9 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     except Exception as ex:      # noqa: BLE001
         log(f'{name}: displacements not read ({str(ex)[:80]})')
     try:
-        reaction = _reaction_by_body(d, res, set(xyz), name)
+        reaction = _reaction_by_faces(res, fixed, name)
+        if reaction is None:
+            reaction = _reaction_by_body(d, res, set(xyz), name)
         if reaction is None:
             # per node: id, Fx Fy Fz Fres, Mx My Mz Mres; zero except on restrained nodes. Last argument 0 = N
             # (1 = lbf). GetReactionForces2 does not exist on SolidWorks 2026.
