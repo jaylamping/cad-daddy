@@ -1,0 +1,22 @@
+{
+ "run": "haiku-plan-a-followup",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "A",
+ "model": "claude-haiku-5-5",
+ "plan": "Fable review",
+ "base_commit": "908f1cc",
+ "tasks": {
+  "total": 2,
+  "reached": 2,
+  "right": 2,
+  "right_basis": "independent check (eval/haiku-followup-CHECK.md)"
+ },
+ "wall_minutes": 15.9,
+ "waiting_minutes": null,
+ "cost_usd": 0.45,
+ "cost_basis": "Claude Code's own figure in the session record",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "Follow-up runs for T5 and T6 written by the review."
+}

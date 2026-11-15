@@ -1,0 +1,22 @@
+{
+ "run": "sonnet-adv-d",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "D",
+ "model": "claude-sonnet-5-5 with a Fable advisor (3 calls)",
+ "plan": "none",
+ "base_commit": "see REPORT.md",
+ "tasks": {
+  "total": 3,
+  "reached": 3,
+  "right": 3,
+  "right_basis": "own report, not checked"
+ },
+ "wall_minutes": 76.2,
+ "waiting_minutes": null,
+ "cost_usd": null,
+ "cost_basis": "no cost in the record; advisor read 1,111,179 tokens in and 50,330 out",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "Every task reported done; not checked against logs or models."
+}

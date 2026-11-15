@@ -1,0 +1,22 @@
+{
+ "run": "haiku-oplan-a",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "A",
+ "model": "claude-haiku-5-5",
+ "plan": "Opus",
+ "base_commit": "908f1cc",
+ "tasks": {
+  "total": 7,
+  "reached": 6,
+  "right": 5,
+  "right_basis": "own report, not checked"
+ },
+ "wall_minutes": 70.0,
+ "waiting_minutes": 35.0,
+ "cost_usd": 1.5,
+ "cost_basis": "estimated from the session's tokens at the rates the recorded Haiku sessions imply (cache read 0.05, cache write 1.00, output 2.50 USD per million); the record held no cost",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "T6 not reached. One solve over the 200,000 node rule. T5 called a pass at 2.06 with convergence not shown: not counted as right. The run committed during the run, against its brief."
+}

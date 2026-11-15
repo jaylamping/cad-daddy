@@ -1,0 +1,22 @@
+{
+ "run": "haiku-plan-d-followup",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "D",
+ "model": "claude-haiku-5-5",
+ "plan": "Fable review",
+ "base_commit": "908f1cc",
+ "tasks": {
+  "total": 1,
+  "reached": 1,
+  "right": 0,
+  "right_basis": "independent check (eval/haiku-followup-CHECK.md)"
+ },
+ "wall_minutes": 25.4,
+ "waiting_minutes": null,
+ "cost_usd": 0.53,
+ "cost_basis": "Claude Code's own figure in the session record",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "D2 follow-up: still open."
+}

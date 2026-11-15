@@ -1,0 +1,22 @@
+{
+ "run": "haiku-plan-a",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "A",
+ "model": "claude-haiku-5-5",
+ "plan": "Fable",
+ "base_commit": "908f1cc",
+ "tasks": {
+  "total": 7,
+  "reached": 7,
+  "right": 5,
+  "right_basis": "independent check (eval/haiku-runs-CHECK.md)"
+ },
+ "wall_minutes": 22.1,
+ "waiting_minutes": null,
+ "cost_usd": 1.29,
+ "cost_basis": "Claude Code's own figure in the session record",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "T5 built and passing but recorded as fail, T6 numbers right but called invalid: both corrected by the review."
+}
