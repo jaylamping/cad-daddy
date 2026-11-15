@@ -1,0 +1,32 @@
+18:46:11 SolidWorks pid 158760 free GB 22.3
+18:46:11 clock: D1 fea job: instance up: 16.4 min since the job began
+18:46:19 ok base bottom faces: 1.0000 (expected 1.0000)
+18:46:19 ok M5 faces: 2.0000 (expected 2.0000)
+18:46:19 ok pad tops: 4.0000 (expected 4.0000)
+18:46:19 PREDICT DOWN_3.0: nodes about 10058, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:46:20 DOWN_3.0: mesh rc 0, 11977 nodes, 6666 elements, free 22.0 GB
+18:46:21 DOWN_3.0: fixture nodes 1353, box [-58.0, -10.0, 0.0] to [58.0, 10.0, 0.0]
+18:46:21 DOWN_3.0: load nodes 288, box [-42.49, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:46:22 SUMMARY {'study': 'DOWN_3.0', 'el_mm': 3.0, 'nodes': 11977, 'elements': 6666, 'solve_s': 2, 'peak_vm_all': 0.72, 'peak_vm_away': 0.48, 'at': [36.34, -11.4, 8.0], 'sf_yield': 92.9, 'max_disp_mm': 0.018434422090649605, 'reaction_N': [-0.0, 0.0, 9.0, 9.0], 'applied_N': 9.0}
+18:46:22 ROW {'el': 3.0, 'nodes': 11977, 'vm': 0.48438695073127747, 'at': [36.34, -11.4, 8.0], 'layer_down': 0.038384661078453064, 'layer_up': 0.06668588519096375, 'shear': 0.0888443829868955, 'shear_at': [-35.0, 6.57, 6.0], 'disp': 0.018434422090649605, 'reaction': [-0.0, 0.0, 9.0, 9.0], 'applied': 9.0, 'solve_s': 2.4830429553985596, 'vm_all': 0.717914879322052}
+18:46:22 PREDICT DOWN_2.0: nodes about 33946, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:46:23 DOWN_2.0: mesh rc 0, 29739 nodes, 17820 elements, free 22.0 GB
+18:46:28 DOWN_2.0: fixture nodes 2847, box [-58.0, -10.0, 0.0] to [58.0, 10.0, 0.0]
+18:46:28 DOWN_2.0: load nodes 740, box [-42.49, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:46:29 SUMMARY {'study': 'DOWN_2.0', 'el_mm': 2.0, 'nodes': 29739, 'elements': 17820, 'solve_s': 7, 'peak_vm_all': 0.81, 'peak_vm_away': 0.49, 'at': [-36.8, -11.0, 8.0], 'sf_yield': 91.83, 'max_disp_mm': 0.018627621233463287, 'reaction_N': [-0.0, 0.0, 9.0, 9.0], 'applied_N': 9.0}
+18:46:29 ROW {'el': 2.0, 'nodes': 29739, 'vm': 0.49005383253097534, 'at': [-36.8, -11.0, 8.0], 'layer_down': 0.021336756646633148, 'layer_up': 0.06997321546077728, 'shear': 0.08758412047796865, 'shear_at': [35.0, -8.0, 6.0], 'disp': 0.018627621233463287, 'reaction': [-0.0, 0.0, 9.0, 9.0], 'applied': 9.0, 'solve_s': 7.107729434967041, 'vm_all': 0.8052254319190979}
+18:46:29 PREDICT DOWN_1.5: nodes about 80465, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:46:30 DOWN_1.5: mesh rc 0, 60868 nodes, 38007 elements, free 22.0 GB
+18:46:38 DOWN_1.5: fixture nodes 4747, box [-58.0, -10.0, 0.0] to [58.0, 10.0, 0.0]
+18:46:38 DOWN_1.5: load nodes 988, box [-42.5, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:46:42 SUMMARY {'study': 'DOWN_1.5', 'el_mm': 1.5, 'nodes': 60868, 'elements': 38007, 'solve_s': 13, 'peak_vm_all': 0.92, 'peak_vm_away': 0.5, 'at': [36.3, -11.25, 8.0], 'sf_yield': 90.88, 'max_disp_mm': 0.018707765266299248, 'reaction_N': [0.0, 0.0, 9.0, 9.0], 'applied_N': 9.0}
+18:46:42 ROW {'el': 1.5, 'nodes': 60868, 'vm': 0.49518293142318726, 'at': [36.3, -11.25, 8.0], 'layer_down': 0.022129414603114128, 'layer_up': 0.07240895926952362, 'shear': 0.09186162199503718, 'shear_at': [-43.0, 7.22, 6.0], 'disp': 0.018707765266299248, 'reaction': [0.0, 0.0, 9.0, 9.0], 'applied': 9.0, 'solve_s': 12.873778104782104, 'vm_all': 0.9242475628852844}
+18:46:42 PREDICT DOWN_M5WALLS: nodes about 33946, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:46:43 DOWN_M5WALLS: mesh rc 0, 29739 nodes, 17820 elements, free 22.0 GB
+18:46:48 DOWN_M5WALLS: fixture nodes 192, box [-54.75, -2.75, 0.0] to [54.75, 2.74, 4.0]
+18:46:48 DOWN_M5WALLS: load nodes 740, box [-42.49, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:46:49 SUMMARY {'study': 'DOWN_M5WALLS', 'el_mm': 2.0, 'nodes': 29739, 'elements': 17820, 'solve_s': 7, 'peak_vm_all': 1.39, 'peak_vm_away': 0.89, 'at': [43.0, -11.0, 1.0], 'sf_yield': 50.29, 'max_disp_mm': 0.04084949195384979, 'reaction_N': [0.0, 0.0, 9.0, 9.0], 'applied_N': 9.0}
+18:46:49 judge: pass; lowest factor 90.88 at "mount, 9 N, vm"
+18:46:50 clock: D1 fea job: done: 17.1 min since the job began
+18:46:50 closing pid 158760 committed MB 1720
+FEA DONE

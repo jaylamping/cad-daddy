@@ -1,0 +1,104 @@
+{
+ "housing_upper": {
+  "watertight": true,
+  "shells": 1,
+  "stl_volume": 18967.2,
+  "sw_volume": 18932.8,
+  "diff_pct": 0.182,
+  "bounds": [
+   [
+    -36.0,
+    0.15,
+    -4.0
+   ],
+   [
+    36.0,
+    32.0,
+    11.0
+   ]
+  ],
+  "sw_box": [
+   -36.0,
+   0.15,
+   -4.0,
+   36.0,
+   32.0,
+   11.0
+  ]
+ },
+ "housing_lower": {
+  "watertight": true,
+  "shells": 1,
+  "stl_volume": 19643.3,
+  "sw_volume": 19612.2,
+  "diff_pct": 0.158,
+  "bounds": [
+   [
+    -36.0,
+    -32.0,
+    -4.0
+   ],
+   [
+    36.0,
+    -0.15,
+    11.0
+   ]
+  ],
+  "sw_box": [
+   -36.0,
+   -32.0,
+   -4.0,
+   36.0,
+   -0.15,
+   11.0
+  ]
+ },
+ "ring": {
+  "watertight": true,
+  "shells": 1,
+  "stl_volume": 2196.8,
+  "sw_volume": 2199.1,
+  "diff_pct": -0.104,
+  "bounds": [
+   [
+    -26.0,
+    -25.967,
+    0.0
+   ],
+   [
+    26.0,
+    25.967,
+    7.0
+   ]
+  ],
+  "sw_box": [
+   -26.0,
+   -26.0,
+   0.0,
+   26.0,
+   26.0,
+   7.0
+  ]
+ },
+ "inner_ring_points_inside_housing": 0,
+ "inner_ring_to_opening_radial_mm": 1.0,
+ "inner_ring_sweep_with_0.5_radial_margin_inside_housing": 0,
+ "ring_points_inside_housing_design_state": 100,
+ "closed_state_upper_pole_ring_envelope_overlap_mm": 0.2,
+ "split_gap_design_mm": 0.3,
+ "clearances_mm": {
+  "inner_ring_to_shoulder_opening_radial": 1.0,
+  "outer_ring_face_backed_by_lip_radial": 3.0,
+  "ring_to_seat_radial_nominal_closed_split": "0.15 interference per side at the poles (0.30 diametral), +-0.15 print",
+  "seat_axial_play_over_7.0_bearing": 0.3,
+  "screw_shank_to_clearance_hole_radial": 0.2,
+  "screw_head_to_counterbore_radial": 0.25,
+  "screw_head_below_face": 0.5,
+  "screw_tip_to_insert_hole_bottom": 0.5,
+  "split_gap_before_tightening": 0.3,
+  "wall_hole_to_seat": 3.0,
+  "wall_counterbore_to_Z_faces": 1.0,
+  "rib_between_counterbores": 1.0,
+  "wall_insert_hole_to_X_face": 3.0
+ }
+}

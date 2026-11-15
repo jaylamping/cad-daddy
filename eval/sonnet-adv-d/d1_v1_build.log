@@ -1,0 +1,53 @@
+18:45:13 SolidWorks pid 158344 free GB 22.4
+18:45:13 clock: D1 build job: instance up: 15.5 min since the job began
+18:45:16 ok BASE volume change: 9280.0000 (expected 9280.0000)
+18:45:16 BASE: added 9280.00 mm3
+18:45:17 ok BRIDGE_P volume change: 2880.0000 (expected 2880.0000)
+18:45:17 BRIDGE_P: added 2880.00 mm3
+18:45:17 ok BRIDGE_N volume change: 2880.0000 (expected 2880.0000)
+18:45:17 BRIDGE_N: added 2880.00 mm3
+18:45:18 ok PADS volume change: 538.7831 (expected 538.7831)
+18:45:18 PADS: added 538.78 mm3
+18:45:18 ok INSERT_HOLES volume change: 301.5929 (expected 301.5929)
+18:45:18 INSERT_HOLES: cut 301.59 mm3
+18:45:19 ok M5_HOLES volume change: 190.0664 (expected 190.0664)
+18:45:19 M5_HOLES: cut 190.07 mm3
+18:45:19 ok volume mm3 against hand: 15087.1239 (expected 15087.1239)
+18:45:19 ok bodies: 1.0000 (expected 1.0000)
+18:45:19 ok box[0]: -58.0000 (expected -58.0000)
+18:45:19 ok box[1]: -30.0000 (expected -30.0000)
+18:45:19 ok box[2]: 0.0000 (expected 0.0000)
+18:45:19 ok box[3]: 58.0000 (expected 58.0000)
+18:45:19 ok box[4]: 30.0000 (expected 30.0000)
+18:45:19 ok box[5]: 11.5000 (expected 11.5000)
+18:45:19 ok feature errors: 0.0000 (expected 0.0000)
+18:45:19 ok insert hole faces: 4.0000 (expected 4.0000)
+18:45:19 ok M5 hole faces: 2.0000 (expected 2.0000)
+18:45:19 hole boxes {'ins': [[37.0, -28.5, 5.5, 41.0, -24.5, 11.5], [37.0, 24.5, 5.5, 41.0, 28.5, 11.5], [-41.0, 24.5, 5.5, -37.0, 28.5, 11.5], [-41.0, -28.5, 5.5, -37.0, -24.5, 11.5]], 'm5': [[-54.75, -2.75, 0.0, -49.25, 2.75, 4.0], [49.25, -2.75, 0.0, 54.75, 2.75, 4.0]]}
+18:45:19 ok insert hole centre |x|: 39.0000 (expected 39.0000)
+18:45:19 ok insert hole centre |y|: 26.5000 (expected 26.5000)
+18:45:19 ok insert hole centre |x|: 39.0000 (expected 39.0000)
+18:45:19 ok insert hole centre |y|: 26.5000 (expected 26.5000)
+18:45:19 ok insert hole centre |x|: 39.0000 (expected 39.0000)
+18:45:19 ok insert hole centre |y|: 26.5000 (expected 26.5000)
+18:45:19 ok insert hole centre |x|: 39.0000 (expected 39.0000)
+18:45:19 ok insert hole centre |y|: 26.5000 (expected 26.5000)
+18:45:19 ok M5 hole centre |x|: 52.0000 (expected 52.0000)
+18:45:19 ok M5 hole centre |x|: 52.0000 (expected 52.0000)
+18:45:19 ok pad top faces found by point: 1.0000 (expected 1.0000)
+18:45:19 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d1\buck_mount.step 114947 bytes
+18:45:19 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d1\buck_mount.stl 76684 bytes
+18:45:19 clock: D1 mount built: 15.6 min since the job began
+18:45:20 ok BOARD volume change: 8160.0000 (expected 8160.0000)
+18:45:20 BOARD: added 8160.00 mm3
+18:45:21 ok BOARD_HOLES volume change: 51.4719 (expected 51.4719)
+18:45:21 BOARD_HOLES: cut 51.47 mm3
+18:45:21 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d1\board.stl 30284 bytes
+18:45:24 ok RAIL volume change: 64000.0000 (expected 64000.0000)
+18:45:24 RAIL: added 64000.00 mm3
+18:45:25 ok SLOT volume change: 2880.0000 (expected 2880.0000)
+18:45:25 SLOT: cut 2880.00 mm3
+18:45:25 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d1\rail.stl 1484 bytes
+18:45:25 clock: D1 build job: done: 15.7 min since the job began
+18:45:25 closing pid 158344 committed MB 1817
+BUILD DONE

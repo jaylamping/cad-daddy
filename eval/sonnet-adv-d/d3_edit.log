@@ -1,0 +1,170 @@
+P1 edit plan: outside diameter 70 -> 72: the 1 mm chamfer would leave 0.0 mm between it and the counterbores (rim wall was 1.0) {'hole_hole_top': 3.024, 'hole_hole_through': 4.774, 'hole_bore': 8.3, 'hole_outside': 2.0, 'floor': 3.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+P2 edit plan: thicker + chamfer only {'hole_hole_top': 9.797, 'hole_hole_through': 11.547, 'hole_bore': 7.0, 'hole_outside': 7.0, 'floor': 3.0, 'hole_outside_after_chamfer': 6.0, 'min': 3.0}
+P3 edit plan: ring A on a 70 circle as asked, and turned 22.5 deg: at 0 deg ring A (r 35, Ø3.4) puts holes 7 mm from the Ø5.5 holes of ring B (r 42) and their Ø10 counterbores (r 5) leave a 0.3 mm wall; at 22.5 deg the thinnest hole-to-hole wall is 9.82 mm; outside diameter 96 -> 98: the 1 mm chamfer would leave 0.0 mm between it and the counterbores (rim wall was 1.0) {'hole_hole_top': 9.816, 'hole_hole_through': 12.066, 'hole_bore': 7.3, 'hole_outside': 2.0, 'floor': 4.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+P4 edit plan: thicker + chamfer only {'hole_hole_top': 3.3, 'hole_hole_through': 5.05, 'hole_bore': 4.3, 'hole_outside': 2.0, 'floor': 1.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+P5 edit plan: thicker + chamfer only {'hole_hole_top': 4.25, 'hole_hole_through': 6.45, 'hole_bore': 7.75, 'hole_outside': 2.5, 'floor': 3.0, 'hole_outside_after_chamfer': 1.5, 'min': 1.5}
+P6 edit plan: thicker + chamfer only {'hole_hole_top': 3.3, 'hole_hole_through': 5.05, 'hole_bore': 4.3, 'hole_outside': 2.0, 'floor': 3.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+19:38:55 SolidWorks pid 184104 free GB 22.1
+19:38:55 clock: D3 part two: instance up: 69.2 min since the job began
+19:38:55 clock: D3 P1 edit start: 69.2 min since the job began
+19:38:57 ok P1: open document is the copy: 1.0000 (expected 1.0000)
+19:38:57 BODY: D1@BODY@P1_b.Part 6 -> 7.5
+19:38:57 RING_B_CB: D1@RING_B_CB@P1_b.Part 4.0 -> 5.5
+19:38:58 BODY_SK: 1 segments deleted, 1 circles drawn
+19:38:58 ok P1: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:38:58 ok P1: volume before the chamfer against hand: 23730.6484 (expected 23730.6484)
+19:38:58 ok P1: floor Z as before the change: 3.0000 (expected 3.0000)
+19:38:58 ok P1: volume against hand (chamfer pi c^2 (R - c/3) = 112.05): 23618.5983 (expected 23618.5983)
+19:38:58 ok P1: bodies: 1.0000 (expected 1.0000)
+19:38:58 ok P1: box[0]: -36.0000 (expected -36.0000)
+19:38:58 ok P1: box[1]: -36.0000 (expected -36.0000)
+19:38:58 ok P1: box[2]: 0.0000 (expected 0.0000)
+19:38:58 ok P1: box[3]: 36.0000 (expected 36.0000)
+19:38:58 ok P1: box[4]: 36.0000 (expected 36.0000)
+19:38:58 ok P1: box[5]: 7.5000 (expected 7.5000)
+19:38:58 ok P1: errors: 0.0000 (expected 0.0000)
+19:38:59 ok P1: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:38:59 ok P1: holes found: 10.0000 (expected 10.0000)
+19:38:59 ok P1: counterbores found: 4.0000 (expected 4.0000)
+19:38:59 ok P1: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:38:59 ok P1: counterbore floor faces found at Z 3.0 (measured from the bottom, unchanged): 4.0000 (expected 4.0000)
+19:38:59 P1: measured walls after the change {'hole_hole_top': 3.024, 'hole_hole_through': 4.774, 'hole_bore': 8.3, 'hole_outside': 2.0, 'floor': 3.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+19:38:59 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P1_b.stl 137784 bytes
+19:38:59 ok P1: STL volume: 23596.0059 (expected 23618.5983)
+19:38:59 ok P1: the original, reopened, still has its old volume: 17728.6671 (expected 17728.6671)
+19:38:59 clock: D3 P1 edit end: 69.3 min since the job began
+19:38:59 clock: D3 P2 edit start: 69.3 min since the job began
+19:38:59 ok P2: open document is the copy: 1.0000 (expected 1.0000)
+19:38:59 BODY: D1@BODY@P2_b.Part 6 -> 7.5
+19:38:59 RING_B_CB: D1@RING_B_CB@P2_b.Part 4.0 -> 5.5
+19:39:00 ok P2: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:39:00 ok P2: volume before the chamfer against hand: 29779.3531 (expected 29779.3531)
+19:39:00 ok P2: floor Z as before the change: 3.0000 (expected 3.0000)
+19:39:00 ok P2: volume against hand (chamfer pi c^2 (R - c/3) = 130.90): 29648.4534 (expected 29648.4534)
+19:39:00 ok P2: bodies: 1.0000 (expected 1.0000)
+19:39:00 ok P2: box[0]: -42.0000 (expected -42.0000)
+19:39:00 ok P2: box[1]: -42.0000 (expected -42.0000)
+19:39:00 ok P2: box[2]: 0.0000 (expected 0.0000)
+19:39:00 ok P2: box[3]: 42.0000 (expected 42.0000)
+19:39:00 ok P2: box[4]: 42.0000 (expected 42.0000)
+19:39:00 ok P2: box[5]: 7.5000 (expected 7.5000)
+19:39:00 ok P2: errors: 0.0000 (expected 0.0000)
+19:39:00 ok P2: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:39:00 ok P2: holes found: 12.0000 (expected 12.0000)
+19:39:00 ok P2: counterbores found: 6.0000 (expected 6.0000)
+19:39:00 ok P2: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:39:00 ok P2: counterbore floor faces found at Z 3.0 (measured from the bottom, unchanged): 6.0000 (expected 6.0000)
+19:39:00 P2: measured walls after the change {'hole_hole_top': 9.797, 'hole_hole_through': 11.547, 'hole_bore': 7.0, 'hole_outside': 7.0, 'floor': 3.0, 'hole_outside_after_chamfer': 6.0, 'min': 3.0}
+19:39:00 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P2_b.stl 167084 bytes
+19:39:00 ok P2: STL volume: 29623.0327 (expected 29648.4534)
+19:39:01 ok P2: the original, reopened, still has its old volume: 23947.1827 (expected 23947.1827)
+19:39:01 clock: D3 P2 edit end: 69.3 min since the job began
+19:39:01 clock: D3 P3 edit start: 69.3 min since the job began
+19:39:01 ok P3: open document is the copy: 1.0000 (expected 1.0000)
+19:39:01 BODY: D1@BODY@P3_b.Part 8 -> 9.5
+19:39:01 RING_B_CB: D1@RING_B_CB@P3_b.Part 5.0 -> 6.5
+19:39:02 BODY_SK: 1 segments deleted, 1 circles drawn
+19:39:02 RING_A_SK_SK: 8 segments deleted, 8 circles drawn
+19:39:02 ok P3: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:39:02 ok P3: volume before the chamfer against hand: 48684.8215 (expected 48684.8215)
+19:39:02 ok P3: floor Z as before the change: 4.0000 (expected 4.0000)
+19:39:03 ok P3: volume against hand (chamfer pi c^2 (R - c/3) = 152.89): 48531.9307 (expected 48531.9307)
+19:39:03 ok P3: bodies: 1.0000 (expected 1.0000)
+19:39:03 ok P3: box[0]: -49.0000 (expected -49.0000)
+19:39:03 ok P3: box[1]: -49.0000 (expected -49.0000)
+19:39:03 ok P3: box[2]: 0.0000 (expected 0.0000)
+19:39:03 ok P3: box[3]: 49.0000 (expected 49.0000)
+19:39:03 ok P3: box[4]: 49.0000 (expected 49.0000)
+19:39:03 ok P3: box[5]: 9.5000 (expected 9.5000)
+19:39:03 ok P3: errors: 0.0000 (expected 0.0000)
+19:39:03 ok P3: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:39:03 ok P3: holes found: 12.0000 (expected 12.0000)
+19:39:03 ok P3: counterbores found: 4.0000 (expected 4.0000)
+19:39:03 ok P3: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:39:03 ok P3: counterbore floor faces found at Z 4.0 (measured from the bottom, unchanged): 4.0000 (expected 4.0000)
+19:39:03 P3: measured walls after the change {'hole_hole_top': 9.816, 'hole_hole_through': 12.066, 'hole_bore': 7.3, 'hole_outside': 2.0, 'floor': 4.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+19:39:03 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P3_b.stl 153484 bytes
+19:39:03 ok P3: STL volume: 48489.4688 (expected 48531.9307)
+19:39:06 ok P3: the original, reopened, still has its old volume: 38698.2640 (expected 38698.2640)
+19:39:06 clock: D3 P3 edit end: 69.4 min since the job began
+19:39:06 clock: D3 P4 edit start: 69.4 min since the job began
+19:39:07 ok P4: open document is the copy: 1.0000 (expected 1.0000)
+19:39:07 BODY: D1@BODY@P4_b.Part 5 -> 6.5
+19:39:07 RING_B_CB: D1@RING_B_CB@P4_b.Part 5.0 -> 6.5
+19:39:07 ok P4: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:39:07 ok P4: volume before the chamfer against hand: 19022.2964 (expected 19022.2964)
+19:39:07 ok P4: floor Z as before the change: 1.0000 (expected 1.0000)
+19:39:07 ok P4: volume against hand (chamfer pi c^2 (R - c/3) = 108.91): 18913.3878 (expected 18913.3878)
+19:39:07 ok P4: bodies: 1.0000 (expected 1.0000)
+19:39:07 ok P4: box[0]: -35.0000 (expected -35.0000)
+19:39:07 ok P4: box[1]: -35.0000 (expected -35.0000)
+19:39:07 ok P4: box[2]: 0.0000 (expected 0.0000)
+19:39:07 ok P4: box[3]: 35.0000 (expected 35.0000)
+19:39:07 ok P4: box[4]: 35.0000 (expected 35.0000)
+19:39:07 ok P4: box[5]: 6.5000 (expected 6.5000)
+19:39:07 ok P4: errors: 0.0000 (expected 0.0000)
+19:39:08 ok P4: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:39:08 ok P4: holes found: 10.0000 (expected 10.0000)
+19:39:08 ok P4: counterbores found: 6.0000 (expected 6.0000)
+19:39:08 ok P4: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:39:08 ok P4: counterbore floor faces found at Z 1.0 (measured from the bottom, unchanged): 6.0000 (expected 6.0000)
+19:39:08 P4: measured walls after the change {'hole_hole_top': 3.3, 'hole_hole_through': 5.05, 'hole_bore': 4.3, 'hole_outside': 2.0, 'floor': 1.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+19:39:08 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P4_b.stl 151384 bytes
+19:39:08 ok P4: STL volume: 18898.1590 (expected 18913.3878)
+19:39:08 ok P4: the original, reopened, still has its old volume: 14680.1127 (expected 14680.1127)
+19:39:08 clock: D3 P4 edit end: 69.4 min since the job began
+19:39:08 clock: D3 P5 edit start: 69.4 min since the job began
+19:39:09 ok P5: open document is the copy: 1.0000 (expected 1.0000)
+19:39:09 BODY: D1@BODY@P5_b.Part 8 -> 9.5
+19:39:09 RING_B_CB: D1@RING_B_CB@P5_b.Part 6.0 -> 7.5
+19:39:09 ok P5: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:39:09 ok P5: volume before the chamfer against hand: 74446.6510 (expected 74446.6510)
+19:39:09 ok P5: floor Z as before the change: 3.0000 (expected 3.0000)
+19:39:09 ok P5: volume against hand (chamfer pi c^2 (R - c/3) = 187.45): 74259.2026 (expected 74259.2026)
+19:39:09 ok P5: bodies: 1.0000 (expected 1.0000)
+19:39:09 ok P5: box[0]: -60.0000 (expected -60.0000)
+19:39:09 ok P5: box[1]: -60.0000 (expected -60.0000)
+19:39:09 ok P5: box[2]: 0.0000 (expected 0.0000)
+19:39:09 ok P5: box[3]: 60.0000 (expected 60.0000)
+19:39:09 ok P5: box[4]: 60.0000 (expected 60.0000)
+19:39:09 ok P5: box[5]: 9.5000 (expected 9.5000)
+19:39:09 ok P5: errors: 0.0000 (expected 0.0000)
+19:39:09 ok P5: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:39:09 ok P5: holes found: 18.0000 (expected 18.0000)
+19:39:09 ok P5: counterbores found: 6.0000 (expected 6.0000)
+19:39:09 ok P5: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:39:09 ok P5: counterbore floor faces found at Z 3.0 (measured from the bottom, unchanged): 6.0000 (expected 6.0000)
+19:39:09 P5: measured walls after the change {'hole_hole_top': 4.25, 'hole_hole_through': 6.45, 'hole_bore': 7.75, 'hole_outside': 2.5, 'floor': 3.0, 'hole_outside_after_chamfer': 1.5, 'min': 1.5}
+19:39:09 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P5_b.stl 225084 bytes
+19:39:09 ok P5: STL volume: 74203.1297 (expected 74259.2026)
+19:39:10 ok P5: the original, reopened, still has its old volume: 62864.7770 (expected 62864.7770)
+19:39:10 clock: D3 P5 edit end: 69.4 min since the job began
+19:39:10 clock: D3 P6 edit start: 69.4 min since the job began
+19:39:10 ok P6: open document is the copy: 1.0000 (expected 1.0000)
+19:39:10 BODY: D1@BODY@P6_b.Part 6 -> 7.5
+19:39:10 RING_B_CB: D1@RING_B_CB@P6_b.Part 4.0 -> 5.5
+19:39:10 ok P6: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:39:10 ok P6: volume before the chamfer against hand: 25983.7594 (expected 25983.7594)
+19:39:10 ok P6: floor Z as before the change: 3.0000 (expected 3.0000)
+19:39:11 ok P6: volume against hand (chamfer pi c^2 (R - c/3) = 118.33): 25865.4261 (expected 25865.4261)
+19:39:11 ok P6: bodies: 1.0000 (expected 1.0000)
+19:39:11 ok P6: box[0]: -38.0000 (expected -38.0000)
+19:39:11 ok P6: box[1]: -38.0000 (expected -38.0000)
+19:39:11 ok P6: box[2]: 0.0000 (expected 0.0000)
+19:39:11 ok P6: box[3]: 38.0000 (expected 38.0000)
+19:39:11 ok P6: box[4]: 38.0000 (expected 38.0000)
+19:39:11 ok P6: box[5]: 7.5000 (expected 7.5000)
+19:39:11 ok P6: errors: 0.0000 (expected 0.0000)
+19:39:11 ok P6: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:39:11 ok P6: holes found: 9.0000 (expected 9.0000)
+19:39:11 ok P6: counterbores found: 3.0000 (expected 3.0000)
+19:39:11 ok P6: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:39:11 ok P6: counterbore floor faces found at Z 3.0 (measured from the bottom, unchanged): 3.0000 (expected 3.0000)
+19:39:11 P6: measured walls after the change {'hole_hole_top': 3.3, 'hole_hole_through': 5.05, 'hole_bore': 4.3, 'hole_outside': 2.0, 'floor': 3.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+19:39:11 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P6_b.stl 121884 bytes
+19:39:11 ok P6: STL volume: 25839.0293 (expected 25865.4261)
+19:39:11 ok P6: the original, reopened, still has its old volume: 20848.8576 (expected 20848.8576)
+19:39:11 clock: D3 P6 edit end: 69.5 min since the job began
+19:39:11 closing pid 184104 committed MB 1837
+19:39:19 clock: D3 part two: end: 69.6 min since the job began
+D3 PART TWO DONE

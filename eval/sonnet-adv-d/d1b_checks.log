@@ -1,0 +1,13 @@
+watertight True shells 1 volume STL 15726.9 SW 15727.1 diff % -0.002
+bounds [[-58.0, -30.0, 0.0], [58.0, 30.0, 11.5]] SW box [-58.0, -30.0, 0.0, 58.0, 30.0, 11.5]
+STEP unit ['#627 =( LENGTH_UNIT ( ) NAMED_UNIT ( * ) SI_UNIT ( .MILLI., ']
+M3 key column at (39,26.5) Z 17..45 (mount, rail): 0 of 756 points inside solid
+M3 key column at (39,-26.5) Z 17..45 (mount, rail): 0 of 756 points inside solid
+M3 key column at (-39,26.5) Z 17..45 (mount, rail): 0 of 756 points inside solid
+M3 key column at (-39,-26.5) Z 17..45 (mount, rail): 0 of 756 points inside solid
+M5 key column at (52,0) Z 7..45 r 6 (mount, rail): 0 of 756 points inside solid
+M5 key column at (-52,0) Z 7..45 r 6 (mount, rail): 0 of 756 points inside solid
+M5 column nearest X to the board parts box:  3.5 mm clear
+board + parts block lifting straight up, Z 11.6..60 (mount): 0 of 3276 points inside solid
+under-parts zone points inside the mount: 60  of which on the four pads: 60  elsewhere: 0
+wire exit region +X of the board, Z 11.5..40 (mount): 0 of 1664 points inside solid

@@ -1,0 +1,45 @@
+{
+ "status": "done",
+ "mass_g": 18.72,
+ "parts": 1,
+ "fasteners": [
+  "4 x M3x10 socket cap screw (2.5 mm hex) into 4 x M3 heat-set inserts (5 mm long, in the dia 4.0 holes)",
+  "2 x M5x10 button head ISO 7380 (3 mm hex), no washer, in 2 x M5 T-nuts for the 6 mm slot. M5x10 not x12: through the 4 mm base it reaches 6 mm below the rail face; I assume the slot is about 6 mm deep with the nut 1.8 mm under the lip (an x12 would reach 8 mm and could bottom out). Slot depth is from memory, not measured"
+ ],
+ "board_removal_steps": [
+  "Switch off and unplug the 12 V input and both output wire pairs at the board terminals (wires are not part of the mount).",
+  "With a 2.5 mm hex key straight down from above, undo the four M3x10 screws (the key column above each head is clear to 45 mm).",
+  "Lift the board straight up 20 mm: nothing is above it, nothing touches it but the four pad tops.",
+  "Swap the board. To fit: set it on the four pads, start the four M3 screws by hand, snug by feel. The mount stays on the rail throughout (its 2 M5 screws are not touched)."
+ ],
+ "open_area_share": 0.549,
+ "open_area_share_note": "worst face (underside) counting the base strip under the board as a shadow: (5100-900-1400)/5100; strictly only the two 7.5 mm bridge strips cover it: 0.824. Top face 0.99",
+ "envelope_ok": false,
+ "envelope_note": "the mount itself and the board are inside Y -30..30; the specification (Y -25..25) cannot hold even the bare board lying flat (60 mm), nor the 60 x 18.6 board-with-parts section at any tilt (least overshoot 2.8 mm tilted 45 deg). Gave up Y by 5.0 mm each side. Z top is 27.1 against 45",
+ "sf_min": 42.5,
+ "governing": "von Mises at the insert-hole wall of the pad for the lateral X 9 N case (1.06 MPa at 1.5 mm, still rising: a bearing-load edge); the plain bridge section reads 0.36 MPa for the vertical 9 N case against hand 0.40",
+ "print_orientation": "base down on the bed (Z up), 0.2 mm layers, 4 walls, 15 percent gyroid is enough: stress is under 1.1 MPa; no supports: every arm sits on the bed and the pads and insert holes are vertical. Layers lie across the pad screws (insert pull-out is across layers): not a governing load at 2.25 N",
+ "ideas_tried": [
+  "A (built): flat bridge, board on four pads, four M3 screws into inserts, everything reached from above",
+  "B (sketched only, not built, not studied): board tilted 45 deg in two grooves, slides out along X, held by one latch; saves 2.2 mm of Y but needs a leg beside the rail, grooves that must be dimensionally good to +-0.15 and unsupported overhangs; rejected"
+ ],
+ "assumptions": [
+  "board lies flat, tall side up",
+  "Y limit given up by 5 mm each side",
+  "wires leave the +X edge and run over the base",
+  "M5 T-nuts for the 6 mm slot",
+  "M3 heat-set inserts available",
+  "full 14 mm parts anywhere on the board"
+ ],
+ "questions": [
+  "Which limit has room: Y, Z or the rail sides? (assumed Z)",
+  "Where are the 14 mm parts? (assumed anywhere)",
+  "Which side is up? (assumed 14 mm side up)",
+  "Which way do the wires route? (assumed out of +X over the base)",
+  "Which T-nuts? (assumed M5 for the 6 mm slot)",
+  "Hand access from above? (assumed yes)",
+  "M3 inserts allowed? (assumed yes)",
+  "Is 10 g the board alone? (assumed yes, mount adds under 1 N)",
+  "Strain relief wanted? (assumed not)"
+ ]
+}

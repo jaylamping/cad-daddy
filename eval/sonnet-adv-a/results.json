@@ -1,0 +1,1568 @@
+{
+  "T1": {
+    "volume_mm3": 32974.02,
+    "hand_volume_mm3": 32974.02,
+    "mass_g": 39.239,
+    "bbox_mm": [
+      0.0,
+      0.0,
+      0.0,
+      80.0,
+      50.0,
+      46.0
+    ],
+    "bodies": 1,
+    "stl_watertight": true,
+    "stl_volume_mm3": 32990.38,
+    "status": "done",
+    "notes": "sha256 e6880b16b3122e65dcaefffbc592e96f4ce37bd308bdbbcd9660c12a40a35379; measured {'base_holes': [(25.0, 10.0, 3.0, 103.67), (25.0, 40.0, 3.0, 103.67), (65.0, 10.0, 3.0, 103.67), (65.0, 40.0, 3.0, 103.67)], 'bore': [(3.0, 25.0, 28.0, 414.69)], 'small': [(3.0, 14.04, 17.04, 64.09), (3.0, 14.04, 38.96, 64.09), (3.0, 35.96, 17.04, 64.09), (3.0, 35.96, 38.96, 64.09)], 'r4_box': [6.0, 0.0, 6.0, 10.0, 50.0, 10.000000000000002], 'r5': [[75.0, 45.0, 0.0, 80.0, 50.0, 6.0], [75.0, 0.0, 0.0, 80.0, 5.0, 6.0], [0.0, 0.0, 41.0, 6.0, 5.0, 46.0], [0.0, 45.0, 41.0, 6.0, 50.0, 46.0]], 'base top': [6.0, 46.0], 'upright top': [6.0, 46.0], 'upright outer': [0.0], 'upright inner': [6.0, 80.0], 'end face': [6.0, 80.0]}; spec questions {'small_hole_edge_to_bore_edge_mm': 2.8, 'small_hole_dia_mm': 3.4, 'bore_top_to_upright_top_mm': 7, 'bore_bottom_to_base_top_mm': 11, 'bore_y_edge_to_side_mm': 14, 'base_hole_edge_to_nearest_side_mm': 7.25, 'base_hole_to_fillet_toe_mm': 12.25, 'upright_thickness_mm': 6, 'bearing_length_over_bore_dia': 0.2727272727272727}"
+  },
+  "T2": {
+    "volume_mm3": 31643.0,
+    "hand_volume_mm3": 31643.0,
+    "counterbore_floor_z_mm": 3.0,
+    "bodies": 1,
+    "status": "done",
+    "notes": "original bracket.SLDPRT sha e6880b16b3122e65dcaefffbc592e96f4ce37bd308bdbbcd9660c12a40a35379 -> e6880b16b3122e65dcaefffbc592e96f4ce37bd308bdbbcd9660c12a40a35379; tree before ['Comments|CommentsFolder', 'Favorites|FavoriteFolder', 'History|HistoryFolder', 'Selection Sets|SelectionSetFolder', 'Sensors|SensorFolder', 'Design Binder|DocsFolder', 'Annotations|DetailCabinet', 'Surface Bodies|SurfaceBodyFolder', 'Solid Bodies|SolidBodyFolder', 'Lights and Cameras|EnvFolder', 'Markups|InkMarkupFolder', 'Equations|EqnFolder', 'Material <not specified>|MaterialFolder', 'Front Plane|RefPlane', 'Top Plane|RefPlane', 'Right Plane|RefPlane', 'Origin|OriginProfileFeature', 'BASE_P|RefPlane', 'BASE_SK|ProfileFeature', 'BASE|Extrusion', 'UP_P|RefPlane', 'UPRIGHT_SK|ProfileFeature', 'UPRIGHT|ICE', 'INSIDE_FILLET|Fillet', 'BH_P|RefPlane', 'BASE_HOLES_SK|ProfileFeature', 'BASE_HOLES|ICE', 'BORE_P|RefPlane', 'BORE_SK|ProfileFeature', 'BORE|ICE', 'SH_P|RefPlane', 'SMALL_HOLES_SK|ProfileFeature', 'SMALL_HOLES|ICE', 'BASE_ROUNDS|Fillet', 'UPRIGHT_ROUNDS|Fillet']; after ['Comments|CommentsFolder', 'Favorites|FavoriteFolder', 'History|HistoryFolder', 'Selection Sets|SelectionSetFolder', 'Sensors|SensorFolder', 'Design Binder|DocsFolder', 'Annotations|DetailCabinet', 'Surface Bodies|SurfaceBodyFolder', 'Solid Bodies|SolidBodyFolder', 'Lights and Cameras|EnvFolder', 'Markups|InkMarkupFolder', 'Equations|EqnFolder', 'Material <not specified>|MaterialFolder', 'Front Plane|RefPlane', 'Top Plane|RefPlane', 'Right Plane|RefPlane', 'Origin|OriginProfileFeature', 'BASE_P|RefPlane', 'BASE_SK|ProfileFeature', 'BASE|Extrusion', 'UP_P|RefPlane', 'UPRIGHT_SK|ProfileFeature', 'UPRIGHT|ICE', 'INSIDE_FILLET|Fillet', 'BH_P|RefPlane', 'BASE_HOLES_SK|ProfileFeature', 'BASE_HOLES|ICE', 'BORE_P|RefPlane', 'BORE_SK|ProfileFeature', 'BORE|ICE', 'SH_P|RefPlane', 'SMALL_HOLES_SK|ProfileFeature', 'SMALL_HOLES|ICE', 'BASE_ROUNDS|Fillet', 'UPRIGHT_ROUNDS|Fillet', 'CB_P|RefPlane', 'CBORE_SK|ProfileFeature', 'CBORE|ICE', 'SLOT_P|RefPlane', 'SLOT_RECT_SK|ProfileFeature', 'SLOT_RECT|ICE', 'SLOT_E1P|RefPlane', 'SLOT_END_L_SK|ProfileFeature', 'SLOT_END_L|ICE', 'SLOT_E2P|RefPlane', 'SLOT_END_R_SK|ProfileFeature', 'SLOT_END_R|ICE']"
+  },
+  "T3": {
+    "hand_root_stress_mpa": 11.0,
+    "el_mm": 1.6,
+    "nodes": 123582,
+    "peak_vm_mpa": 18.792,
+    "peak_at_mm": [
+      6.0,
+      15.71,
+      17.37
+    ],
+    "layer_stress_mpa": 14.465,
+    "sf_yield": 2.39,
+    "sf_layer": 1.56,
+    "max_disp_mm": 2.851,
+    "reaction_n": 149.993,
+    "converged": true,
+    "convergence_rows": [
+      {
+        "el_mm": 3.0,
+        "nodes": 24804,
+        "vm_mpa": 17.844,
+        "layer_Z_hole_rims_mpa": 14.587,
+        "shear_Z_hole_rims_mpa": 5.557,
+        "shear_Z_root_mpa": 6.689
+      },
+      {
+        "el_mm": 2.2,
+        "nodes": 53442,
+        "vm_mpa": 18.186,
+        "layer_Z_hole_rims_mpa": 14.566,
+        "shear_Z_hole_rims_mpa": 6.33,
+        "shear_Z_root_mpa": 7.06
+      },
+      {
+        "el_mm": 1.6,
+        "nodes": 123582,
+        "vm_mpa": 18.792,
+        "layer_Z_hole_rims_mpa": 14.465,
+        "shear_Z_hole_rims_mpa": 6.507,
+        "shear_Z_root_mpa": 7.024
+      }
+    ],
+    "verdict": "fail",
+    "status": "done",
+    "notes": "Governing: tension across layers (layers along Z) at the lower O3.4 hole rims. Hole walls fixed, even force on rings round the four O3.4 holes: layer tension 14.465 MPa (finest) and with the bottom face fixed instead 15.314 MPa at 2.2 mm (higher; given under second_support_bottom_fixed). A rigid remote load on the bore reads 9.797 MPa there (factor 2.3, the trap); rigid on the small-hole walls reads 22.475 MPa at the loaded wall (coupling artefact). judge() verdict: fail, lowest factor 1.56 at hole rims, layer. Interlayer shear at the root fillet 7.02 MPa (factor 1.85) also under 2.0.",
+    "judge": {
+      "verdict": "fail",
+      "need": 2.0,
+      "lowest_factor": 1.56,
+      "lowest_entry": "hole rims, layer",
+      "rows": [
+        {
+          "entry": "hole rims, vm",
+          "values": [
+            17.844,
+            18.186,
+            18.792
+          ],
+          "limit": 45.0,
+          "factor": 2.39,
+          "converged": true,
+          "last_step_pct": 3.3,
+          "step_before_pct": 1.9,
+          "last_change_mpa": 0.606,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.24,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, layer",
+          "values": [
+            14.587,
+            14.566,
+            14.465
+          ],
+          "limit": 22.5,
+          "factor": 1.56,
+          "converged": true,
+          "last_step_pct": 0.7,
+          "step_before_pct": 0.1,
+          "last_change_mpa": 0.101,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.56,
+          "state": "fail"
+        },
+        {
+          "entry": "hole rims, shear",
+          "values": [
+            5.557,
+            6.33,
+            6.507
+          ],
+          "limit": 13.0,
+          "factor": 2.0,
+          "converged": true,
+          "last_step_pct": 2.8,
+          "step_before_pct": 13.9,
+          "last_change_mpa": 0.177,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.89,
+          "state": "fail"
+        },
+        {
+          "entry": "hole rims clear, vm",
+          "values": [
+            17.844,
+            18.186,
+            18.792
+          ],
+          "limit": 45.0,
+          "factor": 2.39,
+          "converged": true,
+          "last_step_pct": 3.3,
+          "step_before_pct": 1.9,
+          "last_change_mpa": 0.606,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.24,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, layer",
+          "values": [
+            12.04,
+            11.902,
+            13.013
+          ],
+          "limit": 22.5,
+          "factor": 1.73,
+          "converged": false,
+          "last_step_pct": 9.3,
+          "step_before_pct": 1.1,
+          "last_change_mpa": 1.111,
+          "settled_under_mpa": 0.562,
+          "step_growing": true,
+          "factor_after_two_more_steps": 1.45,
+          "state": "fail"
+        },
+        {
+          "entry": "hole rims clear, shear",
+          "values": [
+            5.557,
+            6.33,
+            6.507
+          ],
+          "limit": 13.0,
+          "factor": 2.0,
+          "converged": true,
+          "last_step_pct": 2.8,
+          "step_before_pct": 13.9,
+          "last_change_mpa": 0.177,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.89,
+          "state": "fail"
+        },
+        {
+          "entry": "root and fillet, vm",
+          "values": [
+            13.959,
+            14.878,
+            15.009
+          ],
+          "limit": 45.0,
+          "factor": 3.0,
+          "converged": true,
+          "last_step_pct": 0.9,
+          "step_before_pct": 6.6,
+          "last_change_mpa": 0.131,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.95,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, layer",
+          "values": [
+            9.956,
+            10.024,
+            10.011
+          ],
+          "limit": 22.5,
+          "factor": 2.25,
+          "converged": true,
+          "last_step_pct": 0.1,
+          "step_before_pct": 0.7,
+          "last_change_mpa": 0.013,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.24,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, shear",
+          "values": [
+            6.689,
+            7.06,
+            7.024
+          ],
+          "limit": 13.0,
+          "factor": 1.85,
+          "converged": true,
+          "last_step_pct": 0.5,
+          "step_before_pct": 5.5,
+          "last_change_mpa": 0.036,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.83,
+          "state": "fail"
+        },
+        {
+          "entry": "base, vm",
+          "values": [
+            17.441,
+            17.336,
+            16.803
+          ],
+          "limit": 45.0,
+          "factor": 2.68,
+          "converged": true,
+          "last_step_pct": 3.1,
+          "step_before_pct": 0.6,
+          "last_change_mpa": 0.533,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.68,
+          "state": "pass"
+        },
+        {
+          "entry": "base, layer",
+          "values": [
+            0.708,
+            0.261,
+            0.439
+          ],
+          "limit": 22.5,
+          "factor": 51.25,
+          "converged": true,
+          "last_step_pct": 68.2,
+          "step_before_pct": 63.1,
+          "last_change_mpa": 0.178,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 18.12,
+          "state": "pass"
+        },
+        {
+          "entry": "base, shear",
+          "values": [
+            2.489,
+            2.372,
+            2.498
+          ],
+          "limit": 13.0,
+          "factor": 5.2,
+          "converged": true,
+          "last_step_pct": 5.3,
+          "step_before_pct": 4.7,
+          "last_change_mpa": 0.126,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 4.69,
+          "state": "pass"
+        }
+      ]
+    },
+    "second_support_bottom_fixed": {
+      "el_mm": 2.2,
+      "nodes": 49650,
+      "layer_stress_mpa": 15.314,
+      "sf_layer": 1.47,
+      "max_disp_mm": 1.17,
+      "peak_vm_mpa": 16.909
+    }
+  },
+  "T4": {
+    "build_volume_mm3": 32802.34,
+    "build_hand_volume_mm3": 32802.34,
+    "convergence_rows": [
+      {
+        "el_mm": 3.0,
+        "nodes": 32188,
+        "corner_vm_sharp_mpa": 22.794,
+        "corner_sz_mpa": -27.297,
+        "avg_vm_2mm": 8.583
+      },
+      {
+        "el_mm": 2.2,
+        "nodes": 65250,
+        "corner_vm_sharp_mpa": 25.981,
+        "corner_sz_mpa": -33.051,
+        "avg_vm_2mm": 8.69
+      },
+      {
+        "el_mm": 1.6,
+        "nodes": 145669,
+        "corner_vm_sharp_mpa": 30.001,
+        "corner_sz_mpa": -37.469,
+        "avg_vm_2mm": 8.639
+      }
+    ],
+    "convergence_rows_r04": [
+      {
+        "el_mm": 3.0,
+        "nodes": 44019,
+        "corner_vm_mpa": 38.313,
+        "avg_vm_1mm": 13.426,
+        "avg_vm_2mm": 11.324
+      },
+      {
+        "el_mm": 2.2,
+        "nodes": 85045,
+        "corner_vm_mpa": 38.352,
+        "avg_vm_1mm": 13.42,
+        "avg_vm_2mm": 10.901
+      },
+      {
+        "el_mm": 1.6,
+        "nodes": 195072,
+        "corner_vm_mpa": 40.408,
+        "avg_vm_1mm": 13.819,
+        "avg_vm_2mm": 11.63
+      }
+    ],
+    "converged": false,
+    "reported_stress_mpa": 40.408,
+    "verdict": "fail",
+    "status": "done",
+    "how_judged": "The sharp corner is a singularity (corner von Mises 22.8, 26.0, 30.0 MPa over three sizes, sigma_z -27 to -37 MPa and still falling, steps 14 % and 15 %), so I did not report it: I gave the edge the 0.4 mm radius a printed edge has and solved again (38.3, 38.4, 40.4 MPa, last step 5.4 %), read the mean over 2 mm (8.6 MPa, steady: the section value), and judged the corner against 45 MPa at the 0.4 mm value: factor 1.11, so the part fails; the hole-rim tension across the layers (14.5 MPa, factor 1.55) fails it too.",
+    "notes": "Same load case, rings and hole walls as T3. See REPORT.md T4 for the table.",
+    "judge_with_0p4_radius": {
+      "verdict": "fail",
+      "need": 2.0,
+      "lowest_factor": 0.57,
+      "lowest_entry": "root and fillet, shear",
+      "rows": [
+        {
+          "entry": "hole rims, vm",
+          "values": [
+            17.922,
+            17.821,
+            18.795
+          ],
+          "limit": 45.0,
+          "factor": 2.39,
+          "converged": true,
+          "last_step_pct": 5.5,
+          "step_before_pct": 0.6,
+          "last_change_mpa": 0.974,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.15,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, layer",
+          "values": [
+            14.857,
+            14.292,
+            14.586
+          ],
+          "limit": 22.5,
+          "factor": 1.54,
+          "converged": true,
+          "last_step_pct": 2.1,
+          "step_before_pct": 3.8,
+          "last_change_mpa": 0.294,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.48,
+          "state": "fail"
+        },
+        {
+          "entry": "hole rims, shear",
+          "values": [
+            5.135,
+            6.526,
+            6.496
+          ],
+          "limit": 13.0,
+          "factor": 2.0,
+          "converged": true,
+          "last_step_pct": 0.5,
+          "step_before_pct": 27.1,
+          "last_change_mpa": 0.03,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.98,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, vm",
+          "values": [
+            17.922,
+            17.821,
+            18.795
+          ],
+          "limit": 45.0,
+          "factor": 2.39,
+          "converged": true,
+          "last_step_pct": 5.5,
+          "step_before_pct": 0.6,
+          "last_change_mpa": 0.974,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.15,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, layer",
+          "values": [
+            12.795,
+            12.273,
+            13.177
+          ],
+          "limit": 22.5,
+          "factor": 1.71,
+          "converged": false,
+          "last_step_pct": 7.4,
+          "step_before_pct": 4.1,
+          "last_change_mpa": 0.904,
+          "settled_under_mpa": 0.562,
+          "step_growing": true,
+          "factor_after_two_more_steps": 1.48,
+          "state": "fail"
+        },
+        {
+          "entry": "hole rims clear, shear",
+          "values": [
+            5.135,
+            6.526,
+            6.496
+          ],
+          "limit": 13.0,
+          "factor": 2.0,
+          "converged": true,
+          "last_step_pct": 0.5,
+          "step_before_pct": 27.1,
+          "last_change_mpa": 0.03,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.98,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, vm",
+          "values": [
+            38.313,
+            38.352,
+            40.408
+          ],
+          "limit": 45.0,
+          "factor": 1.11,
+          "converged": false,
+          "last_step_pct": 5.4,
+          "step_before_pct": 0.1,
+          "last_change_mpa": 2.056,
+          "settled_under_mpa": 1.125,
+          "step_growing": true,
+          "factor_after_two_more_steps": 1.0,
+          "state": "fail"
+        },
+        {
+          "entry": "root and fillet, layer",
+          "values": [
+            10.737,
+            10.725,
+            10.709
+          ],
+          "limit": 22.5,
+          "factor": 2.1,
+          "converged": true,
+          "last_step_pct": 0.1,
+          "step_before_pct": 0.1,
+          "last_change_mpa": 0.016,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.1,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, shear",
+          "values": [
+            21.772,
+            21.829,
+            22.931
+          ],
+          "limit": 13.0,
+          "factor": 0.57,
+          "converged": false,
+          "last_step_pct": 5.0,
+          "step_before_pct": 0.3,
+          "last_change_mpa": 1.102,
+          "settled_under_mpa": 0.325,
+          "step_growing": true,
+          "factor_after_two_more_steps": 0.51,
+          "state": "fail"
+        },
+        {
+          "entry": "base, vm",
+          "values": [
+            17.361,
+            16.967,
+            16.818
+          ],
+          "limit": 45.0,
+          "factor": 2.68,
+          "converged": true,
+          "last_step_pct": 0.9,
+          "step_before_pct": 2.3,
+          "last_change_mpa": 0.149,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.68,
+          "state": "pass"
+        },
+        {
+          "entry": "base, layer",
+          "values": [
+            0.414,
+            0.249,
+            0.244
+          ],
+          "limit": 22.5,
+          "factor": 92.21,
+          "converged": true,
+          "last_step_pct": 2.0,
+          "step_before_pct": 39.9,
+          "last_change_mpa": 0.005,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 92.21,
+          "state": "pass"
+        },
+        {
+          "entry": "base, shear",
+          "values": [
+            2.68,
+            2.471,
+            2.418
+          ],
+          "limit": 13.0,
+          "factor": 5.38,
+          "converged": true,
+          "last_step_pct": 2.1,
+          "step_before_pct": 7.8,
+          "last_change_mpa": 0.053,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 5.38,
+          "state": "pass"
+        },
+        {
+          "entry": "inside corner, vm",
+          "values": [
+            38.313,
+            38.352,
+            40.408
+          ],
+          "limit": 45.0,
+          "factor": 1.11,
+          "converged": false,
+          "last_step_pct": 5.4,
+          "step_before_pct": 0.1,
+          "last_change_mpa": 2.056,
+          "settled_under_mpa": 1.125,
+          "step_growing": true,
+          "factor_after_two_more_steps": 1.0,
+          "state": "fail"
+        }
+      ]
+    },
+    "judge_sharp_mesh": {
+      "verdict": "fail",
+      "need": 2.0,
+      "lowest_factor": 0.81,
+      "lowest_entry": "root and fillet, shear",
+      "rows": [
+        {
+          "entry": "hole rims, vm",
+          "values": [
+            17.848,
+            18.049,
+            18.446
+          ],
+          "limit": 45.0,
+          "factor": 2.44,
+          "converged": true,
+          "last_step_pct": 2.2,
+          "step_before_pct": 1.1,
+          "last_change_mpa": 0.397,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.34,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, layer",
+          "values": [
+            14.188,
+            14.623,
+            14.566
+          ],
+          "limit": 22.5,
+          "factor": 1.54,
+          "converged": true,
+          "last_step_pct": 0.4,
+          "step_before_pct": 3.1,
+          "last_change_mpa": 0.057,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.53,
+          "state": "fail"
+        },
+        {
+          "entry": "hole rims, shear",
+          "values": [
+            6.134,
+            6.387,
+            6.231
+          ],
+          "limit": 13.0,
+          "factor": 2.09,
+          "converged": true,
+          "last_step_pct": 2.4,
+          "step_before_pct": 4.1,
+          "last_change_mpa": 0.156,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.99,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, vm",
+          "values": [
+            17.848,
+            18.049,
+            18.446
+          ],
+          "limit": 45.0,
+          "factor": 2.44,
+          "converged": true,
+          "last_step_pct": 2.2,
+          "step_before_pct": 1.1,
+          "last_change_mpa": 0.397,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.34,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, layer",
+          "values": [
+            12.614,
+            11.896,
+            13.155
+          ],
+          "limit": 22.5,
+          "factor": 1.71,
+          "converged": false,
+          "last_step_pct": 10.6,
+          "step_before_pct": 5.7,
+          "last_change_mpa": 1.259,
+          "settled_under_mpa": 0.562,
+          "step_growing": true,
+          "factor_after_two_more_steps": 1.4,
+          "state": "fail"
+        },
+        {
+          "entry": "hole rims clear, shear",
+          "values": [
+            6.134,
+            6.387,
+            6.231
+          ],
+          "limit": 13.0,
+          "factor": 2.09,
+          "converged": true,
+          "last_step_pct": 2.4,
+          "step_before_pct": 4.1,
+          "last_change_mpa": 0.156,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.99,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, vm",
+          "values": [
+            22.794,
+            25.981,
+            30.001
+          ],
+          "limit": 45.0,
+          "factor": 1.5,
+          "converged": false,
+          "last_step_pct": 15.5,
+          "step_before_pct": 14.0,
+          "last_change_mpa": 4.02,
+          "settled_under_mpa": 1.125,
+          "step_growing": true,
+          "factor_after_two_more_steps": 1.12,
+          "state": "fail"
+        },
+        {
+          "entry": "root and fillet, layer",
+          "values": [
+            10.774,
+            10.721,
+            10.861
+          ],
+          "limit": 22.5,
+          "factor": 2.07,
+          "converged": true,
+          "last_step_pct": 1.3,
+          "step_before_pct": 0.5,
+          "last_change_mpa": 0.14,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.02,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, shear",
+          "values": [
+            12.114,
+            13.572,
+            16.084
+          ],
+          "limit": 13.0,
+          "factor": 0.81,
+          "converged": false,
+          "last_step_pct": 18.5,
+          "step_before_pct": 12.0,
+          "last_change_mpa": 2.512,
+          "settled_under_mpa": 0.325,
+          "step_growing": true,
+          "factor_after_two_more_steps": 0.58,
+          "state": "fail"
+        },
+        {
+          "entry": "base, vm",
+          "values": [
+            17.53,
+            17.375,
+            16.804
+          ],
+          "limit": 45.0,
+          "factor": 2.68,
+          "converged": true,
+          "last_step_pct": 3.3,
+          "step_before_pct": 0.9,
+          "last_change_mpa": 0.571,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.68,
+          "state": "pass"
+        },
+        {
+          "entry": "base, layer",
+          "values": [
+            0.363,
+            0.306,
+            0.274
+          ],
+          "limit": 22.5,
+          "factor": 82.12,
+          "converged": true,
+          "last_step_pct": 10.5,
+          "step_before_pct": 15.7,
+          "last_change_mpa": 0.032,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 82.12,
+          "state": "pass"
+        },
+        {
+          "entry": "base, shear",
+          "values": [
+            2.599,
+            2.52,
+            2.58
+          ],
+          "limit": 13.0,
+          "factor": 5.04,
+          "converged": true,
+          "last_step_pct": 2.4,
+          "step_before_pct": 3.0,
+          "last_change_mpa": 0.06,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 4.81,
+          "state": "pass"
+        },
+        {
+          "entry": "inside corner, vm",
+          "values": [
+            22.794,
+            25.981,
+            30.001
+          ],
+          "limit": 45.0,
+          "factor": 1.5,
+          "converged": false,
+          "last_step_pct": 15.5,
+          "step_before_pct": 14.0,
+          "last_change_mpa": 4.02,
+          "settled_under_mpa": 1.125,
+          "step_growing": true,
+          "factor_after_two_more_steps": 1.12,
+          "state": "fail"
+        }
+      ]
+    }
+  },
+  "T5": {
+    "build_volume_mm3": 35331.71,
+    "build_hand_volume_mm3": 35333.25,
+    "mass_g": 42.045,
+    "mass_growth_pct": 7.15,
+    "change": "Upright thickened from 6 to 7.5 mm on the inner (+X) face (outer face, bore, all holes and the footprint unchanged) with R0.4 rounds on the four hole mouths on that face, and the part printed on its side, layers stacked along Y.",
+    "sf_yield": 2.72,
+    "sf_layer": 3.76,
+    "print_orientation": "on its side: layers stacked along Y (the L profile in the layer plane, base and upright both standing on the Y = 0 face)",
+    "verdict": "pass",
+    "status": "done",
+    "notes": "judge() for layers along Y: pass, lowest factor 2.6 at hole rims, shear; layers along Z: pass, lowest 2.02; layers along X: fail, lowest 1.32. Shear between layers (Y) 5.00 MPa, factor 2.60. Study sizes 3.0, 2.2, 1.6; nodes 27,152 / 57,571 / 133,238.",
+    "judge_layers_along_Y": {
+      "verdict": "pass",
+      "need": 2.0,
+      "lowest_factor": 2.6,
+      "lowest_entry": "hole rims, shear",
+      "rows": [
+        {
+          "entry": "hole rims, vm",
+          "values": [
+            11.69,
+            12.886,
+            13.27
+          ],
+          "limit": 45.0,
+          "factor": 3.39,
+          "converged": true,
+          "last_step_pct": 3.0,
+          "step_before_pct": 10.2,
+          "last_change_mpa": 0.384,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.2,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, layer",
+          "values": [
+            5.503,
+            5.421,
+            5.78
+          ],
+          "limit": 22.5,
+          "factor": 3.89,
+          "converged": true,
+          "last_step_pct": 6.6,
+          "step_before_pct": 1.5,
+          "last_change_mpa": 0.359,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.42,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, shear",
+          "values": [
+            4.495,
+            4.819,
+            5.001
+          ],
+          "limit": 13.0,
+          "factor": 2.6,
+          "converged": true,
+          "last_step_pct": 3.8,
+          "step_before_pct": 7.2,
+          "last_change_mpa": 0.182,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.41,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, vm",
+          "values": [
+            11.69,
+            12.886,
+            13.27
+          ],
+          "limit": 45.0,
+          "factor": 3.39,
+          "converged": true,
+          "last_step_pct": 3.0,
+          "step_before_pct": 10.2,
+          "last_change_mpa": 0.384,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.2,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, layer",
+          "values": [
+            5.503,
+            5.421,
+            5.78
+          ],
+          "limit": 22.5,
+          "factor": 3.89,
+          "converged": true,
+          "last_step_pct": 6.6,
+          "step_before_pct": 1.5,
+          "last_change_mpa": 0.359,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.42,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, shear",
+          "values": [
+            4.495,
+            4.819,
+            5.001
+          ],
+          "limit": 13.0,
+          "factor": 2.6,
+          "converged": true,
+          "last_step_pct": 3.8,
+          "step_before_pct": 7.2,
+          "last_change_mpa": 0.182,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.41,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, vm",
+          "values": [
+            14.016,
+            14.261,
+            14.892
+          ],
+          "limit": 45.0,
+          "factor": 3.02,
+          "converged": true,
+          "last_step_pct": 4.4,
+          "step_before_pct": 1.7,
+          "last_change_mpa": 0.631,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.77,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, layer",
+          "values": [
+            2.855,
+            2.867,
+            2.889
+          ],
+          "limit": 22.5,
+          "factor": 7.79,
+          "converged": true,
+          "last_step_pct": 0.8,
+          "step_before_pct": 0.4,
+          "last_change_mpa": 0.022,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 7.67,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, shear",
+          "values": [
+            0.981,
+            1.048,
+            0.968
+          ],
+          "limit": 13.0,
+          "factor": 13.43,
+          "converged": true,
+          "last_step_pct": 7.6,
+          "step_before_pct": 6.8,
+          "last_change_mpa": 0.08,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 11.59,
+          "state": "pass"
+        },
+        {
+          "entry": "base, vm",
+          "values": [
+            16.583,
+            16.52,
+            16.522
+          ],
+          "limit": 45.0,
+          "factor": 2.72,
+          "converged": true,
+          "last_step_pct": 0.0,
+          "step_before_pct": 0.4,
+          "last_change_mpa": 0.002,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.72,
+          "state": "pass"
+        },
+        {
+          "entry": "base, layer",
+          "values": [
+            6.308,
+            5.972,
+            5.982
+          ],
+          "limit": 22.5,
+          "factor": 3.76,
+          "converged": true,
+          "last_step_pct": 0.2,
+          "step_before_pct": 5.3,
+          "last_change_mpa": 0.01,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.75,
+          "state": "pass"
+        },
+        {
+          "entry": "base, shear",
+          "values": [
+            3.046,
+            2.728,
+            2.652
+          ],
+          "limit": 13.0,
+          "factor": 4.9,
+          "converged": true,
+          "last_step_pct": 2.8,
+          "step_before_pct": 10.4,
+          "last_change_mpa": 0.076,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 4.9,
+          "state": "pass"
+        }
+      ]
+    },
+    "judge_layers_along_Z": {
+      "verdict": "pass",
+      "need": 2.0,
+      "lowest_factor": 2.02,
+      "lowest_entry": "root and fillet, shear",
+      "rows": [
+        {
+          "entry": "hole rims, vm",
+          "values": [
+            11.69,
+            12.886,
+            13.27
+          ],
+          "limit": 45.0,
+          "factor": 3.39,
+          "converged": true,
+          "last_step_pct": 3.0,
+          "step_before_pct": 10.2,
+          "last_change_mpa": 0.384,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.2,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, layer",
+          "values": [
+            8.851,
+            8.964,
+            9.518
+          ],
+          "limit": 22.5,
+          "factor": 2.36,
+          "converged": true,
+          "last_step_pct": 6.2,
+          "step_before_pct": 1.3,
+          "last_change_mpa": 0.554,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.1,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, shear",
+          "values": [
+            4.49,
+            4.806,
+            5.031
+          ],
+          "limit": 13.0,
+          "factor": 2.58,
+          "converged": true,
+          "last_step_pct": 4.7,
+          "step_before_pct": 7.0,
+          "last_change_mpa": 0.225,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.36,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, vm",
+          "values": [
+            11.69,
+            12.886,
+            13.27
+          ],
+          "limit": 45.0,
+          "factor": 3.39,
+          "converged": true,
+          "last_step_pct": 3.0,
+          "step_before_pct": 10.2,
+          "last_change_mpa": 0.384,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.2,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, layer",
+          "values": [
+            7.594,
+            8.521,
+            8.86
+          ],
+          "limit": 22.5,
+          "factor": 2.54,
+          "converged": true,
+          "last_step_pct": 4.0,
+          "step_before_pct": 12.2,
+          "last_change_mpa": 0.339,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.35,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, shear",
+          "values": [
+            4.49,
+            4.806,
+            5.031
+          ],
+          "limit": 13.0,
+          "factor": 2.58,
+          "converged": true,
+          "last_step_pct": 4.7,
+          "step_before_pct": 7.0,
+          "last_change_mpa": 0.225,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.36,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, vm",
+          "values": [
+            14.016,
+            14.261,
+            14.892
+          ],
+          "limit": 45.0,
+          "factor": 3.02,
+          "converged": true,
+          "last_step_pct": 4.4,
+          "step_before_pct": 1.7,
+          "last_change_mpa": 0.631,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.77,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, layer",
+          "values": [
+            6.491,
+            6.549,
+            6.551
+          ],
+          "limit": 22.5,
+          "factor": 3.43,
+          "converged": true,
+          "last_step_pct": 0.0,
+          "step_before_pct": 0.9,
+          "last_change_mpa": 0.002,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.43,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, shear",
+          "values": [
+            5.891,
+            6.204,
+            6.427
+          ],
+          "limit": 13.0,
+          "factor": 2.02,
+          "converged": true,
+          "last_step_pct": 3.6,
+          "step_before_pct": 5.3,
+          "last_change_mpa": 0.223,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.88,
+          "state": "pass"
+        },
+        {
+          "entry": "base, vm",
+          "values": [
+            16.583,
+            16.52,
+            16.522
+          ],
+          "limit": 45.0,
+          "factor": 2.72,
+          "converged": true,
+          "last_step_pct": 0.0,
+          "step_before_pct": 0.4,
+          "last_change_mpa": 0.002,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.72,
+          "state": "pass"
+        },
+        {
+          "entry": "base, layer",
+          "values": [
+            0.495,
+            0.319,
+            0.435
+          ],
+          "limit": 22.5,
+          "factor": 51.72,
+          "converged": true,
+          "last_step_pct": 36.4,
+          "step_before_pct": 35.6,
+          "last_change_mpa": 0.116,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 27.82,
+          "state": "pass"
+        },
+        {
+          "entry": "base, shear",
+          "values": [
+            2.473,
+            2.651,
+            2.753
+          ],
+          "limit": 13.0,
+          "factor": 4.72,
+          "converged": true,
+          "last_step_pct": 3.8,
+          "step_before_pct": 7.2,
+          "last_change_mpa": 0.102,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 4.38,
+          "state": "pass"
+        }
+      ]
+    },
+    "judge_layers_along_X": {
+      "verdict": "fail",
+      "need": 2.0,
+      "lowest_factor": 1.32,
+      "lowest_entry": "base, layer",
+      "rows": [
+        {
+          "entry": "hole rims, vm",
+          "values": [
+            11.69,
+            12.886,
+            13.27
+          ],
+          "limit": 45.0,
+          "factor": 3.39,
+          "converged": true,
+          "last_step_pct": 3.0,
+          "step_before_pct": 10.2,
+          "last_change_mpa": 0.384,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.2,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, layer",
+          "values": [
+            1.861,
+            1.811,
+            1.904
+          ],
+          "limit": 22.5,
+          "factor": 11.82,
+          "converged": true,
+          "last_step_pct": 5.1,
+          "step_before_pct": 2.7,
+          "last_change_mpa": 0.093,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 10.69,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims, shear",
+          "values": [
+            1.944,
+            2.091,
+            2.022
+          ],
+          "limit": 13.0,
+          "factor": 6.43,
+          "converged": true,
+          "last_step_pct": 3.3,
+          "step_before_pct": 7.6,
+          "last_change_mpa": 0.069,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 6.03,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, vm",
+          "values": [
+            11.69,
+            12.886,
+            13.27
+          ],
+          "limit": 45.0,
+          "factor": 3.39,
+          "converged": true,
+          "last_step_pct": 3.0,
+          "step_before_pct": 10.2,
+          "last_change_mpa": 0.384,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 3.2,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, layer",
+          "values": [
+            1.861,
+            1.811,
+            1.904
+          ],
+          "limit": 22.5,
+          "factor": 11.82,
+          "converged": true,
+          "last_step_pct": 5.1,
+          "step_before_pct": 2.7,
+          "last_change_mpa": 0.093,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 10.69,
+          "state": "pass"
+        },
+        {
+          "entry": "hole rims clear, shear",
+          "values": [
+            1.944,
+            2.091,
+            2.022
+          ],
+          "limit": 13.0,
+          "factor": 6.43,
+          "converged": true,
+          "last_step_pct": 3.3,
+          "step_before_pct": 7.6,
+          "last_change_mpa": 0.069,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 6.03,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, vm",
+          "values": [
+            14.016,
+            14.261,
+            14.892
+          ],
+          "limit": 45.0,
+          "factor": 3.02,
+          "converged": true,
+          "last_step_pct": 4.4,
+          "step_before_pct": 1.7,
+          "last_change_mpa": 0.631,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.77,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, layer",
+          "values": [
+            0.44,
+            0.305,
+            0.408
+          ],
+          "limit": 22.5,
+          "factor": 55.15,
+          "converged": true,
+          "last_step_pct": 33.8,
+          "step_before_pct": 30.7,
+          "last_change_mpa": 0.103,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 30.82,
+          "state": "pass"
+        },
+        {
+          "entry": "root and fillet, shear",
+          "values": [
+            5.888,
+            6.203,
+            6.43
+          ],
+          "limit": 13.0,
+          "factor": 2.02,
+          "converged": true,
+          "last_step_pct": 3.7,
+          "step_before_pct": 5.3,
+          "last_change_mpa": 0.227,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.88,
+          "state": "pass"
+        },
+        {
+          "entry": "base, vm",
+          "values": [
+            16.583,
+            16.52,
+            16.522
+          ],
+          "limit": 45.0,
+          "factor": 2.72,
+          "converged": true,
+          "last_step_pct": 0.0,
+          "step_before_pct": 0.4,
+          "last_change_mpa": 0.002,
+          "settled_under_mpa": 1.125,
+          "step_growing": false,
+          "factor_after_two_more_steps": 2.72,
+          "state": "pass"
+        },
+        {
+          "entry": "base, layer",
+          "values": [
+            17.669,
+            17.039,
+            17.076
+          ],
+          "limit": 22.5,
+          "factor": 1.32,
+          "converged": true,
+          "last_step_pct": 0.2,
+          "step_before_pct": 3.6,
+          "last_change_mpa": 0.037,
+          "settled_under_mpa": 0.562,
+          "step_growing": false,
+          "factor_after_two_more_steps": 1.31,
+          "state": "fail"
+        },
+        {
+          "entry": "base, shear",
+          "values": [
+            3.039,
+            2.737,
+            2.754
+          ],
+          "limit": 13.0,
+          "factor": 4.72,
+          "converged": true,
+          "last_step_pct": 0.6,
+          "step_before_pct": 9.9,
+          "last_change_mpa": 0.017,
+          "settled_under_mpa": 0.325,
+          "step_growing": false,
+          "factor_after_two_more_steps": 4.66,
+          "state": "pass"
+        }
+      ]
+    },
+    "bore_wall_check": "nodes within 0.5 mm of the O22 wall, finest mesh: vm 6.4, layer tension 3.9 (Z) / 3.9 (Y), shear 3.7 (X): all below the hole rims; see bore_wall.json"
+  },
+  "T6": {
+    "hand_bearing_mpa": 6.76,
+    "nodes": 149971,
+    "solver": "Intel Direct Sparse (SOLVER_DIRECT; the benchmark log says SOLVER TYPE ACTUALLY USED = Intel Direct Sparse Solver)",
+    "how_pin_was_stabilised": "Two soft end pads (O3 x 2 mm discs, E 0.5 MPa) on the pin end faces with their outer faces fixed, clear of the block; pin centred (not pre-seated), built in three bonded pieces (two stubs, one centre) so the stubs carry the 250 N loads as rigid-coupled faces and only the centre face is in the no-penetration set. The pads carried 0.138 N of 500 (0.028 %).",
+    "peak_contact_vm_mpa": 5.217,
+    "peak_contact_vm_smoothed_1mm_mpa": 4.621,
+    "peak_bearing_mpa_raw_node": 6.269,
+    "block_peak_at_mm": [
+      1.73,
+      -15.0,
+      15.9
+    ],
+    "pin_rise_mm": 0.1292,
+    "reaction_n": 500.001,
+    "valid": true,
+    "why": "Reaction 500.00 N for 500 N applied (block bottom 499.86, pads 0.138 N = 0.028 %). Contact proof, a thousandth of the load in the working direction: the pin rises 0.1000 mm = the clearance, then bears (a bond would give ~1e-7 mm). Block and pin nodes were separated by geometry and checked by node-id runs (the first radius-band version put pin nodes in the block band on the seated model and showed 30 MPa; corrected, the block von Mises is 5.2 MPa). Three meshes (41,136 / 86,564 / 149,971 nodes): peak pressure 6.36, 5.99, 5.79 MPa (1 mm smoothed; last step 3.3 %, under 5 %), pin rise 0.1292, 0.1291, 0.1292 mm, half-width 2.05, 1.98, 2.08 mm. Hertz hand 6.76 MPa against raw 6.27 (7 % lower) and smoothed 5.79 (14 % lower): the patch is wider than Hertz (conformal contact). The same case with the pin seated 0.1 mm high gives 5.48 at 0.6 mm and the same pin rise.",
+    "status": "done",
+    "notes": "Centred model, contact-face size 1.2/0.8/0.6 mm: nodes 41136/86564/149971; smoothed peak bearing (1 mm) 6.359/5.988/5.793 MPa. Cross-check: pin seated at the crown (t6.py). Run 1 (no contact set by my mistake) is kept as t6_v1_* and is invalid.",
+    "peak_bearing_mpa": 5.793,
+    "peak_bearing_mpa_2mm_smoothed": 5.031,
+    "bearing_peak_at_mm": [
+      0.13,
+      -11.99,
+      15.1
+    ]
+  },
+  "T7": {
+    "status": "done",
+    "a": "stop: PID 2536 is HALF-CLOSED (hand Joey taskkill /PID 2536 /T /F), 20948 is busy not hung; do not launch, kill, or --force",
+    "b": "out of memory in the factorisation (not singular): coarsen with local controls, under 200,000 nodes; do not add restraints or retry the same mesh",
+    "c": "export option 71 (keep model frame) is off on the new machine: re-export through swkit.export() and check bounds against bbox(d); do not shift the STL by hand",
+    "d": "singularity at the fixed edge (steps 24 % then 30 %): do not report 61 or 38; support a second way / read the plateau and averages; verdict not shown until then",
+    "e": "busy is not hung: reply no, read --status, hidden log, benchmark log, wait; do not restart, kill the client, or use timeout",
+    "notes": "Full text in REPORT.md under T7."
+  }
+}

@@ -1,0 +1,37 @@
+18:53:27 SolidWorks pid 163032 free GB 22.3
+18:53:27 clock: D1 fea job: instance up: 23.7 min since the job began
+18:53:35 ok rail bottom faces: 1.0000 (expected 1.0000)
+18:53:35 ok M5 faces: 2.0000 (expected 2.0000)
+18:53:35 ok pad tops: 4.0000 (expected 4.0000)
+18:53:35 ok insert hole faces: 4.0000 (expected 4.0000)
+18:53:35 PREDICT LAT_Y 2.0: nodes about 35386, displacement about 0.01 mm, peak on the pad insert-hole wall and the pad root (bending of a 3.5 mm tall post, hand 0.2 MPa), tension across layers small
+18:53:35 LAT_Y_2.0: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:53:35 LAT_Y_2.0: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:53:37 LAT_Y_2.0: mesh rc 0, 58186 nodes, 36218 elements, free 22.0 GB
+18:53:47 LAT_Y_2.0: fixture nodes 2973, box [-60.0, -10.0, -6.0] to [60.0, 10.0, -6.0]
+18:53:47 LAT_Y_2.0: load nodes 760, box [-41.0, -28.5, 5.5] to [41.0, 28.5, 11.5]
+18:53:52 ROW {'case': 'LAT_Y', 'el': 2.0, 'nodes': 58186, 'vm': 0.388441801071167, 'at': [-37.1, 27.14, 10.94], 'layer_down': 0.18676652014255524, 'layer_up': 0.236385777592659, 'shear': 0.13070343417163266, 'vm_mount_unmasked': 0.388441801071167, 'disp': 0.006675722077488899, 'reaction': [0.0, -9.001, 0.003, 9.001], 'applied': 9.0}
+18:53:52 PREDICT LAT_Y 1.5: nodes about 83878, displacement about 0.01 mm, peak on the pad insert-hole wall and the pad root (bending of a 3.5 mm tall post, hand 0.2 MPa), tension across layers small
+18:53:52 LAT_Y_1.5: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:53:52 LAT_Y_1.5: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:53:54 LAT_Y_1.5: mesh rc 0, 117873 nodes, 75640 elements, free 22.0 GB
+18:54:22 LAT_Y_1.5: fixture nodes 5223, box [-60.0, -10.0, -6.0] to [60.0, 10.0, -6.0]
+18:54:22 LAT_Y_1.5: load nodes 972, box [-41.0, -28.5, 5.5] to [41.0, 28.5, 11.5]
+18:54:35 ROW {'case': 'LAT_Y', 'el': 1.5, 'nodes': 117873, 'vm': 0.4038829803466797, 'at': [37.1, 27.11, 10.71], 'layer_down': 0.2303408682346344, 'layer_up': 0.3231790363788605, 'shear': 0.15720193583954478, 'vm_mount_unmasked': 0.4038829803466797, 'disp': 0.006733287591487169, 'reaction': [-0.0, -9.0, -0.0, 9.0], 'applied': 9.0}
+18:54:35 PREDICT LAT_X 2.0: nodes about 35386, displacement about 0.01 mm, peak on the pad insert-hole wall and the pad root (bending of a 3.5 mm tall post, hand 0.2 MPa), tension across layers small
+18:54:35 LAT_X_2.0: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:54:35 LAT_X_2.0: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:54:37 LAT_X_2.0: mesh rc 0, 58186 nodes, 36218 elements, free 22.0 GB
+18:54:48 LAT_X_2.0: fixture nodes 2973, box [-60.0, -10.0, -6.0] to [60.0, 10.0, -6.0]
+18:54:48 LAT_X_2.0: load nodes 760, box [-41.0, -28.5, 5.5] to [41.0, 28.5, 11.5]
+18:54:54 ROW {'case': 'LAT_X', 'el': 2.0, 'nodes': 58186, 'vm': 0.42318424582481384, 'at': [40.15, -24.86, 8.26], 'layer_down': 0.1840371936559677, 'layer_up': 0.19538874924182892, 'shear': 0.1402132190805176, 'vm_mount_unmasked': 0.9258160591125488, 'disp': 0.014559912495315075, 'reaction': [-9.0, -0.0, 0.001, 9.0], 'applied': 9.0}
+18:54:54 PREDICT LAT_X 1.5: nodes about 83878, displacement about 0.01 mm, peak on the pad insert-hole wall and the pad root (bending of a 3.5 mm tall post, hand 0.2 MPa), tension across layers small
+18:54:54 LAT_X_1.5: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:54:54 LAT_X_1.5: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:54:57 LAT_X_1.5: mesh rc 0, 117873 nodes, 75640 elements, free 22.0 GB
+18:55:25 LAT_X_1.5: fixture nodes 5223, box [-60.0, -10.0, -6.0] to [60.0, 10.0, -6.0]
+18:55:25 LAT_X_1.5: load nodes 972, box [-41.0, -28.5, 5.5] to [41.0, 28.5, 11.5]
+18:55:38 ROW {'case': 'LAT_X', 'el': 1.5, 'nodes': 117873, 'vm': 0.45332178473472595, 'at': [39.84, 24.68, 8.65], 'layer_down': 0.1907282918691635, 'layer_up': 0.24737325310707092, 'shear': 0.1553173244745581, 'vm_mount_unmasked': 1.0577985048294067, 'disp': 0.01473788172006607, 'reaction': [-9.001, -0.0, 0.001, 9.001], 'applied': 9.0}
+18:55:38 clock: D1 lateral job: done: 25.9 min since the job began
+18:55:38 closing pid 163032 committed MB 1814
+LATERAL DONE

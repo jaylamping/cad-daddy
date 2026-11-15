@@ -1,0 +1,22 @@
+19:15:01 SolidWorks pid 170004 free GB 22.2
+19:15:01 clock: D2 chamfer twin: instance up: 45.3 min since the job began
+19:15:06 ok RING volume change: 2116.0391 (expected 2116.0391)
+19:15:06 RING: added 2116.04 mm3
+19:15:06 ok ring_fe_c bodies: 1.0000 (expected 1.0000)
+19:15:06 ring_fe_c box [-25.95, -25.95, 0.15, 25.95, 25.95, 7.15]
+19:15:10 ok bodies in pair_fe2: 11.0000 (expected 11.0000)
+19:15:10 ok rebuild errors: 0.0000 (expected 0.0000)
+19:15:10 body ('<housing_upper_fe>-<RECESS_U>', 18971.47, [-36.0, 0.0, -4.0, 36.0, 32.0, 11.0])
+19:15:10 body ('RECESS_L', 19656.4, [-36.0, -32.0, -4.0, 36.0, 0.0, 11.0])
+19:15:10 body ('<pad_1>-<PADBODY>', 2.54, [16.78, 16.78, -0.85, 18.58, 18.58, 0.15])
+19:15:10 body ('<pin_3>-<PINTHREAD>', 355.88, [-33.9, -6.2, -2.9, -28.1, 31.5, 2.9])
+19:15:10 body ('<pad_2>-<PADBODY>', 2.54, [-18.58, 16.78, -0.85, -16.78, 18.58, 0.15])
+19:15:10 body ('<pad_3>-<PADBODY>', 2.54, [-18.58, -18.58, -0.85, -16.78, -16.78, 0.15])
+19:15:10 body ('<ring_fe_c>-<RING>', 2116.04, [-25.95, -25.95, 0.15, 25.95, 25.95, 7.15])
+19:15:10 body ('<pad_4>-<PADBODY>', 2.54, [16.78, -18.58, -0.85, 18.58, -16.78, 0.15])
+19:15:10 body ('<pin_1>-<PINTHREAD>', 355.88, [28.1, -6.2, -2.9, 33.9, 31.5, 2.9])
+19:15:10 body ('<pin_4>-<PINTHREAD>', 355.88, [-33.9, -6.2, 4.1, -28.1, 31.5, 9.9])
+19:15:10 body ('<pin_2>-<PINTHREAD>', 355.88, [28.1, -6.2, 4.1, 33.9, 31.5, 9.9])
+19:15:10 clock: D2 chamfer twin: done: 45.4 min since the job began
+19:15:10 closing pid 170004 committed MB 1836
+CHAMFER TWIN DONE

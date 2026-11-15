@@ -1,0 +1,88 @@
+17:37:59 SolidWorks pid 126596 free GB 22.8
+17:37:59 clock: T3a job start (bracket_b export, twin, 4 studies): 4.6 min since the job began
+17:38:04 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\bracket_b.stl 115084 bytes
+17:38:05 ok bracket_b STL watertight: 1.0000 (expected 1.0000)
+17:38:05 ok bracket_b STL volume: 31663.5454 (expected 31642.9999)
+17:38:05 ok RINGS volume change: 23.0342 (expected 23.0342)
+17:38:05 RINGS: cut 23.03 mm3
+17:38:05 ok twin removes under 0.1 %: 0.0699 (expected 0.0700)
+17:38:05 twin volume change mm3 23.034157336092903 share % 0.06985546325471526 box [0.0, 0.0, 0.0, 80.0, 50.0, 46.0]
+17:38:05 ok twin box[0]: 0.0000 (expected 0.0000)
+17:38:05 ok twin box[1]: 0.0000 (expected 0.0000)
+17:38:05 ok twin box[2]: 0.0000 (expected 0.0000)
+17:38:05 ok twin box[3]: 80.0000 (expected 80.0000)
+17:38:05 ok twin box[4]: 50.0000 (expected 50.0000)
+17:38:05 ok twin box[5]: 46.0000 (expected 46.0000)
+17:38:06 ok rebuild errors: 0.0000 (expected 0.0000)
+17:38:06 ok bodies: 1.0000 (expected 1.0000)
+17:38:06 HAND root stress 11.00 MPa, upright tip 0.311 mm alone; base rotation 0.0482 rad -> top of upright about 2.24 mm; lower hole rim nominal 5.5 x 3 = 16.5
+17:38:06 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:38:06 ok ring face found: 1.0000 (expected 1.0000)
+17:38:06 ok ring face found: 1.0000 (expected 1.0000)
+17:38:06 ok ring face found: 1.0000 (expected 1.0000)
+17:38:06 ok ring face found: 1.0000 (expected 1.0000)
+17:38:06 ok bore faces: 1.0000 (expected 1.0000)
+17:38:06 ok small hole walls: 4.0000 (expected 4.0000)
+17:38:06 PREDICT T3 RINGS el3.0: {'nodes': 20533, 'disp_mm': '2.2 (base rotation + upright bend)', 'peak': 'lower small-hole rims, layer tension about 16 MPa'}
+17:38:11 T3 RINGS el3.0: mesh rc 0, 24804 nodes, 14989 elements, free 22.5 GB
+17:38:15 T3 RINGS el3.0: fixture nodes 864, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:38:15 T3 RINGS el3.0: load nodes 418, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.95]
+17:38:16 {'study': 'T3 RINGS el3.0', 'el_mm': 3.0, 'nodes': 24804, 'elements': 14989, 'solve_s': 10, 'peak_vm_all': 25.75, 'peak_vm_away': 13.96, 'at': [10.0, 35.29, 6.0], 'sf_yield': 3.22, 'max_disp_mm': 2.8367013931274414, 'reaction_N': [-150.0, 0.0, -0.0, 150.0], 'applied_N': 150.0}
+17:38:16 ok reaction Fx = -150 (opposes the load): -150.0000 (expected -150.0000)
+17:38:16 ok resultant: 150.0000 (expected 150.0000)
+17:38:16 ok load faces at x 0.3: 0.3000 (expected 0.3000)
+17:38:16 T3 RINGS el3.0: plain-section sigma_z on the X=0 face at z 12-14: 5.71 MPa from 18 nodes (hand 7.5)
+17:38:16 T3 RINGS el3.0: {"hole rims (0.6 mm clear of loaded faces)": [17.844, 12.04, 5.557], "hole rims (all nodes)": [17.844, 14.587, 5.557], "root and fillet": [13.959, 9.956, 6.689], "base (2.5 mm clear of fixed holes)": [17.441, 0.708, 2.489], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [17.844, 9.956, 6.689]}
+17:38:16 clock: T3a T3 RINGS el3.0 done: 4.9 min since the job began
+17:38:16 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:38:17 ok ring face found: 1.0000 (expected 1.0000)
+17:38:17 ok ring face found: 1.0000 (expected 1.0000)
+17:38:17 ok ring face found: 1.0000 (expected 1.0000)
+17:38:17 ok ring face found: 1.0000 (expected 1.0000)
+17:38:17 ok bore faces: 1.0000 (expected 1.0000)
+17:38:17 ok small hole walls: 4.0000 (expected 4.0000)
+17:38:17 PREDICT T3 RINGS el2.2: {'nodes': 52066, 'disp_mm': '2.2 (base rotation + upright bend)', 'peak': 'lower small-hole rims, layer tension about 16 MPa'}
+17:38:18 T3 RINGS el2.2: mesh rc 0, 53442 nodes, 33483 elements, free 22.5 GB
+17:38:25 T3 RINGS el2.2: fixture nodes 1664, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:38:25 T3 RINGS el2.2: load nodes 830, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:38:28 {'study': 'T3 RINGS el2.2', 'el_mm': 2.2, 'nodes': 53442, 'elements': 33483, 'solve_s': 11, 'peak_vm_all': 29.12, 'peak_vm_away': 18.19, 'at': [6.0, 15.64, 17.62], 'sf_yield': 2.47, 'max_disp_mm': 2.846130847930908, 'reaction_N': [-149.996, -0.005, 0.002, 149.996], 'applied_N': 150.0}
+17:38:28 ok reaction Fx = -150 (opposes the load): -149.9960 (expected -150.0000)
+17:38:28 ok resultant: 149.9960 (expected 150.0000)
+17:38:28 ok load faces at x 0.3: 0.3000 (expected 0.3000)
+17:38:28 T3 RINGS el2.2: plain-section sigma_z on the X=0 face at z 12-14: 5.65 MPa from 25 nodes (hand 7.5)
+17:38:28 T3 RINGS el2.2: {"hole rims (0.6 mm clear of loaded faces)": [18.186, 11.902, 6.33], "hole rims (all nodes)": [18.186, 14.566, 6.33], "root and fillet": [14.878, 10.024, 7.06], "base (2.5 mm clear of fixed holes)": [17.336, 0.261, 2.372], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [18.186, 10.024, 7.06]}
+17:38:28 clock: T3a T3 RINGS el2.2 done: 5.1 min since the job began
+17:38:28 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:38:28 ok ring face found: 1.0000 (expected 1.0000)
+17:38:28 ok ring face found: 1.0000 (expected 1.0000)
+17:38:29 ok ring face found: 1.0000 (expected 1.0000)
+17:38:29 ok ring face found: 1.0000 (expected 1.0000)
+17:38:29 ok bore faces: 1.0000 (expected 1.0000)
+17:38:29 ok small hole walls: 4.0000 (expected 4.0000)
+17:38:29 PREDICT T3 RINGS el1.6: {'nodes': 135351, 'disp_mm': '2.2 (base rotation + upright bend)', 'peak': 'lower small-hole rims, layer tension about 16 MPa'}
+17:38:31 T3 RINGS el1.6: mesh rc 0, 123582 nodes, 80682 elements, free 22.4 GB
+17:38:56 T3 RINGS el1.6: fixture nodes 3248, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:38:56 T3 RINGS el1.6: load nodes 1540, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:39:12 {'study': 'T3 RINGS el1.6', 'el_mm': 1.6, 'nodes': 123582, 'elements': 80682, 'solve_s': 42, 'peak_vm_all': 32.04, 'peak_vm_away': 18.79, 'at': [6.0, 15.71, 17.37], 'sf_yield': 2.39, 'max_disp_mm': 2.8506548404693604, 'reaction_N': [-149.993, -0.004, -0.001, 149.993], 'applied_N': 150.0}
+17:39:12 ok reaction Fx = -150 (opposes the load): -149.9930 (expected -150.0000)
+17:39:12 ok resultant: 149.9930 (expected 150.0000)
+17:39:12 ok load faces at x 0.3: 0.3000 (expected 0.3000)
+17:39:12 T3 RINGS el1.6: plain-section sigma_z on the X=0 face at z 12-14: 5.62 MPa from 52 nodes (hand 7.5)
+17:39:12 T3 RINGS el1.6: {"hole rims (0.6 mm clear of loaded faces)": [18.792, 13.013, 6.507], "hole rims (all nodes)": [18.792, 14.465, 6.507], "root and fillet": [15.009, 10.011, 7.024], "base (2.5 mm clear of fixed holes)": [16.803, 0.439, 2.498], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [18.792, 10.011, 7.024]}
+17:39:12 clock: T3a T3 RINGS el1.6 done: 5.8 min since the job began
+17:39:12 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:39:12 ok ring face found: 1.0000 (expected 1.0000)
+17:39:12 ok ring face found: 1.0000 (expected 1.0000)
+17:39:12 ok ring face found: 1.0000 (expected 1.0000)
+17:39:13 ok ring face found: 1.0000 (expected 1.0000)
+17:39:13 ok bore faces: 1.0000 (expected 1.0000)
+17:39:13 ok small hole walls: 4.0000 (expected 4.0000)
+17:39:13 PREDICT T3 BORE REMOTE el2.2: {'nodes': 52066, 'disp_mm': 'lower than rings (rigid bore)', 'peak': 'lower'}
+17:39:16 T3 BORE REMOTE el2.2: mesh rc 0, 62377 nodes, 39056 elements, free 22.4 GB
+17:39:26 T3 BORE REMOTE el2.2: fixture nodes 1664, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:39:26 T3 BORE REMOTE el2.2: load nodes 3610, box [0.0, 14.0, 17.0] to [6.0, 36.0, 39.0]
+17:39:31 {'study': 'T3 BORE REMOTE el2.2', 'el_mm': 2.2, 'nodes': 62377, 'elements': 39056, 'solve_s': 17, 'peak_vm_all': 29.47, 'peak_vm_away': 14.59, 'at': [9.06, 23.37, 6.11], 'sf_yield': 3.08, 'max_disp_mm': 2.360220193862915, 'reaction_N': [-150.0, -0.0, 0.0, 150.0], 'applied_N': 150.0}
+17:39:31 ok reaction Fx = -150 (opposes the load): -150.0000 (expected -150.0000)
+17:39:31 T3 BORE REMOTE el2.2: {"hole rims (0.6 mm clear of loaded faces)": [10.857, 9.797, 4.224], "hole rims (all nodes)": [10.857, 9.797, 4.224], "root and fillet": [14.591, 10.293, 7.17], "base (2.5 mm clear of fixed holes)": [17.269, 0.269, 2.467], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [17.269, 10.293, 7.17]}
+17:39:31 clock: T3a job end: 6.1 min since the job began
+17:39:31 closing pid 126596 committed MB 1863

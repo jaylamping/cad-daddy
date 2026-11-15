@@ -1,0 +1,132 @@
+17:34:58 hand volume T1 32974.02416773478 mass g 39.23908875960439
+17:35:03 SolidWorks pid 124676 free GB 22.8
+17:35:03 clock: T1 start: 1.7 min since the job began
+17:35:08 ok BASE volume change: 24000.0000 (expected 24000.0000)
+17:35:08 BASE: added 24000.00 mm3
+17:35:09 ok UPRIGHT volume change: 12000.0000 (expected 12000.0000)
+17:35:10 UPRIGHT: added 12000.00 mm3
+17:35:10 ok one body: 1.0000 (expected 1.0000)
+17:35:10 ok inside-corner edges: 1.0000 (expected 1.0000)
+17:35:10 INSIDE_FILLET: R4.0 on 1 edges, volume change +171.68 mm3
+17:35:10 ok fillet radius built: 4.0000 (expected 4.0000)
+17:35:10 ok fillet dv: 171.6815 (expected 171.6815)
+17:35:11 ok BASE_HOLES volume change: 570.1991 (expected 570.1991)
+17:35:11 BASE_HOLES: cut 570.20 mm3
+17:35:11 ok BORE volume change: 2280.7963 (expected 2280.7963)
+17:35:11 BORE: cut 2280.80 mm3
+17:35:12 ok SMALL_HOLES volume change: 217.9009 (expected 217.9009)
+17:35:12 SMALL_HOLES: cut 217.90 mm3
+17:35:12 ok base corner edges: 2.0000 (expected 2.0000)
+17:35:12 BASE_ROUNDS: R5.0 on 2 edges, volume change -64.38 mm3
+17:35:12 ok R5 base built: 5.0000 (expected 5.0000)
+17:35:12 ok base rounds dv: 64.3806 (expected 64.3806)
+17:35:12 ok upright top edges: 2.0000 (expected 2.0000)
+17:35:13 UPRIGHT_ROUNDS: R5.0 on 2 edges, volume change -64.38 mm3
+17:35:13 ok R5 upright built: 5.0000 (expected 5.0000)
+17:35:13 ok upright rounds dv: 64.3806 (expected 64.3806)
+17:35:13 ok T1 volume: 32974.0242 (expected 32974.0242)
+17:35:13 ok bbox[0]: 0.0000 (expected 0.0000)
+17:35:13 ok bbox[1]: 0.0000 (expected 0.0000)
+17:35:13 ok bbox[2]: 0.0000 (expected 0.0000)
+17:35:13 ok bbox[3]: 80.0000 (expected 80.0000)
+17:35:13 ok bbox[4]: 50.0000 (expected 50.0000)
+17:35:13 ok bbox[5]: 46.0000 (expected 46.0000)
+17:35:13 ok bodies: 1.0000 (expected 1.0000)
+17:35:13 ok rebuild errors: 0.0000 (expected 0.0000)
+17:35:13 ok faces r=2.75: 4.0000 (expected 4.0000)
+17:35:13 ok base hole x: 25.0000 (expected 25.0000)
+17:35:13 ok base hole y: 10.0000 (expected 10.0000)
+17:35:13 ok base hole z centre: 3.0000 (expected 3.0000)
+17:35:13 ok base hole x: 25.0000 (expected 25.0000)
+17:35:13 ok base hole y: 40.0000 (expected 40.0000)
+17:35:13 ok base hole z centre: 3.0000 (expected 3.0000)
+17:35:13 ok base hole x: 65.0000 (expected 65.0000)
+17:35:13 ok base hole y: 10.0000 (expected 10.0000)
+17:35:13 ok base hole z centre: 3.0000 (expected 3.0000)
+17:35:13 ok base hole x: 65.0000 (expected 65.0000)
+17:35:13 ok base hole y: 40.0000 (expected 40.0000)
+17:35:13 ok base hole z centre: 3.0000 (expected 3.0000)
+17:35:13 ok faces r=11.0: 1.0000 (expected 1.0000)
+17:35:13 ok bore y: 25.0000 (expected 25.0000)
+17:35:13 ok bore z: 28.0000 (expected 28.0000)
+17:35:13 ok bore x centre: 3.0000 (expected 3.0000)
+17:35:13 ok faces r=1.7: 4.0000 (expected 4.0000)
+17:35:13 ok small y: 14.0400 (expected 14.0398)
+17:35:13 ok small z: 17.0400 (expected 17.0398)
+17:35:13 ok small y: 14.0400 (expected 14.0398)
+17:35:13 ok small z: 38.9600 (expected 38.9602)
+17:35:13 ok small y: 35.9600 (expected 35.9602)
+17:35:13 ok small z: 17.0400 (expected 17.0398)
+17:35:13 ok small y: 35.9600 (expected 35.9602)
+17:35:13 ok small z: 38.9600 (expected 38.9602)
+17:35:13 ok R4 faces: 1.0000 (expected 1.0000)
+17:35:13 ok R4 box x0: 6.0000 (expected 6.0000)
+17:35:13 ok R4 box x1: 10.0000 (expected 10.0000)
+17:35:13 ok R4 z0: 6.0000 (expected 6.0000)
+17:35:13 ok R4 z1: 10.0000 (expected 10.0000)
+17:35:13 ok R5 faces: 4.0000 (expected 4.0000)
+17:35:13 ok base top present: 1.0000 (expected 1.0000)
+17:35:13 ok upright top present: 1.0000 (expected 1.0000)
+17:35:13 ok upright outer present: 1.0000 (expected 1.0000)
+17:35:13 ok upright inner present: 1.0000 (expected 1.0000)
+17:35:13 ok end face present: 1.0000 (expected 1.0000)
+17:35:13 measured {'base_holes': [(25.0, 10.0, 3.0, 103.67), (25.0, 40.0, 3.0, 103.67), (65.0, 10.0, 3.0, 103.67), (65.0, 40.0, 3.0, 103.67)], 'bore': [(3.0, 25.0, 28.0, 414.69)], 'small': [(3.0, 14.04, 17.04, 64.09), (3.0, 14.04, 38.96, 64.09), (3.0, 35.96, 17.04, 64.09), (3.0, 35.96, 38.96, 64.09)], 'r4_box': [6.0, 0.0, 6.0, 10.0, 50.0, 10.000000000000002], 'r5': [[75.0, 45.0, 0.0, 80.0, 50.0, 6.0], [75.0, 0.0, 0.0, 80.0, 5.0, 6.0], [0.0, 0.0, 41.0, 6.0, 5.0, 46.0], [0.0, 45.0, 41.0, 6.0, 50.0, 46.0]], 'base top': [6.0, 46.0], 'upright top': [6.0, 46.0], 'upright outer': [0.0], 'upright inner': [6.0, 80.0], 'end face': [6.0, 80.0]}
+17:35:13 spec {'small_hole_edge_to_bore_edge_mm': 2.8, 'small_hole_dia_mm': 3.4, 'bore_top_to_upright_top_mm': 7, 'bore_bottom_to_base_top_mm': 11, 'bore_y_edge_to_side_mm': 14, 'base_hole_edge_to_nearest_side_mm': 7.25, 'base_hole_to_fillet_toe_mm': 12.25, 'upright_thickness_mm': 6, 'bearing_length_over_bore_dia': 0.2727272727272727}
+17:35:13 tree T1 ['Comments|CommentsFolder', 'Favorites|FavoriteFolder', 'History|HistoryFolder', 'Selection Sets|SelectionSetFolder', 'Sensors|SensorFolder', 'Design Binder|DocsFolder', 'Annotations|DetailCabinet', 'Surface Bodies|SurfaceBodyFolder', 'Solid Bodies|SolidBodyFolder', 'Lights and Cameras|EnvFolder', 'Markups|InkMarkupFolder', 'Equations|EqnFolder', 'Material <not specified>|MaterialFolder', 'Front Plane|RefPlane', 'Top Plane|RefPlane', 'Right Plane|RefPlane', 'Origin|OriginProfileFeature', 'BASE_P|RefPlane', 'BASE_SK|ProfileFeature', 'BASE|Extrusion', 'UP_P|RefPlane', 'UPRIGHT_SK|ProfileFeature', 'UPRIGHT|ICE', 'INSIDE_FILLET|Fillet', 'BH_P|RefPlane', 'BASE_HOLES_SK|ProfileFeature', 'BASE_HOLES|ICE', 'BORE_P|RefPlane', 'BORE_SK|ProfileFeature', 'BORE|ICE', 'SH_P|RefPlane', 'SMALL_HOLES_SK|ProfileFeature', 'SMALL_HOLES|ICE', 'BASE_ROUNDS|Fillet', 'UPRIGHT_ROUNDS|Fillet']
+17:35:14 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\bracket.step 81057 bytes
+17:35:14 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\bracket.stl 77484 bytes
+17:35:14 ok STL watertight: 1.0000 (expected 1.0000)
+17:35:14 ok STL shells: 1.0000 (expected 1.0000)
+17:35:14 ok STL volume: 32990.3773 (expected 32974.0242)
+17:35:14 ok STL min[0]: 0.0000 (expected 0.0000)
+17:35:14 ok STL max[0]: 80.0000 (expected 80.0000)
+17:35:14 ok STL min[1]: 0.0000 (expected 0.0000)
+17:35:14 ok STL max[1]: 50.0000 (expected 50.0000)
+17:35:14 ok STL min[2]: -0.0000 (expected 0.0000)
+17:35:14 ok STL max[2]: 46.0000 (expected 46.0000)
+17:35:14 ok STEP in mm: 1.0000 (expected 1.0000)
+17:35:14 clock: T1 end: 1.9 min since the job began
+17:35:14 clock: T2 start: 1.9 min since the job began
+17:35:15 ok opened bracket volume: 32974.0242 (expected 32974.0242)
+17:35:15 ok open doc is bracket_b: 1.0000 (expected 1.0000)
+17:35:18 ok CBORE volume change: 657.3783 (expected 657.3783)
+17:35:18 CBORE: cut 657.38 mm3
+17:35:18 ok SLOT_RECT volume change: 504.0000 (expected 504.0000)
+17:35:18 SLOT_RECT: cut 504.00 mm3
+17:35:19 ok SLOT_END_L volume change: 84.8230 (expected 84.8230)
+17:35:19 SLOT_END_L: cut 84.82 mm3
+17:35:19 ok SLOT_END_R volume change: 84.8230 (expected 84.8230)
+17:35:19 SLOT_END_R: cut 84.82 mm3
+17:35:19 ok T2 volume: 31642.9999 (expected 31642.9999)
+17:35:19 ok bodies: 1.0000 (expected 1.0000)
+17:35:19 ok rebuild errors: 0.0000 (expected 0.0000)
+17:35:20 ok bbox2[0]: 0.0000 (expected 0.0000)
+17:35:20 ok bbox2[1]: 0.0000 (expected 0.0000)
+17:35:20 ok bbox2[2]: 0.0000 (expected 0.0000)
+17:35:20 ok bbox2[3]: 80.0000 (expected 80.0000)
+17:35:20 ok bbox2[4]: 50.0000 (expected 50.0000)
+17:35:20 ok bbox2[5]: 46.0000 (expected 46.0000)
+17:35:20 tree before ['Comments|CommentsFolder', 'Favorites|FavoriteFolder', 'History|HistoryFolder', 'Selection Sets|SelectionSetFolder', 'Sensors|SensorFolder', 'Design Binder|DocsFolder', 'Annotations|DetailCabinet', 'Surface Bodies|SurfaceBodyFolder', 'Solid Bodies|SolidBodyFolder', 'Lights and Cameras|EnvFolder', 'Markups|InkMarkupFolder', 'Equations|EqnFolder', 'Material <not specified>|MaterialFolder', 'Front Plane|RefPlane', 'Top Plane|RefPlane', 'Right Plane|RefPlane', 'Origin|OriginProfileFeature', 'BASE_P|RefPlane', 'BASE_SK|ProfileFeature', 'BASE|Extrusion', 'UP_P|RefPlane', 'UPRIGHT_SK|ProfileFeature', 'UPRIGHT|ICE', 'INSIDE_FILLET|Fillet', 'BH_P|RefPlane', 'BASE_HOLES_SK|ProfileFeature', 'BASE_HOLES|ICE', 'BORE_P|RefPlane', 'BORE_SK|ProfileFeature', 'BORE|ICE', 'SH_P|RefPlane', 'SMALL_HOLES_SK|ProfileFeature', 'SMALL_HOLES|ICE', 'BASE_ROUNDS|Fillet', 'UPRIGHT_ROUNDS|Fillet']
+17:35:20 tree after ['Comments|CommentsFolder', 'Favorites|FavoriteFolder', 'History|HistoryFolder', 'Selection Sets|SelectionSetFolder', 'Sensors|SensorFolder', 'Design Binder|DocsFolder', 'Annotations|DetailCabinet', 'Surface Bodies|SurfaceBodyFolder', 'Solid Bodies|SolidBodyFolder', 'Lights and Cameras|EnvFolder', 'Markups|InkMarkupFolder', 'Equations|EqnFolder', 'Material <not specified>|MaterialFolder', 'Front Plane|RefPlane', 'Top Plane|RefPlane', 'Right Plane|RefPlane', 'Origin|OriginProfileFeature', 'BASE_P|RefPlane', 'BASE_SK|ProfileFeature', 'BASE|Extrusion', 'UP_P|RefPlane', 'UPRIGHT_SK|ProfileFeature', 'UPRIGHT|ICE', 'INSIDE_FILLET|Fillet', 'BH_P|RefPlane', 'BASE_HOLES_SK|ProfileFeature', 'BASE_HOLES|ICE', 'BORE_P|RefPlane', 'BORE_SK|ProfileFeature', 'BORE|ICE', 'SH_P|RefPlane', 'SMALL_HOLES_SK|ProfileFeature', 'SMALL_HOLES|ICE', 'BASE_ROUNDS|Fillet', 'UPRIGHT_ROUNDS|Fillet', 'CB_P|RefPlane', 'CBORE_SK|ProfileFeature', 'CBORE|ICE', 'SLOT_P|RefPlane', 'SLOT_RECT_SK|ProfileFeature', 'SLOT_RECT|ICE', 'SLOT_E1P|RefPlane', 'SLOT_END_L_SK|ProfileFeature', 'SLOT_END_L|ICE', 'SLOT_E2P|RefPlane', 'SLOT_END_R_SK|ProfileFeature', 'SLOT_END_R|ICE']
+17:35:20 ok old features still there: 1.0000 (expected 1.0000)
+17:35:20 plane faces z values [3.0, 6.0, 46.0]
+17:35:20 ok counterbore floors: 4.0000 (expected 4.0000)
+17:35:20 ok cb floor outer dia: 10.0000 (expected 10.0000)
+17:35:20 ok cb floor z: 3.0000 (expected 3.0000)
+17:35:20 ok cb floor outer dia: 10.0000 (expected 10.0000)
+17:35:20 ok cb floor z: 3.0000 (expected 3.0000)
+17:35:20 ok cb floor outer dia: 10.0000 (expected 10.0000)
+17:35:20 ok cb floor z: 3.0000 (expected 3.0000)
+17:35:20 ok cb floor outer dia: 10.0000 (expected 10.0000)
+17:35:20 ok cb floor z: 3.0000 (expected 3.0000)
+17:35:20 ok cbore wall faces r5: 4.0000 (expected 4.0000)
+17:35:20 ok slot end faces r3: 2.0000 (expected 2.0000)
+17:35:20 slot end boxes [[34.99999999999999, 22.0, 0.0, 38.0, 28.000000000000004, 6.0], [52.00000000000001, 22.0, 0.0, 55.00000000000001, 28.000000000000004, 6.0]]
+17:35:20 ok slot overall length: 20.0000 (expected 20.0000)
+17:35:20 ok slot width: 6.0000 (expected 6.0000)
+17:35:20 ok slot centre x: 45.0000 (expected 45.0000)
+17:35:20 ok slot centre y: 25.0000 (expected 25.0000)
+17:35:20 ok original volume after edits: 32974.0242 (expected 32974.0242)
+17:35:20 original sha before/after e6880b16b3122e65dcaefffbc592e96f4ce37bd308bdbbcd9660c12a40a35379 e6880b16b3122e65dcaefffbc592e96f4ce37bd308bdbbcd9660c12a40a35379
+17:35:20 clock: T2 end: 2.0 min since the job began
+17:35:20 closing pid 124676 committed MB 1831

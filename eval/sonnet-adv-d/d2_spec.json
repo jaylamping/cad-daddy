@@ -1,0 +1,69 @@
+{
+ "opening_vs_inner_ring": {
+  "spec_opening": 43.5,
+  "inner_ring_od": 44.0,
+  "overlap_radial": 0.25,
+  "note": "lip of the shoulder would cover r 21.75..22 of the turning inner ring (0.25 mm), and touch it"
+ },
+ "opening_built": {
+  "opening": 46.0,
+  "clear_to_inner_ring_radial": 1.0,
+  "lip_covering_outer_ring_face": 3.0,
+  "outer_ring_face_r": [
+   24.0,
+   26.0
+  ],
+  "note": "lip r 23..; outer ring end face spans r 24..26 so the lip fully backs it; r 23..24 faces the seal gap"
+ },
+ "wall_to_seat_at_x28.2 clearance hole d3.4": 0.5,
+ "wall_to_seat_at_x31 clearance hole d3.4": 3.3,
+ "wall_to_seat_at_x28.2 insert hole d4.0": 0.2,
+ "wall_to_seat_at_x31 insert hole d4.0": 3.0,
+ "wall_to_seat_at_x28.2 counterbore d6": -0.8,
+ "wall_to_seat_at_x31 counterbore d6": 2.0,
+ "counterbores_z1_z6": {
+  "centre_spacing": 5.0,
+  "diameter": 6.0,
+  "overlap": 1.0
+ },
+ "counterbores_z0_z7": {
+  "centre_spacing": 7.0,
+  "rib": 1.0,
+  "wall_to_Z_faces": [
+   1,
+   1
+  ]
+ },
+ "counterbore_in_x_at_31": {
+  "outer_edge": 34,
+  "envelope": 36,
+  "wall": 2
+ },
+ "gap_0.0": {
+  "interference_diametral_min": -0.163,
+  "max": 0.15
+ },
+ "gap_0.2": {
+  "interference_diametral_min": 0.037,
+  "max": 0.35
+ },
+ "gap_0.3": {
+  "interference_diametral_min": 0.137,
+  "max": 0.45
+ },
+ "gap_0.4": {
+  "interference_diametral_min": 0.237,
+  "max": 0.55
+ },
+ "screw": {
+  "counterbore_floor_y": 28.5,
+  "length_needed_for_5mm_engagement": 33.5,
+  "note": "M3x35 reaches 6.5 below the split face; the 6 mm hole is 0.5 short, built 7 mm deep"
+ },
+ "hand_screw_Y_per_screw": 75.0,
+ "hand_screw_X_cosine": {
+  "separating_force_N": 95.4929658551372,
+  "per_screw_N": 23.8732414637843,
+  "note": "ring seated all round the half; first estimate, redone after the study shows the patch"
+ }
+}

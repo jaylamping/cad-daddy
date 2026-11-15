@@ -1,0 +1,145 @@
+17:46:18 HAND: mean projected bearing 1.67 MPa (a floor); Hertz in a 0.1 mm larger socket: E* 2199 MPa, R* 255 mm, half width 1.57 mm, peak 6.76 MPa; pin rises 0.10 mm (the clearance) before it bears
+17:46:25 SolidWorks pid 131160 free GB 21.8
+17:46:25 clock: T6 start: 13.0 min since the job began
+17:46:27 ok TP_PIN_C volume change: 2356.1945 (expected 2356.1945)
+17:46:27 TP_PIN_C: added 2356.19 mm3
+17:46:32 ok TP_PIN_E1 volume change: 785.3982 (expected 785.3982)
+17:46:32 TP_PIN_E1: added 785.40 mm3
+17:46:34 ok TP_PIN_E2 volume change: 785.3982 (expected 785.3982)
+17:46:34 TP_PIN_E2: added 785.40 mm3
+17:46:35 ok TP_PAD_A volume change: 14.1372 (expected 14.1372)
+17:46:35 TP_PAD_A: added 14.14 mm3
+17:46:36 ok TP_PAD_B volume change: 14.1372 (expected 14.1372)
+17:46:36 TP_PAD_B: added 14.14 mm3
+17:46:38 ok BLOCK volume change: 24000.0000 (expected 24000.0000)
+17:46:38 BLOCK: added 24000.00 mm3
+17:46:38 ok HOLE volume change: 2451.3847 (expected 2451.3847)
+17:46:38 HOLE: cut 2451.38 mm3
+17:46:42 bodies [('HOLE', 21548.62, [-20.0, -15.0, 0.0, 20.0, 15.0, 20.0]), ('<tp_pin_c>-<TP_PIN_C>', 2356.19, [-5.0, -15.0, 5.0, 5.0, 15.0, 15.0]), ('<tp_pin_e1>-<TP_PIN_E1>', 785.4, [-5.0, 15.0, 5.0, 5.0, 25.0, 15.0]), ('<tp_pin_e2>-<TP_PIN_E2>', 785.4, [-5.0, -25.0, 5.0, 5.0, -15.0, 15.0]), ('<tp_pad_a>-<TP_PAD_A>', 14.14, [-1.5, 25.0, 8.5, 1.5, 27.0, 11.5]), ('<tp_pad_b>-<TP_PAD_B>', 14.14, [-1.5, -27.0, 8.5, 1.5, -25.0, 11.5])]
+17:46:42 ok six bodies: 6.0000 (expected 6.0000)
+17:46:42 ok rebuild errors: 0.0000 (expected 0.0000)
+17:46:42 body volumes {'HOLE': 21548.62, '<tp_pin_c>-<TP_PIN_C>': 2356.19, '<tp_pin_e1>-<TP_PIN_E1>': 785.4, '<tp_pin_e2>-<TP_PIN_E2>': 785.4, '<tp_pad_a>-<TP_PAD_A>': 14.14, '<tp_pad_b>-<TP_PAD_B>': 14.14}
+17:46:42 clock: T6 model built: 13.3 min since the job began
+17:46:46 ok bottom: 1.0000 (expected 1.0000)
+17:46:46 ok pad outer faces: 2.0000 (expected 2.0000)
+17:46:46 ok pin centre face: 1.0000 (expected 1.0000)
+17:46:46 ok hole face: 1.0000 (expected 1.0000)
+17:46:46 ok stub +Y: 1.0000 (expected 1.0000)
+17:46:46 ok stub -Y: 1.0000 (expected 1.0000)
+17:46:46 ok pad walls: 2.0000 (expected 2.0000)
+17:46:46 PREDICT T6 A full load ctrl0.8: {'nodes': 45000, 'rise_mm': 0.1, 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:46:46 T6 A full load ctrl0.8: body "SolidBody 1(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:46:46 T6 A full load ctrl0.8: body "SolidBody 2(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:46:46 T6 A full load ctrl0.8: body "SolidBody 3(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:46:46 T6 A full load ctrl0.8: body "SolidBody 4(HOLE)" is PETG printed
+17:46:46 T6 A full load ctrl0.8: body "SolidBody 5(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:46:46 T6 A full load ctrl0.8: body "SolidBody 6(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:46:48 T6 A full load ctrl0.8: mesh rc 0, 86564 nodes, 57762 elements, free 22.3 GB
+17:46:48 T6 A full load ctrl0.8: solver macro: before  0  | set err  0   | after  7  | 
+17:46:54 solver asked about excessive displacements: answered No (finish with the small-displacement result)
+17:46:56 T6 A full load ctrl0.8: excessive-displacement prompt on a single held body: T6 A full load ctrl0.8: the solver reported excessive displacements: a body is free to move, or held only by something very soft. playbook/05-fea.md, "Contact between bodies"; retrying with loose_ok=True after the reaction check below
+17:46:56 T6 A full load ctrl0.8: body "SolidBody 1(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:46:56 T6 A full load ctrl0.8: body "SolidBody 2(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:46:56 T6 A full load ctrl0.8: body "SolidBody 3(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:46:56 T6 A full load ctrl0.8: body "SolidBody 4(HOLE)" is PETG printed
+17:46:56 T6 A full load ctrl0.8: body "SolidBody 5(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:46:56 T6 A full load ctrl0.8: body "SolidBody 6(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:46:57 T6 A full load ctrl0.8: mesh rc 0, 86564 nodes, 57762 elements, free 22.3 GB
+17:46:58 T6 A full load ctrl0.8: solver macro: before  0  | set err  0   | after  7  | 
+17:47:04 solver asked about excessive displacements: answered No (finish with the small-displacement result)
+17:47:16 T6 A full load ctrl0.8: fixture nodes 787, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.5]
+17:47:16 T6 A full load ctrl0.8: load nodes 460, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+17:47:30 {'study': 'T6 A full load ctrl0.8', 'el_mm': 3.0, 'nodes': 86564, 'elements': 57762, 'solve_s': 34, 'peak_vm_all': 110.63, 'peak_vm_away': 15.3, 'at': [-0.0, -2.53, 15.0], 'sf_yield': 2.94, 'max_disp_mm': 490.4435729980469, 'reaction_N': [-0.003, 0.001, -499.867, 499.867], 'applied_N': 500.0, 'excessive_displacements': True}
+17:47:30 ok reaction Fz = -(2 x load): -499.8670 (expected -500.0000)
+17:47:30 T6 A full load ctrl0.8 {"el_ctrl": 0.8, "load_scale": 1.0, "nodes": 86564, "solve_s": 34, "reaction": [-0.003, 0.001, -499.867, 499.867], "reaction_blockbottom": [0.0, 0.0, 0.0], "reaction_pads": [-0.00279, 0.0006, -499.8666], "pad_share_pct": 99.97332, "pin_rise_mm": 489.89359, "pin_rise_min": 489.48831, "pin_rise_max": 490.29532, "pin_ux_mean": -0.133283, "pin_uy_mean": -0.413547, "peak_bearing_mpa": -0.0, "peak_bearing_at": [0.0, -15.0, 15.1], "patch_nodes": 0, "patch_half_width_mm": null, "peak_vm_near_hole": 0.0, "peak_vm_near_hole_at": [0.0, -15.0, 15.1], "peak_vm_block_all": null, "vm_pin_max": 24.607, "hole_pressure_sum_n": null}
+17:47:30 clock: T6 T6 A full load ctrl0.8 done: 14.1 min since the job began
+17:47:30 ok bottom: 1.0000 (expected 1.0000)
+17:47:30 ok pad outer faces: 2.0000 (expected 2.0000)
+17:47:30 ok pin centre face: 1.0000 (expected 1.0000)
+17:47:30 ok hole face: 1.0000 (expected 1.0000)
+17:47:30 ok stub +Y: 1.0000 (expected 1.0000)
+17:47:30 ok stub -Y: 1.0000 (expected 1.0000)
+17:47:30 ok pad walls: 2.0000 (expected 2.0000)
+17:47:30 PREDICT T6 B proof 0.001 load ctrl0.8: {'nodes': 45000, 'rise_mm': 0.1, 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:47:30 T6 B proof 0.001 load ctrl0.8: body "SolidBody 1(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:47:30 T6 B proof 0.001 load ctrl0.8: body "SolidBody 2(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:47:30 T6 B proof 0.001 load ctrl0.8: body "SolidBody 3(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:47:30 T6 B proof 0.001 load ctrl0.8: body "SolidBody 4(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:47:30 T6 B proof 0.001 load ctrl0.8: body "SolidBody 5(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:47:30 T6 B proof 0.001 load ctrl0.8: body "SolidBody 6(HOLE)" is PETG printed
+17:47:35 T6 B proof 0.001 load ctrl0.8: mesh rc 0, 86564 nodes, 57762 elements, free 22.3 GB
+17:47:35 T6 B proof 0.001 load ctrl0.8: solver macro: before  0  | set err  0   | after  7  | 
+17:47:54 T6 B proof 0.001 load ctrl0.8: fixture nodes 787, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.5]
+17:47:54 T6 B proof 0.001 load ctrl0.8: load nodes 460, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+17:48:08 {'study': 'T6 B proof 0.001 load ctrl0.8', 'el_mm': 3.0, 'nodes': 86564, 'elements': 57762, 'solve_s': 37, 'peak_vm_all': 0.11, 'peak_vm_away': 0.02, 'at': [-0.0, -2.53, 15.0], 'sf_yield': 2943.39, 'max_disp_mm': 0.48996245861053467, 'reaction_N': [0.0, -0.0, -0.5, 0.5], 'applied_N': 0.5}
+17:48:08 ok reaction Fz = -(2 x load): -0.5000 (expected -0.5000)
+17:48:08 T6 B proof 0.001 load ctrl0.8 {"el_ctrl": 0.8, "load_scale": 0.001, "nodes": 86564, "solve_s": 37, "reaction": [0.0, -0.0, -0.5, 0.5], "reaction_blockbottom": [0.0, 0.0, 0.0], "reaction_pads": [1e-05, -1e-05, -0.49951], "pad_share_pct": 99.90152, "pin_rise_mm": 0.48954, "pin_rise_min": 0.48928, "pin_rise_max": 0.4898, "pin_ux_mean": -0.000145, "pin_uy_mean": -0.000411, "peak_bearing_mpa": -0.0, "peak_bearing_at": [0.0, -15.0, 15.1], "patch_nodes": 0, "patch_half_width_mm": null, "peak_vm_near_hole": 0.0, "peak_vm_near_hole_at": [0.0, -15.0, 15.1], "peak_vm_block_all": null, "vm_pin_max": 0.025, "hole_pressure_sum_n": null}
+17:48:08 clock: T6 T6 B proof 0.001 load ctrl0.8 done: 14.8 min since the job began
+17:48:08 ok bottom: 1.0000 (expected 1.0000)
+17:48:08 ok pad outer faces: 2.0000 (expected 2.0000)
+17:48:08 ok pin centre face: 1.0000 (expected 1.0000)
+17:48:08 ok hole face: 1.0000 (expected 1.0000)
+17:48:08 ok stub +Y: 1.0000 (expected 1.0000)
+17:48:08 ok stub -Y: 1.0000 (expected 1.0000)
+17:48:08 ok pad walls: 2.0000 (expected 2.0000)
+17:48:08 PREDICT T6 C full load ctrl1.2: {'nodes': 45000, 'rise_mm': 0.1, 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:48:09 T6 C full load ctrl1.2: body "SolidBody 1(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:48:09 T6 C full load ctrl1.2: body "SolidBody 2(HOLE)" is PETG printed
+17:48:09 T6 C full load ctrl1.2: body "SolidBody 3(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:48:09 T6 C full load ctrl1.2: body "SolidBody 4(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:48:09 T6 C full load ctrl1.2: body "SolidBody 5(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:48:09 T6 C full load ctrl1.2: body "SolidBody 6(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:48:10 T6 C full load ctrl1.2: mesh rc 0, 41136 nodes, 26905 elements, free 22.4 GB
+17:48:10 T6 C full load ctrl1.2: solver macro: before  0  | set err  0   | after  7  | 
+17:48:14 solver asked about excessive displacements: answered No (finish with the small-displacement result)
+17:48:15 T6 C full load ctrl1.2: excessive-displacement prompt on a single held body: T6 C full load ctrl1.2: the solver reported excessive displacements: a body is free to move, or held only by something very soft. playbook/05-fea.md, "Contact between bodies"; retrying with loose_ok=True after the reaction check below
+17:48:16 T6 C full load ctrl1.2: body "SolidBody 1(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:48:16 T6 C full load ctrl1.2: body "SolidBody 2(HOLE)" is PETG printed
+17:48:16 T6 C full load ctrl1.2: body "SolidBody 3(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:48:16 T6 C full load ctrl1.2: body "SolidBody 4(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:48:16 T6 C full load ctrl1.2: body "SolidBody 5(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:48:16 T6 C full load ctrl1.2: body "SolidBody 6(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:48:17 T6 C full load ctrl1.2: mesh rc 0, 41136 nodes, 26905 elements, free 22.3 GB
+17:48:17 T6 C full load ctrl1.2: solver macro: before  0  | set err  0   | after  7  | 
+17:48:21 solver asked about excessive displacements: answered No (finish with the small-displacement result)
+17:48:25 T6 C full load ctrl1.2: fixture nodes 749, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.5]
+17:48:25 T6 C full load ctrl1.2: load nodes 460, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+17:48:29 {'study': 'T6 C full load ctrl1.2', 'el_mm': 3.0, 'nodes': 41136, 'elements': 26905, 'solve_s': 13, 'peak_vm_all': 110.63, 'peak_vm_away': 15.32, 'at': [0.0, -0.1, 15.0], 'sf_yield': 2.94, 'max_disp_mm': 489.60980224609375, 'reaction_N': [-0.0, -0.009, -499.521, 499.521], 'applied_N': 500.0, 'excessive_displacements': True}
+17:48:29 ok reaction Fz = -(2 x load): -499.5210 (expected -500.0000)
+17:48:29 T6 C full load ctrl1.2 {"el_ctrl": 1.2, "load_scale": 1.0, "nodes": 41136, "solve_s": 13, "reaction": [-0.0, -0.009, -499.521, 499.521], "reaction_blockbottom": [0.0, 0.0, 0.0], "reaction_pads": [-0.0004, -0.0094, -499.52076], "pad_share_pct": 99.90415, "pin_rise_mm": 489.55383, "pin_rise_min": 489.52121, "pin_rise_max": 489.58411, "pin_ux_mean": -0.137802, "pin_uy_mean": -0.410261, "peak_bearing_mpa": -0.0, "peak_bearing_at": [0.0, -15.0, 15.1], "patch_nodes": 0, "patch_half_width_mm": null, "peak_vm_near_hole": 0.0, "peak_vm_near_hole_at": [0.0, -15.0, 15.1], "peak_vm_block_all": null, "vm_pin_max": 23.267, "hole_pressure_sum_n": null}
+17:48:29 clock: T6 T6 C full load ctrl1.2 done: 15.1 min since the job began
+17:48:29 ok bottom: 1.0000 (expected 1.0000)
+17:48:29 ok pad outer faces: 2.0000 (expected 2.0000)
+17:48:29 ok pin centre face: 1.0000 (expected 1.0000)
+17:48:29 ok hole face: 1.0000 (expected 1.0000)
+17:48:29 ok stub +Y: 1.0000 (expected 1.0000)
+17:48:29 ok stub -Y: 1.0000 (expected 1.0000)
+17:48:29 ok pad walls: 2.0000 (expected 2.0000)
+17:48:29 PREDICT T6 D full load ctrl0.55: {'nodes': 45000, 'rise_mm': 0.1, 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:48:30 T6 D full load ctrl0.55: body "SolidBody 1(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:48:30 T6 D full load ctrl0.55: body "SolidBody 2(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:48:30 T6 D full load ctrl0.55: body "SolidBody 3(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:48:30 T6 D full load ctrl0.55: body "SolidBody 4(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:48:30 T6 D full load ctrl0.55: body "SolidBody 5(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:48:30 T6 D full load ctrl0.55: body "SolidBody 6(HOLE)" is PETG printed
+17:48:32 T6 D full load ctrl0.55: mesh rc 0, 181559 nodes, 122727 elements, free 22.3 GB
+17:48:32 T6 D full load ctrl0.55: solver macro: before  0  | set err  0   | after  7  | 
+17:48:53 solver asked about excessive displacements: answered No (finish with the small-displacement result)
+17:48:58 T6 D full load ctrl0.55: excessive-displacement prompt on a single held body: T6 D full load ctrl0.55: the solver reported excessive displacements: a body is free to move, or held only by something very soft. playbook/05-fea.md, "Contact between bodies"; retrying with loose_ok=True after the reaction check below
+17:48:58 T6 D full load ctrl0.55: body "SolidBody 1(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:48:58 T6 D full load ctrl0.55: body "SolidBody 2(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:48:58 T6 D full load ctrl0.55: body "SolidBody 3(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:48:58 T6 D full load ctrl0.55: body "SolidBody 4(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:48:58 T6 D full load ctrl0.55: body "SolidBody 5(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:48:58 T6 D full load ctrl0.55: body "SolidBody 6(HOLE)" is PETG printed
+17:49:01 T6 D full load ctrl0.55: mesh rc 0, 181559 nodes, 122727 elements, free 21.7 GB
+17:49:01 T6 D full load ctrl0.55: solver macro: before  0  | set err  0   | after  7  | 
+17:49:22 solver asked about excessive displacements: answered No (finish with the small-displacement result)
+17:50:20 T6 D full load ctrl0.55: fixture nodes 787, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.5]
+17:50:20 T6 D full load ctrl0.55: load nodes 460, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+17:51:27 {'study': 'T6 D full load ctrl0.55', 'el_mm': 3.0, 'nodes': 181559, 'elements': 122727, 'solve_s': 148, 'peak_vm_all': 110.65, 'peak_vm_away': 15.29, 'at': [-0.0, 0.71, 15.0], 'sf_yield': 2.94, 'max_disp_mm': 489.8604736328125, 'reaction_N': [-0.005, -0.002, -499.612, 499.612], 'applied_N': 500.0, 'excessive_displacements': True}
+17:51:27 ok reaction Fz = -(2 x load): -499.6120 (expected -500.0000)
+17:51:27 T6 D full load ctrl0.55 {"el_ctrl": 0.55, "load_scale": 1.0, "nodes": 181559, "solve_s": 148, "reaction": [-0.005, -0.002, -499.612, 499.612], "reaction_blockbottom": [0.0, 0.0, 0.0], "reaction_pads": [-0.0046, -0.00168, -499.61215], "pad_share_pct": 99.92243, "pin_rise_mm": 489.64327, "pin_rise_min": 489.45303, "pin_rise_max": 489.83151, "pin_ux_mean": -0.134296, "pin_uy_mean": -0.412098, "peak_bearing_mpa": -0.0, "peak_bearing_at": [0.0, -15.0, 15.1], "patch_nodes": 0, "patch_half_width_mm": null, "peak_vm_near_hole": 0.0, "peak_vm_near_hole_at": [0.0, -15.0, 15.1], "peak_vm_block_all": null, "vm_pin_max": 24.241, "hole_pressure_sum_n": null}
+17:51:27 clock: T6 T6 D full load ctrl0.55 done: 18.1 min since the job began
+17:51:27 clock: T6 job end: 18.1 min since the job began
+17:51:27 closing pid 131160 committed MB 1942

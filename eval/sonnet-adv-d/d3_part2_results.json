@@ -1,0 +1,2003 @@
+{
+ "rows": {
+  "P1": {
+   "volume_mm3": 23618.6,
+   "hand_volume_mm3": 23618.6,
+   "mass_g": 28.106,
+   "bodies": 1,
+   "stl_watertight": true,
+   "stl_shells": 1,
+   "stl_volume_diff_pct": -0.096,
+   "min_wall_mm": 1.0,
+   "walls_measured": {
+    "hole_hole_top": 3.024,
+    "hole_hole_through": 4.774,
+    "hole_bore": 8.3,
+    "hole_outside": 2.0,
+    "floor": 3.0,
+    "hole_outside_after_chamfer": 1.0,
+    "min": 1.0
+   },
+   "changed": true,
+   "why": "outside diameter 70 -> 72: the 1 mm chamfer would leave 0.0 mm between it and the counterbores (rim wall was 1.0)",
+   "od": 72,
+   "thickness": 7.5,
+   "counterbore_floor_z_mm": 3.0,
+   "counterbore_floor_z_before_mm": 3,
+   "ring_a_turn_deg": 0.0,
+   "original_sha256_before": "f12abe4b74ca185a8e07f4feb89c64eaf70b83206ec99136eeb88abaab8961f0",
+   "original_sha256_after": "f12abe4b74ca185a8e07f4feb89c64eaf70b83206ec99136eeb88abaab8961f0",
+   "original_unchanged": true,
+   "tree_same_but_chamfer": true
+  },
+  "P2": {
+   "volume_mm3": 29648.45,
+   "hand_volume_mm3": 29648.45,
+   "mass_g": 35.282,
+   "bodies": 1,
+   "stl_watertight": true,
+   "stl_shells": 1,
+   "stl_volume_diff_pct": -0.086,
+   "min_wall_mm": 3.0,
+   "walls_measured": {
+    "hole_hole_top": 9.797,
+    "hole_hole_through": 11.547,
+    "hole_bore": 7.0,
+    "hole_outside": 7.0,
+    "floor": 3.0,
+    "hole_outside_after_chamfer": 6.0,
+    "min": 3.0
+   },
+   "changed": false,
+   "why": "as asked: 1.5 mm thicker, floors unchanged, 1 mm chamfer",
+   "od": 84,
+   "thickness": 7.5,
+   "counterbore_floor_z_mm": 3.0,
+   "counterbore_floor_z_before_mm": 3,
+   "ring_a_turn_deg": 0.0,
+   "original_sha256_before": "d6411856dbfc551ccde7e5f501bf34eaec8ac6a84db77ede7666e8bcc73c870e",
+   "original_sha256_after": "d6411856dbfc551ccde7e5f501bf34eaec8ac6a84db77ede7666e8bcc73c870e",
+   "original_unchanged": true,
+   "tree_same_but_chamfer": true
+  },
+  "P3": {
+   "volume_mm3": 48531.93,
+   "hand_volume_mm3": 48531.93,
+   "mass_g": 57.753,
+   "bodies": 1,
+   "stl_watertight": true,
+   "stl_shells": 1,
+   "stl_volume_diff_pct": -0.087,
+   "min_wall_mm": 1.0,
+   "walls_measured": {
+    "hole_hole_top": 9.816,
+    "hole_hole_through": 12.066,
+    "hole_bore": 7.3,
+    "hole_outside": 2.0,
+    "floor": 4.0,
+    "hole_outside_after_chamfer": 1.0,
+    "min": 1.0
+   },
+   "changed": true,
+   "why": "ring A on a 70 circle as asked, and turned 22.5 deg: at 0 deg ring A (r 35, \u00d83.4) puts holes 7 mm from the \u00d85.5 holes of ring B (r 42) and their \u00d810 counterbores (r 5) leave a 0.3 mm wall; at 22.5 deg the thinnest hole-to-hole wall is 9.82 mm; outside diameter 96 -> 98: the 1 mm chamfer would leave 0.0 mm between it and the counterbores (rim wall was 1.0)",
+   "od": 98,
+   "thickness": 9.5,
+   "counterbore_floor_z_mm": 4.0,
+   "counterbore_floor_z_before_mm": 4,
+   "ring_a_turn_deg": 22.5,
+   "original_sha256_before": "12d1016b78ccafbc3c1d87f145d9b08de14edec12d39567ad6880ec47fd158f3",
+   "original_sha256_after": "12d1016b78ccafbc3c1d87f145d9b08de14edec12d39567ad6880ec47fd158f3",
+   "original_unchanged": true,
+   "tree_same_but_chamfer": true
+  },
+  "P4": {
+   "volume_mm3": 18913.39,
+   "hand_volume_mm3": 18913.39,
+   "mass_g": 22.507,
+   "bodies": 1,
+   "stl_watertight": true,
+   "stl_shells": 1,
+   "stl_volume_diff_pct": -0.081,
+   "min_wall_mm": 1.0,
+   "walls_measured": {
+    "hole_hole_top": 3.3,
+    "hole_hole_through": 5.05,
+    "hole_bore": 4.3,
+    "hole_outside": 2.0,
+    "floor": 1.0,
+    "hole_outside_after_chamfer": 1.0,
+    "min": 1.0
+   },
+   "changed": false,
+   "why": "as asked: 1.5 mm thicker, floors unchanged, 1 mm chamfer",
+   "od": 70,
+   "thickness": 6.5,
+   "counterbore_floor_z_mm": 1.0,
+   "counterbore_floor_z_before_mm": 1.0,
+   "ring_a_turn_deg": 0.0,
+   "original_sha256_before": "e3393301552ec0e76974009a7dea5f53e6143bbb2fee4f8d1f852080ec4a06e2",
+   "original_sha256_after": "e3393301552ec0e76974009a7dea5f53e6143bbb2fee4f8d1f852080ec4a06e2",
+   "original_unchanged": true,
+   "tree_same_but_chamfer": true
+  },
+  "P5": {
+   "volume_mm3": 74259.2,
+   "hand_volume_mm3": 74259.2,
+   "mass_g": 88.368,
+   "bodies": 1,
+   "stl_watertight": true,
+   "stl_shells": 1,
+   "stl_volume_diff_pct": -0.076,
+   "min_wall_mm": 1.5,
+   "walls_measured": {
+    "hole_hole_top": 4.25,
+    "hole_hole_through": 6.45,
+    "hole_bore": 7.75,
+    "hole_outside": 2.5,
+    "floor": 3.0,
+    "hole_outside_after_chamfer": 1.5,
+    "min": 1.5
+   },
+   "changed": false,
+   "why": "as asked: 1.5 mm thicker, floors unchanged, 1 mm chamfer",
+   "od": 120,
+   "thickness": 9.5,
+   "counterbore_floor_z_mm": 3.0,
+   "counterbore_floor_z_before_mm": 3,
+   "ring_a_turn_deg": 0.0,
+   "original_sha256_before": "7d7327c3b9ada54a15fda8a6d4247a8037b403e272950c0e6b263385b058a5f4",
+   "original_sha256_after": "7d7327c3b9ada54a15fda8a6d4247a8037b403e272950c0e6b263385b058a5f4",
+   "original_unchanged": true,
+   "tree_same_but_chamfer": true
+  },
+  "P6": {
+   "volume_mm3": 25865.43,
+   "hand_volume_mm3": 25865.43,
+   "mass_g": 30.78,
+   "bodies": 1,
+   "stl_watertight": true,
+   "stl_shells": 1,
+   "stl_volume_diff_pct": -0.102,
+   "min_wall_mm": 1.0,
+   "walls_measured": {
+    "hole_hole_top": 3.3,
+    "hole_hole_through": 5.05,
+    "hole_bore": 4.3,
+    "hole_outside": 2.0,
+    "floor": 3.0,
+    "hole_outside_after_chamfer": 1.0,
+    "min": 1.0
+   },
+   "changed": false,
+   "why": "as asked: 1.5 mm thicker, floors unchanged, 1 mm chamfer",
+   "od": 76,
+   "thickness": 7.5,
+   "counterbore_floor_z_mm": 3.0,
+   "counterbore_floor_z_before_mm": 3,
+   "ring_a_turn_deg": 0.0,
+   "original_sha256_before": "3feb72e3ae36409566e29e411e87badc4071937e14436125333ad045db20951c",
+   "original_sha256_after": "3feb72e3ae36409566e29e411e87badc4071937e14436125333ad045db20951c",
+   "original_unchanged": true,
+   "tree_same_but_chamfer": true
+  }
+ },
+ "problems": [
+  "P1_b: 1 mm chamfer on a 70 plate whose counterbores reach radius 34.0: the rim would be 0.0 mm at the top; outside diameter raised to 72",
+  "P3_b: ring A on a 70 circle at 0 deg leaves a 0.3 mm wall to the ring B counterbores; ring A turned 22.5 deg",
+  "P3_b: 1 mm chamfer on a 96 plate whose counterbores reach radius 47.0: the rim would be 0.0 mm at the top; outside diameter raised to 98"
+ ],
+ "trees": {
+  "P1": {
+   "before": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ]
+   ],
+   "after": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ],
+    [
+     "TOP_CHAMFER",
+     "Chamfer",
+     72
+    ]
+   ],
+   "same_but_chamfer": true
+  },
+  "P2": {
+   "before": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ]
+   ],
+   "after": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ],
+    [
+     "TOP_CHAMFER",
+     "Chamfer",
+     72
+    ]
+   ],
+   "same_but_chamfer": true
+  },
+  "P3": {
+   "before": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ]
+   ],
+   "after": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ],
+    [
+     "TOP_CHAMFER",
+     "Chamfer",
+     72
+    ]
+   ],
+   "same_but_chamfer": true
+  },
+  "P4": {
+   "before": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ]
+   ],
+   "after": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ],
+    [
+     "TOP_CHAMFER",
+     "Chamfer",
+     72
+    ]
+   ],
+   "same_but_chamfer": true
+  },
+  "P5": {
+   "before": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ]
+   ],
+   "after": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ],
+    [
+     "TOP_CHAMFER",
+     "Chamfer",
+     72
+    ]
+   ],
+   "same_but_chamfer": true
+  },
+  "P6": {
+   "before": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ]
+   ],
+   "after": [
+    [
+     "Comments",
+     "CommentsFolder",
+     8
+    ],
+    [
+     "Favorites",
+     "FavoriteFolder",
+     21
+    ],
+    [
+     "History",
+     "HistoryFolder",
+     22
+    ],
+    [
+     "Selection Sets",
+     "SelectionSetFolder",
+     23
+    ],
+    [
+     "Sensors",
+     "SensorFolder",
+     20
+    ],
+    [
+     "Design Binder",
+     "DocsFolder",
+     7
+    ],
+    [
+     "Annotations",
+     "DetailCabinet",
+     1
+    ],
+    [
+     "Surface Bodies",
+     "SurfaceBodyFolder",
+     10
+    ],
+    [
+     "Solid Bodies",
+     "SolidBodyFolder",
+     9
+    ],
+    [
+     "Lights and Cameras",
+     "EnvFolder",
+     6
+    ],
+    [
+     "Markups",
+     "InkMarkupFolder",
+     19
+    ],
+    [
+     "Equations",
+     "EqnFolder",
+     14
+    ],
+    [
+     "Material <not specified>",
+     "MaterialFolder",
+     11
+    ],
+    [
+     "Front Plane",
+     "RefPlane",
+     2
+    ],
+    [
+     "Top Plane",
+     "RefPlane",
+     3
+    ],
+    [
+     "Right Plane",
+     "RefPlane",
+     4
+    ],
+    [
+     "Origin",
+     "OriginProfileFeature",
+     5
+    ],
+    [
+     "BODY_SK",
+     "ProfileFeature",
+     24
+    ],
+    [
+     "BODY",
+     "Extrusion",
+     30
+    ],
+    [
+     "CUT_P",
+     "RefPlane",
+     32
+    ],
+    [
+     "BORE_SK_SK",
+     "ProfileFeature",
+     33
+    ],
+    [
+     "BORE",
+     "ICE",
+     40
+    ],
+    [
+     "RING_A_SK_SK",
+     "ProfileFeature",
+     41
+    ],
+    [
+     "RING_A",
+     "ICE",
+     47
+    ],
+    [
+     "RING_B_SK_SK",
+     "ProfileFeature",
+     48
+    ],
+    [
+     "RING_B",
+     "ICE",
+     54
+    ],
+    [
+     "CB_P",
+     "RefPlane",
+     56
+    ],
+    [
+     "RING_B_CB_SK_SK",
+     "ProfileFeature",
+     57
+    ],
+    [
+     "RING_B_CB",
+     "ICE",
+     69
+    ],
+    [
+     "TOP_CHAMFER",
+     "Chamfer",
+     72
+    ]
+   ],
+   "same_but_chamfer": true
+  }
+ }
+}

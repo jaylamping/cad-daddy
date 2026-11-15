@@ -1,0 +1,29 @@
+19:02:11 SolidWorks pid 168104 free GB 22.3
+19:02:11 clock: D2 fea job a Y contact [3.0]: instance up: 32.5 min since the job began
+19:02:20 ok held face faces: 1.0000 (expected 1.0000)
+19:02:20 ok ring bore faces: 1.0000 (expected 1.0000)
+19:02:20 ok ring OD faces: 1.0000 (expected 1.0000)
+19:02:20 ok seats faces: 2.0000 (expected 2.0000)
+19:02:20 ok upper split faces: 1.0000 (expected 1.0000)
+19:02:20 ok lower split faces: 1.0000 (expected 1.0000)
+19:02:20 PREDICT Y contact 3.0: nodes about 28587; ring moves about 0.05 mm (closing the 0.05 radial clearance) then 0.01 mm; screws carry about 75 N each for +Y (tension), the peak in the seat wall near the load, bores and screw holes not the governing place
+19:02:21 D2_Y_contact_3.0: body "SolidBody 1(<pad_3>-<PADBODY>)" is Soft pad
+19:02:21 D2_Y_contact_3.0: body "SolidBody 2(<pin_4>-<PINTHREAD>)" is Steel
+19:02:21 D2_Y_contact_3.0: body "SolidBody 3(<pin_3>-<PINTHREAD>)" is Steel
+19:02:21 D2_Y_contact_3.0: body "SolidBody 4(<pad_4>-<PADBODY>)" is Soft pad
+19:02:21 D2_Y_contact_3.0: body "SolidBody 5(<pin_2>-<PINTHREAD>)" is Steel
+19:02:21 D2_Y_contact_3.0: body "SolidBody 6(<pin_1>-<PINTHREAD>)" is Steel
+19:02:21 D2_Y_contact_3.0: body "SolidBody 7(<housing_upper_fe>-<RECESS_U>)" is PETG printed
+19:02:21 D2_Y_contact_3.0: body "SolidBody 8(RECESS_L)" is PETG printed
+19:02:21 D2_Y_contact_3.0: body "SolidBody 9(<ring_fe>-<RING>)" is Steel
+19:02:21 D2_Y_contact_3.0: body "SolidBody 10(<pad_1>-<PADBODY>)" is Soft pad
+19:02:21 D2_Y_contact_3.0: body "SolidBody 11(<pad_2>-<PADBODY>)" is Soft pad
+19:02:25 D2_Y_contact_3.0: mesh rc 0, 73206 nodes, 45226 elements, free 22.0 GB
+19:02:25 D2_Y_contact_3.0: solver macro: before  0  | set err  0   | after  7  | 
+19:03:05 D2_Y_contact_3.0: fixture nodes 631, box [-36.0, -32.0, -4.0] to [36.0, -32.0, 11.0]
+19:03:05 D2_Y_contact_3.0: load nodes 972, box [-24.0, -24.0, 0.15] to [24.0, 24.0, 7.15]
+19:03:12 SUMMARY {'study': 'D2_Y_contact_3.0', 'el_mm': 3.0, 'nodes': 73206, 'elements': 45226, 'solve_s': 51, 'peak_vm_all': 123.95, 'peak_vm_away': 123.95, 'at': [29.52, 27.92, 7.26], 'sf_yield': 0.36, 'max_disp_mm': 0.22483138740062714, 'reaction_N': [0.0, -300.0, -0.0, 300.0], 'applied_N': 300.0}
+19:03:12 STUDY DONE Y contact 3.0 73206 ok
+19:03:12 clock: D2 fea job a Y contact [3.0]: done: 33.5 min since the job began
+19:03:12 closing pid 168104 committed MB 1827
+D2 FEA DONE
