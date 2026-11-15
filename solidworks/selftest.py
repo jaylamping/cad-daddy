@@ -544,7 +544,7 @@ def refused(what, fn, *needles):
         missing = [n for n in needles if n not in str(ex)]
         if missing:
             raise SystemExit(f'FAIL: {what}: the refusal does not say {missing}: {ex}')
-        log(f'ok {what} is refused:', str(ex)[:110])
+        log(f'ok {what} is refused:', str(ex) if '\n  try: ' in str(ex) else str(ex)[:110])
     else:
         raise SystemExit(f'FAIL: {what} was accepted')
 
@@ -784,8 +784,15 @@ def picks(j):
         raise SystemExit('FAIL: a straight edge is not reported straight')
     refused('side with a bad word', lambda: side(d, 'top'), '+x -x')
     # a round larger than the 10 mm edges it is asked for is refused: fillet returns None and says why
-    if fillet(d, edges_along(d, 'Z'), (40.0,), 'TOO_BIG') is not None:
-        raise SystemExit('FAIL: an R40 round on a 30 mm wide plate built')
+    said, keep = [], swkit.log
+    swkit.log = lambda *a: (said.append(' '.join(str(v) for v in a)), keep(*a))[1]
+    try:
+        if fillet(d, edges_along(d, 'Z'), (40.0,), 'TOO_BIG') is not None:
+            raise SystemExit('FAIL: an R40 round on a 30 mm wide plate built')
+    finally:
+        swkit.log = keep
+    if not any('4 of them are shorter than the smallest radius tried' in s for s in said):
+        raise SystemExit(f'FAIL: the refused round does not say its edges are shorter than the radius: {said}')
     expect('nothing changed after the refused round', volume(d), 18000, 0.001)
     r = fillet(d, edges_along(d, 'Z'), (40.0, 3.0), 'CORNERS')
     expect('the second radius builds', r, 3.0, 0)

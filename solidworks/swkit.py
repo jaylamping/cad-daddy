@@ -757,6 +757,10 @@ def fillet(d, edges, radii, name):
     """
     if not edges:
         raise Failed(name + ': no edges to round (the edge test matched nothing)')
+    try:                         # measured now: after a refused round the edge objects no longer answer
+        info = sorted((edge_info(e) for e in edges), key=lambda i: i['length'])
+    except Exception as ex:      # noqa: BLE001 - only the explanation of a refusal needs them
+        info, why = None, str(ex)[:100]
     for r in radii:
         v0 = volume(d)
         d.ClearSelection2(True)
@@ -770,8 +774,9 @@ def fillet(d, edges, radii, name):
             _after(d, name)
             return r
     log(f'{name}: no round built on {len(edges)} edges at {tuple(radii)}')
-    try:
-        info = sorted((edge_info(e) for e in edges), key=lambda i: i['length'])
+    if info is None:
+        log(f'{name}: the edges could not be measured ({why})')
+    else:
         short = [i for i in info if i['length'] < min(radii)]
         log(f'{name}: the edges, shortest first (length mm, middle): '
             + '; '.join(f'{i["length"]:.2f} at {[round(v, 2) for v in i["mid"]]}' for i in info[:8])
@@ -783,8 +788,6 @@ def fillet(d, edges, radii, name):
         else:
             log(f'{name}: none is shorter than the radius, so look at what the round would run into: a neighbouring '
                 'face narrower than the radius, or a round already there. Try the edges one at a time')
-    except Exception as ex:      # noqa: BLE001 - the answer (None) stands; only the explanation is missing
-        log(f'{name}: the edges could not be measured ({str(ex)[:100]})')
     return None
 
 
