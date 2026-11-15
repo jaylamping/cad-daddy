@@ -757,10 +757,14 @@ def fillet(d, edges, radii, name):
     """
     if not edges:
         raise Failed(name + ': no edges to round (the edge test matched nothing)')
-    try:                         # measured now: after a refused round the edge objects no longer answer
-        info = sorted((edge_info(e) for e in edges), key=lambda i: i['length'])
-    except Exception as ex:      # noqa: BLE001 - only the explanation of a refusal needs them
-        info, why = None, str(ex)[:100]
+    # measured before the first attempt: after a refused round, edge_info on the same edges raised "disconnected from
+    # its clients" (2026-11-14), though the edges could still be selected. Seventeen calls an edge, so not for huge sets
+    info, why = None, f'{len(edges)} edges are too many to measure'
+    if len(edges) <= 300:
+        try:
+            info = sorted((edge_info(e) for e in edges), key=lambda i: i['length'])
+        except Exception as ex:      # noqa: BLE001 - only the explanation of a refusal needs them
+            why = str(ex)[:100]
     for r in radii:
         v0 = volume(d)
         d.ClearSelection2(True)
