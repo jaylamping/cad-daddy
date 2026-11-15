@@ -25,7 +25,7 @@ The 35 minutes of lock wait is the largest cost in the run. It came from the 200
 
 1. **One solve over 200,000 nodes.** T4 R0.4 at el 1.5 solved with 247,510 nodes. The brief says every solve stays under 200,000. I ran it, and the result is in `t4.json` and `_wip`. Its corner peak converged to 36.2 MPa, so the result is probably sound, but it is not inside the rule.
 2. **One mesh over 200,000 nodes, aborted before solving.** T5 change 2 at el 1.5 made 200,454 nodes and queued for the heavy lock. I ended my own instance (PID 210812 and its client 150608, both mine) and re-ran at el 1.75 (134,457 nodes), which is the plan's own branch for this case. No result from el 1.5 was used. The other session's solve (PID 209964, claim shoulder-study-fea) was not touched.
-3. **The commit I was asked to make.** The brief said not to commit or push. Joey's later message in the project thread asked for the eval run folders to be committed and pushed for tonight's runs, so I committed only `eval/haiku-oplan-a/` to branch `sw-eval-haiku-oplan-a` (commits 247fdfb, 365e77c, 704d978). No attribution lines.
+3. **The commit I was asked to make.** The brief said not to commit or push. A later instruction allowed the eval run folders to be committed and pushed for that night's runs, so I committed only `eval/haiku-oplan-a/` to branch `sw-eval-haiku-oplan-a` (commits 247fdfb, 365e77c, 704d978). No attribution lines.
 
 ## Task status
 

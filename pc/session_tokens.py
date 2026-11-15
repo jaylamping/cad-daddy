@@ -180,7 +180,6 @@ def summarize(path):
         "wall_minutes": wall,
         "active_minutes": active,
         "active_minutes_note": "gaps over %d s between records left out" % IDLE_GAP_S,
-        "first_user_message": " ".join((first_user or "").split())[:400],
         "api_requests_logged": api_requests,
         "api_responses": len(order),
         "models": models,
