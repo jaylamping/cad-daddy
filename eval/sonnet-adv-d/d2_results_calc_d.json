@@ -1,0 +1,1067 @@
+{
+ "peaks_incl_seat_split_edge": {
+  "Y": {
+   "4.0": {
+    "upper": {
+     "vm": 5.344582557678223,
+     "layer_Y": 1.4464335441589355,
+     "shear_Y": 1.884023768687165,
+     "layer_Z": 0.9652197360992432,
+     "shear_Z": 1.8472849241135947,
+     "layer_X": 5.651120185852051,
+     "shear_X": 1.8542068208517766
+    },
+    "lower": {
+     "vm": 3.7740652561187744,
+     "layer_Y": 2.3649487495422363,
+     "shear_Y": 0.8027852585275751,
+     "layer_Z": 1.1463263034820557,
+     "shear_Z": 1.8472849241135947,
+     "layer_X": 1.326206922531128,
+     "shear_X": 1.8542068208517766
+    }
+   },
+   "3.0": {
+    "upper": {
+     "vm": 5.345492362976074,
+     "layer_Y": 1.4345108270645142,
+     "shear_Y": 1.4768761598833091,
+     "layer_Z": 0.9699319005012512,
+     "shear_Z": 2.1719509624400155,
+     "layer_X": 5.673864841461182,
+     "shear_X": 2.342415699315974
+    },
+    "lower": {
+     "vm": 4.338302135467529,
+     "layer_Y": 2.277221918106079,
+     "shear_Y": 1.1020493532413034,
+     "layer_Z": 1.22201669216156,
+     "shear_Z": 2.1719509624400155,
+     "layer_X": 2.7622387409210205,
+     "shear_X": 2.342415699315974
+    }
+   },
+   "2.4": {
+    "upper": {
+     "vm": 5.3648786544799805,
+     "layer_Y": 1.42681884765625,
+     "shear_Y": 1.4474356168834572,
+     "layer_Z": 0.9509591460227966,
+     "shear_Z": 2.5156524266352753,
+     "layer_X": 5.676200866699219,
+     "shear_X": 2.508883298820966
+    },
+    "lower": {
+     "vm": 4.832241535186768,
+     "layer_Y": 2.68015193939209,
+     "shear_Y": 1.0152778349247078,
+     "layer_Z": 1.6426737308502197,
+     "shear_Z": 2.5156524266352753,
+     "layer_X": 2.495497703552246,
+     "shear_X": 2.508883298820966
+    }
+   }
+  },
+  "X": {
+   "4.0": {
+    "upper": {
+     "vm": 7.71043586730957,
+     "layer_Y": 2.260727882385254,
+     "shear_Y": 1.6546712300698299,
+     "layer_Z": 1.0661427974700928,
+     "shear_Z": 3.60989125318443,
+     "layer_X": 2.016892671585083,
+     "shear_X": 3.7122818016801706
+    },
+    "lower": {
+     "vm": 7.71043586730957,
+     "layer_Y": 3.811720848083496,
+     "shear_Y": 2.816047511023578,
+     "layer_Z": 1.3189127445220947,
+     "shear_Z": 3.60989125318443,
+     "layer_X": 3.0097765922546387,
+     "shear_X": 3.7122818016801706
+    }
+   },
+   "3.0": {
+    "upper": {
+     "vm": 8.315975189208984,
+     "layer_Y": 1.9444615840911865,
+     "shear_Y": 1.9658105779969672,
+     "layer_Z": 1.2375152111053467,
+     "shear_Z": 4.163487620330708,
+     "layer_X": 4.66746711730957,
+     "shear_X": 4.269244567327848
+    },
+    "lower": {
+     "vm": 8.315975189208984,
+     "layer_Y": 3.8098461627960205,
+     "shear_Y": 2.87429263553762,
+     "layer_Z": 1.4649382829666138,
+     "shear_Z": 4.163487620330708,
+     "layer_X": 4.66746711730957,
+     "shear_X": 4.269244567327848
+    }
+   },
+   "2.4": {
+    "upper": {
+     "vm": 9.367836952209473,
+     "layer_Y": 1.2796516418457031,
+     "shear_Y": 1.5793015383163203,
+     "layer_Z": 1.0742639303207397,
+     "shear_Z": 4.752344689097037,
+     "layer_X": 4.241474151611328,
+     "shear_X": 4.86015196318821
+    },
+    "lower": {
+     "vm": 9.367836952209473,
+     "layer_Y": 3.7933154106140137,
+     "shear_Y": 2.8397692109286616,
+     "layer_Z": 1.5863393545150757,
+     "shear_Z": 4.752344689097037,
+     "layer_X": 4.241474151611328,
+     "shear_X": 4.86015196318821
+    }
+   }
+  }
+ },
+ "nodes": {
+  "Y": [
+   51793,
+   74551,
+   100690
+  ],
+  "X": [
+   51793,
+   74551,
+   100690
+  ]
+ },
+ "judge_by_layer_direction": {
+  "Y": {
+   "verdict": "margin, not converged",
+   "lowest_factor": 4.58,
+   "lowest_entry": "lower half, +X, shear",
+   "rows": [
+    {
+     "entry": "upper half, +Y, vm",
+     "values": [
+      5.344582557678223,
+      5.345492362976074,
+      5.3648786544799805
+     ],
+     "limit": 45.0,
+     "factor": 8.39,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 0.0,
+     "last_change_mpa": 0.019,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.33,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, layer",
+     "values": [
+      1.4464335441589355,
+      1.4345108270645142,
+      1.42681884765625
+     ],
+     "limit": 22.5,
+     "factor": 15.77,
+     "converged": true,
+     "last_step_pct": 0.5,
+     "step_before_pct": 0.8,
+     "last_change_mpa": 0.008,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 15.77,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, shear",
+     "values": [
+      1.884023768687165,
+      1.4768761598833091,
+      1.4474356168834572
+     ],
+     "limit": 13.0,
+     "factor": 8.98,
+     "converged": true,
+     "last_step_pct": 2.0,
+     "step_before_pct": 21.6,
+     "last_change_mpa": 0.029,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.98,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, vm",
+     "values": [
+      4.850934982299805,
+      4.405388832092285,
+      5.397366523742676
+     ],
+     "limit": 45.0,
+     "factor": 8.34,
+     "converged": true,
+     "last_step_pct": 22.5,
+     "step_before_pct": 9.2,
+     "last_change_mpa": 0.992,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.55,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, layer",
+     "values": [
+      2.260727882385254,
+      1.9444615840911865,
+      1.2796516418457031
+     ],
+     "limit": 22.5,
+     "factor": 17.58,
+     "converged": false,
+     "last_step_pct": 34.2,
+     "step_before_pct": 14.0,
+     "last_change_mpa": 0.665,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 17.58,
+     "state": "margin, not converged"
+    },
+    {
+     "entry": "upper half, +X, shear",
+     "values": [
+      1.3030317373137528,
+      1.1246512117248209,
+      1.0988748144660936
+     ],
+     "limit": 13.0,
+     "factor": 11.83,
+     "converged": true,
+     "last_step_pct": 2.3,
+     "step_before_pct": 13.7,
+     "last_change_mpa": 0.026,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 11.83,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, vm",
+     "values": [
+      3.669351577758789,
+      3.641684055328369,
+      3.747647762298584
+     ],
+     "limit": 45.0,
+     "factor": 12.01,
+     "converged": true,
+     "last_step_pct": 2.9,
+     "step_before_pct": 0.8,
+     "last_change_mpa": 0.106,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 11.34,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, layer",
+     "values": [
+      2.3649487495422363,
+      2.277221918106079,
+      2.68015193939209
+     ],
+     "limit": 22.5,
+     "factor": 8.4,
+     "converged": true,
+     "last_step_pct": 17.7,
+     "step_before_pct": 3.7,
+     "last_change_mpa": 0.403,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.06,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, shear",
+     "values": [
+      0.6809656332423583,
+      0.7383184368994581,
+      0.85706501860555
+     ],
+     "limit": 13.0,
+     "factor": 15.17,
+     "converged": true,
+     "last_step_pct": 16.1,
+     "step_before_pct": 8.4,
+     "last_change_mpa": 0.119,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 11.26,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, vm",
+     "values": [
+      5.869887351989746,
+      6.519968032836914,
+      7.0666608810424805
+     ],
+     "limit": 45.0,
+     "factor": 6.37,
+     "converged": true,
+     "last_step_pct": 8.4,
+     "step_before_pct": 11.1,
+     "last_change_mpa": 0.547,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.42,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, layer",
+     "values": [
+      3.811720848083496,
+      3.8098461627960205,
+      3.7933154106140137
+     ],
+     "limit": 22.5,
+     "factor": 5.93,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 0.0,
+     "last_change_mpa": 0.017,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.93,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, shear",
+     "values": [
+      2.816047511023578,
+      2.87429263553762,
+      2.8397692109286616
+     ],
+     "limit": 13.0,
+     "factor": 4.58,
+     "converged": true,
+     "last_step_pct": 1.2,
+     "step_before_pct": 2.1,
+     "last_change_mpa": 0.035,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.47,
+     "state": "pass"
+    }
+   ]
+  },
+  "Z": {
+   "verdict": "not shown",
+   "lowest_factor": 3.82,
+   "lowest_entry": "lower half, +X, shear",
+   "rows": [
+    {
+     "entry": "upper half, +Y, vm",
+     "values": [
+      5.344582557678223,
+      5.345492362976074,
+      5.3648786544799805
+     ],
+     "limit": 45.0,
+     "factor": 8.39,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 0.0,
+     "last_change_mpa": 0.019,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.33,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, layer",
+     "values": [
+      0.9652197360992432,
+      0.9699319005012512,
+      0.9509591460227966
+     ],
+     "limit": 22.5,
+     "factor": 23.66,
+     "converged": true,
+     "last_step_pct": 2.0,
+     "step_before_pct": 0.5,
+     "last_change_mpa": 0.019,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 22.76,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, shear",
+     "values": [
+      1.519693900153859,
+      1.2168182456981858,
+      1.5566453526691821
+     ],
+     "limit": 13.0,
+     "factor": 8.35,
+     "converged": false,
+     "last_step_pct": 27.9,
+     "step_before_pct": 19.9,
+     "last_change_mpa": 0.34,
+     "settled_under_mpa": 0.325,
+     "step_growing": true,
+     "factor_after_two_more_steps": 5.1,
+     "state": "not shown"
+    },
+    {
+     "entry": "upper half, +X, vm",
+     "values": [
+      4.850934982299805,
+      4.405388832092285,
+      5.397366523742676
+     ],
+     "limit": 45.0,
+     "factor": 8.34,
+     "converged": true,
+     "last_step_pct": 22.5,
+     "step_before_pct": 9.2,
+     "last_change_mpa": 0.992,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.55,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, layer",
+     "values": [
+      1.0661427974700928,
+      1.1535239219665527,
+      1.0742639303207397
+     ],
+     "limit": 22.5,
+     "factor": 20.94,
+     "converged": true,
+     "last_step_pct": 6.9,
+     "step_before_pct": 8.2,
+     "last_change_mpa": 0.079,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 18.34,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, shear",
+     "values": [
+      0.8912797616937239,
+      0.8082124750276625,
+      0.8144382972311206
+     ],
+     "limit": 13.0,
+     "factor": 15.96,
+     "converged": true,
+     "last_step_pct": 0.8,
+     "step_before_pct": 9.3,
+     "last_change_mpa": 0.006,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 15.72,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, vm",
+     "values": [
+      3.669351577758789,
+      3.641684055328369,
+      3.747647762298584
+     ],
+     "limit": 45.0,
+     "factor": 12.01,
+     "converged": true,
+     "last_step_pct": 2.9,
+     "step_before_pct": 0.8,
+     "last_change_mpa": 0.106,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 11.34,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, layer",
+     "values": [
+      1.1463263034820557,
+      1.22201669216156,
+      1.6426737308502197
+     ],
+     "limit": 22.5,
+     "factor": 13.7,
+     "converged": true,
+     "last_step_pct": 34.4,
+     "step_before_pct": 6.6,
+     "last_change_mpa": 0.421,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 7.58,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, shear",
+     "values": [
+      1.519693900153859,
+      1.2168182456981858,
+      1.268365053233415
+     ],
+     "limit": 13.0,
+     "factor": 10.25,
+     "converged": true,
+     "last_step_pct": 4.2,
+     "step_before_pct": 19.9,
+     "last_change_mpa": 0.052,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.43,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, vm",
+     "values": [
+      5.869887351989746,
+      6.519968032836914,
+      7.0666608810424805
+     ],
+     "limit": 45.0,
+     "factor": 6.37,
+     "converged": true,
+     "last_step_pct": 8.4,
+     "step_before_pct": 11.1,
+     "last_change_mpa": 0.547,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.42,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, layer",
+     "values": [
+      1.3189127445220947,
+      1.4649382829666138,
+      1.5863393545150757
+     ],
+     "limit": 22.5,
+     "factor": 14.18,
+     "converged": true,
+     "last_step_pct": 8.3,
+     "step_before_pct": 11.1,
+     "last_change_mpa": 0.121,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 12.1,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, shear",
+     "values": [
+      1.6372700223515195,
+      2.3184177239312955,
+      3.4004064559422775
+     ],
+     "limit": 13.0,
+     "factor": 3.82,
+     "converged": false,
+     "last_step_pct": 46.7,
+     "step_before_pct": 41.6,
+     "last_change_mpa": 1.082,
+     "settled_under_mpa": 0.325,
+     "step_growing": true,
+     "factor_after_two_more_steps": 1.78,
+     "state": "not shown"
+    }
+   ]
+  },
+  "X": {
+   "verdict": "not shown",
+   "lowest_factor": 3.77,
+   "lowest_entry": "lower half, +X, shear",
+   "rows": [
+    {
+     "entry": "upper half, +Y, vm",
+     "values": [
+      5.344582557678223,
+      5.345492362976074,
+      5.3648786544799805
+     ],
+     "limit": 45.0,
+     "factor": 8.39,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 0.0,
+     "last_change_mpa": 0.019,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.33,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, layer",
+     "values": [
+      5.651120185852051,
+      5.673864841461182,
+      5.676200866699219
+     ],
+     "limit": 22.5,
+     "factor": 3.96,
+     "converged": true,
+     "last_step_pct": 0.0,
+     "step_before_pct": 0.4,
+     "last_change_mpa": 0.002,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 3.96,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, shear",
+     "values": [
+      1.8386691035522529,
+      1.4993791402115695,
+      1.499011567822335
+     ],
+     "limit": 13.0,
+     "factor": 8.67,
+     "converged": true,
+     "last_step_pct": 0.0,
+     "step_before_pct": 18.5,
+     "last_change_mpa": 0.0,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.67,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, vm",
+     "values": [
+      4.850934982299805,
+      4.405388832092285,
+      5.397366523742676
+     ],
+     "limit": 45.0,
+     "factor": 8.34,
+     "converged": true,
+     "last_step_pct": 22.5,
+     "step_before_pct": 9.2,
+     "last_change_mpa": 0.992,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.55,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, layer",
+     "values": [
+      2.016892671585083,
+      1.60419499874115,
+      1.522953987121582
+     ],
+     "limit": 22.5,
+     "factor": 14.77,
+     "converged": true,
+     "last_step_pct": 5.1,
+     "step_before_pct": 20.5,
+     "last_change_mpa": 0.081,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 14.77,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, shear",
+     "values": [
+      1.2966145513277394,
+      1.1461730986733203,
+      1.149907237719942
+     ],
+     "limit": 13.0,
+     "factor": 11.31,
+     "converged": true,
+     "last_step_pct": 0.3,
+     "step_before_pct": 11.6,
+     "last_change_mpa": 0.004,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 11.23,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, vm",
+     "values": [
+      3.669351577758789,
+      3.641684055328369,
+      3.747647762298584
+     ],
+     "limit": 45.0,
+     "factor": 12.01,
+     "converged": true,
+     "last_step_pct": 2.9,
+     "step_before_pct": 0.8,
+     "last_change_mpa": 0.106,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 11.34,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, layer",
+     "values": [
+      1.326206922531128,
+      1.2602958679199219,
+      1.6426736116409302
+     ],
+     "limit": 22.5,
+     "factor": 13.7,
+     "converged": true,
+     "last_step_pct": 30.3,
+     "step_before_pct": 5.0,
+     "last_change_mpa": 0.382,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.06,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, shear",
+     "values": [
+      1.5260220877080513,
+      1.229934110359555,
+      1.2699994123555314
+     ],
+     "limit": 13.0,
+     "factor": 10.24,
+     "converged": true,
+     "last_step_pct": 3.3,
+     "step_before_pct": 19.4,
+     "last_change_mpa": 0.04,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.6,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, vm",
+     "values": [
+      5.869887351989746,
+      6.519968032836914,
+      7.0666608810424805
+     ],
+     "limit": 45.0,
+     "factor": 6.37,
+     "converged": true,
+     "last_step_pct": 8.4,
+     "step_before_pct": 11.1,
+     "last_change_mpa": 0.547,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.42,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, layer",
+     "values": [
+      3.0097765922546387,
+      2.8892412185668945,
+      2.8810930252075195
+     ],
+     "limit": 22.5,
+     "factor": 7.81,
+     "converged": true,
+     "last_step_pct": 0.3,
+     "step_before_pct": 4.0,
+     "last_change_mpa": 0.008,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 7.81,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, shear",
+     "values": [
+      2.8142979191031476,
+      2.8729367632163627,
+      3.4479905880323347
+     ],
+     "limit": 13.0,
+     "factor": 3.77,
+     "converged": false,
+     "last_step_pct": 20.0,
+     "step_before_pct": 2.1,
+     "last_change_mpa": 0.575,
+     "settled_under_mpa": 0.325,
+     "step_growing": true,
+     "factor_after_two_more_steps": 2.62,
+     "state": "not shown"
+    }
+   ]
+  }
+ },
+ "screws": {
+  "Y_4.0": {
+   "per_screw_N": [
+    90.9,
+    94.8,
+    90.6,
+    95.0
+   ],
+   "sum_N": 371.4,
+   "max_N": 95.0,
+   "shear_fit": [
+    -5.5,
+    -5.4,
+    5.5,
+    5.5
+   ]
+  },
+  "Y_3.0": {
+   "per_screw_N": [
+    90.7,
+    94.9,
+    90.4,
+    94.9
+   ],
+   "sum_N": 370.9,
+   "max_N": 94.9,
+   "shear_fit": [
+    -5.3,
+    -5.4,
+    5.5,
+    5.4
+   ]
+  },
+  "Y_2.4": {
+   "per_screw_N": [
+    90.6,
+    94.8,
+    90.4,
+    95.0
+   ],
+   "sum_N": 370.9,
+   "max_N": 95.0,
+   "shear_fit": [
+    -5.4,
+    -5.3,
+    5.4,
+    5.4
+   ]
+  },
+  "X_4.0": {
+   "per_screw_N": [
+    39.5,
+    40.7,
+    26.0,
+    26.1
+   ],
+   "sum_N": 132.3,
+   "max_N": 40.7,
+   "shear_fit": [
+    2.5,
+    2.3,
+    18.4,
+    18.5
+   ]
+  },
+  "X_3.0": {
+   "per_screw_N": [
+    39.2,
+    40.8,
+    26.0,
+    26.1
+   ],
+   "sum_N": 132.2,
+   "max_N": 40.8,
+   "shear_fit": [
+    2.4,
+    2.3,
+    18.4,
+    18.4
+   ]
+  },
+  "X_2.4": {
+   "per_screw_N": [
+    39.4,
+    40.7,
+    26.1,
+    26.3
+   ],
+   "sum_N": 132.5,
+   "max_N": 40.7,
+   "shear_fit": [
+    2.5,
+    2.2,
+    18.3,
+    18.4
+   ]
+  }
+ },
+ "bonded_Y": {
+  "per_screw_N": [
+   -13.9,
+   -14.0,
+   -14.0,
+   -14.0
+  ],
+  "sum_N": -55.9,
+  "max_disp": 0.03477994352579117,
+  "ring_mean_disp": [
+   -3.918449113835369e-05,
+   0.011077617603950278,
+   -0.0007578170867892529
+  ],
+  "upper_vm": 1.8834270238876343,
+  "lower_vm": 2.6019229888916016
+ },
+ "bonded_X": {
+  "per_screw_N": [
+   18.5,
+   19.2,
+   -0.8,
+   -1.2
+  ],
+  "sum_N": 35.8,
+  "max_disp": 0.06794250011444092,
+  "ring_mean_disp": [
+   0.03196476242657102,
+   -0.0044022438656182074,
+   0.00024412287185594287
+  ],
+  "upper_vm": 3.247889757156372,
+  "lower_vm": 3.888624906539917
+ },
+ "contact_Y_3.0": {
+  "max_disp": 0.23228394985198975,
+  "ring_mean_disp": [
+   -0.0005791217259197234,
+   0.13976142529520344,
+   0.0005186926071017817
+  ],
+  "upper_mean_disp": [
+   -0.0008796534998016315,
+   0.05720115746451867,
+   -0.0024621344222811926
+  ],
+  "lower_mean_disp": [
+   4.455433461523555e-05,
+   0.004612800061738441,
+   -0.00029532802690730123
+  ],
+  "reaction": [
+   -0.0,
+   -300.0,
+   -0.0,
+   300.0
+  ],
+  "pad_vm_polluted": 24.360321044921875
+ },
+ "contact_X_3.0": {
+  "max_disp": 0.2537766695022583,
+  "ring_mean_disp": [
+   0.1769941832687034,
+   0.06734869338003602,
+   0.00028610410918029184
+  ],
+  "upper_mean_disp": [
+   0.2056003943951967,
+   0.0030607224345225717,
+   -3.4365218668886465e-05
+  ],
+  "lower_mean_disp": [
+   0.02513863761414885,
+   -0.0008457813024100804,
+   3.619765963240147e-05
+  ],
+  "reaction": [
+   -300.0,
+   0.0,
+   -0.0,
+   300.0
+  ],
+  "pad_vm_polluted": 17.05011749267578
+ },
+ "hidden_zones": {
+  "Y_4.0": {
+   "counterbore_walls_ribs": {
+    "nodes": 753,
+    "vm": 6.199026107788086,
+    "tension_Y": 6.626438140869141
+   },
+   "insert_surround": {
+    "nodes": 1704,
+    "vm": 2.9303462505340576,
+    "tension_Y": 3.358292818069458
+   }
+  },
+  "Y_3.0": {
+   "counterbore_walls_ribs": {
+    "nodes": 790,
+    "vm": 6.404383659362793,
+    "tension_Y": 7.155119895935059
+   },
+   "insert_surround": {
+    "nodes": 2024,
+    "vm": 2.9084675312042236,
+    "tension_Y": 3.5884032249450684
+   }
+  },
+  "Y_2.4": {
+   "counterbore_walls_ribs": {
+    "nodes": 805,
+    "vm": 7.1736955642700195,
+    "tension_Y": 7.073720455169678
+   },
+   "insert_surround": {
+    "nodes": 2378,
+    "vm": 3.2941057682037354,
+    "tension_Y": 3.166795253753662
+   }
+  },
+  "X_4.0": {
+   "counterbore_walls_ribs": {
+    "nodes": 753,
+    "vm": 5.228700160980225,
+    "tension_Y": 6.2255682945251465
+   },
+   "insert_surround": {
+    "nodes": 1704,
+    "vm": 7.195335865020752,
+    "tension_Y": 3.7049505710601807
+   }
+  },
+  "X_3.0": {
+   "counterbore_walls_ribs": {
+    "nodes": 790,
+    "vm": 5.908606052398682,
+    "tension_Y": 6.728061676025391
+   },
+   "insert_surround": {
+    "nodes": 2024,
+    "vm": 6.880949974060059,
+    "tension_Y": 3.5250890254974365
+   }
+  },
+  "X_2.4": {
+   "counterbore_walls_ribs": {
+    "nodes": 805,
+    "vm": 6.496606826782227,
+    "tension_Y": 6.690299987792969
+   },
+   "insert_surround": {
+    "nodes": 2378,
+    "vm": 7.217557430267334,
+    "tension_Y": 3.30663800239563
+   }
+  }
+ }
+}

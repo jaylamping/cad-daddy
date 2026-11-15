@@ -1,0 +1,29 @@
+19:25:53 SolidWorks pid 175460 free GB 22.0
+19:25:53 clock: D2 fea job d Y bonded [3.0]: instance up: 56.2 min since the job began
+19:26:04 ok held face faces: 1.0000 (expected 1.0000)
+19:26:04 ok ring bore faces: 1.0000 (expected 1.0000)
+19:26:04 ok ring OD faces: 1.0000 (expected 1.0000)
+19:26:04 ok seats faces: 2.0000 (expected 2.0000)
+19:26:04 ok upper split faces: 2.0000 (expected 2.0000)
+19:26:04 ok lower split faces: 2.0000 (expected 2.0000)
+19:26:04 PREDICT Y bonded 3.0: nodes about 28587; ring moves about 0.05 mm (closing the 0.05 radial clearance) then 0.01 mm; screws carry about 75 N each for +Y (tension), the peak in the seat wall near the load, bores and screw holes not the governing place
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 1(<pad_2>-<PADBODY>)" is Soft pad
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 2(<pad_3>-<PADBODY>)" is Soft pad
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 3(<pin_4>-<PINTHREAD>)" is Steel
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 4(<housing_upper_fe>-<RECESS_U>)" is PETG printed
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 5(<pin_3>-<PINTHREAD>)" is Steel
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 6(<pad_4>-<PADBODY>)" is Soft pad
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 7(<pin_2>-<PINTHREAD>)" is Steel
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 8(RECESS_L)" is PETG printed
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 9(<ring_fe_c>-<RING>)" is Steel
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 10(<pin_1>-<PINTHREAD>)" is Steel
+19:26:04 D2_Y_bonded_3.0: body "SolidBody 11(<pad_1>-<PADBODY>)" is Soft pad
+19:26:13 D2_Y_bonded_3.0: mesh rc 0, 74551 nodes, 46002 elements, free 21.4 GB
+19:26:14 D2_Y_bonded_3.0: solver macro: before  0  | set err  0   | after  7  | 
+19:26:30 D2_Y_bonded_3.0: fixture nodes 631, box [-36.0, -32.0, -4.0] to [36.0, -32.0, 11.0]
+19:26:30 D2_Y_bonded_3.0: load nodes 908, box [-24.0, -24.0, 0.15] to [24.0, 24.0, 7.15]
+19:26:37 SUMMARY {'study': 'D2_Y_bonded_3.0', 'el_mm': 3.0, 'nodes': 74551, 'elements': 46002, 'solve_s': 32, 'peak_vm_all': 38.77, 'peak_vm_away': 23.68, 'at': [-32.48, 0.09, 0.26], 'sf_yield': 1.9, 'max_disp_mm': 0.03477994352579117, 'reaction_N': [-0.0, -300.0, -0.0, 300.0], 'applied_N': 300.0}
+19:26:37 STUDY DONE Y bonded 3.0 74551 ok
+19:26:37 clock: D2 fea job d Y bonded [3.0]: done: 56.9 min since the job began
+19:26:37 closing pid 175460 committed MB 1821
+D2 FEA DONE

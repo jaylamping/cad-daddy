@@ -1,0 +1,66 @@
+18:26:23 judge: fail; lowest factor 1.56 at "hole rims, layer"
+18:26:23 judge:   fail: "hole rims, layer" factor 1.56, last step 0.7 %, factor after two more 1.56
+18:26:23 judge:   fail: "hole rims, shear" factor 2.0, last step 2.8 %, factor after two more 1.89
+18:26:23 judge:   fail: "hole rims clear, layer" factor 1.73, last step 9.3 % after 1.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   fail: "hole rims clear, shear" factor 2.0, last step 2.8 %, factor after two more 1.89
+18:26:23 judge:   fail: "root and fillet, shear" factor 1.85, last step 0.5 %, factor after two more 1.83
+18:26:23 judge: fail; lowest factor 1.32 at "base, layer"
+18:26:23 judge:   fail: "root and fillet, shear" factor 1.85, last step 0.4 %, factor after two more 1.84
+18:26:23 judge:   fail: "base, layer" factor 1.32, last step 0.1 %, factor after two more 1.32
+18:26:23 judge: margin, not converged; lowest factor 2.0 at "hole rims, shear"
+18:26:23 judge:   margin, not converged: "hole rims, layer" factor 2.71, last step 11.6 %, factor after two more 2.17
+18:26:23 judge:   margin, not converged: "hole rims clear, layer" factor 2.71, last step 11.6 %, factor after two more 2.17
+18:26:23 judge: fail; lowest factor 0.81 at "root and fillet, shear"
+18:26:23 judge:   fail: "hole rims, layer" factor 1.54, last step 0.4 %, factor after two more 1.53
+18:26:23 judge:   fail: "hole rims clear, layer" factor 1.71, last step 10.6 % after 5.7 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   fail: "root and fillet, vm" factor 1.5, last step 15.5 % after 14.0 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   fail: "root and fillet, shear" factor 0.81, last step 18.5 % after 12.0 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   fail: "inside corner, vm" factor 1.5, last step 15.5 % after 14.0 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge: fail; lowest factor 0.57 at "root and fillet, shear"
+18:26:23 judge:   fail: "hole rims, layer" factor 1.54, last step 2.1 %, factor after two more 1.48
+18:26:23 judge:   fail: "hole rims clear, layer" factor 1.71, last step 7.4 % after 4.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   fail: "root and fillet, vm" factor 1.11, last step 5.4 % after 0.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   fail: "root and fillet, shear" factor 0.57, last step 5.0 % after 0.3 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   fail: "inside corner, vm" factor 1.11, last step 5.4 % after 0.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge: not shown; lowest factor 2.03 at "root and fillet, shear"
+18:26:23 judge:   not shown: "hole rims, shear" factor 2.91, last step 13.8 % after 5.2 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   not shown: "hole rims clear, shear" factor 2.91, last step 13.8 % after 5.2 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge: fail; lowest factor 1.32 at "base, layer"
+18:26:23 judge:   fail: "base, layer" factor 1.32, last step 0.2 %, factor after two more 1.32
+18:26:23 judge: not shown; lowest factor 2.72 at "base, vm"
+18:26:23 judge:   margin, not converged: "hole rims, layer" factor 3.52, last step 19.0 %, factor after two more 2.49
+18:26:23 judge:   not shown: "hole rims, shear" factor 2.91, last step 14.6 % after 4.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge:   margin, not converged: "hole rims clear, layer" factor 3.52, last step 19.0 %, factor after two more 2.49
+18:26:23 judge:   not shown: "hole rims clear, shear" factor 2.91, last step 14.6 % after 4.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+18:26:23 judge: pass; lowest factor 2.02 at "root and fillet, shear"
+18:26:23 judge: fail; lowest factor 1.32 at "base, layer"
+18:26:23 judge:   fail: "base, layer" factor 1.32, last step 0.2 %, factor after two more 1.31
+18:26:23 judge: pass; lowest factor 2.6 at "hole rims, shear"
+T3 layers along Z, vm {'mpa': 18.792, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 2.39}
+T3 layers along Z, layer tension {'mpa': 14.465, 'where': 'hole rims (all nodes)', 'factor': 1.56}
+T3 layers along Z, shear {'mpa': 7.024, 'where': 'root and fillet', 'factor': 1.85}
+T3 layers along X, vm {'mpa': 18.792, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 2.39}
+T3 layers along X, layer tension {'mpa': 17.102, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 1.32}
+T3 layers along X, shear {'mpa': 7.03, 'where': 'root and fillet', 'factor': 1.85}
+T3 layers along Y, vm {'mpa': 18.792, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 2.39}
+T3 layers along Y, layer tension {'mpa': 8.311, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 2.71}
+T3 layers along Y, shear {'mpa': 6.495, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 2.0}
+T5 layers along Z, vm {'mpa': 16.546, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 2.72}
+T5 layers along Z, layer tension {'mpa': 9.191, 'where': 'hole rims (all nodes)', 'factor': 2.45}
+T5 layers along Z, shear {'mpa': 6.41, 'where': 'root and fillet', 'factor': 2.03}
+T5 layers along X, vm {'mpa': 16.546, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 2.72}
+T5 layers along X, layer tension {'mpa': 17.035, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 1.32}
+T5 layers along X, shear {'mpa': 6.414, 'where': 'root and fillet', 'factor': 2.03}
+T5 layers along Y, vm {'mpa': 16.546, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 2.72}
+T5 layers along Y, layer tension {'mpa': 6.393, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 3.52}
+T5 layers along Y, shear {'mpa': 4.465, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 2.91}
+T5b layers along Z, vm {'mpa': 16.522, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 2.72}
+T5b layers along Z, layer tension {'mpa': 9.518, 'where': 'hole rims (all nodes)', 'factor': 2.36}
+T5b layers along Z, shear {'mpa': 6.427, 'where': 'root and fillet', 'factor': 2.02}
+T5b layers along X, vm {'mpa': 16.522, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 2.72}
+T5b layers along X, layer tension {'mpa': 17.076, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 1.32}
+T5b layers along X, shear {'mpa': 6.43, 'where': 'root and fillet', 'factor': 2.02}
+T5b layers along Y, vm {'mpa': 16.522, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 2.72}
+T5b layers along Y, layer tension {'mpa': 5.982, 'where': 'base (2.5 mm clear of fixed holes)', 'factor': 3.76}
+T5b layers along Y, shear {'mpa': 5.001, 'where': 'hole rims (0.6 mm clear of loaded faces)', 'factor': 2.6}
+T5b bottom {'Z layer': 9.841, 'Z shear': 4.029, 'X layer': 1.478, 'X shear': 3.592, 'Y layer': 4.814, 'Y shear': 4.022}

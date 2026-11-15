@@ -1,0 +1,46 @@
+18:11:00 HAND: mean projected bearing 1.67 MPa (a floor); Hertz in a 0.1 mm larger socket: E* 2199 MPa, R* 255 mm, half width 1.57 mm, peak 6.76 MPa; pin rises 0.10 mm (the clearance) before it bears
+18:11:07 SolidWorks pid 141828 free GB 22.5
+18:11:07 clock: T6 centred-pin test start: 37.7 min since the job began
+18:11:09 ok TP_PIN_C volume change: 2356.1945 (expected 2356.1945)
+18:11:09 TP_PIN_C: added 2356.19 mm3
+18:11:13 ok TP_PIN_E1 volume change: 785.3982 (expected 785.3982)
+18:11:13 TP_PIN_E1: added 785.40 mm3
+18:11:15 ok TP_PIN_E2 volume change: 785.3982 (expected 785.3982)
+18:11:15 TP_PIN_E2: added 785.40 mm3
+18:11:16 ok TP_PAD_A volume change: 14.1372 (expected 14.1372)
+18:11:16 TP_PAD_A: added 14.14 mm3
+18:11:17 ok TP_PAD_B volume change: 14.1372 (expected 14.1372)
+18:11:17 TP_PAD_B: added 14.14 mm3
+18:11:18 ok BLOCK volume change: 24000.0000 (expected 24000.0000)
+18:11:18 BLOCK: added 24000.00 mm3
+18:11:19 ok HOLE volume change: 2451.3847 (expected 2451.3847)
+18:11:19 HOLE: cut 2451.38 mm3
+18:11:23 bodies [('HOLE', 21548.62, [-20.0, -15.0, 0.0, 20.0, 15.0, 20.0]), ('<tp_pin_c>-<TP_PIN_C>', 2356.19, [-5.0, -15.0, 5.0, 5.0, 15.0, 15.0]), ('<tp_pin_e1>-<TP_PIN_E1>', 785.4, [-5.0, 15.0, 5.0, 5.0, 25.0, 15.0]), ('<tp_pin_e2>-<TP_PIN_E2>', 785.4, [-5.0, -25.0, 5.0, 5.0, -15.0, 15.0]), ('<tp_pad_a>-<TP_PAD_A>', 14.14, [-1.5, 25.0, 8.5, 1.5, 27.0, 11.5]), ('<tp_pad_b>-<TP_PAD_B>', 14.14, [-1.5, -27.0, 8.5, 1.5, -25.0, 11.5])]
+18:11:23 ok six bodies: 6.0000 (expected 6.0000)
+18:11:23 ok rebuild errors: 0.0000 (expected 0.0000)
+18:11:23 body volumes {'HOLE': 21548.62, '<tp_pin_c>-<TP_PIN_C>': 2356.19, '<tp_pin_e1>-<TP_PIN_E1>': 785.4, '<tp_pin_e2>-<TP_PIN_E2>': 785.4, '<tp_pad_a>-<TP_PAD_A>': 14.14, '<tp_pad_b>-<TP_PAD_B>': 14.14}
+18:11:24 clock: T6 model built: 38.0 min since the job began
+18:11:27 ok bottom: 1.0000 (expected 1.0000)
+18:11:27 ok pad outer faces: 2.0000 (expected 2.0000)
+18:11:28 ok pin centre face: 1.0000 (expected 1.0000)
+18:11:28 ok hole face: 1.0000 (expected 1.0000)
+18:11:28 ok stub +Y: 1.0000 (expected 1.0000)
+18:11:28 ok stub -Y: 1.0000 (expected 1.0000)
+18:11:28 ok pad walls: 2.0000 (expected 2.0000)
+18:11:28 PREDICT T6 E centred, contact set, ctrl1.2: {'nodes': 45000, 'rise_mm': '0.10 (clearance, built in) plus a few micrometres', 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+18:11:28 T6 E centred, contact set, ctrl1.2: body "SolidBody 1(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+18:11:28 T6 E centred, contact set, ctrl1.2: body "SolidBody 2(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+18:11:28 T6 E centred, contact set, ctrl1.2: body "SolidBody 3(<tp_pin_c>-<TP_PIN_C>)" is Steel
+18:11:28 T6 E centred, contact set, ctrl1.2: body "SolidBody 4(HOLE)" is PETG printed
+18:11:28 T6 E centred, contact set, ctrl1.2: body "SolidBody 5(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+18:11:28 T6 E centred, contact set, ctrl1.2: body "SolidBody 6(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+18:11:29 T6 E centred, contact set, ctrl1.2: mesh rc 0, 41136 nodes, 26905 elements, free 22.2 GB
+18:11:30 T6 E centred, contact set, ctrl1.2: solver macro: before  0  | set err  0   | after  7  | 
+18:12:07 T6 E centred, contact set, ctrl1.2: fixture nodes 749, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.5]
+18:12:07 T6 E centred, contact set, ctrl1.2: load nodes 460, box [-5.0, -25.0, 5.0] to [5.0, 25.0, 15.0]
+18:12:11 {'study': 'T6 E centred, contact set, ctrl1.2', 'el_mm': 3.0, 'nodes': 41136, 'elements': 26905, 'solve_s': 43, 'peak_vm_all': 31.38, 'peak_vm_away': 28.67, 'at': [-1.62, 0.93, 14.73], 'sf_yield': 1.57, 'max_disp_mm': 0.16243787109851837, 'reaction_N': [0.0, -0.0, -500.004, 500.004], 'applied_N': 500.0}
+18:12:11 ok reaction Fz = -(2 x load): -500.0040 (expected -500.0000)
+18:12:11 T6 E centred, contact set, ctrl1.2 {"el_ctrl": 1.2, "load_scale": 1.0, "nodes": 41136, "solve_s": 43, "reaction": [0.0, -0.0, -500.004, 500.004], "reaction_blockbottom": [0.0001, 0.0052, -499.8658], "reaction_pads": [-1e-05, -0.00521, -0.13833], "pad_share_pct": 0.02768, "pin_uz_mean": 0.12924, "pin_rise_mm": 0.22924, "pin_rise_min": 0.10092, "pin_rise_max": 0.15881, "pin_ux_mean": 7.6e-05, "pin_uy_mean": 0.001027, "peak_bearing_mpa": 6.649, "peak_bearing_at": [0.15, 0.6, 15.1], "patch_nodes": 392, "patch_half_width_mm": 2.25, "peak_vm_near_hole": 5.637, "peak_vm_near_hole_at": [2.01, -15.0, 16.05], "peak_vm_block_all": null, "vm_pin_max": 31.381, "hole_pressure_sum_n": null, "patch_x_range": [-2.09, 2.4]}
+18:12:11 clock: T6 T6 E centred, contact set, ctrl1.2 done: 38.8 min since the job began
+18:12:11 clock: T6 centred-pin test end: 38.8 min since the job began
+18:12:11 closing pid 141828 committed MB 1843

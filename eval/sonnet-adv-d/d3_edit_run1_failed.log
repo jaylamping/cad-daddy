@@ -1,0 +1,74 @@
+P1 edit plan: outside diameter 70 -> 72: the 1 mm chamfer would leave 0.0 mm between it and the counterbores (rim wall was 1.0) {'hole_hole_top': 3.024, 'hole_hole_through': 4.774, 'hole_bore': 8.3, 'hole_outside': 2.0, 'floor': 3.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+P2 edit plan: thicker + chamfer only {'hole_hole_top': 9.797, 'hole_hole_through': 11.547, 'hole_bore': 7.0, 'hole_outside': 7.0, 'floor': 3.0, 'hole_outside_after_chamfer': 6.0, 'min': 3.0}
+P3 edit plan: ring A on a 70 circle as asked, and turned 22.5 deg: at 0 deg ring A (r 35, Ø3.4) puts holes 7 mm from the Ø5.5 holes of ring B (r 42) and their Ø10 counterbores (r 5) leave a 0.3 mm wall; at 22.5 deg the thinnest hole-to-hole wall is 9.82 mm; outside diameter 96 -> 98: the 1 mm chamfer would leave 0.0 mm between it and the counterbores (rim wall was 1.0) {'hole_hole_top': 9.816, 'hole_hole_through': 12.066, 'hole_bore': 7.3, 'hole_outside': 2.0, 'floor': 4.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+P4 edit plan: thicker + chamfer only {'hole_hole_top': 3.3, 'hole_hole_through': 5.05, 'hole_bore': 4.3, 'hole_outside': 2.0, 'floor': 1.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+P5 edit plan: thicker + chamfer only {'hole_hole_top': 4.25, 'hole_hole_through': 6.45, 'hole_bore': 7.75, 'hole_outside': 2.5, 'floor': 3.0, 'hole_outside_after_chamfer': 1.5, 'min': 1.5}
+P6 edit plan: thicker + chamfer only {'hole_hole_top': 3.3, 'hole_hole_through': 5.05, 'hole_bore': 4.3, 'hole_outside': 2.0, 'floor': 3.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+19:38:20 SolidWorks pid 186024 free GB 22.1
+19:38:20 clock: D3 part two: instance up: 68.6 min since the job began
+19:38:20 clock: D3 P1 edit start: 68.6 min since the job began
+19:38:24 ok P1: open document is the copy: 1.0000 (expected 1.0000)
+19:38:24 BODY: D1@BODY@P1_b.Part 6 -> 7.5
+19:38:24 RING_B_CB: D1@RING_B_CB@P1_b.Part 4.0 -> 5.5
+19:38:25 BODY_SK: 1 segments deleted, 1 circles drawn
+19:38:25 ok P1: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:38:25 ok P1: volume before the chamfer against hand: 23730.6484 (expected 23730.6484)
+19:38:25 ok P1: floor Z as before the change: 3.0000 (expected 3.0000)
+19:38:25 ok P1: volume against hand (chamfer pi c^2 (R - c/3) = 112.05): 23618.5983 (expected 23618.5983)
+19:38:25 ok P1: bodies: 1.0000 (expected 1.0000)
+19:38:25 ok P1: box[0]: -36.0000 (expected -36.0000)
+19:38:25 ok P1: box[1]: -36.0000 (expected -36.0000)
+19:38:25 ok P1: box[2]: 0.0000 (expected 0.0000)
+19:38:25 ok P1: box[3]: 36.0000 (expected 36.0000)
+19:38:25 ok P1: box[4]: 36.0000 (expected 36.0000)
+19:38:25 ok P1: box[5]: 7.5000 (expected 7.5000)
+19:38:25 ok P1: errors: 0.0000 (expected 0.0000)
+19:38:26 ok P1: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:38:26 ok P1: holes found: 10.0000 (expected 10.0000)
+19:38:26 ok P1: counterbores found: 4.0000 (expected 4.0000)
+19:38:26 ok P1: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:38:26 ok P1: counterbore floor faces found at Z 3.0 (measured from the bottom, unchanged): 4.0000 (expected 4.0000)
+19:38:26 P1: measured walls after the change {'hole_hole_top': 3.024, 'hole_hole_through': 4.774, 'hole_bore': 8.3, 'hole_outside': 2.0, 'floor': 3.0, 'hole_outside_after_chamfer': 1.0, 'min': 1.0}
+19:38:26 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P1_b.stl 137784 bytes
+19:38:26 ok P1: STL volume: 23596.0059 (expected 23618.5983)
+19:38:26 ok P1: the original, reopened, still has its old volume: 17728.6671 (expected 17728.6671)
+19:38:26 clock: D3 P1 edit end: 68.7 min since the job began
+19:38:26 clock: D3 P2 edit start: 68.7 min since the job began
+19:38:27 ok P2: open document is the copy: 1.0000 (expected 1.0000)
+19:38:27 BODY: D1@BODY@P2_b.Part 6 -> 7.5
+19:38:27 RING_B_CB: D1@RING_B_CB@P2_b.Part 4.0 -> 5.5
+19:38:27 ok P2: errors after the dimension edits: 0.0000 (expected 0.0000)
+19:38:27 ok P2: volume before the chamfer against hand: 29779.3531 (expected 29779.3531)
+19:38:27 ok P2: floor Z as before the change: 3.0000 (expected 3.0000)
+19:38:27 ok P2: volume against hand (chamfer pi c^2 (R - c/3) = 130.90): 29648.4534 (expected 29648.4534)
+19:38:27 ok P2: bodies: 1.0000 (expected 1.0000)
+19:38:27 ok P2: box[0]: -42.0000 (expected -42.0000)
+19:38:27 ok P2: box[1]: -42.0000 (expected -42.0000)
+19:38:27 ok P2: box[2]: 0.0000 (expected 0.0000)
+19:38:27 ok P2: box[3]: 42.0000 (expected 42.0000)
+19:38:27 ok P2: box[4]: 42.0000 (expected 42.0000)
+19:38:27 ok P2: box[5]: 7.5000 (expected 7.5000)
+19:38:27 ok P2: errors: 0.0000 (expected 0.0000)
+19:38:27 ok P2: feature tree identical (names, types, IDs) apart from the new chamfer: 1.0000 (expected 1.0000)
+19:38:27 ok P2: holes found: 12.0000 (expected 12.0000)
+19:38:27 ok P2: counterbores found: 6.0000 (expected 6.0000)
+19:38:27 ok P2: hole centres, worst position error mm: 0.0000 (expected 0.0000)
+19:38:27 ok P2: counterbore floor faces found at Z 3.0 (measured from the bottom, unchanged): 6.0000 (expected 6.0000)
+19:38:27 P2: measured walls after the change {'hole_hole_top': 9.797, 'hole_hole_through': 11.547, 'hole_bore': 7.0, 'hole_outside': 7.0, 'floor': 3.0, 'hole_outside_after_chamfer': 6.0, 'min': 3.0}
+19:38:28 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d3\P2_b.stl 167084 bytes
+19:38:28 ok P2: STL volume: 29623.0327 (expected 29648.4534)
+19:38:28 ok P2: the original, reopened, still has its old volume: 23947.1827 (expected 23947.1827)
+19:38:28 clock: D3 P2 edit end: 68.7 min since the job began
+19:38:28 clock: D3 P3 edit start: 68.7 min since the job began
+19:38:28 ok P3: open document is the copy: 1.0000 (expected 1.0000)
+19:38:28 BODY: D1@BODY@P3_b.Part 8 -> 9.5
+19:38:28 RING_B_CB: D1@RING_B_CB@P3_b.Part 5.0 -> 6.5
+19:38:29 BODY_SK: 1 segments deleted, 1 circles drawn
+19:38:29 closing pid 186024 committed MB 2009
+Traceback (most recent call last):
+  File "J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\eval\sonnet-adv-d\d3_edit.py", line 110, in <module>
+    redraw_circles(d, 'RING_A_SK', [(h[1], h[2], 1.0) for h in Hn if h[0] == 'A'], q['A'][1] / 2)   # edit 4: ring A on 70
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\solidworks\swkit.py", line 329, in redraw_circles
+    raise Failed(f'no sketch {sketch_name}')
+swkit.Failed: no sketch RING_A_SK

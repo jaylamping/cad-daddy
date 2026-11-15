@@ -1,0 +1,29 @@
+19:11:10 SolidWorks pid 164784 free GB 22.2
+19:11:10 clock: D2 fea job a X contact [2.4]: instance up: 41.4 min since the job began
+19:11:20 ok held face faces: 1.0000 (expected 1.0000)
+19:11:20 ok ring bore faces: 1.0000 (expected 1.0000)
+19:11:20 ok ring OD faces: 1.0000 (expected 1.0000)
+19:11:20 ok seats faces: 2.0000 (expected 2.0000)
+19:11:20 ok upper split faces: 1.0000 (expected 1.0000)
+19:11:20 ok lower split faces: 1.0000 (expected 1.0000)
+19:11:20 PREDICT X contact 2.4: nodes about 55833; ring moves about 0.05 mm (closing the 0.05 radial clearance) then 0.01 mm; screws carry about 75 N each for +Y (tension), the peak in the seat wall near the load, bores and screw holes not the governing place
+19:11:20 D2_X_contact_2.4: body "SolidBody 1(<pad_4>-<PADBODY>)" is Soft pad
+19:11:20 D2_X_contact_2.4: body "SolidBody 2(<pin_2>-<PINTHREAD>)" is Steel
+19:11:20 D2_X_contact_2.4: body "SolidBody 3(<pin_1>-<PINTHREAD>)" is Steel
+19:11:20 D2_X_contact_2.4: body "SolidBody 4(<housing_upper_fe>-<RECESS_U>)" is PETG printed
+19:11:20 D2_X_contact_2.4: body "SolidBody 5(RECESS_L)" is PETG printed
+19:11:20 D2_X_contact_2.4: body "SolidBody 6(<ring_fe>-<RING>)" is Steel
+19:11:20 D2_X_contact_2.4: body "SolidBody 7(<pad_1>-<PADBODY>)" is Soft pad
+19:11:20 D2_X_contact_2.4: body "SolidBody 8(<pad_2>-<PADBODY>)" is Soft pad
+19:11:20 D2_X_contact_2.4: body "SolidBody 9(<pad_3>-<PADBODY>)" is Soft pad
+19:11:20 D2_X_contact_2.4: body "SolidBody 10(<pin_4>-<PINTHREAD>)" is Steel
+19:11:20 D2_X_contact_2.4: body "SolidBody 11(<pin_3>-<PINTHREAD>)" is Steel
+19:11:24 D2_X_contact_2.4: mesh rc 0, 100284 nodes, 63165 elements, free 21.9 GB
+19:11:25 D2_X_contact_2.4: solver macro: before  0  | set err  0   | after  7  | 
+19:12:53 D2_X_contact_2.4: fixture nodes 917, box [-36.0, -32.0, -4.0] to [36.0, -32.0, 11.0]
+19:12:53 D2_X_contact_2.4: load nodes 1128, box [-24.0, -24.0, 0.15] to [24.0, 24.0, 7.15]
+19:13:03 SUMMARY {'study': 'D2_X_contact_2.4', 'el_mm': 2.4, 'nodes': 100284, 'elements': 63165, 'solve_s': 102, 'peak_vm_all': 84.09, 'peak_vm_away': 33.14, 'at': [32.47, 0.06, 7.3], 'sf_yield': 1.36, 'max_disp_mm': 0.1884644329547882, 'reaction_N': [-300.0, 0.0, 0.0, 300.0], 'applied_N': 300.0}
+19:13:03 STUDY DONE X contact 2.4 100284 ok
+19:13:03 clock: D2 fea job a X contact [2.4]: done: 43.3 min since the job began
+19:13:03 closing pid 164784 committed MB 1829
+D2 FEA DONE
