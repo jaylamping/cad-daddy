@@ -3,7 +3,7 @@
     python pc/metrics_table.py [eval]            # a markdown table, one row per run, oldest first
     python pc/metrics_table.py eval --json
 
-Each run owns eval/<run>/metrics.json, so runs made on different machines never touch the same file and git merges
+Each run owns eval/<run>/metrics.json (a pipeline job, eval/jobs/<job>/metrics.json from pc/cadjob.py close), so runs made on different machines never touch the same file and git merges
 them. Keys (any may be null when it was not recorded; nothing is filled in from memory):
 
     run, date, machine, set, model, plan ("none", or who wrote the plan the run built from), base_commit
@@ -23,7 +23,7 @@ from pathlib import Path
 
 def rows(root):
     out = []
-    for f in sorted(Path(root).glob('*/metrics.json')):
+    for f in sorted([*Path(root).glob('*/metrics.json'), *Path(root).glob('jobs/*/metrics.json')]):  # jobs: pc/cadjob.py
         m = json.loads(f.read_text(encoding='utf-8'))
         t = m.get('tasks') or {}
         right, wall, wait, cost = t.get('right'), m.get('wall_minutes'), m.get('waiting_minutes') or 0, m.get('cost_usd')

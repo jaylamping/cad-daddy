@@ -19,7 +19,7 @@ markdown, and the benchmark grades results, not style.
 
 ## Start here
 
-1. Read [playbook/README.md](playbook/README.md) and the seven pages it lists.
+1. Read [playbook/README.md](playbook/README.md) and the pages it lists.
 2. On a Windows machine with SolidWorks and Simulation: `python solidworks/selftest.py`. It must print PASS.
 3. To measure a model: [playbook/EVAL.md](playbook/EVAL.md#running-it-on-another-model).
 
