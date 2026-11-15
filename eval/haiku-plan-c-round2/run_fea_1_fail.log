@@ -1,0 +1,170 @@
+21:59:42 clock: C2 study start: 2.3 min since the job began
+21:59:49 SolidWorks pid 209140 free GB 20.2
+21:59:55 ok the study copy is the exported part: 99920.0265 (expected 99920.0000)
+21:59:56 ok mounting face: 1
+21:59:56 ok pin hole faces: 2
+21:59:56 ok inner face of the +Y cheek: 1
+21:59:56 ok cable tunnel face: 1
+21:59:56 PREDICT PX_40: nodes 60000, max displacement 2.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+21:59:59 PX_40: mesh rc 0, 83226 nodes, 53913 elements, free 19.9 GB
+22:00:11 PX_40: fixture nodes 1340, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.5]
+22:00:11 PX_40: load nodes 1476, box [-4.0, -22.0, -204.0] to [4.0, 22.0, -196.0]
+22:00:18 {'study': 'PX_40', 'el_mm': 4.0, 'nodes': 83226, 'elements': 53913, 'solve_s': 22, 'peak_vm_all': 8.02, 'peak_vm_away': 5.51, 'at': [11.5, 0.04, -82.45], 'sf_yield': 8.17, 'max_disp_mm': 3.395045280456543, 'reaction_N': [-60.001, 0.009, -0.003, 60.001], 'applied_N': 60.0}
+22:00:18 ok PX_40: reaction X N: -60.0010 (expected -60.0000)
+22:00:18 ok PX_40: reaction Y N: 0.0090 (expected 0.0000)
+22:00:18 ok PX_40: reaction Z N: -0.0030 (expected 0.0000)
+22:00:18 COMPARE PX_40: nodes 83226 (predicted 60000), max displacement 3.395045280456543 (predicted 2.5)
+22:00:19 ok PX_40: plain bending stress at the waist against the hand value: 4.4265 (expected 4.7213)
+22:00:19 clock: C2 study +X at 4.0 mm solved: 2.9 min since the job began
+22:00:19 ok mounting face: 1
+22:00:19 ok pin hole faces: 2
+22:00:19 ok inner face of the +Y cheek: 1
+22:00:19 ok cable tunnel face: 1
+22:00:19 PREDICT MX_40: nodes 60000, max displacement 2.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:00:22 MX_40: mesh rc 0, 83226 nodes, 53913 elements, free 20.0 GB
+22:00:35 MX_40: fixture nodes 1340, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.5]
+22:00:35 MX_40: load nodes 1476, box [-4.0, -22.0, -204.0] to [4.0, 22.0, -196.0]
+22:00:41 {'study': 'MX_40', 'el_mm': 4.0, 'nodes': 83226, 'elements': 53913, 'solve_s': 22, 'peak_vm_all': 8.02, 'peak_vm_away': 5.51, 'at': [11.5, 0.04, -82.45], 'sf_yield': 8.17, 'max_disp_mm': 3.3950531482696533, 'reaction_N': [60.001, -0.009, 0.003, 60.001], 'applied_N': 60.0}
+22:00:41 ok MX_40: reaction X N: 60.0010 (expected 60.0000)
+22:00:41 ok MX_40: reaction Y N: -0.0090 (expected 0.0000)
+22:00:41 ok MX_40: reaction Z N: 0.0030 (expected 0.0000)
+22:00:41 COMPARE MX_40: nodes 83226 (predicted 60000), max displacement 3.3950531482696533 (predicted 2.5)
+22:00:42 ok MX_40: plain bending stress at the waist against the hand value: 4.4967 (expected 4.7213)
+22:00:42 clock: C2 study -X at 4.0 mm solved: 3.3 min since the job began
+22:00:42 ok mounting face: 1
+22:00:42 ok pin hole faces: 2
+22:00:42 ok inner face of the +Y cheek: 1
+22:00:42 ok cable tunnel face: 1
+22:00:42 PREDICT PY_40: nodes 60000, max displacement 4.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:00:45 PY_40: mesh rc 0, 83226 nodes, 53913 elements, free 20.0 GB
+22:00:58 PY_40: fixture nodes 1340, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.5]
+22:00:58 PY_40: load nodes 489, box [-12.99, 16.0, -213.0] to [12.99, 16.0, -183.0]
+22:01:04 {'study': 'PY_40', 'el_mm': 4.0, 'nodes': 83226, 'elements': 53913, 'solve_s': 22, 'peak_vm_all': 37.52, 'peak_vm_away': 14.74, 'at': [9.44, 4.59, -23.54], 'sf_yield': 3.05, 'max_disp_mm': 6.9218034744262695, 'reaction_N': [0.0, -60.015, 0.002, 60.015], 'applied_N': 60.0}
+22:01:04 ok PY_40: reaction X N: 0.0000 (expected 0.0000)
+22:01:04 ok PY_40: reaction Y N: -60.0150 (expected -60.0000)
+22:01:04 ok PY_40: reaction Z N: 0.0020 (expected 0.0000)
+22:01:04 COMPARE PY_40: nodes 83226 (predicted 60000), max displacement 6.9218034744262695 (predicted 4.5)
+22:01:05 ok PY_40: plain bending stress at the waist against the hand value: 4.0842 (expected 4.2418)
+22:01:05 clock: C2 study +Y at 4.0 mm solved: 3.7 min since the job began
+22:01:05 closing pid 209140 committed MB 1857
+22:01:18 SolidWorks pid 205220 free GB 20.2
+22:01:24 ok the study copy is the exported part: 99920.0265 (expected 99920.0000)
+22:01:24 ok mounting face: 1
+22:01:24 ok pin hole faces: 2
+22:01:24 ok inner face of the +Y cheek: 1
+22:01:24 ok cable tunnel face: 1
+22:01:24 PREDICT PX_30: nodes 80000, max displacement 2.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:01:28 PX_30: mesh rc 0, 118596 nodes, 78913 elements, free 19.9 GB
+22:01:51 PX_30: fixture nodes 1638, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.49]
+22:01:51 PX_30: load nodes 1476, box [-4.0, -22.0, -204.0] to [4.0, 22.0, -196.0]
+22:02:04 {'study': 'PX_30', 'el_mm': 3.0, 'nodes': 118596, 'elements': 78913, 'solve_s': 40, 'peak_vm_all': 7.56, 'peak_vm_away': 5.76, 'at': [-16.89, -2.13, -33.24], 'sf_yield': 7.82, 'max_disp_mm': 3.397113084793091, 'reaction_N': [-60.002, 0.002, -0.0, 60.002], 'applied_N': 60.0}
+22:02:04 ok PX_30: reaction X N: -60.0020 (expected -60.0000)
+22:02:04 ok PX_30: reaction Y N: 0.0020 (expected 0.0000)
+22:02:04 ok PX_30: reaction Z N: -0.0000 (expected 0.0000)
+22:02:04 COMPARE PX_30: nodes 118596 (predicted 80000), max displacement 3.397113084793091 (predicted 2.5)
+22:02:05 ok PX_30: plain bending stress at the waist against the hand value: 4.5125 (expected 4.7213)
+22:02:05 clock: C2 study +X at 3.0 mm solved: 4.7 min since the job began
+22:02:05 ok mounting face: 1
+22:02:05 ok pin hole faces: 2
+22:02:05 ok inner face of the +Y cheek: 1
+22:02:05 ok cable tunnel face: 1
+22:02:05 PREDICT MX_30: nodes 80000, max displacement 2.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:02:09 MX_30: mesh rc 0, 118596 nodes, 78913 elements, free 20.1 GB
+22:02:32 MX_30: fixture nodes 1638, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.49]
+22:02:32 MX_30: load nodes 1476, box [-4.0, -22.0, -204.0] to [4.0, 22.0, -196.0]
+22:02:45 {'study': 'MX_30', 'el_mm': 3.0, 'nodes': 118596, 'elements': 78913, 'solve_s': 40, 'peak_vm_all': 7.56, 'peak_vm_away': 5.76, 'at': [-16.89, -2.13, -33.24], 'sf_yield': 7.82, 'max_disp_mm': 3.397123098373413, 'reaction_N': [60.002, -0.002, 0.0, 60.002], 'applied_N': 60.0}
+22:02:45 ok MX_30: reaction X N: 60.0020 (expected 60.0000)
+22:02:45 ok MX_30: reaction Y N: -0.0020 (expected 0.0000)
+22:02:45 ok MX_30: reaction Z N: 0.0000 (expected 0.0000)
+22:02:45 COMPARE MX_30: nodes 118596 (predicted 80000), max displacement 3.397123098373413 (predicted 2.5)
+22:02:46 ok MX_30: plain bending stress at the waist against the hand value: 4.5089 (expected 4.7213)
+22:02:46 clock: C2 study -X at 3.0 mm solved: 5.4 min since the job began
+22:02:47 ok mounting face: 1
+22:02:47 ok pin hole faces: 2
+22:02:47 ok inner face of the +Y cheek: 1
+22:02:47 ok cable tunnel face: 1
+22:02:47 PREDICT PY_30: nodes 80000, max displacement 4.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:02:50 PY_30: mesh rc 0, 118596 nodes, 78913 elements, free 20.2 GB
+22:03:13 PY_30: fixture nodes 1638, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.49]
+22:03:13 PY_30: load nodes 621, box [-13.0, 16.0, -213.0] to [13.0, 16.0, -183.0]
+22:03:26 {'study': 'PY_30', 'el_mm': 3.0, 'nodes': 118596, 'elements': 78913, 'solve_s': 40, 'peak_vm_all': 38.12, 'peak_vm_away': 14.98, 'at': [-9.44, 4.59, -23.54], 'sf_yield': 3.0, 'max_disp_mm': 6.950560092926025, 'reaction_N': [-0.001, -59.995, -0.003, 59.995], 'applied_N': 60.0}
+22:03:26 ok PY_30: reaction X N: -0.0010 (expected 0.0000)
+22:03:26 ok PY_30: reaction Y N: -59.9950 (expected -60.0000)
+22:03:26 ok PY_30: reaction Z N: -0.0030 (expected 0.0000)
+22:03:26 COMPARE PY_30: nodes 118596 (predicted 80000), max displacement 6.950560092926025 (predicted 4.5)
+22:03:27 ok PY_30: plain bending stress at the waist against the hand value: 3.9987 (expected 4.2418)
+22:03:27 clock: C2 study +Y at 3.0 mm solved: 6.1 min since the job began
+22:03:27 closing pid 205220 committed MB 1862
+22:03:33 SolidWorks pid 154492 free GB 20.4
+22:03:39 ok the study copy is the exported part: 99920.0265 (expected 99920.0000)
+22:03:39 ok mounting face: 1
+22:03:39 ok pin hole faces: 2
+22:03:39 ok inner face of the +Y cheek: 1
+22:03:39 ok cable tunnel face: 1
+22:03:39 PREDICT PX_23: nodes 125000, max displacement 2.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:03:44 PX_23: mesh rc 0, 177406 nodes, 120130 elements, free 19.8 GB
+22:04:32 PX_23: fixture nodes 2402, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.5]
+22:04:32 PX_23: load nodes 1476, box [-4.0, -22.0, -204.0] to [4.0, 22.0, -196.0]
+22:04:59 {'study': 'PX_23', 'el_mm': 2.3, 'nodes': 177406, 'elements': 120130, 'solve_s': 80, 'peak_vm_all': 8.11, 'peak_vm_away': 6.56, 'at': [16.07, -2.36, -32.08], 'sf_yield': 6.86, 'max_disp_mm': 3.398961305618286, 'reaction_N': [-59.999, -0.004, -0.002, 59.999], 'applied_N': 60.0}
+22:04:59 ok PX_23: reaction X N: -59.9990 (expected -60.0000)
+22:04:59 ok PX_23: reaction Y N: -0.0040 (expected 0.0000)
+22:04:59 ok PX_23: reaction Z N: -0.0020 (expected 0.0000)
+22:04:59 COMPARE PX_23: nodes 177406 (predicted 125000), max displacement 3.398961305618286 (predicted 2.5)
+22:05:01 ok PX_23: plain bending stress at the waist against the hand value: 4.4318 (expected 4.7213)
+22:05:01 clock: C2 study +X at 2.3 mm solved: 7.6 min since the job began
+22:05:01 ok mounting face: 1
+22:05:01 ok pin hole faces: 2
+22:05:01 ok inner face of the +Y cheek: 1
+22:05:01 ok cable tunnel face: 1
+22:05:01 PREDICT MX_23: nodes 125000, max displacement 2.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:05:06 MX_23: mesh rc 0, 177406 nodes, 120130 elements, free 19.5 GB
+22:05:54 MX_23: fixture nodes 2402, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.5]
+22:05:54 MX_23: load nodes 1476, box [-4.0, -22.0, -204.0] to [4.0, 22.0, -196.0]
+22:06:21 {'study': 'MX_23', 'el_mm': 2.3, 'nodes': 177406, 'elements': 120130, 'solve_s': 80, 'peak_vm_all': 8.11, 'peak_vm_away': 6.56, 'at': [16.07, -2.36, -32.08], 'sf_yield': 6.86, 'max_disp_mm': 3.398969888687134, 'reaction_N': [59.999, 0.004, 0.002, 59.999], 'applied_N': 60.0}
+22:06:21 ok MX_23: reaction X N: 59.9990 (expected 60.0000)
+22:06:21 ok MX_23: reaction Y N: 0.0040 (expected 0.0000)
+22:06:21 ok MX_23: reaction Z N: 0.0020 (expected 0.0000)
+22:06:21 COMPARE MX_23: nodes 177406 (predicted 125000), max displacement 3.398969888687134 (predicted 2.5)
+22:06:22 ok MX_23: plain bending stress at the waist against the hand value: 4.4123 (expected 4.7213)
+22:06:22 clock: C2 study -X at 2.3 mm solved: 9.0 min since the job began
+22:06:23 ok mounting face: 1
+22:06:23 ok pin hole faces: 2
+22:06:23 ok inner face of the +Y cheek: 1
+22:06:23 ok cable tunnel face: 1
+22:06:23 PREDICT PY_23: nodes 125000, max displacement 4.5 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:06:28 PY_23: mesh rc 0, 177457 nodes, 120165 elements, free 19.6 GB
+22:07:15 PY_23: fixture nodes 2402, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.5]
+22:07:15 PY_23: load nodes 752, box [-12.99, 16.0, -213.0] to [12.99, 16.0, -183.0]
+22:07:43 {'study': 'PY_23', 'el_mm': 2.3, 'nodes': 177457, 'elements': 120165, 'solve_s': 80, 'peak_vm_all': 37.6, 'peak_vm_away': 15.09, 'at': [9.45, 4.61, -23.56], 'sf_yield': 2.98, 'max_disp_mm': 6.959994316101074, 'reaction_N': [-0.004, -60.015, 0.001, 60.015], 'applied_N': 60.0}
+22:07:43 ok PY_23: reaction X N: -0.0040 (expected 0.0000)
+22:07:43 ok PY_23: reaction Y N: -60.0150 (expected -60.0000)
+22:07:43 ok PY_23: reaction Z N: 0.0010 (expected 0.0000)
+22:07:43 COMPARE PY_23: nodes 177457 (predicted 125000), max displacement 6.959994316101074 (predicted 4.5)
+22:07:44 ok PY_23: plain bending stress at the waist against the hand value: 3.9285 (expected 4.2418)
+22:07:44 clock: C2 study +Y at 2.3 mm solved: 10.3 min since the job began
+22:07:44 closing pid 154492 committed MB 1872
+22:07:50 SolidWorks pid 209880 free GB 20.0
+22:07:56 ok the study copy is the exported part: 99920.0265 (expected 99920.0000)
+22:07:57 ok mounting face: 1
+22:07:57 ok pin hole faces: 2
+22:07:57 ok inner face of the +Y cheek: 1
+22:07:57 ok cable tunnel face: 1
+22:07:57 PREDICT PY_rigid_30: nodes 80000, max displacement 4.0 mm, peak expected at the neck, Z -25 to -45, where the stem leaves the hub
+22:08:00 PY_rigid_30: mesh rc 0, 118596 nodes, 78913 elements, free 19.7 GB
+22:08:25 PY_rigid_30: fixture nodes 1638, box [-31.5, -4.0, -31.5] to [31.5, -4.0, 31.49]
+22:08:25 PY_rigid_30: load nodes 1476, box [-4.0, -22.0, -204.0] to [4.0, 22.0, -196.0]
+22:08:37 {'study': 'PY_rigid_30', 'el_mm': 3.0, 'nodes': 118596, 'elements': 78913, 'solve_s': 40, 'peak_vm_all': 38.8, 'peak_vm_away': 15.25, 'at': [-9.44, 4.59, -23.54], 'sf_yield': 2.95, 'max_disp_mm': 5.684944152832031, 'reaction_N': [-0.0, -60.0, 0.0, 60.0], 'applied_N': 60.0}
+22:08:37 ok PY_rigid_30: reaction X N: -0.0000 (expected 0.0000)
+22:08:37 ok PY_rigid_30: reaction Y N: -60.0000 (expected -60.0000)
+22:08:37 ok PY_rigid_30: reaction Z N: 0.0000 (expected 0.0000)
+22:08:37 COMPARE PY_rigid_30: nodes 118596 (predicted 80000), max displacement 5.684944152832031 (predicted 4.0)
+22:08:38 clock: C2 study +Y rigid at 3.0 mm solved: 11.2 min since the job began
+22:08:38 closing pid 209880 committed MB 1749
+22:08:41 judge: fail; lowest factor 1.38 at "+Y, layer"
+22:08:41 judge:   not shown: "+X, layer" factor 2.84, last step 14.6 % after 2.8 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+22:08:41 judge:   not shown: "-X, layer" factor 3.59, last step 18.5 % after 18.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+22:08:41 judge:   fail: "+Y, layer" factor 1.38, last step 0.3 %, factor after two more 1.37
+22:08:41 judge:   fail: "+Y, shear" factor 1.76, last step 1.9 %, factor after two more 1.7
+22:08:41 clock: C2 study end: 11.3 min since the job began
+results.json C2 ['exclusion_mm', 'fea_rows', 'governing', 'judge', 'load_y_second_way_ratio', 'lowest_factor_by_print_direction', 'mesh_sizes_mm', 'mirror_check_vm_diff', 'not_converged', 'requirement_met', 'sf_layer', 'sf_lowest', 'sf_shear', 'sf_yield', 'study_minutes_since_c2_start', 'verdict']
+VERDICT fail lowest 1.38 +Y, layer sf {'vm': 2.77839862981728, 'layer': 1.3512356239039227, 'shear': 1.7287312203273262}

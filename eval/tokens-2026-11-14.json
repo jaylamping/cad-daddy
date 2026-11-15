@@ -1,0 +1,592 @@
+{
+  "generated_by": "pc/session_tokens.py",
+  "note": "tokens as recorded by Claude Code on holly-pc; no prices applied here. cost_state_as_recorded is Claude Code's own figure.",
+  "runs": {
+    "haiku-a": {
+      "session_id": "5c23dcdd-b012-4ec6-b722-86e0060bdda5",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\5c23dcdd-b012-4ec6-b722-86e0060bdda5.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-14T09:03:39.642Z",
+      "last_timestamp": "2026-11-14T09:23:06.927Z",
+      "wall_minutes": 19.5,
+      "active_minutes": 19.5,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T09:03:38Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-a.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-a (cd there first; it is already",
+      "api_requests_logged": 77,
+      "api_responses": 69,
+      "models": {
+        "claude-haiku-5-5": {
+          "role": "session",
+          "calls": 69,
+          "input_tokens": 150,
+          "cache_creation_input_tokens": 293343,
+          "cache_read_input_tokens": 14868757,
+          "output_tokens": 107815,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 293343,
+          "iterations": 69,
+          "thinking_tokens": 60896
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-opus-5-5"
+        ],
+        "server_tool_use_blocks": 0,
+        "calls_with_usage": 0,
+        "calls": []
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": {
+        "totalCostUSD": 1.33892772,
+        "totalAPIDuration": 778648,
+        "totalAPIDurationWithoutRetries": 700370,
+        "totalToolDuration": 5712,
+        "totalLinesAdded": 1019,
+        "totalLinesRemoved": 1,
+        "totalDuration": 4796417,
+        "startTime": 1794647018522,
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 5227,
+            "outputTokens": 116140,
+            "thinkingTokens": 61183,
+            "cacheReadInputTokens": 16755969,
+            "cacheCreationInputTokens": 295268,
+            "cacheCreationEphemeral5mInputTokens": 778,
+            "cacheCreationEphemeral1hInputTokens": 294490,
+            "webSearchRequests": 0,
+            "costUSD": 1.33892772
+          }
+        },
+        "hasUnknownModelCost": false
+      },
+      "run": "haiku-a"
+    },
+    "haiku-d": {
+      "session_id": "6aea5879-af7a-45a4-8000-62a29127b35a",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\6aea5879-af7a-45a4-8000-62a29127b35a.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-14T09:23:19.128Z",
+      "last_timestamp": "2026-11-14T19:57:08.917Z",
+      "wall_minutes": 633.8,
+      "active_minutes": 22.1,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T09:23:17Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-d.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-d (cd there first; it is already",
+      "api_requests_logged": 61,
+      "api_responses": 61,
+      "models": {
+        "claude-haiku-5-5": {
+          "role": "session",
+          "calls": 61,
+          "input_tokens": 124,
+          "cache_creation_input_tokens": 686280,
+          "cache_read_input_tokens": 14551686,
+          "output_tokens": 179222,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 686280,
+          "iterations": 61,
+          "thinking_tokens": 119174
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-opus-5-5"
+        ],
+        "server_tool_use_blocks": 0,
+        "calls_with_usage": 0,
+        "calls": []
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": {
+        "totalCostUSD": 1.9399118850000001,
+        "totalAPIDuration": 1010360,
+        "totalAPIDurationWithoutRetries": 1010315,
+        "totalToolDuration": 366291,
+        "totalLinesAdded": 779,
+        "totalLinesRemoved": 11,
+        "totalDuration": 8602248,
+        "startTime": 1794648198134,
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 5681,
+            "outputTokens": 192634,
+            "thinkingTokens": 119174,
+            "cacheReadInputTokens": 16373203,
+            "cacheCreationInputTokens": 687549,
+            "cacheCreationEphemeral5mInputTokens": 523,
+            "cacheCreationEphemeral1hInputTokens": 687026,
+            "webSearchRequests": 0,
+            "costUSD": 1.9399118850000001
+          }
+        },
+        "hasUnknownModelCost": false
+      },
+      "run": "haiku-d"
+    },
+    "haiku-plan-a": {
+      "session_id": "926a1d9e-73eb-4d63-b278-65f649658db4",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\926a1d9e-73eb-4d63-b278-65f649658db4.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-14T19:57:25.724Z",
+      "last_timestamp": "2026-11-14T20:19:29.956Z",
+      "wall_minutes": 22.1,
+      "active_minutes": 16.2,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T19:57:23Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a (cd there first; it ",
+      "api_requests_logged": 77,
+      "api_responses": 77,
+      "models": {
+        "claude-haiku-5-5": {
+          "role": "session",
+          "calls": 77,
+          "input_tokens": 164,
+          "cache_creation_input_tokens": 296526,
+          "cache_read_input_tokens": 16490749,
+          "output_tokens": 67971,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 296526,
+          "iterations": 77,
+          "thinking_tokens": 27322
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-opus-5-5"
+        ],
+        "server_tool_use_blocks": 0,
+        "calls_with_usage": 0,
+        "calls": []
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": {
+        "totalCostUSD": 1.2870249500000002,
+        "totalAPIDuration": 516013,
+        "totalAPIDurationWithoutRetries": 515959,
+        "totalToolDuration": 12545,
+        "totalLinesAdded": 625,
+        "totalLinesRemoved": 5,
+        "totalDuration": 4952829,
+        "startTime": 1794686244668,
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 4229,
+            "outputTokens": 76338,
+            "thinkingTokens": 27654,
+            "cacheReadInputTokens": 17848334,
+            "cacheCreationInputTokens": 298473,
+            "cacheCreationEphemeral5mInputTokens": 918,
+            "cacheCreationEphemeral1hInputTokens": 297555,
+            "webSearchRequests": 0,
+            "costUSD": 1.2870249500000002
+          }
+        },
+        "hasUnknownModelCost": false
+      },
+      "run": "haiku-plan-a"
+    },
+    "haiku-plan-a-followup": {
+      "session_id": "a4461fb5-b700-45d9-8542-f08b1d0f532f",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\a4461fb5-b700-45d9-8542-f08b1d0f532f.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-14T21:20:58.414Z",
+      "last_timestamp": "2026-11-14T21:36:51.708Z",
+      "wall_minutes": 15.9,
+      "active_minutes": 5.6,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T21:20:56Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a.followup.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a (cd there f",
+      "api_requests_logged": 39,
+      "api_responses": 39,
+      "models": {
+        "claude-haiku-5-5": {
+          "role": "session",
+          "calls": 39,
+          "input_tokens": 82,
+          "cache_creation_input_tokens": 126585,
+          "cache_read_input_tokens": 5230919,
+          "output_tokens": 33554,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 126585,
+          "iterations": 39,
+          "thinking_tokens": 14053
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-opus-5-5"
+        ],
+        "server_tool_use_blocks": 0,
+        "calls_with_usage": 0,
+        "calls": []
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": {
+        "totalCostUSD": 0.4461914299999999,
+        "totalAPIDuration": 234511,
+        "totalAPIDurationWithoutRetries": 234478,
+        "totalToolDuration": 18107,
+        "totalLinesAdded": 363,
+        "totalLinesRemoved": 11,
+        "totalDuration": 4572175,
+        "startTime": 1794691257331,
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 1600,
+            "outputTokens": 33717,
+            "thinkingTokens": 14160,
+            "cacheReadInputTokens": 5701469,
+            "cacheCreationInputTokens": 127121,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 127121,
+            "webSearchRequests": 0,
+            "costUSD": 0.4461914299999999
+          }
+        },
+        "hasUnknownModelCost": false
+      },
+      "run": "haiku-plan-a-followup"
+    },
+    "haiku-plan-d": {
+      "session_id": "546f070a-c4a1-4574-aef8-e54106fd2018",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\546f070a-c4a1-4574-aef8-e54106fd2018.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-14T20:19:42.277Z",
+      "last_timestamp": "2026-11-14T20:40:22.382Z",
+      "wall_minutes": 20.7,
+      "active_minutes": 20.7,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T20:19:39Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d (cd there first; it ",
+      "api_requests_logged": 187,
+      "api_responses": 187,
+      "models": {
+        "claude-haiku-5-5": {
+          "role": "session",
+          "calls": 187,
+          "input_tokens": 420,
+          "cache_creation_input_tokens": 357955,
+          "cache_read_input_tokens": 55272650,
+          "output_tokens": 131109,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 357955,
+          "iterations": 187,
+          "thinking_tokens": 47731
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-opus-5-5"
+        ],
+        "server_tool_use_blocks": 0,
+        "calls_with_usage": 0,
+        "calls": []
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": {
+        "totalCostUSD": 3.523317265000001,
+        "totalAPIDuration": 847355,
+        "totalAPIDurationWithoutRetries": 847176,
+        "totalToolDuration": 304577,
+        "totalLinesAdded": 1015,
+        "totalLinesRemoved": 3,
+        "totalDuration": 4878737,
+        "startTime": 1794687581267,
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 4991,
+            "outputTokens": 137917,
+            "thinkingTokens": 47731,
+            "cacheReadInputTokens": 57465389,
+            "cacheCreationInputTokens": 359662,
+            "cacheCreationEphemeral5mInputTokens": 871,
+            "cacheCreationEphemeral1hInputTokens": 358791,
+            "webSearchRequests": 0,
+            "costUSD": 3.523317265000001
+          }
+        },
+        "hasUnknownModelCost": false
+      },
+      "run": "haiku-plan-d"
+    },
+    "haiku-plan-d-followup": {
+      "session_id": "32d856c2-bde8-47bf-bb47-74e3c216e68a",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\32d856c2-bde8-47bf-bb47-74e3c216e68a.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-14T21:37:03.170Z",
+      "last_timestamp": "2026-11-14T22:02:27.759Z",
+      "wall_minutes": 25.4,
+      "active_minutes": 6.2,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T21:37:00Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d.followup.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d (cd there f",
+      "api_requests_logged": 44,
+      "api_responses": 44,
+      "models": {
+        "claude-haiku-5-5": {
+          "role": "session",
+          "calls": 44,
+          "input_tokens": 94,
+          "cache_creation_input_tokens": 149163,
+          "cache_read_input_tokens": 6294933,
+          "output_tokens": 42109,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 149163,
+          "iterations": 44,
+          "thinking_tokens": 17531
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-opus-5-5"
+        ],
+        "server_tool_use_blocks": 0,
+        "calls_with_usage": 0,
+        "calls": []
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": {
+        "totalCostUSD": 0.5303899,
+        "totalAPIDuration": 270885,
+        "totalAPIDurationWithoutRetries": 270847,
+        "totalToolDuration": 24412,
+        "totalLinesAdded": 76,
+        "totalLinesRemoved": 0,
+        "totalDuration": 5170528,
+        "startTime": 1794692222092,
+        "modelUsage": {
+          "claude-haiku-5-5": {
+            "inputTokens": 1612,
+            "outputTokens": 42236,
+            "thinkingTokens": 17640,
+            "cacheReadInputTokens": 6813922,
+            "cacheCreationInputTokens": 149839,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 149839,
+            "webSearchRequests": 0,
+            "costUSD": 0.5303899
+          }
+        },
+        "hasUnknownModelCost": false
+      },
+      "run": "haiku-plan-d-followup"
+    },
+    "sonnet-adv-a": {
+      "session_id": "731787e0-52d5-43c2-a035-bb5e5319a642",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\731787e0-52d5-43c2-a035-bb5e5319a642.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-14T23:28:52.191Z",
+      "last_timestamp": "2026-11-15T00:28:48.488Z",
+      "wall_minutes": 59.9,
+      "active_minutes": 52.5,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T23:28:48Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> First, before any other work: send one short message saying your model id and whether you have a tool named advisor available (yes or no, nothing more). Then do the job below withou",
+      "api_requests_logged": 252,
+      "api_responses": 252,
+      "models": {
+        "claude-sonnet-5-5": {
+          "role": "session",
+          "calls": 252,
+          "input_tokens": 512,
+          "cache_creation_input_tokens": 527599,
+          "cache_read_input_tokens": 89404665,
+          "output_tokens": 245240,
+          "cache_creation_5m": 9656,
+          "cache_creation_1h": 517943,
+          "iterations": 254,
+          "thinking_tokens": 107280
+        },
+        "claude-fable-5-2 [advisor_message]": {
+          "role": "advisor",
+          "calls": 2,
+          "input_tokens": 650872,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 38966,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 0
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-fable-5-2"
+        ],
+        "server_tool_use_blocks": 2,
+        "calls_with_usage": 2,
+        "calls": [
+          {
+            "timestamp": "2026-11-14T23:30:33.537Z",
+            "type": "advisor_message",
+            "model": "claude-fable-5-2",
+            "input_tokens": 170732,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "output_tokens": 15208,
+            "session_context_tokens_before_call": 165965
+          },
+          {
+            "timestamp": "2026-11-15T00:05:05.756Z",
+            "type": "advisor_message",
+            "model": "claude-fable-5-2",
+            "input_tokens": 480140,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "output_tokens": 23758,
+            "session_context_tokens_before_call": 473584
+          }
+        ]
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": {
+        "totalCostUSD": 20.42763779999998,
+        "totalAPIDuration": 2446820,
+        "totalAPIDurationWithoutRetries": 2446617,
+        "totalToolDuration": 1175223,
+        "totalLinesAdded": 1264,
+        "totalLinesRemoved": 40,
+        "totalDuration": 7233731,
+        "startTime": 1794698931218,
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 3190,
+            "outputTokens": 250633,
+            "thinkingTokens": 107280,
+            "cacheReadInputTokens": 90526198,
+            "cacheCreationInputTokens": 527794,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 518138,
+            "webSearchRequests": 0,
+            "costUSD": 13.662021799999998
+          },
+          "claude-fable-5-2": {
+            "inputTokens": 650872,
+            "outputTokens": 38966,
+            "thinkingTokens": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0,
+            "cacheCreationEphemeral5mInputTokens": 0,
+            "cacheCreationEphemeral1hInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 6.765616
+          }
+        },
+        "hasUnknownModelCost": false
+      },
+      "run": "sonnet-adv-a"
+    },
+    "sonnet-adv-d": {
+      "session_id": "ab033474-eda2-4308-92a9-338040f651a6",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\ab033474-eda2-4308-92a9-338040f651a6.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-15T00:28:51.272Z",
+      "last_timestamp": "2026-11-15T01:45:02.723Z",
+      "wall_minutes": 76.2,
+      "active_minutes": 76.2,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-15T00:28:48Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> First, before any other work: send one short message saying your model id and whether you have a tool named advisor available (yes or no, nothing more). Then do the job below withou",
+      "api_requests_logged": 149,
+      "api_responses": 149,
+      "models": {
+        "claude-sonnet-5-5": {
+          "role": "session",
+          "calls": 149,
+          "input_tokens": 312,
+          "cache_creation_input_tokens": 507109,
+          "cache_read_input_tokens": 51140440,
+          "output_tokens": 280028,
+          "cache_creation_5m": 11437,
+          "cache_creation_1h": 495672,
+          "iterations": 152,
+          "thinking_tokens": 162333
+        },
+        "claude-fable-5-2 [advisor_message]": {
+          "role": "advisor",
+          "calls": 3,
+          "input_tokens": 1111179,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 50330,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 0
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-fable-5-2"
+        ],
+        "server_tool_use_blocks": 3,
+        "calls_with_usage": 3,
+        "calls": [
+          {
+            "timestamp": "2026-11-15T00:30:56.315Z",
+            "type": "advisor_message",
+            "model": "claude-fable-5-2",
+            "input_tokens": 170441,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "output_tokens": 22414,
+            "session_context_tokens_before_call": 165707
+          },
+          {
+            "timestamp": "2026-11-15T01:15:25.990Z",
+            "type": "advisor_message",
+            "model": "claude-fable-5-2",
+            "input_tokens": 424017,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "output_tokens": 16073,
+            "session_context_tokens_before_call": 417815
+          },
+          {
+            "timestamp": "2026-11-15T01:39:51.168Z",
+            "type": "advisor_message",
+            "model": "claude-fable-5-2",
+            "input_tokens": 516721,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "output_tokens": 11843,
+            "session_context_tokens_before_call": 509954
+          }
+        ]
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": null,
+      "run": "sonnet-adv-d"
+    },
+    "haiku-plan-c": {
+      "session_id": "ad7af01b-d7d1-4868-aeb4-ea05bf70454d",
+      "file": "C:\\Users\\holly/.claude/projects/C--joe\\ad7af01b-d7d1-4868-aeb4-ea05bf70454d.jsonl",
+      "subagent_files": 0,
+      "first_timestamp": "2026-11-15T02:02:09.629Z",
+      "last_timestamp": "2026-11-15T02:56:24.045Z",
+      "wall_minutes": 54.2,
+      "active_minutes": 16.3,
+      "active_minutes_note": "gaps over 300 s between records left out",
+      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-15T02:02:05Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> First, before any other work: send one short message saying your model id and whether you have a tool named advisor available (yes or no, nothing more). If you do have one, do not u",
+      "api_requests_logged": 75,
+      "api_responses": 75,
+      "models": {
+        "claude-haiku-5-5": {
+          "role": "session",
+          "calls": 75,
+          "input_tokens": 168,
+          "cache_creation_input_tokens": 303058,
+          "cache_read_input_tokens": 17076223,
+          "output_tokens": 45745,
+          "cache_creation_5m": 0,
+          "cache_creation_1h": 303058,
+          "iterations": 75,
+          "thinking_tokens": 14976
+        }
+      },
+      "advisor": {
+        "advisorModel_setting": [
+          "claude-opus-5-5"
+        ],
+        "server_tool_use_blocks": 0,
+        "calls_with_usage": 0,
+        "calls": []
+      },
+      "top_level_usage_differs_from_iterations": 0,
+      "cost_state_as_recorded": null,
+      "run": "haiku-plan-c"
+    }
+  }
+}

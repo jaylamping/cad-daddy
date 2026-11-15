@@ -1,0 +1,127 @@
+22:39:30 clock: C2 detail start (STEM_A4): 15.7 min since the job began
+22:39:30 launch is waiting for memory: 0.1 GB free, floor 8.0 GB
+22:39:50 launch is waiting for memory: 0.1 GB free, floor 8.0 GB
+22:40:10 launch is waiting for memory: 0.1 GB free, floor 8.0 GB
+22:40:30 launch is waiting for memory: 1.2 GB free, floor 8.0 GB
+22:40:50 launch is waiting for memory: 0.1 GB free, floor 8.0 GB
+22:41:11 launch is waiting for memory: 5.6 GB free, floor 8.0 GB
+22:41:31 launch is waiting for memory: 4.5 GB free, floor 8.0 GB
+22:41:51 launch is waiting for memory: 6.8 GB free, floor 8.0 GB
+22:42:11 launch is waiting for memory: 0.7 GB free, floor 8.0 GB
+22:42:43 SolidWorks pid 198092 free GB 5.6
+22:42:58 STEM: added 111556.39 mm3 (merge True, sections picked at: bottom)
+22:42:58 STEM: mode arcs4, added 111556 mm3, bodies 0 -> 1
+22:42:58 ok bodies after the stem: 1
+22:43:00 HUB: added 21781.79 mm3
+22:43:01 ok hub reaches X +36: 36.0000 (expected 36.0000)
+22:43:01 ok hub reaches Z +36: 36.0000 (expected 36.0000)
+22:43:01 ok bodies after the hub: 1
+22:43:01 ok stem volume against the planner number: 111556.4000 (expected 111640.0000)
+22:43:02 KNUCKLE: added 11747.12 mm3
+22:43:02 ok knuckle reaches Z -213: -213.0000 (expected -213.0000)
+22:43:02 ok bodies after the knuckle: 1
+22:43:03 SLOT: cut 31448.62 mm3
+22:43:04 ok form volume against the planner number: 113636.7000 (expected 113840.0000)
+22:43:04 seam edges on the hub face Y +4: 2
+22:43:05 RAMP_BLEND: R2.0 on 2 edges, volume change +5.01 mm3
+22:43:06 PIN: cut 522.97 mm3
+22:43:06 ok pin holes removed: 523.0000 (expected 524.0000)
+22:43:07 CABLE: cut 4894.63 mm3
+22:43:07 ok cable tunnel removed: 4894.6000 (expected 4900.0000)
+22:43:08 HOLES: cut 438.84 mm3
+22:43:08 ok screw holes removed: 438.8000 (expected 437.0000)
+22:43:10 HEADS: cut 31.98 mm3
+22:43:10 ok screw-head scallops are shallow (mm3): 31.9800 (expected 30.0000)
+22:43:10 MOUNT_CLEAN: nothing below the mounting plane (good) (MOUNT_CLEAN: no cut changed the volume the right way (open sketch? sketch off the body? wrong side?))
+22:43:11 ok rebuild errors: 0
+22:43:11 ok finished volume against the planner number: 107753.2789 (expected 107980.0000)
+22:43:11 ok mounting face (one flat face at Y -4): 1
+22:43:11 ok mounting face area: the whole ring Ø30 to Ø63 less six holes: 2355.9117 (expected 2355.9117)
+22:43:11 ok mounting face Y: -4.0000 (expected -4.0000)
+22:43:11 ok mounting face reaches X +31.5: 31.5000 (expected 31.5000)
+22:43:11 ok Ø30 bore faces: 1
+22:43:11 ok bore centre X: 0.0000 (expected 0.0000)
+22:43:11 ok bore centre Z: 0.0000 (expected 0.0000)
+22:43:11 ok Ø3.4 screw holes: 6
+22:43:11 ok screw hole at [-25.0, 0.0, 0.0] against the bolt circle: 0.0000 (expected 0.0000)
+22:43:11 ok screw hole starts at Y -4: -4.0000 (expected -4.0000)
+22:43:11 ok screw-head seat at Y +4: 4.0000 (expected 4.0000)
+22:43:11 ok screw hole at [-12.5, 0.0, -21.651] against the bolt circle: 0.0004 (expected 0.0000)
+22:43:11 ok screw hole starts at Y -4: -4.0000 (expected -4.0000)
+22:43:11 ok screw-head seat at Y +4: 4.0000 (expected 4.0000)
+22:43:11 ok screw hole at [-12.5, 0.0, 21.651] against the bolt circle: 0.0004 (expected 0.0000)
+22:43:11 ok screw hole starts at Y -4: -4.0000 (expected -4.0000)
+22:43:11 ok screw-head seat at Y +4: 4.0000 (expected 4.0000)
+22:43:11 ok screw hole at [12.5, 0.0, -21.651] against the bolt circle: 0.0004 (expected 0.0000)
+22:43:11 ok screw hole starts at Y -4: -4.0000 (expected -4.0000)
+22:43:11 ok screw-head seat at Y +4: 4.0000 (expected 4.0000)
+22:43:11 ok screw hole at [12.5, 0.0, 21.651] against the bolt circle: 0.0004 (expected 0.0000)
+22:43:11 ok screw hole starts at Y -4: -4.0000 (expected -4.0000)
+22:43:11 ok screw-head seat at Y +4: 4.0000 (expected 4.0000)
+22:43:11 ok screw hole at [25.0, 0.0, 0.0] against the bolt circle: 0.0000 (expected 0.0000)
+22:43:11 ok screw hole starts at Y -4: -4.0000 (expected -4.0000)
+22:43:11 ok screw-head seat at Y +4: 4.0000 (expected 4.0000)
+22:43:12 ok Ø8 pin hole faces (one in each cheek): 2
+22:43:12 ok pin hole X: 0.0000 (expected 0.0000)
+22:43:12 ok pin hole Z: -200.0000 (expected -200.0000)
+22:43:12 ok cheek thickness at the pin hole: 6.0000 (expected 6.0000)
+22:43:12 ok pin hole X: 0.0000 (expected 0.0000)
+22:43:12 ok pin hole Z: -200.0000 (expected -200.0000)
+22:43:12 ok cheek thickness at the pin hole: 6.0000 (expected 6.0000)
+22:43:12 ok inner cheek face at Y 16: 1
+22:43:12 ok inner cheek face Y 16: flat at that Y: 16.0000 (expected 16.0000)
+22:43:12 ok inner cheek face Y 16 covers Ø16 round the pin: box [-13.0, 16.0, -213.0, 13.0, 16.0, -183.0]
+22:43:12 ok inner cheek face at Y -16: 1
+22:43:12 ok inner cheek face Y -16: flat at that Y: -16.0000 (expected -16.0000)
+22:43:12 ok inner cheek face Y -16 covers Ø16 round the pin: box [-13.0, -16.0, -213.0, 13.0, -16.0, -183.0]
+22:43:12 ok cable tunnel face: 1
+22:43:13 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-c\_wip\sw-eval\haiku-plan-c-round3\link_organic.stl 698284 bytes
+22:43:13 exported C:\joe\code\cad-daddy-wt\sw-eval-haiku-plan-c\_wip\sw-eval\haiku-plan-c-round3\link_organic.step 581619 bytes
+22:43:13 ok STL watertight: 1.0000 (expected 1.0000)
+22:43:13 ok STL shells: 1.0000 (expected 1.0000)
+22:43:13 ok STL volume against the model: 107591.1723 (expected 107753.2789)
+22:43:13 ok STL box[0] against the design: -35.9950 (expected -36.0000)
+22:43:13 ok STL box[1] against the design: -22.0000 (expected -22.0000)
+22:43:13 ok STL box[2] against the design: -213.0000 (expected -213.0000)
+22:43:13 ok STL box[3] against the design: 35.9950 (expected 36.0000)
+22:43:13 ok STL box[4] against the design: 22.0000 (expected 22.0000)
+22:43:13 ok STL box[5] against the design: 36.0000 (expected 36.0000)
+22:43:13 ok STEP is in mm
+22:43:14 closing pid 198092 committed MB 1838
+FIXED mount face: solid just above Y -4, Ø31.2 to Ø61.2 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 238}
+FIXED mount face: clear just below Y -4, Ø31.2 to Ø61.2 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 216}
+FIXED mount side: nothing below Y -4 inside Ø62 down to Y -30 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 1080}
+FIXED bore Ø30 clear (sampled Ø29.6) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 605}
+FIXED screw hole 1 Ø3.4 clear (sampled Ø3.2) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 125}
+FIXED screw head 1: Ø7 clear, Y 4 to 14 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 780}
+FIXED screw head 1: seat solid under Y 4 at Ø5.2 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 12}
+FIXED screw hole 2 Ø3.4 clear (sampled Ø3.2) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 125}
+FIXED screw head 2: Ø7 clear, Y 4 to 14 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 780}
+FIXED screw head 2: seat solid under Y 4 at Ø5.2 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 12}
+FIXED screw hole 3 Ø3.4 clear (sampled Ø3.2) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 125}
+FIXED screw head 3: Ø7 clear, Y 4 to 14 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 780}
+FIXED screw head 3: seat solid under Y 4 at Ø5.2 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 12}
+FIXED screw hole 4 Ø3.4 clear (sampled Ø3.2) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 125}
+FIXED screw head 4: Ø7 clear, Y 4 to 14 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 780}
+FIXED screw head 4: seat solid under Y 4 at Ø5.2 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 12}
+FIXED screw hole 5 Ø3.4 clear (sampled Ø3.2) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 125}
+FIXED screw head 5: Ø7 clear, Y 4 to 14 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 780}
+FIXED screw head 5: seat solid under Y 4 at Ø5.2 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 12}
+FIXED screw hole 6 Ø3.4 clear (sampled Ø3.2) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 125}
+FIXED screw head 6: Ø7 clear, Y 4 to 14 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 780}
+FIXED screw head 6: seat solid under Y 4 at Ø5.2 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 12}
+FIXED pin holes Ø8 clear through both cheeks (sampled Ø7.8) {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 490}
+FIXED +Y cheek: solid just behind the inner face out to Ø15.8 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 72}
+FIXED +Y cheek: clear just inside the inner face out to Ø16 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 96}
+FIXED +Y cheek: 5 mm of material round the pin hole (solid out to Ø17.6, Y 16.4 to 19.5) {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 216}
+FIXED -Y cheek: solid just behind the inner face out to Ø15.8 {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 72}
+FIXED -Y cheek: clear just inside the inner face out to Ø16 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 96}
+FIXED -Y cheek: 5 mm of material round the pin hole (solid out to Ø17.6, Y 16.4 to 19.5) {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 216}
+FIXED slot: Ø30 swept cylinder about the pin clear, |Y| < 15.8 {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 1305}
+FIXED slot: clear from Z -183 down, |Y| < 15.8, all X {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 972}
+FIXED cable: Ø6 straight passage clear along Z at X 0, Y 0, from the bore to the slot {'value': 0.0, 'want': 'clear', 'ok': True, 'n': 4440}
+FIXED cable: enclosed (solid beside the tunnel at X ±3.6, Z -30 to -160) {'value': 1.0, 'want': 'solid', 'ok': True, 'n': 28}
+SHAPE link_organic.stl {"triangles": 13964, "area_mm2": 28965.4, "flat_share": 0.201, "largest_flat": 0.081, "sharp_mm": 845.8, "sharp_per_area": 4.97, "bbox_mm": [71.99, 44.0, 249.0]}
+22:43:33 clock: C2 checkpoint_02: 19.7 min since the job began
+results.json C2 ['build', 'checkpoints', 'fixed_items_failing', 'fixed_items_ok', 'fixed_items_solid', 'fixed_items_stl', 'mass_after_g', 'mass_ok', 'model_sha256', 'print_orientation', 'shape_after', 'step_in_mm', 'stl', 'table_name', 'volume_after_mm3']
+DETAIL DONE fixed_items_ok True mass 128.2 blend 2.0

@@ -1,0 +1,3801 @@
+{
+ "C1": {
+  "status": "done",
+  "volume_mm3": 219436.0,
+  "hand_volume_mm3": 219436.0,
+  "mass_g": 261.13,
+  "hand_mass_g": 261.13,
+  "bodies": 1,
+  "shape": {
+   "triangles": 1632,
+   "area_mm2": 38261.4,
+   "flat_share": 0.91,
+   "largest_flat": 0.144,
+   "sharp_mm": 2406.4,
+   "sharp_per_area": 12.3,
+   "bbox_mm": [
+    70.0,
+    44.0,
+    250.0
+   ]
+  },
+  "box_mm": [
+   -35.0,
+   -22.0,
+   -215.0,
+   35.0,
+   22.0,
+   35.0
+  ],
+  "stl": {
+   "volume": 219351.8,
+   "watertight": true,
+   "shells": 1,
+   "triangles": 1632
+  },
+  "holes_measured": [
+   [
+    -25.0,
+    0.0,
+    0.0
+   ],
+   [
+    -12.5,
+    0.0,
+    -21.651
+   ],
+   [
+    -12.5,
+    0.0,
+    21.651
+   ],
+   [
+    12.5,
+    0.0,
+    -21.651
+   ],
+   [
+    12.5,
+    0.0,
+    21.651
+   ],
+   [
+    25.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "pin_holes_measured": [
+   [
+    0.0,
+    -19.0,
+    -200.0
+   ],
+   [
+    0.0,
+    19.0,
+    -200.0
+   ]
+  ],
+  "model_sha256": "0c230a2d94868d1d9a7688eb79986f4c9085e5b5a7358b55c8d5ecf351e9f842"
+ },
+ "C2": {
+  "chosen": "A",
+  "eligible": {
+   "A": true,
+   "B": false
+  },
+  "choice_reason": "only A is eligible; B: built False, hand factor load Y 0.89 at Z -60.0, load X 7.83 (2.5 needed), mass None g",
+  "ideas_tried": [
+   {
+    "idea": "A",
+    "name": "bone: one stem that changes section",
+    "built": true,
+    "mass_g": 121.6,
+    "shape": {
+     "triangles": 17444,
+     "area_mm2": 24613.0,
+     "flat_share": 0.246,
+     "largest_flat": 0.098,
+     "sharp_mm": 617.2,
+     "sharp_per_area": 3.93,
+     "bbox_mm": [
+      71.99,
+      44.0,
+      248.94
+     ]
+    },
+    "hand_factor_load_y": 3.61,
+    "hand_factor_load_x": 7.97,
+    "eligible": true,
+    "picture": "pictures/idea_a.png"
+   },
+   {
+    "idea": "B",
+    "name": "open frame: blade with a window, two legs",
+    "built": false,
+    "mass_g": null,
+    "shape": null,
+    "hand_factor_load_y": 0.89,
+    "hand_factor_load_x": 7.83,
+    "eligible": false,
+    "picture": null
+   }
+  ],
+  "mass_before_g": 261.13,
+  "mass_before_from": "C1 run",
+  "table_name": "STEM_A4",
+  "window": false,
+  "checkpoints": [
+   {
+    "n": 2,
+    "minutes_since_c2_start": 19.7,
+    "picture": "pictures/checkpoint_02.png",
+    "missing": "the study (three load cases) and the before-and-after sheet; fixed items failing: none; hub seam blend R2.0; sharp_per_area 4.97, flat_share 0.201"
+   },
+   {
+    "n": 3,
+    "minutes_since_c2_start": 30.8,
+    "picture": "pictures/checkpoint_03.png",
+    "missing": "gate items not met: ['requirement_met']; verdict fail, lowest factor 1.39; against the look asked for: sharp_per_area 4.97 (boxy 12.3), flat_share 0.201 (boxy 0.91); the hub seam is blended R2.0"
+   }
+  ],
+  "build": {
+   "table": "STEM_A4",
+   "loft_mode": "arcs4",
+   "order": "stem first",
+   "arc_flip": 1,
+   "rims": "true arcs",
+   "stem_mm3": 111556.4,
+   "hub_added_mm3": 21781.8,
+   "knuckle_added_mm3": 11747.1,
+   "slot_mm3": 31448.6,
+   "form_mm3": 113636.7,
+   "ramp_blend_radius_mm": 2.0,
+   "ramp_blend_edges": 2,
+   "pin_mm3": 523.0,
+   "cable_mm3": 4894.6,
+   "holes_mm3": 438.8,
+   "heads_mm3": 31.98,
+   "mount_clean_mm3": 0.0
+  },
+  "volume_after_mm3": 107753.3,
+  "mass_after_g": 128.23,
+  "mass_ok": true,
+  "shape_after": {
+   "triangles": 13964,
+   "area_mm2": 28965.4,
+   "flat_share": 0.201,
+   "largest_flat": 0.081,
+   "sharp_mm": 845.8,
+   "sharp_per_area": 4.97,
+   "bbox_mm": [
+    71.99,
+    44.0,
+    249.0
+   ]
+  },
+  "fixed_items_ok": true,
+  "fixed_items_failing": [],
+  "fixed_items_stl": {
+   "mount face: solid just above Y -4, \u00d831.2 to \u00d861.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 238
+   },
+   "mount face: clear just below Y -4, \u00d831.2 to \u00d861.2": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 216
+   },
+   "mount side: nothing below Y -4 inside \u00d862 down to Y -30": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 1080
+   },
+   "bore \u00d830 clear (sampled \u00d829.6)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 605
+   },
+   "screw hole 1 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 1: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 1: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 2 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 2: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 2: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 3 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 3: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 3: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 4 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 4: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 4: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 5 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 5: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 5: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 6 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 6: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 6: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "pin holes \u00d88 clear through both cheeks (sampled \u00d87.8)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 490
+   },
+   "+Y cheek: solid just behind the inner face out to \u00d815.8": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 72
+   },
+   "+Y cheek: clear just inside the inner face out to \u00d816": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 96
+   },
+   "+Y cheek: 5 mm of material round the pin hole (solid out to \u00d817.6, Y 16.4 to 19.5)": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 216
+   },
+   "-Y cheek: solid just behind the inner face out to \u00d815.8": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 72
+   },
+   "-Y cheek: clear just inside the inner face out to \u00d816": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 96
+   },
+   "-Y cheek: 5 mm of material round the pin hole (solid out to \u00d817.6, Y 16.4 to 19.5)": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 216
+   },
+   "slot: \u00d830 swept cylinder about the pin clear, |Y| < 15.8": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 1305
+   },
+   "slot: clear from Z -183 down, |Y| < 15.8, all X": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 972
+   },
+   "cable: \u00d86 straight passage clear along Z at X 0, Y 0, from the bore to the slot": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 4440
+   },
+   "cable: enclosed (solid beside the tunnel at X \u00b13.6, Z -30 to -160)": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 28
+   }
+  },
+  "fixed_items_solid": {
+   "mount_face": {
+    "area_mm2": 2355.9,
+    "hand_area_mm2": 2355.9,
+    "box": [
+     -31.5,
+     -4.0,
+     -31.5,
+     31.5,
+     -4.0,
+     31.5
+    ]
+   },
+   "bore": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "screw_holes": [
+    [
+     -25.0,
+     0.0,
+     0.0
+    ],
+    [
+     -12.5,
+     0.0,
+     -21.651
+    ],
+    [
+     -12.5,
+     0.0,
+     21.651
+    ],
+    [
+     12.5,
+     0.0,
+     -21.651
+    ],
+    [
+     12.5,
+     0.0,
+     21.651
+    ],
+    [
+     25.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "pin_holes": [
+    {
+     "centre": [
+      0.0,
+      -19.0,
+      -200.0
+     ],
+     "y_from": -22.0,
+     "y_to": -16.0
+    },
+    {
+     "centre": [
+      0.0,
+      19.0,
+      -200.0
+     ],
+     "y_from": 16.0,
+     "y_to": 22.0
+    }
+   ],
+   "inner_face_y16": {
+    "area_mm2": 616.9,
+    "box": [
+     -13.0,
+     16.0,
+     -213.0,
+     13.0,
+     16.0,
+     -183.0
+    ]
+   },
+   "inner_face_y-16": {
+    "area_mm2": 616.9,
+    "box": [
+     -13.0,
+     -16.0,
+     -213.0,
+     13.0,
+     -16.0,
+     -183.0
+    ]
+   }
+  },
+  "stl": {
+   "volume": 107591.2,
+   "watertight": true,
+   "shells": 1,
+   "triangles": 13964,
+   "bounds": [
+    -35.995,
+    -22.0,
+    -213.0,
+    35.995,
+    22.0,
+    36.0
+   ]
+  },
+  "step_in_mm": true,
+  "model_sha256": "9748df74d27ebb97516d66dd4defef4b138271871e4af7604deca1839de72ada",
+  "print_orientation": "tilted 30 degrees, hub end down: the long axis leans 30 degrees from the vertical towards +X, the hub (elbow) end is at the bed and the fork is at the top; height about 222 mm of 256, footprint about 120 x 120 mm. Layers are flat on the bed, so in the part they are stacked along (0.5, 0, -0.866). Printed with a brim, no raft. Supports: under the lowest part of the hub rim and inside the bore, and a few small patches; the numbers are in orientations.json",
+  "verdict": "fail",
+  "sf_lowest": 1.39,
+  "judge": {
+   "verdict": "fail",
+   "need": 2.0,
+   "lowest_factor": 1.39,
+   "lowest_entry": "+Y, shear",
+   "rows": [
+    {
+     "entry": "+X, vm",
+     "values": [
+      5.163,
+      5.24,
+      5.721
+     ],
+     "limit": 45.0,
+     "factor": 7.87,
+     "converged": true,
+     "last_step_pct": 9.2,
+     "step_before_pct": 1.5,
+     "last_change_mpa": 0.481,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.6,
+     "state": "pass"
+    },
+    {
+     "entry": "+X, layer",
+     "values": [
+      5.298,
+      5.354,
+      5.7
+     ],
+     "limit": 22.5,
+     "factor": 3.95,
+     "converged": true,
+     "last_step_pct": 6.5,
+     "step_before_pct": 1.1,
+     "last_change_mpa": 0.346,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 3.48,
+     "state": "pass"
+    },
+    {
+     "entry": "+X, shear",
+     "values": [
+      2.558,
+      2.546,
+      2.578
+     ],
+     "limit": 13.0,
+     "factor": 5.04,
+     "converged": true,
+     "last_step_pct": 1.3,
+     "step_before_pct": 0.5,
+     "last_change_mpa": 0.032,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.92,
+     "state": "pass"
+    },
+    {
+     "entry": "-X, vm",
+     "values": [
+      5.163,
+      5.24,
+      5.721
+     ],
+     "limit": 45.0,
+     "factor": 7.87,
+     "converged": true,
+     "last_step_pct": 9.2,
+     "step_before_pct": 1.5,
+     "last_change_mpa": 0.481,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.6,
+     "state": "pass"
+    },
+    {
+     "entry": "-X, layer",
+     "values": [
+      3.896,
+      4.413,
+      4.589
+     ],
+     "limit": 22.5,
+     "factor": 4.9,
+     "converged": true,
+     "last_step_pct": 4.0,
+     "step_before_pct": 13.3,
+     "last_change_mpa": 0.176,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.53,
+     "state": "pass"
+    },
+    {
+     "entry": "-X, shear",
+     "values": [
+      2.558,
+      2.546,
+      2.578
+     ],
+     "limit": 13.0,
+     "factor": 5.04,
+     "converged": true,
+     "last_step_pct": 1.3,
+     "step_before_pct": 0.5,
+     "last_change_mpa": 0.032,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.92,
+     "state": "pass"
+    },
+    {
+     "entry": "+Y, vm",
+     "values": [
+      18.741,
+      18.686,
+      18.943
+     ],
+     "limit": 45.0,
+     "factor": 2.38,
+     "converged": true,
+     "last_step_pct": 1.4,
+     "step_before_pct": 0.3,
+     "last_change_mpa": 0.257,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.31,
+     "state": "pass"
+    },
+    {
+     "entry": "+Y, layer",
+     "values": [
+      12.382,
+      12.814,
+      13.223
+     ],
+     "limit": 22.5,
+     "factor": 1.7,
+     "converged": true,
+     "last_step_pct": 3.2,
+     "step_before_pct": 3.5,
+     "last_change_mpa": 0.409,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 1.6,
+     "state": "fail"
+    },
+    {
+     "entry": "+Y, shear",
+     "values": [
+      9.331,
+      9.272,
+      9.339
+     ],
+     "limit": 13.0,
+     "factor": 1.39,
+     "converged": true,
+     "last_step_pct": 0.7,
+     "step_before_pct": 0.6,
+     "last_change_mpa": 0.067,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 1.37,
+     "state": "fail"
+    }
+   ]
+  },
+  "sf_yield": 2.33,
+  "sf_layer": 1.67,
+  "sf_shear": 1.37,
+  "governing": "+Y, shear at [-8.98, 4.17, -22.39] (factor 1.39)",
+  "requirement_met": false,
+  "not_converged": [],
+  "fea_rows": {
+   "+X@4.0": {
+    "el": 4.0,
+    "excessive_prompt": false,
+    "nodes": 89009,
+    "elements": 58078,
+    "solve_s": 26,
+    "reaction_N": [
+     -60.0,
+     -0.005,
+     -0.001,
+     60.0
+    ],
+    "max_disp_mm": 2.789,
+    "peak_vm_everywhere": 6.111,
+    "chosen": {
+     "vm": 5.163,
+     "vm_at": [
+      15.95,
+      4.17,
+      -22.69
+     ],
+     "layer": 5.298,
+     "layer_at": [
+      -14.06,
+      -2.9,
+      -31.45
+     ],
+     "shear": 2.558,
+     "shear_at": [
+      15.95,
+      4.17,
+      -22.69
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 1.555,
+      "layer_at": [
+       1.23,
+       2.95,
+       -14.95
+      ],
+      "shear": 1.658,
+      "shear_at": [
+       -0.0,
+       4.16,
+       -22.31
+      ]
+     },
+     "Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 2.147,
+      "layer_at": [
+       -15.64,
+       4.31,
+       -23.41
+      ],
+      "shear": 2.527,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "Z (upright)": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.753,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.527,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.718,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.57,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.298,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 4.297,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.451,
+      "shear_at": [
+       -11.74,
+       -0.01,
+       -86.54
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.446,
+      "layer_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.286,
+      "shear_at": [
+       -15.28,
+       -3.09,
+       -32.86
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.708,
+      "layer_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.492,
+      "shear_at": [
+       -15.28,
+       -3.09,
+       -32.86
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.481,
+      "layer_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.437,
+      "shear_at": [
+       11.75,
+       -0.01,
+       -86.31
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 5.163,
+     "3.0": 5.163,
+     "5.0": 5.163
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.298,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "3.0": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.298,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "5.0": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 4.886,
+      "layer_at": [
+       -17.08,
+       -2.55,
+       -32.14
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 2.311,
+    "waist": {
+     "hand_mpa": 4.47,
+     "mean_vm_2mm": 4.15,
+     "nodes": 8,
+     "at": [
+      10.8,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      4.5,
+      2
+     ],
+     "1.0": [
+      3.4,
+      13
+     ],
+     "2.0": [
+      2.7,
+      61
+     ]
+    }
+   },
+   "-X@4.0": {
+    "el": 4.0,
+    "excessive_prompt": false,
+    "nodes": 89009,
+    "elements": 58078,
+    "solve_s": 25,
+    "reaction_N": [
+     60.0,
+     0.005,
+     0.001,
+     60.0
+    ],
+    "max_disp_mm": 2.789,
+    "peak_vm_everywhere": 6.111,
+    "chosen": {
+     "vm": 5.163,
+     "vm_at": [
+      15.95,
+      4.17,
+      -22.69
+     ],
+     "layer": 3.896,
+     "layer_at": [
+      14.2,
+      3.08,
+      -21.53
+     ],
+     "shear": 2.558,
+     "shear_at": [
+      15.95,
+      4.17,
+      -22.69
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 1.334,
+      "layer_at": [
+       -1.33,
+       2.91,
+       -14.94
+      ],
+      "shear": 1.658,
+      "shear_at": [
+       -0.0,
+       4.16,
+       -22.31
+      ]
+     },
+     "Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 2.025,
+      "layer_at": [
+       15.64,
+       4.31,
+       -23.41
+      ],
+      "shear": 2.527,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "Z (upright)": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.482,
+      "layer_at": [
+       13.72,
+       -2.95,
+       -31.53
+      ],
+      "shear": 2.527,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 4.538,
+      "layer_at": [
+       13.72,
+       -2.95,
+       -31.53
+      ],
+      "shear": 2.57,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 3.896,
+      "layer_at": [
+       14.2,
+       3.08,
+       -21.53
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 3.263,
+      "layer_at": [
+       14.07,
+       4.0,
+       -20.99
+      ],
+      "shear": 2.451,
+      "shear_at": [
+       -11.74,
+       -0.01,
+       -86.54
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.487,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.286,
+      "shear_at": [
+       -15.28,
+       -3.09,
+       -32.86
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.724,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.492,
+      "shear_at": [
+       -15.28,
+       -3.09,
+       -32.86
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 5.447,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.437,
+      "shear_at": [
+       11.75,
+       -0.01,
+       -86.31
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 5.163,
+     "3.0": 5.163,
+     "5.0": 5.163
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 4.59,
+      "layer_at": [
+       12.05,
+       -3.18,
+       -31.89
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "3.0": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 3.896,
+      "layer_at": [
+       14.2,
+       3.08,
+       -21.53
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "5.0": {
+      "vm": 5.163,
+      "vm_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 3.896,
+      "layer_at": [
+       14.2,
+       3.08,
+       -21.53
+      ],
+      "shear": 2.558,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 2.338,
+    "waist": {
+     "hand_mpa": 4.47,
+     "mean_vm_2mm": 4.24,
+     "nodes": 6,
+     "at": [
+      -10.8,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      4.5,
+      2
+     ],
+     "1.0": [
+      3.4,
+      13
+     ],
+     "2.0": [
+      2.7,
+      61
+     ]
+    }
+   },
+   "+Y@4.0": {
+    "el": 4.0,
+    "excessive_prompt": false,
+    "nodes": 89009,
+    "elements": 58078,
+    "solve_s": 26,
+    "reaction_N": [
+     -0.003,
+     -59.997,
+     -0.004,
+     59.997
+    ],
+    "max_disp_mm": 5.785,
+    "peak_vm_everywhere": 30.159,
+    "chosen": {
+     "vm": 18.741,
+     "vm_at": [
+      9.22,
+      4.32,
+      -23.13
+     ],
+     "layer": 12.382,
+     "layer_at": [
+      0.28,
+      -3.19,
+      -34.48
+     ],
+     "shear": 9.331,
+     "shear_at": [
+      -9.22,
+      4.32,
+      -23.13
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 6.939,
+      "layer_at": [
+       -0.75,
+       -3.11,
+       -34.48
+      ],
+      "shear": 4.583,
+      "shear_at": [
+       2.57,
+       -1.9,
+       -33.57
+      ]
+     },
+     "Y": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 12.858,
+      "layer_at": [
+       3.17,
+       -0.41,
+       -32.08
+      ],
+      "shear": 9.642,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "Z (upright)": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 14.004,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.731,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 13.29,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.738,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 12.382,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.331,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 10.624,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 8.665,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 13.032,
+      "layer_at": [
+       -0.99,
+       15.12,
+       -177.77
+      ],
+      "shear": 7.672,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 12.507,
+      "layer_at": [
+       -0.99,
+       15.12,
+       -177.77
+      ],
+      "shear": 6.11,
+      "shear_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 12.102,
+      "layer_at": [
+       3.09,
+       -0.82,
+       -33.28
+      ],
+      "shear": 6.881,
+      "shear_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 18.741,
+     "3.0": 18.741,
+     "5.0": 18.741
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 16.215,
+      "layer_at": [
+       8.64,
+       -3.53,
+       -32.38
+      ],
+      "shear": 9.331,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "3.0": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 12.382,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.331,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "5.0": {
+      "vm": 18.741,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 9.446,
+      "layer_at": [
+       -3.1,
+       15.02,
+       -177.48
+      ],
+      "shear": 9.331,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 9.735,
+    "waist": {
+     "hand_mpa": 4.03,
+     "mean_vm_2mm": 3.78,
+     "nodes": 6,
+     "at": [
+      0.0,
+      12.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      15.99,
+      3
+     ],
+     "1.0": [
+      13.31,
+      12
+     ],
+     "2.0": [
+      9.54,
+      55
+     ]
+    }
+   },
+   "+X@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 125376,
+    "elements": 83832,
+    "solve_s": 45,
+    "reaction_N": [
+     -59.998,
+     0.003,
+     0.005,
+     59.998
+    ],
+    "max_disp_mm": 2.79,
+    "peak_vm_everywhere": 6.08,
+    "chosen": {
+     "vm": 5.24,
+     "vm_at": [
+      -16.66,
+      -2.61,
+      -32.01
+     ],
+     "layer": 5.354,
+     "layer_at": [
+      -14.06,
+      -2.9,
+      -31.45
+     ],
+     "shear": 2.546,
+     "shear_at": [
+      -15.95,
+      4.17,
+      -22.69
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 1.558,
+      "layer_at": [
+       1.23,
+       2.95,
+       -14.95
+      ],
+      "shear": 1.643,
+      "shear_at": [
+       -0.0,
+       4.16,
+       -22.31
+      ]
+     },
+     "Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 2.057,
+      "layer_at": [
+       -15.64,
+       4.31,
+       -23.41
+      ],
+      "shear": 2.544,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "Z (upright)": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.836,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.545,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.796,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.581,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.354,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 4.302,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.461,
+      "shear_at": [
+       -15.1,
+       -2.98,
+       -32.42
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.564,
+      "layer_at": [
+       -25.03,
+       3.61,
+       -23.83
+      ],
+      "shear": 2.539,
+      "shear_at": [
+       -11.98,
+       -3.6,
+       -33.11
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.698,
+      "layer_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.636,
+      "shear_at": [
+       13.13,
+       -3.41,
+       -32.91
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.434,
+      "layer_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.592,
+      "shear_at": [
+       17.54,
+       -2.38,
+       -31.64
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 5.24,
+     "3.0": 5.24,
+     "5.0": 5.199
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.448,
+      "layer_at": [
+       -12.54,
+       -3.12,
+       -31.8
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "3.0": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.354,
+      "layer_at": [
+       -14.06,
+       -2.9,
+       -31.45
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "5.0": {
+      "vm": 5.199,
+      "vm_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 4.687,
+      "layer_at": [
+       -19.42,
+       -1.88,
+       -31.05
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 2.303,
+    "waist": {
+     "hand_mpa": 4.47,
+     "mean_vm_2mm": 4.23,
+     "nodes": 13,
+     "at": [
+      10.8,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      5.24,
+      1
+     ],
+     "1.0": [
+      5.24,
+      1
+     ],
+     "2.0": [
+      4.3,
+      10
+     ]
+    }
+   },
+   "-X@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 125376,
+    "elements": 83832,
+    "solve_s": 46,
+    "reaction_N": [
+     59.998,
+     -0.003,
+     -0.005,
+     59.998
+    ],
+    "max_disp_mm": 2.79,
+    "peak_vm_everywhere": 6.08,
+    "chosen": {
+     "vm": 5.24,
+     "vm_at": [
+      -16.66,
+      -2.61,
+      -32.01
+     ],
+     "layer": 4.413,
+     "layer_at": [
+      13.55,
+      -2.98,
+      -31.57
+     ],
+     "shear": 2.546,
+     "shear_at": [
+      -15.95,
+      4.17,
+      -22.69
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 1.584,
+      "layer_at": [
+       13.55,
+       -2.98,
+       -31.57
+      ],
+      "shear": 1.643,
+      "shear_at": [
+       -0.0,
+       4.16,
+       -22.31
+      ]
+     },
+     "Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 1.964,
+      "layer_at": [
+       15.64,
+       4.31,
+       -23.41
+      ],
+      "shear": 2.544,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "Z (upright)": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 6.156,
+      "layer_at": [
+       13.55,
+       -2.98,
+       -31.57
+      ],
+      "shear": 2.545,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.176,
+      "layer_at": [
+       13.55,
+       -2.98,
+       -31.57
+      ],
+      "shear": 2.582,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 4.413,
+      "layer_at": [
+       13.55,
+       -2.98,
+       -31.57
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 3.389,
+      "layer_at": [
+       14.07,
+       3.33,
+       -20.99
+      ],
+      "shear": 2.461,
+      "shear_at": [
+       -15.1,
+       -2.98,
+       -32.42
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.841,
+      "layer_at": [
+       13.55,
+       -2.98,
+       -31.57
+      ],
+      "shear": 2.539,
+      "shear_at": [
+       -11.98,
+       -3.6,
+       -33.11
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.719,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.636,
+      "shear_at": [
+       13.13,
+       -3.41,
+       -32.91
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 5.45,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.592,
+      "shear_at": [
+       17.54,
+       -2.38,
+       -31.64
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 5.24,
+     "3.0": 5.24,
+     "5.0": 5.199
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 4.959,
+      "layer_at": [
+       10.59,
+       -3.35,
+       -32.13
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "3.0": {
+      "vm": 5.24,
+      "vm_at": [
+       -16.66,
+       -2.61,
+       -32.01
+      ],
+      "layer": 4.413,
+      "layer_at": [
+       13.55,
+       -2.98,
+       -31.57
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "5.0": {
+      "vm": 5.199,
+      "vm_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 3.975,
+      "layer_at": [
+       18.69,
+       4.16,
+       -22.93
+      ],
+      "shear": 2.546,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 2.264,
+    "waist": {
+     "hand_mpa": 4.47,
+     "mean_vm_2mm": 4.23,
+     "nodes": 11,
+     "at": [
+      -10.8,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      5.24,
+      1
+     ],
+     "1.0": [
+      5.24,
+      1
+     ],
+     "2.0": [
+      4.3,
+      10
+     ]
+    }
+   },
+   "+Y@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 125376,
+    "elements": 83832,
+    "solve_s": 45,
+    "reaction_N": [
+     -0.002,
+     -59.993,
+     -0.01,
+     59.993
+    ],
+    "max_disp_mm": 5.794,
+    "peak_vm_everywhere": 32.071,
+    "chosen": {
+     "vm": 18.686,
+     "vm_at": [
+      -8.98,
+      4.17,
+      -22.39
+     ],
+     "layer": 12.814,
+     "layer_at": [
+      0.28,
+      -3.19,
+      -34.48
+     ],
+     "shear": 9.272,
+     "shear_at": [
+      -8.98,
+      4.17,
+      -22.39
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 7.235,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 4.46,
+      "shear_at": [
+       15.69,
+       4.62,
+       -23.32
+      ]
+     },
+     "Y": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 12.786,
+      "layer_at": [
+       3.18,
+       -0.32,
+       -31.48
+      ],
+      "shear": 9.552,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "Z (upright)": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 14.222,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.696,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 13.656,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.692,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 12.814,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.272,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 11.12,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 8.617,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 13.187,
+      "layer_at": [
+       -0.7,
+       15.51,
+       -179.08
+      ],
+      "shear": 7.863,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 12.659,
+      "layer_at": [
+       -2.09,
+       14.7,
+       -176.68
+      ],
+      "shear": 6.247,
+      "shear_at": [
+       9.71,
+       4.32,
+       -23.93
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 12.13,
+      "layer_at": [
+       -3.14,
+       -0.63,
+       -33.58
+      ],
+      "shear": 6.973,
+      "shear_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 18.686,
+     "3.0": 18.686,
+     "5.0": 18.686
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 15.465,
+      "layer_at": [
+       10.59,
+       -3.35,
+       -32.13
+      ],
+      "shear": 9.272,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "3.0": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 12.814,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.272,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "5.0": {
+      "vm": 18.686,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 9.319,
+      "layer_at": [
+       -2.81,
+       15.14,
+       -177.82
+      ],
+      "shear": 9.272,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 9.712,
+    "waist": {
+     "hand_mpa": 4.03,
+     "mean_vm_2mm": 3.77,
+     "nodes": 10,
+     "at": [
+      0.0,
+      12.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      15.73,
+      2
+     ],
+     "1.0": [
+      13.17,
+      12
+     ],
+     "2.0": [
+      8.87,
+      68
+     ]
+    }
+   },
+   "+X@2.3": {
+    "el": 2.3,
+    "excessive_prompt": false,
+    "nodes": 189752,
+    "elements": 129167,
+    "solve_s": 92,
+    "reaction_N": [
+     -60.0,
+     0.002,
+     -0.001,
+     60.0
+    ],
+    "max_disp_mm": 2.791,
+    "peak_vm_everywhere": 6.665,
+    "chosen": {
+     "vm": 5.721,
+     "vm_at": [
+      -14.22,
+      -3.1,
+      -32.4
+     ],
+     "layer": 5.7,
+     "layer_at": [
+      -14.49,
+      -2.83,
+      -31.33
+     ],
+     "shear": 2.578,
+     "shear_at": [
+      16.65,
+      -2.48,
+      -30.64
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 1.578,
+      "layer_at": [
+       1.23,
+       2.95,
+       -14.95
+      ],
+      "shear": 1.652,
+      "shear_at": [
+       -0.0,
+       4.16,
+       -22.31
+      ]
+     },
+     "Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 1.864,
+      "layer_at": [
+       -15.64,
+       4.31,
+       -23.41
+      ],
+      "shear": 2.532,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "Z (upright)": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 6.196,
+      "layer_at": [
+       -14.49,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.526,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 6.159,
+      "layer_at": [
+       -14.49,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.566,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.7,
+      "layer_at": [
+       -14.49,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.578,
+      "shear_at": [
+       16.65,
+       -2.48,
+       -30.64
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 4.603,
+      "layer_at": [
+       -14.49,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.686,
+      "shear_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.844,
+      "layer_at": [
+       -14.49,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.712,
+      "shear_at": [
+       14.25,
+       -3.09,
+       -32.4
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.615,
+      "layer_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 3.003,
+      "shear_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.398,
+      "layer_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.814,
+      "shear_at": [
+       16.46,
+       -2.61,
+       -31.75
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 5.721,
+     "3.0": 5.721,
+     "5.0": 5.122
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.826,
+      "layer_at": [
+       -10.11,
+       -3.4,
+       -32.2
+      ],
+      "shear": 2.578,
+      "shear_at": [
+       16.65,
+       -2.48,
+       -30.64
+      ]
+     },
+     "3.0": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.7,
+      "layer_at": [
+       -14.49,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.578,
+      "shear_at": [
+       16.65,
+       -2.48,
+       -30.64
+      ]
+     },
+     "5.0": {
+      "vm": 5.122,
+      "vm_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 4.637,
+      "layer_at": [
+       -26.1,
+       2.86,
+       -23.78
+      ],
+      "shear": 2.564,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 2.399,
+    "waist": {
+     "hand_mpa": 4.47,
+     "mean_vm_2mm": 4.19,
+     "nodes": 23,
+     "at": [
+      10.8,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      5.72,
+      1
+     ],
+     "1.0": [
+      4.64,
+      3
+     ],
+     "2.0": [
+      4.1,
+      26
+     ]
+    }
+   },
+   "-X@2.3": {
+    "el": 2.3,
+    "excessive_prompt": false,
+    "nodes": 189752,
+    "elements": 129167,
+    "solve_s": 93,
+    "reaction_N": [
+     60.0,
+     -0.002,
+     0.001,
+     60.0
+    ],
+    "max_disp_mm": 2.791,
+    "peak_vm_everywhere": 6.665,
+    "chosen": {
+     "vm": 5.721,
+     "vm_at": [
+      -14.22,
+      -3.1,
+      -32.4
+     ],
+     "layer": 4.589,
+     "layer_at": [
+      13.08,
+      -3.32,
+      -32.66
+     ],
+     "shear": 2.578,
+     "shear_at": [
+      16.65,
+      -2.48,
+      -30.64
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 1.476,
+      "layer_at": [
+       14.52,
+       -2.83,
+       -31.33
+      ],
+      "shear": 1.652,
+      "shear_at": [
+       -0.0,
+       4.16,
+       -22.31
+      ]
+     },
+     "Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 1.653,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.532,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "Z (upright)": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 6.223,
+      "layer_at": [
+       14.52,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.526,
+      "shear_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.328,
+      "layer_at": [
+       13.08,
+       -3.32,
+       -32.66
+      ],
+      "shear": 2.566,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 4.589,
+      "layer_at": [
+       13.08,
+       -3.32,
+       -32.66
+      ],
+      "shear": 2.578,
+      "shear_at": [
+       16.65,
+       -2.48,
+       -30.64
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 3.345,
+      "layer_at": [
+       11.09,
+       3.35,
+       -22.61
+      ],
+      "shear": 2.686,
+      "shear_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.856,
+      "layer_at": [
+       14.52,
+       -2.83,
+       -31.33
+      ],
+      "shear": 2.712,
+      "shear_at": [
+       14.25,
+       -3.09,
+       -32.4
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.454,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 3.003,
+      "shear_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.246,
+      "layer_at": [
+       15.95,
+       4.17,
+       -22.69
+      ],
+      "shear": 2.814,
+      "shear_at": [
+       16.46,
+       -2.61,
+       -31.75
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 5.721,
+     "3.0": 5.721,
+     "5.0": 5.122
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 5.206,
+      "layer_at": [
+       10.13,
+       -3.39,
+       -32.2
+      ],
+      "shear": 2.578,
+      "shear_at": [
+       16.65,
+       -2.48,
+       -30.64
+      ]
+     },
+     "3.0": {
+      "vm": 5.721,
+      "vm_at": [
+       -14.22,
+       -3.1,
+       -32.4
+      ],
+      "layer": 4.589,
+      "layer_at": [
+       13.08,
+       -3.32,
+       -32.66
+      ],
+      "shear": 2.578,
+      "shear_at": [
+       16.65,
+       -2.48,
+       -30.64
+      ]
+     },
+     "5.0": {
+      "vm": 5.122,
+      "vm_at": [
+       -15.95,
+       4.17,
+       -22.69
+      ],
+      "layer": 4.172,
+      "layer_at": [
+       25.03,
+       3.61,
+       -23.83
+      ],
+      "shear": 2.564,
+      "shear_at": [
+       15.95,
+       4.17,
+       -22.69
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 2.315,
+    "waist": {
+     "hand_mpa": 4.47,
+     "mean_vm_2mm": 4.2,
+     "nodes": 23,
+     "at": [
+      -10.8,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      5.72,
+      1
+     ],
+     "1.0": [
+      4.64,
+      3
+     ],
+     "2.0": [
+      4.1,
+      26
+     ]
+    }
+   },
+   "+Y@2.3": {
+    "el": 2.3,
+    "excessive_prompt": false,
+    "nodes": 189752,
+    "elements": 129167,
+    "solve_s": 93,
+    "reaction_N": [
+     0.002,
+     -59.999,
+     0.002,
+     59.999
+    ],
+    "max_disp_mm": 5.804,
+    "peak_vm_everywhere": 32.414,
+    "chosen": {
+     "vm": 18.943,
+     "vm_at": [
+      9.22,
+      4.32,
+      -23.13
+     ],
+     "layer": 13.223,
+     "layer_at": [
+      0.28,
+      -3.19,
+      -34.48
+     ],
+     "shear": 9.339,
+     "shear_at": [
+      -8.98,
+      4.17,
+      -22.39
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 7.613,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 4.616,
+      "shear_at": [
+       2.57,
+       -1.9,
+       -33.57
+      ]
+     },
+     "Y": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 12.547,
+      "layer_at": [
+       -3.2,
+       -0.11,
+       -32.08
+      ],
+      "shear": 9.696,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "Z (upright)": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 14.864,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.853,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 14.143,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.709,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 13.223,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.339,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 11.437,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 8.608,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 13.262,
+      "layer_at": [
+       0.59,
+       15.22,
+       -178.06
+      ],
+      "shear": 7.962,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 12.663,
+      "layer_at": [
+       0.59,
+       15.22,
+       -178.06
+      ],
+      "shear": 6.42,
+      "shear_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 11.89,
+      "layer_at": [
+       3.09,
+       -0.82,
+       -33.28
+      ],
+      "shear": 7.34,
+      "shear_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 18.943,
+     "3.0": 18.943,
+     "5.0": 18.943
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 16.996,
+      "layer_at": [
+       7.89,
+       -3.58,
+       -32.45
+      ],
+      "shear": 9.339,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "3.0": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 13.223,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.339,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "5.0": {
+      "vm": 18.943,
+      "vm_at": [
+       9.22,
+       4.32,
+       -23.13
+      ],
+      "layer": 9.641,
+      "layer_at": [
+       -2.85,
+       15.22,
+       -178.06
+      ],
+      "shear": 9.339,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 9.737,
+    "waist": {
+     "hand_mpa": 4.03,
+     "mean_vm_2mm": 3.75,
+     "nodes": 24,
+     "at": [
+      0.0,
+      12.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      16.0,
+      3
+     ],
+     "1.0": [
+      13.61,
+      12
+     ],
+     "2.0": [
+      9.33,
+      64
+     ]
+    }
+   },
+   "+Y rigid@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 125376,
+    "elements": 83832,
+    "solve_s": 47,
+    "reaction_N": [
+     -0.0,
+     -60.0,
+     0.0,
+     60.0
+    ],
+    "max_disp_mm": 4.504,
+    "peak_vm_everywhere": 32.654,
+    "chosen": {
+     "vm": 19.022,
+     "vm_at": [
+      -8.98,
+      4.17,
+      -22.39
+     ],
+     "layer": 13.049,
+     "layer_at": [
+      0.28,
+      -3.19,
+      -34.48
+     ],
+     "shear": 9.438,
+     "shear_at": [
+      -8.98,
+      4.17,
+      -22.39
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 7.366,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 4.54,
+      "shear_at": [
+       15.69,
+       4.62,
+       -23.32
+      ]
+     },
+     "Y": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 13.011,
+      "layer_at": [
+       3.18,
+       -0.32,
+       -31.48
+      ],
+      "shear": 9.724,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "Z (upright)": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 14.483,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.87,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 20 to X": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 13.907,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.866,
+      "shear_at": [
+       -9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to X": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 13.049,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.438,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "tilt 45 to X": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 11.323,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 8.772,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "tilt 20 to Y": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 12.763,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 8.005,
+      "shear_at": [
+       9.22,
+       4.32,
+       -23.13
+      ]
+     },
+     "tilt 30 to Y": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 11.675,
+      "layer_at": [
+       -2.12,
+       -2.4,
+       -34.18
+      ],
+      "shear": 6.36,
+      "shear_at": [
+       9.71,
+       4.32,
+       -23.93
+      ]
+     },
+     "tilt 45 to Y": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 12.344,
+      "layer_at": [
+       -3.14,
+       -0.63,
+       -33.58
+      ],
+      "shear": 7.101,
+      "shear_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 19.022,
+     "3.0": 19.022,
+     "5.0": 19.022
+    },
+    "chosen_outside_mm": {
+     "2.0": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 15.744,
+      "layer_at": [
+       10.59,
+       -3.35,
+       -32.13
+      ],
+      "shear": 9.438,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "3.0": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 13.049,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 9.438,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     },
+     "5.0": {
+      "vm": 19.022,
+      "vm_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ],
+      "layer": 7.554,
+      "layer_at": [
+       -0.24,
+       -3.19,
+       -36.58
+      ],
+      "shear": 9.438,
+      "shear_at": [
+       -8.98,
+       4.17,
+       -22.39
+      ]
+     }
+    },
+    "peak_vm_on_loaded_faces": 7.638,
+    "peak_averages": {
+     "0.5": [
+      16.01,
+      2
+     ],
+     "1.0": [
+      13.41,
+      12
+     ],
+     "2.0": [
+      9.03,
+      68
+     ]
+    }
+   }
+  },
+  "mesh_sizes_mm": [
+   4.0,
+   3.0,
+   2.3
+  ],
+  "exclusion_mm": 3.0,
+  "lowest_factor_by_print_direction": {
+   "X": 2.38,
+   "Y": 1.34,
+   "Z (upright)": 1.32,
+   "tilt 20 to X": 1.34,
+   "tilt 30 to X": 1.39,
+   "tilt 45 to X": 1.51,
+   "tilt 20 to Y": 1.63,
+   "tilt 30 to Y": 1.78,
+   "tilt 45 to Y": 1.77
+  },
+  "load_y_second_way_ratio": {
+   "vm": 1.018,
+   "layer": 1.018,
+   "shear": 1.018
+  },
+  "mirror_check_vm_diff": 0.0,
+  "study_minutes_since_c2_start": 30.3,
+  "status": "not done: see gate",
+  "shape_before": {
+   "triangles": 1632,
+   "area_mm2": 38261.4,
+   "flat_share": 0.91,
+   "largest_flat": 0.144,
+   "sharp_mm": 2406.4,
+   "sharp_per_area": 12.3,
+   "bbox_mm": [
+    70.0,
+    44.0,
+    250.0
+   ]
+  },
+  "minutes": 30.8,
+  "gate": {
+   "fixed_items_ok": true,
+   "one_body_watertight": true,
+   "requirement_met": false,
+   "mass_not_above_boxy": true
+  }
+ },
+ "set": {
+  "minutes": 30.8,
+  "c1_minutes": null,
+  "c2_minutes": 30.8
+ }
+}
