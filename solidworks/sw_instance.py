@@ -345,6 +345,47 @@ def close_welcome(pid):
     return len(hit)
 
 
+def settle_welcome(pid, young_s=60, wait_s=15):
+    """Close this PID's Welcome screen before work that it would hold, and return only once it is gone.
+
+    On joey-vm (2026-11-15) the Welcome screen came up a second or more after launch() had returned, in the same second
+    a first STEP import began: the import sat behind it, and closing it while the import ran brought "An unsupported
+    operation was attempted" and then a crash. So for an instance started under young_s seconds ago this waits up to
+    wait_s seconds from its start for the screen to show, closes it, and waits for it to go. An older instance gets
+    one look. Returns how many it closed.
+    """
+    try:
+        age = time.time() - psutil.Process(pid).create_time()
+    except psutil.Error:
+        age = young_s
+    deadline = time.time() + (max(0.0, wait_s - age) if age < young_s else 0.0)
+    closed = 0
+    while True:
+        n = close_welcome(pid)
+        closed += n
+        if n:
+            gone = time.time() + 10
+            while time.time() < gone and _has_welcome(pid):
+                time.sleep(0.25)
+            time.sleep(1)
+            return closed
+        if time.time() >= deadline:
+            return closed
+        time.sleep(0.25)
+
+
+def _has_welcome(pid):
+    found = []
+
+    def find(h, _):
+        if win32process.GetWindowThreadProcessId(h)[1] == pid and win32gui.GetClassName(h) == "swWelcomeScreen":
+            found.append(h)
+        return True
+
+    win32gui.EnumWindows(find, None)
+    return bool(found)
+
+
 def windows(pid):
     """This PID's top-level windows that say something: [(class, title, visible, enabled, [texts inside a dialog])].
 
