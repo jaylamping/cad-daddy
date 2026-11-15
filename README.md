@@ -22,6 +22,11 @@ markdown, and the benchmark grades results, not style.
 2. On a Windows machine with SolidWorks and Simulation: `python solidworks/selftest.py`. It must print PASS.
 3. To measure a model: [playbook/EVAL.md](playbook/EVAL.md#running-it-on-another-model).
 
+## Contributing
+
+Work on a branch and open a PR. Commits and PR descriptions describe the change only, and nothing in the repo carries AI
+or tool attribution: the rule, and the check that enforces it, are in [CLAUDE.md](CLAUDE.md).
+
 ## What is still specific to where it was proven
 
 The content was proven in [jaylamping/roark](https://github.com/jaylamping/roark) on one workstation, and some of
