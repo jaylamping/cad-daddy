@@ -395,9 +395,11 @@ the D tasks (five on the housing against the three in the key). Where they fell 
 executor checks itself against: a load model predicted to read low reads 60 % high, a section stress has the
 wrong sign, a crown stress predicted at 21 MPa reads 3, a screw load is 27 % off. Each left a "not explained"
 line and cost time, and one mesh over the node limit queued behind another thread for 35 minutes. Opus wrote no
-shared `common.py`; Fable's plans came with one. **The two Opus-planned runs are graded from their own reports
-only:** no part was re-measured and no review pass was run, so the comparison is of what was reached and at what
-cost, not yet of what is right.
+shared `common.py`; Fable's plans came with one. **The two Opus-planned runs were then reviewed from
+their files** ([haiku-oplan-REVIEW.md](../eval/haiku-oplan-REVIEW.md)): the counts stand (5 of 7 and 1 of 3), all
+twelve plates and both brackets agree with hand volumes, every problem in the key for the plates and the housing
+was caught, and the one pass the run claimed and the review does not accept is T5 (factor 2.06 on one mesh).
+They committed no job logs, so the rows are taken as written, and no part was re-measured on SolidWorks.
 
 ### Sonnet with a Fable advisor: tried, dropped on cost
 
@@ -418,7 +420,7 @@ named beside it; for the runs of 2026-11-14 morning it is read from the tables a
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | haiku-a | holly-pc | A | claude-haiku-5-5 | none | 2 / 5 / 7 | independent check (eval/haiku-runs-CHECK.md) | 19.5 |  | 1.34 | 9.8 | 0.67 |  |
 | haiku-d | holly-pc | D | claude-haiku-5-5 | none | 1 / 3 / 3 | independent check (eval/haiku-runs-CHECK.md) | 21.5 |  | 1.94 | 21.5 | 1.94 |  |
-| haiku-oplan-a | holly-pc | A | claude-haiku-5-5 | Opus | 5 / 6 / 7 | own report, not checked | 70.0 | 35.0 | 1.5 | 7.0 | 0.3 |  |
+| haiku-oplan-a | holly-pc | A | claude-haiku-5-5 | Opus | 5 / 6 / 7 | reviewed from files, no logs, not re-measured | 70.0 | 35.0 | 1.5 | 7.0 | 0.3 |  |
 | haiku-plan-a | holly-pc | A | claude-haiku-5-5 | Fable | 5 / 7 / 7 | independent check (eval/haiku-runs-CHECK.md) | 22.1 |  | 1.29 | 4.4 | 0.26 |  |
 | haiku-plan-a-followup | holly-pc | A | claude-haiku-5-5 | Fable review | 2 / 2 / 2 | independent check (eval/haiku-followup-CHECK.md) | 15.9 |  | 0.45 | 8.0 | 0.23 |  |
 | haiku-plan-c | holly-pc | C | claude-haiku-5-5 | Fable | 1 / 2 / 2 | review from files (eval/haiku-plan-c-REVIEW.md) | 51.6 |  | 1.27 | 51.6 | 1.27 |  |
@@ -430,7 +432,7 @@ named beside it; for the runs of 2026-11-14 morning it is read from the tables a
 | haiku-plan-d-followup | holly-pc | D | claude-haiku-5-5 | Fable review | 0 / 1 / 1 | independent check (eval/haiku-followup-CHECK.md) | 25.4 |  | 0.53 |  |  |  |
 | sonnet-adv-a | holly-pc | A | claude-sonnet-5-5 with a Fable advisor (2 calls) | none | 7 / 7 / 7 | own report, not checked | 59.9 |  | 20.43 | 8.6 | 2.92 |  |
 | sonnet-adv-d | holly-pc | D | claude-sonnet-5-5 with a Fable advisor (3 calls) | none | 3 / 3 / 3 | own report, not checked | 76.2 |  |  | 25.4 |  |  |
-| haiku-oplan-d | holly-pc | D | claude-haiku-5-5 | Opus | 1 / 3 / 3 | own report, not checked | 47.0 | 19.0 | 4.51 | 28.0 | 4.51 |  |
+| haiku-oplan-d | holly-pc | D | claude-haiku-5-5 | Opus | 1 / 3 / 3 | reviewed from files, no logs, not re-measured | 47.0 | 19.0 | 4.51 | 28.0 | 4.51 |  |
 
 What the numbers say: a plan roughly halves the cost of a task that ends right (Haiku on set A, $0.67 without a
 plan, $0.26 with Fable's), the advisor path costs ten times that, and on a design task the money goes on rounds
@@ -470,7 +472,8 @@ One run per model per set, on small parts, graded by the author of the playbook.
 Sonnet run could not be confirmed afterwards; later runs reported their own model id. Set B had the corrected
 playbook, so set A and set B are not a before-and-after of the same tasks. The Fable run of set B was done by two
 sessions, the second picking up the first one's files. Opus has been run only as a planner, and the runs built
-from its plans, like the two advisor runs, are graded from their own reports. The Codex runs are one pass each
+from its plans were reviewed from their files without logs or a re-measure; the two advisor runs are graded from
+their own reports. The Codex runs are one pass each
 and Luna's stop at set B.
 
 ## Running it on another model

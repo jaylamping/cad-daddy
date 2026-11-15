@@ -10,7 +10,7 @@
   "total": 7,
   "reached": 6,
   "right": 5,
-  "right_basis": "own report, not checked"
+  "right_basis": "reviewed from files, no logs, not re-measured"
  },
  "wall_minutes": 70.0,
  "waiting_minutes": 35.0,
@@ -18,5 +18,5 @@
  "cost_basis": "estimated from the session's tokens at the rates the recorded Haiku sessions imply (cache read 0.05, cache write 1.00, output 2.50 USD per million); the record held no cost",
  "jobs": null,
  "jobs_failed": null,
- "notes": "T6 not reached. One solve over the 200,000 node rule. T5 called a pass at 2.06 with convergence not shown: not counted as right. The run committed during the run, against its brief."
+ "notes": "Reviewed from files (eval/haiku-oplan-REVIEW.md): T1, T2, T3, T4, T7 right; T5 called a pass at 2.06 on one mesh, reviewed as not shown; T6 not reached. One solve over the 200,000 node rule. The run committed during the run, against its brief."
 }
