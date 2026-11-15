@@ -57,7 +57,7 @@ save(d)                                                       # 5. save
 | Rounded edges | `edges_where(d, test)` (it tests an edge's start, middle and end: an edge that only ends on an excluded curve is dropped, and a closed loop has no ends, so test the middle) straight before `fillet(d, edges, (2.0, 1.5, 1.0), name)`: it tries the radii in order. `chamfer(d, edges, width, name)` the same way |
 | Split a part | copy the master file, `cut_half_space(d, 'Z', z, +1, name)` in one copy and `-1` in the other |
 | Two parts in one model (for contact FEA) | `insert_body(d, other_part_path)`; both must have been modelled in the same frame. Find the new body by its box or volume in `bodies(d)`. An overlap is **not** reported: the bodies stay separate and overlapping, so compare their boxes yourself |
-| Import a vendor STEP | `import_step(sw, step, target)`, into `cad/vendor/<maker>/`. Volume and box come back exact; every full cylinder comes back as two half faces |
+| Import a vendor STEP | `import_step(sw, step, target)`, into `cad/vendor/<maker>/`. Volume and box come back exact; every full cylinder comes back as two half faces. In a fresh hidden instance the startup Welcome dialog holds `LoadFile4` for ever (the file loads, the call never returns); `launch()` and `import_step` close it. If you call `LoadFile4` yourself, call `sw_instance.close_welcome(pid)` or make a new document first |
 | Change an existing part | prefer changing the script and rebuilding. To edit a native file with no script: open it, add features on top, never edit a sketch the script does not own |
 
 ## What goes wrong, and the cure
