@@ -372,7 +372,7 @@ It ends not done. What it bought:
 - The executor did every round as written, reported every fail as a fail, and twice caught mistakes in the
   instructions (a wrong body count, a task file missing from a worktree).
 
-Form: a blind sheet of this link beside the two from 2026-11-13 is with Joey; the result goes here.
+Form: on a blind sheet of this link beside the two from 2026-11-13 (three letters, no recommendation on the card) Joey ranked them fable-c first, sonnet-c second, this link third (2026-11-15). He had seen the first two before under other letters; only this link was new to him. Four review rounds removed the faults a check can name (the twist, the print direction) and did not bring the form up to what either larger model drew in one pass.
 
 ### Opus as the planner
 
