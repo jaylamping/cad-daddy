@@ -1,0 +1,44 @@
+18:51:47 SolidWorks pid 163764 free GB 22.2
+18:51:47 clock: D1 fea job: instance up: 22.0 min since the job began
+18:51:53 ok rail bottom faces: 1.0000 (expected 1.0000)
+18:51:53 ok M5 faces: 2.0000 (expected 2.0000)
+18:51:53 ok pad tops: 4.0000 (expected 4.0000)
+18:51:53 PREDICT DOWN_3.0: nodes about 10485, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:51:53 DOWN_3.0: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:51:53 DOWN_3.0: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:51:54 DOWN_3.0: mesh rc 0, 20717 nodes, 11883 elements, free 21.9 GB
+18:51:58 DOWN_3.0: fixture nodes 1363, box [-60.0, -10.0, -6.0] to [60.0, 10.0, -6.0]
+18:51:58 DOWN_3.0: load nodes 288, box [-42.49, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:51:59 mount nodes 10943 of 20717
+18:51:59 SUMMARY {'study': 'DOWN_3.0', 'el_mm': 3.0, 'nodes': 20717, 'elements': 11883, 'solve_s': 6, 'peak_vm_all': 1.28, 'peak_vm_away': 1.28, 'at': [40.5, -10.0, 0.0], 'sf_yield': 35.16, 'max_disp_mm': 0.012345649302005768, 'reaction_N': [0.0, 0.0, 9.0, 9.0], 'applied_N': 9.0}
+18:51:59 ROW {'el': 3.0, 'nodes': 20717, 'vm': 0.3554767668247223, 'at': [-36.34, 11.39, 8.0], 'layer_down': 0.03863035887479782, 'layer_up': 0.17119471728801727, 'shear': 0.06819967452809571, 'shear_at': [-42.18, 6.53, 5.09], 'disp': 0.012345649302005768, 'reaction': [0.0, 0.0, 9.0, 9.0], 'applied': 9.0, 'solve_s': 6.014326333999634, 'vm_all': 1.2798166275024414}
+18:51:59 PREDICT DOWN_2.0: nodes about 35386, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:51:59 DOWN_2.0: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:51:59 DOWN_2.0: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:52:00 DOWN_2.0: mesh rc 0, 58186 nodes, 36218 elements, free 21.9 GB
+18:52:10 DOWN_2.0: fixture nodes 2973, box [-60.0, -10.0, -6.0] to [60.0, 10.0, -6.0]
+18:52:10 DOWN_2.0: load nodes 740, box [-42.49, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:52:13 mount nodes 27078 of 58186
+18:52:13 SUMMARY {'study': 'DOWN_2.0', 'el_mm': 2.0, 'nodes': 58186, 'elements': 36218, 'solve_s': 14, 'peak_vm_all': 1.65, 'peak_vm_away': 1.65, 'at': [-37.0, -10.0, 0.0], 'sf_yield': 27.32, 'max_disp_mm': 0.01251804456114769, 'reaction_N': [-0.0, -0.0, 9.0, 9.0], 'applied_N': 9.0}
+18:52:13 ROW {'el': 2.0, 'nodes': 58186, 'vm': 0.3589625060558319, 'at': [37.79, -11.5, 8.0], 'layer_down': 0.051076143980026245, 'layer_up': 0.12763351202011108, 'shear': 0.07892575489142294, 'shear_at': [-35.0, 6.5, 4.97], 'disp': 0.01251804456114769, 'reaction': [-0.0, -0.0, 9.0, 9.0], 'applied': 9.0, 'solve_s': 13.99797010421753, 'vm_all': 1.6470457315444946}
+18:52:13 PREDICT DOWN_1.5: nodes about 83878, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:52:13 DOWN_1.5: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:52:13 DOWN_1.5: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:52:15 DOWN_1.5: mesh rc 0, 117873 nodes, 75640 elements, free 21.9 GB
+18:52:43 DOWN_1.5: fixture nodes 5223, box [-60.0, -10.0, -6.0] to [60.0, 10.0, -6.0]
+18:52:43 DOWN_1.5: load nodes 988, box [-42.5, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:52:56 mount nodes 59261 of 117873
+18:52:56 SUMMARY {'study': 'DOWN_1.5', 'el_mm': 1.5, 'nodes': 117873, 'elements': 75640, 'solve_s': 43, 'peak_vm_all': 1.71, 'peak_vm_away': 1.71, 'at': [-38.25, -10.0, 0.0], 'sf_yield': 26.26, 'max_disp_mm': 0.01259494386613369, 'reaction_N': [0.0, -0.0, 9.0, 9.0], 'applied_N': 9.0}
+18:52:56 ROW {'el': 1.5, 'nodes': 117873, 'vm': 0.36107271909713745, 'at': [41.05, -11.63, 8.0], 'layer_down': 0.06334525346755981, 'layer_up': 0.12681439518928528, 'shear': 0.07927678153458043, 'shear_at': [35.0, -5.77, 4.65], 'disp': 0.01259494386613369, 'reaction': [0.0, -0.0, 9.0, 9.0], 'applied': 9.0, 'solve_s': 42.62776160240173, 'vm_all': 1.7134943008422852}
+18:52:56 PREDICT DOWN_M5WALLS: nodes about 35386, displacement about 0.01 mm, peak at the bridge root beside the base edge, about 0.6 MPa (hand M c / I)
+18:52:56 DOWN_M5WALLS: body "SolidBody 1(<rail_slab>-<RAILS>)" is Aluminium 6063
+18:52:56 DOWN_M5WALLS: body "SolidBody 2(M5_HOLES)" is PETG printed
+18:53:00 DOWN_M5WALLS: mesh rc 0, 58186 nodes, 36218 elements, free 21.9 GB
+18:53:09 DOWN_M5WALLS: fixture nodes 192, box [-54.75, -2.75, 0.0] to [54.75, 2.74, 4.0]
+18:53:09 DOWN_M5WALLS: load nodes 740, box [-42.49, -30.0, 11.5] to [42.5, 30.0, 11.5]
+18:53:13 mount nodes 27078 of 58186
+18:53:13 SUMMARY {'study': 'DOWN_M5WALLS', 'el_mm': 2.0, 'nodes': 58186, 'elements': 36218, 'solve_s': 17, 'peak_vm_all': 1.6, 'peak_vm_away': 1.6, 'at': [-37.0, -10.0, 0.0], 'sf_yield': 28.06, 'max_disp_mm': 0.012762866914272308, 'reaction_N': [0.0, -0.0, 9.001, 9.001], 'applied_N': 9.0}
+18:53:13 judge: pass; lowest factor 124.63 at "mount, 9 N, vm"
+18:53:13 clock: D1 fea job: done: 23.5 min since the job began
+18:53:13 closing pid 163764 committed MB 1719
+FEA DONE

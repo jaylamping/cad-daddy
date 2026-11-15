@@ -1,0 +1,119 @@
+19:00:57 SolidWorks pid 166260 free GB 22.3
+19:00:57 clock: D2 build job: instance up: 31.2 min since the job began
+19:01:00 ok BLOCK volume change: 34398.0000 (expected 34398.0000)
+19:01:00 BLOCK: added 34398.00 mm3
+19:01:01 ok OPENING volume change: 12360.7696 (expected 12360.7696)
+19:01:01 OPENING: cut 12360.77 mm3
+19:01:01 ok SEAT volume change: 1679.0515 (expected 1679.0515)
+19:01:01 SEAT: cut 1679.05 mm3
+19:01:02 ok CLEARANCE_HOLES volume change: 1156.6904 (expected 1156.6904)
+19:01:02 CLEARANCE_HOLES: cut 1156.69 mm3
+19:01:02 ok COUNTERBORES volume change: 268.7318 (expected 268.7318)
+19:01:02 COUNTERBORES: cut 268.73 mm3
+19:01:03 ok housing_upper bodies: 1.0000 (expected 1.0000)
+19:01:03 ok housing_upper errors: 0.0000 (expected 0.0000)
+19:01:03 housing_upper volume 18932.76 box [-36.0, 0.15, -4.0, 36.0, 32.0, 11.0]
+19:01:03 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d2\housing_upper.step 74766 bytes
+19:01:03 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d2\housing_upper.stl 76884 bytes
+19:01:07 ok BLOCK volume change: 34398.0000 (expected 34398.0000)
+19:01:07 BLOCK: added 34398.00 mm3
+19:01:08 ok OPENING volume change: 12360.7696 (expected 12360.7696)
+19:01:08 OPENING: cut 12360.77 mm3
+19:01:08 ok SEAT volume change: 1679.0515 (expected 1679.0515)
+19:01:08 SEAT: cut 1679.05 mm3
+19:01:08 ok INSERT_HOLES volume change: 351.8584 (expected 351.8584)
+19:01:08 INSERT_HOLES: cut 351.86 mm3
+19:01:09 ok M4_HOLES volume change: 394.0814 (expected 394.0814)
+19:01:09 M4_HOLES: cut 394.08 mm3
+19:01:09 ok housing_lower bodies: 1.0000 (expected 1.0000)
+19:01:09 ok housing_lower errors: 0.0000 (expected 0.0000)
+19:01:09 housing_lower volume 19612.24 box [-36.0, -32.0, -4.0, 36.0, -0.15, 11.0]
+19:01:09 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d2\housing_lower.step 65097 bytes
+19:01:10 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d2\housing_lower.stl 62284 bytes
+19:01:11 ok RING volume change: 2199.1149 (expected 2199.1149)
+19:01:11 RING: added 2199.11 mm3
+19:01:11 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d2\ring.stl 24484 bytes
+19:01:11 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-d\_wip\sw-eval\sonnet-adv-d\d2\ring.step 17122 bytes
+19:01:11 clock: D2 design parts built: 31.4 min since the job began
+19:01:12 ok BLOCK volume change: 34560.0000 (expected 34560.0000)
+19:01:12 BLOCK: added 34560.00 mm3
+19:01:13 ok OPENING volume change: 12464.2689 (expected 12464.2689)
+19:01:13 OPENING: cut 12464.27 mm3
+19:01:13 ok SEAT volume change: 1685.6215 (expected 1685.6215)
+19:01:13 SEAT: cut 1685.62 mm3
+19:01:14 ok CLEARANCE_HOLES volume change: 1162.1380 (expected 1162.1380)
+19:01:14 CLEARANCE_HOLES: cut 1162.14 mm3
+19:01:14 ok COUNTERBORES volume change: 268.7318 (expected 268.7318)
+19:01:14 COUNTERBORES: cut 268.73 mm3
+19:01:17 RECESS_U: cut 7.77 mm3
+19:01:17 ok housing_upper_fe bodies: 1.0000 (expected 1.0000)
+19:01:17 ok housing_upper_fe errors: 0.0000 (expected 0.0000)
+19:01:17 housing_upper_fe volume 18971.47 box [-36.0, 0.0, -4.0, 36.0, 32.0, 11.0]
+19:01:18 ok BLOCK volume change: 34560.0000 (expected 34560.0000)
+19:01:18 BLOCK: added 34560.00 mm3
+19:01:19 ok OPENING volume change: 12464.2689 (expected 12464.2689)
+19:01:19 OPENING: cut 12464.27 mm3
+19:01:19 ok SEAT volume change: 1685.6215 (expected 1685.6215)
+19:01:19 SEAT: cut 1685.62 mm3
+19:01:20 ok INSERT_HOLES volume change: 351.8584 (expected 351.8584)
+19:01:20 INSERT_HOLES: cut 351.86 mm3
+19:01:20 ok M4_HOLES volume change: 394.0814 (expected 394.0814)
+19:01:20 M4_HOLES: cut 394.08 mm3
+19:01:21 RECESS_L: cut 7.77 mm3
+19:01:21 ok housing_lower_fe bodies: 1.0000 (expected 1.0000)
+19:01:21 ok housing_lower_fe errors: 0.0000 (expected 0.0000)
+19:01:21 housing_lower_fe volume 19656.4 box [-36.0, -32.0, -4.0, 36.0, 0.0, 11.0]
+19:01:23 ok RING volume change: 2141.9928 (expected 2141.9928)
+19:01:23 RING: added 2141.99 mm3
+19:01:24 ok PADBODY volume change: 2.5447 (expected 2.5447)
+19:01:24 PADBODY: added 2.54 mm3
+19:01:27 ok PADBODY volume change: 2.5447 (expected 2.5447)
+19:01:27 PADBODY: added 2.54 mm3
+19:01:29 ok PADBODY volume change: 2.5447 (expected 2.5447)
+19:01:29 PADBODY: added 2.54 mm3
+19:01:30 ok PADBODY volume change: 2.5447 (expected 2.5447)
+19:01:30 PADBODY: added 2.54 mm3
+19:01:31 ok PINSHANK volume change: 204.9889 (expected 204.9889)
+19:01:31 PINSHANK: added 204.99 mm3
+19:01:32 ok PINHEAD volume change: 79.2624 (expected 79.2624)
+19:01:32 PINHEAD: added 79.26 mm3
+19:01:33 ok PINTHREAD volume change: 71.6283 (expected 71.6283)
+19:01:33 PINTHREAD: added 71.63 mm3
+19:01:33 ok pin_1 bodies: 1.0000 (expected 1.0000)
+19:01:34 ok PINSHANK volume change: 204.9889 (expected 204.9889)
+19:01:34 PINSHANK: added 204.99 mm3
+19:01:35 ok PINHEAD volume change: 79.2624 (expected 79.2624)
+19:01:35 PINHEAD: added 79.26 mm3
+19:01:37 ok PINTHREAD volume change: 71.6283 (expected 71.6283)
+19:01:37 PINTHREAD: added 71.63 mm3
+19:01:38 ok pin_2 bodies: 1.0000 (expected 1.0000)
+19:01:39 ok PINSHANK volume change: 204.9889 (expected 204.9889)
+19:01:39 PINSHANK: added 204.99 mm3
+19:01:39 ok PINHEAD volume change: 79.2624 (expected 79.2624)
+19:01:39 PINHEAD: added 79.26 mm3
+19:01:40 ok PINTHREAD volume change: 71.6283 (expected 71.6283)
+19:01:40 PINTHREAD: added 71.63 mm3
+19:01:40 ok pin_3 bodies: 1.0000 (expected 1.0000)
+19:01:41 ok PINSHANK volume change: 204.9889 (expected 204.9889)
+19:01:41 PINSHANK: added 204.99 mm3
+19:01:42 ok PINHEAD volume change: 79.2624 (expected 79.2624)
+19:01:42 PINHEAD: added 79.26 mm3
+19:01:43 ok PINTHREAD volume change: 71.6283 (expected 71.6283)
+19:01:43 PINTHREAD: added 71.63 mm3
+19:01:43 ok pin_4 bodies: 1.0000 (expected 1.0000)
+19:01:48 ok bodies in pair_fe: 11.0000 (expected 11.0000)
+19:01:48 body ('<pin_2>-<PINTHREAD>', 355.88, [28.1, -6.2, 4.1, 33.9, 31.5, 9.9])
+19:01:48 body ('<pad_1>-<PADBODY>', 2.54, [16.78, 16.78, -0.85, 18.58, 18.58, 0.15])
+19:01:48 body ('<pin_3>-<PINTHREAD>', 355.88, [-33.9, -6.2, -2.9, -28.1, 31.5, 2.9])
+19:01:48 body ('<pad_2>-<PADBODY>', 2.54, [-18.58, 16.78, -0.85, -16.78, 18.58, 0.15])
+19:01:48 body ('<housing_upper_fe>-<RECESS_U>', 18971.47, [-36.0, 0.0, -4.0, 36.0, 32.0, 11.0])
+19:01:48 body ('RECESS_L', 19656.4, [-36.0, -32.0, -4.0, 36.0, 0.0, 11.0])
+19:01:48 body ('<pad_3>-<PADBODY>', 2.54, [-18.58, -18.58, -0.85, -16.78, -16.78, 0.15])
+19:01:48 body ('<pad_4>-<PADBODY>', 2.54, [16.78, -18.58, -0.85, 18.58, -16.78, 0.15])
+19:01:48 body ('<pin_1>-<PINTHREAD>', 355.88, [28.1, -6.2, -2.9, 33.9, 31.5, 2.9])
+19:01:48 body ('<ring_fe>-<RING>', 2141.99, [-25.95, -25.95, 0.15, 25.95, 25.95, 7.15])
+19:01:48 body ('<pin_4>-<PINTHREAD>', 355.88, [-33.9, -6.2, 4.1, -28.1, 31.5, 9.9])
+19:01:48 ok rebuild errors: 0.0000 (expected 0.0000)
+19:01:49 clock: D2 build job: done: 32.1 min since the job began
+19:01:49 closing pid 166260 committed MB 1858
+D2 BUILD DONE

@@ -1,0 +1,22 @@
+{
+ "run": "haiku-oplan-d",
+ "date": "2026-11-15",
+ "machine": "holly-pc",
+ "set": "D",
+ "model": "claude-haiku-5-5",
+ "plan": "Opus",
+ "base_commit": "908f1cc",
+ "tasks": {
+  "total": 3,
+  "reached": 3,
+  "right": 1,
+  "right_basis": "own report, not checked"
+ },
+ "wall_minutes": 47.0,
+ "waiting_minutes": 19.0,
+ "cost_usd": 4.51,
+ "cost_basis": "estimated from the session's tokens at the rates the recorded Haiku sessions imply (cache read 0.05, cache write 1.00, output 2.50 USD per million); the record held no cost",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "D3 right. D1 and D2 partial by its own account; 19 min lost to two hidden message boxes the helper does not answer."
+}

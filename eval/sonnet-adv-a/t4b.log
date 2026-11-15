@@ -1,0 +1,82 @@
+17:42:19 SolidWorks pid 127232 free GB 22.8
+17:42:19 clock: T4b job start: 8.9 min since the job began
+17:42:23 ok ring face found: 1.0000 (expected 1.0000)
+17:42:23 ok ring face found: 1.0000 (expected 1.0000)
+17:42:23 ok ring face found: 1.0000 (expected 1.0000)
+17:42:23 ok ring face found: 1.0000 (expected 1.0000)
+17:42:23 ok corner edge: 1.0000 (expected 1.0000)
+17:42:23 PREDICT T4 SHARP el1.6: {'nodes': 145019, 'disp_mm': 'about 2.8, as T3'}
+17:42:29 T4 SHARP el1.6: mesh rc 0, 145669 nodes, 96267 elements, free 22.4 GB
+17:43:04 T4 SHARP el1.6: fixture nodes 3248, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:43:04 T4 SHARP el1.6: load nodes 1540, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:43:27 {'study': 'T4 SHARP el1.6', 'el_mm': 1.6, 'nodes': 145669, 'elements': 96267, 'solve_s': 62, 'peak_vm_all': 31.64, 'peak_vm_away': 30.0, 'at': [6.0, 13.85, 6.0], 'sf_yield': 1.5, 'max_disp_mm': 3.153587818145752, 'reaction_N': [-150.002, 0.004, 0.001, 150.002], 'applied_N': 150.0}
+17:43:27 ok reaction Fx = -150: -150.0020 (expected -150.0000)
+17:43:27 T4 SHARP el1.6 {"vm": 30.001, "vm_at": [6.0, 13.85, 6.0], "layer_Z": 5.756, "layer_Z_at": [6.38, 37.23, 6.0], "sz_min_on_corner": -37.469, "sz_max_on_corner": 0.724, "corner_nodes": 1831, "avg_vm_0.5": 15.153, "avg_n_0.5": 57, "avg_vm_1.0": 10.802, "avg_n_1.0": 283, "avg_vm_2.0": 8.639, "avg_n_2.0": 1014}
+17:43:27 clock: T4b T4 SHARP el1.6 done: 10.1 min since the job began
+17:43:28 ok BASE volume change: 24000.0000 (expected 24000.0000)
+17:43:28 BASE: added 24000.00 mm3
+17:43:29 ok UPRIGHT volume change: 12000.0000 (expected 12000.0000)
+17:43:29 UPRIGHT: added 12000.00 mm3
+17:43:29 ok inside-corner edges: 1.0000 (expected 1.0000)
+17:43:29 INSIDE_FILLET: R0.4 on 1 edges, volume change +1.72 mm3
+17:43:29 ok fillet radius built: 0.4000 (expected 0.4000)
+17:43:29 ok fillet dv: 1.7168 (expected 1.7168)
+17:43:30 ok BASE_HOLES volume change: 570.1991 (expected 570.1991)
+17:43:30 BASE_HOLES: cut 570.20 mm3
+17:43:31 ok BORE volume change: 2280.7963 (expected 2280.7963)
+17:43:31 BORE: cut 2280.80 mm3
+17:43:32 ok SMALL_HOLES volume change: 217.9009 (expected 217.9009)
+17:43:32 SMALL_HOLES: cut 217.90 mm3
+17:43:32 ok base corner edges: 2.0000 (expected 2.0000)
+17:43:32 BASE_ROUNDS: R5.0 on 2 edges, volume change -64.38 mm3
+17:43:32 ok R5 base built: 5.0000 (expected 5.0000)
+17:43:32 ok upright top edges: 2.0000 (expected 2.0000)
+17:43:32 UPRIGHT_ROUNDS: R5.0 on 2 edges, volume change -64.38 mm3
+17:43:32 ok R5 upright built: 5.0000 (expected 5.0000)
+17:43:33 ok volume: 32804.0595 (expected 32804.0595)
+17:43:33 ok bodies: 1.0000 (expected 1.0000)
+17:43:33 ok errors: 0.0000 (expected 0.0000)
+17:43:36 ok RINGS volume change: 23.0342 (expected 23.0342)
+17:43:36 RINGS: cut 23.03 mm3
+17:43:36 ok twin removes under 0.1 %: 0.0702 (expected 0.0700)
+17:43:36 ok ring face found: 1.0000 (expected 1.0000)
+17:43:36 ok ring face found: 1.0000 (expected 1.0000)
+17:43:36 ok ring face found: 1.0000 (expected 1.0000)
+17:43:37 ok ring face found: 1.0000 (expected 1.0000)
+17:43:37 ok R0.4 face: 1.0000 (expected 1.0000)
+17:43:37 PREDICT T4 R04 el3.0: {'nodes': 22000, 'disp_mm': 'about 2.8, as T3'}
+17:43:38 T4 R04 el3.0: mesh rc 0, 44019 nodes, 27762 elements, free 22.4 GB
+17:43:43 T4 R04 el3.0: fixture nodes 864, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:43:43 T4 R04 el3.0: load nodes 418, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.95]
+17:43:47 {'study': 'T4 R04 el3.0', 'el_mm': 3.0, 'nodes': 44019, 'elements': 27762, 'solve_s': 10, 'peak_vm_all': 38.31, 'peak_vm_away': 38.31, 'at': [6.11, 37.78, 6.13], 'sf_yield': 1.17, 'max_disp_mm': 3.123162269592285, 'reaction_N': [-150.0, -0.003, -0.0, 150.0], 'applied_N': 150.0}
+17:43:47 ok reaction Fx = -150: -150.0000 (expected -150.0000)
+17:43:47 T4 R04 el3.0 {"vm": 38.313, "vm_at": [6.11, 37.78, 6.13], "layer_Z": 2.551, "layer_Z_at": [6.6, 4.98, 6.0], "sz_min_on_corner": -34.552, "sz_max_on_corner": -1.135, "corner_nodes": 2229, "avg_vm_0.5": 15.199, "avg_n_0.5": 60, "avg_vm_1.0": 13.426, "avg_n_1.0": 257, "avg_vm_2.0": 11.324, "avg_n_2.0": 915}
+17:43:47 clock: T4b T4 R04 el3.0 done: 10.4 min since the job began
+17:43:48 ok ring face found: 1.0000 (expected 1.0000)
+17:43:48 ok ring face found: 1.0000 (expected 1.0000)
+17:43:48 ok ring face found: 1.0000 (expected 1.0000)
+17:43:48 ok ring face found: 1.0000 (expected 1.0000)
+17:43:48 ok R0.4 face: 1.0000 (expected 1.0000)
+17:43:48 PREDICT T4 R04 el2.2: {'nodes': 55785, 'disp_mm': 'about 2.8, as T3'}
+17:43:50 T4 R04 el2.2: mesh rc 0, 85045 nodes, 55010 elements, free 22.4 GB
+17:44:06 T4 R04 el2.2: fixture nodes 1664, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:44:06 T4 R04 el2.2: load nodes 830, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:44:13 {'study': 'T4 R04 el2.2', 'el_mm': 2.2, 'nodes': 85045, 'elements': 55010, 'solve_s': 25, 'peak_vm_all': 38.35, 'peak_vm_away': 38.35, 'at': [6.13, 12.5, 6.11], 'sf_yield': 1.17, 'max_disp_mm': 3.1302366256713867, 'reaction_N': [-149.995, -0.002, 0.003, 149.995], 'applied_N': 150.0}
+17:44:13 ok reaction Fx = -150: -149.9950 (expected -150.0000)
+17:44:14 T4 R04 el2.2 {"vm": 38.352, "vm_at": [6.13, 12.5, 6.11], "layer_Z": 2.475, "layer_Z_at": [6.55, 20.67, 6.0], "sz_min_on_corner": -34.646, "sz_max_on_corner": -0.798, "corner_nodes": 3450, "avg_vm_0.5": 16.847, "avg_n_0.5": 111, "avg_vm_1.0": 13.42, "avg_n_1.0": 491, "avg_vm_2.0": 10.901, "avg_n_2.0": 1593}
+17:44:14 clock: T4b T4 R04 el2.2 done: 10.9 min since the job began
+17:44:14 ok ring face found: 1.0000 (expected 1.0000)
+17:44:14 ok ring face found: 1.0000 (expected 1.0000)
+17:44:14 ok ring face found: 1.0000 (expected 1.0000)
+17:44:14 ok ring face found: 1.0000 (expected 1.0000)
+17:44:14 ok R0.4 face: 1.0000 (expected 1.0000)
+17:44:14 PREDICT T4 R04 el1.6: {'nodes': 145019, 'disp_mm': 'about 2.8, as T3'}
+17:44:20 T4 R04 el1.6: mesh rc 0, 195072 nodes, 130588 elements, free 22.3 GB
+17:45:23 T4 R04 el1.6: fixture nodes 3248, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:45:23 T4 R04 el1.6: load nodes 1540, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:46:08 {'study': 'T4 R04 el1.6', 'el_mm': 1.6, 'nodes': 195072, 'elements': 130588, 'solve_s': 112, 'peak_vm_all': 40.41, 'peak_vm_away': 40.41, 'at': [6.13, 35.9, 6.11], 'sf_yield': 1.11, 'max_disp_mm': 3.1340231895446777, 'reaction_N': [-149.995, 0.005, -0.001, 149.995], 'applied_N': 150.0}
+17:46:08 ok reaction Fx = -150: -149.9950 (expected -150.0000)
+17:46:09 T4 R04 el1.6 {"vm": 40.408, "vm_at": [6.13, 35.9, 6.11], "layer_Z": 1.655, "layer_Z_at": [6.51, 4.15, 6.0], "sz_min_on_corner": -33.364, "sz_max_on_corner": -1.749, "corner_nodes": 12816, "avg_vm_0.5": 17.294, "avg_n_0.5": 371, "avg_vm_1.0": 13.819, "avg_n_1.0": 1506, "avg_vm_2.0": 11.63, "avg_n_2.0": 4431}
+17:46:09 clock: T4b T4 R04 el1.6 done: 12.8 min since the job began
+17:46:11 clock: T4b job end: 12.8 min since the job began
+17:46:11 closing pid 127232 committed MB 1899

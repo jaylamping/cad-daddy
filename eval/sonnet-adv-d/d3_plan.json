@@ -1,0 +1,258 @@
+{
+ "plan": {
+  "P1": {
+   "p": {
+    "od": 70,
+    "t": 6,
+    "bore": 30,
+    "A": [
+     6,
+     3.4,
+     50
+    ],
+    "B": [
+     4,
+     4.5,
+     60,
+     8,
+     3
+    ]
+   },
+   "offA": 0.0,
+   "offB": 15.0,
+   "why": "ring B turned 15 deg: holes of the two rings overlap at the table angles (thinnest hole-to-hole wall -0.7 mm on the top face, 1.05 through), 3.024 mm after",
+   "changed": true,
+   "walls_table": {
+    "hole_hole_top": -0.7,
+    "hole_hole_through": 1.05,
+    "hole_bore": 8.3,
+    "hole_outside": 1.0,
+    "floor": 3,
+    "hole_outside_after_chamfer": 1.0,
+    "min": -0.7
+   },
+   "walls_built": {
+    "hole_hole_top": 3.024,
+    "hole_hole_through": 4.774,
+    "hole_bore": 8.3,
+    "hole_outside": 1.0,
+    "floor": 3,
+    "hole_outside_after_chamfer": 1.0,
+    "min": 1.0
+   }
+  },
+  "P2": {
+   "p": {
+    "od": 84,
+    "t": 6,
+    "bore": 40,
+    "A": [
+     6,
+     4.5,
+     62
+    ],
+    "B": [
+     6,
+     4.5,
+     62,
+     8,
+     3
+    ]
+   },
+   "offA": 0.0,
+   "offB": 30.0,
+   "why": "ring B turned 30 deg: holes of the two rings overlap at the table angles (thinnest hole-to-hole wall -6.25 mm on the top face, -4.5 through), 9.797 mm after",
+   "changed": true,
+   "walls_table": {
+    "hole_hole_top": -6.25,
+    "hole_hole_through": -4.5,
+    "hole_bore": 7.0,
+    "hole_outside": 7.0,
+    "floor": 3,
+    "hole_outside_after_chamfer": 7.0,
+    "min": -6.25
+   },
+   "walls_built": {
+    "hole_hole_top": 9.797,
+    "hole_hole_through": 11.547,
+    "hole_bore": 7.0,
+    "hole_outside": 7.0,
+    "floor": 3,
+    "hole_outside_after_chamfer": 7.0,
+    "min": 3
+   }
+  },
+  "P3": {
+   "p": {
+    "od": 96,
+    "t": 8,
+    "bore": 52,
+    "A": [
+     8,
+     3.4,
+     66
+    ],
+    "B": [
+     4,
+     5.5,
+     84,
+     10,
+     4
+    ]
+   },
+   "offA": 0.0,
+   "offB": 0.0,
+   "why": "",
+   "changed": false,
+   "walls_table": {
+    "hole_hole_top": 2.3,
+    "hole_hole_through": 4.55,
+    "hole_bore": 5.3,
+    "hole_outside": 1.0,
+    "floor": 4,
+    "hole_outside_after_chamfer": 1.0,
+    "min": 1.0
+   },
+   "walls_built": {
+    "hole_hole_top": 2.3,
+    "hole_hole_through": 4.55,
+    "hole_bore": 5.3,
+    "hole_outside": 1.0,
+    "floor": 4,
+    "hole_outside_after_chamfer": 1.0,
+    "min": 1.0
+   }
+  },
+  "P4": {
+   "p": {
+    "od": 70,
+    "t": 5,
+    "bore": 28,
+    "A": [
+     4,
+     3.4,
+     40
+    ],
+    "B": [
+     6,
+     4.5,
+     58,
+     8,
+     4.0
+    ]
+   },
+   "offA": 0.0,
+   "offB": 0.0,
+   "why": "outside diameter 60 -> 70: ring B circle 58 with counterbore 8 reaches radius 33.0 of a plate radius 30.0; counterbore depth 4.6 -> 4: the floor would be 0.4 mm (under 1.0)",
+   "changed": true,
+   "walls_table": {
+    "hole_hole_top": 3.3,
+    "hole_hole_through": 5.05,
+    "hole_bore": 4.3,
+    "hole_outside": -3.0,
+    "floor": 0.4,
+    "hole_outside_after_chamfer": -3.0,
+    "min": -3.0
+   },
+   "walls_built": {
+    "hole_hole_top": 3.3,
+    "hole_hole_through": 5.05,
+    "hole_bore": 4.3,
+    "hole_outside": 2.0,
+    "floor": 1.0,
+    "hole_outside_after_chamfer": 2.0,
+    "min": 1.0
+   }
+  },
+  "P5": {
+   "p": {
+    "od": 120,
+    "t": 8,
+    "bore": 60,
+    "A": [
+     12,
+     4.5,
+     80
+    ],
+    "B": [
+     6,
+     6.6,
+     104,
+     11,
+     5
+    ]
+   },
+   "offA": 0.0,
+   "offB": 0.0,
+   "why": "",
+   "changed": false,
+   "walls_table": {
+    "hole_hole_top": 4.25,
+    "hole_hole_through": 6.45,
+    "hole_bore": 7.75,
+    "hole_outside": 2.5,
+    "floor": 3,
+    "hole_outside_after_chamfer": 2.5,
+    "min": 2.5
+   },
+   "walls_built": {
+    "hole_hole_top": 4.25,
+    "hole_hole_through": 6.45,
+    "hole_bore": 7.75,
+    "hole_outside": 2.5,
+    "floor": 3,
+    "hole_outside_after_chamfer": 2.5,
+    "min": 2.5
+   }
+  },
+  "P6": {
+   "p": {
+    "od": 76,
+    "t": 6,
+    "bore": 34,
+    "A": [
+     6,
+     3.4,
+     46
+    ],
+    "B": [
+     3,
+     4.5,
+     64,
+     8,
+     3
+    ]
+   },
+   "offA": 0.0,
+   "offB": 0.0,
+   "why": "",
+   "changed": false,
+   "walls_table": {
+    "hole_hole_top": 3.3,
+    "hole_hole_through": 5.05,
+    "hole_bore": 4.3,
+    "hole_outside": 2.0,
+    "floor": 3,
+    "hole_outside_after_chamfer": 2.0,
+    "min": 2.0
+   },
+   "walls_built": {
+    "hole_hole_top": 3.3,
+    "hole_hole_through": 5.05,
+    "hole_bore": 4.3,
+    "hole_outside": 2.0,
+    "floor": 3,
+    "hole_outside_after_chamfer": 2.0,
+    "min": 2.0
+   }
+  }
+ },
+ "problems": [
+  "P1: rings A and B collide at 0 deg (-0.7 mm top, 1.05 through); built with ring B turned 15 deg",
+  "P1: questioned, built as the table: the counterbores leave only 1.0 mm to the rim (over the 0.6 mm minimum; a later chamfer or a rim drill will eat it)",
+  "P2: rings A and B collide at 0 deg (-6.25 mm top, -4.5 through); built with ring B turned 30 deg",
+  "P3: questioned, built as the table: the counterbores leave only 1.0 mm to the rim (over the 0.6 mm minimum; a later chamfer or a rim drill will eat it)",
+  "P4: ring B on a 58 circle with a 8 counterbore reaches radius 33.0, outside the 60 plate (wall -3.0); built with outside 70",
+  "P4: counterbore depth 4.6 in a 5 plate leaves a 0.4 mm floor; built with depth 4 (floor 1.0)"
+ ]
+}

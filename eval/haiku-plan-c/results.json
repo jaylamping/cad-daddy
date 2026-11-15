@@ -1,0 +1,2034 @@
+{
+ "C1": {
+  "status": "done",
+  "volume_mm3": 219436.0,
+  "hand_volume_mm3": 219436.0,
+  "mass_g": 261.13,
+  "hand_mass_g": 261.13,
+  "bodies": 1,
+  "shape": {
+   "triangles": 1632,
+   "area_mm2": 38261.4,
+   "flat_share": 0.91,
+   "largest_flat": 0.144,
+   "sharp_mm": 2406.4,
+   "sharp_per_area": 12.3,
+   "bbox_mm": [
+    70.0,
+    44.0,
+    250.0
+   ]
+  },
+  "box_mm": [
+   -35.0,
+   -22.0,
+   -215.0,
+   35.0,
+   22.0,
+   35.0
+  ],
+  "stl": {
+   "volume": 219351.8,
+   "watertight": true,
+   "shells": 1,
+   "triangles": 1632
+  },
+  "holes_measured": [
+   [
+    -25.0,
+    0.0,
+    0.0
+   ],
+   [
+    -12.5,
+    0.0,
+    -21.651
+   ],
+   [
+    -12.5,
+    0.0,
+    21.651
+   ],
+   [
+    12.5,
+    0.0,
+    -21.651
+   ],
+   [
+    12.5,
+    0.0,
+    21.651
+   ],
+   [
+    25.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "pin_holes_measured": [
+   [
+    0.0,
+    -19.0,
+    -200.0
+   ],
+   [
+    0.0,
+    19.0,
+    -200.0
+   ]
+  ],
+  "model_sha256": "0c230a2d94868d1d9a7688eb79986f4c9085e5b5a7358b55c8d5ecf351e9f842"
+ },
+ "C2": {
+  "ideas": {
+   "A": {
+    "table": "STEM_A",
+    "window": false,
+    "hand_factor_load_y": 3.61,
+    "hand_factor_load_y_at_z": -32.0,
+    "hand_factor_load_x": 7.97,
+    "hand_factor_load_x_at_z": -60.0,
+    "built": true,
+    "measured": {
+     "table": "STEM_A",
+     "loft_mode": "arcs4",
+     "order": "stem first",
+     "arc_flip": 1,
+     "rims": "true arcs",
+     "stem_mm3": 98908.6,
+     "hub_added_mm3": 21832.6,
+     "knuckle_added_mm3": 11745.6,
+     "slot_mm3": 31445.5,
+     "form_mm3": 101041.3
+    },
+    "bodies": 1,
+    "volume_mm3": 101041.3,
+    "mass_g": 120.24,
+    "shape": {
+     "triangles": 16450,
+     "area_mm2": 24445.8,
+     "flat_share": 0.247,
+     "largest_flat": 0.098,
+     "sharp_mm": 615.4,
+     "sharp_per_area": 3.94,
+     "bbox_mm": [
+      71.99,
+      44.0,
+      248.94
+     ]
+    },
+    "stl_watertight": true,
+    "stl_shells": 1,
+    "picture": "pictures/idea_a.png"
+   },
+   "B": {
+    "table": "STEM_B",
+    "window": true,
+    "hand_factor_load_y": 0.89,
+    "hand_factor_load_y_at_z": -60.0,
+    "hand_factor_load_x": 7.83,
+    "hand_factor_load_x_at_z": -60.0,
+    "built": false,
+    "error": "build_form: nothing built the form in 5 tries; last error: expected one body, got [('WINDOW[2]', 536.79, [-18.803, -6.748, -69.906, -10.404, 7.009, -56.418]), ('SLOT', 43678.27, [-19.352, -22.0, -213.0, 19.352, 22.0, -83.647]), ('WINDOW[3]', 29205.7, [-36.0, -4.932, -46.794, 36.0, 7.357, 36.0]), ('WINDOW[1]', 536.79, [10.404, -6.984, -69.906, 18.803, 6.787, -56.418])]"
+   }
+  },
+  "checkpoints": [
+   {
+    "n": 1,
+    "minutes_since_c2_start": 8.9,
+    "picture": "pictures/checkpoint_01.png",
+    "missing": "crude form only: no screw holes, screw-head clearances, pin holes or cable passage yet, nothing measured against the fixed items, no study; mass 120.24 g against 261.13 g boxy; sharp_per_area 3.94, flat_share 0.247"
+   },
+   {
+    "n": 2,
+    "minutes_since_c2_start": 42.2,
+    "picture": "pictures/checkpoint_02.png",
+    "missing": "the study (three load cases) and the before-and-after sheet; fixed items failing: none; hub seam blend did not build: a crease is left where the stem leaves the hub; sharp_per_area 5.14, flat_share 0.209"
+   },
+   {
+    "n": 3,
+    "minutes_since_c2_start": 50.9,
+    "picture": "pictures/checkpoint_03.png",
+    "missing": "gate items not met: ['requirement_met']; verdict fail, lowest factor 1.58; against the look asked for: sharp_per_area 5.14 (boxy 12.3), flat_share 0.209 (boxy 0.91); the hub seam is still a crease"
+   }
+  ],
+  "checkpoint_01_within_20_min": true,
+  "chosen": "A",
+  "table_name": "STEM_A2",
+  "window": false,
+  "eligible": {
+   "A": true,
+   "B": false
+  },
+  "choice_reason": "only A is eligible; B: built False, hand factor load Y 0.89 at Z -60.0, load X 7.83 (2.5 needed), mass None g",
+  "ideas_tried": [
+   {
+    "idea": "A",
+    "name": "bone: one stem that changes section",
+    "built": true,
+    "mass_g": 120.24,
+    "shape": {
+     "triangles": 16450,
+     "area_mm2": 24445.8,
+     "flat_share": 0.247,
+     "largest_flat": 0.098,
+     "sharp_mm": 615.4,
+     "sharp_per_area": 3.94,
+     "bbox_mm": [
+      71.99,
+      44.0,
+      248.94
+     ]
+    },
+    "hand_factor_load_y": 3.61,
+    "hand_factor_load_x": 7.97,
+    "eligible": true,
+    "picture": "pictures/idea_a.png"
+   },
+   {
+    "idea": "B",
+    "name": "open frame: blade with a window, two legs",
+    "built": false,
+    "mass_g": null,
+    "shape": null,
+    "hand_factor_load_y": 0.89,
+    "hand_factor_load_x": 7.83,
+    "eligible": false,
+    "picture": null
+   }
+  ],
+  "mass_before_g": 261.13,
+  "mass_before_from": "C1 run",
+  "build": {
+   "table": "STEM_A2",
+   "loft_mode": "arcs4",
+   "order": "stem first",
+   "arc_flip": 1,
+   "rims": "true arcs",
+   "stem_mm3": 101542.8,
+   "hub_added_mm3": 21814.0,
+   "knuckle_added_mm3": 11747.8,
+   "slot_mm3": 31447.6,
+   "form_mm3": 103657.0,
+   "ramp_blend_radius_mm": null,
+   "ramp_blend_edges": 1,
+   "pin_mm3": 523.0,
+   "cable_mm3": 4894.6,
+   "holes_mm3": 436.1,
+   "heads_mm3": 16.12,
+   "mount_clean_mm3": -0.0
+  },
+  "volume_after_mm3": 97787.2,
+  "mass_after_g": 116.37,
+  "mass_ok": true,
+  "shape_after": {
+   "triangles": 18542,
+   "area_mm2": 28096.8,
+   "flat_share": 0.209,
+   "largest_flat": 0.084,
+   "sharp_mm": 862.0,
+   "sharp_per_area": 5.14,
+   "bbox_mm": [
+    71.97,
+    44.0,
+    248.94
+   ]
+  },
+  "fixed_items_ok": true,
+  "fixed_items_failing": [],
+  "fixed_items_stl": {
+   "mount face: solid just above Y -4, \u00d831.2 to \u00d861.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 238
+   },
+   "mount face: clear just below Y -4, \u00d831.2 to \u00d861.2": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 216
+   },
+   "mount side: nothing below Y -4 inside \u00d862 down to Y -30": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 1080
+   },
+   "bore \u00d830 clear (sampled \u00d829.6)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 605
+   },
+   "screw hole 1 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 1: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 1: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 2 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 2: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 2: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 3 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 3: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 3: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 4 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 4: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 4: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 5 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 5: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 5: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "screw hole 6 \u00d83.4 clear (sampled \u00d83.2)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 125
+   },
+   "screw head 6: \u00d87 clear, Y 4 to 14": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 780
+   },
+   "screw head 6: seat solid under Y 4 at \u00d85.2": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 12
+   },
+   "pin holes \u00d88 clear through both cheeks (sampled \u00d87.8)": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 490
+   },
+   "+Y cheek: solid just behind the inner face out to \u00d815.8": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 72
+   },
+   "+Y cheek: clear just inside the inner face out to \u00d816": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 96
+   },
+   "+Y cheek: 5 mm of material round the pin hole (solid out to \u00d817.6, Y 16.4 to 19.5)": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 216
+   },
+   "-Y cheek: solid just behind the inner face out to \u00d815.8": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 72
+   },
+   "-Y cheek: clear just inside the inner face out to \u00d816": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 96
+   },
+   "-Y cheek: 5 mm of material round the pin hole (solid out to \u00d817.6, Y 16.4 to 19.5)": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 216
+   },
+   "slot: \u00d830 swept cylinder about the pin clear, |Y| < 15.8": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 1305
+   },
+   "slot: clear from Z -183 down, |Y| < 15.8, all X": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 972
+   },
+   "cable: \u00d86 straight passage clear along Z at X 0, Y 0, from the bore to the slot": {
+    "value": 0.0,
+    "want": "clear",
+    "ok": true,
+    "n": 4440
+   },
+   "cable: enclosed (solid beside the tunnel at X \u00b13.6, Z -30 to -160)": {
+    "value": 1.0,
+    "want": "solid",
+    "ok": true,
+    "n": 28
+   }
+  },
+  "fixed_items_solid": {
+   "mount_face": {
+    "area_mm2": 2355.9,
+    "hand_area_mm2": 2355.9,
+    "box": [
+     -31.5,
+     -4.0,
+     -31.5,
+     31.5,
+     -4.0,
+     31.5
+    ]
+   },
+   "bore": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "screw_holes": [
+    [
+     -25.0,
+     0.0,
+     0.0
+    ],
+    [
+     -12.5,
+     0.0,
+     -21.651
+    ],
+    [
+     -12.5,
+     0.0,
+     21.651
+    ],
+    [
+     12.5,
+     0.0,
+     -21.651
+    ],
+    [
+     12.5,
+     0.0,
+     21.651
+    ],
+    [
+     25.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "pin_holes": [
+    {
+     "centre": [
+      0.0,
+      -19.0,
+      -200.0
+     ],
+     "y_from": -22.0,
+     "y_to": -16.0
+    },
+    {
+     "centre": [
+      0.0,
+      19.0,
+      -200.0
+     ],
+     "y_from": 16.0,
+     "y_to": 22.0
+    }
+   ],
+   "inner_face_y16": {
+    "area_mm2": 616.9,
+    "box": [
+     -13.0,
+     16.0,
+     -213.0,
+     13.0,
+     16.0,
+     -183.0
+    ]
+   },
+   "inner_face_y-16": {
+    "area_mm2": 616.9,
+    "box": [
+     -13.0,
+     -16.0,
+     -213.0,
+     13.0,
+     -16.0,
+     -183.0
+    ]
+   }
+  },
+  "stl": {
+   "volume": 97581.6,
+   "watertight": true,
+   "shells": 1,
+   "triangles": 18542,
+   "bounds": [
+    -35.985,
+    -22.0,
+    -213.0,
+    35.985,
+    22.0,
+    35.942
+   ]
+  },
+  "step_in_mm": true,
+  "model_sha256": "6ab146505d186ac7ac646a6b1d42b63b4a128b0db2d47ef8c4ac7387e944d9fb",
+  "print_orientation": "lying on its +Y side: the flat outer face of the +Y cheek (Y +22) on the bed, layers stacked along Y, the long axis (248 mm) along one bed axis of 256 mm; the mounting face Y -4 is a top surface. Supports: under the +Y side of the hub and of the stem (they stand 9 to 18 mm off the bed), and in the slot under the upper (-Y) cheek",
+  "verdict": "fail",
+  "sf_lowest": 1.58,
+  "judge": {
+   "verdict": "fail",
+   "need": 2.0,
+   "lowest_factor": 1.58,
+   "lowest_entry": "+Y, layer",
+   "rows": [
+    {
+     "entry": "+X, vm",
+     "values": [
+      16.503,
+      17.248,
+      17.431
+     ],
+     "limit": 45.0,
+     "factor": 2.58,
+     "converged": true,
+     "last_step_pct": 1.1,
+     "step_before_pct": 4.5,
+     "last_change_mpa": 0.183,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.53,
+     "state": "pass"
+    },
+    {
+     "entry": "+X, layer",
+     "values": [
+      3.067,
+      3.506,
+      3.251
+     ],
+     "limit": 22.5,
+     "factor": 6.92,
+     "converged": true,
+     "last_step_pct": 7.3,
+     "step_before_pct": 14.3,
+     "last_change_mpa": 0.255,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.01,
+     "state": "pass"
+    },
+    {
+     "entry": "+X, shear",
+     "values": [
+      2.217,
+      2.326,
+      2.497
+     ],
+     "limit": 13.0,
+     "factor": 5.21,
+     "converged": true,
+     "last_step_pct": 7.4,
+     "step_before_pct": 4.9,
+     "last_change_mpa": 0.171,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.52,
+     "state": "pass"
+    },
+    {
+     "entry": "-X, vm",
+     "values": [
+      16.503,
+      17.248,
+      17.431
+     ],
+     "limit": 45.0,
+     "factor": 2.58,
+     "converged": true,
+     "last_step_pct": 1.1,
+     "step_before_pct": 4.5,
+     "last_change_mpa": 0.183,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.53,
+     "state": "pass"
+    },
+    {
+     "entry": "-X, layer",
+     "values": [
+      3.176,
+      3.419,
+      3.193
+     ],
+     "limit": 22.5,
+     "factor": 7.05,
+     "converged": true,
+     "last_step_pct": 6.6,
+     "step_before_pct": 7.7,
+     "last_change_mpa": 0.226,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.2,
+     "state": "pass"
+    },
+    {
+     "entry": "-X, shear",
+     "values": [
+      2.217,
+      2.326,
+      2.497
+     ],
+     "limit": 13.0,
+     "factor": 5.21,
+     "converged": true,
+     "last_step_pct": 7.4,
+     "step_before_pct": 4.9,
+     "last_change_mpa": 0.171,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.52,
+     "state": "pass"
+    },
+    {
+     "entry": "+Y, vm",
+     "values": [
+      16.284,
+      17.228,
+      17.229
+     ],
+     "limit": 45.0,
+     "factor": 2.61,
+     "converged": true,
+     "last_step_pct": 0.0,
+     "step_before_pct": 5.8,
+     "last_change_mpa": 0.001,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.61,
+     "state": "pass"
+    },
+    {
+     "entry": "+Y, layer",
+     "values": [
+      14.068,
+      14.041,
+      14.209
+     ],
+     "limit": 22.5,
+     "factor": 1.58,
+     "converged": true,
+     "last_step_pct": 1.2,
+     "step_before_pct": 0.2,
+     "last_change_mpa": 0.168,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 1.55,
+     "state": "fail"
+    },
+    {
+     "entry": "+Y, shear",
+     "values": [
+      7.643,
+      7.423,
+      7.531
+     ],
+     "limit": 13.0,
+     "factor": 1.73,
+     "converged": true,
+     "last_step_pct": 1.5,
+     "step_before_pct": 2.9,
+     "last_change_mpa": 0.108,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 1.68,
+     "state": "fail"
+    }
+   ]
+  },
+  "sf_yield": 2.55,
+  "sf_layer": 1.56,
+  "sf_shear": 1.7,
+  "governing": "+Y, layer at [3.17, -0.41, -32.08] (factor 1.58)",
+  "requirement_met": false,
+  "not_converged": [],
+  "fea_rows": {
+   "+X@4.0": {
+    "el": 4.0,
+    "excessive_prompt": false,
+    "nodes": 82002,
+    "elements": 52983,
+    "solve_s": 22,
+    "reaction_N": [
+     -59.999,
+     0.003,
+     -0.0,
+     59.999
+    ],
+    "max_disp_mm": 4.486,
+    "peak_vm_everywhere": 16.503,
+    "Y": {
+     "vm": 16.503,
+     "vm_at": [
+      8.58,
+      -0.61,
+      -74.54
+     ],
+     "layer": 3.067,
+     "layer_at": [
+      -8.65,
+      -0.64,
+      -72.58
+     ],
+     "shear": 2.217,
+     "shear_at": [
+      7.02,
+      -6.37,
+      -78.35
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 16.503,
+      "vm_at": [
+       8.58,
+       -0.61,
+       -74.54
+      ],
+      "layer": 1.996,
+      "layer_at": [
+       1.23,
+       2.95,
+       -14.95
+      ],
+      "shear": 3.609,
+      "shear_at": [
+       9.3,
+       0.66,
+       -69.8
+      ]
+     },
+     "Y": {
+      "vm": 16.503,
+      "vm_at": [
+       8.58,
+       -0.61,
+       -74.54
+      ],
+      "layer": 3.067,
+      "layer_at": [
+       -8.65,
+       -0.64,
+       -72.58
+      ],
+      "shear": 2.217,
+      "shear_at": [
+       7.02,
+       -6.37,
+       -78.35
+      ]
+     },
+     "Z": {
+      "vm": 16.503,
+      "vm_at": [
+       8.58,
+       -0.61,
+       -74.54
+      ],
+      "layer": 17.888,
+      "layer_at": [
+       -8.65,
+       -0.64,
+       -72.58
+      ],
+      "shear": 3.63,
+      "shear_at": [
+       9.3,
+       0.66,
+       -69.8
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 16.503,
+     "3.0": 16.503,
+     "5.0": 16.503
+    },
+    "peak_vm_on_loaded_faces": 2.265,
+    "waist": {
+     "hand_mpa": 4.72,
+     "mean_vm_2mm": 4.51,
+     "nodes": 7,
+     "at": [
+      10.6,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      16.5,
+      1
+     ],
+     "1.0": [
+      16.5,
+      1
+     ],
+     "2.0": [
+      13.65,
+      7
+     ]
+    }
+   },
+   "-X@4.0": {
+    "el": 4.0,
+    "excessive_prompt": false,
+    "nodes": 82002,
+    "elements": 52983,
+    "solve_s": 22,
+    "reaction_N": [
+     59.999,
+     -0.003,
+     0.0,
+     59.999
+    ],
+    "max_disp_mm": 4.486,
+    "peak_vm_everywhere": 16.503,
+    "Y": {
+     "vm": 16.503,
+     "vm_at": [
+      8.58,
+      -0.61,
+      -74.54
+     ],
+     "layer": 3.176,
+     "layer_at": [
+      8.42,
+      1.67,
+      -74.44
+     ],
+     "shear": 2.217,
+     "shear_at": [
+      7.02,
+      -6.37,
+      -78.35
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 16.503,
+      "vm_at": [
+       8.58,
+       -0.61,
+       -74.54
+      ],
+      "layer": 1.774,
+      "layer_at": [
+       13.61,
+       -2.83,
+       -31.73
+      ],
+      "shear": 3.609,
+      "shear_at": [
+       9.3,
+       0.66,
+       -69.8
+      ]
+     },
+     "Y": {
+      "vm": 16.503,
+      "vm_at": [
+       8.58,
+       -0.61,
+       -74.54
+      ],
+      "layer": 3.176,
+      "layer_at": [
+       8.42,
+       1.67,
+       -74.44
+      ],
+      "shear": 2.217,
+      "shear_at": [
+       7.02,
+       -6.37,
+       -78.35
+      ]
+     },
+     "Z": {
+      "vm": 16.503,
+      "vm_at": [
+       8.58,
+       -0.61,
+       -74.54
+      ],
+      "layer": 18.102,
+      "layer_at": [
+       8.58,
+       -0.61,
+       -74.54
+      ],
+      "shear": 3.63,
+      "shear_at": [
+       9.3,
+       0.66,
+       -69.8
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 16.503,
+     "3.0": 16.503,
+     "5.0": 16.503
+    },
+    "peak_vm_on_loaded_faces": 2.313,
+    "waist": {
+     "hand_mpa": 4.72,
+     "mean_vm_2mm": 4.54,
+     "nodes": 6,
+     "at": [
+      -10.6,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      16.5,
+      1
+     ],
+     "1.0": [
+      16.5,
+      1
+     ],
+     "2.0": [
+      13.65,
+      7
+     ]
+    }
+   },
+   "+Y@4.0": {
+    "el": 4.0,
+    "excessive_prompt": false,
+    "nodes": 82002,
+    "elements": 52983,
+    "solve_s": 21,
+    "reaction_N": [
+     -0.008,
+     -60.002,
+     -0.008,
+     60.002
+    ],
+    "max_disp_mm": 7.971,
+    "peak_vm_everywhere": 38.468,
+    "Y": {
+     "vm": 16.284,
+     "vm_at": [
+      -0.16,
+      8.85,
+      -73.32
+     ],
+     "layer": 14.068,
+     "layer_at": [
+      -3.14,
+      -0.63,
+      -31.78
+     ],
+     "shear": 7.643,
+     "shear_at": [
+      -9.44,
+      4.59,
+      -23.54
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 16.284,
+      "vm_at": [
+       -0.16,
+       8.85,
+       -73.32
+      ],
+      "layer": 8.059,
+      "layer_at": [
+       -0.75,
+       -3.11,
+       -34.48
+      ],
+      "shear": 5.139,
+      "shear_at": [
+       -2.48,
+       -2.02,
+       -33.88
+      ]
+     },
+     "Y": {
+      "vm": 16.284,
+      "vm_at": [
+       -0.16,
+       8.85,
+       -73.32
+      ],
+      "layer": 14.068,
+      "layer_at": [
+       -3.14,
+       -0.63,
+       -31.78
+      ],
+      "shear": 7.643,
+      "shear_at": [
+       -9.44,
+       4.59,
+       -23.54
+      ]
+     },
+     "Z": {
+      "vm": 16.284,
+      "vm_at": [
+       -0.16,
+       8.85,
+       -73.32
+      ],
+      "layer": 17.256,
+      "layer_at": [
+       1.78,
+       -8.48,
+       -73.99
+      ],
+      "shear": 7.988,
+      "shear_at": [
+       -9.44,
+       4.59,
+       -23.54
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 20.041,
+     "3.0": 16.284,
+     "5.0": 16.284
+    },
+    "peak_vm_on_loaded_faces": 9.782,
+    "waist": {
+     "hand_mpa": 4.24,
+     "mean_vm_2mm": 3.97,
+     "nodes": 7,
+     "at": [
+      0.0,
+      11.8,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      16.28,
+      1
+     ],
+     "1.0": [
+      16.28,
+      1
+     ],
+     "2.0": [
+      14.2,
+      6
+     ]
+    }
+   },
+   "+X@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 116027,
+    "elements": 76981,
+    "solve_s": 38,
+    "reaction_N": [
+     -59.996,
+     0.008,
+     -0.001,
+     59.996
+    ],
+    "max_disp_mm": 4.491,
+    "peak_vm_everywhere": 17.248,
+    "Y": {
+     "vm": 17.248,
+     "vm_at": [
+      8.59,
+      -0.14,
+      -73.72
+     ],
+     "layer": 3.506,
+     "layer_at": [
+      -8.59,
+      0.29,
+      -74.07
+     ],
+     "shear": 2.326,
+     "shear_at": [
+      6.76,
+      5.69,
+      -76.64
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 17.248,
+      "vm_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "layer": 2.006,
+      "layer_at": [
+       1.23,
+       2.95,
+       -14.95
+      ],
+      "shear": 3.538,
+      "shear_at": [
+       -9.36,
+       -1.94,
+       -69.04
+      ]
+     },
+     "Y": {
+      "vm": 17.248,
+      "vm_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "layer": 3.506,
+      "layer_at": [
+       -8.59,
+       0.29,
+       -74.07
+      ],
+      "shear": 2.326,
+      "shear_at": [
+       6.76,
+       5.69,
+       -76.64
+      ]
+     },
+     "Z": {
+      "vm": 17.248,
+      "vm_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "layer": 18.853,
+      "layer_at": [
+       -8.59,
+       0.29,
+       -74.07
+      ],
+      "shear": 3.692,
+      "shear_at": [
+       9.05,
+       2.72,
+       -69.62
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 17.248,
+     "3.0": 17.248,
+     "5.0": 17.248
+    },
+    "peak_vm_on_loaded_faces": 2.293,
+    "waist": {
+     "hand_mpa": 4.72,
+     "mean_vm_2mm": 4.57,
+     "nodes": 12,
+     "at": [
+      10.6,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      17.25,
+      1
+     ],
+     "1.0": [
+      17.25,
+      1
+     ],
+     "2.0": [
+      14.48,
+      14
+     ]
+    }
+   },
+   "-X@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 116027,
+    "elements": 76981,
+    "solve_s": 39,
+    "reaction_N": [
+     59.996,
+     -0.008,
+     0.001,
+     59.996
+    ],
+    "max_disp_mm": 4.491,
+    "peak_vm_everywhere": 17.248,
+    "Y": {
+     "vm": 17.248,
+     "vm_at": [
+      8.59,
+      -0.14,
+      -73.72
+     ],
+     "layer": 3.419,
+     "layer_at": [
+      8.59,
+      -0.14,
+      -73.72
+     ],
+     "shear": 2.326,
+     "shear_at": [
+      6.76,
+      5.69,
+      -76.64
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 17.248,
+      "vm_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "layer": 1.792,
+      "layer_at": [
+       13.29,
+       -2.89,
+       -31.8
+      ],
+      "shear": 3.538,
+      "shear_at": [
+       -9.36,
+       -1.94,
+       -69.04
+      ]
+     },
+     "Y": {
+      "vm": 17.248,
+      "vm_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "layer": 3.419,
+      "layer_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "shear": 2.326,
+      "shear_at": [
+       6.76,
+       5.69,
+       -76.64
+      ]
+     },
+     "Z": {
+      "vm": 17.248,
+      "vm_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "layer": 18.963,
+      "layer_at": [
+       8.59,
+       -0.14,
+       -73.72
+      ],
+      "shear": 3.692,
+      "shear_at": [
+       9.05,
+       2.72,
+       -69.62
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 17.248,
+     "3.0": 17.248,
+     "5.0": 17.248
+    },
+    "peak_vm_on_loaded_faces": 2.3,
+    "waist": {
+     "hand_mpa": 4.72,
+     "mean_vm_2mm": 4.59,
+     "nodes": 9,
+     "at": [
+      -10.6,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      17.25,
+      1
+     ],
+     "1.0": [
+      17.25,
+      1
+     ],
+     "2.0": [
+      14.48,
+      14
+     ]
+    }
+   },
+   "+Y@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 116027,
+    "elements": 76981,
+    "solve_s": 38,
+    "reaction_N": [
+     0.003,
+     -60.016,
+     -0.001,
+     60.016
+    ],
+    "max_disp_mm": 7.993,
+    "peak_vm_everywhere": 35.94,
+    "Y": {
+     "vm": 17.228,
+     "vm_at": [
+      0.25,
+      8.82,
+      -73.81
+     ],
+     "layer": 14.041,
+     "layer_at": [
+      3.17,
+      -0.41,
+      -32.08
+     ],
+     "shear": 7.423,
+     "shear_at": [
+      9.44,
+      4.59,
+      -23.54
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 17.228,
+      "vm_at": [
+       0.25,
+       8.82,
+       -73.81
+      ],
+      "layer": 9.191,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 5.445,
+      "shear_at": [
+       -2.48,
+       -2.02,
+       -33.88
+      ]
+     },
+     "Y": {
+      "vm": 17.228,
+      "vm_at": [
+       0.25,
+       8.82,
+       -73.81
+      ],
+      "layer": 14.041,
+      "layer_at": [
+       3.17,
+       -0.41,
+       -32.08
+      ],
+      "shear": 7.423,
+      "shear_at": [
+       9.44,
+       4.59,
+       -23.54
+      ]
+     },
+     "Z": {
+      "vm": 17.228,
+      "vm_at": [
+       0.25,
+       8.82,
+       -73.81
+      ],
+      "layer": 18.467,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 7.751,
+      "shear_at": [
+       15.28,
+       4.59,
+       -23.94
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 20.651,
+     "3.0": 17.228,
+     "5.0": 17.228
+    },
+    "peak_vm_on_loaded_faces": 9.723,
+    "waist": {
+     "hand_mpa": 4.24,
+     "mean_vm_2mm": 3.98,
+     "nodes": 13,
+     "at": [
+      0.0,
+      11.8,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      17.23,
+      1
+     ],
+     "1.0": [
+      17.23,
+      1
+     ],
+     "2.0": [
+      14.52,
+      12
+     ]
+    }
+   },
+   "+X@2.3": {
+    "el": 2.3,
+    "excessive_prompt": false,
+    "nodes": 173186,
+    "elements": 116974,
+    "solve_s": 78,
+    "reaction_N": [
+     -60.0,
+     0.003,
+     -0.001,
+     60.0
+    ],
+    "max_disp_mm": 4.495,
+    "peak_vm_everywhere": 17.431,
+    "Y": {
+     "vm": 17.431,
+     "vm_at": [
+      8.53,
+      -1.08,
+      -73.35
+     ],
+     "layer": 3.251,
+     "layer_at": [
+      -8.64,
+      -0.2,
+      -72.95
+     ],
+     "shear": 2.497,
+     "shear_at": [
+      6.46,
+      6.23,
+      -76.99
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 17.431,
+      "vm_at": [
+       8.53,
+       -1.08,
+       -73.35
+      ],
+      "layer": 2.112,
+      "layer_at": [
+       -14.23,
+       -2.72,
+       -31.59
+      ],
+      "shear": 3.618,
+      "shear_at": [
+       -9.33,
+       -0.47,
+       -69.67
+      ]
+     },
+     "Y": {
+      "vm": 17.431,
+      "vm_at": [
+       8.53,
+       -1.08,
+       -73.35
+      ],
+      "layer": 3.251,
+      "layer_at": [
+       -8.64,
+       -0.2,
+       -72.95
+      ],
+      "shear": 2.497,
+      "shear_at": [
+       6.46,
+       6.23,
+       -76.99
+      ]
+     },
+     "Z": {
+      "vm": 17.431,
+      "vm_at": [
+       8.53,
+       -1.08,
+       -73.35
+      ],
+      "layer": 18.721,
+      "layer_at": [
+       -8.51,
+       -1.02,
+       -73.94
+      ],
+      "shear": 3.704,
+      "shear_at": [
+       8.87,
+       2.67,
+       -70.19
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 17.431,
+     "3.0": 17.431,
+     "5.0": 17.431
+    },
+    "peak_vm_on_loaded_faces": 2.302,
+    "waist": {
+     "hand_mpa": 4.72,
+     "mean_vm_2mm": 4.5,
+     "nodes": 23,
+     "at": [
+      10.6,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      17.43,
+      1
+     ],
+     "1.0": [
+      16.16,
+      2
+     ],
+     "2.0": [
+      14.15,
+      22
+     ]
+    }
+   },
+   "-X@2.3": {
+    "el": 2.3,
+    "excessive_prompt": false,
+    "nodes": 173186,
+    "elements": 116974,
+    "solve_s": 78,
+    "reaction_N": [
+     60.0,
+     -0.003,
+     0.001,
+     60.0
+    ],
+    "max_disp_mm": 4.495,
+    "peak_vm_everywhere": 17.431,
+    "Y": {
+     "vm": 17.431,
+     "vm_at": [
+      8.53,
+      -1.08,
+      -73.35
+     ],
+     "layer": 3.193,
+     "layer_at": [
+      8.65,
+      0.81,
+      -72.63
+     ],
+     "shear": 2.497,
+     "shear_at": [
+      6.46,
+      6.23,
+      -76.99
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 17.431,
+      "vm_at": [
+       8.53,
+       -1.08,
+       -73.35
+      ],
+      "layer": 2.246,
+      "layer_at": [
+       12.98,
+       -2.94,
+       -31.86
+      ],
+      "shear": 3.618,
+      "shear_at": [
+       -9.33,
+       -0.47,
+       -69.67
+      ]
+     },
+     "Y": {
+      "vm": 17.431,
+      "vm_at": [
+       8.53,
+       -1.08,
+       -73.35
+      ],
+      "layer": 3.193,
+      "layer_at": [
+       8.65,
+       0.81,
+       -72.63
+      ],
+      "shear": 2.497,
+      "shear_at": [
+       6.46,
+       6.23,
+       -76.99
+      ]
+     },
+     "Z": {
+      "vm": 17.431,
+      "vm_at": [
+       8.53,
+       -1.08,
+       -73.35
+      ],
+      "layer": 18.768,
+      "layer_at": [
+       8.53,
+       -1.08,
+       -73.35
+      ],
+      "shear": 3.704,
+      "shear_at": [
+       8.87,
+       2.67,
+       -70.19
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 17.431,
+     "3.0": 17.431,
+     "5.0": 17.431
+    },
+    "peak_vm_on_loaded_faces": 2.302,
+    "waist": {
+     "hand_mpa": 4.72,
+     "mean_vm_2mm": 4.53,
+     "nodes": 22,
+     "at": [
+      -10.6,
+      0.0,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      17.43,
+      1
+     ],
+     "1.0": [
+      16.16,
+      2
+     ],
+     "2.0": [
+      14.15,
+      22
+     ]
+    }
+   },
+   "+Y@2.3": {
+    "el": 2.3,
+    "excessive_prompt": false,
+    "nodes": 173186,
+    "elements": 116974,
+    "solve_s": 77,
+    "reaction_N": [
+     0.0,
+     -59.999,
+     -0.004,
+     59.999
+    ],
+    "max_disp_mm": 8.012,
+    "peak_vm_everywhere": 38.046,
+    "Y": {
+     "vm": 17.229,
+     "vm_at": [
+      0.07,
+      -8.66,
+      -73.47
+     ],
+     "layer": 14.209,
+     "layer_at": [
+      3.17,
+      -0.41,
+      -32.08
+     ],
+     "shear": 7.531,
+     "shear_at": [
+      -9.45,
+      4.61,
+      -23.56
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 17.229,
+      "vm_at": [
+       0.07,
+       -8.66,
+       -73.47
+      ],
+      "layer": 9.171,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 5.465,
+      "shear_at": [
+       2.57,
+       -1.9,
+       -33.57
+      ]
+     },
+     "Y": {
+      "vm": 17.229,
+      "vm_at": [
+       0.07,
+       -8.66,
+       -73.47
+      ],
+      "layer": 14.209,
+      "layer_at": [
+       3.17,
+       -0.41,
+       -32.08
+      ],
+      "shear": 7.531,
+      "shear_at": [
+       -9.45,
+       4.61,
+       -23.56
+      ]
+     },
+     "Z": {
+      "vm": 17.229,
+      "vm_at": [
+       0.07,
+       -8.66,
+       -73.47
+      ],
+      "layer": 18.765,
+      "layer_at": [
+       0.07,
+       -8.66,
+       -73.47
+      ],
+      "shear": 7.745,
+      "shear_at": [
+       -9.45,
+       4.61,
+       -23.56
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 21.799,
+     "3.0": 17.229,
+     "5.0": 17.229
+    },
+    "peak_vm_on_loaded_faces": 9.695,
+    "waist": {
+     "hand_mpa": 4.24,
+     "mean_vm_2mm": 3.98,
+     "nodes": 23,
+     "at": [
+      0.0,
+      11.8,
+      -115.0
+     ]
+    },
+    "peak_averages": {
+     "0.5": [
+      17.23,
+      1
+     ],
+     "1.0": [
+      14.75,
+      4
+     ],
+     "2.0": [
+      13.49,
+      26
+     ]
+    }
+   },
+   "+Y rigid@3.0": {
+    "el": 3.0,
+    "excessive_prompt": false,
+    "nodes": 116027,
+    "elements": 76981,
+    "solve_s": 39,
+    "reaction_N": [
+     -0.0,
+     -60.0,
+     -0.0,
+     60.0
+    ],
+    "max_disp_mm": 6.753,
+    "peak_vm_everywhere": 36.598,
+    "Y": {
+     "vm": 17.65,
+     "vm_at": [
+      0.25,
+      8.82,
+      -73.81
+     ],
+     "layer": 14.29,
+     "layer_at": [
+      3.17,
+      -0.41,
+      -32.08
+     ],
+     "shear": 7.555,
+     "shear_at": [
+      9.44,
+      4.59,
+      -23.54
+     ]
+    },
+    "by_print_direction": {
+     "X": {
+      "vm": 17.65,
+      "vm_at": [
+       0.25,
+       8.82,
+       -73.81
+      ],
+      "layer": 9.359,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 5.543,
+      "shear_at": [
+       -2.48,
+       -2.02,
+       -33.88
+      ]
+     },
+     "Y": {
+      "vm": 17.65,
+      "vm_at": [
+       0.25,
+       8.82,
+       -73.81
+      ],
+      "layer": 14.29,
+      "layer_at": [
+       3.17,
+       -0.41,
+       -32.08
+      ],
+      "shear": 7.555,
+      "shear_at": [
+       9.44,
+       4.59,
+       -23.54
+      ]
+     },
+     "Z": {
+      "vm": 17.65,
+      "vm_at": [
+       0.25,
+       8.82,
+       -73.81
+      ],
+      "layer": 18.806,
+      "layer_at": [
+       0.28,
+       -3.19,
+       -34.48
+      ],
+      "shear": 7.89,
+      "shear_at": [
+       15.28,
+       4.59,
+       -23.94
+      ]
+     }
+    },
+    "peak_vm_outside_mm": {
+     "2.0": 21.028,
+     "3.0": 17.65,
+     "5.0": 17.65
+    },
+    "peak_vm_on_loaded_faces": 7.693,
+    "peak_averages": {
+     "0.5": [
+      17.65,
+      1
+     ],
+     "1.0": [
+      17.65,
+      1
+     ],
+     "2.0": [
+      14.87,
+      12
+     ]
+    }
+   }
+  },
+  "mesh_sizes_mm": [
+   4.0,
+   3.0,
+   2.3
+  ],
+  "exclusion_mm": 3.0,
+  "lowest_factor_by_print_direction": {
+   "X": 2.38,
+   "Y": 1.58,
+   "Z": 1.2
+  },
+  "load_y_second_way_ratio": {
+   "vm": 1.024,
+   "layer": 1.018,
+   "shear": 1.018
+  },
+  "mirror_check_vm_diff": 0.0,
+  "study_minutes_since_c2_start": 50.8,
+  "status": "not done: see gate",
+  "shape_before": {
+   "triangles": 1632,
+   "area_mm2": 38261.4,
+   "flat_share": 0.91,
+   "largest_flat": 0.144,
+   "sharp_mm": 2406.4,
+   "sharp_per_area": 12.3,
+   "bbox_mm": [
+    70.0,
+    44.0,
+    250.0
+   ]
+  },
+  "minutes": 50.9,
+  "gate": {
+   "fixed_items_ok": true,
+   "one_body_watertight": true,
+   "requirement_met": false,
+   "mass_not_above_boxy": true
+  }
+ },
+ "set": {
+  "minutes": 51.6,
+  "c1_minutes": 0.5,
+  "c2_minutes": 50.9
+ }
+}

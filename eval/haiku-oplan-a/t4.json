@@ -1,0 +1,268 @@
+{
+  "task": "T4",
+  "status": "done",
+  "notes": [],
+  "series": {
+    "sharp": [
+      {
+        "el": 3.0,
+        "nodes": 35490,
+        "reaction_N": [
+          -149.997,
+          -0.002,
+          0.002,
+          149.997
+        ],
+        "max_disp_mm": 2.739213228225708,
+        "excessive": false,
+        "corner_nodes": 4022,
+        "corner_vm_mpa": 23.182,
+        "corner_at_mm": [
+          6.29,
+          42.07,
+          6.0
+        ],
+        "corner_layer_tension_Z": 4.731,
+        "corner_avg": {
+          "0.5": [
+            16.88,
+            20
+          ],
+          "1.0": [
+            12.605,
+            87
+          ],
+          "2.0": [
+            9.406,
+            353
+          ]
+        },
+        "corner_sigma_xyz_at_peak": [
+          -25.52,
+          -8.968,
+          -2.159
+        ],
+        "corner_P3_at_peak": -27.005,
+        "holes_vm_away6_mpa": 23.182,
+        "holes_layer_tension_Z": 15.507
+      },
+      {
+        "el": 2.0,
+        "nodes": 89474,
+        "reaction_N": [
+          -150.0,
+          0.001,
+          0.004,
+          150.0
+        ],
+        "max_disp_mm": 2.748178243637085,
+        "excessive": false,
+        "corner_nodes": 9473,
+        "corner_vm_mpa": 27.488,
+        "corner_at_mm": [
+          6.0,
+          42.63,
+          6.0
+        ],
+        "corner_layer_tension_Z": 5.93,
+        "corner_avg": {
+          "0.5": [
+            15.14,
+            58
+          ],
+          "1.0": [
+            11.958,
+            236
+          ],
+          "2.0": [
+            9.13,
+            882
+          ]
+        },
+        "corner_sigma_xyz_at_peak": [
+          -35.366,
+          -22.449,
+          -30.616
+        ],
+        "corner_P3_at_peak": -47.663,
+        "holes_vm_away6_mpa": 27.488,
+        "holes_layer_tension_Z": 15.739
+      },
+      {
+        "el": 1.5,
+        "nodes": 180498,
+        "reaction_N": [
+          -150.008,
+          0.002,
+          0.001,
+          150.008
+        ],
+        "max_disp_mm": 2.7525665760040283,
+        "excessive": false,
+        "corner_nodes": 18009,
+        "corner_vm_mpa": 31.711,
+        "corner_at_mm": [
+          6.0,
+          11.76,
+          6.0
+        ],
+        "corner_layer_tension_Z": 7.175,
+        "corner_avg": {
+          "0.5": [
+            14.62,
+            131
+          ],
+          "1.0": [
+            11.481,
+            510
+          ],
+          "2.0": [
+            9.147,
+            1737
+          ]
+        },
+        "corner_sigma_xyz_at_peak": [
+          -37.761,
+          -28.09,
+          -40.077
+        ],
+        "corner_P3_at_peak": -56.155,
+        "holes_vm_away6_mpa": 31.711,
+        "holes_layer_tension_Z": 15.72
+      }
+    ],
+    "r04": [
+      {
+        "el": 3.0,
+        "nodes": 50239,
+        "reaction_N": [
+          -150.003,
+          -0.005,
+          -0.0,
+          150.003
+        ],
+        "max_disp_mm": 2.7565717697143555,
+        "excessive": false,
+        "corner_nodes": 14087,
+        "corner_vm_mpa": 35.046,
+        "corner_at_mm": [
+          6.13,
+          40.27,
+          6.11
+        ],
+        "corner_layer_tension_Z": 2.46,
+        "corner_avg": {
+          "0.5": [
+            18.659,
+            87
+          ],
+          "1.0": [
+            14.657,
+            369
+          ],
+          "2.0": [
+            12.028,
+            1148
+          ]
+        },
+        "corner_sigma_xyz_at_peak": [
+          -22.759,
+          -15.595,
+          -20.949
+        ],
+        "corner_P3_at_peak": -41.79,
+        "holes_vm_away6_mpa": 35.046,
+        "holes_layer_tension_Z": 15.64
+      },
+      {
+        "el": 2.0,
+        "nodes": 131473,
+        "reaction_N": [
+          -150.002,
+          -0.001,
+          -0.003,
+          150.002
+        ],
+        "max_disp_mm": 2.7630116939544678,
+        "excessive": false,
+        "corner_nodes": 41588,
+        "corner_vm_mpa": 36.348,
+        "corner_at_mm": [
+          6.13,
+          41.1,
+          6.11
+        ],
+        "corner_layer_tension_Z": 1.761,
+        "corner_avg": {
+          "0.5": [
+            19.471,
+            306
+          ],
+          "1.0": [
+            15.204,
+            1190
+          ],
+          "2.0": [
+            12.478,
+            3557
+          ]
+        },
+        "corner_sigma_xyz_at_peak": [
+          -22.504,
+          -14.937,
+          -20.142
+        ],
+        "corner_P3_at_peak": -42.013,
+        "holes_vm_away6_mpa": 36.348,
+        "holes_layer_tension_Z": 15.769
+      },
+      {
+        "el": 1.5,
+        "nodes": 247510,
+        "reaction_N": [
+          -150.002,
+          -0.003,
+          0.001,
+          150.002
+        ],
+        "max_disp_mm": 2.7659969329833984,
+        "excessive": false,
+        "corner_nodes": 72724,
+        "corner_vm_mpa": 36.166,
+        "corner_at_mm": [
+          6.12,
+          40.62,
+          6.12
+        ],
+        "corner_layer_tension_Z": 1.52,
+        "corner_avg": {
+          "0.5": [
+            18.662,
+            634
+          ],
+          "1.0": [
+            15.236,
+            2283
+          ],
+          "2.0": [
+            13.01,
+            6303
+          ]
+        },
+        "corner_sigma_xyz_at_peak": [
+          -22.454,
+          -15.796,
+          -21.509
+        ],
+        "corner_P3_at_peak": -42.587,
+        "holes_vm_away6_mpa": 36.166,
+        "holes_layer_tension_Z": 15.921
+      }
+    ]
+  },
+  "volumes": {
+    "None": 32802.343,
+    "0.4": 32804.06
+  },
+  "finished": "23:34:07"
+}

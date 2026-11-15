@@ -1,0 +1,22 @@
+{
+ "run": "haiku-plan-c-followup",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "C",
+ "model": "claude-haiku-5-5",
+ "plan": "Fable review",
+ "base_commit": "9e06740",
+ "tasks": {
+  "total": 1,
+  "reached": 1,
+  "right": 0,
+  "right_basis": "results read from the files"
+ },
+ "wall_minutes": 18.2,
+ "waiting_minutes": null,
+ "cost_usd": null,
+ "cost_basis": "in the cost of haiku-plan-c-round4 (one session)",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "C2 on edge: not shown, 2.06; the pinch remained (the review had the wrong cause: missing rows)."
+}

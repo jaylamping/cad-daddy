@@ -334,6 +334,108 @@ something from the strong model's head into code or a page (the verdict, the clo
 those help every model. The open questions are whether one planner can keep several executors busy at once, and
 whether the same loop holds on a design task with no right answer, where set C showed the largest gap.
 
+## The loop on a design task, another planner, and an advisor (2026-11-14 and 15)
+
+Three questions left open by the section above, each tried once.
+
+### The loop on the organic link (set C, task C2)
+
+Fable planned the link without SolidWorks in 36 minutes ([plans-fable-c](../eval/plans-fable-c/)): a bone with a
+revolved hub and wrist, a stem lofted through 13 sections, expected 116 g. Haiku built it in 51.6 minutes
+([haiku-plan-c](../eval/haiku-plan-c/)): the boxy link exact, the organic link at 116.4 g with all 33 fixed items
+held, and a `fail` at 1.58 that it reported as a fail. Fable reviewed from the files in 17 minutes
+([haiku-plan-c-REVIEW.md](../eval/haiku-plan-c-REVIEW.md)), and four rounds of written instructions went back to
+the same executor (18, 22, 15 and 13 minutes of work).
+
+| Round | What the review changed | Mass g | Verdict, lowest factor | What it showed |
+| --- | --- | --- | --- | --- |
+| build | | 116.4 | fail 1.58, flat print | the stem has a waist nobody asked for |
+| [follow-up](../eval/haiku-plan-c-followup/) | section rows added, print on edge | 117.9 | not shown 2.06 | the waist only moved: **the review had the wrong cause** |
+| [2](../eval/haiku-plan-c-round2/) | every loft section picked at the same corner; print tilted 30 degrees | 124.5 | fail 1.57 | the loft was twisted a quarter turn; untwisted, the stem peak fell from 21.9 to 6.5 MPa and the weak place moved to the neck |
+| [3](../eval/haiku-plan-c-round3/) | deeper neck | 128.2 | fail 1.39 | **worse:** the deeper neck stood higher beside two screw-head pockets and made a notch of the pocket edge |
+| [4](../eval/haiku-plan-c-round4/) | neck lowered beside the pockets, more material under the cable tunnel | 128.5 | fail 1.78 | three places within 15 % of each other now limit every upright and tilted print; only the on-edge print passes (2.97) |
+
+It ends not done. What it bought:
+
+- **A fault class no check could see.** A loft that pairs the wrong corners between two sections is twisted and
+  narrower in the middle. The volume check passed, the picture looked like a styling choice, and the first review
+  explained it as sparse sections. It was found by measuring the turn of the STL's own edges about the stem axis:
+  about 90 degrees in one stretch, under 8 everywhere else. `sheet.loft_twist()` and `loft(..., at=)` are the
+  result ([03-modelling.md](03-modelling.md)).
+- **The print direction as a table, not a strength choice.** Joey's rule (2026-11-14): faces that sit on support
+  come off rough and are not sanded, and the printer is 256 mm high. Measured on the part: flat 8,000 mm2 of
+  support, on edge 4,770, upright 660 but 249 mm tall, tilted 30 degrees with the hub down 770 at 222 mm. The plan
+  had chosen flat and the first review on-edge, both on strength alone ([04-export.md](04-export.md), Printing).
+- **Where review by instruction stops.** Rounds 3 and 4 were the reviewer nudging a section table from the
+  numbers. One nudge made it worse, and the last left the part 12 % short in three places at once. That is a new
+  neck (the two lower screws sit in the load path), which is a planner's job, not a follow-up.
+- The executor did every round as written, reported every fail as a fail, and twice caught mistakes in the
+  instructions (a wrong body count, a task file missing from a worktree).
+
+Form: on a blind sheet of this link beside the two from 2026-11-13 (three letters, no recommendation on the card) Joey ranked them fable-c first, sonnet-c second, this link third (2026-11-15). He had seen the first two before under other letters; only this link was new to him. Four review rounds removed the faults a check can name (the twist, the print direction) and did not bring the form up to what either larger model drew in one pass.
+
+### Opus as the planner
+
+The same planner brief and the same inputs went to Opus. It wrote the ten plans for sets A and D in 46 minutes
+([plans-opus](../eval/plans-opus/); Fable took 43), and Haiku built from them in fresh sessions from the same
+commit as the Fable-planned round.
+
+| | Fable plans | Opus plans |
+| --- | --- | --- |
+| Set A | 22 min, 7 tasks reached | 70 min, 35 of them waiting on another thread's solve; 6 reached, T6 not started |
+| T3 bracket (fails at about 1.4) | fail 1.49 | fail 1.26 |
+| T5 make it pass | ribs, factor 3.0 (recorded as fail; pass after review) | thicker upright printed on its side, 2.06 with convergence not shown, called a pass |
+| T6 pin contact | numbers right | not reached |
+| Set D | 20.5 min | 47 min, 19 of them lost to two hidden message boxes |
+| D2 split housing | one mesh, screws 75.7 N against 75 by hand | two meshes, screws 68.6 to 77.1 N; lowest factor 3.8; convergence not shown |
+| D3 six plates | right | right |
+
+Haiku could follow either. The Opus plans named no helper that does not exist and found every planted error in
+the D tasks (five on the housing against the three in the key). Where they fell short was the hand numbers the
+executor checks itself against: a load model predicted to read low reads 60 % high, a section stress has the
+wrong sign, a crown stress predicted at 21 MPa reads 3, a screw load is 27 % off. Each left a "not explained"
+line and cost time, and one mesh over the node limit queued behind another thread for 35 minutes. Opus wrote no
+shared `common.py`; Fable's plans came with one. **The two Opus-planned runs are graded from their own reports
+only:** no part was re-measured and no review pass was run, so the comparison is of what was reached and at what
+cost, not yet of what is right.
+
+### Sonnet with a Fable advisor: tried, dropped on cost
+
+Claude Code's advisor setting gives the building model a stronger model to consult. Sonnet with Fable as advisor
+did set A in 59 minutes with two advisor calls and set D in 75 with three
+([sonnet-adv-a](../eval/sonnet-adv-a/), [sonnet-adv-d](../eval/sonnet-adv-d/)); every task was reported done, and
+the advisor's calls caught real errors (a body mask that read 30 MPa where 5.2 was right, twelve contact studies
+that were not valid, a screw that bottomed). Set A cost $20.43 as recorded (Sonnet 13.66, advisor 6.77), against
+$1.29 to $3.52 for a Haiku run with a plan. Each advisor call reads the whole conversation again uncached, and it
+is billed as Fable. Joey dropped the path on 2026-11-14. The two runs are not checked against their logs.
+
+### Cost and process numbers
+
+One `metrics.json` per run folder, read by `python pc/metrics_table.py eval`. "Right" is counted only by the check
+named beside it; for the runs of 2026-11-14 morning it is read from the tables above.
+
+| run | machine | set | model | plan | right / reached / total | checked by | wall min | waiting | cost $ | min per right task | $ per right task | failed jobs per task |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| haiku-a | holly-pc | A | claude-haiku-5-5 | none | 2 / 5 / 7 | independent check (eval/haiku-runs-CHECK.md) | 19.5 |  | 1.34 | 9.8 | 0.67 |  |
+| haiku-d | holly-pc | D | claude-haiku-5-5 | none | 1 / 3 / 3 | independent check (eval/haiku-runs-CHECK.md) | 21.5 |  | 1.94 | 21.5 | 1.94 |  |
+| haiku-oplan-a | holly-pc | A | claude-haiku-5-5 | Opus | 5 / 6 / 7 | own report, not checked | 70.0 | 35.0 | 1.5 | 7.0 | 0.3 |  |
+| haiku-plan-a | holly-pc | A | claude-haiku-5-5 | Fable | 5 / 7 / 7 | independent check (eval/haiku-runs-CHECK.md) | 22.1 |  | 1.29 | 4.4 | 0.26 |  |
+| haiku-plan-a-followup | holly-pc | A | claude-haiku-5-5 | Fable review | 2 / 2 / 2 | independent check (eval/haiku-followup-CHECK.md) | 15.9 |  | 0.45 | 8.0 | 0.23 |  |
+| haiku-plan-c | holly-pc | C | claude-haiku-5-5 | Fable | 1 / 2 / 2 | review from files (eval/haiku-plan-c-REVIEW.md) | 51.6 |  | 1.27 | 51.6 | 1.27 |  |
+| haiku-plan-c-followup | holly-pc | C | claude-haiku-5-5 | Fable review | 0 / 1 / 1 | results read from the files | 18.2 |  |  |  |  |  |
+| haiku-plan-c-round2 | holly-pc | C | claude-haiku-5-5 | Fable review | 0 / 1 / 1 | results read from the files | 22.2 |  |  |  |  |  |
+| haiku-plan-c-round3 | holly-pc | C | claude-haiku-5-5 | Fable review | 0 / 1 / 1 | results read from the files | 30.8 | 15.7 |  |  |  |  |
+| haiku-plan-c-round4 | holly-pc | C | claude-haiku-5-5 | Fable review | 0 / 1 / 1 | results read from the files | 12.8 |  | 2.65 |  |  |  |
+| haiku-plan-d | holly-pc | D | claude-haiku-5-5 | Fable | 2 / 3 / 3 | independent check (eval/haiku-runs-CHECK.md) | 20.7 |  | 3.52 | 10.3 | 1.76 |  |
+| haiku-plan-d-followup | holly-pc | D | claude-haiku-5-5 | Fable review | 0 / 1 / 1 | independent check (eval/haiku-followup-CHECK.md) | 25.4 |  | 0.53 |  |  |  |
+| sonnet-adv-a | holly-pc | A | claude-sonnet-5-5 with a Fable advisor (2 calls) | none | 7 / 7 / 7 | own report, not checked | 59.9 |  | 20.43 | 8.6 | 2.92 |  |
+| sonnet-adv-d | holly-pc | D | claude-sonnet-5-5 with a Fable advisor (3 calls) | none | 3 / 3 / 3 | own report, not checked | 76.2 |  |  | 25.4 |  |  |
+| haiku-oplan-d | holly-pc | D | claude-haiku-5-5 | Opus | 1 / 3 / 3 | own report, not checked | 47.0 | 19.0 | 4.51 | 28.0 | 4.51 |  |
+
+What the numbers say: a plan roughly halves the cost of a task that ends right (Haiku on set A, $0.67 without a
+plan, $0.26 with Fable's), the advisor path costs ten times that, and on a design task the money goes on rounds
+that end not done. Failed jobs per task are not in the older runs; `runs.log` counts them from 2026-11-14 on.
+
 ## What each run changed in the playbook
 
 | Run | Changes |
@@ -349,6 +451,7 @@ whether the same loop holds on a design task with no right answer, where set C s
 | luna-a, luna-b, terra-high-a to d, terra-high-b2 | Export options set only for the export and put back, a launch that waits for memory, an unknown solver dialog fails the run, the contact proof in 07-done.md matched to the joint, node counts with local controls, "Do not stop early" and what counts as blocked |
 | bearing-load, loft-blend | A bearing load measured against the hand value; why a loft would not fillet into a flange, and three cures |
 | haiku-a, haiku-d, haiku-plan-a, haiku-plan-d | `judge()` and its four verdicts, valid against converged, a job clock, `save_as` before editing into a new file, what to try after a refused mesh |
+| haiku-plan-c and its four rounds, haiku-oplan-a, haiku-oplan-d | A loft twist check on the export and pick points for `loft()`; the print direction chosen from a table of height, support on visible faces and strength; one `metrics.json` per run. Still open from these runs: a hidden SolidWorks message box that is not a solver dialog hangs a study and the helper neither answers nor logs its text; `export()` before `save()` leaves no part on disk; `static()` queues a mesh just over the heavy-solve limit without saying how long the wait may be |
 
 ## What still needs the strongest model, or Joey
 
@@ -366,7 +469,8 @@ whether the same loop holds on a design task with no right answer, where set C s
 One run per model per set, on small parts, graded by the author of the playbook. The model that served the first
 Sonnet run could not be confirmed afterwards; later runs reported their own model id. Set B had the corrected
 playbook, so set A and set B are not a before-and-after of the same tasks. The Fable run of set B was done by two
-sessions, the second picking up the first one's files. Opus has not been run. The Codex runs are one pass each
+sessions, the second picking up the first one's files. Opus has been run only as a planner, and the runs built
+from its plans, like the two advisor runs, are graded from their own reports. The Codex runs are one pass each
 and Luna's stop at set B.
 
 ## Running it on another model

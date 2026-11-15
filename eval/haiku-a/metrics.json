@@ -1,0 +1,22 @@
+{
+ "run": "haiku-a",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "A",
+ "model": "claude-haiku-5-5",
+ "plan": "none",
+ "base_commit": "908f1cc",
+ "tasks": {
+  "total": 7,
+  "reached": 5,
+  "right": 2,
+  "right_basis": "independent check (eval/haiku-runs-CHECK.md)"
+ },
+ "wall_minutes": 19.5,
+ "waiting_minutes": null,
+ "cost_usd": 1.34,
+ "cost_basis": "Claude Code's own figure in the session record",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "T2 saved over the original, T3 on the wrong part, T4 gave the singular corner a value; T5 and T6 not done."
+}

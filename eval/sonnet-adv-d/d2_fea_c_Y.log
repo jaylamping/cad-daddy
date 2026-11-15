@@ -1,0 +1,65 @@
+19:19:26 SolidWorks pid 172000 free GB 22.0
+19:19:26 clock: D2 fea job c Y contact [4.0, 3.0, 2.4]: instance up: 49.7 min since the job began
+19:19:37 ok held face faces: 1.0000 (expected 1.0000)
+19:19:37 ok ring bore faces: 1.0000 (expected 1.0000)
+19:19:37 ok ring OD faces: 1.0000 (expected 1.0000)
+19:19:37 ok seats faces: 2.0000 (expected 2.0000)
+19:19:37 ok upper split faces: 1.0000 (expected 1.0000)
+19:19:37 ok lower split faces: 1.0000 (expected 1.0000)
+19:19:37 PREDICT Y contact 4.0: nodes about 12060; ring moves about 0.05 mm (closing the 0.05 radial clearance) then 0.01 mm; screws carry about 75 N each for +Y (tension), the peak in the seat wall near the load, bores and screw holes not the governing place
+19:19:37 D2_Y_contact_4.0: body "SolidBody 1(<pad_2>-<PADBODY>)" is Soft pad
+19:19:37 D2_Y_contact_4.0: body "SolidBody 2(<pad_3>-<PADBODY>)" is Soft pad
+19:19:37 D2_Y_contact_4.0: body "SolidBody 3(<pin_4>-<PINTHREAD>)" is Steel
+19:19:37 D2_Y_contact_4.0: body "SolidBody 4(<housing_upper_fe>-<RECESS_U>)" is PETG printed
+19:19:37 D2_Y_contact_4.0: body "SolidBody 5(<pin_3>-<PINTHREAD>)" is Steel
+19:19:37 D2_Y_contact_4.0: body "SolidBody 6(<pad_4>-<PADBODY>)" is Soft pad
+19:19:37 D2_Y_contact_4.0: body "SolidBody 7(<pin_2>-<PINTHREAD>)" is Steel
+19:19:37 D2_Y_contact_4.0: body "SolidBody 8(RECESS_L)" is PETG printed
+19:19:37 D2_Y_contact_4.0: body "SolidBody 9(<ring_fe_c>-<RING>)" is Steel
+19:19:37 D2_Y_contact_4.0: body "SolidBody 10(<pin_1>-<PINTHREAD>)" is Steel
+19:19:37 D2_Y_contact_4.0: body "SolidBody 11(<pad_1>-<PADBODY>)" is Soft pad
+19:19:42 D2_Y_contact_4.0: mesh rc 0, 51793 nodes, 30962 elements, free 21.4 GB
+19:19:43 D2_Y_contact_4.0: solver macro: before  0  | set err  0   | after  7  | 
+19:20:07 D2_Y_contact_4.0: fixture nodes 417, box [-36.0, -32.0, -4.0] to [36.0, -32.0, 11.0]
+19:20:07 D2_Y_contact_4.0: load nodes 536, box [-24.0, -24.0, 0.15] to [24.0, 24.0, 7.15]
+19:20:10 SUMMARY {'study': 'D2_Y_contact_4.0', 'el_mm': 4.0, 'nodes': 51793, 'elements': 30962, 'solve_s': 33, 'peak_vm_all': 126.17, 'peak_vm_away': 126.17, 'at': [29.52, 27.92, 7.26], 'sf_yield': 0.36, 'max_disp_mm': 0.2277204692363739, 'reaction_N': [0.0, -300.0, -0.0, 300.0], 'applied_N': 300.0}
+19:20:10 STUDY DONE Y contact 4.0 51793 ok
+19:20:10 PREDICT Y contact 3.0: nodes about 28587; ring moves about 0.05 mm (closing the 0.05 radial clearance) then 0.01 mm; screws carry about 75 N each for +Y (tension), the peak in the seat wall near the load, bores and screw holes not the governing place
+19:20:10 D2_Y_contact_3.0: body "SolidBody 1(<pad_2>-<PADBODY>)" is Soft pad
+19:20:10 D2_Y_contact_3.0: body "SolidBody 2(<pad_3>-<PADBODY>)" is Soft pad
+19:20:10 D2_Y_contact_3.0: body "SolidBody 3(<pin_4>-<PINTHREAD>)" is Steel
+19:20:10 D2_Y_contact_3.0: body "SolidBody 4(<housing_upper_fe>-<RECESS_U>)" is PETG printed
+19:20:10 D2_Y_contact_3.0: body "SolidBody 5(<pin_3>-<PINTHREAD>)" is Steel
+19:20:10 D2_Y_contact_3.0: body "SolidBody 6(<pad_4>-<PADBODY>)" is Soft pad
+19:20:10 D2_Y_contact_3.0: body "SolidBody 7(<pin_2>-<PINTHREAD>)" is Steel
+19:20:10 D2_Y_contact_3.0: body "SolidBody 8(RECESS_L)" is PETG printed
+19:20:10 D2_Y_contact_3.0: body "SolidBody 9(<ring_fe_c>-<RING>)" is Steel
+19:20:10 D2_Y_contact_3.0: body "SolidBody 10(<pin_1>-<PINTHREAD>)" is Steel
+19:20:10 D2_Y_contact_3.0: body "SolidBody 11(<pad_1>-<PADBODY>)" is Soft pad
+19:20:17 D2_Y_contact_3.0: mesh rc 0, 74551 nodes, 46002 elements, free 21.2 GB
+19:20:18 D2_Y_contact_3.0: solver macro: before  0  | set err  0   | after  7  | 
+19:20:59 D2_Y_contact_3.0: fixture nodes 631, box [-36.0, -32.0, -4.0] to [36.0, -32.0, 11.0]
+19:20:59 D2_Y_contact_3.0: load nodes 908, box [-24.0, -24.0, 0.15] to [24.0, 24.0, 7.15]
+19:21:05 SUMMARY {'study': 'D2_Y_contact_3.0', 'el_mm': 3.0, 'nodes': 74551, 'elements': 46002, 'solve_s': 54, 'peak_vm_all': 124.84, 'peak_vm_away': 124.84, 'at': [29.52, 27.92, 7.26], 'sf_yield': 0.36, 'max_disp_mm': 0.22647696733474731, 'reaction_N': [-0.0, -300.0, -0.0, 300.0], 'applied_N': 300.0}
+19:21:05 STUDY DONE Y contact 3.0 74551 ok
+19:21:05 PREDICT Y contact 2.4: nodes about 55833; ring moves about 0.05 mm (closing the 0.05 radial clearance) then 0.01 mm; screws carry about 75 N each for +Y (tension), the peak in the seat wall near the load, bores and screw holes not the governing place
+19:21:05 D2_Y_contact_2.4: body "SolidBody 1(<pad_2>-<PADBODY>)" is Soft pad
+19:21:05 D2_Y_contact_2.4: body "SolidBody 2(<pad_3>-<PADBODY>)" is Soft pad
+19:21:05 D2_Y_contact_2.4: body "SolidBody 3(<pin_4>-<PINTHREAD>)" is Steel
+19:21:05 D2_Y_contact_2.4: body "SolidBody 4(<housing_upper_fe>-<RECESS_U>)" is PETG printed
+19:21:05 D2_Y_contact_2.4: body "SolidBody 5(<pin_3>-<PINTHREAD>)" is Steel
+19:21:05 D2_Y_contact_2.4: body "SolidBody 6(<pad_4>-<PADBODY>)" is Soft pad
+19:21:05 D2_Y_contact_2.4: body "SolidBody 7(<pin_2>-<PINTHREAD>)" is Steel
+19:21:05 D2_Y_contact_2.4: body "SolidBody 8(RECESS_L)" is PETG printed
+19:21:05 D2_Y_contact_2.4: body "SolidBody 9(<ring_fe_c>-<RING>)" is Steel
+19:21:05 D2_Y_contact_2.4: body "SolidBody 10(<pin_1>-<PINTHREAD>)" is Steel
+19:21:05 D2_Y_contact_2.4: body "SolidBody 11(<pad_1>-<PADBODY>)" is Soft pad
+19:21:13 D2_Y_contact_2.4: mesh rc 0, 100690 nodes, 63411 elements, free 21.2 GB
+19:21:13 D2_Y_contact_2.4: solver macro: before  0  | set err  0   | after  7  | 
+19:22:18 D2_Y_contact_2.4: fixture nodes 917, box [-36.0, -32.0, -4.0] to [36.0, -32.0, 11.0]
+19:22:18 D2_Y_contact_2.4: load nodes 1078, box [-24.0, -24.0, 0.15] to [24.0, 24.0, 7.15]
+19:22:33 SUMMARY {'study': 'D2_Y_contact_2.4', 'el_mm': 2.4, 'nodes': 100690, 'elements': 63411, 'solve_s': 87, 'peak_vm_all': 123.36, 'peak_vm_away': 123.36, 'at': [29.52, 27.92, 7.26], 'sf_yield': 0.36, 'max_disp_mm': 0.2300589382648468, 'reaction_N': [-0.0, -300.0, -0.0, 300.0], 'applied_N': 300.0}
+19:22:33 STUDY DONE Y contact 2.4 100690 ok
+19:22:33 clock: D2 fea job c Y contact [4.0, 3.0, 2.4]: done: 52.8 min since the job began
+19:22:33 closing pid 172000 committed MB 1864
+D2 FEA DONE

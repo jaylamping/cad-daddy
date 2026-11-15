@@ -1,0 +1,13 @@
+18:02:57 SolidWorks pid 131240 free GB 22.6
+18:02:58 clock: final checks start: 29.6 min since the job began
+18:03:00 bracket_c volume 35331.71060242762 box [0.0, 0.0, 0.0, 80.0, 50.0, 46.0] bodies 1 errors []
+18:03:00 ok bracket_c volume: 35331.7106 (expected 35331.7100)
+18:03:00 ok bracket_c bodies: 1.0000 (expected 1.0000)
+18:03:00 ok bracket_c errors: 0.0000 (expected 0.0000)
+18:03:00 ok mass cap 43.16 g: 1.0000 (expected 1.0000)
+18:03:00 bracket_sharp volume 32802.34269845274
+18:03:01 bracket_b volume 31642.999901677245
+18:03:01 tp_all bodies [('HOLE', 21548.62, [-20.0, -15.0, 0.0, 20.0, 15.0, 20.0]), ('<tp_pad_b>-<TP_PAD_B>', 14.14, [-1.5, -27.0, 8.602, 1.5, -25.0, 11.602]), ('<tp_pad_a>-<TP_PAD_A>', 14.14, [-1.5, 25.0, 8.602, 1.5, 27.0, 11.602]), ('<tp_pin_e2>-<TP_PIN_E2>', 785.4, [-5.0, -25.0, 5.102, 5.0, -15.0, 15.102]), ('<tp_pin_e1>-<TP_PIN_E1>', 785.4, [-5.0, 15.0, 5.102, 5.0, 25.0, 15.102]), ('<tp_pin_c>-<TP_PIN_C>', 2356.19, [-5.0, -15.0, 5.102, 5.0, 15.0, 15.102])]
+18:03:01 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\t6b\tp_all.stl 62884 bytes
+18:03:01 clock: final checks end: 29.6 min since the job began
+18:03:01 closing pid 131240 committed MB 1774

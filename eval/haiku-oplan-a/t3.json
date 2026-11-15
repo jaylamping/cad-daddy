@@ -1,0 +1,372 @@
+{
+  "task": "T3",
+  "status": "done",
+  "notes": [],
+  "studies": {
+    "B_holes_el1p5": {
+      "label": "B_holes_el1p5",
+      "nodes": 180445,
+      "el": 1.5,
+      "reaction_N": [
+        -149.996,
+        -0.002,
+        -0.0,
+        149.996
+      ],
+      "max_disp_mm": 2.7940680980682373,
+      "excessive_displacements_answered_no": false,
+      "peak_vm_away_mpa": 20.69,
+      "peak_vm_at_mm": [
+        5.81,
+        34.35,
+        17.59
+      ],
+      "vm_max_all_mpa": 27.064,
+      "plain_sz_mpa": 9.541,
+      "plain_nodes": 14,
+      "base_sx_mpa": 10.056,
+      "base_nodes": 10,
+      "print_directions": {
+        "Z": {
+          "tension_mpa": 17.875,
+          "tension_at": [
+            0.19,
+            12.34,
+            16.93
+          ],
+          "shear_mpa": 8.684,
+          "shear_at": [
+            5.81,
+            34.55,
+            17.99
+          ],
+          "sf_layer": 1.259,
+          "sf_shear": 1.497
+        },
+        "Y": {
+          "tension_mpa": 7.825,
+          "tension_at": [
+            0.39,
+            15.24,
+            18.24
+          ],
+          "shear_mpa": 8.686,
+          "shear_at": [
+            5.81,
+            34.55,
+            17.99
+          ],
+          "sf_layer": 2.876,
+          "sf_shear": 1.497
+        },
+        "X": {
+          "tension_mpa": 16.151,
+          "tension_at": [
+            19.16,
+            9.93,
+            0.0
+          ],
+          "shear_mpa": 7.112,
+          "shear_at": [
+            7.37,
+            8.58,
+            6.99
+          ],
+          "sf_layer": 1.393,
+          "sf_shear": 1.828
+        }
+      },
+      "sf_yield": 2.175,
+      "plateau_vm": {
+        "1": 24.827,
+        "2": 20.69,
+        "3": 20.69,
+        "5": 20.69
+      },
+      "holes_box_nodes": 17934,
+      "holes_box_vm": 20.69,
+      "holes_box_layer_tension_Z": 17.875,
+      "holes_box_layer_shear_Z": 8.684
+    },
+    "B_bottom_el2": {
+      "label": "B_bottom_el2",
+      "nodes": 87860,
+      "el": 2.0,
+      "reaction_N": [
+        -150.0,
+        0.001,
+        -0.003,
+        150.0
+      ],
+      "max_disp_mm": 1.1232589483261108,
+      "excessive_displacements_answered_no": false,
+      "peak_vm_away_mpa": 19.041,
+      "peak_vm_at_mm": [
+        0.0,
+        15.68,
+        17.49
+      ],
+      "vm_max_all_mpa": 19.041,
+      "plain_sz_mpa": 9.72,
+      "plain_nodes": 7,
+      "base_sx_mpa": -0.161,
+      "base_nodes": 5,
+      "print_directions": {
+        "Z": {
+          "tension_mpa": 18.85,
+          "tension_at": [
+            0.26,
+            12.34,
+            16.94
+          ],
+          "shear_mpa": 8.005,
+          "shear_at": [
+            0.26,
+            34.53,
+            17.96
+          ],
+          "sf_layer": 1.194,
+          "sf_shear": 1.624
+        },
+        "Y": {
+          "tension_mpa": 6.976,
+          "tension_at": [
+            0.26,
+            15.33,
+            18.15
+          ],
+          "shear_mpa": 8.001,
+          "shear_at": [
+            0.26,
+            34.53,
+            17.96
+          ],
+          "sf_layer": 3.225,
+          "sf_shear": 1.625
+        },
+        "X": {
+          "tension_mpa": 2.117,
+          "tension_at": [
+            0.81,
+            15.52,
+            17.88
+          ],
+          "shear_mpa": 5.897,
+          "shear_at": [
+            6.7,
+            43.45,
+            7.74
+          ],
+          "sf_layer": 10.626,
+          "sf_shear": 2.205
+        }
+      },
+      "sf_yield": 2.363,
+      "plateau_vm": {
+        "1": 19.041,
+        "2": 19.041,
+        "3": 19.041,
+        "5": 19.041
+      },
+      "holes_box_nodes": 9228,
+      "holes_box_vm": 19.041,
+      "holes_box_layer_tension_Z": 18.85,
+      "holes_box_layer_shear_Z": 8.005
+    },
+    "A_holes_el2p0": {
+      "label": "A_holes_el2p0",
+      "nodes": 87860,
+      "el": 2.0,
+      "reaction_N": [
+        -150.0,
+        -0.0,
+        -0.0,
+        150.0
+      ],
+      "max_disp_mm": 2.3697662353515625,
+      "excessive_displacements_answered_no": false,
+      "peak_vm_away_mpa": 19.758,
+      "peak_vm_at_mm": [
+        6.0,
+        34.92,
+        15.7
+      ],
+      "vm_max_all_mpa": 24.288,
+      "plain_sz_mpa": 7.686,
+      "plain_nodes": 7,
+      "base_sx_mpa": 10.182,
+      "base_nodes": 5,
+      "print_directions": {
+        "Z": {
+          "tension_mpa": 28.451,
+          "tension_at": [
+            0.0,
+            35.67,
+            15.36
+          ],
+          "shear_mpa": 8.049,
+          "shear_at": [
+            6.0,
+            13.93,
+            15.34
+          ],
+          "sf_layer": 0.791,
+          "sf_shear": 1.615
+        },
+        "Y": {
+          "tension_mpa": 15.96,
+          "tension_at": [
+            0.0,
+            13.74,
+            15.37
+          ],
+          "shear_mpa": 7.96,
+          "shear_at": [
+            6.0,
+            34.29,
+            16.7
+          ],
+          "sf_layer": 1.41,
+          "sf_shear": 1.633
+        },
+        "X": {
+          "tension_mpa": 15.768,
+          "tension_at": [
+            0.0,
+            35.67,
+            15.36
+          ],
+          "shear_mpa": 8.051,
+          "shear_at": [
+            6.0,
+            13.93,
+            15.34
+          ],
+          "sf_layer": 1.427,
+          "sf_shear": 1.615
+        }
+      },
+      "sf_yield": 2.278,
+      "plateau_vm": {
+        "1": 23.405,
+        "2": 19.758,
+        "3": 19.758,
+        "5": 19.758
+      },
+      "holes_box_nodes": 9228,
+      "holes_box_vm": 19.758,
+      "holes_box_layer_tension_Z": 28.451,
+      "holes_box_layer_shear_Z": 8.049
+    },
+    "A_holes_el1p5": {
+      "label": "A_holes_el1p5",
+      "nodes": 180445,
+      "el": 1.5,
+      "reaction_N": [
+        -150.0,
+        -0.0,
+        0.0,
+        150.0
+      ],
+      "max_disp_mm": 2.3717479705810547,
+      "excessive_displacements_answered_no": false,
+      "peak_vm_away_mpa": 21.394,
+      "peak_vm_at_mm": [
+        6.0,
+        14.26,
+        15.35
+      ],
+      "vm_max_all_mpa": 27.101,
+      "plain_sz_mpa": 7.564,
+      "plain_nodes": 14,
+      "base_sx_mpa": 10.218,
+      "base_nodes": 10,
+      "print_directions": {
+        "Z": {
+          "tension_mpa": 30.342,
+          "tension_at": [
+            0.0,
+            35.74,
+            15.35
+          ],
+          "shear_mpa": 9.342,
+          "shear_at": [
+            6.0,
+            36.17,
+            15.35
+          ],
+          "sf_layer": 0.742,
+          "sf_shear": 1.392
+        },
+        "Y": {
+          "tension_mpa": 17.631,
+          "tension_at": [
+            0.0,
+            36.18,
+            15.35
+          ],
+          "shear_mpa": 8.164,
+          "shear_at": [
+            6.0,
+            34.32,
+            16.61
+          ],
+          "sf_layer": 1.276,
+          "sf_shear": 1.592
+        },
+        "X": {
+          "tension_mpa": 17.031,
+          "tension_at": [
+            0.0,
+            35.74,
+            15.35
+          ],
+          "shear_mpa": 9.365,
+          "shear_at": [
+            6.0,
+            36.17,
+            15.35
+          ],
+          "sf_layer": 1.321,
+          "sf_shear": 1.388
+        }
+      },
+      "sf_yield": 2.103,
+      "plateau_vm": {
+        "1": 24.848,
+        "2": 21.394,
+        "3": 21.394,
+        "5": 21.394
+      },
+      "holes_box_nodes": 17934,
+      "holes_box_vm": 21.394,
+      "holes_box_layer_tension_Z": 30.342,
+      "holes_box_layer_shear_Z": 9.342
+    }
+  },
+  "convergence_rows": [
+    [
+      3.0,
+      32123,
+      19.4,
+      17.75,
+      7.46
+    ],
+    [
+      2.0,
+      87860,
+      20.34,
+      17.99,
+      8.06
+    ],
+    [
+      1.5,
+      180445,
+      20.69,
+      17.88,
+      8.68
+    ]
+  ],
+  "converged": false,
+  "finished": "23:25:09"
+}

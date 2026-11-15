@@ -1,0 +1,157 @@
+{
+  "task": "T5 change 2",
+  "status": "done",
+  "notes": [],
+  "bbox_mm": [
+    0.0,
+    0.0,
+    0.0,
+    80.0,
+    50.0,
+    46.0
+  ],
+  "volume_mm3": 35333.255,
+  "mass_g": 42.05,
+  "mass_growth_pct": 7.15,
+  "rows_B_Z_layers": [
+    {
+      "el": 3.0,
+      "nodes": 35418,
+      "reaction_N": [
+        -150.002,
+        0.006,
+        0.003,
+        150.002
+      ],
+      "max_disp_mm": 2.187716007232666,
+      "excessive": false,
+      "vm_mpa": 15.342,
+      "vm_at": [
+        10.48,
+        39.88,
+        6.13
+      ],
+      "sf_yield": 2.933,
+      "layer_Z_tension_mpa": 11.696,
+      "layer_Z_at": [
+        0.39,
+        34.3,
+        17.42
+      ],
+      "sf_layer_Z": 1.924,
+      "layer_Z_shear_mpa": 6.362,
+      "layer_Z_shear_at": [
+        9.53,
+        13.1,
+        6.52
+      ],
+      "sf_shear_Z": 2.043
+    },
+    {
+      "el": 2.0,
+      "nodes": 94887,
+      "reaction_N": [
+        -150.002,
+        0.002,
+        -0.002,
+        150.002
+      ],
+      "max_disp_mm": 2.1933393478393555,
+      "excessive": false,
+      "vm_mpa": 15.462,
+      "vm_at": [
+        10.82,
+        13.1,
+        6.06
+      ],
+      "sf_yield": 2.91,
+      "layer_Z_tension_mpa": 11.784,
+      "layer_Z_at": [
+        0.26,
+        34.27,
+        17.24
+      ],
+      "sf_layer_Z": 1.909,
+      "layer_Z_shear_mpa": 6.445,
+      "layer_Z_shear_at": [
+        9.21,
+        39.09,
+        6.72
+      ],
+      "sf_shear_Z": 2.017
+    },
+    {
+      "el": 1.75,
+      "nodes": 134457,
+      "reaction_N": [
+        -149.999,
+        -0.004,
+        0.002,
+        149.999
+      ],
+      "max_disp_mm": 2.194715976715088,
+      "excessive": false,
+      "vm_mpa": 15.459,
+      "vm_at": [
+        10.89,
+        38.38,
+        6.05
+      ],
+      "sf_yield": 2.911,
+      "layer_Z_tension_mpa": 12.367,
+      "layer_Z_at": [
+        0.23,
+        34.3,
+        17.41
+      ],
+      "sf_layer_Z": 1.819,
+      "layer_Z_shear_mpa": 6.46,
+      "layer_Z_shear_at": [
+        9.2,
+        8.81,
+        6.73
+      ],
+      "sf_shear_Z": 2.013
+    }
+  ],
+  "last_step_change_pct": {
+    "vm_mpa": 0.02,
+    "layer_Z_tension_mpa": 4.71,
+    "layer_Z_shear_mpa": 0.23
+  },
+  "converged_vm_layerZ": true,
+  "check_model_A_el1p5": {
+    "el": 1.75,
+    "nodes": 134457,
+    "reaction_N": [
+      -150.0,
+      0.0,
+      0.0,
+      150.0
+    ],
+    "max_disp_mm": 1.9777873754501343,
+    "excessive": false,
+    "vm_mpa": 15.605,
+    "vm_at": [
+      10.89,
+      22.89,
+      6.05
+    ],
+    "sf_yield": 2.884,
+    "layer_Z_tension_mpa": 19.268,
+    "layer_Z_at": [
+      0.0,
+      35.7,
+      15.36
+    ],
+    "sf_layer_Z": 1.168,
+    "layer_Z_shear_mpa": 6.611,
+    "layer_Z_shear_at": [
+      9.21,
+      19.01,
+      6.72
+    ],
+    "sf_shear_Z": 1.967
+  },
+  "finished": "00:19:31"
+}

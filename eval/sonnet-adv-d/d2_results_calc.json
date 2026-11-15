@@ -1,0 +1,867 @@
+{
+ "nodes": {
+  "Y": [
+   51047,
+   73206,
+   100284
+  ],
+  "X": [
+   51047,
+   73206,
+   100284
+  ]
+ },
+ "judge_by_layer_direction": {
+  "Y": {
+   "verdict": "pass",
+   "lowest_factor": 3.09,
+   "lowest_entry": "lower half, +X, shear",
+   "rows": [
+    {
+     "entry": "upper half, +Y, vm",
+     "values": [
+      4.556774139404297,
+      4.558080196380615,
+      4.57697057723999
+     ],
+     "limit": 45.0,
+     "factor": 9.83,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 0.0,
+     "last_change_mpa": 0.019,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.75,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, layer",
+     "values": [
+      3.9318199157714844,
+      3.9503676891326904,
+      3.9527053833007812
+     ],
+     "limit": 22.5,
+     "factor": 5.69,
+     "converged": true,
+     "last_step_pct": 0.1,
+     "step_before_pct": 0.5,
+     "last_change_mpa": 0.002,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.69,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, shear",
+     "values": [
+      2.283648243226196,
+      2.190518847165855,
+      2.1792424902497287
+     ],
+     "limit": 13.0,
+     "factor": 5.97,
+     "converged": true,
+     "last_step_pct": 0.5,
+     "step_before_pct": 4.1,
+     "last_change_mpa": 0.011,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.97,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, vm",
+     "values": [
+      6.983922481536865,
+      7.515151023864746,
+      8.483409881591797
+     ],
+     "limit": 45.0,
+     "factor": 5.3,
+     "converged": true,
+     "last_step_pct": 12.9,
+     "step_before_pct": 7.6,
+     "last_change_mpa": 0.968,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.16,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, layer",
+     "values": [
+      2.11248517036438,
+      2.089139938354492,
+      2.306455612182617
+     ],
+     "limit": 22.5,
+     "factor": 9.76,
+     "converged": true,
+     "last_step_pct": 10.4,
+     "step_before_pct": 1.1,
+     "last_change_mpa": 0.217,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.0,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, shear",
+     "values": [
+      1.806682823822891,
+      1.8233912367239165,
+      1.836885183936179
+     ],
+     "limit": 13.0,
+     "factor": 7.08,
+     "converged": true,
+     "last_step_pct": 0.7,
+     "step_before_pct": 0.9,
+     "last_change_mpa": 0.013,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.97,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, vm",
+     "values": [
+      3.863460063934326,
+      3.754862070083618,
+      4.0074381828308105
+     ],
+     "limit": 45.0,
+     "factor": 11.23,
+     "converged": true,
+     "last_step_pct": 6.7,
+     "step_before_pct": 2.8,
+     "last_change_mpa": 0.253,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.86,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, layer",
+     "values": [
+      3.72829532623291,
+      3.756755828857422,
+      3.7673542499542236
+     ],
+     "limit": 22.5,
+     "factor": 5.97,
+     "converged": true,
+     "last_step_pct": 0.3,
+     "step_before_pct": 0.8,
+     "last_change_mpa": 0.011,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.94,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, shear",
+     "values": [
+      0.9917294687690663,
+      1.0163526642680458,
+      1.0071995719352425
+     ],
+     "limit": 13.0,
+     "factor": 12.91,
+     "converged": true,
+     "last_step_pct": 0.9,
+     "step_before_pct": 2.5,
+     "last_change_mpa": 0.009,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 12.68,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, vm",
+     "values": [
+      8.238143920898438,
+      8.519352912902832,
+      8.483409881591797
+     ],
+     "limit": 45.0,
+     "factor": 5.3,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 3.4,
+     "last_change_mpa": 0.036,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.26,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, layer",
+     "values": [
+      4.7241291999816895,
+      5.141134262084961,
+      5.48514986038208
+     ],
+     "limit": 22.5,
+     "factor": 4.1,
+     "converged": true,
+     "last_step_pct": 6.7,
+     "step_before_pct": 8.8,
+     "last_change_mpa": 0.344,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 3.6,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, shear",
+     "values": [
+      4.1110840425904644,
+      4.24751952284892,
+      4.209726022772102
+     ],
+     "limit": 13.0,
+     "factor": 3.09,
+     "converged": true,
+     "last_step_pct": 0.9,
+     "step_before_pct": 3.3,
+     "last_change_mpa": 0.038,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 3.03,
+     "state": "pass"
+    }
+   ]
+  },
+  "Z": {
+   "verdict": "margin, not converged",
+   "lowest_factor": 3.01,
+   "lowest_entry": "upper half, +X, shear",
+   "rows": [
+    {
+     "entry": "upper half, +Y, vm",
+     "values": [
+      4.556774139404297,
+      4.558080196380615,
+      4.57697057723999
+     ],
+     "limit": 45.0,
+     "factor": 9.83,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 0.0,
+     "last_change_mpa": 0.019,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.75,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, layer",
+     "values": [
+      0.9771827459335327,
+      1.0021311044692993,
+      1.1288650035858154
+     ],
+     "limit": 22.5,
+     "factor": 19.93,
+     "converged": true,
+     "last_step_pct": 12.6,
+     "step_before_pct": 2.6,
+     "last_change_mpa": 0.127,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 15.71,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, shear",
+     "values": [
+      2.020262314530616,
+      2.0959477325143716,
+      1.9589351353568751
+     ],
+     "limit": 13.0,
+     "factor": 6.64,
+     "converged": true,
+     "last_step_pct": 6.5,
+     "step_before_pct": 3.7,
+     "last_change_mpa": 0.137,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.85,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, vm",
+     "values": [
+      6.983922481536865,
+      7.515151023864746,
+      8.483409881591797
+     ],
+     "limit": 45.0,
+     "factor": 5.3,
+     "converged": true,
+     "last_step_pct": 12.9,
+     "step_before_pct": 7.6,
+     "last_change_mpa": 0.968,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.16,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, layer",
+     "values": [
+      0.880813479423523,
+      1.0947259664535522,
+      0.7970969080924988
+     ],
+     "limit": 22.5,
+     "factor": 28.23,
+     "converged": true,
+     "last_step_pct": 27.2,
+     "step_before_pct": 24.3,
+     "last_change_mpa": 0.298,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 17.45,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, shear",
+     "values": [
+      3.2880878229736332,
+      3.77359806387774,
+      4.315027063504423
+     ],
+     "limit": 13.0,
+     "factor": 3.01,
+     "converged": false,
+     "last_step_pct": 14.3,
+     "step_before_pct": 14.8,
+     "last_change_mpa": 0.541,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.3,
+     "state": "margin, not converged"
+    },
+    {
+     "entry": "lower half, +Y, vm",
+     "values": [
+      3.863460063934326,
+      3.754862070083618,
+      4.0074381828308105
+     ],
+     "limit": 45.0,
+     "factor": 11.23,
+     "converged": true,
+     "last_step_pct": 6.7,
+     "step_before_pct": 2.8,
+     "last_change_mpa": 0.253,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.86,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, layer",
+     "values": [
+      1.3543061017990112,
+      1.4468103647232056,
+      1.8830516338348389
+     ],
+     "limit": 22.5,
+     "factor": 11.95,
+     "converged": true,
+     "last_step_pct": 30.2,
+     "step_before_pct": 6.8,
+     "last_change_mpa": 0.436,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 7.05,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, shear",
+     "values": [
+      0.7805591494684847,
+      1.001041014304904,
+      1.1317301224830305
+     ],
+     "limit": 13.0,
+     "factor": 11.49,
+     "converged": true,
+     "last_step_pct": 13.1,
+     "step_before_pct": 28.2,
+     "last_change_mpa": 0.131,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 8.99,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, vm",
+     "values": [
+      8.238143920898438,
+      8.519352912902832,
+      8.483409881591797
+     ],
+     "limit": 45.0,
+     "factor": 5.3,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 3.4,
+     "last_change_mpa": 0.036,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.26,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, layer",
+     "values": [
+      1.3490936756134033,
+      1.3890764713287354,
+      1.8503679037094116
+     ],
+     "limit": 22.5,
+     "factor": 12.16,
+     "converged": true,
+     "last_step_pct": 33.2,
+     "step_before_pct": 3.0,
+     "last_change_mpa": 0.461,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.85,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, shear",
+     "values": [
+      3.2880878229736332,
+      3.77359806387774,
+      4.315027063504423
+     ],
+     "limit": 13.0,
+     "factor": 3.01,
+     "converged": false,
+     "last_step_pct": 14.3,
+     "step_before_pct": 14.8,
+     "last_change_mpa": 0.541,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.3,
+     "state": "margin, not converged"
+    }
+   ]
+  },
+  "X": {
+   "verdict": "margin, not converged",
+   "lowest_factor": 2.94,
+   "lowest_entry": "upper half, +X, shear",
+   "rows": [
+    {
+     "entry": "upper half, +Y, vm",
+     "values": [
+      4.556774139404297,
+      4.558080196380615,
+      4.57697057723999
+     ],
+     "limit": 45.0,
+     "factor": 9.83,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 0.0,
+     "last_change_mpa": 0.019,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.75,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, layer",
+     "values": [
+      4.873882293701172,
+      4.878107070922852,
+      4.886876583099365
+     ],
+     "limit": 22.5,
+     "factor": 4.6,
+     "converged": true,
+     "last_step_pct": 0.2,
+     "step_before_pct": 0.1,
+     "last_change_mpa": 0.009,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.59,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +Y, shear",
+     "values": [
+      2.185295754005931,
+      2.0161627395632236,
+      2.0251011673274624
+     ],
+     "limit": 13.0,
+     "factor": 6.42,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 7.7,
+     "last_change_mpa": 0.009,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 6.36,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, vm",
+     "values": [
+      6.983922481536865,
+      7.515151023864746,
+      8.483409881591797
+     ],
+     "limit": 45.0,
+     "factor": 5.3,
+     "converged": true,
+     "last_step_pct": 12.9,
+     "step_before_pct": 7.6,
+     "last_change_mpa": 0.968,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.16,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, layer",
+     "values": [
+      2.981815814971924,
+      4.138843536376953,
+      3.730440139770508
+     ],
+     "limit": 22.5,
+     "factor": 6.03,
+     "converged": true,
+     "last_step_pct": 9.9,
+     "step_before_pct": 38.8,
+     "last_change_mpa": 0.408,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.0,
+     "state": "pass"
+    },
+    {
+     "entry": "upper half, +X, shear",
+     "values": [
+      3.3844988873807096,
+      3.8678825680798368,
+      4.4165747200638155
+     ],
+     "limit": 13.0,
+     "factor": 2.94,
+     "converged": false,
+     "last_step_pct": 14.2,
+     "step_before_pct": 14.3,
+     "last_change_mpa": 0.549,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.26,
+     "state": "margin, not converged"
+    },
+    {
+     "entry": "lower half, +Y, vm",
+     "values": [
+      3.863460063934326,
+      3.754862070083618,
+      4.0074381828308105
+     ],
+     "limit": 45.0,
+     "factor": 11.23,
+     "converged": true,
+     "last_step_pct": 6.7,
+     "step_before_pct": 2.8,
+     "last_change_mpa": 0.253,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 9.86,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, layer",
+     "values": [
+      1.5704082250595093,
+      1.4468104839324951,
+      1.8830515146255493
+     ],
+     "limit": 22.5,
+     "factor": 11.95,
+     "converged": true,
+     "last_step_pct": 30.2,
+     "step_before_pct": 7.9,
+     "last_change_mpa": 0.436,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 7.05,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +Y, shear",
+     "values": [
+      0.9911794249922581,
+      1.066199498855363,
+      1.115183624410177
+     ],
+     "limit": 13.0,
+     "factor": 11.66,
+     "converged": true,
+     "last_step_pct": 4.6,
+     "step_before_pct": 7.6,
+     "last_change_mpa": 0.049,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 10.66,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, vm",
+     "values": [
+      8.238143920898438,
+      8.519352912902832,
+      8.483409881591797
+     ],
+     "limit": 45.0,
+     "factor": 5.3,
+     "converged": true,
+     "last_step_pct": 0.4,
+     "step_before_pct": 3.4,
+     "last_change_mpa": 0.036,
+     "settled_under_mpa": 1.125,
+     "step_growing": false,
+     "factor_after_two_more_steps": 5.26,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, layer",
+     "values": [
+      5.160262107849121,
+      5.09984827041626,
+      4.711278438568115
+     ],
+     "limit": 22.5,
+     "factor": 4.78,
+     "converged": true,
+     "last_step_pct": 7.6,
+     "step_before_pct": 1.2,
+     "last_change_mpa": 0.389,
+     "settled_under_mpa": 0.562,
+     "step_growing": false,
+     "factor_after_two_more_steps": 4.78,
+     "state": "pass"
+    },
+    {
+     "entry": "lower half, +X, shear",
+     "values": [
+      4.109149010765719,
+      4.245417951373512,
+      4.4165747200638155
+     ],
+     "limit": 13.0,
+     "factor": 2.94,
+     "converged": true,
+     "last_step_pct": 4.0,
+     "step_before_pct": 3.3,
+     "last_change_mpa": 0.171,
+     "settled_under_mpa": 0.325,
+     "step_growing": false,
+     "factor_after_two_more_steps": 2.72,
+     "state": "pass"
+    }
+   ]
+  }
+ },
+ "screws": {
+  "Y_4.0": {
+   "per_screw_N": [
+    88.1,
+    91.9,
+    16.4,
+    19.9
+   ],
+   "sum_N": 216.3,
+   "max_N": 91.9,
+   "shear_fit": [
+    -12.2,
+    -12.2,
+    -4.5,
+    -4.5
+   ]
+  },
+  "Y_3.0": {
+   "per_screw_N": [
+    87.8,
+    92.0,
+    16.3,
+    19.8
+   ],
+   "sum_N": 215.9,
+   "max_N": 92.0,
+   "shear_fit": [
+    -12.0,
+    -12.1,
+    -4.5,
+    -4.5
+   ]
+  },
+  "Y_2.4": {
+   "per_screw_N": [
+    87.8,
+    92.0,
+    16.3,
+    19.8
+   ],
+   "sum_N": 215.8,
+   "max_N": 92.0,
+   "shear_fit": [
+    -12.1,
+    -12.0,
+    -4.5,
+    -4.5
+   ]
+  },
+  "X_4.0": {
+   "per_screw_N": [
+    46.2,
+    47.3,
+    1.5,
+    1.5
+   ],
+   "sum_N": 96.6,
+   "max_N": 47.3,
+   "shear_fit": [
+    -0.0,
+    -0.2,
+    1.3,
+    1.4
+   ]
+  },
+  "X_3.0": {
+   "per_screw_N": [
+    46.0,
+    47.4,
+    1.5,
+    1.5
+   ],
+   "sum_N": 96.4,
+   "max_N": 47.4,
+   "shear_fit": [
+    -0.1,
+    -0.3,
+    1.3,
+    1.3
+   ]
+  },
+  "X_2.4": {
+   "per_screw_N": [
+    46.2,
+    47.2,
+    1.6,
+    1.5
+   ],
+   "sum_N": 96.5,
+   "max_N": 47.2,
+   "shear_fit": [
+    -0.1,
+    -0.3,
+    1.3,
+    1.3
+   ]
+  }
+ },
+ "bonded_Y": {
+  "per_screw_N": [
+   -14.3,
+   -14.4,
+   -14.3,
+   -14.5
+  ],
+  "sum_N": -57.5,
+  "max_disp": 0.03368576616048813,
+  "ring_mean_disp": [
+   -3.9670654540480624e-05,
+   0.010866979430266294,
+   -0.0006890129874532966
+  ],
+  "upper_vm": 2.163320302963257,
+  "lower_vm": 3.1083450317382812
+ },
+ "bonded_X": {
+  "per_screw_N": [
+   18.9,
+   19.7,
+   -0.8,
+   -1.3
+  ],
+  "sum_N": 36.5,
+  "max_disp": 0.06626211106777191,
+  "ring_mean_disp": [
+   0.031200646865829025,
+   -0.004365267981434603,
+   0.00021915887973360875
+  ],
+  "upper_vm": 2.782532215118408,
+  "lower_vm": 2.9737179279327393
+ },
+ "contact_Y_3.0": {
+  "max_disp": 0.22483138740062714,
+  "ring_mean_disp": [
+   -0.0918488890963999,
+   0.13077208521837566,
+   9.705653153170637e-05
+  ],
+  "upper_mean_disp": [
+   -0.08824545375676811,
+   0.04440129506172595,
+   -0.002846222764794503
+  ],
+  "lower_mean_disp": [
+   -0.004687956779361309,
+   0.0045035770659570705,
+   -0.00031461784746402067
+  ],
+  "reaction": [
+   0.0,
+   -300.0,
+   -0.0,
+   300.0
+  ],
+  "pad_vm_polluted": 44.204978942871094
+ },
+ "contact_X_3.0": {
+  "max_disp": 0.18978092074394226,
+  "ring_mean_disp": [
+   0.14463370095749906,
+   0.030037009866118645,
+   0.00035475793373948453
+  ],
+  "upper_mean_disp": [
+   0.12718061353340615,
+   -0.006617852856662015,
+   -0.00017585882750404316
+  ],
+  "lower_mean_disp": [
+   0.021862705263553512,
+   -0.0005903864415999372,
+   2.566013305159646e-05
+  ],
+  "reaction": [
+   -300.0,
+   -0.0,
+   -0.0,
+   300.0
+  ],
+  "pad_vm_polluted": 18.85525131225586
+ }
+}

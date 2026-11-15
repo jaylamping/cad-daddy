@@ -1,0 +1,22 @@
+{
+ "run": "haiku-plan-c",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "C",
+ "model": "claude-haiku-5-5",
+ "plan": "Fable",
+ "base_commit": "9e06740",
+ "tasks": {
+  "total": 2,
+  "reached": 2,
+  "right": 1,
+  "right_basis": "review from files (eval/haiku-plan-c-REVIEW.md)"
+ },
+ "wall_minutes": 51.6,
+ "waiting_minutes": null,
+ "cost_usd": 1.27,
+ "cost_basis": "estimated from the session's tokens at the rates the recorded Haiku sessions imply (cache read 0.05, cache write 1.00, output 2.50 USD per million); the record held no cost",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "C1 exact. C2 built at 116 g, all fixed items held, verdict fail 1.58; the stem loft was twisted and nothing caught it."
+}

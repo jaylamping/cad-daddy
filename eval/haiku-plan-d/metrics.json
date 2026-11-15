@@ -1,0 +1,22 @@
+{
+ "run": "haiku-plan-d",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "D",
+ "model": "claude-haiku-5-5",
+ "plan": "Fable",
+ "base_commit": "908f1cc",
+ "tasks": {
+  "total": 3,
+  "reached": 3,
+  "right": 2,
+  "right_basis": "independent check (eval/haiku-runs-CHECK.md)"
+ },
+ "wall_minutes": 20.7,
+ "waiting_minutes": null,
+ "cost_usd": 3.52,
+ "cost_basis": "Claude Code's own figure in the session record",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "D2 studied at one mesh, headline factor read from the wrong row."
+}

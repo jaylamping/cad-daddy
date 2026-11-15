@@ -1,0 +1,12 @@
+{
+ "M3 key column at (39,26.5) Z 17..45 (mount, rail)": 0,
+ "M3 key column at (39,-26.5) Z 17..45 (mount, rail)": 0,
+ "M3 key column at (-39,26.5) Z 17..45 (mount, rail)": 0,
+ "M3 key column at (-39,-26.5) Z 17..45 (mount, rail)": 0,
+ "M5 key column at (52,0) Z 7..45 r 6 (mount, rail)": 0,
+ "M5 key column at (-52,0) Z 7..45 r 6 (mount, rail)": 0,
+ "board + parts block lifting straight up, Z 11.6..60 (mount)": 0,
+ "under_zone_elsewhere": 0,
+ "wire exit region +X of the board, Z 11.5..40 (mount)": 0,
+ "m5_head_under_wire_path": true
+}

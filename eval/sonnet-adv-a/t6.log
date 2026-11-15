@@ -1,0 +1,112 @@
+17:51:36 HAND: mean projected bearing 1.67 MPa (a floor); Hertz in a 0.1 mm larger socket: E* 2199 MPa, R* 255 mm, half width 1.57 mm, peak 6.76 MPa; pin rises 0.10 mm (the clearance) before it bears
+17:51:44 SolidWorks pid 133004 free GB 22.6
+17:51:44 clock: T6 start: 18.4 min since the job began
+17:51:46 ok TP_PIN_C volume change: 2356.1945 (expected 2356.1945)
+17:51:46 TP_PIN_C: added 2356.19 mm3
+17:51:48 ok TP_PIN_E1 volume change: 785.3982 (expected 785.3982)
+17:51:48 TP_PIN_E1: added 785.40 mm3
+17:51:49 ok TP_PIN_E2 volume change: 785.3982 (expected 785.3982)
+17:51:49 TP_PIN_E2: added 785.40 mm3
+17:51:53 ok TP_PAD_A volume change: 14.1372 (expected 14.1372)
+17:51:53 TP_PAD_A: added 14.14 mm3
+17:51:54 ok TP_PAD_B volume change: 14.1372 (expected 14.1372)
+17:51:54 TP_PAD_B: added 14.14 mm3
+17:51:55 ok BLOCK volume change: 24000.0000 (expected 24000.0000)
+17:51:55 BLOCK: added 24000.00 mm3
+17:51:56 ok HOLE volume change: 2451.3847 (expected 2451.3847)
+17:51:56 HOLE: cut 2451.38 mm3
+17:51:58 bodies [('HOLE', 21548.62, [-20.0, -15.0, 0.0, 20.0, 15.0, 20.0]), ('<tp_pin_c>-<TP_PIN_C>', 2356.19, [-5.0, -15.0, 5.102, 5.0, 15.0, 15.102]), ('<tp_pin_e1>-<TP_PIN_E1>', 785.4, [-5.0, 15.0, 5.102, 5.0, 25.0, 15.102]), ('<tp_pin_e2>-<TP_PIN_E2>', 785.4, [-5.0, -25.0, 5.102, 5.0, -15.0, 15.102]), ('<tp_pad_a>-<TP_PAD_A>', 14.14, [-1.5, 25.0, 8.602, 1.5, 27.0, 11.602]), ('<tp_pad_b>-<TP_PAD_B>', 14.14, [-1.5, -27.0, 8.602, 1.5, -25.0, 11.602])]
+17:51:58 ok six bodies: 6.0000 (expected 6.0000)
+17:51:58 ok rebuild errors: 0.0000 (expected 0.0000)
+17:51:58 body volumes {'HOLE': 21548.62, '<tp_pin_c>-<TP_PIN_C>': 2356.19, '<tp_pin_e1>-<TP_PIN_E1>': 785.4, '<tp_pin_e2>-<TP_PIN_E2>': 785.4, '<tp_pad_a>-<TP_PAD_A>': 14.14, '<tp_pad_b>-<TP_PAD_B>': 14.14}
+17:51:58 clock: T6 model built: 18.6 min since the job began
+17:52:04 ok bottom: 1.0000 (expected 1.0000)
+17:52:04 ok pad outer faces: 2.0000 (expected 2.0000)
+17:52:04 ok pin centre face: 1.0000 (expected 1.0000)
+17:52:04 ok hole face: 1.0000 (expected 1.0000)
+17:52:04 ok stub +Y: 1.0000 (expected 1.0000)
+17:52:04 ok stub -Y: 1.0000 (expected 1.0000)
+17:52:04 ok pad walls: 2.0000 (expected 2.0000)
+17:52:04 PREDICT T6 A full load ctrl0.8: {'nodes': 45000, 'rise_mm': '0.10 (clearance, built in) plus a few micrometres', 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:52:04 T6 A full load ctrl0.8: body "SolidBody 1(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:52:04 T6 A full load ctrl0.8: body "SolidBody 2(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:52:04 T6 A full load ctrl0.8: body "SolidBody 3(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:52:04 T6 A full load ctrl0.8: body "SolidBody 4(HOLE)" is PETG printed
+17:52:04 T6 A full load ctrl0.8: body "SolidBody 5(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:52:04 T6 A full load ctrl0.8: body "SolidBody 6(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:52:06 T6 A full load ctrl0.8: mesh rc 0, 86685 nodes, 57855 elements, free 22.3 GB
+17:52:06 T6 A full load ctrl0.8: solver macro: before  0  | set err  0   | after  7  | 
+17:53:39 T6 A full load ctrl0.8: fixture nodes 787, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.6]
+17:53:39 T6 A full load ctrl0.8: load nodes 460, box [-5.0, -25.0, 5.1] to [5.0, 25.0, 15.1]
+17:53:54 {'study': 'T6 A full load ctrl0.8', 'el_mm': 3.0, 'nodes': 86685, 'elements': 57855, 'solve_s': 109, 'peak_vm_all': 31.36, 'peak_vm_away': 30.17, 'at': [0.61, -1.48, 15.07], 'sf_yield': 1.49, 'max_disp_mm': 0.04098198935389519, 'reaction_N': [-0.0, 0.0, -500.0, 500.0], 'applied_N': 500.0}
+17:53:54 ok reaction Fz = -(2 x load): -500.0000 (expected -500.0000)
+17:53:54 T6 A full load ctrl0.8 {"el_ctrl": 0.8, "load_scale": 1.0, "nodes": 86685, "solve_s": 109, "reaction": [-0.0, 0.0, -500.0, 500.0], "reaction_blockbottom": [-0.0002, 0.0001, -499.965], "reaction_pads": [0.00021, -8e-05, -0.03494], "pad_share_pct": 0.00699, "pin_uz_mean": 0.0278, "pin_rise_mm": 0.1278, "pin_rise_min": 0.01961, "pin_rise_max": 0.03735, "pin_ux_mean": -0.000125, "pin_uy_mean": 3.7e-05, "peak_bearing_mpa": 16.32, "peak_bearing_at": [0.98, 11.19, 15.01], "patch_nodes": 1644, "patch_half_width_mm": 2.13, "peak_vm_near_hole": 30.167, "peak_vm_near_hole_at": [0.61, -1.48, 15.07], "peak_vm_block_all": null, "vm_pin_max": 31.36, "hole_pressure_sum_n": null, "patch_x_range": [-1.99, 2.27]}
+17:53:54 clock: T6 T6 A full load ctrl0.8 done: 20.5 min since the job began
+17:53:54 ok bottom: 1.0000 (expected 1.0000)
+17:53:54 ok pad outer faces: 2.0000 (expected 2.0000)
+17:53:54 ok pin centre face: 1.0000 (expected 1.0000)
+17:53:54 ok hole face: 1.0000 (expected 1.0000)
+17:53:54 ok stub +Y: 1.0000 (expected 1.0000)
+17:53:54 ok stub -Y: 1.0000 (expected 1.0000)
+17:53:54 ok pad walls: 2.0000 (expected 2.0000)
+17:53:54 PREDICT T6 B reversed 0.001 load ctrl0.8: {'nodes': 45000, 'rise_mm': 'pin leaves the crown on the pads, about 0.4 mm', 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:53:54 T6 B reversed 0.001 load ctrl0.8: body "SolidBody 1(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:53:54 T6 B reversed 0.001 load ctrl0.8: body "SolidBody 2(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:53:54 T6 B reversed 0.001 load ctrl0.8: body "SolidBody 3(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:53:54 T6 B reversed 0.001 load ctrl0.8: body "SolidBody 4(HOLE)" is PETG printed
+17:53:54 T6 B reversed 0.001 load ctrl0.8: body "SolidBody 5(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:53:54 T6 B reversed 0.001 load ctrl0.8: body "SolidBody 6(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:53:58 T6 B reversed 0.001 load ctrl0.8: mesh rc 0, 86685 nodes, 57855 elements, free 22.2 GB
+17:53:59 T6 B reversed 0.001 load ctrl0.8: solver macro: before  0  | set err  0   | after  7  | 
+17:56:25 T6 B reversed 0.001 load ctrl0.8: fixture nodes 787, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.6]
+17:56:25 T6 B reversed 0.001 load ctrl0.8: load nodes 460, box [-5.0, -25.0, 5.1] to [5.0, 25.0, 15.1]
+17:56:40 {'study': 'T6 B reversed 0.001 load ctrl0.8', 'el_mm': 3.0, 'nodes': 86685, 'elements': 57855, 'solve_s': 165, 'peak_vm_all': 0.06, 'peak_vm_away': 0.02, 'at': [-0.12, 2.91, 6.04], 'sf_yield': 2757.21, 'max_disp_mm': 0.2022664099931717, 'reaction_N': [0.0, -0.0, 0.5, 0.5], 'applied_N': 0.5}
+17:56:40 ok reaction Fz = -(2 x load): 0.5000 (expected 0.5000)
+17:56:40 T6 B reversed 0.001 load ctrl0.8 {"el_ctrl": 0.8, "load_scale": -0.001, "nodes": 86685, "solve_s": 165, "reaction": [0.0, -0.0, 0.5, 0.5], "reaction_blockbottom": [-0.0, 0.0, 0.2935], "reaction_pads": [1e-05, -1e-05, 0.20648], "pad_share_pct": 41.29511, "pin_uz_mean": -0.19927, "pin_rise_mm": -0.09927, "pin_rise_min": -0.20226, "pin_rise_max": 0.0, "pin_ux_mean": -0.00035, "pin_uy_mean": -8.5e-05, "peak_bearing_mpa": 0.055, "peak_bearing_at": [0.29, 3.12, 4.91], "patch_nodes": 195, "patch_half_width_mm": 1.42, "peak_vm_near_hole": 0.027, "peak_vm_near_hole_at": [0.29, 3.12, 4.91], "peak_vm_block_all": null, "vm_pin_max": 0.059, "hole_pressure_sum_n": null, "patch_x_range": [-1.35, 1.49]}
+17:56:40 clock: T6 T6 B reversed 0.001 load ctrl0.8 done: 23.3 min since the job began
+17:56:40 ok bottom: 1.0000 (expected 1.0000)
+17:56:40 ok pad outer faces: 2.0000 (expected 2.0000)
+17:56:40 ok pin centre face: 1.0000 (expected 1.0000)
+17:56:40 ok hole face: 1.0000 (expected 1.0000)
+17:56:40 ok stub +Y: 1.0000 (expected 1.0000)
+17:56:40 ok stub -Y: 1.0000 (expected 1.0000)
+17:56:40 ok pad walls: 2.0000 (expected 2.0000)
+17:56:40 PREDICT T6 C full load ctrl1.2: {'nodes': 45000, 'rise_mm': '0.10 (clearance, built in) plus a few micrometres', 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:56:42 T6 C full load ctrl1.2: body "SolidBody 1(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:56:42 T6 C full load ctrl1.2: body "SolidBody 2(HOLE)" is PETG printed
+17:56:42 T6 C full load ctrl1.2: body "SolidBody 3(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:56:42 T6 C full load ctrl1.2: body "SolidBody 4(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:56:42 T6 C full load ctrl1.2: body "SolidBody 5(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:56:42 T6 C full load ctrl1.2: body "SolidBody 6(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:56:44 T6 C full load ctrl1.2: mesh rc 0, 40870 nodes, 26708 elements, free 22.2 GB
+17:56:44 T6 C full load ctrl1.2: solver macro: before  0  | set err  0   | after  7  | 
+17:57:09 T6 C full load ctrl1.2: fixture nodes 749, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.6]
+17:57:09 T6 C full load ctrl1.2: load nodes 460, box [-5.0, -25.0, 5.1] to [5.0, 25.0, 15.1]
+17:57:15 {'study': 'T6 C full load ctrl1.2', 'el_mm': 3.0, 'nodes': 40870, 'elements': 26708, 'solve_s': 35, 'peak_vm_all': 31.37, 'peak_vm_away': 30.27, 'at': [0.31, 0.62, 15.09], 'sf_yield': 1.49, 'max_disp_mm': 0.13366317749023438, 'reaction_N': [-0.0, 0.0, -500.0, 500.0], 'applied_N': 500.0}
+17:57:15 ok reaction Fz = -(2 x load): -500.0000 (expected -500.0000)
+17:57:15 T6 C full load ctrl1.2 {"el_ctrl": 1.2, "load_scale": 1.0, "nodes": 40870, "solve_s": 35, "reaction": [-0.0, 0.0, -500.0, 500.0], "reaction_blockbottom": [-0.0022, -0.0008, -499.965], "reaction_pads": [0.00222, 0.00075, -0.03494], "pad_share_pct": 0.007, "pin_uz_mean": 0.0275, "pin_rise_mm": 0.1275, "pin_rise_min": -0.07304, "pin_rise_max": 0.13003, "pin_ux_mean": -0.001279, "pin_uy_mean": -0.000148, "peak_bearing_mpa": 11.868, "peak_bearing_at": [0.9, 12.38, 15.02], "patch_nodes": 734, "patch_half_width_mm": 2.21, "peak_vm_near_hole": 30.274, "peak_vm_near_hole_at": [0.31, 0.62, 15.09], "peak_vm_block_all": null, "vm_pin_max": 31.367, "hole_pressure_sum_n": null, "patch_x_range": [-2.09, 2.32]}
+17:57:15 clock: T6 T6 C full load ctrl1.2 done: 23.9 min since the job began
+17:57:15 ok bottom: 1.0000 (expected 1.0000)
+17:57:16 ok pad outer faces: 2.0000 (expected 2.0000)
+17:57:16 ok pin centre face: 1.0000 (expected 1.0000)
+17:57:16 ok hole face: 1.0000 (expected 1.0000)
+17:57:16 ok stub +Y: 1.0000 (expected 1.0000)
+17:57:16 ok stub -Y: 1.0000 (expected 1.0000)
+17:57:16 ok pad walls: 2.0000 (expected 2.0000)
+17:57:16 PREDICT T6 D full load ctrl0.6: {'nodes': 45000, 'rise_mm': '0.10 (clearance, built in) plus a few micrometres', 'peak_bearing_mpa': 6.8, 'half_width_mm': 1.57, 'peak_at': 'crown, near the block faces y +-15 (pin bends: edge loaded)'}
+17:57:16 T6 D full load ctrl0.6: body "SolidBody 1(HOLE)" is PETG printed
+17:57:16 T6 D full load ctrl0.6: body "SolidBody 2(<tp_pad_b>-<TP_PAD_B>)" is Soft pad
+17:57:16 T6 D full load ctrl0.6: body "SolidBody 3(<tp_pad_a>-<TP_PAD_A>)" is Soft pad
+17:57:16 T6 D full load ctrl0.6: body "SolidBody 4(<tp_pin_e2>-<TP_PIN_E2>)" is Steel
+17:57:16 T6 D full load ctrl0.6: body "SolidBody 5(<tp_pin_e1>-<TP_PIN_E1>)" is Steel
+17:57:16 T6 D full load ctrl0.6: body "SolidBody 6(<tp_pin_c>-<TP_PIN_C>)" is Steel
+17:57:18 T6 D full load ctrl0.6: mesh rc 0, 150090 nodes, 101130 elements, free 22.2 GB
+17:57:18 T6 D full load ctrl0.6: solver macro: before  0  | set err  0   | after  7  | 
+18:01:43 T6 D full load ctrl0.6: fixture nodes 787, box [-20.0, -27.0, 0.0] to [20.0, 27.0, 11.6]
+18:01:43 T6 D full load ctrl0.6: load nodes 460, box [-5.0, -25.0, 5.1] to [5.0, 25.0, 15.1]
+18:02:26 {'study': 'T6 D full load ctrl0.6', 'el_mm': 3.0, 'nodes': 150090, 'elements': 101130, 'solve_s': 309, 'peak_vm_all': 31.34, 'peak_vm_away': 30.96, 'at': [0.76, 0.64, 15.04], 'sf_yield': 1.45, 'max_disp_mm': 0.06943558156490326, 'reaction_N': [0.0, -0.0, -500.0, 500.0], 'applied_N': 500.0}
+18:02:26 ok reaction Fz = -(2 x load): -500.0000 (expected -500.0000)
+18:02:26 T6 D full load ctrl0.6 {"el_ctrl": 0.6, "load_scale": 1.0, "nodes": 150090, "solve_s": 309, "reaction": [0.0, -0.0, -500.0, 500.0], "reaction_blockbottom": [0.0007, -0.0004, -499.9651], "reaction_pads": [-0.00066, 0.00045, -0.03498], "pad_share_pct": 0.007, "pin_uz_mean": 0.02783, "pin_rise_mm": 0.12783, "pin_rise_min": -0.00876, "pin_rise_max": 0.06579, "pin_ux_mean": 0.000461, "pin_uy_mean": -7.9e-05, "peak_bearing_mpa": 17.089, "peak_bearing_at": [1.04, -2.71, 14.99], "patch_nodes": 2835, "patch_half_width_mm": 2.05, "peak_vm_near_hole": 30.96, "peak_vm_near_hole_at": [0.76, 0.64, 15.04], "peak_vm_block_all": null, "vm_pin_max": 31.341, "hole_pressure_sum_n": null, "patch_x_range": [-2.05, 2.05]}
+18:02:27 clock: T6 T6 D full load ctrl0.6 done: 29.1 min since the job began
+18:02:27 clock: T6 job end: 29.1 min since the job began
+18:02:27 closing pid 133004 committed MB 1922

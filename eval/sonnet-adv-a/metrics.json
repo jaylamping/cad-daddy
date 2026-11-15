@@ -1,0 +1,22 @@
+{
+ "run": "sonnet-adv-a",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "A",
+ "model": "claude-sonnet-5-5 with a Fable advisor (2 calls)",
+ "plan": "none",
+ "base_commit": "see REPORT.md",
+ "tasks": {
+  "total": 7,
+  "reached": 7,
+  "right": 7,
+  "right_basis": "own report, not checked"
+ },
+ "wall_minutes": 59.9,
+ "waiting_minutes": null,
+ "cost_usd": 20.43,
+ "cost_basis": "Claude Code's own figure in the session record (Sonnet 13.66, advisor 6.77)",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "Advisor path dropped on cost. Every task reported done; not checked against logs or models."
+}

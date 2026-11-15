@@ -1,0 +1,37 @@
+17:37:23 SolidWorks pid 121372 free GB 22.8
+17:37:23 clock: T3a job start (bracket_b export, twin, 4 studies): 4.0 min since the job began
+17:37:25 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\bracket_b.stl 115084 bytes
+17:37:26 ok bracket_b STL watertight: 1.0000 (expected 1.0000)
+17:37:26 ok bracket_b STL volume: 31663.5454 (expected 31642.9999)
+17:37:27 ok RINGS volume change: 23.0342 (expected 23.0342)
+17:37:27 RINGS: cut 23.03 mm3
+17:37:27 ok twin removes under 0.1 %: 0.0699 (expected 0.0700)
+17:37:27 twin volume change mm3 23.034157336107455 share % 0.0698554632547594 box [0.0, 0.0, 0.0, 80.0, 50.0, 46.0]
+17:37:27 ok twin box[0]: 0.0000 (expected 0.0000)
+17:37:27 ok twin box[1]: 0.0000 (expected 0.0000)
+17:37:27 ok twin box[2]: 0.0000 (expected 0.0000)
+17:37:27 ok twin box[3]: 80.0000 (expected 80.0000)
+17:37:27 ok twin box[4]: 50.0000 (expected 50.0000)
+17:37:27 ok twin box[5]: 46.0000 (expected 46.0000)
+17:37:27 ok rebuild errors: 0.0000 (expected 0.0000)
+17:37:27 ok bodies: 1.0000 (expected 1.0000)
+17:37:27 HAND root stress 11.00 MPa, cantilever tip 0.000 mm (upright alone, rigid root), lower hole rim nominal 5.5 x 3 = 16.5
+17:37:27 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:37:27 ok ring face found: 1.0000 (expected 1.0000)
+17:37:27 ok ring face found: 1.0000 (expected 1.0000)
+17:37:28 ok ring face found: 1.0000 (expected 1.0000)
+17:37:28 ok ring face found: 1.0000 (expected 1.0000)
+17:37:28 ok bore faces: 1.0000 (expected 1.0000)
+17:37:28 ok small hole walls: 4.0000 (expected 4.0000)
+17:37:28 PREDICT T3 RINGS el3.0: {'nodes': 20533, 'disp_mm': '0.3 to 1.0', 'peak': 'lower small-hole rims, layer tension about 16 MPa'}
+17:37:35 T3 RINGS el3.0: mesh rc 0, 24804 nodes, 14989 elements, free 22.5 GB
+17:37:37 T3 RINGS el3.0: fixture nodes 864, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:37:37 T3 RINGS el3.0: load nodes 418, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.95]
+17:37:38 {'study': 'T3 RINGS el3.0', 'el_mm': 3.0, 'nodes': 24804, 'elements': 14989, 'solve_s': 10, 'peak_vm_all': 25.75, 'peak_vm_away': 13.96, 'at': [10.0, 35.29, 6.0], 'sf_yield': 3.22, 'max_disp_mm': 2.8367013931274414, 'reaction_N': [-150.0, 0.0, -0.0, 150.0], 'applied_N': 150.0}
+17:37:38 closing pid 121372 committed MB 1839
+Traceback (most recent call last):
+  File "J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\eval\sonnet-adv-a\t3a.py", line 61, in <module>
+    expect('reaction Fx = 150', r.reaction[0], 150.0, 0.01)
+  File "J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\solidworks\swkit.py", line 261, in expect
+    raise Failed(f'{what}: got {got:.4f}, expected {want:.4f} (off by {err:.4g}, allowed {lim:.4g})')
+swkit.Failed: reaction Fx = 150: got -150.0000, expected 150.0000 (off by 300, allowed 1.5)

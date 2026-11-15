@@ -1,0 +1,82 @@
+{
+  "task": "T1",
+  "status": "done",
+  "notes": [],
+  "measured": {
+    "base_holes_xy": [
+      [
+        25.0,
+        10.0
+      ],
+      [
+        25.0,
+        40.0
+      ],
+      [
+        65.0,
+        10.0
+      ],
+      [
+        65.0,
+        40.0
+      ]
+    ],
+    "bore_yz": [
+      25.0,
+      28.0
+    ],
+    "upright_holes_yz": [
+      [
+        14.04,
+        17.04
+      ],
+      [
+        14.04,
+        38.96
+      ],
+      [
+        35.96,
+        17.04
+      ],
+      [
+        35.96,
+        38.96
+      ]
+    ],
+    "fillet_faces": 1,
+    "round_faces": 4
+  },
+  "tree_len": 34,
+  "volume_mm3": 32974.024,
+  "hand_volume_mm3": 32974.0,
+  "mass_g": 39.239,
+  "bbox_mm": [
+    0.0,
+    0.0,
+    0.0,
+    80.0,
+    50.0,
+    46.0
+  ],
+  "bodies": 1,
+  "build_s": 8,
+  "stl_watertight": true,
+  "stl_bodies": 1,
+  "stl_volume_mm3": 32990.377,
+  "stl_volume_rel_err": 0.0005,
+  "step_mm": true,
+  "stl_bounds_mm": [
+    [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    [
+      80.0,
+      50.0,
+      46.0
+    ]
+  ],
+  "stl_bounds_within_0p1": true,
+  "finished": "23:17:28"
+}

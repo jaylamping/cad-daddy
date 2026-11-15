@@ -1,0 +1,194 @@
+19:35:34 judge: margin, not converged; lowest factor 4.58 at "lower half, +X, shear"
+19:35:34 judge:   margin, not converged: "upper half, +X, layer" factor 17.58, last step 34.2 %, factor after two more 17.58
+print with Y up: verdict margin, not converged lowest factor 4.58 lower half, +X, shear
+19:35:34 judge: not shown; lowest factor 3.82 at "lower half, +X, shear"
+19:35:34 judge:   not shown: "upper half, +Y, shear" factor 8.35, last step 27.9 % after 19.9 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+19:35:34 judge:   not shown: "lower half, +X, shear" factor 3.82, last step 46.7 % after 41.6 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+print with Z up: verdict not shown lowest factor 3.82 lower half, +X, shear
+19:35:34 judge: not shown; lowest factor 3.77 at "lower half, +X, shear"
+19:35:34 judge:   not shown: "lower half, +X, shear" factor 3.77, last step 20.0 % after 2.1 %: the step is growing, the mark of a sharp edge or of a contact edge where the corner of another body bears. Find where the peak is, then round the edge or read 1 mm away from it; a finer mesh will not settle it
+print with X up: verdict not shown lowest factor 3.77 lower half, +X, shear
+{
+ "screws": {
+  "Y_4.0": {
+   "per_screw_N": [
+    90.9,
+    94.8,
+    90.6,
+    95.0
+   ],
+   "sum_N": 371.4,
+   "max_N": 95.0,
+   "shear_fit": [
+    -5.5,
+    -5.4,
+    5.5,
+    5.5
+   ]
+  },
+  "Y_3.0": {
+   "per_screw_N": [
+    90.7,
+    94.9,
+    90.4,
+    94.9
+   ],
+   "sum_N": 370.9,
+   "max_N": 94.9,
+   "shear_fit": [
+    -5.3,
+    -5.4,
+    5.5,
+    5.4
+   ]
+  },
+  "Y_2.4": {
+   "per_screw_N": [
+    90.6,
+    94.8,
+    90.4,
+    95.0
+   ],
+   "sum_N": 370.9,
+   "max_N": 95.0,
+   "shear_fit": [
+    -5.4,
+    -5.3,
+    5.4,
+    5.4
+   ]
+  },
+  "X_4.0": {
+   "per_screw_N": [
+    39.5,
+    40.7,
+    26.0,
+    26.1
+   ],
+   "sum_N": 132.3,
+   "max_N": 40.7,
+   "shear_fit": [
+    2.5,
+    2.3,
+    18.4,
+    18.5
+   ]
+  },
+  "X_3.0": {
+   "per_screw_N": [
+    39.2,
+    40.8,
+    26.0,
+    26.1
+   ],
+   "sum_N": 132.2,
+   "max_N": 40.8,
+   "shear_fit": [
+    2.4,
+    2.3,
+    18.4,
+    18.4
+   ]
+  },
+  "X_2.4": {
+   "per_screw_N": [
+    39.4,
+    40.7,
+    26.1,
+    26.3
+   ],
+   "sum_N": 132.5,
+   "max_N": 40.7,
+   "shear_fit": [
+    2.5,
+    2.2,
+    18.3,
+    18.4
+   ]
+  }
+ },
+ "bonded_Y": {
+  "per_screw_N": [
+   -13.9,
+   -14.0,
+   -14.0,
+   -14.0
+  ],
+  "sum_N": -55.9,
+  "max_disp": 0.03477994352579117,
+  "ring_mean_disp": [
+   -3.918449113835369e-05,
+   0.011077617603950278,
+   -0.0007578170867892529
+  ],
+  "upper_vm": 1.8834270238876343,
+  "lower_vm": 2.6019229888916016
+ },
+ "bonded_X": {
+  "per_screw_N": [
+   18.5,
+   19.2,
+   -0.8,
+   -1.2
+  ],
+  "sum_N": 35.8,
+  "max_disp": 0.06794250011444092,
+  "ring_mean_disp": [
+   0.03196476242657102,
+   -0.0044022438656182074,
+   0.00024412287185594287
+  ],
+  "upper_vm": 3.247889757156372,
+  "lower_vm": 3.888624906539917
+ },
+ "contact_Y_3.0": {
+  "max_disp": 0.23228394985198975,
+  "ring_mean_disp": [
+   -0.0005791217259197234,
+   0.13976142529520344,
+   0.0005186926071017817
+  ],
+  "upper_mean_disp": [
+   -0.0008796534998016315,
+   0.05720115746451867,
+   -0.0024621344222811926
+  ],
+  "lower_mean_disp": [
+   4.455433461523555e-05,
+   0.004612800061738441,
+   -0.00029532802690730123
+  ],
+  "reaction": [
+   -0.0,
+   -300.0,
+   -0.0,
+   300.0
+  ],
+  "pad_vm_polluted": 24.360321044921875
+ },
+ "contact_X_3.0": {
+  "max_disp": 0.2537766695022583,
+  "ring_mean_disp": [
+   0.1769941832687034,
+   0.06734869338003602,
+   0.00028610410918029184
+  ],
+  "upper_mean_disp": [
+   0.2056003943951967,
+   0.0030607224345225717,
+   -3.4365218668886465e-05
+  ],
+  "lower_mean_disp": [
+   0.02513863761414885,
+   -0.0008457813024100804,
+   3.619765963240147e-05
+  ],
+  "reaction": [
+   -300.0,
+   0.0,
+   -0.0,
+   300.0
+  ],
+  "pad_vm_polluted": 17.05011749267578
+ }
+}

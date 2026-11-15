@@ -1,0 +1,85 @@
+17:41:03 SolidWorks pid 119988 free GB 22.8
+17:41:03 clock: T3b+T4a job start: 7.7 min since the job began
+17:41:05 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:41:05 ok ring face found: 1.0000 (expected 1.0000)
+17:41:05 ok ring face found: 1.0000 (expected 1.0000)
+17:41:05 ok ring face found: 1.0000 (expected 1.0000)
+17:41:05 ok ring face found: 1.0000 (expected 1.0000)
+17:41:05 ok small hole walls: 4.0000 (expected 4.0000)
+17:41:05 ok bottom face: 1.0000 (expected 1.0000)
+17:41:05 PREDICT T3 BOTTOM FIXED el2.2: {'nodes': 52066, 'disp_mm': 'smaller than 2.8 (base cannot rotate between screws)', 'peak': 'upright root / holes'}
+17:41:12 T3 BOTTOM FIXED el2.2: mesh rc 0, 49650 nodes, 31194 elements, free 22.5 GB
+17:41:18 T3 BOTTOM FIXED el2.2: fixture nodes 3952, box [0.0, 0.0, 0.0] to [80.0, 50.0, 0.0]
+17:41:18 T3 BOTTOM FIXED el2.2: load nodes 830, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:41:23 {'study': 'T3 BOTTOM FIXED el2.2', 'el_mm': 2.2, 'nodes': 49650, 'elements': 31194, 'solve_s': 17, 'peak_vm_all': 16.91, 'peak_vm_away': 16.84, 'at': [6.0, 15.64, 17.62], 'sf_yield': 2.67, 'max_disp_mm': 1.1696438789367676, 'reaction_N': [-150.001, 0.002, -0.003, 150.001], 'applied_N': 150.0}
+17:41:23 ok reaction Fx = -150: -150.0010 (expected -150.0000)
+17:41:23 T3 BOTTOM FIXED el2.2 {"hole rims (0.6 mm clear of loaded faces)": [16.844, 13.198, 5.749], "hole rims (all nodes)": [16.909, 15.314, 5.75], "root and fillet": [11.984, 9.78, 5.084], "base (2.5 mm clear of fixed holes)": [1.822, 0.243, 1.01], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [16.844, 9.78, 5.749]}
+17:41:23 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:41:23 ok ring face found: 1.0000 (expected 1.0000)
+17:41:23 ok ring face found: 1.0000 (expected 1.0000)
+17:41:23 ok ring face found: 1.0000 (expected 1.0000)
+17:41:23 ok ring face found: 1.0000 (expected 1.0000)
+17:41:23 ok small hole walls: 4.0000 (expected 4.0000)
+17:41:23 ok bottom face: 1.0000 (expected 1.0000)
+17:41:23 PREDICT T3 SMALLHOLES REMOTE el2.2: {'nodes': 52066, 'disp_mm': 'about 2.4 to 2.8', 'peak': 'hole rims, lower than rings'}
+17:41:25 T3 SMALLHOLES REMOTE el2.2: mesh rc 0, 49124 nodes, 30758 elements, free 22.5 GB
+17:41:31 T3 SMALLHOLES REMOTE el2.2: fixture nodes 1664, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:41:31 T3 SMALLHOLES REMOTE el2.2: load nodes 976, box [0.3, 12.34, 15.34] to [6.0, 37.66, 40.66]
+17:41:34 {'study': 'T3 SMALLHOLES REMOTE el2.2', 'el_mm': 2.2, 'nodes': 49124, 'elements': 30758, 'solve_s': 10, 'peak_vm_all': 29.09, 'peak_vm_away': 14.46, 'at': [8.9, 25.55, 6.15], 'sf_yield': 3.11, 'max_disp_mm': 2.381321668624878, 'reaction_N': [-150.0, 0.0, -0.0, 150.0], 'applied_N': 150.0}
+17:41:34 ok reaction Fx = -150: -150.0000 (expected -150.0000)
+17:41:34 T3 SMALLHOLES REMOTE el2.2 {"hole rims (0.6 mm clear of loaded faces)": [5.769, 1.513, 2.617], "hole rims (all nodes)": [16.589, 22.475, 7.065], "root and fillet": [14.456, 10.012, 7.014], "base (2.5 mm clear of fixed holes)": [17.569, 0.281, 2.364], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [17.569, 10.012, 7.014]}
+17:41:34 clock: T3b studies done: 8.2 min since the job began
+17:41:34 clock: T4 start (build bracket_sharp): 8.2 min since the job began
+17:41:35 ok BASE volume change: 24000.0000 (expected 24000.0000)
+17:41:35 BASE: added 24000.00 mm3
+17:41:36 ok UPRIGHT volume change: 12000.0000 (expected 12000.0000)
+17:41:36 UPRIGHT: added 12000.00 mm3
+17:41:37 ok BASE_HOLES volume change: 570.1991 (expected 570.1991)
+17:41:37 BASE_HOLES: cut 570.20 mm3
+17:41:38 ok BORE volume change: 2280.7963 (expected 2280.7963)
+17:41:38 BORE: cut 2280.80 mm3
+17:41:38 ok SMALL_HOLES volume change: 217.9009 (expected 217.9009)
+17:41:38 SMALL_HOLES: cut 217.90 mm3
+17:41:38 ok base corner edges: 2.0000 (expected 2.0000)
+17:41:38 BASE_ROUNDS: R5.0 on 2 edges, volume change -64.38 mm3
+17:41:38 ok R5 base built: 5.0000 (expected 5.0000)
+17:41:39 ok upright top edges: 2.0000 (expected 2.0000)
+17:41:41 UPRIGHT_ROUNDS: R5.0 on 2 edges, volume change -64.38 mm3
+17:41:41 ok R5 upright built: 5.0000 (expected 5.0000)
+17:41:41 ok volume: 32802.3427 (expected 32802.3427)
+17:41:41 ok bodies: 1.0000 (expected 1.0000)
+17:41:41 ok errors: 0.0000 (expected 0.0000)
+17:41:41 bracket_sharp volume 32802.34269845273 hand 32802.34269845274 box [0.0, 0.0, 0.0, 80.0, 50.0, 46.0]
+17:41:41 ok no fillet face r4: 0.0000 (expected 0.0000)
+17:41:42 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\bracket_sharp.stl 75684 bytes
+17:41:42 ok RINGS volume change: 23.0342 (expected 23.0342)
+17:41:42 RINGS: cut 23.03 mm3
+17:41:42 ok twin removes under 0.1 %: 0.0702 (expected 0.0700)
+17:41:43 ok ring face found: 1.0000 (expected 1.0000)
+17:41:43 ok ring face found: 1.0000 (expected 1.0000)
+17:41:43 ok ring face found: 1.0000 (expected 1.0000)
+17:41:43 ok ring face found: 1.0000 (expected 1.0000)
+17:41:43 ok corner edge: 1.0000 (expected 1.0000)
+17:41:43 PREDICT T4 SHARP el3.0: {'nodes': 22000, 'disp_mm': 'about 2.8, as T3', 'peak': 'sharp inside corner climbs; hole rims as T3'}
+17:41:44 T4 SHARP el3.0: mesh rc 0, 32188 nodes, 19930 elements, free 22.5 GB
+17:41:47 T4 SHARP el3.0: fixture nodes 824, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:41:47 T4 SHARP el3.0: load nodes 418, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.95]
+17:41:49 {'study': 'T4 SHARP el3.0', 'el_mm': 3.0, 'nodes': 32188, 'elements': 19930, 'solve_s': 5, 'peak_vm_all': 27.27, 'peak_vm_away': 22.79, 'at': [6.36, 10.98, 6.0], 'sf_yield': 1.97, 'max_disp_mm': 3.139406204223633, 'reaction_N': [-149.999, -0.001, -0.001, 149.999], 'applied_N': 150.0}
+17:41:49 ok reaction Fx = -150: -149.9990 (expected -150.0000)
+17:41:49 T4 SHARP el3.0 {"vm": 22.794, "vm_at": [6.36, 10.98, 6.0], "layer_Z": 3.966, "layer_Z_at": [6.72, 5.07, 6.0], "sz_min_on_corner": -27.297, "sz_max_on_corner": -5.47, "corner_nodes": 174, "avg_vm_0.5": 13.191, "avg_n_0.5": 11, "avg_vm_1.0": 10.146, "avg_n_1.0": 65, "avg_vm_2.0": 8.583, "avg_n_2.0": 247}
+17:41:49 clock: T4 T4 SHARP el3.0 done: 8.4 min since the job began
+17:41:49 ok ring face found: 1.0000 (expected 1.0000)
+17:41:51 ok ring face found: 1.0000 (expected 1.0000)
+17:41:52 ok ring face found: 1.0000 (expected 1.0000)
+17:41:52 ok ring face found: 1.0000 (expected 1.0000)
+17:41:52 ok corner edge: 1.0000 (expected 1.0000)
+17:41:52 PREDICT T4 SHARP el2.2: {'nodes': 55785, 'disp_mm': 'about 2.8, as T3', 'peak': 'sharp inside corner climbs; hole rims as T3'}
+17:41:53 T4 SHARP el2.2: mesh rc 0, 65250 nodes, 41623 elements, free 22.5 GB
+17:42:02 T4 SHARP el2.2: fixture nodes 1664, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:42:02 T4 SHARP el2.2: load nodes 830, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:42:07 {'study': 'T4 SHARP el2.2', 'el_mm': 2.2, 'nodes': 65250, 'elements': 41623, 'solve_s': 14, 'peak_vm_all': 29.79, 'peak_vm_away': 25.98, 'at': [6.26, 33.04, 6.0], 'sf_yield': 1.73, 'max_disp_mm': 3.148085355758667, 'reaction_N': [-149.995, -0.0, -0.004, 149.995], 'applied_N': 150.0}
+17:42:07 ok reaction Fx = -150: -149.9950 (expected -150.0000)
+17:42:07 T4 SHARP el2.2 {"vm": 25.981, "vm_at": [6.26, 33.04, 6.0], "layer_Z": 6.146, "layer_Z_at": [6.53, 27.72, 6.0], "sz_min_on_corner": -33.051, "sz_max_on_corner": 1.29, "corner_nodes": 888, "avg_vm_0.5": 15.917, "avg_n_0.5": 26, "avg_vm_1.0": 11.427, "avg_n_1.0": 136, "avg_vm_2.0": 8.69, "avg_n_2.0": 519}
+17:42:07 clock: T4 T4 SHARP el2.2 done: 8.7 min since the job began
+17:42:07 clock: T3b+T4a job end: 8.7 min since the job began
+17:42:07 closing pid 119988 committed MB 1871

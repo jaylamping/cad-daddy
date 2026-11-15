@@ -1,0 +1,107 @@
+17:44:33 SolidWorks pid 124912 free GB 21.7
+17:44:33 clock: T5 start: 11.2 min since the job began
+17:44:38 ok BASE volume change: 24000.0000 (expected 24000.0000)
+17:44:38 BASE: added 24000.00 mm3
+17:44:39 ok UPRIGHT volume change: 15000.0000 (expected 15000.0000)
+17:44:39 UPRIGHT: added 15000.00 mm3
+17:44:39 ok inside-corner edges: 1.0000 (expected 1.0000)
+17:44:39 INSIDE_FILLET: R4.0 on 1 edges, volume change +171.68 mm3
+17:44:39 ok fillet radius built: 4.0000 (expected 4.0000)
+17:44:39 ok fillet dv: 171.6815 (expected 171.6815)
+17:44:40 ok BASE_HOLES volume change: 570.1991 (expected 570.1991)
+17:44:40 BASE_HOLES: cut 570.20 mm3
+17:44:41 ok BORE volume change: 2850.9953 (expected 2850.9953)
+17:44:41 BORE: cut 2851.00 mm3
+17:44:42 ok SMALL_HOLES volume change: 272.3761 (expected 272.3761)
+17:44:42 SMALL_HOLES: cut 272.38 mm3
+17:44:42 ok base corner edges: 2.0000 (expected 2.0000)
+17:44:42 BASE_ROUNDS: R5.0 on 2 edges, volume change -64.38 mm3
+17:44:42 ok R5 base built: 5.0000 (expected 5.0000)
+17:44:42 ok upright top edges: 2.0000 (expected 2.0000)
+17:44:42 UPRIGHT_ROUNDS: R5.0 on 2 edges, volume change -80.48 mm3
+17:44:42 ok R5 upright built: 5.0000 (expected 5.0000)
+17:44:43 ok volume: 35333.2547 (expected 35333.2547)
+17:44:43 ok bodies: 1.0000 (expected 1.0000)
+17:44:43 ok errors: 0.0000 (expected 0.0000)
+17:44:43 bracket_c volume 35333.254746749815 hand 35333.2547467498 growth % 7.154815460235975 box [0.0, 0.0, 0.0, 80.0, 50.0, 46.0]
+17:44:43 ok mass cap: 1.0000 (expected 1.0000)
+17:44:43 ok footprint box[0]: 0.0000 (expected 0.0000)
+17:44:43 ok footprint box[1]: 0.0000 (expected 0.0000)
+17:44:43 ok footprint box[2]: 0.0000 (expected 0.0000)
+17:44:43 ok footprint box[3]: 80.0000 (expected 80.0000)
+17:44:43 ok footprint box[4]: 50.0000 (expected 50.0000)
+17:44:43 ok footprint box[5]: 46.0000 (expected 46.0000)
+17:44:43 ok base holes unchanged: 4.0000 (expected 4.0000)
+17:44:43 ok bore: 1.0000 (expected 1.0000)
+17:44:43 ok bore y centre: 25.0000 (expected 25.0000)
+17:44:43 ok bore z centre: 28.0000 (expected 28.0000)
+17:44:43 ok small holes unchanged: 4.0000 (expected 4.0000)
+17:44:43 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\bracket_c.step 81063 bytes
+17:44:43 exported J:\code\cad-daddy-wt\sw-eval-sonnet-adv-a\_wip\sw-eval\sonnet-adv-a\bracket_c.stl 77484 bytes
+17:44:44 ok RINGS volume change: 23.0342 (expected 23.0342)
+17:44:44 RINGS: cut 23.03 mm3
+17:44:44 ok twin removes under 0.1 %: 0.0652 (expected 0.0700)
+17:44:45 ok STL watertight: 1.0000 (expected 1.0000)
+17:44:45 ok STL volume: 35352.4759 (expected 35333.2547)
+17:44:45 ok STEP mm: 1.0000 (expected 1.0000)
+17:44:45 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:44:45 ok ring face found: 1.0000 (expected 1.0000)
+17:44:45 ok ring face found: 1.0000 (expected 1.0000)
+17:44:45 ok ring face found: 1.0000 (expected 1.0000)
+17:44:48 ok ring face found: 1.0000 (expected 1.0000)
+17:44:48 ok small hole walls: 4.0000 (expected 4.0000)
+17:44:48 ok bottom: 1.0000 (expected 1.0000)
+17:44:48 PREDICT T5 C el3.0: {'nodes': 21985, 'disp_mm': 'about 2.1 (the base still turns between the screws)', 'layer_Z_hole_rims_mpa': 9.3, 'peak': 'lower holes'}
+17:44:53 T5 C el3.0: mesh rc 0, 26912 nodes, 16427 elements, free 21.5 GB
+17:44:58 T5 C el3.0: fixture nodes 864, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:44:58 T5 C el3.0: load nodes 413, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.95]
+17:45:00 {'study': 'T5 C el3.0', 'el_mm': 3.0, 'nodes': 26912, 'elements': 16427, 'solve_s': 11, 'peak_vm_all': 26.06, 'peak_vm_away': 13.71, 'at': [11.5, 11.76, 6.0], 'sf_yield': 3.28, 'max_disp_mm': 2.220796585083008, 'reaction_N': [-150.0, -0.0, -0.0, 150.0], 'applied_N': 150.0}
+17:45:00 ok reaction Fx = -150: -150.0000 (expected -150.0000)
+17:45:00 T5 C el3.0 {"hole rims (0.6 mm clear of loaded faces)": [11.744, 8.767, 3.735, 4.247, 3.742], "hole rims (all nodes)": [11.744, 8.767, 3.735, 4.247, 3.742], "root and fillet": [13.709, 6.523, 5.905, 2.797, 1.009], "base (2.5 mm clear of fixed holes)": [16.181, 0.476, 2.507, 6.236, 3.142], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [16.181, 6.523, 5.905, 6.236, 3.742]}
+17:45:00 clock: T5 T5 C el3.0 done: 11.6 min since the job began
+17:45:00 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:45:00 ok ring face found: 1.0000 (expected 1.0000)
+17:45:00 ok ring face found: 1.0000 (expected 1.0000)
+17:45:00 ok ring face found: 1.0000 (expected 1.0000)
+17:45:00 ok ring face found: 1.0000 (expected 1.0000)
+17:45:00 ok small hole walls: 4.0000 (expected 4.0000)
+17:45:00 ok bottom: 1.0000 (expected 1.0000)
+17:45:00 PREDICT T5 C el2.2: {'nodes': 55747, 'disp_mm': 'about 2.1 (the base still turns between the screws)', 'layer_Z_hole_rims_mpa': 9.3, 'peak': 'lower holes'}
+17:45:02 T5 C el2.2: mesh rc 0, 57351 nodes, 36259 elements, free 21.5 GB
+17:45:10 T5 C el2.2: fixture nodes 1664, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:45:10 T5 C el2.2: load nodes 831, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:45:15 {'study': 'T5 C el2.2', 'el_mm': 2.2, 'nodes': 57351, 'elements': 36259, 'solve_s': 14, 'peak_vm_all': 29.36, 'peak_vm_away': 14.41, 'at': [10.47, 37.57, 6.14], 'sf_yield': 3.12, 'max_disp_mm': 2.228076934814453, 'reaction_N': [-149.997, 0.001, -0.0, 149.997], 'applied_N': 150.0}
+17:45:15 ok reaction Fx = -150: -149.9970 (expected -150.0000)
+17:45:15 T5 C el2.2 {"hole rims (0.6 mm clear of loaded faces)": [12.35, 8.464, 3.929, 5.372, 3.896], "hole rims (all nodes)": [12.35, 9.208, 3.929, 5.372, 3.896], "root and fillet": [14.409, 6.52, 6.257, 2.816, 1.02], "base (2.5 mm clear of fixed holes)": [16.495, 0.363, 2.595, 6.019, 2.736], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [16.495, 6.52, 6.257, 6.019, 3.896]}
+17:45:15 clock: T5 T5 C el2.2 done: 11.9 min since the job began
+17:45:15 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:45:15 ok ring face found: 1.0000 (expected 1.0000)
+17:45:15 ok ring face found: 1.0000 (expected 1.0000)
+17:45:15 ok ring face found: 1.0000 (expected 1.0000)
+17:45:16 ok ring face found: 1.0000 (expected 1.0000)
+17:45:16 ok small hole walls: 4.0000 (expected 4.0000)
+17:45:16 ok bottom: 1.0000 (expected 1.0000)
+17:45:16 PREDICT T5 C el1.6: {'nodes': 144921, 'disp_mm': 'about 2.1 (the base still turns between the screws)', 'layer_Z_hole_rims_mpa': 9.3, 'peak': 'lower holes'}
+17:45:20 T5 C el1.6: mesh rc 0, 132854 nodes, 87327 elements, free 21.4 GB
+17:45:57 T5 C el1.6: fixture nodes 3248, box [22.25, 7.25, 0.0] to [67.75, 42.75, 6.0]
+17:45:57 T5 C el1.6: load nodes 1540, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:46:17 {'study': 'T5 C el1.6', 'el_mm': 1.6, 'nodes': 132854, 'elements': 87327, 'solve_s': 59, 'peak_vm_all': 33.6, 'peak_vm_away': 15.41, 'at': [18.78, 39.42, 6.0], 'sf_yield': 2.92, 'max_disp_mm': 2.2318906784057617, 'reaction_N': [-150.003, 0.001, 0.001, 150.003], 'applied_N': 150.0}
+17:46:17 ok reaction Fx = -150: -150.0030 (expected -150.0000)
+17:46:17 T5 C el1.6 {"hole rims (0.6 mm clear of loaded faces)": [12.705, 8.74, 4.47, 6.393, 4.465], "hole rims (all nodes)": [12.705, 9.191, 4.47, 6.393, 4.465], "root and fillet": [14.909, 6.541, 6.41, 2.89, 0.966], "base (2.5 mm clear of fixed holes)": [16.546, 0.527, 2.833, 5.968, 2.74], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [16.546, 6.541, 6.41, 6.393, 4.465]}
+17:46:17 clock: T5 T5 C el1.6 done: 12.9 min since the job began
+17:46:17 ok fixed hole walls: 4.0000 (expected 4.0000)
+17:46:17 ok ring face found: 1.0000 (expected 1.0000)
+17:46:17 ok ring face found: 1.0000 (expected 1.0000)
+17:46:17 ok ring face found: 1.0000 (expected 1.0000)
+17:46:17 ok ring face found: 1.0000 (expected 1.0000)
+17:46:17 ok small hole walls: 4.0000 (expected 4.0000)
+17:46:18 ok bottom: 1.0000 (expected 1.0000)
+17:46:18 PREDICT T5 C BOTTOM el2.2: {'nodes': 55747}
+17:46:21 T5 C BOTTOM el2.2: mesh rc 0, 53846 nodes, 34190 elements, free 22.2 GB
+17:46:28 T5 C BOTTOM el2.2: fixture nodes 3952, box [0.0, 0.0, 0.0] to [80.0, 50.0, 0.0]
+17:46:28 T5 C BOTTOM el2.2: load nodes 831, box [0.3, 11.04, 14.04] to [0.3, 38.96, 41.96]
+17:46:33 {'study': 'T5 C BOTTOM el2.2', 'el_mm': 2.2, 'nodes': 53846, 'elements': 34190, 'solve_s': 15, 'peak_vm_all': 11.05, 'peak_vm_away': 11.05, 'at': [7.5, 15.64, 17.62], 'sf_yield': 4.07, 'max_disp_mm': 0.6398422122001648, 'reaction_N': [-150.0, 0.0, 0.001, 150.0], 'applied_N': 150.0}
+17:46:33 ok reaction Fx = -150: -150.0000 (expected -150.0000)
+17:46:33 T5 C BOTTOM el2.2 {"hole rims (0.6 mm clear of loaded faces)": [11.045, 9.359, 3.811, 4.242, 3.754], "hole rims (all nodes)": [11.045, 9.977, 3.811, 4.242, 3.754], "root and fillet": [8.107, 6.291, 3.597, 2.598, 0.974], "base (2.5 mm clear of fixed holes)": [2.481, 0.296, 1.329, 0.405, 0.643], "everywhere clear of loads (2 mm) and fixtures (2.5 mm)": [11.045, 6.291, 3.811, 4.242, 3.754]}
+17:46:33 clock: T5 job end: 13.2 min since the job began
+17:46:33 closing pid 124912 committed MB 1899

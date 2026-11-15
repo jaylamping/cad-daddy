@@ -1,0 +1,22 @@
+{
+ "run": "haiku-plan-c-round4",
+ "date": "2026-11-14",
+ "machine": "holly-pc",
+ "set": "C",
+ "model": "claude-haiku-5-5",
+ "plan": "Fable review",
+ "base_commit": "9e06740",
+ "tasks": {
+  "total": 1,
+  "reached": 1,
+  "right": 0,
+  "right_basis": "results read from the files"
+ },
+ "wall_minutes": 12.8,
+ "waiting_minutes": null,
+ "cost_usd": 2.65,
+ "cost_basis": "Claude Code's own figure in the session record; covers the follow-up and rounds 2 to 4 and two set-up jobs (one session, 119 min wall)",
+ "jobs": null,
+ "jobs_failed": null,
+ "notes": "Neck aimed at the two failing places: fail 1.78. Stopped here."
+}

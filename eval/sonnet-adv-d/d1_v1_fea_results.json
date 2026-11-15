@@ -1,0 +1,174 @@
+{
+ "section_sz_mean": 0.4817105531692505,
+ "section_syy_mean": 0.4817105531692505,
+ "section_sy_at_y11_14": 0.4817105531692505,
+ "section_nodes": 16,
+ "alt_support": {
+  "nodes": 29739,
+  "vm": 0.8947243094444275,
+  "at": [
+   43.0,
+   -11.0,
+   1.0
+  ],
+  "layer_down": 0.10444755852222443,
+  "layer_up": 0.2983226180076599,
+  "shear": 0.29959022633572957,
+  "disp": 0.04084949195384979,
+  "reaction": [
+   0.0,
+   0.0,
+   9.0,
+   9.0
+  ],
+  "vm_all": 1.392698049545288
+ },
+ "rows": [
+  {
+   "el": 3.0,
+   "nodes": 11977,
+   "vm": 0.48438695073127747,
+   "at": [
+    36.34,
+    -11.4,
+    8.0
+   ],
+   "layer_down": 0.038384661078453064,
+   "layer_up": 0.06668588519096375,
+   "shear": 0.0888443829868955,
+   "shear_at": [
+    -35.0,
+    6.57,
+    6.0
+   ],
+   "disp": 0.018434422090649605,
+   "reaction": [
+    -0.0,
+    0.0,
+    9.0,
+    9.0
+   ],
+   "applied": 9.0,
+   "solve_s": 2.4830429553985596,
+   "vm_all": 0.717914879322052
+  },
+  {
+   "el": 2.0,
+   "nodes": 29739,
+   "vm": 0.49005383253097534,
+   "at": [
+    -36.8,
+    -11.0,
+    8.0
+   ],
+   "layer_down": 0.021336756646633148,
+   "layer_up": 0.06997321546077728,
+   "shear": 0.08758412047796865,
+   "shear_at": [
+    35.0,
+    -8.0,
+    6.0
+   ],
+   "disp": 0.018627621233463287,
+   "reaction": [
+    -0.0,
+    0.0,
+    9.0,
+    9.0
+   ],
+   "applied": 9.0,
+   "solve_s": 7.107729434967041,
+   "vm_all": 0.8052254319190979
+  },
+  {
+   "el": 1.5,
+   "nodes": 60868,
+   "vm": 0.49518293142318726,
+   "at": [
+    36.3,
+    -11.25,
+    8.0
+   ],
+   "layer_down": 0.022129414603114128,
+   "layer_up": 0.07240895926952362,
+   "shear": 0.09186162199503718,
+   "shear_at": [
+    -43.0,
+    7.22,
+    6.0
+   ],
+   "disp": 0.018707765266299248,
+   "reaction": [
+    0.0,
+    0.0,
+    9.0,
+    9.0
+   ],
+   "applied": 9.0,
+   "solve_s": 12.873778104782104,
+   "vm_all": 0.9242475628852844
+  }
+ ],
+ "judge": {
+  "verdict": "pass",
+  "need": 2.0,
+  "lowest_factor": 90.88,
+  "lowest_entry": "mount, 9 N, vm",
+  "rows": [
+   {
+    "entry": "mount, 9 N, vm",
+    "values": [
+     0.48438695073127747,
+     0.49005383253097534,
+     0.49518293142318726
+    ],
+    "limit": 45.0,
+    "factor": 90.88,
+    "converged": true,
+    "last_step_pct": 1.0,
+    "step_before_pct": 1.2,
+    "last_change_mpa": 0.005,
+    "settled_under_mpa": 1.125,
+    "step_growing": false,
+    "factor_after_two_more_steps": 89.0,
+    "state": "pass"
+   },
+   {
+    "entry": "mount, 9 N, layer",
+    "values": [
+     0.06668588519096375,
+     0.06997321546077728,
+     0.07240895926952362
+    ],
+    "limit": 22.5,
+    "factor": 310.74,
+    "converged": true,
+    "last_step_pct": 3.5,
+    "step_before_pct": 4.9,
+    "last_change_mpa": 0.002,
+    "settled_under_mpa": 0.562,
+    "step_growing": false,
+    "factor_after_two_more_steps": 290.18,
+    "state": "pass"
+   },
+   {
+    "entry": "mount, 9 N, shear",
+    "values": [
+     0.0888443829868955,
+     0.08758412047796865,
+     0.09186162199503718
+    ],
+    "limit": 13.0,
+    "factor": 141.52,
+    "converged": true,
+    "last_step_pct": 4.9,
+    "step_before_pct": 1.4,
+    "last_change_mpa": 0.004,
+    "settled_under_mpa": 0.325,
+    "step_growing": false,
+    "factor_after_two_more_steps": 128.64,
+    "state": "pass"
+   }
+  ]
+ }
+}

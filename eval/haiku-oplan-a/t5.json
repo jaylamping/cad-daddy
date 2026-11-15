@@ -1,0 +1,198 @@
+{
+  "task": "T5",
+  "status": "done",
+  "notes": [],
+  "mass_g": 39.24,
+  "mass_growth_pct": 0.0,
+  "rows_B_Y_layers": [
+    {
+      "el": 3.0,
+      "nodes": 32123,
+      "reaction_N": [
+        -149.999,
+        0.004,
+        0.0,
+        149.999
+      ],
+      "max_disp_mm": 2.784348249435425,
+      "excessive": false,
+      "vm_mpa": 19.396,
+      "vm_at": [
+        6.0,
+        37.58,
+        16.54
+      ],
+      "sf_yield": 2.32,
+      "layer_Y_tension_mpa": 6.112,
+      "layer_Y_at": [
+        0.0,
+        26.3,
+        17.08
+      ],
+      "sf_layer_Y": 3.681,
+      "layer_Y_shear_mpa": 7.375,
+      "layer_Y_shear_at": [
+        6.0,
+        15.39,
+        18.07
+      ],
+      "sf_shear_Y": 1.763,
+      "layer_Z_tension_mpa_for_reference": 17.749,
+      "layer_Z_at": [
+        0.0,
+        37.66,
+        16.95
+      ]
+    },
+    {
+      "el": 2.0,
+      "nodes": 87860,
+      "reaction_N": [
+        -149.998,
+        0.0,
+        0.0,
+        149.998
+      ],
+      "max_disp_mm": 2.791581630706787,
+      "excessive": false,
+      "vm_mpa": 20.336,
+      "vm_at": [
+        5.74,
+        34.41,
+        17.73
+      ],
+      "sf_yield": 2.213,
+      "layer_Y_tension_mpa": 6.971,
+      "layer_Y_at": [
+        0.26,
+        15.33,
+        18.15
+      ],
+      "sf_layer_Y": 3.228,
+      "layer_Y_shear_mpa": 8.059,
+      "layer_Y_shear_at": [
+        5.74,
+        15.48,
+        17.95
+      ],
+      "sf_shear_Y": 1.613,
+      "layer_Z_tension_mpa_for_reference": 17.986,
+      "layer_Z_at": [
+        0.26,
+        12.34,
+        16.94
+      ]
+    },
+    {
+      "el": 1.5,
+      "nodes": 180445,
+      "reaction_N": [
+        -149.996,
+        -0.002,
+        -0.0,
+        149.996
+      ],
+      "max_disp_mm": 2.7940680980682373,
+      "excessive": false,
+      "vm_mpa": 20.69,
+      "vm_at": [
+        5.81,
+        34.35,
+        17.59
+      ],
+      "sf_yield": 2.175,
+      "layer_Y_tension_mpa": 7.825,
+      "layer_Y_at": [
+        0.39,
+        15.24,
+        18.24
+      ],
+      "sf_layer_Y": 2.876,
+      "layer_Y_shear_mpa": 8.686,
+      "layer_Y_shear_at": [
+        5.81,
+        34.55,
+        17.99
+      ],
+      "sf_shear_Y": 1.497,
+      "layer_Z_tension_mpa_for_reference": 17.875,
+      "layer_Z_at": [
+        0.19,
+        12.34,
+        16.93
+      ]
+    }
+  ],
+  "last_step_change_pct": {
+    "vm_mpa": 1.71,
+    "layer_Y_tension_mpa": 10.91,
+    "layer_Y_shear_mpa": 7.22
+  },
+  "converged": false,
+  "check_model_A_el1p5_Y": {
+    "el": 1.5,
+    "nodes": 180445,
+    "reaction_N": [
+      -150.0,
+      -0.0,
+      0.0,
+      150.0
+    ],
+    "max_disp_mm": 2.3717479705810547,
+    "excessive": false,
+    "vm_mpa": 21.394,
+    "vm_at": [
+      6.0,
+      14.26,
+      15.35
+    ],
+    "sf_yield": 2.103,
+    "layer_Y_tension_mpa": 17.631,
+    "layer_Y_at": [
+      0.0,
+      36.18,
+      15.35
+    ],
+    "sf_layer_Y": 1.276,
+    "layer_Y_shear_mpa": 8.164,
+    "layer_Y_shear_at": [
+      6.0,
+      34.32,
+      16.61
+    ],
+    "sf_shear_Y": 1.592,
+    "layer_Z_tension_mpa_for_reference": 30.342,
+    "layer_Z_at": [
+      0.0,
+      35.74,
+      15.35
+    ]
+  },
+  "direction_table_B_el1p5": {
+    "Z_base_on_bed": {
+      "tension": 17.875,
+      "at": [
+        0.19,
+        12.34,
+        16.93
+      ]
+    },
+    "Y_side_on_bed": {
+      "tension": 7.825,
+      "at": [
+        0.39,
+        15.24,
+        18.24
+      ]
+    },
+    "X_back_on_bed": {
+      "tension": 16.151,
+      "at": [
+        19.16,
+        9.93,
+        0.0
+      ]
+    }
+  },
+  "finished": "23:39:31"
+}

@@ -1,0 +1,10 @@
+22:54:35 clock: C2 finish start: 30.7 min since the job began
+SHAPE link_boxy.stl {"triangles": 1632, "area_mm2": 38261.4, "flat_share": 0.91, "largest_flat": 0.144, "sharp_mm": 2406.4, "sharp_per_area": 12.3, "bbox_mm": [70.0, 44.0, 250.0]}
+SHAPE link_organic.stl {"triangles": 13964, "area_mm2": 28965.4, "flat_share": 0.201, "largest_flat": 0.081, "sharp_mm": 845.8, "sharp_per_area": 4.97, "bbox_mm": [71.99, 44.0, 249.0]}
+22:54:37 ok the sheet was drawn from the part that was studied (STL volume against results.json): 107591.1723 (expected 107591.2000)
+SHAPE link_organic.stl {"triangles": 13964, "area_mm2": 28965.4, "flat_share": 0.201, "largest_flat": 0.081, "sharp_mm": 845.8, "sharp_per_area": 4.97, "bbox_mm": [71.99, 44.0, 249.0]}
+22:54:38 clock: C2 checkpoint_03: 30.8 min since the job began
+22:54:38 clock: C2 end: 30.8 min since the job began
+results.json C2 ['checkpoints', 'fixed_items_ok', 'gate', 'governing', 'ideas_tried', 'mass_after_g', 'mass_before_g', 'minutes', 'print_orientation', 'sf_layer', 'sf_shear', 'sf_yield', 'shape_after', 'shape_before', 'status', 'verdict']
+results.json set ['c1_minutes', 'c2_minutes', 'minutes']
+C2 FINISHED {"gate": {"fixed_items_ok": true, "one_body_watertight": true, "requirement_met": false, "mass_not_above_boxy": true}, "verdict": "fail", "minutes": 30.8, "set_minutes": 30.8}
