@@ -373,15 +373,19 @@ def windows(pid):
     return rows
 
 
-SIM_PROMPT_YES = "&Yes, continue to load SOLIDWORKS Simulation"
+ADDIN_PROMPT_YES = "&Yes, continue to load SOLIDWORKS "  # then the add-in's name: Simulation, CAM 2026, ...
 
 
-def _answer_simulation_prompt(pid):
-    """Press Yes on this PID's "continue to load SOLIDWORKS Simulation?" prompt. Returns True if it was there.
+def _answer_addin_prompt(pid):
+    """Press Yes on this PID's "continue to load SOLIDWORKS <add-in>?" prompt. Returns the add-in's name, or "".
 
-    SolidWorks asked it on 2026-11-15 when Simulation was loaded seconds after another instance of the same user had
-    loaded it or started up, and again in the next instance while one sat at the prompt or had been killed there. The
-    instance waits at it, hidden, for ever; Yes lets it carry on. Only that exact prompt, only in this PID.
+    SolidWorks asks it when the last run stopped while loading that add-in. Seen for Simulation on holly-pc
+    (2026-11-15), when Simulation was loaded seconds after another instance of the same user had loaded it or started
+    up, and again in the next instance while one sat at the prompt or had been killed there. Seen for CAM 2026 at
+    startup on joey-vm (2026-11-15), after an instance crashed 18 s into its start (access violation in CWAPIu.DLL);
+    a start that fails at it and is killed leaves the marker set, so it chains to the next start. The instance waits
+    at it, hidden, for ever; Yes lets it carry on. Never No: that disables the add-in for later starts too. Only that
+    prompt, only in this PID.
     """
     hit = []
 
@@ -392,15 +396,16 @@ def _answer_simulation_prompt(pid):
             kids = []
             win32gui.EnumChildWindows(h, lambda c, _: kids.append(c) or True, None)
             for c in kids:
-                if win32gui.GetWindowText(c) == SIM_PROMPT_YES:
+                text = win32gui.GetWindowText(c)
+                if text.startswith(ADDIN_PROMPT_YES):
                     win32gui.PostMessage(c, win32con.BM_CLICK, 0, 0)
-                    hit.append(h)
+                    hit.append(text[len(ADDIN_PROMPT_YES):])
         except win32gui.error:
             pass  # a window destroyed between the listing and the look
         return True
 
     win32gui.EnumWindows(find, None)
-    return bool(hit)
+    return hit[0] if hit else ""
 
 
 def _say(*a):
@@ -826,8 +831,9 @@ class Instance:
 
         def answer():
             while not done.wait(1.0):
-                if _answer_simulation_prompt(self.pid):
-                    _say(f"sw_instance: answered Yes to the 'continue to load SOLIDWORKS Simulation' prompt in PID {self.pid}")
+                addin = _answer_addin_prompt(self.pid)
+                if addin:
+                    _say(f"sw_instance: answered Yes to the 'continue to load SOLIDWORKS {addin}' prompt in PID {self.pid}")
 
         threading.Thread(target=answer, daemon=True).start()
         try:
@@ -1186,6 +1192,12 @@ class _StartClock:
         return f"; PID {self.held_by} was busy and may have held it at the splash screen" if self.held_by else ""
 
 
+def _answer_launch_addin_prompt(pid):
+    addin = _answer_addin_prompt(pid)
+    if addin:
+        _say(f"sw_instance: answered Yes to the 'continue to load SOLIDWORKS {addin}' prompt while PID {pid} started")
+
+
 def _finish_launch(proc, timeout, visible, busy_wait=0):
     """Attach to the process launch() just started and wait for it to finish starting."""
     pid = proc.pid
@@ -1198,6 +1210,7 @@ def _finish_launch(proc, timeout, visible, busy_wait=0):
         if proc.poll() is not None:
             raise RuntimeError(f"SolidWorks exited during start, code {proc.returncode}")
         journal = _clear_journal_prompt(pid) or journal
+        _answer_launch_addin_prompt(pid)
         try:
             disp = _attach_by_pid(pid)
         except pythoncom.com_error:
@@ -1212,11 +1225,12 @@ def _finish_launch(proc, timeout, visible, busy_wait=0):
         if proc.poll() is not None:
             raise RuntimeError(f"SolidWorks exited during start, code {proc.returncode}")
         journal = _clear_journal_prompt(pid) or journal
+        _answer_launch_addin_prompt(pid)
         try:
             if sw.StartupProcessCompleted:
                 break
-        except pythoncom.com_error:
-            pass
+        except (pythoncom.com_error, AttributeError):
+            pass  # AttributeError: the add-in prompt held the instance before it could answer (joey-vm, 2026-11-15)
         time.sleep(1)
     else:
         raise RuntimeError(f"SolidWorks PID {pid} did not finish starting{clock.why()}")
