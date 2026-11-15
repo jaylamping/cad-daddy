@@ -46,6 +46,25 @@ pass through both: the shape is undecided at the start and decided from the mome
 The test at stage 10 is the same as the lane question. A reviewer who finds itself writing a fourth round of
 instructions is looking at a new idea, not a correction.
 
+## When the strongest model is not available
+
+If the Fable allowance is used up, Opus takes its place in every role above: planner, reviewer, and designer of
+undecided shapes. Work does not wait for the allowance to come back. What changes, from the one set of runs with
+Opus as the planner:
+
+- **Its hand numbers were wrong more often** (a load model said to read low that read high, a section stress
+  with the wrong sign, a screw load 27 % off). The builder cannot repair them. So the planner works each hand
+  number twice, by two routes where it can, and marks any it is unsure of as low confidence; the builder treats a
+  mismatch against a low-confidence number as the plan's fault after ten minutes, records it and moves on.
+- **The plan comes with a shared `common.py`** (allowables, paths, the checks), which that planner left out.
+- **The report says who planned and who reviewed**, and `metrics.json` carries it in `plan`, so a result can be
+  read with that in mind.
+- **Gate 3 work waits.** A review before anything load-bearing or powered is done by the strongest model or by the
+  outside reviewers, not by the fallback alone.
+
+Opus has been measured only as a planner. As a reviewer and as the designer of an undecided shape it is
+untried; the first such jobs get a second look when the allowance is back.
+
 ## Rules for both lanes
 
 1. **The verdict word comes from `swfea.judge()` on the rows.** Never from prose. Both directions have happened:
@@ -67,4 +86,5 @@ instructions is looking at a new idea, not a correction.
 ## Not yet measured
 
 - The middle model as the builder under a plan. It may be the right choice for parts that are half decided.
+- The fallback model as reviewer, and as the designer of an undecided shape.
 - More than one run of each arrangement. Every comparison above is one run.
