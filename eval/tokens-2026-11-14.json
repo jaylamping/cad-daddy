@@ -11,7 +11,6 @@
       "wall_minutes": 19.5,
       "active_minutes": 19.5,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T09:03:38Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-a.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-a (cd there first; it is already",
       "api_requests_logged": 77,
       "api_responses": 69,
       "models": {
@@ -72,7 +71,6 @@
       "wall_minutes": 633.8,
       "active_minutes": 22.1,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T09:23:17Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-d.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-d (cd there first; it is already",
       "api_requests_logged": 61,
       "api_responses": 61,
       "models": {
@@ -133,7 +131,6 @@
       "wall_minutes": 22.1,
       "active_minutes": 16.2,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T19:57:23Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a (cd there first; it ",
       "api_requests_logged": 77,
       "api_responses": 77,
       "models": {
@@ -194,7 +191,6 @@
       "wall_minutes": 15.9,
       "active_minutes": 5.6,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T21:20:56Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a.followup.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-a (cd there f",
       "api_requests_logged": 39,
       "api_responses": 39,
       "models": {
@@ -255,7 +251,6 @@
       "wall_minutes": 20.7,
       "active_minutes": 20.7,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T20:19:39Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d (cd there first; it ",
       "api_requests_logged": 187,
       "api_responses": 187,
       "models": {
@@ -316,7 +311,6 @@
       "wall_minutes": 25.4,
       "active_minutes": 6.2,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T21:37:00Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> Read the file J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d.followup.brief.txt and do exactly what it says, working in the worktree J:\\code\\cad-daddy-wt\\sw-eval-haiku-plan-d (cd there f",
       "api_requests_logged": 44,
       "api_responses": 44,
       "models": {
@@ -377,7 +371,6 @@
       "wall_minutes": 59.9,
       "active_minutes": 52.5,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-14T23:28:48Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> First, before any other work: send one short message saying your model id and whether you have a tool named advisor available (yes or no, nothing more). Then do the job below withou",
       "api_requests_logged": 252,
       "api_responses": 252,
       "models": {
@@ -480,7 +473,6 @@
       "wall_minutes": 76.2,
       "active_minutes": 76.2,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-15T00:28:48Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> First, before any other work: send one short message saying your model id and whether you have a tool named advisor available (yes or no, nothing more). Then do the job below withou",
       "api_requests_logged": 149,
       "api_responses": 149,
       "models": {
@@ -559,7 +551,6 @@
       "wall_minutes": 54.2,
       "active_minutes": 16.3,
       "active_minutes_note": "gaps over 300 s between records left out",
-      "first_user_message": "<relay from=\"coordinator\" session=\"session_01754CrBTYZTZuHgXKq77Y5E\" current-time=\"2026-11-15T02:02:05Z\" reason=\"spawn\"> The note below was written by the coordinator session, a Claude session, not by your user. <note> First, before any other work: send one short message saying your model id and whether you have a tool named advisor available (yes or no, nothing more). If you do have one, do not u",
       "api_requests_logged": 75,
       "api_responses": 75,
       "models": {
