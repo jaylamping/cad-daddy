@@ -1,0 +1,1967 @@
+{
+  "D1_study_a": {
+    "3.0": {
+      "reaction_N": [
+        -0.0,
+        0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.0333,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.315,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 0.671,
+      "peak_at_mm": [
+        37.7,
+        -21.7,
+        5.0
+      ],
+      "vm_max_all_MPa": 1.578,
+      "plateau_outside_hole_wall": {
+        "1.0": 1.221,
+        "2.0": 0.841,
+        "3.0": 0.671,
+        "5.0": 0.671
+      },
+      "layer_tension_z_MPa": [
+        0.682,
+        [
+          -37.59,
+          -22.76,
+          6.41
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        0.373,
+        [
+          34.0,
+          9.03,
+          2.47
+        ]
+      ],
+      "sf_yield": 67.02,
+      "sf_layer": 32.99,
+      "sf_shear": 34.85,
+      "insert_boss_vm_MPa": {
+        "front_R": 0.632,
+        "back_R": 0.671,
+        "front_L": 0.598,
+        "back_L": 0.568
+      },
+      "nodes": 13036,
+      "el_mm": 3.0,
+      "solve_s": 8
+    },
+    "2.0": {
+      "reaction_N": [
+        0.0,
+        -0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.0338,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.316,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 0.789,
+      "peak_at_mm": [
+        38.66,
+        22.51,
+        5.0
+      ],
+      "vm_max_all_MPa": 1.846,
+      "plateau_outside_hole_wall": {
+        "1.0": 1.066,
+        "2.0": 0.862,
+        "3.0": 0.789,
+        "5.0": 0.789
+      },
+      "layer_tension_z_MPa": [
+        0.944,
+        [
+          38.66,
+          22.51,
+          5.0
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        0.421,
+        [
+          -33.43,
+          -8.0,
+          2.0
+        ]
+      ],
+      "sf_yield": 57.02,
+      "sf_layer": 23.83,
+      "sf_shear": 30.88,
+      "insert_boss_vm_MPa": {
+        "front_R": 0.789,
+        "back_R": 0.738,
+        "front_L": 0.715,
+        "back_L": 0.75
+      },
+      "nodes": 33844,
+      "el_mm": 2.0,
+      "solve_s": 7
+    },
+    "1.5": {
+      "reaction_N": [
+        0.0,
+        0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.034,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.319,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 0.863,
+      "peak_at_mm": [
+        38.55,
+        -21.95,
+        5.0
+      ],
+      "vm_max_all_MPa": 2.018,
+      "plateau_outside_hole_wall": {
+        "1.0": 1.104,
+        "2.0": 0.863,
+        "3.0": 0.863,
+        "5.0": 0.863
+      },
+      "layer_tension_z_MPa": [
+        0.91,
+        [
+          37.13,
+          22.96,
+          5.0
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        0.461,
+        [
+          -34.0,
+          -8.0,
+          2.5
+        ]
+      ],
+      "sf_yield": 52.12,
+      "sf_layer": 24.73,
+      "sf_shear": 28.2,
+      "insert_boss_vm_MPa": {
+        "front_R": 0.815,
+        "back_R": 0.863,
+        "front_L": 0.821,
+        "back_L": 0.81
+      },
+      "nodes": 71825,
+      "el_mm": 1.5,
+      "solve_s": 18
+    },
+    "converge": {
+      "rows": [
+        [
+          3.0,
+          13036,
+          0.67,
+          0.68,
+          0.37
+        ],
+        [
+          2.0,
+          33844,
+          0.79,
+          0.94,
+          0.42
+        ],
+        [
+          1.5,
+          71825,
+          0.86,
+          0.91,
+          0.46
+        ]
+      ],
+      "converged": false
+    }
+  },
+  "D1_study_b": {
+    "twin_2.0": {
+      "reaction_N": [
+        0.0,
+        -0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.0339,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.331,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 0.76,
+      "peak_at_mm": [
+        -34.0,
+        -8.0,
+        0.0
+      ],
+      "vm_max_all_MPa": 2.282,
+      "plateau_outside_hole_wall": {
+        "1.0": 1.065,
+        "2.0": 0.76,
+        "3.0": 0.76,
+        "5.0": 0.76
+      },
+      "layer_tension_z_MPa": [
+        0.793,
+        [
+          -37.4,
+          22.83,
+          5.0
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        0.42,
+        [
+          -33.43,
+          -8.0,
+          2.0
+        ]
+      ],
+      "sf_yield": 59.21,
+      "sf_layer": 28.37,
+      "sf_shear": 30.95,
+      "insert_boss_vm_MPa": {
+        "front_R": 0.728,
+        "back_R": 0.745,
+        "front_L": 0.743,
+        "back_L": 0.725
+      },
+      "nodes": 34773,
+      "el_mm": 2.0,
+      "solve_s": 10
+    },
+    "twin_1.5": {
+      "reaction_N": [
+        0.0,
+        0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.0342,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.331,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 0.868,
+      "peak_at_mm": [
+        37.13,
+        22.96,
+        5.0
+      ],
+      "vm_max_all_MPa": 1.966,
+      "plateau_outside_hole_wall": {
+        "1.0": 0.868,
+        "2.0": 0.868,
+        "3.0": 0.868,
+        "5.0": 0.868
+      },
+      "layer_tension_z_MPa": [
+        1.098,
+        [
+          37.13,
+          22.96,
+          5.0
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        0.462,
+        [
+          -34.0,
+          -8.0,
+          2.5
+        ]
+      ],
+      "sf_yield": 51.87,
+      "sf_layer": 20.49,
+      "sf_shear": 28.14,
+      "insert_boss_vm_MPa": {
+        "front_R": 0.868,
+        "back_R": 0.853,
+        "front_L": 0.81,
+        "back_L": 0.819
+      },
+      "nodes": 72646,
+      "el_mm": 1.5,
+      "solve_s": 20
+    },
+    "normal_pull_2.0": {
+      "reaction_N": [
+        0.0,
+        0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.1034,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.61,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 1.493,
+      "peak_at_mm": [
+        -34.0,
+        8.0,
+        5.0
+      ],
+      "vm_max_all_MPa": 2.365,
+      "plateau_outside_hole_wall": {
+        "1.0": 1.493,
+        "2.0": 1.493,
+        "3.0": 1.493,
+        "5.0": 1.493
+      },
+      "layer_tension_z_MPa": [
+        0.275,
+        [
+          -34.0,
+          8.0,
+          1.25
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        0.536,
+        [
+          33.37,
+          8.0,
+          2.1
+        ]
+      ],
+      "sf_yield": 30.15,
+      "sf_layer": 81.82,
+      "sf_shear": 24.25,
+      "insert_boss_vm_MPa": {
+        "front_R": 0.322,
+        "back_R": 0.322,
+        "front_L": 0.321,
+        "back_L": 0.322
+      },
+      "nodes": 33844,
+      "el_mm": 2.0,
+      "solve_s": 7
+    }
+  },
+  "D1_study_c": {
+    "fillet_2.0": {
+      "reaction_N": [
+        0.0,
+        -0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.0337,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.316,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 2.115,
+      "peak_at_mm": [
+        -37.74,
+        -22.59,
+        5.13
+      ],
+      "vm_max_all_MPa": 2.115,
+      "plateau_outside_hole_wall": {
+        "1.0": 2.115,
+        "2.0": 2.115,
+        "3.0": 2.115,
+        "5.0": 2.115
+      },
+      "layer_tension_z_MPa": [
+        1.805,
+        [
+          37.73,
+          22.68,
+          5.25
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        1.187,
+        [
+          -37.74,
+          -22.59,
+          5.13
+        ]
+      ],
+      "sf_yield": 21.27,
+      "sf_layer": 12.47,
+      "sf_shear": 10.95,
+      "insert_boss_vm_MPa": {
+        "front_R": 2.039,
+        "back_R": 1.964,
+        "front_L": 2.053,
+        "back_L": 2.115
+      },
+      "nodes": 81428,
+      "el_mm": 2.0,
+      "solve_s": 25
+    },
+    "fillet_1.5": {
+      "reaction_N": [
+        0.0,
+        0.0,
+        -9.0,
+        9.0
+      ],
+      "check1_reaction_ok": true,
+      "max_disp_mm": 0.0338,
+      "check2_disp_in_0.03_0.25": true,
+      "section_sigma_x_at_30_0_5_MPa": -0.319,
+      "check3_hand_0.61_within_15pct": false,
+      "peak_vm_away_MPa": 2.009,
+      "peak_at_mm": [
+        -38.2,
+        22.43,
+        5.09
+      ],
+      "vm_max_all_MPa": 2.025,
+      "plateau_outside_hole_wall": {
+        "1.0": 2.009,
+        "2.0": 2.009,
+        "3.0": 2.009,
+        "5.0": 2.009
+      },
+      "layer_tension_z_MPa": [
+        1.784,
+        [
+          37.59,
+          22.73,
+          5.25
+        ]
+      ],
+      "layer_shear_z_MPa": [
+        1.113,
+        [
+          -37.74,
+          -22.59,
+          5.13
+        ]
+      ],
+      "sf_yield": 22.4,
+      "sf_layer": 12.61,
+      "sf_shear": 11.68,
+      "insert_boss_vm_MPa": {
+        "front_R": 1.981,
+        "back_R": 1.939,
+        "front_L": 2.009,
+        "back_L": 1.993
+      },
+      "nodes": 126512,
+      "el_mm": 1.5,
+      "solve_s": 51
+    }
+  },
+  "D2_build": {
+    "lower_volume_mm3": 19598.79,
+    "upper_volume_mm3": 18878.12,
+    "bodies": 9,
+    "total_volume_mm3": 42083.38,
+    "minutes_build": 0.9
+  },
+  "D2_study_job2": {
+    "Y_2.5_1.0": {
+      "case": "Y_2.5_1.0",
+      "direction": "Y",
+      "el": 2.5,
+      "c": 1.0,
+      "bonded": false,
+      "nodes": 131254,
+      "solve_s": 106,
+      "reaction_N": [
+        -0.0,
+        -300.0,
+        0.0,
+        300.0
+      ],
+      "check1_reaction_vs_load_pct": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring_travel_mm": 0.0406,
+      "ring_UY_mean": 0.0406,
+      "ring_UX_mean": -0.0,
+      "max_disp_mm": 0.0409,
+      "upper": {
+        "peak_vm_MPa": 2.98,
+        "at_mm": [
+          29.05,
+          27.87,
+          5.93
+        ],
+        "sf_yield": 15.09,
+        "layer_tension_MPa": 1.02,
+        "at_layer": [
+          28.15,
+          29.3,
+          -1.13
+        ],
+        "sf_layer": 21.97,
+        "layer_shear_MPa": 0.89,
+        "at_shear": [
+          30.17,
+          28.5,
+          2.68
+        ],
+        "sf_shear": 14.64,
+        "nodes": 50993
+      },
+      "lower": {
+        "peak_vm_MPa": 10.44,
+        "at_mm": [
+          -29.59,
+          -6.4,
+          -1.62
+        ],
+        "sf_yield": 4.31,
+        "layer_tension_MPa": 1.69,
+        "at_layer": [
+          -29.15,
+          -0.4,
+          -0.96
+        ],
+        "sf_layer": 13.33,
+        "layer_shear_MPa": 3.03,
+        "at_shear": [
+          29.17,
+          -0.4,
+          8.0
+        ],
+        "sf_shear": 4.29,
+        "nodes": 34993
+      },
+      "screw_tension_N_at_y10_15_20": [
+        [
+          76.71,
+          77.12,
+          76.89
+        ],
+        [
+          75.0,
+          75.69,
+          76.54
+        ],
+        [
+          68.58,
+          70.72,
+          73.16
+        ],
+        [
+          70.17,
+          71.59,
+          73.36
+        ]
+      ],
+      "screw_sum_N_y15": 295.12,
+      "pad_vm_max_MPa": 0.5521,
+      "masks_nodes": {
+        "ring": 9037,
+        "pads": 312,
+        "screws": 25236,
+        "upper": 50993,
+        "lower": 34993,
+        "band": 10718
+      },
+      "guard_no_upper_lower_in_band": true,
+      "lower_seat_opening_mm": 0.0406
+    },
+    "X_2.5_1.0": {
+      "case": "X_2.5_1.0",
+      "direction": "X",
+      "el": 2.5,
+      "c": 1.0,
+      "bonded": false,
+      "nodes": 131254,
+      "solve_s": 139,
+      "reaction_N": [
+        -300.0,
+        0.0,
+        -0.0,
+        300.0
+      ],
+      "check1_reaction_vs_load_pct": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring_travel_mm": 0.0504,
+      "ring_UY_mean": 0.0217,
+      "ring_UX_mean": 0.0455,
+      "max_disp_mm": 0.064,
+      "upper": {
+        "peak_vm_MPa": 2.95,
+        "at_mm": [
+          -28.32,
+          27.98,
+          0.24
+        ],
+        "sf_yield": 15.24,
+        "layer_tension_MPa": 1.06,
+        "at_layer": [
+          -28.0,
+          29.21,
+          7.26
+        ],
+        "sf_layer": 21.26,
+        "layer_shear_MPa": 0.8,
+        "at_shear": [
+          -28.81,
+          27.94,
+          5.35
+        ],
+        "sf_shear": 16.32,
+        "nodes": 50993
+      },
+      "lower": {
+        "peak_vm_MPa": 8.0,
+        "at_mm": [
+          32.99,
+          -2.11,
+          -0.37
+        ],
+        "sf_yield": 5.62,
+        "layer_tension_MPa": 1.28,
+        "at_layer": [
+          29.03,
+          -0.4,
+          7.52
+        ],
+        "sf_layer": 17.59,
+        "layer_shear_MPa": 2.32,
+        "at_shear": [
+          32.55,
+          -0.4,
+          1.07
+        ],
+        "sf_shear": 5.6,
+        "nodes": 34993
+      },
+      "screw_tension_N_at_y10_15_20": [
+        [
+          47.97,
+          47.67,
+          48.38
+        ],
+        [
+          47.27,
+          47.51,
+          48.17
+        ],
+        [
+          46.5,
+          44.5,
+          44.57
+        ],
+        [
+          46.74,
+          45.17,
+          45.13
+        ]
+      ],
+      "screw_sum_N_y15": 184.85,
+      "pad_vm_max_MPa": 0.2961,
+      "masks_nodes": {
+        "ring": 9037,
+        "pads": 312,
+        "screws": 25236,
+        "upper": 50993,
+        "lower": 34993,
+        "band": 10718
+      },
+      "guard_no_upper_lower_in_band": true,
+      "lower_seat_opening_mm": 0.0218
+    },
+    "Y_bonded_2.5_1.0": {
+      "case": "Y_bonded_2.5_1.0",
+      "direction": "Y",
+      "el": 2.5,
+      "c": 1.0,
+      "bonded": true,
+      "nodes": 131254,
+      "solve_s": 75,
+      "reaction_N": [
+        -0.0,
+        -300.0,
+        -0.0,
+        300.0
+      ],
+      "check1_reaction_vs_load_pct": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring_travel_mm": 0.0018,
+      "ring_UY_mean": 0.0018,
+      "ring_UX_mean": 0.0,
+      "max_disp_mm": 0.0019,
+      "upper": {
+        "peak_vm_MPa": 0.11,
+        "at_mm": [
+          -28.32,
+          27.98,
+          0.24
+        ],
+        "sf_yield": 398.24,
+        "layer_tension_MPa": 0.04,
+        "at_layer": [
+          28.15,
+          29.3,
+          -1.13
+        ],
+        "sf_layer": 557.13,
+        "layer_shear_MPa": 0.03,
+        "at_shear": [
+          30.17,
+          28.5,
+          2.68
+        ],
+        "sf_shear": 399.09,
+        "nodes": 50993
+      },
+      "lower": {
+        "peak_vm_MPa": 0.6,
+        "at_mm": [
+          -32.41,
+          -6.4,
+          1.22
+        ],
+        "sf_yield": 75.5,
+        "layer_tension_MPa": 0.09,
+        "at_layer": [
+          29.2,
+          -1.22,
+          6.33
+        ],
+        "sf_layer": 261.88,
+        "layer_shear_MPa": 0.14,
+        "at_shear": [
+          32.55,
+          -0.4,
+          1.07
+        ],
+        "sf_shear": 92.59,
+        "nodes": 34993
+      },
+      "screw_tension_N_at_y10_15_20": [
+        [
+          2.36,
+          2.29,
+          2.34
+        ],
+        [
+          2.24,
+          2.28,
+          2.33
+        ],
+        [
+          2.67,
+          2.44,
+          2.29
+        ],
+        [
+          2.55,
+          2.41,
+          2.3
+        ]
+      ],
+      "screw_sum_N_y15": 9.42,
+      "pad_vm_max_MPa": 0.1963,
+      "masks_nodes": {
+        "ring": 9037,
+        "pads": 312,
+        "screws": 25236,
+        "upper": 50993,
+        "lower": 34993,
+        "band": 10718
+      },
+      "guard_no_upper_lower_in_band": true,
+      "lower_seat_opening_mm": 0.0001
+    },
+    "Y_3.0_1.5": {
+      "case": "Y_3.0_1.5",
+      "direction": "Y",
+      "el": 3.0,
+      "c": 1.5,
+      "bonded": false,
+      "nodes": 89315,
+      "solve_s": 62,
+      "reaction_N": [
+        0.0,
+        -300.0,
+        -0.0,
+        300.0
+      ],
+      "check1_reaction_vs_load_pct": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ring_travel_mm": 0.0407,
+      "ring_UY_mean": 0.0407,
+      "ring_UX_mean": -0.0,
+      "max_disp_mm": 0.0409,
+      "upper": {
+        "peak_vm_MPa": 3.03,
+        "at_mm": [
+          29.05,
+          27.87,
+          -1.47
+        ],
+        "sf_yield": 14.87,
+        "layer_tension_MPa": 1.3,
+        "at_layer": [
+          -28.0,
+          29.21,
+          -0.14
+        ],
+        "sf_layer": 17.32,
+        "layer_shear_MPa": 0.95,
+        "at_shear": [
+          30.06,
+          27.86,
+          -1.62
+        ],
+        "sf_shear": 13.68,
+        "nodes": 34232
+      },
+      "lower": {
+        "peak_vm_MPa": 11.9,
+        "at_mm": [
+          -29.59,
+          -6.4,
+          -1.62
+        ],
+        "sf_yield": 3.78,
+        "layer_tension_MPa": 1.34,
+        "at_layer": [
+          -30.26,
+          -0.4,
+          9.06
+        ],
+        "sf_layer": 16.77,
+        "layer_shear_MPa": 2.83,
+        "at_shear": [
+          -29.82,
+          -0.4,
+          8.81
+        ],
+        "sf_shear": 4.6,
+        "nodes": 21234
+      },
+      "screw_tension_N_at_y10_15_20": [
+        [
+          76.68,
+          75.76,
+          78.39
+        ],
+        [
+          74.92,
+          75.98,
+          76.52
+        ],
+        [
+          68.5,
+          71.45,
+          73.2
+        ],
+        [
+          68.46,
+          71.06,
+          74.21
+        ]
+      ],
+      "screw_sum_N_y15": 294.25,
+      "pad_vm_max_MPa": 0.4679,
+      "masks_nodes": {
+        "ring": 2965,
+        "pads": 310,
+        "screws": 25209,
+        "upper": 34232,
+        "lower": 21234,
+        "band": 5398
+      },
+      "guard_no_upper_lower_in_band": true,
+      "lower_seat_opening_mm": 0.0407
+    }
+  },
+  "D3": {
+    "status": "done",
+    "plates": {
+      "P1": {
+        "volume_mm3": 17728.67,
+        "hand_volume_mm3": 17728.67,
+        "min_wall_mm": 1.0,
+        "min_wall_where": "cbore -> OD",
+        "changed": true,
+        "why": "ring B turned 45 deg: at 0 deg the B counterbore overlapped the A hole by 0.7 mm",
+        "mass_g": 21.1,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0
+      },
+      "P2": {
+        "volume_mm3": 23947.18,
+        "hand_volume_mm3": 23947.18,
+        "min_wall_mm": 7.0,
+        "min_wall_where": "cbore -> OD",
+        "changed": true,
+        "why": "ring B turned 30 deg: as tabled it sits exactly on ring A",
+        "mass_g": 28.5,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0
+      },
+      "P3": {
+        "volume_mm3": 38698.26,
+        "hand_volume_mm3": 38698.26,
+        "min_wall_mm": 1.0,
+        "min_wall_where": "cbore -> OD",
+        "changed": false,
+        "why": "",
+        "mass_g": 46.05,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 4.0
+      },
+      "P4": {
+        "volume_mm3": 13596.26,
+        "hand_volume_mm3": 13596.26,
+        "min_wall_mm": 1.0,
+        "min_wall_where": "cbore -> OD",
+        "changed": true,
+        "why": "OD 60->68: B counterbore broke out by 3.0 mm; depth 4.6->4.0: floor was 0.4 mm",
+        "mass_g": 16.18,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 1.0
+      },
+      "P5": {
+        "volume_mm3": 62864.78,
+        "hand_volume_mm3": 62864.78,
+        "min_wall_mm": 2.5,
+        "min_wall_where": "cbore -> OD",
+        "changed": false,
+        "why": "",
+        "mass_g": 74.81,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0
+      },
+      "P6": {
+        "volume_mm3": 20848.86,
+        "hand_volume_mm3": 20848.86,
+        "min_wall_mm": 2.0,
+        "min_wall_where": "cbore -> OD",
+        "changed": false,
+        "why": "",
+        "mass_g": 24.81,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0
+      }
+    },
+    "plates_b": {
+      "P1": {
+        "volume_mm3": 22040.22,
+        "hand_volume_mm3": 22040.22,
+        "min_wall_mm": 0.6,
+        "min_wall_where": "cbore -> OD (at the chamfer)",
+        "changed": true,
+        "why": "ring B turned 45 deg: at 0 deg the B counterbore overlapped the A hole by 0.7 mm",
+        "mass_g": 26.23,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0,
+        "chamfer_mm": 0.4,
+        "tree_prefix_identical": true,
+        "tree_extra": [
+          "TOP_CHAMFER"
+        ]
+      },
+      "P2": {
+        "volume_mm3": 29648.45,
+        "hand_volume_mm3": 29648.45,
+        "min_wall_mm": 6.0,
+        "min_wall_where": "cbore -> OD (at the chamfer)",
+        "changed": true,
+        "why": "ring B turned 30 deg: as tabled it sits exactly on ring A",
+        "mass_g": 35.28,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0,
+        "chamfer_mm": 1.0,
+        "tree_prefix_identical": true,
+        "tree_extra": [
+          "TOP_CHAMFER"
+        ]
+      },
+      "P3": {
+        "volume_mm3": 45765.78,
+        "hand_volume_mm3": 45765.78,
+        "min_wall_mm": 0.6,
+        "min_wall_where": "cbore -> OD (at the chamfer)",
+        "changed": false,
+        "why": "",
+        "mass_g": 54.46,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 4.0,
+        "chamfer_mm": 0.4,
+        "tree_prefix_identical": true,
+        "tree_extra": [
+          "TOP_CHAMFER"
+        ],
+        "p3_ring_a": {
+          "n": 8,
+          "radius_mean": 35.0,
+          "first_angle_deg": 22.5
+        }
+      },
+      "P4": {
+        "volume_mm3": 17596.27,
+        "hand_volume_mm3": 17596.27,
+        "min_wall_mm": 0.6,
+        "min_wall_where": "cbore -> OD (at the chamfer)",
+        "changed": true,
+        "why": "OD 60->68: B counterbore broke out by 3.0 mm; depth 4.6->4.0: floor was 0.4 mm",
+        "mass_g": 20.94,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 1.0,
+        "chamfer_mm": 0.4,
+        "tree_prefix_identical": true,
+        "tree_extra": [
+          "TOP_CHAMFER"
+        ]
+      },
+      "P5": {
+        "volume_mm3": 74259.2,
+        "hand_volume_mm3": 74259.2,
+        "min_wall_mm": 1.5,
+        "min_wall_where": "cbore -> OD (at the chamfer)",
+        "changed": false,
+        "why": "",
+        "mass_g": 88.37,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0,
+        "chamfer_mm": 1.0,
+        "tree_prefix_identical": true,
+        "tree_extra": [
+          "TOP_CHAMFER"
+        ]
+      },
+      "P6": {
+        "volume_mm3": 25865.43,
+        "hand_volume_mm3": 25865.43,
+        "min_wall_mm": 1.0,
+        "min_wall_where": "cbore -> OD (at the chamfer)",
+        "changed": false,
+        "why": "",
+        "mass_g": 30.78,
+        "bodies": 1,
+        "stl_watertight": true,
+        "counterbore_floor_z_mm": 3.0,
+        "chamfer_mm": 1.0,
+        "tree_prefix_identical": true,
+        "tree_extra": [
+          "TOP_CHAMFER"
+        ]
+      }
+    },
+    "table_problems": [
+      "P1: ring A (6 x 3.4 at 0 deg) and ring B (4 x 4.5 at 0 deg, cbore 8 deep 3): cbore to A hole overlaps by 0.7 mm (wall -0.70 as tabled). Built: ring B turned 45 deg, wall 3.02 (A-B cbore).",
+      "P2: ring B (6 x 4.5 on 62) is identical to ring A (6 x 4.5 on 62): the B holes ARE the A holes (zero distance, not caught by the wall check). Built: ring B turned 30 deg, 12 holes, wall 9.8. Other reading (six counterbored holes only) stated, not built.",
+      "P3 part two: ring A on 70 at 0 deg: A hole to B counterbore wall 0.30 mm (as tabled on 70). Built: ring A turned 22.5 deg, wall 9.82.",
+      "P4: OD 60 with ring B (6 x 4.5 on 58, cbore 8) breaks out of the disc: cbore to OD -3.0 mm. Built: OD 68 (cbore to OD 1.0). Bolt circle kept.",
+      "P4: counterbore 4.6 deep in 5 mm leaves a 0.4 mm floor (< 0.6). Built: depth 4.0, floor 1.0.",
+      "P1, P3, P4 (and part two): counterbore 1.0 mm from OD is legal (>= 0.6) but under one hole diameter: listed as a question. Part two: a 1.0 chamfer would leave zero wall at the top edge, so 0.4 used on P1, P3, P4 (0.6 left)."
+    ],
+    "one_script": true,
+    "edited_not_rebuilt": true,
+    "edited_how": "Part two opened each saved part (open_doc), save_as P*_b, set_dim on DISC (D1@DISC 6 -> 7.5 etc), edited sketch A_HOLES_SK on P3 (redraw_circles), chamfer added. Tree before/after: prefix identical, only TOP_CHAMFER added (P3 extra entry also only TOP_CHAMFER). Floors unchanged.",
+    "minutes_part1": 0.8,
+    "minutes_part2": 0.6,
+    "status_note": "all six built and changed as specified; first run lost the features (no save before export: fixed and rerun, see REPORT.md)"
+  },
+  "D1": {
+    "status": "partial",
+    "mass_g": 15.67,
+    "parts": 1,
+    "fasteners": [
+      "2 x M5 x 10 button head (ISO 7380, 3 mm hex) into 2 drop-in M5 T-nuts for the 6 mm slot (rail screws, under the board)",
+      "4 x M3 x 6 button head (2 mm hex) into 4 M3 heat-set inserts in Ø4.0 x 6 holes in the standoffs"
+    ],
+    "board_removal_steps": [
+      "Power off the 12 V board.",
+      "Free the two 4 mm2 wire pairs at the board terminals (unplug, or small flat screwdriver).",
+      "Remove the four M3 screws from above with a 2 mm hex key (all vertical; nothing above the board).",
+      "Lift the board off. Refit in reverse. The mount and its M5 screws are not touched."
+    ],
+    "open_area_share": 0.59,
+    "open_area_note": "hand estimate (plan section 2), not measured in SolidWorks",
+    "envelope_ok": false,
+    "envelope_note": "Y +-30.5 used (envelope +-25): board 60 mm side across Y cannot meet +-25 flat, upright needs 60 mm of Z, tilt fails both (see REPORT.md)",
+    "sf_min": {
+      "note": "lowest over all D1 solves (von Mises, even 9 N pull at el 2.0)",
+      "sf_yield": 30.15,
+      "sf_layer_z": 81.82,
+      "sf_shear_z": 24.25
+    },
+    "governing": "arm root where the arm meets the spine (about X +-34, Y +-8, Z 5), 9 N even pull on the four standoff tops, von Mises (not the M5 holes as the plan expected)",
+    "print_orientation": "spine bottom on the bed, layers normal Z, no supports",
+    "assumptions": [
+      "Y envelope +-30.5 accepted",
+      "rail top free over X -45..45",
+      "wires leave at +X",
+      "heat-set inserts ok",
+      "parts under the board clear the M5 heads",
+      "open area = plan-view area not covered",
+      "9 N acts on the board+parts at (0,0,20)",
+      "wires unplugged at the board terminals first"
+    ],
+    "questions": [
+      "Is the Y envelope hard? (assumed no; if yes, no flat or upright build works: see REPORT.md)",
+      "Rail top free over X -45..45? (assumed yes)",
+      "Which end do the wires leave? (assumed +X)",
+      "Heat-set inserts acceptable? (assumed yes)",
+      "Clearance to M5 heads under the spine (assumed yes)"
+    ],
+    "ideas_tried": [
+      "A: flat cradle on four standoffs, two M5 to the rail, four M3 into the board (built, chosen)",
+      "B: upright slide-in card guides, tool-free removal (crude model, rejected: top at Z 70, 25 mm over the envelope; picture d1_idea_b.png)"
+    ],
+    "study": {
+      "model": "buck_mount.SLDPRT (A) and buck_mount_fillet.SLDPRT (A with 0.4 mm standoff-root fillets)",
+      "load": "9 N rigid remote at (0,0,20) on the four standoff tops; and 9 N even pull on the tops (higher)",
+      "support": "M5 hole walls fixed (plateau reported), plus spot-face twin (ring under the head) at 2.0 and 1.5",
+      "a": {
+        "3.0": {
+          "reaction_N": [
+            -0.0,
+            0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.0333,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.315,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 0.671,
+          "peak_at_mm": [
+            37.7,
+            -21.7,
+            5.0
+          ],
+          "vm_max_all_MPa": 1.578,
+          "plateau_outside_hole_wall": {
+            "1.0": 1.221,
+            "2.0": 0.841,
+            "3.0": 0.671,
+            "5.0": 0.671
+          },
+          "layer_tension_z_MPa": [
+            0.682,
+            [
+              -37.59,
+              -22.76,
+              6.41
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            0.373,
+            [
+              34.0,
+              9.03,
+              2.47
+            ]
+          ],
+          "sf_yield": 67.02,
+          "sf_layer": 32.99,
+          "sf_shear": 34.85,
+          "insert_boss_vm_MPa": {
+            "front_R": 0.632,
+            "back_R": 0.671,
+            "front_L": 0.598,
+            "back_L": 0.568
+          },
+          "nodes": 13036,
+          "el_mm": 3.0,
+          "solve_s": 8
+        },
+        "2.0": {
+          "reaction_N": [
+            0.0,
+            -0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.0338,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.316,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 0.789,
+          "peak_at_mm": [
+            38.66,
+            22.51,
+            5.0
+          ],
+          "vm_max_all_MPa": 1.846,
+          "plateau_outside_hole_wall": {
+            "1.0": 1.066,
+            "2.0": 0.862,
+            "3.0": 0.789,
+            "5.0": 0.789
+          },
+          "layer_tension_z_MPa": [
+            0.944,
+            [
+              38.66,
+              22.51,
+              5.0
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            0.421,
+            [
+              -33.43,
+              -8.0,
+              2.0
+            ]
+          ],
+          "sf_yield": 57.02,
+          "sf_layer": 23.83,
+          "sf_shear": 30.88,
+          "insert_boss_vm_MPa": {
+            "front_R": 0.789,
+            "back_R": 0.738,
+            "front_L": 0.715,
+            "back_L": 0.75
+          },
+          "nodes": 33844,
+          "el_mm": 2.0,
+          "solve_s": 7
+        },
+        "1.5": {
+          "reaction_N": [
+            0.0,
+            0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.034,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.319,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 0.863,
+          "peak_at_mm": [
+            38.55,
+            -21.95,
+            5.0
+          ],
+          "vm_max_all_MPa": 2.018,
+          "plateau_outside_hole_wall": {
+            "1.0": 1.104,
+            "2.0": 0.863,
+            "3.0": 0.863,
+            "5.0": 0.863
+          },
+          "layer_tension_z_MPa": [
+            0.91,
+            [
+              37.13,
+              22.96,
+              5.0
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            0.461,
+            [
+              -34.0,
+              -8.0,
+              2.5
+            ]
+          ],
+          "sf_yield": 52.12,
+          "sf_layer": 24.73,
+          "sf_shear": 28.2,
+          "insert_boss_vm_MPa": {
+            "front_R": 0.815,
+            "back_R": 0.863,
+            "front_L": 0.821,
+            "back_L": 0.81
+          },
+          "nodes": 71825,
+          "el_mm": 1.5,
+          "solve_s": 18
+        },
+        "converge": {
+          "rows": [
+            [
+              3.0,
+              13036,
+              0.67,
+              0.68,
+              0.37
+            ],
+            [
+              2.0,
+              33844,
+              0.79,
+              0.94,
+              0.42
+            ],
+            [
+              1.5,
+              71825,
+              0.86,
+              0.91,
+              0.46
+            ]
+          ],
+          "converged": false
+        }
+      },
+      "b": {
+        "twin_2.0": {
+          "reaction_N": [
+            0.0,
+            -0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.0339,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.331,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 0.76,
+          "peak_at_mm": [
+            -34.0,
+            -8.0,
+            0.0
+          ],
+          "vm_max_all_MPa": 2.282,
+          "plateau_outside_hole_wall": {
+            "1.0": 1.065,
+            "2.0": 0.76,
+            "3.0": 0.76,
+            "5.0": 0.76
+          },
+          "layer_tension_z_MPa": [
+            0.793,
+            [
+              -37.4,
+              22.83,
+              5.0
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            0.42,
+            [
+              -33.43,
+              -8.0,
+              2.0
+            ]
+          ],
+          "sf_yield": 59.21,
+          "sf_layer": 28.37,
+          "sf_shear": 30.95,
+          "insert_boss_vm_MPa": {
+            "front_R": 0.728,
+            "back_R": 0.745,
+            "front_L": 0.743,
+            "back_L": 0.725
+          },
+          "nodes": 34773,
+          "el_mm": 2.0,
+          "solve_s": 10
+        },
+        "twin_1.5": {
+          "reaction_N": [
+            0.0,
+            0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.0342,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.331,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 0.868,
+          "peak_at_mm": [
+            37.13,
+            22.96,
+            5.0
+          ],
+          "vm_max_all_MPa": 1.966,
+          "plateau_outside_hole_wall": {
+            "1.0": 0.868,
+            "2.0": 0.868,
+            "3.0": 0.868,
+            "5.0": 0.868
+          },
+          "layer_tension_z_MPa": [
+            1.098,
+            [
+              37.13,
+              22.96,
+              5.0
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            0.462,
+            [
+              -34.0,
+              -8.0,
+              2.5
+            ]
+          ],
+          "sf_yield": 51.87,
+          "sf_layer": 20.49,
+          "sf_shear": 28.14,
+          "insert_boss_vm_MPa": {
+            "front_R": 0.868,
+            "back_R": 0.853,
+            "front_L": 0.81,
+            "back_L": 0.819
+          },
+          "nodes": 72646,
+          "el_mm": 1.5,
+          "solve_s": 20
+        },
+        "normal_pull_2.0": {
+          "reaction_N": [
+            0.0,
+            0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.1034,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.61,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 1.493,
+          "peak_at_mm": [
+            -34.0,
+            8.0,
+            5.0
+          ],
+          "vm_max_all_MPa": 2.365,
+          "plateau_outside_hole_wall": {
+            "1.0": 1.493,
+            "2.0": 1.493,
+            "3.0": 1.493,
+            "5.0": 1.493
+          },
+          "layer_tension_z_MPa": [
+            0.275,
+            [
+              -34.0,
+              8.0,
+              1.25
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            0.536,
+            [
+              33.37,
+              8.0,
+              2.1
+            ]
+          ],
+          "sf_yield": 30.15,
+          "sf_layer": 81.82,
+          "sf_shear": 24.25,
+          "insert_boss_vm_MPa": {
+            "front_R": 0.322,
+            "back_R": 0.322,
+            "front_L": 0.321,
+            "back_L": 0.322
+          },
+          "nodes": 33844,
+          "el_mm": 2.0,
+          "solve_s": 7
+        }
+      },
+      "c": {
+        "fillet_2.0": {
+          "reaction_N": [
+            0.0,
+            -0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.0337,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.316,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 2.115,
+          "peak_at_mm": [
+            -37.74,
+            -22.59,
+            5.13
+          ],
+          "vm_max_all_MPa": 2.115,
+          "plateau_outside_hole_wall": {
+            "1.0": 2.115,
+            "2.0": 2.115,
+            "3.0": 2.115,
+            "5.0": 2.115
+          },
+          "layer_tension_z_MPa": [
+            1.805,
+            [
+              37.73,
+              22.68,
+              5.25
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            1.187,
+            [
+              -37.74,
+              -22.59,
+              5.13
+            ]
+          ],
+          "sf_yield": 21.27,
+          "sf_layer": 12.47,
+          "sf_shear": 10.95,
+          "insert_boss_vm_MPa": {
+            "front_R": 2.039,
+            "back_R": 1.964,
+            "front_L": 2.053,
+            "back_L": 2.115
+          },
+          "nodes": 81428,
+          "el_mm": 2.0,
+          "solve_s": 25
+        },
+        "fillet_1.5": {
+          "reaction_N": [
+            0.0,
+            0.0,
+            -9.0,
+            9.0
+          ],
+          "check1_reaction_ok": true,
+          "max_disp_mm": 0.0338,
+          "check2_disp_in_0.03_0.25": true,
+          "section_sigma_x_at_30_0_5_MPa": -0.319,
+          "check3_hand_0.61_within_15pct": false,
+          "peak_vm_away_MPa": 2.009,
+          "peak_at_mm": [
+            -38.2,
+            22.43,
+            5.09
+          ],
+          "vm_max_all_MPa": 2.025,
+          "plateau_outside_hole_wall": {
+            "1.0": 2.009,
+            "2.0": 2.009,
+            "3.0": 2.009,
+            "5.0": 2.009
+          },
+          "layer_tension_z_MPa": [
+            1.784,
+            [
+              37.59,
+              22.73,
+              5.25
+            ]
+          ],
+          "layer_shear_z_MPa": [
+            1.113,
+            [
+              -37.74,
+              -22.59,
+              5.13
+            ]
+          ],
+          "sf_yield": 22.4,
+          "sf_layer": 12.61,
+          "sf_shear": 11.68,
+          "insert_boss_vm_MPa": {
+            "front_R": 1.981,
+            "back_R": 1.939,
+            "front_L": 2.009,
+            "back_L": 1.993
+          },
+          "nodes": 126512,
+          "el_mm": 1.5,
+          "solve_s": 51
+        }
+      }
+    },
+    "minutes": "about 8 min of SolidWorks work for the build and studies, plus restate; detailed in REPORT.md"
+  },
+  "D2": {
+    "status": "partial",
+    "spec_problems": [
+      "Shoulder opening Ø43.5 is smaller than the inner ring Ø44.0: 0.25 mm radial interference with the turning inner ring. Built: Ø46.0 (1.0 radial clearance, 1.0 land on the outer ring face ID 48).",
+      "Screws at X +-28.2: the Ø3.4 clearance hole is 0.5 mm from the Ø52 seat and the Ø4.0 insert hole 0.2 mm (< 0.6; heat-setting would push into the seat). Built: X +-31.0 (3.3 mm and 3.0 mm to the seat).",
+      "Screws at Z 1 and Z 6 are 5 mm apart: the Ø6 counterbores overlap by 1.0 mm and two M3 heads (Ø5.5) cannot sit side by side. Built: Z -0.2 and 7.2 (1.4 mm between counterbores, 0.8 mm to the Z faces).",
+      "\"Clamp on a +-0.15 mm printer\": with the halves meeting at Y 0 there is no clamp (at most 0.3 mm of play). Built: 0.8 mm split gap (faces at Y +-0.4), seat centred on Y 0 each half.",
+      "Seat length 7.0 equals the bearing width: with the shoulders line to line, +-0.15 mm pinches or rattles. Built: seat Z -0.1..7.1 (0.1 mm axial clearance each side).",
+      "The plan says 10 bodies; the assembly has 9 (2 halves, ring, 4 screws, 2 pads). The plan total 42,083.4 mm3 is the 9-body sum. Corrected in the build check."
+    ],
+    "seat_diameter_mm": 52.0,
+    "split_gap_mm": 0.8,
+    "fit_reasoning": "Seat Ø52.0 at Z -0.1..7.1 carries the Ø52 x 7 outer ring with the seat circle centred on Y 0 in each half; the 0.8 mm split gap means the halves cannot pinch the ring before they meet: screw tension closes them, and the ring grips on the seat. Shoulders Ø46 clear the inner ring Ø44 by 1.0 radially.",
+    "clearances_mm": {
+      "inner_ring_to_shoulder_radial": 1.0,
+      "outer_ring_land": 1.0,
+      "ring_axial_each_side": 0.1,
+      "split_gap": 0.8,
+      "shank_in_hole_radial": 0.2,
+      "head_in_counterbore_radial": 0.25,
+      "insert_hole_to_seat": 3.0,
+      "hole_to_seat": 3.3,
+      "counterbore_to_Z_face": 0.8
+    },
+    "hand_screw_load_n": {
+      "plus_Y": 75.0,
+      "plus_X": "37 (low confidence; 46-48 from study, see screw_load_n)"
+    },
+    "screw_load_n": {
+      "plus_Y_2p5": {
+        "nodes": 131254,
+        "reaction_N": [
+          -0.0,
+          -300.0,
+          0.0
+        ],
+        "ring_travel_mm": 0.0406,
+        "max_disp_mm": 0.0409,
+        "upper": {
+          "peak_vm_MPa": 2.98,
+          "at_mm": [
+            29.05,
+            27.87,
+            5.93
+          ],
+          "sf_yield": 15.09,
+          "layer_tension_MPa": 1.02,
+          "at_layer": [
+            28.15,
+            29.3,
+            -1.13
+          ],
+          "sf_layer": 21.97,
+          "layer_shear_MPa": 0.89,
+          "at_shear": [
+            30.17,
+            28.5,
+            2.68
+          ],
+          "sf_shear": 14.64,
+          "nodes": 50993
+        },
+        "lower": {
+          "peak_vm_MPa": 10.44,
+          "at_mm": [
+            -29.59,
+            -6.4,
+            -1.62
+          ],
+          "sf_yield": 4.31,
+          "layer_tension_MPa": 1.69,
+          "at_layer": [
+            -29.15,
+            -0.4,
+            -0.96
+          ],
+          "sf_layer": 13.33,
+          "layer_shear_MPa": 3.03,
+          "at_shear": [
+            29.17,
+            -0.4,
+            8.0
+          ],
+          "sf_shear": 4.29,
+          "nodes": 34993
+        },
+        "screw_tension_N_y10_15_20": [
+          [
+            76.71,
+            77.12,
+            76.89
+          ],
+          [
+            75.0,
+            75.69,
+            76.54
+          ],
+          [
+            68.58,
+            70.72,
+            73.16
+          ],
+          [
+            70.17,
+            71.59,
+            73.36
+          ]
+        ],
+        "screw_sum_N_y15": 295.12
+      },
+      "plus_X_2p5": {
+        "nodes": 131254,
+        "reaction_N": [
+          -300.0,
+          0.0,
+          -0.0
+        ],
+        "ring_travel_mm": 0.0504,
+        "max_disp_mm": 0.064,
+        "upper": {
+          "peak_vm_MPa": 2.95,
+          "at_mm": [
+            -28.32,
+            27.98,
+            0.24
+          ],
+          "sf_yield": 15.24,
+          "layer_tension_MPa": 1.06,
+          "at_layer": [
+            -28.0,
+            29.21,
+            7.26
+          ],
+          "sf_layer": 21.26,
+          "layer_shear_MPa": 0.8,
+          "at_shear": [
+            -28.81,
+            27.94,
+            5.35
+          ],
+          "sf_shear": 16.32,
+          "nodes": 50993
+        },
+        "lower": {
+          "peak_vm_MPa": 8.0,
+          "at_mm": [
+            32.99,
+            -2.11,
+            -0.37
+          ],
+          "sf_yield": 5.62,
+          "layer_tension_MPa": 1.28,
+          "at_layer": [
+            29.03,
+            -0.4,
+            7.52
+          ],
+          "sf_layer": 17.59,
+          "layer_shear_MPa": 2.32,
+          "at_shear": [
+            32.55,
+            -0.4,
+            1.07
+          ],
+          "sf_shear": 5.6,
+          "nodes": 34993
+        },
+        "screw_tension_N_y10_15_20": [
+          [
+            47.97,
+            47.67,
+            48.38
+          ],
+          [
+            47.27,
+            47.51,
+            48.17
+          ],
+          [
+            46.5,
+            44.5,
+            44.57
+          ],
+          [
+            46.74,
+            45.17,
+            45.13
+          ]
+        ],
+        "screw_sum_N_y15": 184.85
+      },
+      "plus_Y_3p0_1p5": {
+        "nodes": 89315,
+        "reaction_N": [
+          0.0,
+          -300.0,
+          -0.0
+        ],
+        "ring_travel_mm": 0.0407,
+        "max_disp_mm": 0.0409,
+        "upper": {
+          "peak_vm_MPa": 3.03,
+          "at_mm": [
+            29.05,
+            27.87,
+            -1.47
+          ],
+          "sf_yield": 14.87,
+          "layer_tension_MPa": 1.3,
+          "at_layer": [
+            -28.0,
+            29.21,
+            -0.14
+          ],
+          "sf_layer": 17.32,
+          "layer_shear_MPa": 0.95,
+          "at_shear": [
+            30.06,
+            27.86,
+            -1.62
+          ],
+          "sf_shear": 13.68,
+          "nodes": 34232
+        },
+        "lower": {
+          "peak_vm_MPa": 11.9,
+          "at_mm": [
+            -29.59,
+            -6.4,
+            -1.62
+          ],
+          "sf_yield": 3.78,
+          "layer_tension_MPa": 1.34,
+          "at_layer": [
+            -30.26,
+            -0.4,
+            9.06
+          ],
+          "sf_layer": 16.77,
+          "layer_shear_MPa": 2.83,
+          "at_shear": [
+            -29.82,
+            -0.4,
+            8.81
+          ],
+          "sf_shear": 4.6,
+          "nodes": 21234
+        },
+        "screw_tension_N_y10_15_20": [
+          [
+            76.68,
+            75.76,
+            78.39
+          ],
+          [
+            74.92,
+            75.98,
+            76.52
+          ],
+          [
+            68.5,
+            71.45,
+            73.2
+          ],
+          [
+            68.46,
+            71.06,
+            74.21
+          ]
+        ],
+        "screw_sum_N_y15": 294.25
+      },
+      "note": "+Y: study 68.6-77.1 N per screw, sum 295 N against the 300 N load (within 2 %), each within 15 % of the hand 75 N. +X: 46.5-48.4 N per screw tension (hand 37 N each, 27 % lower; not explained, see REPORT.md)"
+    },
+    "nodes": {
+      "Y_2p5_1p0": 131254,
+      "X_2p5_1p0": 131254,
+      "Y_bonded_2p5_1p0": 131254,
+      "Y_3p0_1p5": 89315,
+      "Y_2p0_0p7": "220,878 (over 200,000: not solved)",
+      "Y_2p25_0p8": "failed: solver dialog \"Fixture <Fixed-1> transfer failed\"",
+      "Y_2p25_1p0": "hung: hidden SOLIDWORKS Design message box, instance ended by me",
+      "Y_2p5_1p0_rerun": "hung at the same hidden message box, ended by me"
+    },
+    "how_bodies_were_held": "Lower face Y -32 fixed (base); the pads (two, Soft pad 0.5 MPa, bonded to the ring inside and fixed at their outer faces) hold the ring; upper half held by the four steel screws bonded at head and insert; ring and seats in no-penetration contact (ring OD vs seat); split faces no-penetration (gap 0.8).",
+    "contact_proof": {
+      "ring_travel_contact_mm": 0.0406,
+      "ring_travel_bonded_mm": 0.0018,
+      "ratio": 22.6,
+      "screws_bonded_N": [
+        [
+          2.36,
+          2.29,
+          2.34
+        ],
+        [
+          2.24,
+          2.28,
+          2.33
+        ],
+        [
+          2.67,
+          2.44,
+          2.29
+        ],
+        [
+          2.55,
+          2.41,
+          2.3
+        ]
+      ],
+      "screws_contact_N": [
+        [
+          76.71,
+          77.12,
+          76.89
+        ],
+        [
+          75.0,
+          75.69,
+          76.54
+        ],
+        [
+          68.58,
+          70.72,
+          73.16
+        ],
+        [
+          70.17,
+          71.59,
+          73.36
+        ]
+      ],
+      "lower_seat_opening_mm": 0.0406,
+      "lower_seat_note": "ring UY minus lower housing UY near (0,-26,3.5): positive, so the lower seat is not closing on the ring"
+    },
+    "sf_yield": 4.31,
+    "sf_layer": 13.33,
+    "sf_shear": 4.29,
+    "sf_note": "lowest over both halves and both cases at 2.5/1.0 (lower half, +Y). Other mesh 3.0/1.5 gave 3.78 / 16.8 / 4.6. Crown check not reached.",
+    "governing": "lower half, +Y load: von Mises peak at the mount/insert bottom edge (-29.6, -6.4, -1.6); shear peak at the split face (29.2, -0.4, 8.0); requirement factor 2.0 met on all three measures at both meshes",
+    "print_orientation": {
+      "upper": "Z -4 face on the bed, layers normal Z (chosen; Y and X direction tables not run)",
+      "lower": "Z -4 face on the bed, layers normal Z"
+    },
+    "valid": true,
+    "valid_note": "every solve under 200,000 nodes, reaction equals load (0.0 %), bonded twin proves the contact. NOT shown: convergence of the lower-half peak (climbing 10.4 -> 11.9 MPa between two meshes, 2.5/1.0 -> 3.0/1.5; third mesh could not be solved) and the upper crown plain-section check (job not completed).",
+    "why": "The requirement (factor 2.0 on three measures, both halves) holds at both meshes with margin (lowest 3.8 on von Mises, 4.3 on shear). Verdict is pass on margin, but convergence is not shown, so status partial.",
+    "minutes": "build about 1 min of SolidWorks; study jobs 7 min (job 2) plus about 16 min lost to two hung instances (hidden dialogs), plus the 2.25 attempts."
+  }
+}

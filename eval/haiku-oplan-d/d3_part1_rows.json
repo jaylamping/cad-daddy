@@ -1,0 +1,549 @@
+{
+  "rows": {
+    "P1": {
+      "volume_mm3": 17728.67,
+      "hand_volume_mm3": 17728.67,
+      "dv_pct": -0.0,
+      "mass_g": 21.1,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 17711.82,
+      "stl_volume_ok": true,
+      "stl_bounds_ok": true,
+      "min_wall_mm": 1.0,
+      "min_wall_where": "cbore -> OD",
+      "changed": true,
+      "why": "ring B turned 45 deg: at 0 deg the B counterbore overlapped the A hole by 0.7 mm",
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "holes_A": [
+        [
+          12.5,
+          21.651
+        ],
+        [
+          -12.5,
+          21.651
+        ],
+        [
+          -25.0,
+          0.0
+        ],
+        [
+          -12.5,
+          -21.651
+        ],
+        [
+          12.5,
+          -21.651
+        ],
+        [
+          25.0,
+          0.0
+        ]
+      ],
+      "holes_B": [
+        [
+          21.213,
+          21.213
+        ],
+        [
+          -21.213,
+          21.213
+        ],
+        [
+          -21.213,
+          -21.213
+        ],
+        [
+          21.213,
+          -21.213
+        ]
+      ],
+      "counterbores": [
+        [
+          21.213,
+          -21.213
+        ],
+        [
+          -21.213,
+          -21.213
+        ],
+        [
+          -21.213,
+          21.213
+        ],
+        [
+          21.213,
+          21.213
+        ]
+      ]
+    },
+    "P2": {
+      "volume_mm3": 23947.18,
+      "hand_volume_mm3": 23947.18,
+      "dv_pct": -0.0,
+      "mass_g": 28.5,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 23925.57,
+      "stl_volume_ok": true,
+      "stl_bounds_ok": true,
+      "min_wall_mm": 7.0,
+      "min_wall_where": "cbore -> OD",
+      "changed": true,
+      "why": "ring B turned 30 deg: as tabled it sits exactly on ring A",
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "holes_A": [
+        [
+          26.847,
+          15.5
+        ],
+        [
+          0.0,
+          31.0
+        ],
+        [
+          -26.847,
+          15.5
+        ],
+        [
+          -26.847,
+          -15.5
+        ],
+        [
+          -0.0,
+          -31.0
+        ],
+        [
+          26.847,
+          -15.5
+        ],
+        [
+          15.5,
+          26.847
+        ],
+        [
+          -15.5,
+          26.847
+        ],
+        [
+          -31.0,
+          0.0
+        ],
+        [
+          -15.5,
+          -26.847
+        ],
+        [
+          15.5,
+          -26.847
+        ],
+        [
+          31.0,
+          0.0
+        ]
+      ],
+      "holes_B": [],
+      "counterbores": [
+        [
+          26.847,
+          -15.5
+        ],
+        [
+          -0.0,
+          -31.0
+        ],
+        [
+          -26.847,
+          -15.5
+        ],
+        [
+          -26.847,
+          15.5
+        ],
+        [
+          0.0,
+          31.0
+        ],
+        [
+          26.847,
+          15.5
+        ]
+      ]
+    },
+    "P3": {
+      "volume_mm3": 38698.26,
+      "hand_volume_mm3": 38698.26,
+      "dv_pct": 0.0,
+      "mass_g": 46.05,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 38662.24,
+      "stl_volume_ok": true,
+      "stl_bounds_ok": true,
+      "min_wall_mm": 1.0,
+      "min_wall_where": "cbore -> OD",
+      "changed": false,
+      "why": "",
+      "counterbore_floor_z_mm": 4.0,
+      "hand_floor_z_mm": 4.0,
+      "holes_A": [
+        [
+          23.335,
+          -23.335
+        ],
+        [
+          -0.0,
+          -33.0
+        ],
+        [
+          -23.335,
+          -23.335
+        ],
+        [
+          -33.0,
+          0.0
+        ],
+        [
+          -23.335,
+          23.335
+        ],
+        [
+          0.0,
+          33.0
+        ],
+        [
+          23.335,
+          23.335
+        ],
+        [
+          33.0,
+          0.0
+        ]
+      ],
+      "holes_B": [
+        [
+          -0.0,
+          -42.0
+        ],
+        [
+          -42.0,
+          0.0
+        ],
+        [
+          0.0,
+          42.0
+        ],
+        [
+          42.0,
+          0.0
+        ]
+      ],
+      "counterbores": [
+        [
+          42.0,
+          0.0
+        ],
+        [
+          0.0,
+          42.0
+        ],
+        [
+          -42.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -42.0
+        ]
+      ]
+    },
+    "P4": {
+      "volume_mm3": 13596.26,
+      "hand_volume_mm3": 13596.26,
+      "dv_pct": -0.0,
+      "mass_g": 16.18,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 13585.36,
+      "stl_volume_ok": true,
+      "stl_bounds_ok": true,
+      "min_wall_mm": 1.0,
+      "min_wall_where": "cbore -> OD",
+      "changed": true,
+      "why": "OD 60->68: B counterbore broke out by 3.0 mm; depth 4.6->4.0: floor was 0.4 mm",
+      "counterbore_floor_z_mm": 1.0,
+      "hand_floor_z_mm": 1.0,
+      "holes_A": [
+        [
+          -0.0,
+          -20.0
+        ],
+        [
+          -20.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          20.0,
+          0.0
+        ]
+      ],
+      "holes_B": [
+        [
+          14.5,
+          25.115
+        ],
+        [
+          -14.5,
+          25.115
+        ],
+        [
+          -29.0,
+          0.0
+        ],
+        [
+          -14.5,
+          -25.115
+        ],
+        [
+          14.5,
+          -25.115
+        ],
+        [
+          29.0,
+          0.0
+        ]
+      ],
+      "counterbores": [
+        [
+          29.0,
+          0.0
+        ],
+        [
+          14.5,
+          -25.115
+        ],
+        [
+          -14.5,
+          -25.115
+        ],
+        [
+          -29.0,
+          0.0
+        ],
+        [
+          -14.5,
+          25.115
+        ],
+        [
+          14.5,
+          25.115
+        ]
+      ]
+    },
+    "P5": {
+      "volume_mm3": 62864.78,
+      "hand_volume_mm3": 62864.78,
+      "dv_pct": -0.0,
+      "mass_g": 74.81,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 62817.75,
+      "stl_volume_ok": true,
+      "stl_bounds_ok": true,
+      "min_wall_mm": 2.5,
+      "min_wall_where": "cbore -> OD",
+      "changed": false,
+      "why": "",
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "holes_A": [
+        [
+          -20.0,
+          -34.641
+        ],
+        [
+          -34.641,
+          -20.0
+        ],
+        [
+          -40.0,
+          0.0
+        ],
+        [
+          -34.641,
+          20.0
+        ],
+        [
+          -20.0,
+          34.641
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          20.0,
+          34.641
+        ],
+        [
+          34.641,
+          20.0
+        ],
+        [
+          -0.0,
+          -40.0
+        ],
+        [
+          20.0,
+          -34.641
+        ],
+        [
+          34.641,
+          -20.0
+        ],
+        [
+          40.0,
+          0.0
+        ]
+      ],
+      "holes_B": [
+        [
+          26.0,
+          45.033
+        ],
+        [
+          -26.0,
+          45.033
+        ],
+        [
+          -52.0,
+          0.0
+        ],
+        [
+          -26.0,
+          -45.033
+        ],
+        [
+          26.0,
+          -45.033
+        ],
+        [
+          52.0,
+          0.0
+        ]
+      ],
+      "counterbores": [
+        [
+          52.0,
+          0.0
+        ],
+        [
+          26.0,
+          -45.033
+        ],
+        [
+          -26.0,
+          -45.033
+        ],
+        [
+          -52.0,
+          0.0
+        ],
+        [
+          -26.0,
+          45.033
+        ],
+        [
+          26.0,
+          45.033
+        ]
+      ]
+    },
+    "P6": {
+      "volume_mm3": 20848.86,
+      "hand_volume_mm3": 20848.86,
+      "dv_pct": -0.0,
+      "mass_g": 24.81,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 20827.26,
+      "stl_volume_ok": true,
+      "stl_bounds_ok": true,
+      "min_wall_mm": 2.0,
+      "min_wall_where": "cbore -> OD",
+      "changed": false,
+      "why": "",
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "holes_A": [
+        [
+          11.5,
+          19.919
+        ],
+        [
+          -11.5,
+          19.919
+        ],
+        [
+          -23.0,
+          0.0
+        ],
+        [
+          -11.5,
+          -19.919
+        ],
+        [
+          11.5,
+          -19.919
+        ],
+        [
+          23.0,
+          0.0
+        ]
+      ],
+      "holes_B": [
+        [
+          -16.0,
+          -27.713
+        ],
+        [
+          -16.0,
+          27.713
+        ],
+        [
+          32.0,
+          0.0
+        ]
+      ],
+      "counterbores": [
+        [
+          32.0,
+          0.0
+        ],
+        [
+          -16.0,
+          27.713
+        ],
+        [
+          -16.0,
+          -27.713
+        ]
+      ]
+    }
+  },
+  "failures": {},
+  "minutes_part1": 0.8
+}

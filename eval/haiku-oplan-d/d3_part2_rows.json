@@ -1,0 +1,154 @@
+{
+  "rows": {
+    "P1": {
+      "volume_mm3": 22040.22,
+      "hand_volume_mm3": 22040.22,
+      "volume_before_chamfer_mm3": 22057.75,
+      "mass_g": 26.23,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 22019.25,
+      "stl_volume_ok": true,
+      "min_wall_mm": 0.6,
+      "min_wall_where": "cbore -> OD (at the chamfer)",
+      "chamfer_mm": 0.4,
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "changed": true,
+      "why": "ring B turned 45 deg: at 0 deg the B counterbore overlapped the A hole by 0.7 mm",
+      "tree_prefix_identical": true,
+      "tree_extra": [
+        "TOP_CHAMFER"
+      ],
+      "p3_ring_a": null,
+      "thickness_mm": 7.5
+    },
+    "P2": {
+      "volume_mm3": 29648.45,
+      "hand_volume_mm3": 29648.45,
+      "volume_before_chamfer_mm3": 29779.35,
+      "mass_g": 35.28,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 29622.45,
+      "stl_volume_ok": true,
+      "min_wall_mm": 6.0,
+      "min_wall_where": "cbore -> OD (at the chamfer)",
+      "chamfer_mm": 1.0,
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "changed": true,
+      "why": "ring B turned 30 deg: as tabled it sits exactly on ring A",
+      "tree_prefix_identical": true,
+      "tree_extra": [
+        "TOP_CHAMFER"
+      ],
+      "p3_ring_a": null,
+      "thickness_mm": 7.5
+    },
+    "P3": {
+      "volume_mm3": 45765.78,
+      "hand_volume_mm3": 45765.78,
+      "volume_before_chamfer_mm3": 45789.84,
+      "mass_g": 54.46,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 45725.14,
+      "stl_volume_ok": true,
+      "min_wall_mm": 0.6,
+      "min_wall_where": "cbore -> OD (at the chamfer)",
+      "chamfer_mm": 0.4,
+      "counterbore_floor_z_mm": 4.0,
+      "hand_floor_z_mm": 4.0,
+      "changed": false,
+      "why": "",
+      "tree_prefix_identical": true,
+      "tree_extra": [
+        "TOP_CHAMFER"
+      ],
+      "p3_ring_a": {
+        "n": 8,
+        "radius_mean": 35.0,
+        "first_angle_deg": 22.5
+      },
+      "thickness_mm": 9.5
+    },
+    "P4": {
+      "volume_mm3": 17596.27,
+      "hand_volume_mm3": 17596.27,
+      "volume_before_chamfer_mm3": 17613.29,
+      "mass_g": 20.94,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 17582.52,
+      "stl_volume_ok": true,
+      "min_wall_mm": 0.6,
+      "min_wall_where": "cbore -> OD (at the chamfer)",
+      "chamfer_mm": 0.4,
+      "counterbore_floor_z_mm": 1.0,
+      "hand_floor_z_mm": 1.0,
+      "changed": true,
+      "why": "OD 60->68: B counterbore broke out by 3.0 mm; depth 4.6->4.0: floor was 0.4 mm",
+      "tree_prefix_identical": true,
+      "tree_extra": [
+        "TOP_CHAMFER"
+      ],
+      "p3_ring_a": null,
+      "thickness_mm": 6.5
+    },
+    "P5": {
+      "volume_mm3": 74259.2,
+      "hand_volume_mm3": 74259.2,
+      "volume_before_chamfer_mm3": 74446.65,
+      "mass_g": 88.37,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 74203.13,
+      "stl_volume_ok": true,
+      "min_wall_mm": 1.5,
+      "min_wall_where": "cbore -> OD (at the chamfer)",
+      "chamfer_mm": 1.0,
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "changed": false,
+      "why": "",
+      "tree_prefix_identical": true,
+      "tree_extra": [
+        "TOP_CHAMFER"
+      ],
+      "p3_ring_a": null,
+      "thickness_mm": 9.5
+    },
+    "P6": {
+      "volume_mm3": 25865.43,
+      "hand_volume_mm3": 25865.43,
+      "volume_before_chamfer_mm3": 25983.76,
+      "mass_g": 30.78,
+      "bodies": 1,
+      "stl_watertight": true,
+      "stl_shells": 1,
+      "stl_volume_mm3": 25839.03,
+      "stl_volume_ok": true,
+      "min_wall_mm": 1.0,
+      "min_wall_where": "cbore -> OD (at the chamfer)",
+      "chamfer_mm": 1.0,
+      "counterbore_floor_z_mm": 3.0,
+      "hand_floor_z_mm": 3.0,
+      "changed": false,
+      "why": "",
+      "tree_prefix_identical": true,
+      "tree_extra": [
+        "TOP_CHAMFER"
+      ],
+      "p3_ring_a": null,
+      "thickness_mm": 7.5
+    }
+  },
+  "failures": {},
+  "minutes_part2": 0.6
+}
