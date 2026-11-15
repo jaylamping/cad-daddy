@@ -345,33 +345,45 @@ def close_welcome(pid):
     return len(hit)
 
 
-class welcome_guard:
-    """Close this PID's Welcome dialog every half second while the block runs, e.g. around LoadFile4.
+def settle_welcome(pid, young_s=60, wait_s=15):
+    """Close this PID's Welcome screen before work that it would hold, and return only once it is gone.
 
-    One look before the call is not enough: on joey-vm (2026-11-15) the Welcome screen came up in the same second the
-    import began, just after close_welcome() had found none, and the import sat for ever behind it.
+    On joey-vm (2026-11-15) the Welcome screen came up a second or more after launch() had returned, in the same second
+    a first STEP import began: the import sat behind it, and closing it while the import ran brought "An unsupported
+    operation was attempted" and then a crash. So for an instance started under young_s seconds ago this waits up to
+    wait_s seconds from its start for the screen to show, closes it, and waits for it to go. An older instance gets
+    one look. Returns how many it closed.
     """
+    try:
+        age = time.time() - psutil.Process(pid).create_time()
+    except psutil.Error:
+        age = young_s
+    deadline = time.time() + (max(0.0, wait_s - age) if age < young_s else 0.0)
+    closed = 0
+    while True:
+        n = close_welcome(pid)
+        closed += n
+        if n:
+            gone = time.time() + 10
+            while time.time() < gone and _has_welcome(pid):
+                time.sleep(0.25)
+            time.sleep(1)
+            return closed
+        if time.time() >= deadline:
+            return closed
+        time.sleep(0.25)
 
-    def __init__(self, pid, every=0.5):
-        self.pid, self.every, self.closed = pid, every, 0
-        self._stop = threading.Event()
-        self._thread = threading.Thread(target=self._run, daemon=True)
 
-    def _run(self):
-        while not self._stop.wait(self.every):
-            try:
-                self.closed += close_welcome(self.pid)
-            except Exception:  # noqa: BLE001 - a window gone between listing and closing; look again next time
-                pass
+def _has_welcome(pid):
+    found = []
 
-    def __enter__(self):
-        self.closed += close_welcome(self.pid)
-        self._thread.start()
-        return self
+    def find(h, _):
+        if win32process.GetWindowThreadProcessId(h)[1] == pid and win32gui.GetClassName(h) == "swWelcomeScreen":
+            found.append(h)
+        return True
 
-    def __exit__(self, *exc):
-        self._stop.set()
-        self._thread.join(2)
+    win32gui.EnumWindows(find, None)
+    return bool(found)
 
 
 def windows(pid):

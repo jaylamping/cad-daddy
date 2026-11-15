@@ -31,7 +31,7 @@ import pythoncom
 from win32com.client import VARIANT
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from sw_instance import STALL_S, close_welcome, launch, stall_watch, welcome_guard  # noqa: E402
+from sw_instance import STALL_S, launch, settle_welcome, stall_watch  # noqa: E402
 
 m = 1e-3
 NUL = VARIANT(pythoncom.VT_DISPATCH, None)       # "no object" for an optional COM argument; plain None is refused
@@ -246,13 +246,10 @@ def close(sw, d):
 
 def import_step(sw, step, target):
     """Import a STEP file and save it as a native part or assembly at target (extension chosen by what came in)."""
-    pid = int(sw.GetProcessID)
-    if close_welcome(pid):                          # still open, it holds LoadFile4 for ever (it can come up after launch)
-        time.sleep(1)
+    settle_welcome(int(sw.GetProcessID))            # open, it holds LoadFile4 for ever; closed mid-import, it crashes it
     data = sw.GetImportFileData(str(step))
     e = L()
-    with welcome_guard(pid):                        # it can also come up after that look, as the import starts
-        d = sw.LoadFile4(str(step), 'r', data, e)
+    d = sw.LoadFile4(str(step), 'r', data, e)
     if d is None:
         raise Failed(f'import failed: {step} error {e.value}')
     target = Path(target).with_suffix('.SLDASM' if d.GetType == ASSEMBLY else '.SLDPRT')
