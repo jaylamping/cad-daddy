@@ -53,6 +53,11 @@ with job() as j:            # launches your own instance; closes it on the way o
   through its own handle (`j.inst.close()`), not the python process.
 - **Two scripts of yours must not share a state file or a folder for one instance.** If you use `session(state_file)` to
   keep an instance across scripts, each job has its own state file, and you call `end_session(state_file)` at the end.
+- **A job that sits idle writes a stall report.** After 180 s with nothing happening, `job()` and `session()` write
+  `stall_<pid>_<time>.txt` beside the log (the line the script stopped at, the instance's open windows) and a `STALLED`
+  line in the claims folder's `runs.log`. Read it before anything else. A hidden "continue to load SOLIDWORKS
+  Simulation?" prompt is answered Yes for you; if you meet one by hand, press Yes in your own instance and never kill
+  it ([RULES.md](../solidworks/RULES.md)). `python pc/sw_watch.py <folder>` lists the kinds of failure new on this PC.
 - **Long jobs beat:** `python pc/claims.py beat <session> --status "case 3 of 7"` between cases.
 - **Other python work** (post-processing, mesh checks, slicing) runs under the cap:
   `python pc/capped.py --mb 6144 -- python script.py`. Not SolidWorks clients: SolidWorks would land in the same cap.
