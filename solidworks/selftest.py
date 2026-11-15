@@ -835,10 +835,6 @@ def picks(j):
         if not (other['box_diff_mm'] < 0.01 and abs(other['volume_diff_pct']) > 1 and other['a_to_b']['max_mm'] > 3):
             raise SystemExit(f'FAIL: mesh_diff against the plate with its hole elsewhere: {other}')
         log('ok mesh_diff finds the moved hole:', other['a_to_b'])
-    runs = Path(sys.argv[0]).resolve().parent / 'runs.log'
-    j._record('selftest picks: a line written on request')
-    if 'selftest picks: a line written on request' not in runs.read_text(encoding='utf-8').splitlines()[-1]:
-        raise SystemExit(f'FAIL: {runs} does not end with the line just recorded')
 
 
 TESTS['picks'] = picks      # side(), edges_of(), edges_along(), the state line, refusals, printability(), mesh_diff()
@@ -852,4 +848,9 @@ if __name__ == '__main__':
         for name in todo:
             log('----', name)
             TESTS[name](j)
+    # the job wrote its own line as it closed: one line per job, so that pc/run_metrics.py counts jobs and not lines
+    runs = Path(sys.argv[0]).resolve().parent / 'runs.log'
+    last = runs.read_text(encoding='utf-8').splitlines()[-1].split('\t')
+    if len(last) < 5 or last[4] != 'ok' or last[2] != ' '.join(Path(a).name for a in sys.argv):
+        raise SystemExit(f'FAIL: {runs} does not end with this job\'s "ok" line: {last}')
     print('PASS', ' '.join(todo), flush=True)
