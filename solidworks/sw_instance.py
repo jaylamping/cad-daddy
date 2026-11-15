@@ -345,6 +345,35 @@ def close_welcome(pid):
     return len(hit)
 
 
+class welcome_guard:
+    """Close this PID's Welcome dialog every half second while the block runs, e.g. around LoadFile4.
+
+    One look before the call is not enough: on joey-vm (2026-11-15) the Welcome screen came up in the same second the
+    import began, just after close_welcome() had found none, and the import sat for ever behind it.
+    """
+
+    def __init__(self, pid, every=0.5):
+        self.pid, self.every, self.closed = pid, every, 0
+        self._stop = threading.Event()
+        self._thread = threading.Thread(target=self._run, daemon=True)
+
+    def _run(self):
+        while not self._stop.wait(self.every):
+            try:
+                self.closed += close_welcome(self.pid)
+            except Exception:  # noqa: BLE001 - a window gone between listing and closing; look again next time
+                pass
+
+    def __enter__(self):
+        self.closed += close_welcome(self.pid)
+        self._thread.start()
+        return self
+
+    def __exit__(self, *exc):
+        self._stop.set()
+        self._thread.join(2)
+
+
 def windows(pid):
     """This PID's top-level windows that say something: [(class, title, visible, enabled, [texts inside a dialog])].
 
