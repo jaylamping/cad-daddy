@@ -25,6 +25,27 @@ A plan from a weaker planner still works, but its hand numbers are wrong more of
 itself against them faithfully and cannot repair them. Each wrong hand number costs a "not explained" line and
 time.
 
+## A typical part, stage by stage
+
+This is how parts on the robot have gone so far, and it is the job the two lanes are there to serve. Most parts
+pass through both: the shape is undecided at the start and decided from the moment the owner picks.
+
+| Stage | What happens | Lane | Who |
+| --- | --- | --- | --- |
+| 1. The need | a few lines: what it holds, what it must clear, the load, how it prints. Restated, with the questions and the answer assumed for each so work goes on | not decided | strongest model |
+| 2. Options | two or three ideas that differ in kind, crude models, a picture sheet of each, the numbers that separate them | not decided | strongest model |
+| 3. The pick | the owner chooses from pictures. Nothing real changes before this | | the owner |
+| 4. Layout freeze | interfaces, envelope, fasteners, cable paths; the list of things assumed and never checked, each settled. Review gate 1 | not decided | strongest model, outside reviewers |
+| 5. The plan | from here the shape is decided: steps, expected volumes, hand numbers, the studies and their branches | decided | strongest model, without SolidWorks |
+| 6. Build and studies | the part, its exports, the gate studies, the print-direction table, the picture sheet | decided | smallest model that follows a plan |
+| 7. Review from files | rows against logs, verdicts and hand numbers worked again; fixes go back as written instructions. Review gate 2, before print or promotion | decided | the planner |
+| 8. Small parts round it | fit coupons, cable rigs, test pieces, spacers, the print project | decided | plan and build, as 5 to 7 |
+| 9. Print and bench | the owner prints, fits and loads it. What breaks or does not fit comes back as a change | | the owner |
+| 10. A change | a correction (a clearance, a wall, a hole moved) goes back in at stage 5; a new idea (a different load path, a different look) goes back in at stage 2. Every redesign is validated again. Review gate 3 before anything load-bearing or powered | either | by which it is |
+
+The test at stage 10 is the same as the lane question. A reviewer who finds itself writing a fourth round of
+instructions is looking at a new idea, not a correction.
+
 ## Rules for both lanes
 
 1. **The verdict word comes from `swfea.judge()` on the rows.** Never from prose. Both directions have happened:
