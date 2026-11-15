@@ -80,7 +80,7 @@ texts = {}
 for name in FILES:
     raw = (SRC / name).read_bytes()
     if name in EDITS:
-        text = raw.decode('utf-8')
+        text = raw.decode('utf-8').replace('\r\n', '\n')      # a Windows checkout gives CRLF; the pieces are LF
         for old, new, count in EDITS[name]:
             have = text.count(old)
             if have != count:
