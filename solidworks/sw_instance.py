@@ -414,17 +414,18 @@ def windows(pid):
     return rows
 
 
-ADDIN_PROMPT_YES = "&Yes, continue to load SOLIDWORKS "  # then the add-in's name: Simulation, CAM 2026, ...
+ADDIN_PROMPT_YES = "&Yes, continue to load "  # then the add-in's name: SOLIDWORKS Simulation, 3DEXPERIENCE Marketplace, ...
 
 
 def _answer_addin_prompt(pid):
-    """Press Yes on this PID's "continue to load SOLIDWORKS <add-in>?" prompt. Returns the add-in's name, or "".
+    """Press Yes on this PID's "continue to load <add-in>?" prompt. Returns the add-in's name, or "".
 
     SolidWorks asks it when the last run stopped while loading that add-in. Seen for Simulation on holly-pc
     (2026-11-15), when Simulation was loaded seconds after another instance of the same user had loaded it or started
     up, and again in the next instance while one sat at the prompt or had been killed there. Seen for CAM 2026 at
     startup on joey-vm (2026-11-15), after an instance crashed 18 s into its start (access violation in CWAPIu.DLL);
-    a start that fails at it and is killed leaves the marker set, so it chains to the next start. The instance waits
+    a start that fails at it and is killed leaves the marker set, so it chains to the next start. On 2026-11-15 evening the
+    same prompt came for "3DEXPERIENCE Marketplace", whose name does not start with SOLIDWORKS, and held 26 starts. The instance waits
     at it, hidden, for ever; Yes lets it carry on. Never No: that disables the add-in for later starts too. Only that
     prompt, only in this PID.
     """
@@ -874,7 +875,7 @@ class Instance:
             while not done.wait(1.0):
                 addin = _answer_addin_prompt(self.pid)
                 if addin:
-                    _say(f"sw_instance: answered Yes to the 'continue to load SOLIDWORKS {addin}' prompt in PID {self.pid}")
+                    _say(f"sw_instance: answered Yes to the 'continue to load {addin}' prompt in PID {self.pid}")
 
         threading.Thread(target=answer, daemon=True).start()
         try:
@@ -1236,7 +1237,7 @@ class _StartClock:
 def _answer_launch_addin_prompt(pid):
     addin = _answer_addin_prompt(pid)
     if addin:
-        _say(f"sw_instance: answered Yes to the 'continue to load SOLIDWORKS {addin}' prompt while PID {pid} started")
+        _say(f"sw_instance: answered Yes to the 'continue to load {addin}' prompt while PID {pid} started")
 
 
 def _finish_launch(proc, timeout, visible, busy_wait=0):
