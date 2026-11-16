@@ -51,9 +51,12 @@ job name in a study name is at most 7 characters (`j7f3a-elbow-rig-tip-c2`). The
 name. `pc/sw_watch.py` takes the job name out of an error before it sorts it, so the same fault in two jobs is one
 kind.
 
-**Why:** SolidWorks instances that solved at the same time under the same file and study names built each other's
-mesh and failed with a global bonding error, though each worked in its own folder (joey-vm, 2026-11-15). With
-unique names every run built its own model.
+**Why:** the job name keeps every file, study and error traceable to one job. It is not what keeps parallel runs
+apart: instances meshing at the same moment overwrite each other's mesh scratch files, which Simulation writes
+under fixed names (`body1.x_b`, `Vmesh1.mesh`, ...) in the shared `%TEMP%` work folder, whatever the file and study
+names. That gave wrong node counts and a global bonding error (joey-vm, 2026-11-15), and with unique names it
+still could. `swfea` meshes under a machine-wide lock (`%TEMP%\sw_simulation_mesh.lock`), so only one instance
+meshes at a time; 2 and 4 instances with the same names then all built the right model.
 
 ## The machine
 
@@ -65,8 +68,8 @@ unique names every run built its own model.
   and a builder runs its studies one after another.
 - **Solver: FFEPlus first, direct sparse as the fallback.** FFEPlus was 4 times faster at 148,000 nodes and 9
   times at 500,000 with the same answers. Use direct sparse from the start on a model with bolt connectors and
-  no-penetration contact, where FFEPlus ends with error 24 ([05-fea.md](05-fea.md)). `swfea` refuses a mesh over
-  450,000 nodes (`MAX_NODES`); direct sparse ran out of joey-vm's 80 GB somewhere between 500,000 and 900,000
+  no-penetration contact, where FFEPlus ends with error 24 ([05-fea.md](05-fea.md)). `swfea` refuses a direct-sparse mesh over
+  `node_limit()` (760,000 nodes on joey-vm, 450,000 on 32 GB) and an FFEPlus mesh over 2,000,000; direct sparse ran out of joey-vm's 80 GB somewhere between 500,000 and 900,000
   (joey-vm benchmark, 2026-11-15).
 - If the machine cannot be reached, the job waits and the owner is told once. Work is not moved to another
   machine without the owner saying so.

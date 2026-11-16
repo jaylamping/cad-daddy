@@ -52,3 +52,25 @@ def test_reactions_read_over_the_fixture_faces_count_each_node_once():
     assert swfea.face_reaction_total(comps) == [6.0, 0.0, -3.0, round(45 ** 0.5, 3)]
     assert swfea.face_reaction_total(comps[:2] + [np.c_[[3, 4, 8], [1, 2, 3]]]) is None  # components disagree
     assert swfea.face_reaction_total([]) is None
+
+
+def test_node_limits_follow_the_solver_and_the_machine(monkeypatch):
+    """Guards: bug - one 450,000-node limit, set for direct sparse on holly-pc's 32 GB, refused FFEPlus jobs that solve
+    at 1.68M nodes and direct-sparse jobs that fit joey-vm's 80 GB; direct sparse ran out of 80 GB at 910,000 (joey-vm,
+    2026-11-15). The limit follows the solver and the memory, never below what fits holly-pc, and can be overridden."""
+    for name in ("SWFEA_MAX_NODES_DIRECT", "SWFEA_MAX_NODES_FFEPLUS"):
+        monkeypatch.delenv(name, raising=False)
+
+    def ram(gb):
+        monkeypatch.setattr(swfea.psutil, "virtual_memory", lambda: type("M", (), {"total": gb * 2**30})())
+
+    ram(32)
+    assert swfea.node_limit(swfea.SOLVER_DIRECT) == swfea.MAX_NODES == 450_000
+    assert swfea.node_limit(None) == 450_000  # Automatic shares the direct limit
+    ram(80)
+    assert 700_000 <= swfea.node_limit(swfea.SOLVER_DIRECT) < 910_000
+    assert swfea.node_limit(swfea.SOLVER_FFEPLUS) == 2_000_000
+    monkeypatch.setenv("SWFEA_MAX_NODES_DIRECT", "300000")
+    monkeypatch.setenv("SWFEA_MAX_NODES_FFEPLUS", "900000")
+    assert swfea.node_limit(swfea.SOLVER_DIRECT) == 300_000
+    assert swfea.node_limit(swfea.SOLVER_FFEPLUS) == 900_000

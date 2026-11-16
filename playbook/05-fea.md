@@ -175,7 +175,7 @@ first. Most questions do not need a heavy solve: coarsen the global size and kee
 | 300,000 to 450,000 | automatic, or direct sparse for contact | about 11 GB with direct sparse | 7 to 11 minutes with contact |
 | about 800,000 with contact, direct sparse | | **ran out of memory** on the 32 GB machine, reported as error 24 | |
 
-`static()` refuses meshes over 450,000 nodes, or over `max_nodes=` when a job has a smaller budget; halving the element
+`static()` refuses a mesh over `node_limit(solver)`: for direct sparse and Automatic it follows the machine's memory (450,000 nodes on 32 GB, 760,000 on joey-vm's 80 GB; `SWFEA_MAX_NODES_DIRECT` overrides), for FFEPlus it is 2,000,000 (`SWFEA_MAX_NODES_FFEPLUS`), or `max_nodes=` when a job has a smaller budget; halving the element
 size multiplies the nodes by about six, so work out the finest size before starting a series. That rule holds only
 for a mesh with no local controls: with controls most of the nodes sit in the controlled faces and the global size
 hardly moves the count, so mesh once and read the count before planning (it is checked before the solve, and a refused
