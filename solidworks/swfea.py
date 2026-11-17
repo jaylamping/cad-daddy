@@ -35,7 +35,7 @@ from scipy.spatial import cKDTree
 from scipy.spatial.transform import Rotation
 
 from swkit import NUL, Failed, L, call, dispatch_array, free_gb, log, solid_bodies
-from sw_instance import _LaunchLock
+from sw_instance import SOLVE_LOCK, _LaunchLock
 
 # Printed PETG as the arm studies use it: modulus and yield from the left-arm test coupons, and across layers half the
 # in-plane strength (cad/scripts/fea/p3_fea.py). Steel and brass for bolts and inserts in contact models.
@@ -69,10 +69,7 @@ def node_limit(solver):
     return max(MAX_NODES, int(fits // 10_000 * 10_000))
 HEAVY_NODES = 200_000         # above this a solve needs over about 6 GB: one at a time machine-wide (heavy_solve_lock)
 MESH_LOCK = os.path.join(os.environ.get('TEMP', r'C:\Windows\Temp'), 'sw_simulation_mesh.lock')
-# One heavy solve at a time machine-wide. FEA_SOLVE_LOCK sets the file; otherwise C:\joe on holly-pc, where the other
-# sessions' scripts already use that path, and the user's temp folder everywhere else (joey-vm has no C:\joe).
-HEAVY_LOCK = Path(os.environ.get('FEA_SOLVE_LOCK') or (r'C:\joe\.fea_solve.lock' if os.path.isdir(r'C:\joe') else
-                                                      os.path.join(os.environ.get('TEMP', r'C:\Windows\Temp'), 'fea_solve.lock')))
+HEAVY_LOCK = Path(SOLVE_LOCK)          # the same file as sw_instance.big_solve: one heavy solve at a time machine-wide
 
 
 def _arr(q, cols):

@@ -37,7 +37,11 @@ SIM_DIR = os.path.normcase(os.path.dirname(SIM_DLL))
 LOCK = os.path.join(tempfile.gettempdir(), "sw_instance_launch.lock")
 SOLVERS = ("cwanalysisproc.exe", "star.exe")
 STALL_S = 180  # a call out this long with SolidWorks idle is written up (stall_watch)
-SOLVE_LOCK = r"C:\joe\.fea_solve.lock"  # one large solve at a time on the CAD workstation (RULES.md, rule 6)
+# One large solve at a time on the CAD machine (RULES.md, rule 6). FEA_SOLVE_LOCK sets the file; otherwise C:\joe
+# where it exists (holly-pc, whose other scripts use that path), and the user's temp folder elsewhere (joey-vm).
+SOLVE_LOCK = os.environ.get("FEA_SOLVE_LOCK") or (
+    r"C:\joe\.fea_solve.lock" if os.path.isdir(r"C:\joe")
+    else os.path.join(os.environ.get("TEMP", r"C:\Windows\Temp"), "fea_solve.lock"))
 
 
 class _LaunchLock:
