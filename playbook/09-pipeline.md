@@ -63,9 +63,10 @@ meshes at a time; 2 and 4 instances with the same names then all built the right
 - One CAD machine is the default and every job goes there. Each job has its own worktree and its own SolidWorks
   instance ([01-session.md](01-session.md)).
 - **One solve at a time.** Two solves at once took longer than one after the other, and a second iterative solve
-  stopped at a hidden "insufficient memory" dialog (joey-vm, 2026-11-15). Nothing in the helpers enforces it: the
-  heavy-solve lock only covers solves over 200,000 nodes. So the planner runs one builder at a time on the machine,
-  and a builder runs its studies one after another.
+  stopped at a hidden "insufficient memory" dialog (joey-vm, 2026-11-15). `swfea` meshes one instance at a time,
+  and takes the heavy-solve lock for every FFEPlus solve and for any solve over 200,000 nodes; a smaller direct-sparse
+  solve does not wait. So the planner still runs one builder at a time on the machine, and a builder runs its studies
+  one after another.
 - **Solver: FFEPlus first, direct sparse as the fallback.** FFEPlus was 4 times faster at 148,000 nodes and 9
   times at 500,000 with the same answers. Use direct sparse from the start on a model with bolt connectors and
   no-penetration contact, where FFEPlus ends with error 24 ([05-fea.md](05-fea.md)). `swfea` refuses a direct-sparse mesh over

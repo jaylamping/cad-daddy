@@ -5,13 +5,15 @@ The rules themselves live in [RULES.md](../solidworks/RULES.md), [cad-workstatio
 
 ## Before the first script
 
-1. **Machine.** CAD runs on holly-pc ([cad.md section 9](https://github.com/jaylamping/roark/blob/main/conventions/cad.md#9-cad-workstation)). If `J:` is missing,
-   run `subst J: C:\joe`. Joey-PC is the fallback only.
-2. **Worktree.** Work in your own worktree, never in `J:\code\roark`:
+1. **Machine.** CAD runs on joey-vm, a Windows 11 ARM virtual machine on Joey's MacBook, reached by a Remote Control
+   session in the folder `C:\code`. Repos are `C:\code\cad-daddy` and `C:\code\roark`, and jobs live in `C:\code\jobs`
+   ([09-pipeline.md](09-pipeline.md)). holly-pc and Joey-PC are used only when Joey asks; there the paths are
+   `J:\code\...` (`subst J: C:\joe` if `J:` is missing).
+2. **Worktree.** Work in your own worktree, never in the main clone:
 
    ```bash
-   git -C J:/code/roark fetch origin
-   GIT_LFS_SKIP_SMUDGE=1 git -C J:/code/roark worktree add J:/code/roark-wt/<session> -b <branch> origin/main
+   git -C C:/code/roark fetch origin
+   GIT_LFS_SKIP_SMUDGE=1 git -C C:/code/roark worktree add C:/code/roark-wt/<session> -b <branch> origin/main
    ```
 
 3. **Look before you launch.**
@@ -28,17 +30,18 @@ The rules themselves live in [RULES.md](../solidworks/RULES.md), [cad-workstatio
    | `HALF-CLOSED` | a dead instance that stalls every launch on the machine | stop. Report the PID and the `taskkill /PID <pid> /T /F` line for Joey. Do not launch |
 
 4. **Memory.** `job()` refuses to start under 8 GB free. Do not lower it. A dip under the floor is other jobs working, not a
-   reason to drop the task: `job(wait_s=1800)` waits for memory as it waits for a busy instance. Joey's rule for holly-pc (2026-11-11): each job
-   stays near 6 GB, three or four ordinary jobs and one or two heavy ones machine-wide.
+   reason to drop the task: `job(wait_s=1800)` waits for memory as it waits for a busy instance. On joey-vm one builder
+   works at a time and its studies run one after another ([09-pipeline.md](09-pipeline.md)). On holly-pc (32 GB,
+   Joey's rule of 2026-11-11) each job stays near 6 GB, three or four ordinary jobs and one or two heavy ones machine-wide.
    A `STALE` claim of another session is not yours to clear: leave it, and mention it in your report.
 5. **Claim** your worktree, and add the PID once you have one:
-   `python pc/claims.py claim <session> --worktree J:/code/roark-wt/<session> --status "<what>"`.
+   `python pc/claims.py claim <session> --worktree C:/code/roark-wt/<session> --status "<what>"`.
 
 ## A job
 
 ```python
 import sys
-sys.path.insert(0, r"J:\code\roark-wt\<session>\solidworks")
+sys.path.insert(0, r"C:\code\cad-daddy\solidworks")
 from swkit import *
 
 with job() as j:            # launches your own instance; closes it on the way out, also after an error
@@ -91,6 +94,25 @@ with job() as j:            # launches your own instance; closes it on the way o
 4. If your own instance is stuck, end it through `end_session(state_file)` or `Instance.close()`, which force-stop your own
    PID and its solver. You may never stop another session's process.
 5. If it is `HALF-CLOSED` and not yours, give Joey the `taskkill` line and stop.
+
+## joey-vm: how the machine is set up
+
+Rebuild it this way if it is ever lost; each line cost a slow day to find (joey-vm benchmark, 2026-11-15).
+
+- Parallels Desktop Pro on the MacBook (M5 Max, 128 GB). VM: 16 CPUs, about 80 GB of memory, Windows 11 Pro ARM.
+  SolidWorks 2026 with Simulation runs x64 under Windows' own emulation; leave the SLDWORKS.exe emulation settings at
+  their defaults.
+- **Adaptive Hypervisor off** (VM configuration, CPU and Memory). With it on, macOS cut the VM's CPU whenever nobody
+  was at the Mac, and the same solve took from 77 s to 172 s.
+- **Keep the Mac awake while SolidWorks works:** `python pc/keepawake.py install` in the VM, and
+  `zsh keepawake_mac.sh install` on the Mac ([pc/keepawake.py](../pc/keepawake.py)). The VM writes a beat file into
+  the Mac's home folder while SolidWorks or a solver is busy, and the Mac runs `caffeinate` while the beat is fresh.
+- Windows core parking off: `powercfg -setacvalueindex scheme_current sub_processor CPMINCORES 100`, then
+  `powercfg -setactive scheme_current`.
+- Python 3.12 x64 with pywin32, psutil, numpy and scipy; Git for ARM64 with `core.autocrlf` true (`.gitattributes`
+  keeps `*.sh` at LF so the Mac script runs).
+- Simulation's work folder is `%TEMP%`, shared by every instance: `swfea` meshes one instance at a time for that reason
+  ([05-fea.md](05-fea.md)).
 
 ## When you finish
 

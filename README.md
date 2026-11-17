@@ -33,8 +33,8 @@ or tool attribution: the rule, and the check that enforces it, are in [CLAUDE.md
 The content was proven in [jaylamping/roark](https://github.com/jaylamping/roark) on one workstation, and some of
 that still shows:
 
-- Paths such as `J:\code\roark-wt\<session>` and the machine name holly-pc in [01-session.md](playbook/01-session.md):
-  read them as "your own worktree on the CAD machine".
+- The CAD machine is joey-vm ([01-session.md](playbook/01-session.md)). Older pages and measurements name holly-pc,
+  the workstation they were proven on; read its `J:\code\...` paths as `C:\code\...` on joey-vm.
 - [04-export.md](playbook/04-export.md) from "From scratch to the design of record" on describes roark's CAD folders
   and its checking scripts (`tools/cad/...`), which did not move.
 - Memory limits (6 GB a job, 8 GB free before a launch, 200,000 nodes before the heavy-solve lock) are sized for a
