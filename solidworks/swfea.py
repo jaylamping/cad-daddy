@@ -35,6 +35,7 @@ from scipy.spatial import cKDTree
 from scipy.spatial.transform import Rotation
 
 from swkit import NUL, Failed, L, call, dispatch_array, free_gb, log, solid_bodies
+from sw_instance import _LaunchLock
 
 # Printed PETG as the arm studies use it: modulus and yield from the left-arm test coupons, and across layers half the
 # in-plane strength (cad/scripts/fea/p3_fea.py). Steel and brass for bolts and inserts in contact models.
@@ -45,9 +46,33 @@ LAYER_FACTOR = 0.5            # allowable across print layers, as a share of yie
 NO_PENETRATION, BONDED = 0, 1         # CreateContactSet types
 BEARING_X, BEARING_SINE, BEARING_PARABOLIC = 0, 0, 1      # ICWBearingLoad Direction and DistributionType (measured)
 SOLVER_DIRECT = 1            # swsSolverType_e: 0 automatic, 1 direct sparse, 2 FFEPlus (iterative), 7 Intel direct sparse
+SOLVER_FFEPLUS = 2
 MAX_NODES = 450_000           # above this a direct-sparse solve does not fit holly-pc's memory (05-fea.md, memory)
+# Node limits by solver and machine (node_limit()). Direct sparse memory on the two-block contact benchmark, joey-vm
+# 2026-11-15: 7 GB at 148k nodes, 34 GB at 500k, over 74 GB at 910k (it ran out of 80 GB): GB = 34 * (nodes/500k)^1.35,
+# which also gives holly-pc's 13 GB at 244k. Let it use 3/4 of the machine's memory, never refusing what fits holly-pc.
+# FFEPlus barely grows with the model (it reserves most free memory up front either way): 1.68M nodes solved on joey-vm.
+DIRECT_GB_AT_500K, DIRECT_EXPONENT, DIRECT_RAM_SHARE = 34.0, 1.35, 0.75
+FFEPLUS_MAX_NODES = 2_000_000
+
+
+def node_limit(solver):
+    """The largest mesh static() solves with this solver on this machine. SWFEA_MAX_NODES_DIRECT and
+    SWFEA_MAX_NODES_FFEPLUS override the two; Automatic and direct sparse share the direct limit (Automatic picks
+    direct sparse on contact models, and picked FFEPlus on a large one that then failed: 05-fea.md)."""
+    if solver == SOLVER_FFEPLUS:
+        return int(os.environ.get('SWFEA_MAX_NODES_FFEPLUS') or FFEPLUS_MAX_NODES)
+    if os.environ.get('SWFEA_MAX_NODES_DIRECT'):
+        return int(os.environ['SWFEA_MAX_NODES_DIRECT'])
+    ram_gb = psutil.virtual_memory().total / 2 ** 30
+    fits = 500_000 * (DIRECT_RAM_SHARE * ram_gb / DIRECT_GB_AT_500K) ** (1 / DIRECT_EXPONENT)
+    return max(MAX_NODES, int(fits // 10_000 * 10_000))
 HEAVY_NODES = 200_000         # above this a solve needs over about 6 GB: one at a time machine-wide (heavy_solve_lock)
-HEAVY_LOCK = Path(os.environ.get('FEA_SOLVE_LOCK', r'C:\joe\.fea_solve.lock'))
+MESH_LOCK = os.path.join(os.environ.get('TEMP', r'C:\Windows\Temp'), 'sw_simulation_mesh.lock')
+# One heavy solve at a time machine-wide. FEA_SOLVE_LOCK sets the file; otherwise C:\joe on holly-pc, where the other
+# sessions' scripts already use that path, and the user's temp folder everywhere else (joey-vm has no C:\joe).
+HEAVY_LOCK = Path(os.environ.get('FEA_SOLVE_LOCK') or (r'C:\joe\.fea_solve.lock' if os.path.isdir(r'C:\joe') else
+                                                      os.path.join(os.environ.get('TEMP', r'C:\Windows\Temp'), 'fea_solve.lock')))
 
 
 def _arr(q, cols):
@@ -312,6 +337,14 @@ def _solver_dialogs(pid, stop, seen):
                         win32gui.PostMessage(c, win32con.BM_CLICK, 0, 0)
                         seen.append(('excessive', text))
                         log('solver asked about excessive displacements: answered No (finish with the small-displacement result)')
+            elif 'physical memory is insufficient' in text:
+                # FFEPlus asks for most of the machine's free memory (about 64 GB of 80 on joey-vm, whatever the model
+                # size), so a second solve beside it gets this Yes / No / OK box. OK ends that solve; static() raises.
+                for c in kids:
+                    if win32gui.GetClassName(c) == 'Button' and win32gui.GetWindowText(c).replace('&', '').strip() == 'OK':
+                        win32gui.PostMessage(c, win32con.BM_CLICK, 0, 0)
+                        seen.append(('nomemory', text))
+                        log('solver reported insufficient physical memory: answered OK; the solve is ended')
             elif 'Failure to achieve equilibrium' in text:
                 for c in kids:
                     if win32gui.GetClassName(c) == 'Button' and win32gui.GetWindowText(c).replace('&', '').strip() == 'OK':
@@ -561,7 +594,7 @@ def heavy_solve_lock(owner, wait_s=3600):
 
 
 def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), materials=None, solver=None, keep_study=False,
-           post=None, loose_ok=False, max_nodes=MAX_NODES, stress='full'):
+           post=None, loose_ok=False, max_nodes=None, stress='full'):
     """Build, mesh and solve one linear static study on the open part d, and read the nodal results back.
 
     material: the dict for every body, unless materials = {part of a body's name: dict} picks some bodies out. A key
@@ -577,7 +610,11 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     point in the model frame, carried to the faces rigidly.
     el: global element size mm. ctrl: [(faces, size mm)] local mesh controls.
     contacts: [(NO_PENETRATION | BONDED, faces_a, faces_b)] for multi-body parts; everything else touching is bonded.
-    solver: None leaves Automatic; SOLVER_DIRECT sets direct sparse through a macro (needed for no-penetration contact).
+    solver: None leaves Automatic; SOLVER_DIRECT sets direct sparse through a macro (needed for no-penetration contact);
+    SOLVER_FFEPLUS sets the iterative solver, which always takes the heavy-solve lock (it reserves most free memory).
+    max_nodes: a mesh over this is refused before the solve. None means node_limit(solver): direct sparse and Automatic
+    by this machine's memory (450,000 on holly-pc's 32 GB, 760,000 on joey-vm's 80 GB), FFEPlus 2,000,000;
+    SWFEA_MAX_NODES_DIRECT / SWFEA_MAX_NODES_FFEPLUS override those. Pass a number to hold a job to a smaller budget.
     loose_ok: when the solver reports excessive displacements (a body free to move, or held only by something very
     soft) static() raises, unless loose_ok=True, which returns the result with Result.excessive set.
     post: post(study, results) is called after the solve and before the study is deleted, for anything static() does
@@ -700,7 +737,12 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
         q.ElementSize = size
         q.Ratio = 1.5
         call(q, 'MeshControlEndEdit')
-    rc = st.CreateMesh(0, el, el * 0.05)           # sizes in mm
+    # Simulation writes its meshing scratch files under fixed names (body1.x_b, Vmesh1.mesh, ...) into its one work
+    # folder, %TEMP% for every instance of the user. Two instances meshing at once overwrite each other's files: on
+    # joey-vm (2026-11-15) that gave 74,761 or 145,854 nodes instead of 147,811 and a failed solve ("Interaction(s)
+    # generated by global bonding"). Meshing takes seconds, so meshes queue machine-wide; solves still overlap.
+    with _LaunchLock(3600, MESH_LOCK, 'another instance\'s mesh'):
+        rc = st.CreateMesh(0, el, el * 0.05)       # sizes in mm
     nodes, elements = int(mesh.NodeCount), int(mesh.ElementCount)
     log(f'{name}: mesh rc {rc}, {nodes} nodes, {elements} elements, free {free_gb():.1f} GB')
     if rc or not nodes:
@@ -710,18 +752,23 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
                           'and remove what made them (playbook/07-done.md, "Do not stop early")',
                      stop='three sizes and a local control have all been refused: the geometry has a sliver, so fix '
                           'the model, not the mesh')
+    if max_nodes is None:      # the solver's limit on this machine; pass max_nodes to hold a job to a smaller budget
+        max_nodes = node_limit(solver)
     if nodes > max_nodes:      # checked before the solve: pass a smaller max_nodes to hold a job to a budget
         raise Failed(f'{name}: {nodes} nodes is over {max_nodes}: coarsen the global size and keep the local controls',
                      try_=f'a global size about {(nodes / max_nodes) ** (1 / 3) * 1.1:.2f} times this one (nodes go with '
                           'the cube of the size); leave the local controls as they are',
                      stop='the local controls alone are over the limit: make them cover fewer faces, or take the '
-                          'heavy-solve lock and raise max_nodes (playbook/05-fea.md)')
+                          'heavy-solve lock and raise max_nodes, or solve with SOLVER_FFEPLUS, whose limit is '
+                          f'{node_limit(SOLVER_FFEPLUS)} (playbook/05-fea.md)')
     if solver is not None:
         log(f'{name}: solver macro:', solver_macro(j, d, tag, solver, Path(d.GetPathName).parent).replace('\n', ' | '))
     stop, seen = threading.Event(), []
     watch = threading.Thread(target=_solver_dialogs, args=(j.inst.pid, stop, seen), daemon=True)
     watch.start()
-    lock = heavy_solve_lock(f'{Path(d.GetPathName).stem}/{name}') if nodes > HEAVY_NODES else contextlib.nullcontext()
+    # FFEPlus reserves most of the free memory however small the model, so it is always a heavy solve.
+    heavy = nodes > HEAVY_NODES or solver == SOLVER_FFEPLUS
+    lock = heavy_solve_lock(f'{Path(d.GetPathName).stem}/{name}') if heavy else contextlib.nullcontext()
     try:
         with lock:
             rc = call(st, 'RunAnalysis')
@@ -736,6 +783,16 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
             log(f'{name}: study not deleted ({str(ex)[:80]})')
         raise Failed(f'{name}: the solver reported excessive displacements: a body is free to move, or held only by '
                      'something very soft. playbook/05-fea.md, "Contact between bodies"')
+    nomem = [t for k, t in seen if k == 'nomemory']
+    if nomem:
+        m = re.search(r'requested\s*=\s*(\d+).*?available\s*=\s*(\d+)', nomem[0], re.I | re.S)
+        asked = f' (asked for {int(m.group(1)) / 2 ** 20:.1f} GB with {int(m.group(2)) / 2 ** 20:.1f} GB free)' if m else ''
+        raise Failed(f'{name}: the solver ran out of physical memory{asked}: another large solve was running beside it, '
+                     'or the model is too big for this machine with this solver',
+                     try_='run it again alone (static() holds the heavy-solve lock for FFEPlus and for meshes over '
+                          f'{HEAVY_NODES} nodes; a script outside the helpers does not); then a coarser mesh',
+                     stop='it fails alone on an idle machine: the model does not fit; coarsen it or switch solver '
+                          '(playbook/05-fea.md, memory)')
     if any(k == 'noconverge' for k, _ in seen):    # the solver still writes a result, with a clean reaction: never read it
         raise Failed(f'{name}: the contact iteration did not converge ("Failure to achieve equilibrium"): a body with '
                      'nothing to decide which way it goes. Move the pads, or load it the way that seats it. '
