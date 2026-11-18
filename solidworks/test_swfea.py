@@ -74,3 +74,32 @@ def test_node_limits_follow_the_solver_and_the_machine(monkeypatch):
     monkeypatch.setenv("SWFEA_MAX_NODES_FFEPLUS", "900000")
     assert swfea.node_limit(swfea.SOLVER_DIRECT) == 300_000
     assert swfea.node_limit(swfea.SOLVER_FFEPLUS) == 900_000
+
+
+def test_layer_checks_along_an_axis_need_only_that_axis_components():
+    """Guards: each stress read costs about 2.2 s at 148k nodes and grows with the square of the mesh (joey-vm,
+    2026-11-17). Layers along one axis need three of the six components, so stress='z' reads 4 instead of 7; it must
+    give the same layer numbers as the full tensor for that axis and refuse any other direction."""
+    rng = np.random.default_rng(1)
+    full = np.c_[np.arange(50), rng.normal(size=(50, 11))]
+    pos = rng.normal(size=(50, 3))
+    keep = np.ones(50, bool)
+
+    def result(cols):
+        s = np.full_like(full, np.nan)
+        s[:, 0], s[:, 10] = full[:, 0], full[:, 10]
+        for _, c in cols:
+            s[:, c] = full[:, c]
+        return swfea.Result("t", 1.0, pos, s, None, None, None, None, 50, 0, 0, 0)
+
+    whole = result(swfea._STRESS_COLS)
+    for axis, n in (("x", (1, 0, 0)), ("y", (0, 1, 0)), ("z", (0, 0, 1))):
+        r = result(swfea._AXIS_COLS[axis])
+        assert r.layer_stress(n, keep) == whole.layer_stress(n, keep)
+        assert r.layer_shear(n, keep) == whole.layer_shear(n, keep)
+    with pytest.raises(swfea.Failed):
+        result(swfea._AXIS_COLS["z"]).layer_shear((1, 0, 0), keep)
+    with pytest.raises(swfea.Failed):
+        result(swfea._AXIS_COLS["z"]).layer_stress((0, 0.6, 0.8), keep)
+    with pytest.raises(swfea.Failed):
+        result(swfea._VM_COLS).layer_stress((0, 0, 1), keep)

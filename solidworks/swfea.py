@@ -80,6 +80,10 @@ def _arr(q, cols):
 
 _STRESS_COLS = ((0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (9, 10))   # (component asked for, column in GetStress)
 _VM_COLS = ((9, 10),)
+# Print layers stacked along one axis need only three tensor components: the normal stress along it and the two shears
+# on its plane (layers along Z: sz, txz, tyz). Plus von Mises: 4 reads instead of 7 (joey-vm, 2026-11-17).
+_AXIS_COLS = {'x': ((0, 1), (3, 4), (4, 5), (9, 10)), 'y': ((1, 2), (3, 4), (5, 6), (9, 10)),
+              'z': ((2, 3), (4, 5), (5, 6), (9, 10))}
 
 
 def stress_table(components, node_ids=None):
@@ -418,7 +422,7 @@ class Result:
         """(MPa, where) of the largest tensile stress across print layers whose normal is the given direction."""
         n = np.array(normal, float)
         n /= np.linalg.norm(n)
-        S = self._tensor()
+        S = self._tensor(n, shear=False)
         sn = (n[0] ** 2 * S[:, 1] + n[1] ** 2 * S[:, 2] + n[2] ** 2 * S[:, 3]
               + 2 * (n[0] * n[1] * S[:, 4] + n[0] * n[2] * S[:, 5] + n[1] * n[2] * S[:, 6]))
         mask = self.away() if mask is None else mask
@@ -432,7 +436,7 @@ class Result:
         """
         n = np.array(normal, float)
         n /= np.linalg.norm(n)
-        S = self._tensor()
+        S = self._tensor(n, shear=True)
         t = np.c_[S[:, 1] * n[0] + S[:, 4] * n[1] + S[:, 5] * n[2],       # traction on the layer plane
                   S[:, 4] * n[0] + S[:, 2] * n[1] + S[:, 6] * n[2],
                   S[:, 5] * n[0] + S[:, 6] * n[1] + S[:, 3] * n[2]]
@@ -441,10 +445,20 @@ class Result:
         i = np.flatnonzero(mask)[np.argmax(tau[mask])]
         return float(tau[i]), self.pos[i].round(2).tolist()
 
-    def _tensor(self):
-        if np.isnan(self.s[:, 1:7]).all():
-            raise Failed(f"{self.name}: only von Mises was read (stress='vm'); solve with stress='full' for layer checks")
-        return self.s
+    def _tensor(self, n, shear):
+        """Result.s with the tensor columns this layer normal does not use set to 0, so a result read with stress='z'
+        (or 'x', 'y') serves layers along that axis. Raises when a column the normal needs was not read."""
+        a = np.abs(n) > 1e-9
+        need = {1: a[0], 2: a[1], 3: a[2], 4: a[0] and a[1], 5: a[0] and a[2], 6: a[1] and a[2]}
+        if shear:              # the traction on the layer plane also takes the shears that touch any nonzero axis
+            need.update({4: a[0] or a[1], 5: a[0] or a[2], 6: a[1] or a[2]})
+        missing = [c for c, used in need.items() if used and np.isnan(self.s[:, c]).all()]
+        if missing:
+            raise Failed(f"{self.name}: the stress components this layer direction needs were not read (stress= was "
+                         f"'vm' or another axis); solve with stress='full', or 'x' / 'y' / 'z' for layers along that axis")
+        S = self.s.copy()
+        S[:, 1:7] = np.nan_to_num(S[:, 1:7])
+        return S
 
     def in_box(self, box):
         return np.all((self.pos >= np.array(box[:3])) & (self.pos <= np.array(box[3:])), axis=1)
@@ -617,13 +631,16 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     post: post(study, results) is called after the solve and before the study is deleted, for anything static() does
     not read itself; what it returns is kept as Result.extra.
     stress: 'full' reads the whole stress tensor (seven reads); 'vm' reads von Mises only (one read), and the tensor,
-    principal and intensity columns of Result.s are NaN, so layer_stress() and layer_shear() refuse. Each read costs
-    the same whatever it asks for and grows about with the square of the mesh: ~2.5 s at 148k nodes, ~25 s at 500k
-    (joey-vm, 2026-11-15), so 'vm' saves six of them. Use it when only peak von Mises is judged.
+    principal and intensity columns of Result.s are NaN, so layer_stress() and layer_shear() refuse. 'x', 'y' or 'z'
+    reads von Mises and the three components that print layers stacked along that axis need (four reads): the layer
+    checks work for that axis only, and the principal and intensity columns are NaN. Each read costs the same whatever
+    it asks for and grows about with the square of the mesh: ~2.2 s at 148k nodes, ~25 s at 500k (joey-vm, 2026-11-15
+    and 17). Use 'vm' when only peak von Mises is judged, the print axis when the layers are along X, Y or Z, and
+    'full' for a tilted print direction or the principal stresses.
     Every face list must be non-empty: an empty pick is the commonest way to solve the wrong problem.
     """
-    if stress not in ('full', 'vm'):
-        raise ValueError(f"stress must be 'full' or 'vm', not {stress!r}")
+    if stress not in ('full', 'vm', 'x', 'y', 'z'):
+        raise ValueError(f"stress must be 'full', 'vm', 'x', 'y' or 'z', not {stress!r}")
     t0 = time.time()
     cw = j.simulation()
     doc = cw.ActiveDoc
@@ -806,7 +823,7 @@ def static(j, d, name, material, fixtures, loads, el, ctrl=(), contacts=(), mate
     if raw is None:
         raw = _arr(call(mesh, 'GetNodes'), 4)
     xyz = dict(zip(raw[:, 0].astype(int), raw[:, 1:] * 1000))
-    s = _stress_by_body(d, res, set(xyz), name, _VM_COLS if stress == 'vm' else _STRESS_COLS)
+    s = _stress_by_body(d, res, set(xyz), name, {'full': _STRESS_COLS, 'vm': _VM_COLS}.get(stress) or _AXIS_COLS[stress])
     if s is None:
         s = _arr(res.GetStress(0, 1, NUL, 3, L()), 12)       # 3 = N/mm2
     pos = np.array([xyz[int(i)] for i in s[:, 0]])

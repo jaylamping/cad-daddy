@@ -31,7 +31,7 @@ import pythoncom
 from win32com.client import VARIANT
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from sw_instance import STALL_S, launch, settle_welcome, stall_watch  # noqa: E402
+from sw_instance import STALL_S, end_session, launch, session, settle_welcome, stall_watch  # noqa: E402
 
 m = 1e-3
 NUL = VARIANT(pythoncom.VT_DISPATCH, None)       # "no object" for an optional COM argument; plain None is refused
@@ -39,6 +39,7 @@ BASE = {'X': 'Right Plane', 'Y': 'Top Plane', 'Z': 'Front Plane'}       # the de
 BLIND, THRU_ALL, UP_TO_NEXT, MID = 0, 1, 2, 6      # swEndConditions_e
 PART, ASSEMBLY = 1, 2                              # swDocumentTypes_e
 MIN_FREE_GB = 8.0                                  # holly-pc rule: leave this much free after a launch (cad-workstation.md)
+KEEP_MAX_MB = 4096                                 # job(keep=...) closes a kept instance once it commits more than this (it only grows)
 
 
 class Failed(RuntimeError):
@@ -90,9 +91,14 @@ class job:
     stall_<pid>_<time>.txt beside runs.log, and a "STALLED" line in the claims folder's runs.log). Nothing is stopped.
     Every job adds one line to runs.log beside the script (or in log_to): when it started, how long it ran, and
     whether it ended ok or with which error.
+    keep=<state file> keeps the instance for the next script of the same series instead of closing it: the next
+    job(keep=...) with the same file picks it up, which skips the launch, the Simulation load and the close (about 43
+    of 104 s per job on joey-vm, same results, 2026-11-17). The instance is closed anyway after an error, or once its
+    committed memory is over KEEP_MAX_MB. One state file per series, never shared; end_session(state file) at the end.
     """
 
-    def __init__(self, min_free_gb=MIN_FREE_GB, visible=False, wait_s=0, log_to=None, stall_s=STALL_S):
+    def __init__(self, min_free_gb=MIN_FREE_GB, visible=False, wait_s=0, log_to=None, stall_s=STALL_S, keep=None):
+        self.keep = keep
         self.min_free_gb, self.visible, self.wait_s = min_free_gb, visible, wait_s
         self.stall_s, self.watch = stall_s, None
         self.inst = self.sw = None
@@ -121,7 +127,7 @@ class job:
             time.sleep(min(20, max(0.0, end - time.time())))
         while True:
             try:
-                self.inst = launch(visible=self.visible)
+                self.inst = session(self.keep, self.visible) if self.keep else launch(visible=self.visible)
                 break
             except RuntimeError as ex:
                 # another instance is solving and cannot answer: that is a queue, not a fault. With wait_s the job
@@ -142,8 +148,15 @@ class job:
         if self.watch is not None:       # before the close: a slow exit is not a stall
             self.watch.__exit__(et, ev, tb)
         self._record('ok' if et is None else f'FAILED {et.__name__}: {ev}')
-        log('closing pid', self.inst.pid, 'committed MB', self._private())
-        self.inst.close()
+        mb = self._private()
+        if self.keep and et is None and isinstance(mb, (int, float)) and mb < KEEP_MAX_MB:
+            log('keeping pid', self.inst.pid, 'for the next script, committed MB', mb)
+            return
+        log('closing pid', self.inst.pid, 'committed MB', mb)
+        if self.keep:
+            end_session(self.keep)      # also removes the state file, so the next job(keep=...) starts fresh
+        else:
+            self.inst.close()
 
     def _private(self):
         try:

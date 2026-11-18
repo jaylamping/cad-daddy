@@ -85,7 +85,10 @@ You are building one CAD job from a written plan. Job name: <name>. Job folder: 
 1. Read playbook/README.md and the pages it lists for your task, then <folder>/PLAN.md and <folder>/common.py.
 2. Follow the plan step by step. Start every part file and study name with the job name. Keep every script, log
    and result in the job folder. Call swkit.stamp(<folder>, label) at the start and end of each task. Run your
-   studies one after another, never two at once.
+   studies one after another, never two at once. Open SolidWorks with job(keep="<folder>/sw.state") in every
+   script so one instance serves the whole job; close your documents at the end of each script, call
+   end_session("<folder>/sw.state") after every fourth study and when you finish. Read stresses with
+   stress='vm' when only von Mises is judged, and with the print axis ('x', 'y' or 'z') for layer checks.
 3. Check each step against the number the plan gives for it. If your result disagrees with the plan, do not
    adjust either one: record both numbers in results.json and carry on with the tasks it does not block.
 4. Every verdict comes from swfea.judge() on the rows. Do not write a verdict in words of your own.
