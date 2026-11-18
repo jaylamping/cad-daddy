@@ -48,8 +48,13 @@ with job() as j:            # launches your own instance; closes it on the way o
     ...
 ```
 
-- **One script is one job is one instance.** The instance is closed when the script ends. **Why:** an instance's committed
-  memory only grows (one reached 26 GB over about 30 rebuilds), and a fresh one costs four seconds on holly-pc.
+- **One job is one instance.** By default the instance is closed when the script ends. A job of several scripts keeps
+  one instance with `job(keep=<state file>)`: on joey-vm that skips the launch (20 s), the Simulation load (7 s) and
+  the close (4 s), and the build ran 9 s faster, 104 s against 61 s a script with the same results (2026-11-17).
+  The kept instance is closed after an error, once it commits over `KEEP_MAX_MB` (4 GB), and by `end_session()`
+  after every fourth study and at the end of the job. **Why the limits:** an instance's committed memory only grows
+  (one reached 26 GB over about 30 rebuilds), and a fifth study in one instance failed with error 24
+  ([05-fea.md](05-fea.md)). One state file per job; never share it.
 - **Run it in the foreground or detached, never under `timeout`.** A bare `timeout` kills the python client in the middle
   of a COM call and leaves SolidWorks half-closed, which stalls every other thread's launches (2026-11-11).
 - **Never stop a script while SolidWorks is meshing or solving.** Let it finish. If it truly must end, end the instance
